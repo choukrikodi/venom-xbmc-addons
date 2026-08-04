@@ -11,12 +11,39 @@
 **URL** : `jibaya.tn/blog/la-tele-declaration-fiscale/`
 **Fil d'Ariane** : `Services En Ligne > Télé-déclaration Fiscale`
 
-Menu principal du portail (barre de navigation) :
+### Menu principal — confirmé sur capture (août 2026)
 
 ```
 🏠 | ADMINISTRATION FISCALE ▾ | DOCUMENTATION ▾ | MEDIATHÈQUE ▾ | AGENDA |
-SERVICES EN LIGNE ▾ | ... APPLICATIONS MOBILES ▾ | CONTACT
+SERVICES EN LIGNE ▾ | APPLICATIONS MOBILES ▾ | CONTACT | 🔍 Recherche | FR ▾
 ```
+
+Sept entrées, dont **quatre avec sous-menus** (Administration fiscale, Documentation,
+Médiathèque, Services en ligne). Un sélecteur de langue **FR** en bout de barre.
+La rubrique **APPLICATIONS MOBILES** existe donc bien en tant qu'entrée de menu — ce point était
+marqué « non confirmé » dans `plateformes-et-acces.md` §1.3.
+
+### Rubrique DOCUMENTATION — « TYPES DE DOCUMENTS »
+
+Page `jibaya.tn/documentation/`, présentée en tuiles sous le titre
+« **Consultez notre bibliothèque de documents fiscaux** » :
+
+| Tuile | Contenu |
+|---|---|
+| **Lois Des Finances** | textes des LF successives |
+| **Notes Communes** | commentaires administratifs de la DGI |
+| **Conventions de non double imposition** | ⭐ conventions fiscales internationales |
+| **Recueils de textes fiscaux** | les 8 codes (voir `pdf-officiels-niveau-de-preuve.md`) |
+| **Autre Documentation Utile** | — |
+
+> ⭐ La tuile **« Conventions de non double imposition »** n'avait été identifiée par aucune
+> recherche. Elle est directement utile : la retenue à la source de **15 % sur les non-résidents**
+> (art. 52-I-b) s'applique **sous réserve des conventions de non double imposition**, qui peuvent
+> prévoir un taux plus favorable. Sans ces conventions, impossible de chiffrer correctement une
+> retenue sur un fournisseur étranger.
+
+Pied de page : logos **CIMF** (Centre Informatique du Ministère des Finances), **Ministère des
+Finances**, **GBO**, **Douane**.
 
 La page « La télé-déclaration Fiscale » présente **deux boutons d'accès** :
 
