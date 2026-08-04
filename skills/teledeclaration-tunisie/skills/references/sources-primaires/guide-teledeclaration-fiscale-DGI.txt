@@ -1,0 +1,996 @@
+
+===== PAGE 1 =====
+1
+1
+GUIDE DE LA 
+TELE-DECLARATION 
+FISCALE
+
+===== PAGE 2 =====
+2
+2
+===== PAGE 3 =====
+3
+3
+Table des matières
+ PREAMBULE 
+A. Le système de la télé-déclaration et du télépaiement 
+I. Cadre juridique et obligations 
+1. Instauration 
+2. Obligation de la télé-déclaration et du télépaiement 
+3. Amende du non-respect de l’obligation  
+4. Option de la télé-déclaration et du télépaiement 
+II.  Adhésion au système de la télé-déclaration 
+    et du télépaiement 
+1. Adhésion 
+2. Modification de l’adhésion 
+3. Formulaires relatives à l’adhésion 
+III.  Accéder au système de la télé-déclaration et du 
+    télépaiement 
+1. Portail « E-JEBEYA » 
+2.  L’utilisation du service de la télé-déclaration 
+    et du télépaiement 
+2.1 Cas d’une adhésion sans mandatement 
+2.2  Cas d’une adhésion avec mandatement d’un 
+professionnel 
+IV. Les déclarations à déposer via le système 
+V. Fonctionnalités de la télé-déclaration 
+1. Modification du mot de passe 
+4
+5
+6
+7
+7
+7
+7
+8
+9
+9
+9
+10
+11
+13
+13
+15
+16
+17
+18
+19
+19
+20
+20
+39
+39
+39
+40
+41
+43
+43
+44
+45
+45
+45
+46
+2.  Modification de l’adresse électronique de 
+l’entreprise 
+3.  Résiliation d’une autorisation de prélèvement d’un 
+compte courant 
+4.  La déclaration d’impôt 
+4.1 Liquidation des déclarations 
+4.2 Modification des déclarations 
+4.3  Ajout/Suppression d’un impôt ou taxe d’une 
+déclaration 
+4.4  Le tableau récapitulatif de la déclaration 
+       « RECAP» 
+4.5 Paiement des déclarations 
+4.6 Consultation des déclarations 
+4.7 Suppression des déclarations 
+4.8 Edition des déclarations 
+VI.  Espace pour les professionnels mandatés 
+VII. Dépôt des pièces annexes à la déclaration 
+1. Liasse fiscale en ligne 
+2. Dépôt papier auprès de la structure de contrôle 
+B. Système de la télé-liquidation avec paiement 
+à la recette des finances 
+===== PAGE 4 =====
+4
+4
+PREAMBULE
+Dans le but de la dématérialisation des obligations fiscales et de la modernisation de 
+l’administration, le Centre Informatique du Ministère des Finances a mis en place en 
+collaboration avec la Direction Générale des Impôts et la Direction Générale de la 
+Comptabilité Publique et du Recouvrement les deux systèmes de la télé-déclaration 
+fiscale : le système de la télé-déclaration et du télépaiement et le système de la télé-
+liquidation avec paiement à la Recette des Finances respectivement en avril 2002 et en 
+mars 2008.
+Ces deux systèmes permettent la télé-déclaration et le télépaiement des impôts et taxes, 
+notamment l’Impôt sur les Sociétés (IS), l’Impôt sur le Revenu des Personnes Physiques 
+(IRPP) ainsi que les Acomptes Provisionnels et  les impôts et taxes mensuels.
+Le Présent guide a pour objet de faciliter l’utilisation 
+de ces deux systèmes de la télé-déclaration fiscale, 
+il décrit de manière détaillée les étapes nécessaires 
+pour accéder et utiliser ces services
+===== PAGE 5 =====
+5
+5
+LE SYSTÈME DE LA 
+TÉLÉ-DÉCLARATION 
+ET DU TÉLÉPAIEMENT
+PREAMBULE
+===== PAGE 6 =====
+6
+6
+I. CADRE JURIDIQUE 
+ET OBLIGATIONS
+===== PAGE 7 =====
+7
+7
+Le système de la télé-déclaration et du télépaiement a 
+été instauré conformément aux dispositions de l’article 
+57 de la loi des finances pour l’année 2001.
+1. Instauration
+2. Obligation de la télé-déclaration 
+et du télépaiement 
+ L’obligation de la télé-déclaration et du télépaiement 
+a été instituée conformément aux dispositions de 
+l’article 70 de la Loi des finances pour l’année 2005, 
+pour les entreprises qui réalisent un chiffre d’affaires 
+fixé par arrêté du Ministre des Finances. (Le décret 
+d’application N°2494 du 12 septembre 2005).
+ Cette obligation a été mise en application 
+progressivement, à compter de l’année 2005 pour 
+les entreprises dont le chiffre d’affaires est égal ou 
+supérieur à 15 millions de dinars jusqu’à l’année 2018 
+pour les entreprises dont le chiffre d’affaires est égal ou 
+supérieur à 750 milles de dinars.
+ L’article 72 de la Loi des Finances pour l’année 2013 
+a élargi l’obligation de souscription et de dépôt des 
+déclarations fiscales et de paiement de l’impôt par les 
+moyens électroniques à distance aux contribuables 
+exerçant certaines activités nonobstant le chiffre 
+d’affaires réalisé.
+L’adhésion au système de la télé-déclaration et du 
+télépaiement peut être volontaire  pour les contribuables 
+soumis au régime réel autres que ceux soumis 
+obligatoirement à ce système.
+3.Amende du non-respect 
+de l’obligation 
+4.Option de la télé-déclaration 
+et du télépaiement 
+L’article 81 bis du code des droits et procédures fiscaux a 
+prévu une amende au titre de chaque déclaration fiscale 
+déposée sans le respect de l’obligation de souscription 
+et de dépôt des déclarations fiscales par les moyens 
+électroniques fiables à distance (0,1% du montant du 
+principal de l’impôt exigible avec un minimum de 200 
+dinars et un maximum de 2000 dinars).
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 8 =====
+8
+8
+II. ADHÉSION AU SYSTÈME 
+DE LA TÉLÉ-DÉCLARATION 
+ET DU TÉLÉPAIEMENT
+===== PAGE 9 =====
+9
+9
+ Dépôt auprès de la structure de contrôle des 
+impôts dont relève l’entreprise (Direction des Grandes 
+Entreprises, Direction des Moyennes Entreprises 
+ou Bureau de Contrôle des Impôts territorialement 
+compétent):
+-  d’une demande d’adhésion selon un modèle 
+préétabli.
+-  d’une ou plusieurs autorisations de prélèvement 
+d’un compte courant bancaire ou postal visées par 
+l’établissement détenteur du compte.
+ Délivrance par la structure de contrôle des impôts 
+susmentionnée du récépissé d’adhésion comportant 
+un ou plusieurs mots de passe permettant à ladite 
+entreprise d’accéder au système de la télé-déclaration 
+fiscale.
+ Dépôt d’un dossier auprès de l’Agence Nationale 
+de Certification Électronique ou auprès des Bureaux 
+régionaux de poste pour l’obtention d’un certificat 
+électronique permettant un accès sécurisé. 
+1. Adhésion
+Tous les imprimés relatifs au système de la télé-déclara-
+tion et du télépaiement sont téléchargeables à partir du 
+site de l’administration fiscale « E-JEBEYA »
+2.Modification de l’adhésion
+3.Formulaires relatives à l’adhésion
+Le contribuable peut modifier son adhésion par le 
+dépôt d’une demande de mise à jour de son adhésion 
+(mandatement d’un professionnel, annulation du 
+mandatement, changement du nombre de mots de 
+passe, octroi de nouveaux mots de passe en cas de 
+perte des anciens,…)
+ www.impots.finances.gov.tn
+ Cliquez sur l’onglet « Ressources documentaires »
+ Puis l’onglet « Téléchargement des formulaires »
+ Puis le lien « Télé-déclaration »
+NB :  les mots de passe ne permettent l’accès 
+au système que le jour suivant de leur attribution.
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 10 =====
+10
+10
+III.ACCÉDER AU SYSTÈME 
+DE LA TÉLÉ-DÉCLARATION 
+ET DU TÉLÉ-PAIEMENT
+===== PAGE 11 =====
+11
+11
+1.Portail « E-JEBEYA »
+ Cliquez sur le lien « Services en ligne ».
+  Choisissez « Télé-déclaration Fiscale » puis 
+le bouton « Accéder au service ».
+  Saisissez le code PIN du certificat électronique 
+déjà installé ; 
+ Saisir le login et le mot de passe
+ Accédez au site de l’administration fiscale 
+« E-JEBEYA ».
+NB : Si vous saisissez un code PIN erroné 
+plus que trois fois le certificat sera bloqué.
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 12 =====
+12
+12
+Une fois le code PIN saisi, la page 
+suivante est affichée et vous êtes invités à 
+saisir votre matricule fiscal et votre mot de 
+passe comme suit :
+ Identifiant : 
+ Type d’accès :
+Votre matricule fiscal est composé de 
+8 caractères (7 numériques + une clé 
+alphabétique en majuscule) à compléter 
+par des zéro à gauche le cas échéant.
+ Mot de passe : 
+  Le mot de passe qui vous a été attribué 
+est composé de 15 chiffres.
+  Vous êtes invités à le modifier dès le 
+premier accès au site et ce nouveau mot 
+de passe vous servira pour les accès 
+ultérieurs
+  Ne pas utiliser les caractères spéciaux 
+tel que (, ; / ?...) lors de la modification 
+du mot de passe.
+  Pour télé-déclarer vos propres 
+déclarations
+Remarques
+ Si vous avez oublié votre mot de passe, téléchargez le 
+formulaire de mise à jour de l’adhésion et déposez le auprès 
+de la structure de contrôle des impôts dont vous relevez, qui 
+va vous attribuer des nouveaux mots de passe. 
+ Le serveur n’est pas accessible entre 17H et 19H.
+  Ma propre déclaration : Pour télé-
+déclarer vos propres déclarations
+  Déclaration pour une tierce personne : 
+Pour télé-déclarer au lieu et place des 
+clients qui vous ont mandaté (cas d’un 
+comptable, expert-comptable, conseiller 
+fiscal,..)
+===== PAGE 13 =====
+13
+13
+2. L’utilisation du service de la télé-déclaration et du télépaiement
+  L’utilisation d’un seul mot de passe pour la 
+liquidation et le paiement des déclarations.
+  Pour chaque type de déclaration, des 
+fonctions permettront la liquidation des 
+impôts et taxes exigibles et d’autres la 
+validation du paiement de ces impôts
+2.1 Cas d’une adhésion sans mandatement
+a. Adhésion avec un seul mot de passe
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 14 =====
+14
+14
+  Deux mots de passe en cas de séparation entre 
+la fonction de liquidation des impôts et celle du 
+paiement (un mot de passe pour le comptable et 
+l’autre pour le service Financier par exemple).
+   Les fonctionnalités accessibles lors de l’utilisation 
+du mot de passe de liquidation: 
+b. Adhésion avec deux mots de passe
+  Les fonctionnalités accessibles lors de 
+l’utilisation du mot de passe de paiement :
+
+===== PAGE 15 =====
+15
+15
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+2.2 Cas d’une adhésion avec mandatement d’un professionnel
+  Les professionnels mandatés utilisent le même 
+mot de passe pour télé-déclarer leurs propres 
+déclarations, ainsi que celles de leurs clients.
+  Si vous avez mandaté un professionnel 
+pour liquider vos impôts et taxes à votre lieu 
+et place, votre mot de passe vous servira 
+uniquement pour télé-payer vos déclarations, 
+les consulter, les imprimer, pour changer votre 
+mot de passe, changer votre adresse e-mail.
+  Si vous n’êtes pas mandaté par d’autres 
+personnes et si vous cochez par erreur  
+   « Déclaration pour tierce personne » l’écran 
+suivant s’affiche :
+===== PAGE 16 =====
+16
+16
+IV. LES DÉCLARATIONS À 
+DÉPOSER PAR LE BIAIS DU 
+SYSTÈME
+  Les déclarations mensuelles (RS, TFP,FOPROLS, DC,TVA, Autres taxes sur 
+le CA, Taxe sur les assurances, Droit de timbre, TCL, TH et Droit de licence) ;
+ Les déclarations d’acompte provisionnel ;
+ Les déclarations de l’Impôt sur les Sociétés ;
+ Les déclarations de l’avance due par les sociétés de personnes et assimilées ;
+ Les déclarations de l’Impôt sur le Revenu des Personnes Physiques ;
+  Les déclarations de l’Impôt sur les Bénéfices pour les Entreprises de 
+Production des Hydrocarbures.
+===== PAGE 17 =====
+17
+17
+V. FONCTIONNALITÉS DE 
+LA TÉLÉ-DÉCLARATION
+Le système de la télé-déclaration et du télépaiement englobe 
+4 fonctionnalités de base :
+ Modification du mot de passe ;
+ Modification de l’adresse électronique de l’entreprise ;
+ Résiliation d’une autorisation de prélèvement d’un compte courant ;
+ Résiliation de l’adhésion pour les adhérents volontaires uniquement ;  
+  La déclaration d’impôt (liquidation et paiement).
+===== PAGE 18 =====
+18
+18
+1. Modification du mot de passe
+  Suite à une nouvelle adhésion ou l’obtention 
+d’un nouveau mot de passe (en cas de perte de 
+l’ancien mot de passe par exemple), modifiez ce 
+mot de passe avant toute autre opération.
+  Le mot de passe que vous avez ainsi saisi annule 
+et remplace celui délivré par l’administration 
+fiscale. Il doit être composé de 6 à15 caractères. 
+  Il ne faut pas utiliser des caractères spéciaux tel 
+que ( ?, /+ « °[….).
+
+===== PAGE 19 =====
+19
+19
+2. Modification de l’adresse électronique de l’entreprise
+Les adhérents au système de la télé-déclaration et 
+du télépaiement sont invités à vérifier leur adresse 
+Email et la corriger le cas échéant, et ce, afin de 
+permettre à l’administration fiscale de les informer à 
+3. Résiliation d’une autorisation 
+de prélèvement d’un compte 
+courant
+Pour résilier une autorisation de prélèvement, il faut :
+  que vous ayez au moins 2 comptes courants bancaires 
+ou postaux,
+  que vous n’ayez aucune déclaration à l’état : 
+    « Payement confirmé » ou «Envoyée pour paiement ».
+temps du sort de leurs déclarations fiscales télé-déclarées 
+et télé-payées et des ordres de prélèvement bancaires 
+ou postales y afférents (déclaration suspendue, rejet de 
+l’ordre de prélèvement).
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 20 =====
+20
+20
+4. La déclaration d’impôt
+4.1 Liquidation des déclarations
+a. Déclaration mensuelle
+===== PAGE 21 =====
+21
+21
+• Informations nécessaires à la répartition de la TCL
+Vous devez ensuite choisir la ou les collectivités où se trouvent vos établissements (y compris le siège) 
+et saisissez la superficie des établissements existants dans la collectivité.
+Cette fonctionnalité vous permet aussi de 
+modifier les informations susmentionnées 
+suite à chaque changement, et ce, par 
+l’ajout de nouvelles collectivités locales, la 
+suppression d’autres, la modification de la 
+superficie totale.
+ Nombre de collectivités locales : Nombre de collectivités locales lieu d’établissement de l’entreprise
+ Superficie totale : Le total des superficies des différents établissements de l’entreprise (y compris les établissements secondaires).
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+  Si vous liquidez la TCL pour la première fois, 
+il faut tout d’abord saisir les informations 
+nécessaires à la répartition de la TCL.
+  Minimum de la TCL : Il s’agit de la somme des 
+montants de la taxe sur les immeubles bâtis 
+(T.I.B.) communiqués par les différentes 
+collectivités locales lieu d’établissement de 
+l’entreprise. La saisie de cette zone n’est 
+pas obligatoire.
+===== PAGE 22 =====
+22
+22
+• Informations nécessaires à la répartition de la TH
+  Si vous déclarez la TH pour la première fois, il faut 
+tout d’abord saisir les informations nécessaires à 
+la répartition de cette taxe.
+   Procédez de la même manière mentionnée 
+pour la TCL.
+===== PAGE 23 =====
+23
+23
+   Matricule Fiscal : Partie numérique du 
+matricule fiscal composé de 7 chiffres. Clé du 
+matricule fiscal composé d’une seule lettre en 
+majuscule.
+   L’année et le mois : L’année et le dernier mois 
+échus sont affichés par défaut et vous pouvez 
+les modifier
+  Code acte : Initiale pour la première déclaration, 
+et rectificative pour les autres déclarations 
+au titre du même mois et des mêmes impôts 
+(2ème déclaration, 3ème déclaration, ..). 
+  Les impôts à déclarer : Cochez les impôts 
+que vous allez déclarer puis cliquez sur 
+   « Suivant ».
+Cliquez sur le 3
+ième impôt 
+et refaites la liquidation  
+comme pour les autres 
+impôts.
+• Liquidation de la déclaration mensuelle
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+ A chaque fois que vous liquidez un 
+impôt, ce dernier sera grisé au niveau 
+de la ligne en haut relative aux impôts 
+et taxes à liquider et il sera affiché 
+au niveau du tableau récapitulatif 
+des impôts et taxe à payer..
+
+===== PAGE 24 =====
+24
+24
+  Après avoir saisi la période (mois et exercice) au 
+titre de laquelle la déclaration est à déposer, les 
+informations relatives à votre entreprise (nom et 
+prénom ou raison sociale, adresse, catégorie, …) 
+seront affichées. 
+  Le système de la télé-déclaration vous permet de 
+naviguer à travers le formulaire de la déclaration, 
+de saisir les éléments de la déclaration, de liquider 
+les impôts et les taxes à payer et il vous affiche en 
+fonction des données saisies un tableau récapitulatif 
+comportant les montants à payer, offrant la possibilité 
+de confirmer ou d’annuler la déclaration.
+  Vous ne pouvez pas déposer une déclaration 
+rectificative tant que la déclaration initiale n’est pas 
+encore payée. 
+  Pour rectifier une déclaration non encore payée 
+ou non encore envoyée pour paiement (à l’état « 
+liquidée » ou « paiement confirmé » uniquement), 
+passez par la procédure de modification.
+  Pour modifier une déclaration à l’état « paiement 
+confirmé », il faut annuler tout d’abord la validation 
+du paiement de la déclaration
+Pour tous les impôts 
+et taxes mensuels :
+Remarques
+  Le montant de la TVA restituée ne peut être 
+saisi que lorsqu’il s’agit d’une déclaration 
+rectificative dégageant un crédit de TVA.
+  Les crédits de TVA et de DC du mois 
+précédent   sont générés par le système et 
+peuvent être modifiés.
+  Si la marge bénéficiaire brute de l’entreprise ne 
+dépasse pas 6% ou l’entreprise est déficitaire, la 
+TCL sera calculée sur la base de l’IS ou de l’IRPP 
+dû au titre de l’exercice N-1.
+  Pour éviter les pénalités de retard, déposez votre 
+déclaration avant l’échéance légale de dépôt de 
+la déclaration annuelle.
+Pour la TVA et DC
+Pour la TCL
+===== PAGE 25 =====
+25
+25
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+Pour la TFP
+Pour bénéficier du système de l’avance sur la TFP
+ L’entreprise doit être soumise à la TFP ;
+  La TFP due au titre de l’année précédente doit être égale 
+ou supérieure à 1000 dinars ;
+  L’entreprise doit déposer sa déclaration mensuelle au 
+titre du mois de Janvier à l’échéance et elle doit saisir le 
+montant de l’avance à déduire.
+  L’entreprise peut déduire l’avance dans les limites qu’elle 
+choisit (sans excéder 60%) et dans ce cas la renonciation 
+au bénéfice de l’avance est définitive et irrévocable.
+  Le montant de l’avance doit être saisi tant que celle-ci 
+n’a pas été consommée en totalité ; 
+  Si le montant de l’avance est nul, il s’agit d’une 
+renonciation définitive au bénéfice de l’avance
+  Pour déposer les déclarations rectificatives suite à 
+la décision d’approbation des montants définitifs au 
+titre de la déduction de l’avance, vous êtes invités à 
+saisir le montant de l’avance ainsi rectifié et la date de 
+réception de ladite décision.
+Remarques : 
+-  Le serveur n’est pas accessible 
+entre 17H et 19H. Après 19H, on 
+passe à la journée J+1.
+-  A l’échéance et après 17H, des 
+pénalités de retard seront encourues 
+lors de la liquidation de la dernière 
+déclaration mensuelle, annuelle ou 
+d’acompte provisionnel échue.
+===== PAGE 26 =====
+26
+26
+b. Déclaration de l’acompte provisionnel.
+  Choisissez le code acte de la déclaration : 
+Initiale ou rectificative
+ Choisissez l’année
+  Choisissez le terme au titre duquel la 
+déclaration est à déposer (1er, 2ème, 3ème)
+1
+2
+===== PAGE 27 =====
+27
+27
+   L’impôt théorique base de calcul de l’acompte 
+provisionnel est affiché par le système en se 
+référant à la dernière déclaration d’IS ou d’IRPP 
+déposée au titre de l’exercice de liquidation 
+  Récapitulatif
+de l’AP -1 et ce montant peut être modifié. 
+Toutefois, il ne peut pas être inférieur au 
+minimum sur le chiffre d’affaires dû au titre de 
+l’exercice précédent.
+3
+4
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 28 =====
+28
+28
+c. Déclaration de l’Impôt sur les Sociétés ou de l’avance 
+due par les sociétés de personnes et assimilées
+1
+ 2
+• Type de la déclaration (Provisoire/Définitive) :
+Déclaration provisoire
+ Pour la déclaration initiale, choisissez le code acte 
+« Initiale »
+ Puis cochez « Provisoire »
+  L’entreprise peut déposer autant de déclarations 
+rectificatives provisoires
+Déclaration définitive
+  Si la déclaration provisoire a été déposée, choisissez le 
+code acte «Rectificative »
+ Puis cochez « Définitive »
+  L’entreprise peut déposer autant de déclarations 
+définitives rectificatives.
+  Si une déclaration définitive est déposée, aucune 
+déclaration provisoire ne peut être déposée.
+• Type de la déclaration (Provisoire/Définitive) :
+===== PAGE 29 =====
+29
+29
+• Cadres légaux
+Mentionnez le cadre légal dans lequel 
+l’entreprise exerce
+ Exportation Totale
+ Développement régional
+ Développement agricole
+ Parc d’activité économique
+ Exportation
+  Encouragement des Petites et  
+Moyennes Entreprises
+  Etablissement de santé au profit 
+des non-résidents
+ Entreprises nouvellement créées
+ Les projets d’intérêt national
+  Activité de soutien et de lutte contre 
+la pollution
+3
+4
+Les avantages fiscaux que vous pouvez 
+y bénéficier sont soient :
+ liés à un cadre légal
+ non liés à un cadre légal
+  des contrôles de cohérence entre 
+les avantages fiscaux à déduire et le 
+cadre légal choisi sont effectués par 
+le système.
+• Les avantages fiscaux 4
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 30 =====
+30
+30
+ Répartissez le bénéfice et le chiffre d’affaires selon le taux de l’IS auquel l’entreprise est soumise.
+• Calcul de l’impôt
+• Sociétés exonérées ou ayant des bénéfices non soumis
+  Si vous êtes une entreprise exonérée en vertu de l’article 46 du code de l’IRPP et de l’IS ou en vertu d’une 
+convention, cochez « oui » dans la case correspondante
+   Si vous avez des bénéfices non soumis à l’impôt, cochez « oui » dans la ligne « Bénéfices non soumis à 
+l’impôt »
+5
+===== PAGE 31 =====
+31
+31
+  La Contribution Sociale de Solidarité est 
+calculée automatiquement par le système 
+de la télé-déclaration et du télépaiement 
+lors de la liquidation des déclarations 
+d’IS et d’IRPP, et ce, en application des 
+dispositions de l’article 53 de la Loi des 
+Finances pour l’année 2018.
+• Contribution Sociale de Solidarité CSS
+  Recapitulatif :
+    A chaque fois que vous liquidez un 
+impôt, ce dernier sera affiché au niveau 
+du tableau récapitulatif des impôts et 
+taxe à payer.
+6
+7
+8
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 32 =====
+32
+32
+d. Déclaration de l’Impôt sur les Revenus des Personnes Physiques
+Vous pouvez déposer la déclaration de l’IRPP et cochez 
+l’une des catégories de revenus suivantes :
+  Bénéfices industriels et commerciaux (BIC)
+  Bénéfices des professions non commerciales (BNC)
+  Bénéfices des activités agricoles et de pêche
+  Revenus fonciers
+  Salaires et pensions de source tunisienne
+  Revenus des valeurs et capitaux mobiliers
+  Revenus exonérés
+  Revenus non imposables
+  Autres revenus
+ Si vous choisissez la catégorie de 
+revenu BIC régime réel, vous devez 
+préciser la catégorie des revenus 
+réalisés (commerciaux, industriels, de 
+prestation de service, …) ;
+Exemple catégorie de revenu BIC
+1
+2
+===== PAGE 33 =====
+33
+33
+ Après avoir saisi le vecteur des 
+catégories de revenus à déclarer et si 
+vous choisissez la catégorie de revenu 
+BIC, le système vous affiche la page 
+suivante :
+ Après avoir saisi les informations 
+relatives à chaque catégorie de revenu 
+choisie, la page suivante est affichée 
+et vous pouvez cliquer de nouveau sur 
+n’importe quelle catégorie de revenu et 
+corriger le cas échéant les informations 
+déjà saisies puis valider
+ Après avoir saisi les catégories de 
+revenus réalisés une par une, la page 
+suivante est affichée :
+3
+4
+5
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 34 =====
+34
+34
+6
+ Au niveau de cette page, l’utilisateur doit saisir les 
+informations relatives au déficit des années antérieures 
+non imputés et aux déductions communes au titre des 
+revenus et bénéfices provenant de l’activité, des revenus 
+réinvestis et au titre des autres déductions communes 
+(chef de famille, enfants à charge, parents à charge, intérêts 
+des comptes,…)
+Si le montant des déficits des années antérieurs est nul, il faut 
+décocher le bouton « oui ». 
+===== PAGE 35 =====
+35
+35
+7
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+  Après avoir calculer et afficher automatiquement l’impôt 
+dû selon le barème, certaines informations seront 
+affichées au niveau de la 2
+ième partie de cette grille 
+(chiffres d’affaires local TTC, minimum d’impôt liquidé 
+sur la base du chiffre d’affaires ou minimum d’impôt, 
+minimum d’impôt au taux de 30% ou 60%).D’autres 
+informations doivent être saisies dans certains cas 
+(chiffre d’affaires local TTC soumis au minimum dans 
+le cas d’une entreprise bénéficiaire d’une déduction 
+totale au titre du développement régional ou du 
+développement agricole et dont une partie du chiffre 
+d’affaires est soumise, chiffre d’affaires homologué ou 
+au titre de l’activité de soutien ou de la lutte contre la 
+pollution soumis au minimum d’impôt, le chiffre d’affaires total 
+à l’exportation soumis au minimum d’impôt dans le cas d’une 
+entreprise bénéficiant de la déduction totale , part de l’associé 
+dans la société de personnes et assimilées dans le minimum 
+d’impôt si le contribuable a déclaré des parts et des plus-
+values relatives à des sociétés de personnes.
+  Au niveau de la 3 ième partie de cette grille, l’utilisateur peut 
+saisir les montants des avances à imputer de l’IRPP dû (RS, 
+AP déjà payés, …). Sachant que le montant de l’excédent 
+d’impôt dégagé sur la déclaration de l’année précédente sera 
+affiché par le système si cette déclaration est déposée et il 
+peut être modifié.
+===== PAGE 36 =====
+36
+36
+8
+9
+  A partir de l’exercice 2018 le système va afficher une 
+grille relative à la contribution sociale de solidarité. 
+Sachant que :
+•  A partir de l’exercice 2019 le montant de l’excédent 
+de l’année antérieure au titre de la contribution 
+sera généré automatiquement en se référant à 
+  Il s’agit du tableau récapitulatif des impôts et taxes 
+déclarés par le contribuable ( IRPP, taxe de visite, droit 
+d’intéressement, contribution sociale de solidarité,..) 
+au niveau du quel sont affichés les montants dus en 
+principal, les montants déjà payés s’il s’agit d’une 
+la déclaration de l’IRPP de l’année précédente si cette 
+déclaration est déposée et il peut être modifié.
+•  La retenue à la source au titre de la contribution ne peut 
+être saisie que si le contribuable a déclaré la catégorie de 
+revenu de traitements et salaires ou de pensions et rentes 
+viagères de source tunisienne.
+déclaration rectificative, et ce, en se référant aux déclarations 
+déjà déposées au titre des mêmes impôts et au titre des 
+mêmes périodes ainsi que les montants des pénalités de 
+retard calculées y compris celles au titre des bénéfices et 
+revenus exonérés ou déduits ou non soumis et déclarés après 
+l’échéance légale.
+===== PAGE 37 =====
+37
+37
+e. Déclarations de l’Impôt sur les Bénéfices des Entreprises de Production des 
+Hydrocarbures
+1
+2
+Les fonctionnalités offertes au niveau de la partie 
+relative à la déclaration de l’Impôt sur les Bénéfices 
+des Entreprises de Production des Hydrocarbures sont 
+la liquidation de cette déclaration et la consultation, 
+l’impression, la suppression de la déclaration, l’ordre de 
+paiement et l’annulation de l’ordre de paiement
+ Choisissez la concession 
+  Si la dite concession est régie par le Décret-loi n°9 de 
+l’année 1985 ou par le code des hydrocarbures vous 
+devez choisir le trimestre en plus de l’année
+  Dans le cas d’une déclaration trimestrielle, le type des 
+déclarations au titre des trois premiers trimestres doit 
+être obligatoirement «D».
+  Dans le cas d’une concession dont le régime est 
+« conventionnel », vous devez cochez au niveau de la 
+première page de liquidation et du vecteur relatif à la 
+nature d’impôt ou taxe acquitté l’une des cases « Impôt 
+sur les sociétés » ou « Impôt complémentaire ».
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 38 =====
+38
+38
+3
+65
+4
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 39 =====
+39
+39
+4.2 Modification des déclarations 
+  Vous pouvez modifier la déclaration tant qu’elle est à l’état « liquidée ».
+  Pour modifier une déclaration dont le paiement a été confirmé, annulez cette confirmation.
+   Vous pouvez modifier toutes les informations déjà saisies à l’exception de la période au titre de laquelle la déclaration est déposée 
+ainsi que le matricule fiscal du contribuable».
+Exemple d’un tableau récapitulatif 
+pour une déclaration mensuelle
+4.4 Le tableau récapitulatif de la déclaration « RECAP »
+  A chaque fois que vous liquidez un impôt, ce dernier sera affiché au niveau du tableau récapitulatif des impôts et taxe à payer.
+  Si vous cliquez sur « Valider » sans liquider tous les impôts que vous avez cochés, l’écran suivant s’affiche sans qu’il soit bloquant.
+  Cliquez sur « valider » une fois que vous avez liquidé tous les impôts et taxes exigibles.
+4.3 Ajout / Suppression d’un impôt ou taxe d’une déclaration
+   Vous pouvez ajouter ou supprimer un impôt ou taxe de votre déclaration tant qu’elle est à l’état «liquidée ».
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 40 =====
+40
+40
+4.5 Paiement des déclarations
+  Le paiement des déclarations est à la charge 
+du contribuable lui-même même s’il a mandaté un 
+professionnel pour télé-déclarer ses impôts et taxes 
+à son lieu et place.
+  Pour télé-payer vos impôts et taxes exigibles, 
+saisissez le mot de passe de paiement si vous avez 
+opté pour l’utilisation de deux mots de passe.
+  Confirmer le paiement même si la déclaration est 
+nulle ou elle a dégagé un report d’impôt.
+  Pour payer vos impôts et taxes cliquez sur le 
+bouton « Paiement » 
+  La page suivante est affichée et vous êtes invités 
+à cliquer sur « Par ordre de prélèvement »
+2
+3
+1
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 41 =====
+41
+41
+ Choisissez le/les comptes bancaires ou postaux et répartissez le montant des impôts et taxes à payer 
+sur les comptes que vous choisissez.
+ « La date de l’échéance légale » est cochée par défaut. Si la déclaration n’est pas encore échue, vous 
+pouvez choisir la date de paiement de vos impôts et taxes après avoir coché « La date que je choisie », 
+4.6 Consultation des déclarations
+  Vous pouvez consulter vos déclarations pour suivre leurs situations.
+  Vous pouvez aussi consulter et annuler vos ordres de paiement
+4
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 42 =====
+42
+42
+  Une déclaration peut être dans l’une des situations suivantes :
+« Liquidée » : la liquidation de la déclaration est effectuée mais la validation du paiement n’est pas encore faite. 
+« Paiement confirmé » : la déclaration est liquidée et validée pour être envoyée pour paiement.
+« Envoyée pour paiement » : l’ordre ou les ordres de prélèvements relatifs aux déclarations sont envoyés au système de la télé-
+compensation.
+« Payée » : la déclaration est acceptée et le paiement est effectué.
+« Suspendue » : la déclaration est liquidée mais elle n’a pas été validée pour paiement à temps (à l’échéance légale ou à la 
+date de la liquidation pour les déclarations déposées après échéance). Vous êtes invités dans ce cas à déposer une autre 
+déclaration.
+« Rejeté » : L’ordre de prélèvement peut être rejeté par votre banque. Pour consulter les motifs du rejet, cliquez sur « Détail du 
+paiement » ; Dans ce cas, votre situation n’est pas en règle et vous êtes appelés à déposer une autre déclaration. Sachant que 
+les déclarations rejetées seront affichées au niveau de l’historique des déclarations et ne peuvent pas être supprimées par le 
+contribuable
+« Partiellement rejeté » : Si vous répartissez votre paiement sur plus qu’un compte et que l’un des ordres de paiement soit 
+rejeté par votre banque, vous devez régulariser votre situation en déposant une autre déclaration. Sachant que les montants 
+débités seront consignés auprès de la recette des finances du Pôle de recouvrement de la Direction des Moyennes Entreprises 
+si vous relevez de cette structure ou auprès de la recette des finances du Pôle de recouvrement de la Direction des Grandes 
+Entreprises dans les autres cas.
+Vous pouvez retirer vos quittances auprès de n’importe quelle Recette des Finances.
+Un e-mail vous sera envoyé pour vous informer du sort de votre ordre de prélèvement.
+  Si vos impôts et taxes ne sont pas payés, vous devez régulariser votre situation fiscale en déposant 
+une autre déclaration.
+ A l’échéance légale, si la déclaration liquidée n’est pas confirmée pour paiement elle sera suspendue.
+  Si une déclaration est liquidée après l’échéance légale sans que son paiement soit confirmé et validé 
+par le contribuable le même jour, elle sera suspendue à la fin de la journée.
+  Les déclarations rejetées ou suspendues doivent être liquidées de nouveau et confirmées pour paiement. 
+Sachant qu’on ne peut pas les supprimer, ni les modifier
+Remarques
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 43 =====
+43
+43
+4.7 Suppression des déclarations
+  Vous pouvez modifier la déclaration tant qu’elle est à l’état « liquidée ».
+  Supprimez la déclaration en cas d’erreur au niveau de la période par exemple.
+4.8 Edition des déclarations
+  L’édition de la déclaration mensuelle se fait en plusieurs parties si elle concerne plusieurs 
+impôts et taxes.
+ Si vous éditez les déclarations télé-liquidées et télé-payées, ces dernières comporteront 
+les informations suivantes si elles sont à l’état « payée » :
+- La références de la quittance : un numéro de quittance qui commence par la lettre E ;
+- La date de la quittance : la date de paiement de la déclaration.
+A  LE SYSTÈME  DE LA TÉLÉ-DÉCLARATION  ET DU TÉLÉPAIEMENT
+===== PAGE 44 =====
+44
+44
+VI. ESPACE POUR LES
+PROFESSIONNELS MANDATÉS
+   Si vous êtes une personne mandatée pour télé-déclarer au lieu et place de ses clients, la liste de ces 
+derniers vous sera affichée au niveau de la partie relative au matricule fiscal.
+   Vous êtes invités à choisir le client dont la déclaration sera liquidée et à saisir la période au titre de laquelle 
+la déclaration est à liquider (année et mois, année et échéance, …).
+
+===== PAGE 45 =====
+45
+45
+V.II DÉPÔT DES PIÈCES 
+ANNEXES À LA DÉCLARATION
+1.  Le dépôt en ligne des pièces annexes à la déclaration de 
+l’IS et de l’IRPP 
+Les contribuables adhérents au système de la tété-déclaration et du télépaiement  à titre obligatoire ou 
+volontaire peuvent déposer les pièces annexes à leur déclaration d’IS ou d’IRPP (bilan, états financiers, 
+liste des attestations des retenues à la source, …) à l’occasion du dépôt de la liasse fiscale à distance 
+par le biais du service « Liasse fiscale ».
+ 
+2. Dépôt papier auprès de la structure de contrôle
+Déposez les pièces annexes à la déclaration  accompagnées d’un accusé de réception à télécharger 
+à partir du site auprès de la structure de contrôle des impôts de rattachement, et ce, dans les délais 
+légaux.
+Les pièces annexes aux déclarations fiscales seront déposées soit en ligne soit directement 
+auprès de la structure de contrôle des impôts compétente.
+===== PAGE 46 =====
+46
+46
+SYSTÈME DE LA 
+TÉLÉ-LIQUITION 
+DES IMPÔTS ET 
+TAXES AVEC 
+PAIEMENT À LA 
+RECETTE DES 
+FINANCES
+
+===== PAGE 47 =====
+47
+47
+   L’adhésion au système de la liquidation des impôts et taxes avec paiement à la Recette 
+des Finances s’effectue auprès de la Recette des Finances territorialement compétente 
+par la souscription d’une demande d’adhésion selon votre profil (professionnel ou autre) 
+disponible sur le site Web de la télé-déclaration.
+   Il s’agit de liquider les impôts et taxes exigibles via Internet sans l’utilisation d’un certificat 
+électronique et de les payer à partir du jour suivant à n’importe quelle Recette des 
+Finances.
+   Le dépôt des déclarations par le biais de ce système est effectué de la même manière 
+que pour le système de la télé-déclaration et du télépaiement.
+   Ce système couvre les mêmes déclarations que celle gérées par le système de la 
+télé-déclaration et du télépaiement. Toutefois, il se limite aux déclarations initiales et ne 
+couvre pas les déclarations rectificatives.
+   Les professionnels peuvent télé-liquider pour le compte de leurs clients mentionnés au 
+niveau du formulaire d’adhésion.
+   Les contribuables soumis obligatoirement au système de la télé-déclaration et du 
+télépaiement ne peuvent pas adhérer à ce système.
+   Une déclaration déposée via ce système peut être dans l’une des situations suivantes :
+« Liquidée » : la liquidation de la déclaration est effectuée mais la validation de la 
+liquidation n’est pas encore faite. 
+« Liquidation validée » : la déclaration est liquidée et validée pour être envoyée à la 
+recette.
+ « Envoyée à la recette » : la déclaration est envoyée au système informatique mis à la 
+disposition des Recettes des Finances « RAFIC ».
+
+===== PAGE 48 =====
+48
+48
+1
+2
+ Le système de la télé-liquidation des 
+impôts et taxes avec paiement à la recette 
+des finances offre les fonctionnalités 
+suivantes au niveau de la partie relative 
+à la déclaration mensuelle.
+ Pour que la déclaration télé-liquidée 
+soit envoyée pour être payée à la 
+recette des finances, l’utilisateur doit 
+passer par la fonction «Validation de la 
+liquidation, annulation de la validation de 
+la liquidation, consultation, impression 
+et suppression des déclarations» puis 
+saisir la période puis cliquer sur le 
+bouton  «Validation de la liquidation.
+===== PAGE 49 =====
+49
+49
+3
+4
+B  SYSTÈME DE LA TÉLÉ-LIQUITION DES IMPÔTS ET TAXES AVEC PAIEMENT À LA RECETTE DES FINANCES
+Suite à la validation de la liquidation de 
+la déclaration, les grilles 3 et 4 seront 
+affichées et vous êtes invités à cliquer 
+selon le cas sur les boutons «Valider» 
+ou «Fin».
+===== PAGE 50 =====
+50
+50
+ASSISTANCE
+En cas de besoin et pour plus d’information, contactez le Centre 
+d’information fiscale à distance sur le numéro 81 100 400
+
+===== PAGE 51 =====
+51
+51
+Merci
+===== PAGE 52 =====
+52
+52
+93 Rue Hédi Chaker - 1002 - Tunis Belvedaire.
+Tél : +216 71 780 940 - Fax : +216 71 799 010
+Email : impots@finances.gov.tn
+www.impots.finances.gov.tn
+www.finances.gov.tn 
