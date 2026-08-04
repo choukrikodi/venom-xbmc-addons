@@ -166,9 +166,11 @@ qui déclenche le minimum d'impôt réduit des articles 44-II et 49-II du code I
 
 ## C. Ce qui reste non lu
 
-- **Code IRPP/IS, articles 52 et 53** — les taux de retenue à la source d'IRPP/IS. **Le PDF du
-  code IRPP/IS reçu s'arrête à l'article 51** : ces articles n'y figurent pas. C'est désormais la
-  **seule lacune majeure** du skill.
+- **Code IRPP/IS, articles 52 et 53** — les taux de retenue à la source d'IRPP/IS. **Seule lacune
+  majeure du skill.**
+  ⚠️ *Rectification* : il avait d'abord été conclu que le PDF reçu « s'arrêtait à l'article 51 ».
+  C'est **l'extraction de texte** qui a été tronquée à ~192 000 caractères, pas le document.
+  Voir `code-irpp-is.md` §5 pour la marche à suivre (téléversement direct plutôt que lien Drive).
 - Les **tableaux annexés** au code de la TVA (listes des produits à 7 % et 13 %).
 - Le reste du CDPF : procédures de contrôle, contentieux, sanctions pénales.
 - Le code de la TVA au-delà des dispositions citées.

@@ -260,7 +260,23 @@ La distinction **25 (PP) / 28 (PM)**, qui reposait sur une source unique et que
 
 ---
 
-## 5. Ce qui reste non lu dans ce code
+## 5. ⚠️ Le texte reçu est TRONQUÉ — ce n'est pas le code complet
+
+Le fichier archivé s'arrête **au milieu de l'article 51**, à la page 104, après environ
+**192 000 caractères** — un seuil qui correspond à la limite d'extraction de l'outil de lecture
+Drive, lequel avertit explicitement que « le contenu peut être incomplet pour les fichiers très
+volumineux ».
+
+**Conclusion à retenir** : le PDF d'origine contient très probablement les articles 52 et suivants.
+C'est **l'extraction** qui a été coupée, pas le document.
+
+**Comment récupérer la suite** : faire **téléverser le PDF directement dans la conversation**
+(et non via un lien Drive). Un fichier local peut être extrait intégralement avec `pypdf` — c'est
+ainsi que le guide DGI de 52 pages a été lu en entier, sans perte.
+
+---
+
+## 6. Ce qui reste non lu dans ce code
 
 Les articles suivants n'ont **pas** été lus et restent couverts par les autres références :
 
