@@ -316,8 +316,19 @@ partie numérique et clé sont deux champs distincts.
 télé-déclarer. Un cabinet ne paie pour son client que si le mandat couvre explicitement
 « liquidation **et** paiement ».
 
+**Pénalités de retard** (CDPF, lu en source primaire) : **1,25 %/mois** si paiement spontané
+(art. 81) · **+ 3 % fixe** si le retard dépasse **60 jours** · **2,25 %/mois** si le retard est
+constaté après contrôle fiscal (art. 82) · **1 %** des revenus exonérés ou à retenue libératoire
+non déclarés (art. 85) · **minimum 10 dinars**, dû même sans impôt exigible (art. 86).
+Le « 3 % » est une pénalité **fixe**, pas un taux mensuel — c'est l'erreur la plus répandue.
+
 **Sanction du dépôt hors télédéclaration** (art. 81 bis CDPF) : **0,1 % du principal de l'impôt
-exigible, minimum 200 DT, maximum 2 000 DT**, par déclaration déposée sans respecter l'obligation.
+exigible, minimum 200 DT, maximum 2 000 DT**, par déclaration. Elle **s'ajoute** aux pénalités de
+retard, elle ne s'y substitue pas.
+
+**TVA** : **19 %** de droit commun · **13 %** · **7 %** (tableau B). Retenue à la source de TVA de
+**25 %** opérée par l'État et le secteur public sur les achats **≥ 1 000 D TTC** (art. 19 bis du
+code TVA) — à ne pas confondre avec la retenue d'IRPP/IS.
 
 **Anticiper les échéances.** La DGI rappelle dans chaque communiqué que la date annoncée est le
 **dernier jour du délai légal, pas le seul jour de dépôt** — la saturation du système les jours
@@ -342,6 +353,7 @@ d'échéance est réelle et documentée.
 |---|---|---|
 | **`references/guide-officiel-dgi.md`** | **SOURCE PRIMAIRE LUE** — guide officiel DGI, 52 p. Cadre juridique, adhésion, écrans de liquidation de chaque déclaration, TCL/TH/TFP, états, rectification, téléliquidation. **Prime sur toutes les autres références.** | **En premier**, pour toute question de procédure |
 | **`references/code-irpp-is.md`** | **SOURCE PRIMAIRE LUE** — Code IRPP/IS, édition intégrant la LF 2026. Articles **44** (barème IRPP, minimum d'impôt, plus-values), **44 bis-quinquies** (forfait et forfait optionnel), **49** (taux d'IS, minimum), **51** (acomptes). **Fait foi sur les taux.** | **Avant tout chiffrage** d'IS, d'IRPP, de forfait ou d'acompte |
+| **`references/code-tva-et-cdpf.md`** | **SOURCES PRIMAIRES LUES** — Code TVA 2026 (taux 19/13/7, retenue de TVA de 25 %, régime suspensif, restitution) et CDPF 2026 (**pénalités art. 81, 81 bis, 82, 85, 86**). **Fait foi sur les pénalités et les taux de TVA.** | Avant d'annoncer une **pénalité** ou un **taux de TVA** |
 | `references/ui-observee.md` | Écrans, URLs et libellés **observés directement** sur captures 2026. Complète le guide pour les écrans postérieurs à 2020. | Avant tout pilotage Chrome |
 | `references/declaration-mensuelle.md` | DMI : rubriques, taux de retenue à la source, TVA, TFP, FOPROLOS, TCL, timbre, crédit de TVA, workflow de saisie | Calcul ou contrôle d'une mensuelle |
 | `references/declarations-annuelles.md` | IS, IRPP, acomptes, employeur (7 annexes), Art. 43 LF 2025, CbCR, impôt libératoire, e-Liasse, calendrier annuel | Toute déclaration non mensuelle |

@@ -171,29 +171,37 @@ confirmée, fondement juridique non sourcé.
 
 Cadre : **Code des Droits et Procédures Fiscaux (CDPF)**, loi n° 2000-82 du 9 août 2000.
 
-| Nature | Taux historique | Après LF 2023 | Article | Confiance |
-|---|---|---|---|---|
-| Retard de dépôt/paiement **spontané** | 0,75 % / mois | **1,25 % / mois** | Art. 81 CDPF | [C] |
-| Retard constaté **après contrôle fiscal** | 1,25 % / mois | **2,25 % / mois** | Art. 82 CDPF | [C] |
-| Amende fixe additionnelle (retard de déclaration) | — | **10 %** des montants dus | LF 2023 | [C] |
-| Amende majorée : TVA non déclarée, taxation d'office, minoration d'assiette, fraude | — | **20 %** | LF 2023 | [C] |
-| **Défaut de dépôt** de déclaration | **100 à 10 000 DT** — non applicable si régularisation avant intervention de l'administration | idem | CDPF (art. non identifié) | [C] montant |
-| Dépôt sans respect de la législation en vigueur | **100 à 5 000 DT** | idem | CDPF | [C] montant |
-| Refus de délivrer un certificat de retenue à la source | **100 à 5 000 DT** | idem | CDPF | [C] montant |
-| Minimum de la pénalité de retard | **5 dinars** | non modifié | Art. 88 CDPF (probable) | [C] montant |
+> ⚠️ **SECTION CORRIGÉE PAR LA SOURCE PRIMAIRE.** Le CDPF (édition 2026) a été lu sur les articles
+> 81, 81 bis, 82, 85 et 86. **→ `code-tva-et-cdpf.md` §A**, qui fait foi.
 
-### [!] Contradictions non arbitrées
+| Nature | Taux / montant | Article |
+|---|---|---|
+| Retard de paiement **spontané**, sans intervention du contrôle | **1,25 % par mois** ou fraction | **81** |
+| Retard **> 60 jours** | **+ 3 % du montant de l'impôt** — pénalité **fixe**, cumulative | **81** |
+| Retard constaté **après intervention du contrôle fiscal** | **2,25 % par mois** | **82** |
+| Revenus **exonérés ou à retenue libératoire** non déclarés dans les délais | **1 % des revenus concernés** | **85** |
+| **Dépôt hors télédéclaration** alors qu'on y est astreint | **0,1 % du principal**, min **200 D**, max **2 000 D** | **81 bis** |
+| **Minimum** des pénalités 81, 82 et 85 | **10 dinars**, dû même sans impôt exigible | **86** |
 
-1. **Ampleur du relèvement LF 2023.** Série A (majoritaire) : 0,75→1,25 % et 1,25→2,25 %.
-   Série B : « de 0,75 % à 1,25 %, de 1,25 % à 3 %, et de 2,5 % à 5 % » — trois couples,
-   suggérant plusieurs articles modifiés. **Aucune source n'établit la correspondance
-   article ↔ taux.** Non résolu.
-2. **Un taux de 2,5 %/mois** est affirmé par une source presse pour l'IRPP annuel, quand une
-   autre indique 1,25 %/mois pour le même sujet. **Contradiction franche.**
-3. **Texte de l'art. 81 encore affiché à 0,75 %** dans les compilations CDPF en ligne
-   (probablement non mises à jour post-LF 2023, non vérifié).
-4. **Véhicule législatif** : « loi de finances 2023 » vs « **décret-loi** de finances 2023 ».
-   Publication au JORT le 23 décembre 2022.
+**Corrections apportées par la lecture du texte :**
+- le minimum n'est pas de 5 dinars mais de **10 dinars** (art. 86, et non 88) ;
+- l'« amende fixe de 10 % » et l'« amende de 20 % » attribuées à la LF 2023 par des sources
+  secondaires **n'apparaissent pas** dans les articles lus — ne plus les avancer sans vérification ;
+- les montants « 100 à 10 000 DT » et « 100 à 5 000 DT » relèvent d'articles non lus et restent
+  donc [P].
+
+### ✅ Contradictions — TOUTES ARBITRÉES par le texte
+
+1. **Ampleur du relèvement LF 2023** → la « série A » avait raison : **0,75 → 1,25 %** (art. 81) et
+   **1,25 → 2,25 %** (art. 82). Le « 3 % » de la série B est en réalité la **pénalité fixe de 3 %**
+   applicable au-delà de **60 jours** de retard — **pas un taux mensuel**. C'est de là que venait
+   la confusion. Le « 5 % » ne correspond à aucune disposition lue.
+2. **Le taux de 2,5 %/mois n'existe pas** dans le code. La source presse qui l'avançait pour
+   l'IRPP annuel se trompait ; celle qui indiquait 1,25 %/mois avait raison.
+3. **Art. 81 affiché à 0,75 % dans certaines compilations en ligne** → ce sont bien des versions
+   non mises à jour. Le texte 2026 porte 1,25 %.
+4. **Véhicule législatif** → confirmé : **décret-loi n° 2022-79 du 22 décembre 2022** portant loi
+   de finances pour 2023, dont l'**article 59** a modifié l'article 81.
 
 ### ✅ Sanction du défaut de télédéclaration — LACUNE RÉSOLUE
 
