@@ -270,10 +270,14 @@ Guide : `https://jibaya.tn/wp-content/uploads/2023/08/guide-adhesion-en-ligne-mi
   obligatoires)
 - **Télédéclaration** : liquidation et paiement
 
-### 4.4 [?] Délai d'activation
+### 4.4 ✅ Délai d'activation — LACUNE RÉSOLUE
 
-**Aucune source ne donne de délai** entre dépôt du dossier et disponibilité du compte, ni de
-mécanisme de notification. **Ne rien inventer.**
+**Source primaire** (`guide-officiel-dgi.md` §2.2) :
+
+> **« Les mots de passe ne permettent l'accès au système que le jour suivant de leur attribution. »**
+
+Soit **J+1**. Conséquence pratique : un contribuable qui régularise son adhésion ou obtient de
+nouveaux mots de passe **la veille d'une échéance ne pourra pas déposer à temps**.
 
 ### 4.5 Base légale de l'obligation [C]
 
@@ -303,12 +307,19 @@ qui sert de login sur le portail.
 
 Vérificateur en ligne : `https://finco.tn/en/outils/verificateur-matricule-fiscal`
 
-### 5.2 [!] Contradiction sur le format
+### 5.2 ✅ Contradiction sur le format — RÉSOLUE
 
-Le blog DigiGO/Vneuron indique que le matricule à ajouter dans l'espace DigiGO doit comporter
-**« 8 chiffres et une lettre »** — ce qui **contredit** le format 7 + clé documenté partout
-ailleurs. Deux hypothèses : (a) erreur du blog ; (b) le champ DigiGO attend un format zéro-préfixé
-à 8 positions. **À vérifier avant d'implémenter toute validation de format.**
+**Source primaire** (`guide-officiel-dgi.md` §3.2) :
+
+> **« Votre matricule fiscal est composé de 8 caractères (7 numériques + une clé alphabétique en
+> majuscule) à compléter par des zéro à gauche le cas échéant. »**
+
+L'hypothèse (b) était la bonne : le format est bien **7 chiffres + 1 clé**, **zéro-padé à gauche**
+pour atteindre 8 caractères. Une source qui écrit « 8 chiffres et une lettre » décrit maladroitement
+ce zéro-padding.
+
+Sur l'écran de liquidation, **matricule et clé sont deux champs distincts** : partie numérique
+(7 chiffres) et clé (1 lettre majuscule).
 
 ---
 
@@ -389,12 +400,23 @@ Recommandation officielle DGI (page « Recommandation pour accéder au site ») 
 Cause : matricule non enregistré comme adhérent. Résolution : déposer le formulaire d'adhésion à la
 DGE ou au bureau de contrôle, ou adhérer en ligne.
 
-### 8.3 Mot de passe oublié / compte bloqué
+### 8.3 ✅ Mot de passe oublié — LACUNE RÉSOLUE
 
-[C] Le mot de passe est **attribué par la structure de contrôle** et modifiable après la première
-connexion. [P] Par conséquent le point de contact pour une réinitialisation est le **bureau de
-contrôle des impôts / la DGE de rattachement**. **[?] Aucune source ne décrit une procédure
-formelle de réinitialisation ni de canal libre-service « mot de passe oublié ».**
+**Source primaire** (`guide-officiel-dgi.md` §3.4) :
+
+> **« Si vous avez oublié votre mot de passe, téléchargez le formulaire de mise à jour de
+> l'adhésion et déposez-le auprès de la structure de contrôle des impôts dont vous relevez, qui va
+> vous attribuer de nouveaux mots de passe. »**
+
+Il n'existe donc **aucun canal libre-service**. La procédure est un **dépôt de formulaire au
+guichet**, et les nouveaux mots de passe ne fonctionnent qu'**à J+1**.
+
+**Caractéristiques du mot de passe** : celui attribué par l'administration comporte **15 chiffres**
+et doit être modifié **dès le premier accès**. Le nouveau doit faire **6 à 15 caractères**, sans
+caractères spéciaux (`, ; / ? + « ° [`).
+
+**Structures de rattachement** : Direction des Grandes Entreprises, **Direction des Moyennes
+Entreprises**, ou Bureau de Contrôle des Impôts territorialement compétent.
 
 ### 8.4 [?] Erreurs Java / applet
 

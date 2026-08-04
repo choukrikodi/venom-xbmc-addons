@@ -195,12 +195,17 @@ Cadre : **Code des Droits et Procédures Fiscaux (CDPF)**, loi n° 2000-82 du 9 
 4. **Véhicule législatif** : « loi de finances 2023 » vs « **décret-loi** de finances 2023 ».
    Publication au JORT le 23 décembre 2022.
 
-### [?] Sanction du défaut de télédéclaration
+### ✅ Sanction du défaut de télédéclaration — LACUNE RÉSOLUE
 
-**Lacune documentaire.** Aucune source n'identifie de sanction propre au dépôt papier alors
-qu'on est astreint à la télédéclaration. Deux pistes non vérifiées : assimilation au « dépôt
-sans observation de la législation » (100 à 5 000 DT), ou régime du défaut de déclaration
-(100 à 10 000 DT + pénalités). **Ne rien affirmer.**
+**Source primaire** : guide officiel de la DGI (voir `guide-officiel-dgi.md` §1).
+
+**Article 81 bis du CDPF** — amende due **au titre de chaque déclaration fiscale déposée sans
+respecter l'obligation** de souscription et de dépôt par moyens électroniques fiables à distance :
+
+> **0,1 % du montant du principal de l'impôt exigible · minimum 200 dinars · maximum 2 000 dinars**
+
+*(Les deux pistes envisagées précédemment — assimilation au « dépôt sans observation de la
+législation » ou au défaut de déclaration — étaient toutes deux fausses.)*
 
 ### Amnistie fiscale 2026 (contexte) [C]
 

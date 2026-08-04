@@ -33,15 +33,24 @@ Le portail tunisien est **`jibaya.tn`** (ex-`impots.finances.gov.tn`), le systè
 
 | Document | Pays | Lu | Résumé indirect | Inaccessible |
 |---|:--:|:--:|:--:|:--:|
+| **⭐ Guide de la télé-déclaration fiscale — DGI** | 🇹🇳 | ✅ **52 p.** | — | — |
 | **Directives d'utilisation — tests en ligne support magnétique** | 🇹🇳 | ✅ **8 p.** | — | — |
 | Guide des services en ligne « Jibaya'tic » 2025 | 🇩🇿 | ❌ | ✅ | corps du document |
 | Guide d'adhésion en ligne à la télédéclaration | 🇹🇳 | ❌ | ✅ | corps du document |
-| Guide de la télé-déclaration fiscale | 🇹🇳 | ❌ | ✅ | corps du document |
 | EMPCCA (cahier des charges déclaration employeur) | 🇹🇳 | ❌ | ✅ | PDF — **mais format reconstruit et recoupé, voir §3** |
 | Guide d'inscription déclaration pays par pays | 🇹🇳 | ❌ | ✅ | corps du document |
 | Dépliant « télé-déclaration et télépaiement » | 🇹🇳 | ❌ | ✅ | PDF (URL du fichier non trouvée) |
 
-**Bilan : 1 seul PDF officiel lu intégralement**, et ce n'était aucun des documents visés au départ.
+**Bilan : 2 PDF officiels lus intégralement.** Le **Guide de la télé-déclaration fiscale** a été
+fourni directement par l'utilisateur (upload) et dépouillé — c'est désormais la **source primaire
+de référence du skill** : `guide-officiel-dgi.md`, avec le PDF et le texte intégral archivés dans
+`sources-primaires/`. Il faisait **52 pages** et non 11 comme l'annonçait le moteur de recherche.
+
+**Lacunes qu'il a résolues à lui seul** : sanction du défaut de télédéclaration (art. 81 bis CDPF) ·
+délai d'activation des mots de passe (J+1) · procédure de mot de passe oublié · format zéro-padé du
+matricule · procédure de rectification · table complète des états de déclaration · **fenêtre
+d'indisponibilité 17H-19H et pénalités après 17H le jour de l'échéance** (fait absent de toutes les
+sources web).
 
 ---
 

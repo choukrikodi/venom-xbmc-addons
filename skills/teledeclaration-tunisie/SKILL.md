@@ -109,6 +109,18 @@ reportée au premier jour ouvrable suivant. La formulation officielle ne mention
 dimanche/férié, mais la pratique DGI 2026 reporte aussi systématiquement les samedis (9 cas
 observés). Vérifier le jour de la semaine avant d'annoncer une date.
 
+### ⭐ La date limite est 17H00, pas minuit
+
+Le guide officiel de la DGI est formel : **le serveur n'est pas accessible entre 17H et 19H, et
+après 19H on passe à la journée J+1.** Surtout :
+
+> « À l'échéance et après 17H, des pénalités de retard seront encourues lors de la liquidation de
+> la dernière déclaration mensuelle, annuelle ou d'acompte provisionnel échue. »
+
+**Une déclaration liquidée après 17H le jour de l'échéance est pénalisée.** Ce fait n'apparaît
+dans aucune source web — il vient de la source primaire. Le rappeler systématiquement quand une
+échéance approche, et ne jamais annoncer « tu as jusqu'au 20 » sans préciser « avant 17H ».
+
 ⚠️ **Les acomptes provisionnels ne bénéficient pas du raccourcissement à 20 jours** : ils restent
 au 25 (PP) / 28 (PM).
 
@@ -233,17 +245,42 @@ le détail de chacune :
 
 ### B4. ⚠️ Après le paiement — l'étape que tout le monde saute
 
-Le télépaiement génère un **ordre de prélèvement** envoyé à la Banque Centrale / au système de
-télécompensation. La réponse (acceptation ou **rejet**) met à jour le statut de la déclaration.
+Une déclaration **liquidée** n'est **pas** une déclaration déposée. Tant que le paiement n'est pas
+confirmé, elle bascule en **« suspendue »** à l'échéance — c'est-à-dire qu'elle n'existe pas.
+Confirmer le paiement **même si la déclaration est nulle ou dégage un report d'impôt**.
 
-**Une déclaration rejetée doit être liquidée de nouveau et supporte les pénalités de retard.**
+**Table des états** (source primaire) :
 
-Autrement dit : un rejet bancaire silencieux transforme une déclaration déposée dans les temps en
-déclaration en retard. **La validation n'est pas la fin de l'opération.** Toujours revenir
-vérifier le statut, et le dire à l'utilisateur s'il s'apprête à fermer le navigateur.
+| État | Ce que ça veut dire |
+|---|---|
+| **Liquidée** | Calculée, mais **paiement pas validé** — ne compte pas encore |
+| **Paiement confirmé** | Validée pour envoi au paiement |
+| **Envoyée pour paiement** | Ordre transmis à la télécompensation |
+| **Payée** | Acceptée et payée — **seul état sûr** |
+| **Suspendue** | Liquidée mais non validée à temps → **déposer une autre déclaration** |
+| **Rejeté** | Ordre refusé par la banque → **situation non en règle**, non supprimable |
+| **Partiellement rejeté** | Paiement réparti sur plusieurs comptes, un ordre rejeté → régulariser ; les montants débités sont consignés à la recette du Pôle de recouvrement |
 
-Fonctions disponibles : consulter les déclarations antérieures et leur situation · annuler un
-ordre de paiement · consulter le détail d'un paiement rejeté · imprimer les déclarations payées.
+**Les déclarations rejetées ou suspendues doivent être liquidées de nouveau. Elles ne peuvent être
+ni supprimées ni modifiées.** Un e-mail informe du sort de l'ordre de prélèvement — d'où
+l'importance d'une adresse à jour dans l'espace adhérent.
+
+Une déclaration payée porte une **référence de quittance commençant par la lettre `E`** et la date
+de paiement. Les quittances se retirent auprès de **n'importe quelle Recette des Finances**.
+
+### B5. Rectifier une déclaration
+
+L'ordre des opérations est contre-intuitif et se trompe facilement :
+
+| Situation | Ce qu'il faut faire |
+|---|---|
+| État **« liquidée »** | **Modifier** directement. Ajout/suppression d'un impôt possible. Suppression possible. |
+| État **« paiement confirmé »** | **Annuler d'abord la validation du paiement**, puis modifier. |
+| Initiale **non encore payée** | **Une rectificative est impossible** — passer par la modification. |
+| Initiale **payée** | La **rectificative** devient possible. |
+
+**Jamais modifiables** : la **période** et le **matricule fiscal**. En cas d'erreur de période, il
+faut **supprimer** la déclaration tant qu'elle est à l'état « liquidée ».
 
 ---
 
@@ -264,9 +301,22 @@ la consultation **e-Situation Fiscale**.
 
 **Certificat bloqué après 3 codes PIN erronés.** Prévenir avant la troisième tentative.
 
-**Mot de passe oublié : pas de libre-service.** Le mot de passe est attribué par le bureau de
-contrôle des impôts ou la DGE de rattachement, et c'est là qu'il faut s'adresser. Aucune
-procédure de réinitialisation en ligne n'est documentée.
+**Mot de passe oublié : pas de libre-service, et compter 24h.** Il faut télécharger le
+**formulaire de mise à jour de l'adhésion** et le déposer auprès de la structure de contrôle
+(DGE, Direction des Moyennes Entreprises ou bureau territorial), qui attribue de nouveaux mots de
+passe. Et **les mots de passe ne fonctionnent que le jour suivant leur attribution** — un client
+bloqué la veille d'une échéance ne pourra pas déposer à temps. Le dire tout de suite.
+
+**Le matricule se saisit zéro-padé.** Format : **8 caractères = 7 chiffres + 1 clé alphabétique
+majuscule**, « à compléter par des zéros à gauche le cas échéant ». Sur l'écran de liquidation,
+partie numérique et clé sont deux champs distincts.
+
+**Le paiement reste à la charge du contribuable**, même s'il a mandaté un professionnel pour
+télé-déclarer. Un cabinet ne paie pour son client que si le mandat couvre explicitement
+« liquidation **et** paiement ».
+
+**Sanction du dépôt hors télédéclaration** (art. 81 bis CDPF) : **0,1 % du principal de l'impôt
+exigible, minimum 200 DT, maximum 2 000 DT**, par déclaration déposée sans respecter l'obligation.
 
 **Anticiper les échéances.** La DGI rappelle dans chaque communiqué que la date annoncée est le
 **dernier jour du délai légal, pas le seul jour de dépôt** — la saturation du système les jours
@@ -289,7 +339,8 @@ d'échéance est réelle et documentée.
 
 | Fichier | Contenu | Quand le lire |
 |---|---|---|
-| `references/ui-observee.md` | Écrans, URLs et libellés **observés directement**. Fait autorité sur toute doc externe. | Avant tout pilotage Chrome |
+| **`references/guide-officiel-dgi.md`** | **SOURCE PRIMAIRE LUE** — guide officiel DGI, 52 p. Cadre juridique, adhésion, écrans de liquidation de chaque déclaration, TCL/TH/TFP, états, rectification, téléliquidation. **Prime sur toutes les autres références.** | **En premier**, pour toute question de procédure |
+| `references/ui-observee.md` | Écrans, URLs et libellés **observés directement** sur captures 2026. Complète le guide pour les écrans postérieurs à 2020. | Avant tout pilotage Chrome |
 | `references/declaration-mensuelle.md` | DMI : rubriques, taux de retenue à la source, TVA, TFP, FOPROLOS, TCL, timbre, crédit de TVA, workflow de saisie | Calcul ou contrôle d'une mensuelle |
 | `references/declarations-annuelles.md` | IS, IRPP, acomptes, employeur (7 annexes), Art. 43 LF 2025, CbCR, impôt libératoire, e-Liasse, calendrier annuel | Toute déclaration non mensuelle |
 | `references/calendrier-et-penalites.md` | Délais par catégorie, règle de report, calendrier 2026 réel, pénalités, amnistie 2026 | Question d'échéance ou de retard |
