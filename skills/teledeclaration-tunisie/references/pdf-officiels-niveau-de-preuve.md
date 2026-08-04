@@ -151,6 +151,28 @@ ce qui confirme la rareté réelle du document.
 
 ---
 
+## 3bis. Sources en attente de lecture — file prioritaire
+
+Ces sources ont été **explicitement désignées comme prioritaires** mais restent inaccessibles
+(403 sur `jibaya.tn` depuis l'environnement d'exécution). Dès qu'un accès est possible — copie
+déposée dans un dépôt Git, upload direct, ou levée du blocage — **les lire en premier** et
+mettre à jour les références concernées.
+
+| Source | URL | Ce qu'elle résout | Fichier à corriger |
+|---|---|---|---|
+| **Code de l'IRPP et de l'IS 2025** | `https://jibaya.tn/docs/code-de-lirpp-et-is-2025/` | **Bornes intermédiaires du barème IRPP** (art. 44) — actuellement marquées [P] et interdites de codage · **taux d'IS** (art. 49) et articulation avec le barème progressif · **art. 51 bis** (avance sociétés de personnes) · **art. 55** (certificats de retenue à la source) | `declarations-annuelles.md` §2.2, §6.1 |
+| **Note Commune n° 08/2025** | `https://jibaya.tn/docs/note-commune-n08-2025/` | Date d'entrée en vigueur du barème progressif d'IS (2024 ou 2025 — contradiction [!]) et articulation avec les taux sectoriels | `declarations-annuelles.md` §2.2 |
+| **Guide de la télé-déclaration fiscale** (11 p.) | `https://jibaya.tn/wp-content/uploads/2023/08/sodapdf-compressed-1-1-1.pdf` | Écrans réels, procédure de rectification d'une déclaration liquidée, fonctions de consultation | `ui-observee.md`, `telepaiement-faq-ecosysteme.md` §4 |
+| **Imprimé officiel de la DMI** | `https://jibaya.tn/formulaires-a-telecharger/` → section « Chiffre d'affaires (CA) » | **Codes et numéros de cases** de la déclaration mensuelle — lacune n°1 du mode PILOTAGE, introuvable ailleurs | `declaration-mensuelle.md` |
+| **EMPCCA_25V2** | `https://jibaya.tn/wp-content/uploads/2026/01/EMPCCA_25V2.pdf` | Valide ou infirme la reconstruction du §3 ci-dessous | ce fichier, §3 |
+
+> **Règle de conduite** : tant qu'une de ces sources n'est pas lue, les données qu'elle
+> conditionne restent marquées [P] ou [!] et ne doivent pas être présentées comme certaines.
+> Lire une de ces sources n'est pas un bonus : c'est ce qui fait passer une donnée de
+> « probablement vrai » à « utilisable dans une déclaration fiscale réelle ».
+
+---
+
 ## 4. [!] Contradiction relevée sur le seuil CbCR
 
 Deux réponses de moteur ont donné **« 1 636 millions »** et **« 1 636 milliards »** de dinars pour
