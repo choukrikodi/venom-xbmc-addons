@@ -1,5 +1,11 @@
 # Dossier de recherche — Déclaration Mensuelle des Impôts (DMI) en Tunisie
 
+> ⚠️ **AVERTISSEMENT — LES TAUX DE RETENUE À LA SOURCE DE CE FICHIER SONT OBSOLÈTES.**
+> Ils provenaient de blogs d'éditeurs de logiciels contradictoires. Ils sont désormais
+> remplacés par la lecture du texte : **→ `retenue-a-la-source.md`** (article 52 du code
+> IRPP/IS, source primaire), qui fait foi. Le reste de ce fichier (TVA, TFP, FOPROLOS, TCL,
+> workflow de saisie) reste utile avec son marquage de fiabilité d'origine.
+
 **Objet** : matière première pour un skill Claude sur la télédéclaration fiscale tunisienne (portail DGI / e-t@srih).
 **Date de collecte** : août 2026.
 **Méthode** : WebSearch uniquement (WebFetch et curl bloqués en 403 sur l'intégralité des domaines tunisiens testés : `finances.gov.tn`, `jibaya.tn`, `hesabi.tn`, `finco.tn`). Aucun PDF officiel n'a pu être lu directement — **tout le contenu ci-dessous provient de synthèses de moteur de recherche**, jamais de la lecture du texte source.

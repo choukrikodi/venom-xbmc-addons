@@ -139,10 +139,13 @@ l'Art. 43 LF 2025, la déclaration pays par pays, l'impôt libératoire** :
 
 **Points de vigilance sur le calcul :**
 
-- **Base de la retenue à la source** : les sources divergent entre **HT** et **TTC**. La source
-  doctrinale la plus fiable (profiscal) retient le **montant TTC, TVA comprise**. Les blogs
-  d'éditeurs qui annoncent « HT » sont probablement dans l'erreur. Signaler cette divergence
-  quand elle a un impact chiffré.
+- **Retenue à la source** : les taux viennent maintenant du texte de l'**article 52** du code —
+  `retenue-a-la-source.md`, qui fait foi. La grille la plus fréquente est **1,5 % / 1 % / 0,5 %**
+  sur les achats **≥ 1 000 D TVA COMPRISE** : le taux dépend du **régime d'imposition du
+  fournisseur**, pas de la nature de l'achat. Honoraires **10 %**, ramenés à **3 %** si le
+  bénéficiaire est au réel — mais pour une personne physique, **seulement sur présentation de sa
+  carte d'identification fiscale**. Loyers **10 %**, loyers d'hôtels **5 %**, non-résidents **15 %**,
+  dividendes **10 %**, capitaux mobiliers **20 %**.
 - **Taux d'IS** : **20 % de droit commun** depuis le 01/01/2024, plus trois taux sectoriels
   (10 / 35 / 40 %). **Il n'existe pas de barème progressif par chiffre d'affaires** — c'est une
   erreur répandue dans les sources secondaires. Attention : les **établissements de paiement** sont
@@ -356,7 +359,8 @@ d'échéance est réelle et documentée.
 | **`references/code-tva-et-cdpf.md`** | **SOURCES PRIMAIRES LUES** — Code TVA 2026 (taux 19/13/7, retenue de TVA de 25 %, régime suspensif, restitution) et CDPF 2026 (**pénalités art. 81, 81 bis, 82, 85, 86**). **Fait foi sur les pénalités et les taux de TVA.** | Avant d'annoncer une **pénalité** ou un **taux de TVA** |
 | **`references/fiscalite-locale-et-lois-de-finances.md`** | **SOURCES PRIMAIRES LUES** — Code de la fiscalité locale (**TCL** art. 37-38 : assiette, taux, option 25 %, minimum TIB ; **droit de licence** art. 61-63) et LF 2025 (art. 36-37). | Avant de chiffrer la **TCL** ou le **droit de licence** |
 | `references/ui-observee.md` | Écrans, URLs et libellés **observés directement** sur captures 2026. Complète le guide pour les écrans postérieurs à 2020. | Avant tout pilotage Chrome |
-| `references/declaration-mensuelle.md` | DMI : rubriques, taux de retenue à la source, TVA, TFP, FOPROLOS, TCL, timbre, crédit de TVA, workflow de saisie | Calcul ou contrôle d'une mensuelle |
+| **`references/retenue-a-la-source.md`** | **SOURCE PRIMAIRE LUE** — article 52 du code IRPP/IS : tous les taux de RS, la grille 1,5/1/0,5 %, le seuil de 1 000 D **TVA comprise**, les conditions de forme. **Fait foi sur la retenue à la source.** | Dès qu'une **retenue à la source** est en jeu |
+| `references/declaration-mensuelle.md` | DMI : rubriques, TVA, TFP, FOPROLOS, TCL, timbre, crédit de TVA, workflow de saisie. ⚠️ Ses **taux de RS sont obsolètes** — voir la ligne ci-dessus | Calcul ou contrôle d'une mensuelle |
 | `references/declarations-annuelles.md` | IS, IRPP, acomptes, employeur (7 annexes), Art. 43 LF 2025, CbCR, impôt libératoire, e-Liasse, calendrier annuel | Toute déclaration non mensuelle |
 | `references/calendrier-et-penalites.md` | Délais par catégorie, règle de report, calendrier 2026 réel, pénalités, amnistie 2026 | Question d'échéance ou de retard |
 | `references/plateformes-et-acces.md` | Portail, domaines, DIGIGO vs clé USB, adhésion, matricule fiscal, mandatement, dépannage | Question d'accès ou d'authentification |
