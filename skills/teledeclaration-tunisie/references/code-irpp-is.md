@@ -33,6 +33,15 @@ Vérifications effectuées sur le texte intégral :
 `declarations-annuelles.md` les qualifiait d'« incompatibles » et de « simplification erronée » :
 c'était l'inverse. Correction appliquée.
 
+### ⭐ Origine de l'erreur — identifiée sur le texte de la loi
+
+La lecture de la **LF 2025 elle-même** (loi n° 2024-48) explique la propagation :
+son **article 37 est intitulé « Appui à l'équité fiscale par l'adoption de taux progressifs de
+l'impôt sur les sociétés »** — mais son contenu fixe un taux de **20 %** plus des taux sectoriels.
+La « progressivité » du titre désigne l'échelonnement **par secteur d'activité**, pas un barème par
+chiffre d'affaires. Les sources secondaires ont lu le titre et inventé le barème.
+**→ `fiscalite-locale-et-lois-de-finances.md` §1.**
+
 ### 1.2 Barème réel de l'IS
 
 > **Article 49-I** : « Le taux de l'impôt sur les sociétés, appliqué au bénéfice imposable
