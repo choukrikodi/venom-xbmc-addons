@@ -1,0 +1,9 @@
+=== 2026-09-23T20:02:02+00:00 https://mcp.trivago.com/mcp call trivago-search-suggestions {"query":"Palawan"}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "error": {
+  "code": -32602,
+  "message": "tool 'trivago-search-suggestions' not found: tool not found"
+ }
+}
