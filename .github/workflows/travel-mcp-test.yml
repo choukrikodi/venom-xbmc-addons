@@ -1,0 +1,25 @@
+name: travel-mcp-test
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/travel-agent-skill-setup-vhqmwf]
+    paths: [.github/workflows/travel-mcp-test.yml, skills/travel-agent/scripts/**]
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: List tools
+        run: |
+          C=skills/travel-agent/scripts/mcp_call.py
+          python3 $C https://mcp.kiwi.com list || true
+          python3 $C https://mcp.trivago.com/mcp list || true
+      - name: Test calls
+        run: bash skills/travel-agent/scripts/test_case.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: raw-responses
+          path: out/
