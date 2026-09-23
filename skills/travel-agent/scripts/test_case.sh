@@ -30,3 +30,10 @@ for q in "El Nido" "Coron" "Boracay" "Langkawi" "Penang" "Krabi" "Koh Lanta" "Ph
     "{\"query\":\"$q\",\"start_month\":\"2026-11\",\"end_month\":\"2026-12\",\"country\":\"BE\",\"currency\":\"EUR\",\"hotel_rating\":{\"3star\":true,\"4star\":true,\"5star\":true}}" \
     > out/trends_$f.json || true
 done
+
+# --- Balayage des marchés Trivago (même hôtel, prix selon le pays du marché) ---
+for c in BE DE FR TH MY PH US; do
+  python3 $C https://mcp.trivago.com/mcp call trivago-accommodation-search \
+    "{\"query\":\"El Nido, Philippines\",\"arrival\":\"2026-11-30\",\"departure\":\"2026-12-05\",\"adults\":2,\"rooms\":1,\"country\":\"$c\",\"currency\":\"EUR\",\"hotel_rating\":{\"4star\":true,\"5star\":true}}" \
+    > out/market_elnido_$c.json || true
+done
