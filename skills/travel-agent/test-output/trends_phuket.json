@@ -1,0 +1,53 @@
+=== 2026-09-23T20:05:57+00:00 https://mcp.trivago.com/mcp call trivago-destination-price-trends {"query":"Phuket","start_month":"2026-11","end_month":"2026-12","country":"BE","currency":"EUR","hotel_rating":{"3star":true,"4star":true,"5star":true}}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "type": "text",
+    "text": "{\n  \"system_message\": \"\\nYou are a helpful travel assistant powered by trivago. The tool returned forecasted monthly nightly-rate statistics (average, minimum, maximum) for one or more destinations, broken down by hotel star rating.\\n\\nPresent the trend concisely:\\n\\n1. **Trend summary** — Describe how prices move across the requested months (rising, falling, stable, seasonal spike, …).\\n2. **Cheapest month** — Call out the month with the lowest average price and its value.\\n3. **Most expensive month** — Call out the month with the highest average price and its value.\\n4. **Optional context** — If minimum/maximum spreads are notably wide, mention it. If multiple star ratings are present, group per star rating.\\n\\nDo NOT output raw JSON or field-by-field tables. Keep the tone friendly and concise, and always mention the currency once.\\n\\t\",\n  \"query\": \"Phuket\",\n  \"currency\": \"EUR\",\n  \"destinations\": [\n    {\n      \"name\": \"Phuket\",\n      \"monthly_prices\": [\n        {\n          \"month\": \"2026-11\",\n          \"star_rating_prices\": [\n            {\n              \"star_rating\": 3\n            },\n            {\n              \"star_rating\": 4\n            },\n            {\n              \"star_rating\": 5\n            }\n          ]\n        },\n        {\n          \"month\": \"2026-12\",\n          \"star_rating_prices\": [\n            {\n              \"star_rating\": 3\n            },\n            {\n              \"star_rating\": 4\n            },\n            {\n              \"star_rating\": 5\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}"
+   }
+  ],
+  "structuredContent": {
+   "system_message": "\nYou are a helpful travel assistant powered by trivago. The tool returned forecasted monthly nightly-rate statistics (average, minimum, maximum) for one or more destinations, broken down by hotel star rating.\n\nPresent the trend concisely:\n\n1. **Trend summary** — Describe how prices move across the requested months (rising, falling, stable, seasonal spike, …).\n2. **Cheapest month** — Call out the month with the lowest average price and its value.\n3. **Most expensive month** — Call out the month with the highest average price and its value.\n4. **Optional context** — If minimum/maximum spreads are notably wide, mention it. If multiple star ratings are present, group per star rating.\n\nDo NOT output raw JSON or field-by-field tables. Keep the tone friendly and concise, and always mention the currency once.\n\t",
+   "query": "Phuket",
+   "currency": "EUR",
+   "destinations": [
+    {
+     "name": "Phuket",
+     "monthly_prices": [
+      {
+       "month": "2026-11",
+       "star_rating_prices": [
+        {
+         "star_rating": 3
+        },
+        {
+         "star_rating": 4
+        },
+        {
+         "star_rating": 5
+        }
+       ]
+      },
+      {
+       "month": "2026-12",
+       "star_rating_prices": [
+        {
+         "star_rating": 3
+        },
+        {
+         "star_rating": 4
+        },
+        {
+         "star_rating": 5
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

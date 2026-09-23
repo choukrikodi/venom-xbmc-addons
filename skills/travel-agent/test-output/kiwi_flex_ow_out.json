@@ -1,0 +1,310 @@
+=== 2026-09-23T20:05:41+00:00 https://mcp.kiwi.com call search-flight {"flyFrom":"BRU","flyTo":"MNL,CEB,PPS","departureDate":"15/11/2026","departureDateTo":"10/12/2026","one_for_city":true,"adults":2,"currency":"EUR","locale":"fr","sort":"price"}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"BRU → MNL,CEB,PPS on 15/11/2026–10/12/2026, 2 adults [one per city]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 3,\n  \"itineraries\": [\n    {\n      \"id\": \"091e255851240000b5e9d438_0|07f01edb5124000016979eed_0|07f01edb5124000016979eed_1\",\n      \"price\": 735.0,\n      \"priceFormatted\": \"735 EUR\",\n      \"totalDurationSeconds\": 87900,\n      \"bookingUrl\": \"https://kiwi.com/u/5fwdwg\",\n      \"imageId\": \"manila_ph\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 0,\n        \"checkedBag\": 0\n      },\n      \"outbound\": {\n        \"from\": \"CRL\",\n        \"to\": \"MNL\",\n        \"departureTime\": \"2026-11-15T14:05:00\",\n        \"arrivalTime\": \"2026-11-16T21:30:00\",\n        \"durationSeconds\": 87900,\n        \"stops\": 2,\n        \"route\": [\n          \"CRL\",\n          \"BGY\",\n          \"MCT\",\n          \"MNL\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"CRL\",\n            \"to\": \"BGY\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Milan\",\n            \"fromName\": \"Aéroport de Bruxelles-Charleroi\",\n            \"toName\": \"Milan Bergamo International Airport\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Italie\",\n            \"departureTime\": \"2026-11-15T14:05:00\",\n            \"arrivalTime\": \"2026-11-15T15:35:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"FR\",\n            \"carrierName\": \"Ryanair\",\n            \"flightNumber\": \"FR4522\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"MXP\",\n            \"to\": \"MCT\",\n            \"fromCity\": \"Milan\",\n            \"toCity\": \"Mascate\",\n            \"fromName\": \"Aéroport de Milan Malpensa\",\n            \"toName\": \"Aéroport international de Mascate\",\n            \"fromCountry\": \"Italie\",\n            \"toCountry\": \"Oman\",\n            \"departureTime\": \"2026-11-15T21:05:00\",\n            \"arrivalTime\": \"2026-11-16T06:15:00\",\n            \"durationSeconds\": 22200,\n            \"carrier\": \"WY\",\n            \"carrierName\": \"Oman Air\",\n            \"flightNumber\": \"WY144\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"MCT\",\n            \"to\": \"MNL\",\n            \"fromCity\": \"Mascate\",\n            \"toCity\": \"Manille\",\n            \"fromName\": \"Aéroport international de Mascate\",\n            \"toName\": \"Aéroport international Ninoy-Aquino\",\n            \"fromCountry\": \"Oman\",\n            \"toCountry\": \"Philippines\",\n            \"departureTime\": \"2026-11-16T09:15:00\",\n            \"arrivalTime\": \"2026-11-16T21:30:00\",\n            \"durationSeconds\": 29700,\n            \"carrier\": \"WY\",\n            \"carrierName\": \"Oman Air\",\n            \"flightNumber\": \"WY843\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"091e255851240000b5e9d438_0|07f01edb5124000016979eed_0|07f01edb5124000016979eed_1|1edb121051250000415d47f2_0\",\n      \"price\": 805.0,\n      \"priceFormatted\": \"805 EUR\",\n      \"totalDurationSeconds\": 98700,\n      \"bookingUrl\": \"https://kiwi.com/u/q9kvzg\",\n      \"imageId\": \"cebu_ph\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 0,\n        \"checkedBag\": 0\n      },\n      \"outbound\": {\n        \"from\": \"CRL\",\n        \"to\": \"CEB\",\n        \"departureTime\": \"2026-11-15T14:05:00\",\n        \"arrivalTime\": \"2026-11-17T00:30:00\",\n        \"durationSeconds\": 98700,\n        \"stops\": 3,\n        \"route\": [\n          \"CRL\",\n          \"BGY\",\n          \"MCT\",\n          \"MNL\",\n          \"CEB\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"CRL\",\n            \"to\": \"BGY\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Milan\",\n            \"fromName\": \"Aéroport de Bruxelles-Charleroi\",\n            \"toName\": \"Milan Bergamo International Airport\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Italie\",\n            \"departureTime\": \"2026-11-15T14:05:00\",\n            \"arrivalTime\": \"2026-11-15T15:35:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"FR\",\n            \"carrierName\": \"Ryanair\",\n            \"flightNumber\": \"FR4522\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"MXP\",\n            \"to\": \"MCT\",\n            \"fromCity\": \"Milan\",\n            \"toCity\": \"Mascate\",\n            \"fromName\": \"Aéroport de Milan Malpensa\",\n            \"toName\": \"Aéroport international de Mascate\",\n            \"fromCountry\": \"Italie\",\n            \"toCountry\": \"Oman\",\n            \"departureTime\": \"2026-11-15T21:05:00\",\n            \"arrivalTime\": \"2026-11-16T06:15:00\",\n            \"durationSeconds\": 22200,\n            \"carrier\": \"WY\",\n            \"carrierName\": \"Oman Air\",\n            \"flightNumber\": \"WY144\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"MCT\",\n            \"to\": \"MNL\",\n            \"fromCity\": \"Mascate\",\n            \"toCity\": \"Manille\",\n            \"fromName\": \"Aéroport international de Mascate\",\n            \"toName\": \"Aéroport international Ninoy-Aquino\",\n            \"fromCountry\": \"Oman\",\n            \"toCountry\": \"Philippines\",\n            \"departureTime\": \"2026-11-16T09:15:00\",\n            \"arrivalTime\": \"2026-11-16T21:30:00\",\n            \"durationSeconds\": 29700,\n            \"carrier\": \"WY\",\n            \"carrierName\": \"Oman Air\",\n            \"flightNumber\": \"WY843\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"MNL\",\n            \"to\": \"CEB\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Cebu\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international de Mactan-Cebu\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Philippines\",\n            \"departureTime\": \"2026-11-16T23:10:00\",\n            \"arrivalTime\": \"2026-11-17T00:30:00\",\n            \"durationSeconds\": 4800,\n            \"carrier\": \"PR\",\n            \"carrierName\": \"Philippine Airlines\",\n            \"flightNumber\": \"PR2869\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1f2b07565124000041f71ada_0|0ddc1edb512500006b94fb43_0|1f2b07565124000041f71ada_1|0ddc1edb512500006b94fb43_1|1edb12f551250000b257b8ca_0\",\n      \"price\": 870.0,\n      \"priceFormatted\": \"870 EUR\",\n      \"totalDurationSeconds\": 90000,\n      \"bookingUrl\": \"https://kiwi.com/u/x9667z\",\n      \"imageId\": \"puerto-princesa_ph\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 0,\n        \"checkedBag\": 0\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"PPS\",\n        \"departureTime\": \"2026-11-15T12:20:00\",\n        \"arrivalTime\": \"2026-11-16T20:20:00\",\n        \"durationSeconds\": 90000,\n        \"stops\": 3,\n        \"route\": [\n          \"BRU\",\n          \"PEK\",\n          \"HKG\",\n          \"MNL\",\n          \"PPS\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-11-15T12:20:00\",\n            \"arrivalTime\": \"2026-11-16T04:40:00\",\n            \"durationSeconds\": 33600,\n            \"carrier\": \"HU\",\n            \"carrierName\": \"Hainan Airlines\",\n            \"flightNumber\": \"HU492\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"HKG\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Hong Kong\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport international de Hong Kong\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Hong Kong\",\n            \"departureTime\": \"2026-11-16T07:30:00\",\n            \"arrivalTime\": \"2026-11-16T11:10:00\",\n            \"durationSeconds\": 13200,\n            \"carrier\": \"CX\",\n            \"carrierName\": \"Cathay Pacific\",\n            \"flightNumber\": \"CX345\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"HKG\",\n            \"to\": \"MNL\",\n            \"fromCity\": \"Hong Kong\",\n            \"toCity\": \"Manille\",\n            \"fromName\": \"Aéroport international de Hong Kong\",\n            \"toName\": \"Aéroport international Ninoy-Aquino\",\n            \"fromCountry\": \"Hong Kong\",\n            \"toCountry\": \"Philippines\",\n            \"departureTime\": \"2026-11-16T14:20:00\",\n            \"arrivalTime\": \"2026-11-16T16:35:00\",\n            \"durationSeconds\": 8100,\n            \"carrier\": \"CX\",\n            \"carrierName\": \"Cathay Pacific\",\n            \"flightNumber\": \"CX919\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"MNL\",\n            \"to\": \"PPS\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Puerto Princesa\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international de Puerto Princesa\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Philippines\",\n            \"departureTime\": \"2026-11-16T19:00:00\",\n            \"arrivalTime\": \"2026-11-16T20:20:00\",\n            \"durationSeconds\": 4800,\n            \"carrier\": \"PR\",\n            \"carrierName\": \"Philippine Airlines\",\n            \"flightNumber\": \"PR2779\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 2026,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "BRU → MNL,CEB,PPS on 15/11/2026–10/12/2026, 2 adults [one per city]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 3,
+   "itineraries": [
+    {
+     "id": "091e255851240000b5e9d438_0|07f01edb5124000016979eed_0|07f01edb5124000016979eed_1",
+     "price": 735.0,
+     "priceFormatted": "735 EUR",
+     "totalDurationSeconds": 87900,
+     "bookingUrl": "https://kiwi.com/u/5fwdwg",
+     "imageId": "manila_ph",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 0,
+      "checkedBag": 0
+     },
+     "outbound": {
+      "from": "CRL",
+      "to": "MNL",
+      "departureTime": "2026-11-15T14:05:00",
+      "arrivalTime": "2026-11-16T21:30:00",
+      "durationSeconds": 87900,
+      "stops": 2,
+      "route": [
+       "CRL",
+       "BGY",
+       "MCT",
+       "MNL"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "CRL",
+        "to": "BGY",
+        "fromCity": "Bruxelles",
+        "toCity": "Milan",
+        "fromName": "Aéroport de Bruxelles-Charleroi",
+        "toName": "Milan Bergamo International Airport",
+        "fromCountry": "Belgique",
+        "toCountry": "Italie",
+        "departureTime": "2026-11-15T14:05:00",
+        "arrivalTime": "2026-11-15T15:35:00",
+        "durationSeconds": 5400,
+        "carrier": "FR",
+        "carrierName": "Ryanair",
+        "flightNumber": "FR4522",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "MXP",
+        "to": "MCT",
+        "fromCity": "Milan",
+        "toCity": "Mascate",
+        "fromName": "Aéroport de Milan Malpensa",
+        "toName": "Aéroport international de Mascate",
+        "fromCountry": "Italie",
+        "toCountry": "Oman",
+        "departureTime": "2026-11-15T21:05:00",
+        "arrivalTime": "2026-11-16T06:15:00",
+        "durationSeconds": 22200,
+        "carrier": "WY",
+        "carrierName": "Oman Air",
+        "flightNumber": "WY144",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "MCT",
+        "to": "MNL",
+        "fromCity": "Mascate",
+        "toCity": "Manille",
+        "fromName": "Aéroport international de Mascate",
+        "toName": "Aéroport international Ninoy-Aquino",
+        "fromCountry": "Oman",
+        "toCountry": "Philippines",
+        "departureTime": "2026-11-16T09:15:00",
+        "arrivalTime": "2026-11-16T21:30:00",
+        "durationSeconds": 29700,
+        "carrier": "WY",
+        "carrierName": "Oman Air",
+        "flightNumber": "WY843",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "091e255851240000b5e9d438_0|07f01edb5124000016979eed_0|07f01edb5124000016979eed_1|1edb121051250000415d47f2_0",
+     "price": 805.0,
+     "priceFormatted": "805 EUR",
+     "totalDurationSeconds": 98700,
+     "bookingUrl": "https://kiwi.com/u/q9kvzg",
+     "imageId": "cebu_ph",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 0,
+      "checkedBag": 0
+     },
+     "outbound": {
+      "from": "CRL",
+      "to": "CEB",
+      "departureTime": "2026-11-15T14:05:00",
+      "arrivalTime": "2026-11-17T00:30:00",
+      "durationSeconds": 98700,
+      "stops": 3,
+      "route": [
+       "CRL",
+       "BGY",
+       "MCT",
+       "MNL",
+       "CEB"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "CRL",
+        "to": "BGY",
+        "fromCity": "Bruxelles",
+        "toCity": "Milan",
+        "fromName": "Aéroport de Bruxelles-Charleroi",
+        "toName": "Milan Bergamo International Airport",
+        "fromCountry": "Belgique",
+        "toCountry": "Italie",
+        "departureTime": "2026-11-15T14:05:00",
+        "arrivalTime": "2026-11-15T15:35:00",
+        "durationSeconds": 5400,
+        "carrier": "FR",
+        "carrierName": "Ryanair",
+        "flightNumber": "FR4522",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "MXP",
+        "to": "MCT",
+        "fromCity": "Milan",
+        "toCity": "Mascate",
+        "fromName": "Aéroport de Milan Malpensa",
+        "toName": "Aéroport international de Mascate",
+        "fromCountry": "Italie",
+        "toCountry": "Oman",
+        "departureTime": "2026-11-15T21:05:00",
+        "arrivalTime": "2026-11-16T06:15:00",
+        "durationSeconds": 22200,
+        "carrier": "WY",
+        "carrierName": "Oman Air",
+        "flightNumber": "WY144",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "MCT",
+        "to": "MNL",
+        "fromCity": "Mascate",
+        "toCity": "Manille",
+        "fromName": "Aéroport international de Mascate",
+        "toName": "Aéroport international Ninoy-Aquino",
+        "fromCountry": "Oman",
+        "toCountry": "Philippines",
+        "departureTime": "2026-11-16T09:15:00",
+        "arrivalTime": "2026-11-16T21:30:00",
+        "durationSeconds": 29700,
+        "carrier": "WY",
+        "carrierName": "Oman Air",
+        "flightNumber": "WY843",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "MNL",
+        "to": "CEB",
+        "fromCity": "Manille",
+        "toCity": "Cebu",
+        "fromName": "Aéroport international Ninoy-Aquino",
+        "toName": "Aéroport international de Mactan-Cebu",
+        "fromCountry": "Philippines",
+        "toCountry": "Philippines",
+        "departureTime": "2026-11-16T23:10:00",
+        "arrivalTime": "2026-11-17T00:30:00",
+        "durationSeconds": 4800,
+        "carrier": "PR",
+        "carrierName": "Philippine Airlines",
+        "flightNumber": "PR2869",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "1f2b07565124000041f71ada_0|0ddc1edb512500006b94fb43_0|1f2b07565124000041f71ada_1|0ddc1edb512500006b94fb43_1|1edb12f551250000b257b8ca_0",
+     "price": 870.0,
+     "priceFormatted": "870 EUR",
+     "totalDurationSeconds": 90000,
+     "bookingUrl": "https://kiwi.com/u/x9667z",
+     "imageId": "puerto-princesa_ph",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 0,
+      "checkedBag": 0
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "PPS",
+      "departureTime": "2026-11-15T12:20:00",
+      "arrivalTime": "2026-11-16T20:20:00",
+      "durationSeconds": 90000,
+      "stops": 3,
+      "route": [
+       "BRU",
+       "PEK",
+       "HKG",
+       "MNL",
+       "PPS"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "PEK",
+        "fromCity": "Bruxelles",
+        "toCity": "Pékin",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international de Pékin-Capitale",
+        "fromCountry": "Belgique",
+        "toCountry": "Chine",
+        "departureTime": "2026-11-15T12:20:00",
+        "arrivalTime": "2026-11-16T04:40:00",
+        "durationSeconds": 33600,
+        "carrier": "HU",
+        "carrierName": "Hainan Airlines",
+        "flightNumber": "HU492",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "PEK",
+        "to": "HKG",
+        "fromCity": "Pékin",
+        "toCity": "Hong Kong",
+        "fromName": "Aéroport international de Pékin-Capitale",
+        "toName": "Aéroport international de Hong Kong",
+        "fromCountry": "Chine",
+        "toCountry": "Hong Kong",
+        "departureTime": "2026-11-16T07:30:00",
+        "arrivalTime": "2026-11-16T11:10:00",
+        "durationSeconds": 13200,
+        "carrier": "CX",
+        "carrierName": "Cathay Pacific",
+        "flightNumber": "CX345",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "HKG",
+        "to": "MNL",
+        "fromCity": "Hong Kong",
+        "toCity": "Manille",
+        "fromName": "Aéroport international de Hong Kong",
+        "toName": "Aéroport international Ninoy-Aquino",
+        "fromCountry": "Hong Kong",
+        "toCountry": "Philippines",
+        "departureTime": "2026-11-16T14:20:00",
+        "arrivalTime": "2026-11-16T16:35:00",
+        "durationSeconds": 8100,
+        "carrier": "CX",
+        "carrierName": "Cathay Pacific",
+        "flightNumber": "CX919",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "MNL",
+        "to": "PPS",
+        "fromCity": "Manille",
+        "toCity": "Puerto Princesa",
+        "fromName": "Aéroport international Ninoy-Aquino",
+        "toName": "Aéroport international de Puerto Princesa",
+        "fromCountry": "Philippines",
+        "toCountry": "Philippines",
+        "departureTime": "2026-11-16T19:00:00",
+        "arrivalTime": "2026-11-16T20:20:00",
+        "durationSeconds": 4800,
+        "carrier": "PR",
+        "carrierName": "Philippine Airlines",
+        "flightNumber": "PR2779",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 2026,
+   "error": null
+  }
+ }
+}
