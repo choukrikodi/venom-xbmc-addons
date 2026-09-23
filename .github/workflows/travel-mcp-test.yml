@@ -6,6 +6,9 @@ on:
     branches: [claude/travel-agent-skill-setup-vhqmwf]
     paths: [.github/workflows/travel-mcp-test.yml, skills/travel-agent/scripts/**]
 
+permissions:
+  contents: write
+
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -14,12 +17,16 @@ jobs:
       - name: List tools
         run: |
           C=skills/travel-agent/scripts/mcp_call.py
-          python3 $C https://mcp.kiwi.com list || true
-          python3 $C https://mcp.trivago.com/mcp list || true
+          mkdir -p out
+          python3 $C https://mcp.kiwi.com list > out/tools_kiwi.json || true
+          python3 $C https://mcp.trivago.com/mcp list > out/tools_trivago.json || true
       - name: Test calls
         run: bash skills/travel-agent/scripts/test_case.sh
-      - uses: actions/upload-artifact@v4
+      - name: Save raw responses to branch
         if: always()
-        with:
-          name: raw-responses
-          path: out/
+        run: |
+          rm -rf skills/travel-agent/test-output && mv out skills/travel-agent/test-output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add skills/travel-agent/test-output
+          git commit -m "Raw MCP responses (run ${{ github.run_id }})" && git push || true
