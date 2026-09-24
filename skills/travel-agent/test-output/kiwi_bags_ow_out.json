@@ -1,11 +1,11 @@
-=== 2026-09-24T09:44:32+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "BRU", "flyTo": "HKT,KBV,MNL", "departureDate": "26/11/2026", "departureDateTo": "04/12/2026", "one_for_city": true, "adults": 2, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false}
+=== 2026-09-24T09:46:55+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "BRU", "flyTo": "HKT,KBV,MNL", "departureDate": "26/11/2026", "departureDateTo": "04/12/2026", "one_for_city": true, "adults": 2, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false}
 {
  "jsonrpc": "2.0",
  "id": 2,
  "result": {
   "content": [
    {
-    "text": "{\n  \"query\": \"BRU → HKT,KBV,MNL on 26/11/2026–04/12/2026, 2 adults [≤2 stops/sector; no self-transfer; one per city]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 3,\n  \"itineraries\": [\n    {\n      \"id\": \"1f2b2365513600001c1e7f4d_0|1f2b2365513600001c1e7f4d_1\",\n      \"price\": 540.0,\n      \"priceFormatted\": \"540 EUR\",\n      \"totalDurationSeconds\": 66000,\n      \"bookingUrl\": \"https://kiwi.com/u/ttb2n7\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-03T12:25:00\",\n        \"arrivalTime\": \"2026-12-04T12:45:00\",\n        \"durationSeconds\": 66000,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"TFU\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"TFU\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Chengdu\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Chengdu Tianfu International Airport\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-03T12:25:00\",\n            \"arrivalTime\": \"2026-12-04T05:55:00\",\n            \"durationSeconds\": 37800,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA464\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"TFU\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Chengdu\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Chengdu Tianfu International Airport\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-04T09:45:00\",\n            \"arrivalTime\": \"2026-12-04T12:45:00\",\n            \"durationSeconds\": 14400,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA413\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1f2b1edb51310000f8285b99_0|1f2b1edb51310000f8285b99_1\",\n      \"price\": 806.0,\n      \"priceFormatted\": \"806 EUR\",\n      \"totalDurationSeconds\": 61500,\n      \"bookingUrl\": \"https://kiwi.com/u/rnhb5d\",\n      \"imageId\": \"manila_ph\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"MNL\",\n        \"departureTime\": \"2026-11-28T11:20:00\",\n        \"arrivalTime\": \"2026-11-29T11:25:00\",\n        \"durationSeconds\": 61500,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"SIN\",\n          \"MNL\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-11-28T11:20:00\",\n            \"arrivalTime\": \"2026-11-29T06:55:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"SQ\",\n            \"carrierName\": \"Singapore Airlines\",\n            \"flightNumber\": \"SQ303\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"MNL\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Manille\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international Ninoy-Aquino\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Philippines\",\n            \"departureTime\": \"2026-11-29T07:45:00\",\n            \"arrivalTime\": \"2026-11-29T11:25:00\",\n            \"durationSeconds\": 13200,\n            \"carrier\": \"SQ\",\n            \"carrierName\": \"Singapore Airlines\",\n            \"flightNumber\": \"SQ914\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1f2b18bc51360000e3b08b87_0|1f2b18bc51360000e3b08b87_1\",\n      \"price\": 1109.577018,\n      \"priceFormatted\": \"1110 EUR\",\n      \"totalDurationSeconds\": 51900,\n      \"bookingUrl\": \"https://kiwi.com/u/tqu5df\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T09:55:00\",\n        \"arrivalTime\": \"2026-12-04T06:20:00\",\n        \"durationSeconds\": 51900,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-03T09:55:00\",\n            \"arrivalTime\": \"2026-12-03T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T20:55:00\",\n            \"arrivalTime\": \"2026-12-04T06:20:00\",\n            \"durationSeconds\": 23100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY422\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 582,\n  \"error\": null\n}",
+    "text": "{\n  \"query\": \"BRU → HKT,KBV,MNL on 26/11/2026–04/12/2026, 2 adults [≤2 stops/sector; no self-transfer; one per city]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 3,\n  \"itineraries\": [\n    {\n      \"id\": \"1f2b2365513600001c1e7f4d_0|1f2b2365513600001c1e7f4d_1\",\n      \"price\": 540.0,\n      \"priceFormatted\": \"540 EUR\",\n      \"totalDurationSeconds\": 66000,\n      \"bookingUrl\": \"https://kiwi.com/u/9wfcch\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-03T12:25:00\",\n        \"arrivalTime\": \"2026-12-04T12:45:00\",\n        \"durationSeconds\": 66000,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"TFU\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"TFU\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Chengdu\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Chengdu Tianfu International Airport\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-03T12:25:00\",\n            \"arrivalTime\": \"2026-12-04T05:55:00\",\n            \"durationSeconds\": 37800,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA464\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"TFU\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Chengdu\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Chengdu Tianfu International Airport\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-04T09:45:00\",\n            \"arrivalTime\": \"2026-12-04T12:45:00\",\n            \"durationSeconds\": 14400,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA413\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1f2b1edb51310000f8285b99_0|1f2b1edb51310000f8285b99_1\",\n      \"price\": 806.0,\n      \"priceFormatted\": \"806 EUR\",\n      \"totalDurationSeconds\": 61500,\n      \"bookingUrl\": \"https://kiwi.com/u/hs3q39\",\n      \"imageId\": \"manila_ph\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"MNL\",\n        \"departureTime\": \"2026-11-28T11:20:00\",\n        \"arrivalTime\": \"2026-11-29T11:25:00\",\n        \"durationSeconds\": 61500,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"SIN\",\n          \"MNL\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-11-28T11:20:00\",\n            \"arrivalTime\": \"2026-11-29T06:55:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"SQ\",\n            \"carrierName\": \"Singapore Airlines\",\n            \"flightNumber\": \"SQ303\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"MNL\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Manille\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international Ninoy-Aquino\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Philippines\",\n            \"departureTime\": \"2026-11-29T07:45:00\",\n            \"arrivalTime\": \"2026-11-29T11:25:00\",\n            \"durationSeconds\": 13200,\n            \"carrier\": \"SQ\",\n            \"carrierName\": \"Singapore Airlines\",\n            \"flightNumber\": \"SQ914\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1f2b18bc513500007cb4fce4_0|1f2b18bc513500007cb4fce4_1\",\n      \"price\": 1109.577018,\n      \"priceFormatted\": \"1110 EUR\",\n      \"totalDurationSeconds\": 51900,\n      \"bookingUrl\": \"https://kiwi.com/u/2q5g9y\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-02T09:55:00\",\n        \"arrivalTime\": \"2026-12-03T06:20:00\",\n        \"durationSeconds\": 51900,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-02T09:55:00\",\n            \"arrivalTime\": \"2026-12-02T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-02T20:55:00\",\n            \"arrivalTime\": \"2026-12-03T06:20:00\",\n            \"durationSeconds\": 23100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY422\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 1009,\n  \"error\": null\n}",
     "type": "text"
    }
   ],
@@ -25,7 +25,7 @@
      "price": 540.0,
      "priceFormatted": "540 EUR",
      "totalDurationSeconds": 66000,
-     "bookingUrl": "https://kiwi.com/u/ttb2n7",
+     "bookingUrl": "https://kiwi.com/u/9wfcch",
      "imageId": "phuket-city_th",
      "baggage": {
       "personalItem": 2,
@@ -89,7 +89,7 @@
      "price": 806.0,
      "priceFormatted": "806 EUR",
      "totalDurationSeconds": 61500,
-     "bookingUrl": "https://kiwi.com/u/rnhb5d",
+     "bookingUrl": "https://kiwi.com/u/hs3q39",
      "imageId": "manila_ph",
      "baggage": {
       "personalItem": 2,
@@ -149,11 +149,11 @@
      "inbound": null
     },
     {
-     "id": "1f2b18bc51360000e3b08b87_0|1f2b18bc51360000e3b08b87_1",
+     "id": "1f2b18bc513500007cb4fce4_0|1f2b18bc513500007cb4fce4_1",
      "price": 1109.577018,
      "priceFormatted": "1110 EUR",
      "totalDurationSeconds": 51900,
-     "bookingUrl": "https://kiwi.com/u/tqu5df",
+     "bookingUrl": "https://kiwi.com/u/2q5g9y",
      "imageId": "krabi_th",
      "baggage": {
       "personalItem": 0,
@@ -163,8 +163,8 @@
      "outbound": {
       "from": "BRU",
       "to": "KBV",
-      "departureTime": "2026-12-03T09:55:00",
-      "arrivalTime": "2026-12-04T06:20:00",
+      "departureTime": "2026-12-02T09:55:00",
+      "arrivalTime": "2026-12-03T06:20:00",
       "durationSeconds": 51900,
       "stops": 1,
       "route": [
@@ -183,8 +183,8 @@
         "toName": "Aéroport international Zayed",
         "fromCountry": "Belgique",
         "toCountry": "Émirats arabes unis",
-        "departureTime": "2026-12-03T09:55:00",
-        "arrivalTime": "2026-12-03T19:30:00",
+        "departureTime": "2026-12-02T09:55:00",
+        "arrivalTime": "2026-12-02T19:30:00",
         "durationSeconds": 23700,
         "carrier": "EY",
         "carrierName": "Etihad Airways",
@@ -200,8 +200,8 @@
         "toName": "Aéroport de Krabi",
         "fromCountry": "Émirats arabes unis",
         "toCountry": "Thaïlande",
-        "departureTime": "2026-12-03T20:55:00",
-        "arrivalTime": "2026-12-04T06:20:00",
+        "departureTime": "2026-12-02T20:55:00",
+        "arrivalTime": "2026-12-03T06:20:00",
         "durationSeconds": 23100,
         "carrier": "EY",
         "carrierName": "Etihad Airways",
@@ -213,7 +213,7 @@
      "inbound": null
     }
    ],
-   "searchTimeMs": 582,
+   "searchTimeMs": 1009,
    "error": null
   }
  }

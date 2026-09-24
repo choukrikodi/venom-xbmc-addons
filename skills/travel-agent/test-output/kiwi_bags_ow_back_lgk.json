@@ -1,11 +1,11 @@
-=== 2026-09-24T09:44:22+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "LGK", "flyTo": "BRU", "departureDate": "12/12/2026", "departureDateTo": "20/12/2026", "adults": 2, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false}
+=== 2026-09-24T09:46:46+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "LGK", "flyTo": "BRU", "departureDate": "12/12/2026", "departureDateTo": "20/12/2026", "adults": 2, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false}
 {
  "jsonrpc": "2.0",
  "id": 2,
  "result": {
   "content": [
    {
-    "text": "{\n  \"query\": \"LGK → BRU on 12/12/2026–20/12/2026, 2 adults [≤2 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 0,\n  \"itineraries\": [],\n  \"searchTimeMs\": 58,\n  \"error\": null\n}",
+    "text": "{\n  \"query\": \"LGK → BRU on 12/12/2026–20/12/2026, 2 adults [≤2 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 0,\n  \"itineraries\": [],\n  \"searchTimeMs\": 110,\n  \"error\": null\n}",
     "type": "text"
    }
   ],
@@ -20,7 +20,7 @@
    },
    "resultsCount": 0,
    "itineraries": [],
-   "searchTimeMs": 58,
+   "searchTimeMs": 110,
    "error": null
   }
  }

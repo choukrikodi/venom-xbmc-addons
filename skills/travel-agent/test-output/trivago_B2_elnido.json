@@ -1,4 +1,4 @@
-=== 2026-09-24T09:46:15+00:00 https://mcp.trivago.com/mcp call trivago-accommodation-search {"query": "El Nido", "arrival": "2026-12-04", "departure": "2026-12-10", "adults": 2, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": {"4star": true, "5star": true}}
+=== 2026-09-24T09:47:42+00:00 https://mcp.trivago.com/mcp call trivago-accommodation-search {"query": "El Nido", "arrival": "2026-12-04", "departure": "2026-12-10", "adults": 2, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": {"4star": true, "5star": true}}
 {
  "jsonrpc": "2.0",
  "id": 2,

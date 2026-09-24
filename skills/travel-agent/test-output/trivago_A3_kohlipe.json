@@ -1,4 +1,4 @@
-=== 2026-09-24T09:45:54+00:00 https://mcp.trivago.com/mcp call trivago-accommodation-search {"query": "Koh Lipe", "arrival": "2026-12-11", "departure": "2026-12-15", "adults": 2, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": {"4star": true, "5star": true}}
+=== 2026-09-24T09:47:38+00:00 https://mcp.trivago.com/mcp call trivago-accommodation-search {"query": "Koh Lipe", "arrival": "2026-12-11", "departure": "2026-12-15", "adults": 2, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": {"4star": true, "5star": true}}
 {
  "jsonrpc": "2.0",
  "id": 2,

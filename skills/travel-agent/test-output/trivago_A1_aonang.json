@@ -1,4 +1,4 @@
-=== 2026-09-24T09:45:41+00:00 https://mcp.trivago.com/mcp call trivago-accommodation-search {"query": "Ao Nang, Krabi", "arrival": "2026-12-03", "departure": "2026-12-07", "adults": 2, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": {"4star": true, "5star": true}}
+=== 2026-09-24T09:47:34+00:00 https://mcp.trivago.com/mcp call trivago-accommodation-search {"query": "Ao Nang, Krabi", "arrival": "2026-12-03", "departure": "2026-12-07", "adults": 2, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": {"4star": true, "5star": true}}
 {
  "jsonrpc": "2.0",
  "id": 2,
