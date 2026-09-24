@@ -1,0 +1,10 @@
+{
+  "case_name": "asie_v5_2etapes_bkk_hotels",
+  "notice": "Reprise hôtels Bangkok pour la variante deux étapes : la requête « Bangkok riverside » avait été résolue par Trivago comme un nom d'établissement (1 seul résultat, non représentatif). Requêtes zone : ville entière et quartier Sukhumvit, 08/12→15/12, 2 adultes, 1 chambre, 4–5★, BE/EUR. Aucune réservation.",
+  "requests": [
+    { "name": "trivago_bangkok_ville_7n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "4star": true, "5star": true }, "query": "Bangkok, Thailand", "arrival": "2026-12-08", "departure": "2026-12-15" } },
+    { "name": "trivago_bangkok_sukhumvit_7n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "4star": true, "5star": true }, "query": "Sukhumvit, Bangkok", "arrival": "2026-12-08", "departure": "2026-12-15" } }
+  ]
+}
