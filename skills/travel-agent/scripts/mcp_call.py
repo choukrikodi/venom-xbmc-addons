@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Client MCP de recherche, Python stdlib, Linux/macOS (verrou fcntl pour Kiwi).
+Sous Windows, utiliser WSL ou le workflow GitHub Actions Linux. L'appel Kiwi
+ne fonctionne pas en Python Windows natif ; aucun verrou équivalent n'y est implémenté.
 
 Usage : mcp_call.py URL list | URL call OUTIL JSON_OBJET
 Sortie compatible : une ligne === UTC URL action arguments, puis JSON-RPC.
