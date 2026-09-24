@@ -1,11 +1,11 @@
-=== 2026-09-24T09:46:46+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "LGK", "flyTo": "BRU", "departureDate": "12/12/2026", "departureDateTo": "20/12/2026", "adults": 2, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false}
+=== 2026-09-24T11:40:25+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "LGK", "flyTo": "BRU", "departureDate": "12/12/2026", "departureDateTo": "20/12/2026", "adults": 2, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false}
 {
  "jsonrpc": "2.0",
  "id": 2,
  "result": {
   "content": [
    {
-    "text": "{\n  \"query\": \"LGK → BRU on 12/12/2026–20/12/2026, 2 adults [≤2 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 0,\n  \"itineraries\": [],\n  \"searchTimeMs\": 110,\n  \"error\": null\n}",
+    "text": "{\n  \"query\": \"LGK → BRU on 12/12/2026–20/12/2026, 2 adults [≤2 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 4,\n  \"itineraries\": [\n    {\n      \"id\": \"22ea1f2b51470000aacfbe44_0|22ea1f2b51470000aacfbe44_1|22ea1f2b51470000aacfbe44_2\",\n      \"price\": 1542.0,\n      \"priceFormatted\": \"1542 EUR\",\n      \"totalDurationSeconds\": 117600,\n      \"bookingUrl\": \"https://kiwi.com/u/td2522\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-20T20:40:00\",\n        \"arrivalTime\": \"2026-12-21T22:20:00\",\n        \"durationSeconds\": 117600,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"KUL\",\n          \"IST\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"KUL\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Kuala Lumpur\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport international de Kuala Lumpur\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Malaisie\",\n            \"departureTime\": \"2026-12-20T20:40:00\",\n            \"arrivalTime\": \"2026-12-20T21:55:00\",\n            \"durationSeconds\": 4500,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK7992\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"KUL\",\n            \"to\": \"IST\",\n            \"fromCity\": \"Kuala Lumpur\",\n            \"toCity\": \"Istanbul\",\n            \"fromName\": \"Aéroport international de Kuala Lumpur\",\n            \"toName\": \"Aéroport d Istanbul\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Turquie\",\n            \"departureTime\": \"2026-12-21T08:15:00\",\n            \"arrivalTime\": \"2026-12-21T14:45:00\",\n            \"durationSeconds\": 41400,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK63\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"IST\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Istanbul\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport d Istanbul\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Turquie\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-21T20:50:00\",\n            \"arrivalTime\": \"2026-12-21T22:20:00\",\n            \"durationSeconds\": 12600,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK1941\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea1f2b51470000f9872d3d_0|22ea1f2b51470000f9872d3d_1|22ea1f2b51470000f9872d3d_2\",\n      \"price\": 1646.0,\n      \"priceFormatted\": \"1646 EUR\",\n      \"totalDurationSeconds\": 83400,\n      \"bookingUrl\": \"https://kiwi.com/u/5pqfvb\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-20T18:25:00\",\n        \"arrivalTime\": \"2026-12-21T10:35:00\",\n        \"durationSeconds\": 83400,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"KUL\",\n          \"IST\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"KUL\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Kuala Lumpur\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport international de Kuala Lumpur\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Malaisie\",\n            \"departureTime\": \"2026-12-20T18:25:00\",\n            \"arrivalTime\": \"2026-12-20T19:45:00\",\n            \"durationSeconds\": 4800,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK7970\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"KUL\",\n            \"to\": \"IST\",\n            \"fromCity\": \"Kuala Lumpur\",\n            \"toCity\": \"Istanbul\",\n            \"fromName\": \"Aéroport international de Kuala Lumpur\",\n            \"toName\": \"Aéroport d Istanbul\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Turquie\",\n            \"departureTime\": \"2026-12-20T23:45:00\",\n            \"arrivalTime\": \"2026-12-21T06:10:00\",\n            \"durationSeconds\": 41100,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK61\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"IST\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Istanbul\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport d Istanbul\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Turquie\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-21T09:00:00\",\n            \"arrivalTime\": \"2026-12-21T10:35:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK1937\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea1f2b51470000657f684b_0|22ea1f2b51470000657f684b_1|22ea1f2b51470000657f684b_2\",\n      \"price\": 1721.58953,\n      \"priceFormatted\": \"1722 EUR\",\n      \"totalDurationSeconds\": 84900,\n      \"bookingUrl\": \"https://kiwi.com/u/6fvjp9\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-20T13:55:00\",\n        \"arrivalTime\": \"2026-12-21T06:30:00\",\n        \"durationSeconds\": 84900,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"KUL\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"KUL\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Kuala Lumpur\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport international de Kuala Lumpur\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Malaisie\",\n            \"departureTime\": \"2026-12-20T13:55:00\",\n            \"arrivalTime\": \"2026-12-20T15:00:00\",\n            \"durationSeconds\": 3900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY5632\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"KUL\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Kuala Lumpur\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Kuala Lumpur\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-20T21:40:00\",\n            \"arrivalTime\": \"2026-12-21T00:50:00\",\n            \"durationSeconds\": 25800,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY487\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-21T02:15:00\",\n            \"arrivalTime\": \"2026-12-21T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea1f2b514700002fb867d8_0|22ea1f2b514700002fb867d8_1|22ea1f2b514700002fb867d8_2\",\n      \"price\": 1823.58953,\n      \"priceFormatted\": \"1824 EUR\",\n      \"totalDurationSeconds\": 74100,\n      \"bookingUrl\": \"https://kiwi.com/u/9wndpv\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-20T16:55:00\",\n        \"arrivalTime\": \"2026-12-21T06:30:00\",\n        \"durationSeconds\": 74100,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"KUL\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"KUL\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Kuala Lumpur\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport international de Kuala Lumpur\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Malaisie\",\n            \"departureTime\": \"2026-12-20T16:55:00\",\n            \"arrivalTime\": \"2026-12-20T18:00:00\",\n            \"durationSeconds\": 3900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY5633\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"KUL\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Kuala Lumpur\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Kuala Lumpur\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-20T21:40:00\",\n            \"arrivalTime\": \"2026-12-21T00:50:00\",\n            \"durationSeconds\": 25800,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY487\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-21T02:15:00\",\n            \"arrivalTime\": \"2026-12-21T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 372,\n  \"error\": null\n}",
     "type": "text"
    }
   ],
@@ -18,9 +18,338 @@
     "children": 0,
     "infants": 0
    },
-   "resultsCount": 0,
-   "itineraries": [],
-   "searchTimeMs": 110,
+   "resultsCount": 4,
+   "itineraries": [
+    {
+     "id": "22ea1f2b51470000aacfbe44_0|22ea1f2b51470000aacfbe44_1|22ea1f2b51470000aacfbe44_2",
+     "price": 1542.0,
+     "priceFormatted": "1542 EUR",
+     "totalDurationSeconds": 117600,
+     "bookingUrl": "https://kiwi.com/u/td2522",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-20T20:40:00",
+      "arrivalTime": "2026-12-21T22:20:00",
+      "durationSeconds": 117600,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "KUL",
+       "IST",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "KUL",
+        "fromCity": "Langkawi",
+        "toCity": "Kuala Lumpur",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport international de Kuala Lumpur",
+        "fromCountry": "Malaisie",
+        "toCountry": "Malaisie",
+        "departureTime": "2026-12-20T20:40:00",
+        "arrivalTime": "2026-12-20T21:55:00",
+        "durationSeconds": 4500,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK7992",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "KUL",
+        "to": "IST",
+        "fromCity": "Kuala Lumpur",
+        "toCity": "Istanbul",
+        "fromName": "Aéroport international de Kuala Lumpur",
+        "toName": "Aéroport d Istanbul",
+        "fromCountry": "Malaisie",
+        "toCountry": "Turquie",
+        "departureTime": "2026-12-21T08:15:00",
+        "arrivalTime": "2026-12-21T14:45:00",
+        "durationSeconds": 41400,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK63",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "IST",
+        "to": "BRU",
+        "fromCity": "Istanbul",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport d Istanbul",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Turquie",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-21T20:50:00",
+        "arrivalTime": "2026-12-21T22:20:00",
+        "durationSeconds": 12600,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK1941",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea1f2b51470000f9872d3d_0|22ea1f2b51470000f9872d3d_1|22ea1f2b51470000f9872d3d_2",
+     "price": 1646.0,
+     "priceFormatted": "1646 EUR",
+     "totalDurationSeconds": 83400,
+     "bookingUrl": "https://kiwi.com/u/5pqfvb",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-20T18:25:00",
+      "arrivalTime": "2026-12-21T10:35:00",
+      "durationSeconds": 83400,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "KUL",
+       "IST",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "KUL",
+        "fromCity": "Langkawi",
+        "toCity": "Kuala Lumpur",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport international de Kuala Lumpur",
+        "fromCountry": "Malaisie",
+        "toCountry": "Malaisie",
+        "departureTime": "2026-12-20T18:25:00",
+        "arrivalTime": "2026-12-20T19:45:00",
+        "durationSeconds": 4800,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK7970",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "KUL",
+        "to": "IST",
+        "fromCity": "Kuala Lumpur",
+        "toCity": "Istanbul",
+        "fromName": "Aéroport international de Kuala Lumpur",
+        "toName": "Aéroport d Istanbul",
+        "fromCountry": "Malaisie",
+        "toCountry": "Turquie",
+        "departureTime": "2026-12-20T23:45:00",
+        "arrivalTime": "2026-12-21T06:10:00",
+        "durationSeconds": 41100,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK61",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "IST",
+        "to": "BRU",
+        "fromCity": "Istanbul",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport d Istanbul",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Turquie",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-21T09:00:00",
+        "arrivalTime": "2026-12-21T10:35:00",
+        "durationSeconds": 12900,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK1937",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea1f2b51470000657f684b_0|22ea1f2b51470000657f684b_1|22ea1f2b51470000657f684b_2",
+     "price": 1721.58953,
+     "priceFormatted": "1722 EUR",
+     "totalDurationSeconds": 84900,
+     "bookingUrl": "https://kiwi.com/u/6fvjp9",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-20T13:55:00",
+      "arrivalTime": "2026-12-21T06:30:00",
+      "durationSeconds": 84900,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "KUL",
+       "AUH",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "KUL",
+        "fromCity": "Langkawi",
+        "toCity": "Kuala Lumpur",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport international de Kuala Lumpur",
+        "fromCountry": "Malaisie",
+        "toCountry": "Malaisie",
+        "departureTime": "2026-12-20T13:55:00",
+        "arrivalTime": "2026-12-20T15:00:00",
+        "durationSeconds": 3900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY5632",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "KUL",
+        "to": "AUH",
+        "fromCity": "Kuala Lumpur",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Kuala Lumpur",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Malaisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-20T21:40:00",
+        "arrivalTime": "2026-12-21T00:50:00",
+        "durationSeconds": 25800,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY487",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BRU",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-21T02:15:00",
+        "arrivalTime": "2026-12-21T06:30:00",
+        "durationSeconds": 26100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY57",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea1f2b514700002fb867d8_0|22ea1f2b514700002fb867d8_1|22ea1f2b514700002fb867d8_2",
+     "price": 1823.58953,
+     "priceFormatted": "1824 EUR",
+     "totalDurationSeconds": 74100,
+     "bookingUrl": "https://kiwi.com/u/9wndpv",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-20T16:55:00",
+      "arrivalTime": "2026-12-21T06:30:00",
+      "durationSeconds": 74100,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "KUL",
+       "AUH",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "KUL",
+        "fromCity": "Langkawi",
+        "toCity": "Kuala Lumpur",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport international de Kuala Lumpur",
+        "fromCountry": "Malaisie",
+        "toCountry": "Malaisie",
+        "departureTime": "2026-12-20T16:55:00",
+        "arrivalTime": "2026-12-20T18:00:00",
+        "durationSeconds": 3900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY5633",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "KUL",
+        "to": "AUH",
+        "fromCity": "Kuala Lumpur",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Kuala Lumpur",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Malaisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-20T21:40:00",
+        "arrivalTime": "2026-12-21T00:50:00",
+        "durationSeconds": 25800,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY487",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BRU",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-21T02:15:00",
+        "arrivalTime": "2026-12-21T06:30:00",
+        "durationSeconds": 26100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY57",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 372,
    "error": null
   }
  }
