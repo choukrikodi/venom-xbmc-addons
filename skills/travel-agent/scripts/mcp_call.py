@@ -90,7 +90,10 @@ def read_sse(stream, request_id):
             field = line[5:]
             lines.append(field[1:] if field.startswith(" ") else field)
         elif not line and lines:
-            value = json.loads("\n".join(lines))
+            try:
+                value = json.loads("\n".join(lines))
+            except json.JSONDecodeError:
+                value = None  # événement non JSON (ping, commentaire) : ignoré
             lines = []
             if isinstance(value, dict) and "method" not in value and value.get("id") == request_id:
                 return checked_response(value, request_id)
@@ -182,9 +185,9 @@ def post(url, payload, session=None, protocol=None):
                 with OPENER.open(request, timeout=TIMEOUT_SECONDS) as response:
                     next_session = response.headers.get("Mcp-Session-Id") or session
                     if "id" not in payload:
-                        # MCP exige une notification acceptée sans corps (202).
-                        if response.status != 202:
-                            raise ValueError("Notification MCP non acceptée par HTTP 202")
+                        # MCP attend un 202 sans corps ; tout 2xx est toléré.
+                        if not 200 <= response.status < 300:
+                            raise ValueError("Notification MCP non acceptée (statut non 2xx)")
                         return next_session, None
                     content_type = response.headers.get("Content-Type", "").split(";")[0].lower().strip()
                     if content_type == "text/event-stream":
