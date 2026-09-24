@@ -17,43 +17,56 @@ permissions:
   contents: write
 
 jobs:
+  # Détermine les manifestes à exécuter : ceux modifiés par le push (ou celui
+  # demandé en lancement manuel). Un manifeste inchangé n'est jamais rejoué,
+  # pour ne pas écraser des traces déjà citées dans un rapport.
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      empty: ${{ steps.plan.outputs.empty }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: plan
+        run: |
+          python3 - <<'EOF' >> "$GITHUB_OUTPUT"
+          import json, os, subprocess
+          ev = os.environ["GITHUB_EVENT_NAME"]
+          def dest(case):
+              base = os.path.basename(case)[:-5]
+              return "skills/travel-agent/test-output" if base == "asie_v2" else "skills/travel-agent/test-output-" + base.replace("asie_", "").replace("_", "-")
+          items = []
+          if ev == "workflow_dispatch":
+              items = [{"case": os.environ["IN_CASE"], "out": os.environ["IN_OUT"] or dest(os.environ["IN_CASE"])}]
+          else:
+              before, sha = os.environ["BEFORE"], os.environ["GITHUB_SHA"]
+              ok = before and not before.startswith("0000000") and subprocess.run(["git", "cat-file", "-e", before]).returncode == 0
+              changed = subprocess.run(["git", "diff", "--name-only", before, sha] if ok else ["git", "show", "--name-only", "--format=", sha], capture_output=True, text=True).stdout.split()
+              for f in sorted(set(changed)):
+                  if f.startswith("skills/travel-agent/evals/files/") and f.endswith(".json") and os.path.exists(f):
+                      items.append({"case": f, "out": dest(f)})
+          print("matrix=" + json.dumps({"include": items}))
+          print("empty=" + ("true" if not items else "false"))
+          EOF
+        env:
+          BEFORE: ${{ github.event.before }}
+          IN_CASE: ${{ inputs.case_file }}
+          IN_OUT: ${{ inputs.output_dir }}
+
   probe:
+    needs: plan
+    if: needs.plan.outputs.empty == 'false'
     runs-on: ubuntu-latest
     # Un manifeste à la fois : espacement Kiwi et push du bot sérialisés.
     strategy:
       max-parallel: 1
       fail-fast: false
-      matrix:
-        include:
-          - case: ${{ inputs.case_file || 'skills/travel-agent/evals/files/asie_v2.json' }}
-            out: ${{ inputs.output_dir || 'skills/travel-agent/test-output' }}
-          - case: ${{ inputs.case_file || 'skills/travel-agent/evals/files/asie_v3.json' }}
-            out: ${{ inputs.output_dir || 'skills/travel-agent/test-output-v3' }}
-          - case: ${{ inputs.case_file || 'skills/travel-agent/evals/files/asie_v4_tun.json' }}
-            out: ${{ inputs.output_dir || 'skills/travel-agent/test-output-v4-tun' }}
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Decide whether this manifest changed
-        id: decide
-        run: |
-          CASE="${{ matrix.case }}"
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"; exit 0
-          fi
-          BEFORE="${{ github.event.before }}"
-          if [ -z "$BEFORE" ] || ! git cat-file -e "$BEFORE" 2>/dev/null; then
-            echo "run=true" >> "$GITHUB_OUTPUT"; exit 0
-          fi
-          if git diff --name-only "$BEFORE" "${{ github.sha }}" | grep -qx "$CASE"; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "Manifeste inchangé, traces conservées : $CASE"
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          fi
       - name: List tools
-        if: steps.decide.outputs.run == 'true'
         run: |
           C=skills/travel-agent/scripts/mcp_call.py
           mkdir -p out
@@ -63,7 +76,6 @@ jobs:
         run: python3 -B skills/travel-agent/evals/test_mcp_call.py
       - name: Test calls
         id: calls
-        if: steps.decide.outputs.run == 'true'
         run: TRAVEL_CASE_FILE="${{ matrix.case }}" bash skills/travel-agent/scripts/test_case.sh
       - name: Save raw responses to branch
         if: always() && steps.calls.outcome != 'skipped'
