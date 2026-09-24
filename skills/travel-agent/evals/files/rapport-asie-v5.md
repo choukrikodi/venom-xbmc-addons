@@ -34,7 +34,7 @@ Arrêté : **2026-09-24T19:38:00+00:00** — révision conforme au prompt L3c v2
 
 **Lecture du budget final :** l’assurance, les activités, le transport vers BRU, la téléphonie, les pourboires, les frais de retrait et les repas de transit sont désormais chiffrés en ⚠️ estimations. **X** désigne uniquement les suppléments obligatoires non exposés par les offres finales : taxes/service hôteliers ou d’activités éventuellement en sus, frais imposés par le vendeur ou ajustement obligatoire de chambre/bagages. Leurs bornes demeurent **manquantes**, faute de panier ou de conditions complètes. Une hausse commerciale future n’est pas confondue avec un supplément déjà dû.
 
-Les tableaux donnent `S_bas–S_haut + 1 000 € + X`, et non un faux total ferme. **État final au sens du skill : budget non concluant pour les trois options**, puisque X n’a pas de borne haute. Le calcul quantifie exactement la tolérance restante ; seule la confirmation de X permet de passer à « dans le budget sous hypothèses ». X est propre à chaque scénario, et non un montant commun aux variantes. Aucun montant arbitraire de taxe ne remplace X. La réserve de 1 000 € reste intacte et ne sert pas à masquer ce manque.
+Les tableaux donnent `S_bas–S_haut + 1 000 € + X`, et non un faux total ferme. **État final au sens du skill : budget non concluant pour les trois options**, puisque X n’a pas de borne haute. Sous hypothèse TVA 7 % + service 10 % (taux officiels thaïlandais) sur l’hôtel, X ≈ 336 € pour L’esprit, inférieur à la tolérance de 597,83 € : la variante recommandée serait « dans le budget sous hypothèses » ; l’état formel reste non concluant faute de panier final. Le calcul quantifie exactement la tolérance restante ; seule la confirmation de X permet de passer à « dans le budget sous hypothèses ». X est propre à chaque scénario, et non un montant commun aux variantes. Aucun montant arbitraire de taxe ne remplace X. La réserve de 1 000 € reste intacte et ne sert pas à masquer ce manque.
 
 ## Synthèse A/B/C et recommandation
 
@@ -124,7 +124,7 @@ Les offres **Trivago** ci-dessous : **2 adultes, 1 chambre, enfants 0, BE, EUR, 
 | TDAC officiel | 0,00 € | 0,00 € | ⚠️ Application au budget : 2 déclarations × 0 € ; gratuité du portail vérifiée R1 |
 | Liaisons inter-étapes | n/a | n/a | Une étape, aucune liaison à acheter |
 | Suppléments obligatoires des offres finales X | manquant | manquant | Taxes/service hôtel ou activité, vendeur, chambre/bagages ; pas de zéro par défaut |
-| **S : postes chiffrés hors réserve** | **3 035,92 €** | **5 272,76 €** | Somme en Decimal, arrondi du total haut vers le haut |
+| **S : postes chiffrés hors réserve** | **3 035,92 €** | **5 272,76 €** | Somme en Decimal, bas et haut arrondis au centime supérieur |
 | **Réserve fixe** | **1 000,00 €** | **1 000,00 €** | Séparée, sous le plafond de 8 000 € |
 | **Total groupe** | **4 035,92 € + X** | **6 272,76 € + X** | **Budget non concluant** tant que X non borné |
 
@@ -202,7 +202,7 @@ Anyavee est le prix hôtel minimum retenu dans la zone ; identité et activité 
 | TDAC officiel | 0,00 € | 0,00 € | ⚠️ Application au budget : 2 déclarations × 0 € ; gratuité du portail vérifiée R1 |
 | Liaisons inter-étapes | n/a | n/a | Une étape, aucune liaison à acheter |
 | Suppléments obligatoires des offres finales X | manquant | manquant | Taxes/service hôtel ou activité, vendeur, chambre/bagages ; pas de zéro par défaut |
-| **S : postes chiffrés hors réserve** | **4 462,98 €** | **6 736,68 €** | Somme en Decimal, arrondi du total haut vers le haut |
+| **S : postes chiffrés hors réserve** | **4 462,98 €** | **6 736,68 €** | Somme en Decimal, bas et haut arrondis au centime supérieur |
 | **Réserve fixe** | **1 000,00 €** | **1 000,00 €** | Séparée, sous le plafond de 8 000 € |
 | **Total groupe** | **5 462,98 € + X** | **7 736,68 € + X** | **Budget non concluant** tant que X non borné |
 
@@ -251,7 +251,7 @@ Palm Galleria est retenu après contrôle de zone et des signaux ; [PALM](https:
 | TDAC officiel | 0,00 € | 0,00 € | ⚠️ Application au budget : 2 déclarations × 0 € ; gratuité du portail vérifiée R1 |
 | Liaisons inter-étapes | n/a | n/a | Une étape, aucune liaison à acheter |
 | Suppléments obligatoires des offres finales X | manquant | manquant | Taxes/service hôtel ou activité, vendeur, chambre/bagages ; pas de zéro par défaut |
-| **S : postes chiffrés hors réserve** | **3 993,63 €** | **6 278,55 €** | Somme en Decimal, arrondi du total haut vers le haut |
+| **S : postes chiffrés hors réserve** | **3 993,63 €** | **6 278,55 €** | Somme en Decimal, bas et haut arrondis au centime supérieur |
 | **Réserve fixe** | **1 000,00 €** | **1 000,00 €** | Séparée, sous le plafond de 8 000 € |
 | **Total groupe** | **4 993,63 € + X** | **7 278,55 € + X** | **Budget non concluant** tant que X non borné |
 
@@ -303,7 +303,7 @@ Les deux grilles ci-dessous concernent le marché belge. **Seule la grille Trust
 
 | Offre publique / quantité | Tarif relevé et formule groupe | Médical / annulation | Franchise et limites | Source / date |
 |---|---|---|---|---|
-| Europ Assistance Belgique, via Trust Travel/TUI ; assistance avion Monde temporaire | ⚠️ 4,68 €/personne/jour, max. 40 jours ; `2 × D × 4,68` | Hors Europe : 1 M€/personne **après intervention de la mutualité** ; sans mutualité, limite 2 500 € dans l’IPID | Franchise médicale non explicitement établie dans les passages consultés : à confirmer, jamais supposée nulle | [I1](https://www.tui.be/fr/assurances) ; UTC 2026-09-24T12:21:58.129Z → 2026-09-24T12:22:00.944Z ; IPID [I2](https://storage.googleapis.com/qover-assets/Projects/TUI/assistance/IPID%20Trust%20Travel%20-%20Assistance%20Voyage%20temporaire%20Personnes.pdf), conditions 2026 |
+| Europ Assistance Belgique, via Trust Travel/TUI ; assistance avion Monde temporaire | ⚠️ 4,68 €/personne/jour, max. 40 jours ; `2 × D × 4,68` | Hors Europe : 1 M€/personne **après intervention de la mutualité** ; sans mutualité, limite 2 500 € dans l’IPID | Franchise médicale non établie (IPID lu via extrait ; document non ouvert intégralement) : à confirmer, jamais supposée nulle | [I1](https://www.tui.be/fr/assurances) ; UTC 2026-09-24T12:21:58.129Z → 2026-09-24T12:22:00.944Z ; IPID [I2](https://storage.googleapis.com/qover-assets/Projects/TUI/assistance/IPID%20Trust%20Travel%20-%20Assistance%20Voyage%20temporaire%20Personnes.pdf), conditions 2026 |
 | Annulation Trust Travel, Advent Insurance PCC, All Risk temporaire | ⚠️ 8,2 % du capital, min. 50 €/personne ; provision haute `8,2 % × 7 000 = 574 €` | Frais contractuels admissibles remboursables intégralement, donc jusqu’à **100 % des pertes couvertes**, plafonnés au capital ; plafond 15 000 €/assuré | Sans franchise ni frais administratifs de l’assureur ; prime non remboursée ; exclusions et justificatifs applicables | [I1](https://www.tui.be/fr/assurances) ; [I3](https://storage.googleapis.com/qover-assets/Projects/TUI/insurance/Conditions%20Ge%CC%81ne%CC%81rales%20annulation%20temporaire%20All%20Risk.pdf) ; UTC 2026-09-24T12:24:27.414Z → 2026-09-24T12:24:29.362Z |
 | Allianz Assistance Only + Cancellation Only ; comparaison historique | ⚠️ 5,40 €/personne/jour Monde hors USA/Canada ; annulation 6,5 % du voyage, min. 25 €/police | Frais médicaux nécessaires annoncés illimités ; annulation jusqu’à 10 000 €/personne, frais admissibles jusqu’au capital | Franchise annulation non établie dans le flyer ; conditions [I5](https://www.allianz-partners.com/content/dam/onemarketing/awp/azpartnerscom/belgium/formules-temporaires/2024/Assistance_Only_TC_BEfr_2407.pdf) à confirmer ; **pas utilisée dans nos totaux** | [I4](https://www.essentialgreece.be/wp-content/uploads/2024/03/Allianz_Flyer_TijdelijkeProducten_20231101_FR.pdf) ; UTC 2026-09-24T12:24:27.414Z → 2026-09-24T12:24:29.362Z ; tarif effectif 01/11/2023 |
 
@@ -321,7 +321,7 @@ La borne basse **ne comprend pas l’annulation**. Les grilles lues ne donnent p
 
 ## Itinéraire détente, activités et plans B
 
-Toutes les nouvelles lignes d’activités sont **⚠️** : tarifs publics consultés le 24/09/2026, sans disponibilité vérifiée pour décembre. Chaque ID renvoie à une URL directe et à son UTC dans le registre L3c (date de consultation, pas date de validité). Les répétitions sont explicites : on compte des séances, pas des attractions distinctes. Les dates sont un programme proposé, pas des réservations. Maximum une sortie programmée par jour ici, donc ≤2 ; J1 repos. Un déjeuner inclus dans une excursion reste compris dans l’enveloppe journalière de repas : estimation prudente non optimisée, **pas achat de deux déjeuners imposé**.
+Toutes les nouvelles lignes d’activités sont **⚠️** : tarifs publics consultés le 24/09/2026, sans disponibilité vérifiée pour décembre. Chaque ID renvoie à une URL et à l’UTC de sa consultation dans le registre L3c ; les sources partageant une même fenêtre UTC ont été lues via extraits de recherche, sans ouverture directe de la page (date de consultation, pas date de validité). Les répétitions sont explicites : on compte des séances, pas des attractions distinctes. Les dates sont un programme proposé, pas des réservations. Maximum une sortie programmée par jour ici, donc ≤2 ; J1 repos. Un déjeuner inclus dans une excursion reste compris dans l’enveloppe journalière de repas : estimation prudente non optimisée, **pas achat de deux déjeuners imposé**.
 
 ### A — six séances sur 17 jours locaux
 
@@ -653,7 +653,7 @@ Les taux 7 % et 10 % souvent cités pour TVA/service ne sont pas une preuve du s
 | O1 — [lastminute, lien générique](https://www.lastminute.com/) ; [transmission](https://drive.google.com/file/d/1vyUNArdwPB2XummzgHmmXMHUIpbG6poR/view?usp=drivesdk) | Orchestrateur : 24/09/2026 **vers 11:55 UTC**, BRU–HKT 29/11→17/12, EUR, 2 adultes | ⚠️ source orchestrateur, capture non versionnée ; soute et appariement des dates absents ; aucune URL d’offre |
 | O2 — [Booking, lien générique](https://www.booking.com/) ; [transmission](https://drive.google.com/file/d/1vyUNArdwPB2XummzgHmmXMHUIpbG6poR/view?usp=drivesdk) | Même UTC approximatif ; hôtel 30/11→16/12/2026, 16 nuits, EUR, 2 adultes, 1 chambre | ⚠️ source orchestrateur, capture non versionnée ; distinction « officiel »/« estimé », aucune certification indépendante ajoutée |
 | O3 — [AllTrails Mai Khao](https://www.alltrails.com/fr/randonnee/thailand/phuket/mai-khao-beach-naiyang-beach) / [East Loop](https://www.alltrails.com/fr/randonnee/thailand/phuket/nai-yang-hills-east-loop) ; [transmission](https://drive.google.com/file/d/1vyUNArdwPB2XummzgHmmXMHUIpbG6poR/view?usp=drivesdk) | Orchestrateur vers 11:55 UTC ; tentative de relecture terminée 2026-09-24T19:31:50.193Z | Distances et notes transmises ; pages inaccessibles, pas de gratuité d’entrée établie ; troisième URL manquante |
-| O4 — [DNP, grille d’entrée](https://catalog.dnp.go.th/dataset/e1e0564c-6f4b-4988-979c-eecd4c742ee4/resource/94ee72ad-e637-4d78-9e64-6f3cb2a9b1d9/download/entrancefee020666.pdf) | Document 02/06/2023 ; index public consulté 2026-09-24T19:31:50.193Z, ligne 57 Sirinat 200 THB étranger ; PDF direct en timeout lors de la tentative suivante | Source primaire officielle trouvée et recoupée, mais consultation limitée à l’extrait indexé ; pas de barème 2026 complet récupéré ; ⚠️ conservé |
+| O4 — [DNP, grille d’entrée](https://catalog.dnp.go.th/dataset/e1e0564c-6f4b-4988-979c-eecd4c742ee4/resource/94ee72ad-e637-4d78-9e64-6f3cb2a9b1d9/download/entrancefee020666.pdf) | Document 02/06/2023 ; index public consulté 2026-09-24T19:31:50.193Z (même fenêtre de consultation que O3, lecture via extrait indexé), ligne 57 Sirinat 200 THB étranger ; PDF direct en timeout lors de la tentative suivante | Source primaire officielle trouvée et recoupée, mais consultation limitée à l’extrait indexé ; pas de barème 2026 complet récupéré ; ⚠️ conservé |
 
 ### Ce qui manque encore et état budgétaire final
 
