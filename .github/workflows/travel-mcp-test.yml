@@ -11,7 +11,7 @@ on:
         default: skills/travel-agent/test-output
   push:
     branches: [claude/travel-agent-skill-setup-vhqmwf]
-    paths: [.github/workflows/travel-mcp-test.yml, skills/travel-agent/scripts/**, skills/travel-agent/evals/files/**]
+    paths: [.github/workflows/travel-mcp-test.yml, skills/travel-agent/scripts/**, skills/travel-agent/evals/files/*.json]
 
 permissions:
   contents: write
