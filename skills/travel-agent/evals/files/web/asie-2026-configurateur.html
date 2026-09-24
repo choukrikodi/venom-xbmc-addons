@@ -342,9 +342,9 @@ const ORIGINS = {
 const TUN_FLIGHTS = {
   A: [
     { id: "tun_qr", label: "Qatar Airways via DOH", price: 1548, dep: "2026-11-29", ret: "2026-12-16", insuredDays: 18, datesMatch: true, rec: true,
-      detail: "Aller QR1400 + QR846 : 29/11 16:00 → 30/11 18:55 (20 h 55, escale nocturne DOH ~8 h 50). Retour QR841 + QR1399 : 16/12 00:25 → 13:35 (19 h 10). Décollage HKT à 00:25 le 16/12 : quitter l'hôtel le 15/12 au soir, nuit du 15→16 quasi inutilisée. Bagages 2 soutes, 2 cabine. Trace kiwi_tun_hkt_qr_exact_16n [0]." },
-    { id: "tun_all", label: "Etihad via AUH (moins cher toutes compagnies)", price: 1388.09, dep: "2026-11-29", ret: "2026-12-17", insuredDays: 19, datesMatch: true,
-      detail: "EY740 + EY410 : 29/11 10:40 → 30/11 06:15 (13 h 35). Retour EY417 + EY739 : 16/12 15:30 → 17/12 06:15 (20 h 45). Mêmes dates que l'hôtel. Bagage à main : personalItem 0, cabinBag 2. Balayage kiwi_tun_hkt_all_fenetre_16_18n [0] ; la requête à dates fixes est en reprise (503)." }
+      detail: "Aller QR1400 + QR846 : 29/11 16:00 → 30/11 18:55 (20 h 55, escale nocturne DOH ~8 h 50). Retour QR841 + QR1399 : 16/12 00:25 → 13:35 (19 h 10). Décollage HKT à 00:25 le 16/12 : quitter l'hôtel le 15/12 au soir, nuit du 15→16 quasi inutilisée. Bagages 2 soutes, 2 cabine. Trace kiwi_tun_hkt_qr_exact_16n [0]. Balayage Qatar 15/11→10/12 (test-output-v4-tun-b) : minimum 1 814 € pour 10/12→28/12 seulement, plus cher que ces dates exactes ; balayage non exhaustif." },
+    { id: "tun_all", label: "Etihad via AUH (moins cher toutes compagnies)", price: 1230.09, dep: "2026-11-29", ret: "2026-12-17", insuredDays: 19, datesMatch: true,
+      detail: "EY740 + EY410 : 29/11 10:40 → 30/11 06:15 (13 h 35). Retour EY417 + EY739 : 16/12 15:30 → 17/12 06:15 (20 h 45). Mêmes dates que l'hôtel. Bagage à main : personalItem 0, cabinBag 2. Requête à dates fixes test-output-v4-tun-b/kiwi_tun_hkt_all_exact_16n [0], 22:20:10 UTC (le balayage donnait 1 388,09 € pour le même itinéraire : balayage non exhaustif). Préférence Qatar = +317,91 €." }
   ],
   C: [
     { id: "tun_qr", label: "Qatar Airways via DOH", price: 1455, dep: "2026-11-29", ret: "2026-12-19", insuredDays: 21, datesMatch: true, rec: true,
