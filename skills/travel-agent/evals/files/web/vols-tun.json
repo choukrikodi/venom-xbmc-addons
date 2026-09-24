@@ -8,15 +8,11 @@
   ],
   "currency": "EUR",
   "sourceManifest": "evals/files/asie_v4_tun.json",
-  "collectedUtc": "2026-09-24T22:16:56+00:00 à 22:17:51+00:00",
-  "tracesIgnored503": [
-    "kiwi_tun_hkt_all_exact_16n",
-    "kiwi_tun_hkt_qr_fenetre_16_18n"
-  ],
+  "collectedUtc": "2026-09-24T22:16:56+00:00 à 22:20:16+00:00",
   "scenarios": {
     "A": {
       "hotel": "Nai Yang / HKT",
-      "hotelDates": "29/11→16/12 (16 n selon manifeste)",
+      "hotelDates": "29/11→16/12 (16 nuits d'hôtel)",
       "dep": "2026-11-29",
       "ret": "2026-12-16",
       "datesMatchHotel": true,
@@ -77,8 +73,8 @@
         {
           "id": "all",
           "label": "Moins cher toutes compagnies (Etihad via AUH)",
-          "price": 1388.09,
-          "priceRaw": 1388.083472,
+          "price": 1230.09,
+          "priceRaw": 1230.083472,
           "currency": "EUR",
           "outboundDuration": "13h35",
           "inboundDuration": "20h45",
@@ -109,7 +105,7 @@
             "outbound": 1,
             "inbound": 1
           },
-          "echoQuery": "TUN → HKT on 15/11/2026–10/12/2026, 2 adults, 16–18 nights [≤2 stops/sector; no self-transfer]",
+          "echoQuery": "TUN → HKT on 29/11/2026–29/11/2026, returning 16/12/2026–16/12/2026, 2 adults [≤2 stops/sector; no self-transfer]",
           "echoAdults": 2,
           "echoPassengers": {
             "adults": 2,
@@ -118,21 +114,21 @@
           },
           "resultsCount": 15,
           "proof": {
-            "file": "test-output-v4-tun/kiwi_tun_hkt_all_fenetre_16_18n.json",
+            "file": "test-output-v4-tun-b/kiwi_tun_hkt_all_exact_16n.json",
             "index": 0,
-            "utc": "2026-09-24T22:17:22+00:00",
-            "url": "https://kiwi.com/u/b3tv2v",
-            "itineraryId": "19e02365513200008135e32a_0|19e02365513200008135e32a_1|236519e051430000e9e4509b_0|236519e051430000e9e4509b_1"
+            "utc": "2026-09-24T22:20:10+00:00",
+            "url": "https://kiwi.com/u/bw4879",
+            "itineraryId": "19e02365513251432d4c0783_0|19e02365513251432d4c0783_1|19e02365513251432d4c0783_2|19e02365513251432d4c0783_3"
           },
           "recommended": false,
-          "note": "Issu du balayage 15/11→10/12, 16–18 nuits ; dates réelles 29/11→16/12 = dates hôtel A exactement. Etihad EY740/EY410 et EY417/EY739, 1 escale AUH par sens. Écart −159,91 EUR vs QR (1548,00 − 1388,09). Attention : personalItem 0 (contre 2 chez QR) ; cabinBag 2, checkedBag 2. Retour 16/12 15:30 → TUN 17/12 06:15. Trace all_exact_16n en 503, non substituable.",
-          "datesMatchHotel": true
+          "datesMatchHotel": true,
+          "note": "Trace exacte 29/11→16/12 (reprise, run 36066790416), 15 itinéraires, 4 ex æquo à 1230.09 EUR ; index 0 = aller le plus court (13h35). Etihad EY740/EY410 + EY417/EY739, 1 escale AUH par sens. Écart −317.91 EUR vs QR (1548.00 − 1230.09). personalItem 0 (contre 2 chez QR) ; cabinBag 2, checkedBag 2. Retour 16/12 15:30 → TUN 17/12 06:15."
         }
       ]
     },
     "C": {
       "hotel": "Khao Lak / HKT",
-      "hotelDates": "29/11→18/12 (18 n)",
+      "hotelDates": "29/11→18/12 (18 nuits d'hôtel)",
       "dep": "2026-11-29",
       "ret": "2026-12-18",
       "datesMatchHotel": true,
@@ -241,7 +237,7 @@
             "itineraryId": "19e02365513200008135e32a_0|19e02365513200008135e32a_1|236519e051430000e9e4509b_0|236519e051430000e9e4509b_1"
           },
           "recommended": false,
-          "note": "Aucun itinéraire du balayage all_fenetre_16_18n ne part le 29/11 avec retour le 18/12 (le plus proche : index 14, EY+TK, 2117,02 EUR, retour 17/12 19:50). Itinéraire le moins cher du balayage donné avec ses dates réelles 29/11→16/12 (16 n) : dates différentes, hôtel Khao Lak non chiffré à ces dates. personalItem 0.",
+          "note": "Aucun itinéraire du balayage all_fenetre_16_18n ne part le 29/11 avec retour le 18/12 (19 nuits, hors fenêtre 16–18 du balayage ; le plus proche : index 14, EY+TK, 2117,02 EUR, retour 17/12 19:50). Itinéraire le moins cher du balayage donné avec ses dates réelles 29/11→16/12 (16 n) : dates différentes, hôtel Khao Lak non chiffré à ces dates. Aux mêmes dates la trace exacte test-output-v4-tun-b donne 1230,09 EUR (voir A) ; le balayage surcote ce même itinéraire de 158 EUR. personalItem 0.",
           "datesMatchHotel": false,
           "datesNote": "dates différentes, hôtel non chiffré à ces dates"
         }
@@ -249,7 +245,7 @@
     },
     "B": {
       "hotel": "Ao Nang / KBV",
-      "hotelDates": "01/12→20/12 (18 n)",
+      "hotelDates": "01/12→20/12 (18 nuits d'hôtel)",
       "dep": "2026-12-01",
       "ret": "2026-12-20",
       "datesMatchHotel": false,
@@ -382,7 +378,7 @@
             "itineraryId": "19e018bc5134000072a5aaab_0|19e018bc5134000072a5aaab_1|18bc19e05146000025029b00_0|18bc19e05146000025029b00_1|18bc19e05146000025029b00_2"
           },
           "recommended": false,
-          "note": "Départ 01/12 conforme ; retour part KBV le 19/12 22:55 et arrive TUN le 21/12 13:00 (44h05, 2 escales DXB–AMM, 3 compagnies EY/FZ/RJ : protection de correspondance non prouvée dans la trace → ⚠️). Le check-out hôtel du 20/12 n'est pas aligné (départ la veille au soir). personalItem 0. Index 4 (2913,22 EUR) : retour 19/12 12:00 → TUN 20/12 02:30, 20h30.",
+          "note": "Départ 01/12 conforme ; retour part KBV le 19/12 22:55 et arrive TUN le 21/12 13:00 (44h05, 2 escales : attente DXB ~10 h 35 (FZ1482 arr. 03:10 → RJ611 dép. 13:45), nuit Amman ~18 h 35 (RJ611 arr. 16:20 → RJ551 dép. 10:55 le 21/12) non chiffrée ; 3 compagnies EY/FZ/RJ : protection de correspondance non prouvée dans la trace → ⚠️). Le check-out hôtel du 20/12 n'est pas aligné (départ la veille au soir). personalItem 0. Index 4 (2913,22 EUR) : retour 19/12 12:00 → TUN 20/12 02:30, 20h30.",
           "datesMatchHotel": false,
           "datesNote": "départ conforme, retour 19/12 au lieu du 20/12 ; hôtel non re-chiffré"
         }
@@ -391,13 +387,14 @@
   },
   "findings": [
     "Écho passagers vérifié sur les 6 traces exploitées : « 2 adults » présent dans query et passengers.adults=2 ; adults_hold_bags [1,1] reflété par checkedBag=2 sur tous les itinéraires retenus.",
-    "A (HKT 29/11→16/12) : QR seule 1548,00 EUR (kiwi_tun_hkt_qr_exact_16n idx 0) contre 1388,09 EUR Etihad via AUH aux mêmes dates (all_fenetre idx 0) : QR = +159,91 EUR pour la préférence.",
+    "A (HKT 29/11→16/12) : QR seule 1548,00 EUR (kiwi_tun_hkt_qr_exact_16n idx 0) contre 1230,09 EUR Etihad via AUH aux dates exactes (test-output-v4-tun-b/kiwi_tun_hkt_all_exact_16n idx 0) : QR = +317.91 EUR pour la préférence.",
     "C (HKT 29/11→18/12) : QR seule 1455,00 EUR (qr_exact_18n idx 0), soit 93 EUR de moins que le QR 16 n de A ; mais retour de 35h15 avec nuit d'escale à Doha (alternative 1755,00 EUR en 19h10).",
     "B (KBV 01/12→20/12) : aucun itinéraire Qatar seule TUN→KBV avec ≤2 escales (resultsCount 0 aux dates exactes et sur la fenêtre). Toutes compagnies : min 2302,09 EUR mais dates 26/11→14/12 ; la variante partant le 01/12 coûte 2796,42 EUR avec 2 escales et 3 compagnies au retour, arrivée TUN 21/12.",
     "Différence bagages : QR affiche personalItem 2 / cabinBag 2 / checkedBag 2 ; Etihad et itinéraires mixtes affichent personalItem 0 / cabinBag 2 / checkedBag 2.",
     "Tous les itinéraires QR retenus utilisent le même aller QR1400 (TUN 16:00 → DOH 23:25) + QR846 (DOH 08:15 → HKT 18:55) : 20h55 avec ~8h50 d'escale nocturne à DOH. Alternative QR840 (12h55 d'arrivée, 14h55 de trajet) à +245 EUR (A idx 1 / C idx 1).",
     "Les retours QR à 00:25 (A idx 0) impliquent de quitter l'hôtel la veille au soir : la nuit d'hôtel du 15→16/12 est payée mais quasi inutilisée ; hôtels laissés inchangés conformément à la consigne.",
-    "Deux traces en HTTP 503 (all_exact_16n, qr_fenetre_16_18n) ignorées ; l'option « toutes compagnies » de A repose donc sur le balayage, dont les dates coïncident exactement avec l'hôtel."
+    "Anomalie de balayage : le même itinéraire EY740/EY410/EY417/EY739 29/11→16/12 vaut 1388,09 EUR dans all_fenetre_16_18n (22:17:22 UTC) et 1230,09 EUR dans la trace exacte all_exact_16n (22:20:10 UTC), soit 158,00 EUR d'écart à 3 minutes d'intervalle ; les prix de balayage ne remplacent pas une requête à dates fixes.",
+    "Balayage QR seule (test-output-v4-tun-b/kiwi_tun_hkt_qr_fenetre_16_18n, 12 itinéraires) : minimum 1814,00 EUR pour 10/12→28/12 uniquement ; départs renvoyés 03/12, 05/12 et 10/12, jamais le 29/11 pourtant à 1455–1548 EUR en requête exacte : le balayage QR n'est pas exhaustif."
   ],
   "unverified": [
     "Prix Kiwi à l'instant 2026-09-24T22:16–22:17 UTC, non refixés ; pas de relecture de la page de réservation (taxes finales, frais Kiwi, devise de paiement).",
@@ -406,8 +403,16 @@
     "Nuit d'escale à Doha sur le retour QR843/QR1399 (C idx 0, A idx 2) : hébergement/transit non chiffrés ; conditions de transit Qatar pour passeport belge non vérifiées.",
     "Le nombre de nuits d'hôtel réellement dormies diffère des dates de vol (arrivée HKT le 30/11 en soirée, départs à 00:25) : impact hôtel non recalculé (hôtels inchangés par consigne).",
     "Couverture Kiwi/QR sur TUN→KBV : resultsCount 0 ≠ preuve d'absence ; possibilité TUN→HKT + transfert terrestre Phuket→Ao Nang non chiffrée, ni combinaison via BKK.",
-    "Trace kiwi_tun_hkt_all_exact_16n en 503 : le prix toutes compagnies aux dates exactes de A est celui du balayage, non confirmé par une requête à dates fixes.",
+    "Écart balayage/exact (1388,09 vs 1230,09 EUR) non expliqué : volatilité tarifaire ou fixation différente du balayage ; prix à reconfirmer sur la page de réservation.",
     "Durées porte à porte : valeurs Kiwi brutes, sans les réserves +30 min/aéroport et +15 min/transfert du skill.",
     "Prix arrondis au centime supérieur depuis priceRaw (ex. 1388.083472 → 1388.09) ; l'affichage Kiwi « 1388 EUR » est tronqué."
-  ]
+  ],
+  "tracesRetried": {
+    "dir": "test-output-v4-tun-b",
+    "run": "36066790416",
+    "files": [
+      "kiwi_tun_hkt_all_exact_16n.json (15 itinéraires, 22:20:10 UTC)",
+      "kiwi_tun_hkt_qr_fenetre_16_18n.json (12 itinéraires, 22:20:16 UTC)"
+    ]
+  }
 }
