@@ -120,6 +120,20 @@ section.block{margin-bottom:28px}
 .section-cover svg{width:34px;height:34px;flex:none}
 .pill{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:600;margin-right:6px}
 .foot{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+/* Vidéos */
+.videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.vcard{background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.vcard .vph{display:block;aspect-ratio:16/9;background:var(--accent-soft);position:relative;overflow:hidden}
+.vcard .vph img{width:100%;height:100%;object-fit:cover;display:block}
+.vcard .vph .vnp{display:none;position:absolute;inset:0;place-items:center;color:var(--muted);font-size:13px}
+.vcard .vph.nophoto .vnp{display:grid}
+.vcard .vb{padding:10px 12px;display:grid;gap:4px;font-size:14px;align-content:start}
+.vcard h4{margin:0;font-family:var(--display);font-size:16px;font-weight:600;line-height:1.25}
+.vcard h4 a{color:var(--ink);text-decoration:none}
+.vcard h4 a:hover{text-decoration:underline;color:var(--accent)}
+.vcard .vm{margin:0;color:var(--muted);font-size:13px}
+.vcard .vs{margin:0}
+.vcard .src{margin:2px 0 0;font-size:12px;color:var(--muted)}
 </style>
 <div class="bg" aria-hidden="true">
   <div class="sun"></div>
@@ -225,7 +239,7 @@ const HOTELS = {
     beach: "Plage de Nai Yang à environ 15 min à pied.",
     airport: "Booking indique à la fois « environ 411 m » de l'aéroport HKT et « 5 min en voiture » : les deux valeurs sont incohérentes entre elles (ordre de grandeur plausible 1-2 km d'après les coordonnées, non vérifié).",
     shuttle: "Navette aéroport gratuite en aller simple ; si la prise en charge gratuite est utilisée, le retour vers l'aéroport est facturé.",
-    breakfast: "Disponible (américain, asiatique, halal) ; inclusion selon tarif, conditions non fournies par l'outil.",
+    breakfast: "Disponible (américain, asiatique, halal) ; inclusion selon la formule choisie, conditions non fournies par l'outil.",
     weak: "Bruit lié à la proximité de l'aéroport ; jugé adapté aux courts séjours plutôt qu'aux longues vacances.",
     facilities: ["Piscine à débordement extérieure", "Salle de fitness", "Wi-Fi gratuit", "Parking privé gratuit", "Restaurant avec vue panoramique", "Massages et spa (payants)"],
     url: "https://www.booking.com/searchresults.html?dest_type=hotel&dest_id=2298076"
@@ -238,7 +252,7 @@ const HOTELS = {
     beach: "Plage de Pakarang à environ 100 m, soit 2 min à pied.",
     airport: "Environ 82,1 km de l'aéroport de Phuket (HKT).",
     shuttle: "Navette aéroport payante, réservable auprès de l'hôtel.",
-    breakfast: "Disponible (spécialités locales, plats chauds, jus, pancakes, fruits) ; inclusion selon tarif.",
+    breakfast: "Disponible (spécialités locales, plats chauds, jus, pancakes, fruits) ; inclusion selon la formule choisie.",
     weak: "Un peu éloigné du centre (Bang Niang / Nang Thong), déplacements supplémentaires à prévoir ; bâtiments anciens mais propres.",
     facilities: ["Grande piscine extérieure", "Restaurant sur place", "Wi-Fi gratuit", "Bureau d'excursions", "Salles de conférence"],
     spa: "Aucun spa mentionné par Booking.",
@@ -252,7 +266,7 @@ const HOTELS = {
     beach: "Plage d'Ao Nang à environ 10 min à pied.",
     airport: "Environ 24 km de l'aéroport international de Krabi (KBV).",
     shuttle: "Navette aéroport payante, pour 2 personnes maximum avec bagages légers.",
-    breakfast: "Inclus selon Booking (spécialités locales, plats chauds, jus, pancakes, fruits) ; à confirmer sur le tarif retenu.",
+    breakfast: "Inclus selon Booking (spécialités locales, plats chauds, jus, pancakes, fruits) ; à confirmer sur la formule retenue.",
     weak: "Chambres à rénover (salles de bain, climatisation), Wi-Fi irrégulier, plage un peu éloignée pour un accès quotidien, moustiques et bruit de circulation.",
     facilities: ["Piscine avec vue et bar de piscine", "Restaurant familial", "Wi-Fi gratuit", "Jardin", "Parking privé gratuit"],
     spa: "Aucun spa mentionné par Booking.",
@@ -439,6 +453,55 @@ const SCEN = {
   }
 };
 
+/* Vidéos en français : recherche par extraits WebSearch le 24/09/2026, non visionnées. [id, titre, chaîne (null = non identifiée), date, résumé] */
+const VIDEOS = {
+  TH: [
+    ["7yl8uCa476U", "THAÏLANDE : Guide de A à Z - Tous mes conseils pour un voyage de rêve !", null, "11/01/2025", "Guide complet en français pour organiser un voyage en Thaïlande de A à Z (selon le titre et la description)."],
+    ["1iml7VCGzxI", "THAILANDE : LE GUIDE - Conseils - Planification", null, "15/03/2025", "Guide « ultime » de conseils et de planification pour la Thaïlande (selon la description)."],
+    ["qfFtFjks-Rk", "25 Choses à savoir avant d'aller en Thaïlande - Conseils essentiels", null, "01/02/2026", "25 points à connaître avant un voyage en Thaïlande (selon le titre)."],
+    ["YYUfly_-bjA", "Le Guide de la Thailande (27 choses à savoir avant d'y aller)", "Planète Nomade (mention dans l'extrait, à confirmer)", "03/03/2024", "27 choses à savoir avant de partir en Thaïlande (selon le titre)."],
+    ["BUpypDX1yfM", "Deux semaines dans le sud de la Thaïlande en famille !", "vloggeurs « Tifenn et Maxime » d'après la description (à confirmer)", "01/02/2025", "Vlog de deux semaines dans le sud de la Thaïlande par un couple voyageant depuis 3 ans (selon la description)."]
+  ],
+  A: [
+    ["GJtmTEY5L3Q", "Phuket, Thaïlande 🇹🇭 | Que faire à Phuket ? Plages, avions et points de vue", "série « voyage en Asie 2025-2026 », saison 4 épisode 25 (chaîne non identifiée)", "05/2026", "Plages, points de vue et spots pour voir passer les avions à Phuket (selon la description) ; les « avions » suggèrent la zone aéroport / Mai Khao-Nai Yang, non confirmé."],
+    ["INhKZBqTeE8", "Zéro touristes, Phuket version tranquille ! | Calme, beauté et vraies bonnes adresses", null, "26/07/2025", "Tour des coins calmes de Phuket avec adresses (selon la description) ; lieux exacts non confirmés."],
+    ["FrX_EFYs_ec", "THAILANDE - Phuket : entre belles surprises et tourisme de masse 🇹🇭", null, "27/12/2025", "Épisode d'une série voyage Thaïlande explorant Phuket, île aux avis partagés (selon la description)."],
+    ["hsOpbAw0G8g", "Fuir Phuket : et si le vrai paradis était ailleurs ? | VLOG THAÏLANDE", null, "08/02/2025", "Vlog partant de Phuket (Bang Rong Pier cité, location de scooter) vers des alternatives plus calmes (selon la description)."],
+    ["YVwyViwCdb0", "QUE FAIRE À PHUKET EN THAÏLANDE ? NOTRE AVIS APRÈS 6 JOURS DE VOYAGE - ACTIVITÉS/FOOD/PRIX/CONSEILS", "couple en tour du monde d'après la description (chaîne non identifiée)", "18/02/2024", "Bilan de 6 jours à Phuket : activités, nourriture et conseils (selon le titre)."]
+  ],
+  B: [
+    ["lsYpbvcx_B8", "Ao nang ou Railay ? Ou loger à Krabi ? Thaïlande 2025", null, "05/2025", "Comparaison des trois principaux spots de Krabi pour choisir où loger (selon la description)."],
+    ["fiSnt7GtCRA", "KRABI 🇹🇭 Notre Avis ! (Ao Nang, Railay Beach, Phra Nang Beach, Poda Island...)", "lien rehandeb.com dans la description (chaîne non identifiée)", "11/05/2024", "Avis sur Ao Nang, Railay, Phra Nang et Poda Island (selon le titre)."],
+    ["Y8EC_1R1Z8A", "On découvre la province de Krabi, le paysage montagneux du sud de la Thaïlande", "Matka Voyage (d'après l'extrait)", "03/2023", "Découverte de la province de Krabi et de ses paysages karstiques (selon le titre)."],
+    ["WbBKq8Z67EU", "VLOG #76 THAILANDE: Krabi, Ao Nang et Railay !", null, "26/03/2023", "Vlog Krabi ville (marché de nuit du week-end), Ao Nang et Railay (selon la description)."],
+    ["pXcg3nQzf8o", "Journée de Rêve à Ao Nang : Explorez Railay Beach avec Nous !", null, "13/12/2022", "Journée à Ao Nang avec excursion à Railay Beach (selon le titre)."]
+  ],
+  C: [
+    ["JrbSrovgmeE", "Quitter Phuket pour Khao Lak : Bonne ou mauvaise idée ? | VLOG THAÏLANDE", null, "03/2025", "Comparaison Phuket / Khao Lak par un vlogueur en Thaïlande (selon le titre)."],
+    ["YCx-1eOJgGQ", "Khao Lak : le paradis caché de Thaïlande", null, "28/08/2024", "Khao Lak présentée comme trésor caché : plages, parcs nationaux, culture locale (selon la description)."],
+    ["OroiYJBK6OU", "Vlog Thaïlande 2023: Plage déserte paradisiaque ... (aussi indexée « Exploration des Trésors Naturels de Khaolak : Plages Paradisiaques et Cascades Magnifiques ! »)", null, "29/01/2023", "Exploration des plages et cascades de Khao Lak (selon la description) ; titre exact incertain, deux versions indexées."],
+    ["qSJI0SejkUw", "🏝️ Iles Similan: une journee snorkeling et plages de reve en Thailande", null, "05/2025", "Excursion d'une journée aux Similan avec snorkeling et plages (selon le titre)."],
+    ["5Re1DFEsFy8", "Partie 2 : Iles Similan, Thaïlande | Excursion, itinéraire, tarif", null, "03/2025", "Excursion aux Similan avec son itinéraire (selon le titre)."]
+  ]
+};
+const VIDEO_ALT_A = [["W7UAfs2k0sY", "Nai Yang Beach Phuket | Quiet Side Of Paradise (anglais, 06/2026)"], ["TXhAe_8NiMk", "Nai Yang Beach - Phuket Thailand - Hidden Gem of the Island (anglais, 01/2024)"]];
+const yt = id => "https://www.youtube.com/watch?v=" + id;
+function videosBlock(k) {
+  const list = VIDEOS[k] || [];
+  const intro = k === "A" ? `<p class="note" style="margin:0 0 8px">Aucune vidéo française spécifique à Nai Yang trouvée : vidéos Phuket générales. Deux alternatives anglophones sur la plage elle-même : ${VIDEO_ALT_A.map(v => ext(yt(v[0]), v[1])).join(" · ")}.</p>` : "";
+  return `<section class="block">
+    <h3>Vidéos en français (non visionnées)</h3>${intro}
+    <div class="videos">${list.map(v => `<article class="vcard">
+      <a class="vph" href="${esc(yt(v[0]))}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="assets/yt-${esc(v[0])}.jpg" alt="" loading="lazy" onerror="this.parentNode.classList.add('nophoto');this.remove()"><span class="vnp">vignette non disponible</span></a>
+      <div class="vb">
+        <h4>${ext(yt(v[0]), v[1])}</h4>
+        <p class="vm">${esc(v[2] || "chaîne non identifiée")} · publiée le ${esc(v[3])}</p>
+        <p class="vs">${esc(v[4])}</p>
+        <p class="src">Sélection sur titre et date, vidéo non visionnée.</p>
+      </div></article>`).join("")}</div>
+  </section>`;
+}
+
 /* Cartes : fichiers publiés avec la page (assets/). */
 const MAPS = {
   thailand: { file: "assets/carte-thailande.png", center: [12.5, 100.5], zoom: 5, size: [700, 800], title: "Thaïlande" },
@@ -497,7 +560,7 @@ function hotelCard(id, role) {
       </dl>
       <div><h3>Ce que disent les avis</h3>
         <p style="margin:0"><b>${esc(h.score)}</b>, ${esc(h.reviews)}.<br>Points faibles cités : ${esc(h.weak)}</p></div>
-      <p class="src">Fiche Booking (réponses du 24/09/2026, 22:34 et 22:55 UTC) · ${ext(h.url, "voir la fiche")} (lien construit à partir de l'identifiant Booking, non testé). Conditions d'annulation : dépendent du tarif, à lire sur la page de réservation.</p>
+      <p class="src">Fiche Booking (réponses du 24/09/2026, 22:34 et 22:55 UTC) · ${ext(h.url, "voir la fiche")} (lien construit à partir de l'identifiant Booking, non testé). Conditions d'annulation : dépendent de la formule choisie, à lire sur la page de réservation.</p>
     </div>
   </article>`;
 }
@@ -555,6 +618,7 @@ function scenarioPanel(k) {
     </div>
     <p class="note" style="margin-top:8px">Vols relevés le 24/09/2026 (Bruxelles : rapport v5 ; Tunis : relevé du 24/09/2026 22:16-22:20 UTC). Rien n'est réservé.</p>
   </section>
+  ${videosBlock(k)}
   <div class="foot"><button type="button" class="primary" data-fav="${k}">Mon coup de cœur : scénario ${k}</button><button type="button" data-tab="CHOIX">Comparer les trois</button></div>`;
 }
 
@@ -582,7 +646,8 @@ function countryPanel() {
     <div class="dcard"><div class="dhead"><h4>À ne pas rater dans la région</h4></div>
       <div class="dbody"><div><ul style="margin:0;padding-left:18px">${li(COUNTRY.mustSee)}</ul></div></div>
     </div>
-  </section>`;
+  </section>
+  ${videosBlock("TH")}`;
 }
 
 const COMPARE = [
@@ -639,6 +704,7 @@ function srcPanel() {
     <li>Excursions : outil Booking « attractions_search » du 24/09/2026 à 22:34:31 UTC, catégories nature et circuits, dates 1-15/12/2026 ; liens dans chaque onglet.</li>
     <li>Vols : rapport v5 pour Bruxelles ; relevés Kiwi du 24/09/2026 22:16-22:20 UTC pour Tunis.</li>
     <li>Cartes : fonds © OpenStreetMap contributors ; positions des hôtels d'après Booking, aéroports placés à titre indicatif.</li>
+    <li>Vidéos : recherche par extraits WebSearch le 24/09/2026, non visionnées. Chaîne, durée et audience rarement visibles dans les extraits ; dates reprises des extraits (mois seul quand le jour n'était pas indiqué) ; aucune vidéo française spécifique à Nai Yang trouvée.</li>
   </ul></section>
   <section class="block"><h3>Points non vérifiés</h3><ul class="srcs">
     <li>Conditions d'entrée exactes en Thaïlande après le 15/09/2026 (page de l'ambassade inaccessible lors de la consultation).</li>
@@ -647,7 +713,7 @@ function srcPanel() {
     <li>Droits d'entrée des parcs Sirinat et Similan, et leur inclusion dans les excursions.</li>
     <li>Noms des spas ; pluviométrie de décembre à Krabi (les sources divergent).</li>
     <li>Conditions d'annulation des quatre hôtels : jamais renvoyées par l'outil, à lire sur la page de réservation.</li>
-    <li>Petit-déjeuner : conditions non confirmées pour L'esprit, Panphuree et Palm Galleria ; « inclus » pour Anyavee selon Booking, à confirmer sur le tarif retenu.</li>
+    <li>Petit-déjeuner : conditions non confirmées pour L'esprit, Panphuree et Palm Galleria ; « inclus » pour Anyavee selon Booking, à confirmer sur la formule retenue.</li>
     <li>Distance Panphuree-aéroport : « 411 m » et « 5 min en voiture » dans la même réponse Booking (contradiction interne).</li>
     <li>Lit double au Palm Galleria : la chambre standard est décrite avec deux lits simples.</li>
     <li>Nombre d'avis de L'esprit : 1 768 (recherche initiale) ou 1 771 (réponse du 24/09/2026).</li>
