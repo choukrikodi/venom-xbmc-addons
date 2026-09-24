@@ -1,0 +1,599 @@
+{
+ "collectedUtc": "2026-09-24T23:16:56Z",
+ "source": "Booking.com MCP (accommodations_search + answer_property_qa_by_ids_v2), user_country_code=be, locale=fr, EUR, 2 adultes, 1 chambre, filtres BEACHFRONT + 4-5 etoiles + HOTEL/RESORT, image_themes SEA_VIEW/BEACH",
+ "searchUtc": {
+  "NaiYang_KhaoLak_AoNang_Chaweng": "2026-09-24T23:16:56Z",
+  "MaiKhao_NaiThon": "2026-09-24T23:18:29Z"
+ },
+ "places": {
+  "A": {
+   "label": "Phuket nord (zone aeroport)",
+   "query": "Nai Yang Beach, Phuket (4 resultats) + Mai Khao Beach, Phuket (10) + Nai Thon Beach, Phuket (3) - fusion, 5 moins chers",
+   "dates": "2026-11-30 -> 2026-12-16 (16 n)",
+   "hotels": [
+    {
+     "id": 306204,
+     "name": "L'esprit De Naiyang Beach Resort - SHA Extra Plus",
+     "stars": 4,
+     "starsType": "official",
+     "score": 8.3,
+     "reviews": 1768,
+     "priceTotal": 1899.89,
+     "currency": "EUR",
+     "coords": [
+      8.08347,
+      98.292556
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage privée",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/esprit-de-naiyang.html?aid=8132308&checkin=2026-11-30&checkout=2026-12-16&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "Pool Access Suite Villa (sofa bed, pool view) ; Grand Pool Suite Villa (sofa bed, pool view). Prix total : non fourni par l'outil QA.",
+     "directBeach": "NON selon QA : « it is not directly on the beach; guests need to walk about 10 minutes to reach the beach » (contradiction avec le filtre Booking « En bord de plage / Plage privée »)",
+     "breakfast": "Options avec et sans petit-dejeuner (QA)",
+     "cancellation": "non fourni (« varies, check during booking »)",
+     "qaUtc": "2026-09-24T23:18:51Z"
+    },
+    {
+     "id": 15655192,
+     "name": "Radisson Blu Resort, Phuket Mai Khao Beach",
+     "stars": 5,
+     "starsType": "official",
+     "score": 8.8,
+     "reviews": 219,
+     "priceTotal": 2841.05,
+     "currency": "EUR",
+     "coords": [
+      8.124184,
+      98.301682
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/radisson-blu-resort-phuket-mai-khao-beach.html?aid=8132308&checkin=2026-11-30&checkout=2026-12-16&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "Premium Room with Balcony - Ocean Front ; Premium Room with Pool Access - Ocean Front ; Premium Room with Pool - Ocean Front ; Superior Room with Balcony - Ocean Front ; Superior Room with Pool - Ocean Front. Prix total : non fourni.",
+     "directBeach": "« directly opposite Mai Khao Beach ... cross a small local road to reach the beach » (pas pied dans l'eau au sens strict)",
+     "breakfast": "Inclus (continental a full English/Irish) selon QA",
+     "cancellation": "non fourni",
+     "qaUtc": "2026-09-24T23:18:51Z"
+    },
+    {
+     "id": 11097085,
+     "name": "Estella Phuket Mai Khao Beach Resort",
+     "stars": 5,
+     "starsType": "official",
+     "score": 7.4,
+     "reviews": 407,
+     "priceTotal": 3282.34,
+     "currency": "EUR",
+     "coords": [
+      8.148266,
+      98.297583
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/d-varee-mai-khao-beach-resort-thailand.html?aid=8132308&checkin=2026-11-30&checkout=2026-12-16&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "non fourni",
+     "directBeach": "non fourni",
+     "breakfast": "non fourni",
+     "cancellation": "non fourni",
+     "qaUtc": null
+    },
+    {
+     "id": 27594,
+     "name": "Phuket Marriott Resort and Spa, Nai Yang Beach",
+     "stars": 5,
+     "starsType": "official",
+     "score": 8.6,
+     "reviews": 463,
+     "priceTotal": 3916.34,
+     "currency": "EUR",
+     "coords": [
+      8.080949,
+      98.288391
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/phuket-marriott-resort-and-spa-nai-yang-beach.html?aid=8132308&checkin=2026-11-30&checkout=2026-12-16&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "non fourni",
+     "directBeach": "non fourni",
+     "breakfast": "non fourni",
+     "cancellation": "non fourni",
+     "qaUtc": null
+    },
+    {
+     "id": 418196,
+     "name": "Pullman Phuket Arcadia Naithon Beach",
+     "stars": 5,
+     "starsType": "official",
+     "score": 8.9,
+     "reviews": 1747,
+     "priceTotal": 4157.23,
+     "currency": "EUR",
+     "coords": [
+      8.062775,
+      98.277876
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/pullman-phuket-arcadia.html?aid=8132308&checkin=2026-11-30&checkout=2026-12-16&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "non fourni",
+     "directBeach": "non fourni",
+     "breakfast": "non fourni",
+     "cancellation": "non fourni",
+     "qaUtc": null
+    }
+   ],
+   "othersSeen": "The Slate 5299.12 ; Naiyang Park Resort 7429.70 ; Le Meridien Mai Khao 4239.27 ; Renaissance 4383.90 ; JW Marriott Mai Khao 4613.32 ; Riu Palace AI 4656.29 ; Maikhao Dream 4974.77 ; SALA 5623.93 ; Melia 6227.65 ; Anantara 8504.30 ; Pearl of Naithon 21008.32 ; Trisara 31888.75"
+  },
+  "C": {
+   "label": "Khao Lak",
+   "query": "Khao Lak, Thailand (10 resultats)",
+   "dates": "2026-11-30 -> 2026-12-18 (18 n)",
+   "hotels": [
+    {
+     "id": 6831813,
+     "name": "Pullman Khao Lak Resort",
+     "stars": 5,
+     "starsType": "official",
+     "score": 8.5,
+     "reviews": 588,
+     "priceTotal": 3036.24,
+     "currency": "EUR",
+     "coords": [
+      8.853891,
+      98.266378
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/pullman-khao-lak-resort.html?aid=8132308&checkin=2026-11-30&checkout=2026-12-18&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "Deluxe King Room with Sea View (44 m2) ; Family Suite King + 2 singles - Sea View (62 m2). Prix total : non fourni.",
+     "directBeach": "Oui : « located directly on the beach ... easy access »",
+     "breakfast": "Depend du tarif (« continental, American, vegetarian ... depend on booking conditions »)",
+     "cancellation": "non fourni",
+     "qaUtc": "2026-09-24T23:18:29Z"
+    },
+    {
+     "id": 254478,
+     "name": "Khaolak Emerald Beach Resort and Spa",
+     "stars": 5,
+     "starsType": "official",
+     "score": 8.2,
+     "reviews": 739,
+     "priceTotal": 3170.22,
+     "currency": "EUR",
+     "coords": [
+      8.611378,
+      98.238689
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/khaolak-emerald-beach-resort-spa.html?aid=8132308&checkin=2026-11-30&checkout=2026-12-18&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "Villa - Beach Front (65 m2) ; Villa with Private Pool (68 m2, pool view). Prix total : non fourni.",
+     "directBeach": "Oui : « located directly on Khao Lak Beach, providing easy access »",
+     "breakfast": "« not included in all room rates »",
+     "cancellation": "non fourni",
+     "qaUtc": "2026-09-24T23:18:51Z"
+    },
+    {
+     "id": 6831814,
+     "name": "Grand Mercure Khao Lak Bangsak",
+     "stars": 5,
+     "starsType": "official",
+     "score": 9.2,
+     "reviews": 861,
+     "priceTotal": 3618.15,
+     "currency": "EUR",
+     "coords": [
+      8.801849,
+      98.263283
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/grand-mercure-khao-lak-bangsak.html?aid=8132308&checkin=2026-11-30&checkout=2026-12-18&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "non fourni",
+     "directBeach": "non fourni",
+     "breakfast": "non fourni",
+     "cancellation": "non fourni",
+     "qaUtc": null
+    },
+    {
+     "id": 27266,
+     "name": "Ramada Resort by Wyndham Khao Lak",
+     "stars": 5,
+     "starsType": "official",
+     "score": 9.1,
+     "reviews": 594,
+     "priceTotal": 4227.93,
+     "currency": "EUR",
+     "coords": [
+      8.662458,
+      98.246151
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/ramada-resort-khao-lak.html?aid=8132308&checkin=2026-11-30&checkout=2026-12-18&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "non fourni",
+     "directBeach": "non fourni",
+     "breakfast": "non fourni",
+     "cancellation": "non fourni",
+     "qaUtc": null
+    },
+    {
+     "id": 1822959,
+     "name": "Le Meridien Khao Lak Resort & Spa",
+     "stars": 5,
+     "starsType": "official",
+     "score": 9.2,
+     "reviews": 678,
+     "priceTotal": 5125.29,
+     "currency": "EUR",
+     "coords": [
+      8.804513,
+      98.259659
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/bangsak-merlin-resort.html?aid=8132308&checkin=2026-11-30&checkout=2026-12-18&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "non fourni",
+     "directBeach": "non fourni",
+     "breakfast": "non fourni",
+     "cancellation": "non fourni",
+     "qaUtc": null
+    }
+   ],
+   "othersSeen": "JW Marriott 5167.39 ; Khaolak Merlin 5551.71 ; Avani+ 7187.97 ; Casa De La Flora 7742.62 ; Eden Beach 9129.99"
+  },
+  "B": {
+   "label": "Ao Nang / Krabi",
+   "query": "Ao Nang, Krabi (8 resultats)",
+   "dates": "2026-12-02 -> 2026-12-20 (18 n)",
+   "hotels": [
+    {
+     "id": 271145,
+     "name": "Srisuksant Resort",
+     "stars": 4,
+     "starsType": "official",
+     "score": 7.7,
+     "reviews": 327,
+     "priceTotal": 1612.34,
+     "currency": "EUR",
+     "coords": [
+      8.039335,
+      98.815667
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/srisuksant-resort.html?aid=8132308&checkin=2026-12-02&checkout=2026-12-20&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "Double Room with Pool Access (42 m2) ; Deluxe Double Room (42 m2) - la reponse ne confirme pas une vraie vue mer. Prix total : non fourni.",
+     "directBeach": "« located along Nopparat Thara Beach, providing direct access to the beach »",
+     "breakfast": "« typically available ... whether included can vary »",
+     "cancellation": "non fourni",
+     "qaUtc": "2026-09-24T23:18:51Z"
+    },
+    {
+     "id": 176597,
+     "name": "Krabi Resort",
+     "stars": 4,
+     "starsType": "official",
+     "score": 7.4,
+     "reviews": 2174,
+     "priceTotal": 2485.96,
+     "currency": "EUR",
+     "coords": [
+      8.03571,
+      98.818497
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage privée",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/krabi-resort.html?aid=8132308&checkin=2026-12-02&checkout=2026-12-20&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "Luxury Grand Pool Room (60 m2, pool view) ; Beachfront Pool Villa (180 m2) ; Tropical Pool Villa (143 m2) - vues « pool view » citees, pas de vue mer explicite. Prix total : non fourni.",
+     "directBeach": "Oui : « located directly on Ao Nang Beach, providing direct beach access »",
+     "breakfast": "Disponible, inclusion selon option choisie",
+     "cancellation": "non fourni",
+     "qaUtc": "2026-09-24T23:18:29Z"
+    },
+    {
+     "id": 42892,
+     "name": "Aonang Buri Resort",
+     "stars": 4,
+     "starsType": "official",
+     "score": 8.0,
+     "reviews": 1437,
+     "priceTotal": 3190.64,
+     "currency": "EUR",
+     "coords": [
+      8.039627,
+      98.815259
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/aonang-buri-resort.html?aid=8132308&checkin=2026-12-02&checkout=2026-12-20&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "non fourni",
+     "directBeach": "non fourni",
+     "breakfast": "non fourni",
+     "cancellation": "non fourni",
+     "qaUtc": null
+    },
+    {
+     "id": 14383355,
+     "name": "The Legacy V Beachfront Resort Ao Nang Krabi, Aspira Collection - Adults only",
+     "stars": 4,
+     "starsType": "official",
+     "score": 8.6,
+     "reviews": 242,
+     "priceTotal": 3375.92,
+     "currency": "EUR",
+     "coords": [
+      8.040811,
+      98.814112
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/aspira-v-ao-nang-krabi.html?aid=8132308&checkin=2026-12-02&checkout=2026-12-20&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "non fourni",
+     "directBeach": "non fourni",
+     "breakfast": "non fourni",
+     "cancellation": "non fourni",
+     "qaUtc": null
+    },
+    {
+     "id": 14565468,
+     "name": "Syama V Beachfront Resort Ao Nang Krabi, Aspira Collection - Adults Only",
+     "stars": 4,
+     "starsType": "official",
+     "score": 7.7,
+     "reviews": 23,
+     "priceTotal": 4089.19,
+     "currency": "EUR",
+     "coords": [
+      8.040821,
+      98.814045
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/the-legacy-v-ao-nang-beach.html?aid=8132308&checkin=2026-12-02&checkout=2026-12-20&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "non fourni",
+     "directBeach": "non fourni",
+     "breakfast": "non fourni",
+     "cancellation": "non fourni",
+     "qaUtc": null
+    }
+   ],
+   "othersSeen": "Vacation Village Phra Nang Inn 4466.89 ; Centara Ao Nang 5666.92 ; Aonang Villa Resort 6524.15. Aucun 5 etoiles retourne."
+  },
+  "USM": {
+   "label": "Koh Samui - Chaweng (Noi)",
+   "query": "Chaweng Beach, Koh Samui (6 resultats, tous a Chaweng Noi)",
+   "dates": "2026-12-08 -> 2026-12-15 (7 n)",
+   "hotels": [
+    {
+     "id": 27421,
+     "name": "Impiana Beachfront Resort Chaweng Noi, Koh Samui",
+     "stars": 4,
+     "starsType": "official",
+     "score": 7.5,
+     "reviews": 451,
+     "priceTotal": 342.42,
+     "currency": "EUR",
+     "coords": [
+      9.502545,
+      100.055618
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/impiana-samui-resort-and-spa.html?aid=8132308&checkin=2026-12-08&checkout=2026-12-15&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "Deluxe Double Room with Sea View ; Honeymoon Suite ; Impiana Suite. Prix total : non fourni.",
+     "directBeach": "Oui : « located directly on the beach, providing easy access »",
+     "breakfast": "Pas inclus dans tous les tarifs ; « approximately $350 per person » si non inclus (chiffre douteux, tel quel)",
+     "cancellation": "« requires you to cancel within a specified timeframe before arrival » - details non fournis",
+     "qaUtc": "2026-09-24T23:18:29Z"
+    },
+    {
+     "id": 176501,
+     "name": "Coral Cliff Beach Resort Samui - SHA Plus",
+     "stars": 4,
+     "starsType": "official",
+     "score": 8.6,
+     "reviews": 1704,
+     "priceTotal": 608.48,
+     "currency": "EUR",
+     "coords": [
+      9.488974,
+      100.062241
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage privée",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/coral-cove-chalet.html?aid=8132308&checkin=2026-12-08&checkout=2026-12-15&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "Deluxe Room with Sea View ; Villa with Sea View. Prix total : non fourni.",
+     "directBeach": "Oui : « located directly on the beach, providing direct access to the beachfront »",
+     "breakfast": "Inclus selon QA",
+     "cancellation": "non fourni",
+     "qaUtc": "2026-09-24T23:18:51Z"
+    },
+    {
+     "id": 176400,
+     "name": "New Star Beach Resort",
+     "stars": 4,
+     "starsType": "official",
+     "score": 8.8,
+     "reviews": 456,
+     "priceTotal": 717.83,
+     "currency": "EUR",
+     "coords": [
+      9.506096,
+      100.054804
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage privée",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/new-star-beach-resort.html?aid=8132308&checkin=2026-12-08&checkout=2026-12-15&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "non fourni",
+     "directBeach": "non fourni",
+     "breakfast": "non fourni",
+     "cancellation": "non fourni",
+     "qaUtc": null
+    },
+    {
+     "id": 27321,
+     "name": "Sheraton Samui Resort",
+     "stars": 5,
+     "starsType": "official",
+     "score": 8.6,
+     "reviews": 558,
+     "priceTotal": 889.31,
+     "currency": "EUR",
+     "coords": [
+      9.505556,
+      100.054302
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage privée",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/sheraton-ko-samui-resort.html?aid=8132308&checkin=2026-12-08&checkout=2026-12-15&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "non fourni",
+     "directBeach": "non fourni",
+     "breakfast": "non fourni",
+     "cancellation": "non fourni",
+     "qaUtc": null
+    },
+    {
+     "id": 176458,
+     "name": "The Sarann Koh Samui, Suites & Villas",
+     "stars": 4,
+     "starsType": "official",
+     "score": 8.3,
+     "reviews": 583,
+     "priceTotal": 1447.6,
+     "currency": "EUR",
+     "coords": [
+      9.500614,
+      100.057082
+     ],
+     "distanceToBeach": "non fourni",
+     "beachfront": true,
+     "facilitiesBeach": [
+      "En bord de plage",
+      "Plage"
+     ],
+     "url": "https://www.booking.com/hotel/th/the-sarann.html?aid=8132308&checkin=2026-12-08&checkout=2026-12-15&no_rooms=1&group_adults=2&selected_currency=EUR",
+     "seaViewRooms": "non fourni",
+     "directBeach": "non fourni",
+     "breakfast": "non fourni",
+     "cancellation": "non fourni",
+     "qaUtc": null
+    }
+   ],
+   "othersSeen": "Vana Belle 2562.11"
+  }
+ },
+ "comparison": {
+  "A_Phuket": {
+   "retained": "L'esprit 1899.89",
+   "cheapestBeachfront": "L'esprit 1899.89 (meme hotel, ecart 0) - mais QA : plage a ~10 min a pied, pas pied dans l'eau",
+   "cheapestTrueOceanFrontRooms": "Radisson Blu Mai Khao 2841.05 -> +941.16 (route locale a traverser) ; premier vrai bord de plage 5* a Nai Yang : Marriott 3916.34 -> +2016.45"
+  },
+  "C_KhaoLak": {
+   "retained": "Palm Galleria 1408.45",
+   "cheapestBeachfront": "Pullman Khao Lak 3036.24 -> +1627.79 ; Emerald 3170.22 -> +1761.77"
+  },
+  "B_AoNang": {
+   "retained": "Anyavee 1776.55",
+   "cheapestBeachfront": "Srisuksant 1612.34 -> -164.21 (moins cher, mais note 7.7 et vue mer non confirmee) ; Krabi Resort 2485.96 -> +709.41 ; Aonang Buri 3190.64 -> +1414.09"
+  },
+  "USM_Samui": {
+   "retained": "aucun (etape optionnelle)",
+   "cheapestBeachfront": "Impiana 342.42 / Coral Cliff 608.48 pour 7 n"
+  }
+ },
+ "unverified": [
+  "Prix = price.book Booking.com au 2026-09-24T23:16-23:18Z, chambre la moins chere de l'hotel (pas forcement vue mer) ; le tarif de la chambre vue mer n'a ete fourni par l'outil QA pour aucun hotel.",
+  "Politiques d'annulation : non fournies par l'outil QA pour les 8 hotels interroges.",
+  "Petit-dejeuner : reponse QA en texte libre ; « $350 per person » (Impiana) est invraisemblable et rapporte tel quel.",
+  "Distance a la plage : non fournie par l'outil de recherche.",
+  "L'esprit De Naiyang : Booking le classe « En bord de plage / Plage privee » mais le QA indique ~10 min a pied ; a verifier sur la page hotel.",
+  "Radisson Blu Mai Khao : plage de l'autre cote d'une petite route locale (QA).",
+  "Srisuksant et Krabi Resort : chambres listees en « pool view », vue mer reelle non confirmee.",
+  "Etoiles : stars_type = official pour tous les hotels listes (valeur renvoyee par Booking).",
+  "Nai Yang seul n'a renvoye que 4 resultats ; Mai Khao et Nai Thon ont ete ajoutes (Mai Khao a 5-10 km de HKT, Nai Thon ~6 km).",
+  "Ao Nang : aucun hotel 5 etoiles beachfront retourne par la recherche.",
+  "Chaweng : tous les resultats sont a Chaweng Noi (baie voisine), pas Chaweng centre."
+ ]
+}
