@@ -1,4 +1,4 @@
-=== 2026-09-24T05:41:00+00:00 https://mcp.trivago.com/mcp call trivago-accommodation-search {"query":"El Nido, Philippines","arrival":"2026-11-30","departure":"2026-12-05","adults":2,"rooms":1,"country":"MY","currency":"EUR","hotel_rating":{"4star":true,"5star":true}}
+=== 2026-09-24T05:49:47+00:00 https://mcp.trivago.com/mcp call trivago-accommodation-search {"query":"El Nido, Philippines","arrival":"2026-11-30","departure":"2026-12-05","adults":2,"rooms":1,"country":"MY","currency":"EUR","hotel_rating":{"4star":true,"5star":true}}
 {
  "jsonrpc": "2.0",
  "id": 2,

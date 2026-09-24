@@ -1,0 +1,1258 @@
+=== 2026-09-24T05:50:34+00:00 https://mcp.kiwi.com call search-flight {"flyFrom":"LGK","flyTo":"BRU","departureDate":"12/12/2026","departureDateTo":"20/12/2026","adults":2,"adults_hold_bags":[1,1],"currency":"EUR","locale":"fr","sort":"price","max_sector_stopovers":2}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"LGK → BRU on 12/12/2026–20/12/2026, 2 adults [≤2 stops/sector]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"22ea18845142000046da60ff_0|18841f2b51420000c0aadc5f_0|18841f2b51420000c0aadc5f_1\",\n      \"price\": 974.768692,\n      \"priceFormatted\": \"975 EUR\",\n      \"totalDurationSeconds\": 90000,\n      \"bookingUrl\": \"https://kiwi.com/u/6ucwuu\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T12:40:00\",\n        \"arrivalTime\": \"2026-12-16T06:40:00\",\n        \"durationSeconds\": 90000,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"SIN\",\n          \"PEK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-12-15T12:40:00\",\n            \"arrivalTime\": \"2026-12-15T14:25:00\",\n            \"durationSeconds\": 6300,\n            \"carrier\": \"AK\",\n            \"carrierName\": \"AirAsia\",\n            \"flightNumber\": \"AK732\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-15T17:45:00\",\n            \"arrivalTime\": \"2026-12-16T00:15:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA890\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T02:30:00\",\n            \"arrivalTime\": \"2026-12-16T06:40:00\",\n            \"durationSeconds\": 40200,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA963\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea1884513f00004b94419f_0|18841f2b513f0000d59b02a3_0|18841f2b513f0000d59b02a3_1\",\n      \"price\": 993.830766,\n      \"priceFormatted\": \"994 EUR\",\n      \"totalDurationSeconds\": 90000,\n      \"bookingUrl\": \"https://kiwi.com/u/qdh953\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-12T12:40:00\",\n        \"arrivalTime\": \"2026-12-13T06:40:00\",\n        \"durationSeconds\": 90000,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"SIN\",\n          \"PEK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-12-12T12:40:00\",\n            \"arrivalTime\": \"2026-12-12T14:25:00\",\n            \"durationSeconds\": 6300,\n            \"carrier\": \"AK\",\n            \"carrierName\": \"AirAsia\",\n            \"flightNumber\": \"AK732\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-12T17:45:00\",\n            \"arrivalTime\": \"2026-12-13T00:15:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA890\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-13T02:30:00\",\n            \"arrivalTime\": \"2026-12-13T06:40:00\",\n            \"durationSeconds\": 40200,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA963\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea18845143000098c0934b_0|18841f2b51430000a708e5fb_0|18841f2b51430000a708e5fb_1\",\n      \"price\": 995.796898,\n      \"priceFormatted\": \"996 EUR\",\n      \"totalDurationSeconds\": 89400,\n      \"bookingUrl\": \"https://kiwi.com/u/grvcfp\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-16T12:40:00\",\n        \"arrivalTime\": \"2026-12-17T06:30:00\",\n        \"durationSeconds\": 89400,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"SIN\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-12-16T12:40:00\",\n            \"arrivalTime\": \"2026-12-16T14:25:00\",\n            \"durationSeconds\": 6300,\n            \"carrier\": \"AK\",\n            \"carrierName\": \"AirAsia\",\n            \"flightNumber\": \"AK732\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T19:25:00\",\n            \"arrivalTime\": \"2026-12-16T23:20:00\",\n            \"durationSeconds\": 28500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY499\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T02:15:00\",\n            \"arrivalTime\": \"2026-12-17T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea18845143000098c0934b_0|18841f2b51430000490684d7_0|18841f2b51430000490684d7_1\",\n      \"price\": 995.796898,\n      \"priceFormatted\": \"996 EUR\",\n      \"totalDurationSeconds\": 134400,\n      \"bookingUrl\": \"https://kiwi.com/u/smsvcb\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-16T12:40:00\",\n        \"arrivalTime\": \"2026-12-17T19:00:00\",\n        \"durationSeconds\": 134400,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"SIN\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-12-16T12:40:00\",\n            \"arrivalTime\": \"2026-12-16T14:25:00\",\n            \"durationSeconds\": 6300,\n            \"carrier\": \"AK\",\n            \"carrierName\": \"AirAsia\",\n            \"flightNumber\": \"AK732\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T19:25:00\",\n            \"arrivalTime\": \"2026-12-16T23:20:00\",\n            \"durationSeconds\": 28500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY499\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T14:25:00\",\n            \"arrivalTime\": \"2026-12-17T19:00:00\",\n            \"durationSeconds\": 27300,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY55\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea1884514600008c7f3ca7_0|18841f2b51460000643030bb_0|18841f2b51460000643030bb_1\",\n      \"price\": 998.768692,\n      \"priceFormatted\": \"999 EUR\",\n      \"totalDurationSeconds\": 90000,\n      \"bookingUrl\": \"https://kiwi.com/u/cmdu9h\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-19T12:40:00\",\n        \"arrivalTime\": \"2026-12-20T06:40:00\",\n        \"durationSeconds\": 90000,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"SIN\",\n          \"PEK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-12-19T12:40:00\",\n            \"arrivalTime\": \"2026-12-19T14:25:00\",\n            \"durationSeconds\": 6300,\n            \"carrier\": \"AK\",\n            \"carrierName\": \"AirAsia\",\n            \"flightNumber\": \"AK732\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-19T17:45:00\",\n            \"arrivalTime\": \"2026-12-20T00:15:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA890\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-20T02:30:00\",\n            \"arrivalTime\": \"2026-12-20T06:40:00\",\n            \"durationSeconds\": 40200,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA963\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea188451470000e4c93ce1_0|18841f2b514700007922e2ea_0|18841f2b514700007922e2ea_1\",\n      \"price\": 1015.768692,\n      \"priceFormatted\": \"1016 EUR\",\n      \"totalDurationSeconds\": 90000,\n      \"bookingUrl\": \"https://kiwi.com/u/fyg6km\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-20T12:40:00\",\n        \"arrivalTime\": \"2026-12-21T06:40:00\",\n        \"durationSeconds\": 90000,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"SIN\",\n          \"PEK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-12-20T12:40:00\",\n            \"arrivalTime\": \"2026-12-20T14:25:00\",\n            \"durationSeconds\": 6300,\n            \"carrier\": \"AK\",\n            \"carrierName\": \"AirAsia\",\n            \"flightNumber\": \"AK732\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-20T17:45:00\",\n            \"arrivalTime\": \"2026-12-21T00:15:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA890\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-21T02:30:00\",\n            \"arrivalTime\": \"2026-12-21T06:40:00\",\n            \"durationSeconds\": 40200,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA963\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea1884514000005e720c3b_0|18841f2b5140000072da8265_0|18841f2b5140000072da8265_1\",\n      \"price\": 1020.830766,\n      \"priceFormatted\": \"1021 EUR\",\n      \"totalDurationSeconds\": 90000,\n      \"bookingUrl\": \"https://kiwi.com/u/45kkzt\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-13T12:40:00\",\n        \"arrivalTime\": \"2026-12-14T06:40:00\",\n        \"durationSeconds\": 90000,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"SIN\",\n          \"PEK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-12-13T12:40:00\",\n            \"arrivalTime\": \"2026-12-13T14:25:00\",\n            \"durationSeconds\": 6300,\n            \"carrier\": \"AK\",\n            \"carrierName\": \"AirAsia\",\n            \"flightNumber\": \"AK732\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-13T17:45:00\",\n            \"arrivalTime\": \"2026-12-14T00:15:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA890\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-14T02:30:00\",\n            \"arrivalTime\": \"2026-12-14T06:40:00\",\n            \"durationSeconds\": 40200,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA963\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea18845143000058487dc1_0|18841f2b51430000a708e5fb_0|18841f2b51430000a708e5fb_1\",\n      \"price\": 1042.715942,\n      \"priceFormatted\": \"1043 EUR\",\n      \"totalDurationSeconds\": 78600,\n      \"bookingUrl\": \"https://kiwi.com/u/ut72rm\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-16T15:40:00\",\n        \"arrivalTime\": \"2026-12-17T06:30:00\",\n        \"durationSeconds\": 78600,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"SIN\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-12-16T15:40:00\",\n            \"arrivalTime\": \"2026-12-16T17:25:00\",\n            \"durationSeconds\": 6300,\n            \"carrier\": \"TR\",\n            \"carrierName\": \"Scoot\",\n            \"flightNumber\": \"TR477\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T19:25:00\",\n            \"arrivalTime\": \"2026-12-16T23:20:00\",\n            \"durationSeconds\": 28500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY499\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T02:15:00\",\n            \"arrivalTime\": \"2026-12-17T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea188451440000ce87ad2d_0|18841f2b51440000799b9ee1_0|18841f2b51440000799b9ee1_1\",\n      \"price\": 1072.768692,\n      \"priceFormatted\": \"1073 EUR\",\n      \"totalDurationSeconds\": 90000,\n      \"bookingUrl\": \"https://kiwi.com/u/mj4qr3\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-17T12:40:00\",\n        \"arrivalTime\": \"2026-12-18T06:40:00\",\n        \"durationSeconds\": 90000,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"SIN\",\n          \"PEK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-12-17T12:40:00\",\n            \"arrivalTime\": \"2026-12-17T14:25:00\",\n            \"durationSeconds\": 6300,\n            \"carrier\": \"AK\",\n            \"carrierName\": \"AirAsia\",\n            \"flightNumber\": \"AK732\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-17T17:45:00\",\n            \"arrivalTime\": \"2026-12-18T00:15:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA890\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-18T02:30:00\",\n            \"arrivalTime\": \"2026-12-18T06:40:00\",\n            \"durationSeconds\": 40200,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA963\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea18845145000071ddc6f5_0|18841f2b514500007aaaf15e_0|18841f2b514500007aaaf15e_1\",\n      \"price\": 1098.768692,\n      \"priceFormatted\": \"1099 EUR\",\n      \"totalDurationSeconds\": 90000,\n      \"bookingUrl\": \"https://kiwi.com/u/8unbfz\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T12:40:00\",\n        \"arrivalTime\": \"2026-12-19T06:40:00\",\n        \"durationSeconds\": 90000,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"SIN\",\n          \"PEK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-12-18T12:40:00\",\n            \"arrivalTime\": \"2026-12-18T14:25:00\",\n            \"durationSeconds\": 6300,\n            \"carrier\": \"AK\",\n            \"carrierName\": \"AirAsia\",\n            \"flightNumber\": \"AK732\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-18T17:45:00\",\n            \"arrivalTime\": \"2026-12-19T00:15:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA890\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-19T02:30:00\",\n            \"arrivalTime\": \"2026-12-19T06:40:00\",\n            \"durationSeconds\": 40200,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA963\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea10ff5142000093c9b4c7_0|10ff1f2b51420000a81b042d_0|10ff1f2b51420000a81b042d_1\",\n      \"price\": 1208.258308,\n      \"priceFormatted\": \"1208 EUR\",\n      \"totalDurationSeconds\": 78600,\n      \"bookingUrl\": \"https://kiwi.com/u/wy4g63\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T16:15:00\",\n        \"arrivalTime\": \"2026-12-16T07:05:00\",\n        \"durationSeconds\": 78600,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"KUL\",\n          \"BKK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"KUL\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Kuala Lumpur\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport international de Kuala Lumpur\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Malaisie\",\n            \"departureTime\": \"2026-12-15T16:15:00\",\n            \"arrivalTime\": \"2026-12-15T17:30:00\",\n            \"durationSeconds\": 4500,\n            \"carrier\": \"AK\",\n            \"carrierName\": \"AirAsia\",\n            \"flightNumber\": \"AK6332\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"KUL\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Kuala Lumpur\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Kuala Lumpur\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-15T21:05:00\",\n            \"arrivalTime\": \"2026-12-15T22:10:00\",\n            \"durationSeconds\": 7500,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG418\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T00:30:00\",\n            \"arrivalTime\": \"2026-12-16T07:05:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG934\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea10ff514200005399c858_0|10ff1f2b51420000a81b042d_0|10ff1f2b51420000a81b042d_1\",\n      \"price\": 1245.98837,\n      \"priceFormatted\": \"1246 EUR\",\n      \"totalDurationSeconds\": 76200,\n      \"bookingUrl\": \"https://kiwi.com/u/hqvkn5\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T16:55:00\",\n        \"arrivalTime\": \"2026-12-16T07:05:00\",\n        \"durationSeconds\": 76200,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"KUL\",\n          \"BKK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"KUL\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Kuala Lumpur\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport international de Kuala Lumpur\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Malaisie\",\n            \"departureTime\": \"2026-12-15T16:55:00\",\n            \"arrivalTime\": \"2026-12-15T18:00:00\",\n            \"durationSeconds\": 3900,\n            \"carrier\": \"OD\",\n            \"carrierName\": \"Batik Air Malaysia\",\n            \"flightNumber\": \"OD2206\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"KUL\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Kuala Lumpur\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Kuala Lumpur\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-15T21:05:00\",\n            \"arrivalTime\": \"2026-12-15T22:10:00\",\n            \"durationSeconds\": 7500,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG418\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T00:30:00\",\n            \"arrivalTime\": \"2026-12-16T07:05:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG934\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea227e51460000e49b7978_0|10ff1f2b51460000ddbb6397_0|10ff1f2b51460000ddbb6397_1\",\n      \"price\": 1261.518966,\n      \"priceFormatted\": \"1262 EUR\",\n      \"totalDurationSeconds\": 80400,\n      \"bookingUrl\": \"https://kiwi.com/u/kbkyrv\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-19T15:10:00\",\n        \"arrivalTime\": \"2026-12-20T06:30:00\",\n        \"durationSeconds\": 80400,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"SZB\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"SZB\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Kuala Lumpur\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport Sultan Abdul Aziz Shah\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Malaisie\",\n            \"departureTime\": \"2026-12-19T15:10:00\",\n            \"arrivalTime\": \"2026-12-19T16:25:00\",\n            \"durationSeconds\": 4500,\n            \"carrier\": \"FY\",\n            \"carrierName\": \"Firefly\",\n            \"flightNumber\": \"FY1579\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"KUL\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Kuala Lumpur\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Kuala Lumpur\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-19T21:40:00\",\n            \"arrivalTime\": \"2026-12-20T00:50:00\",\n            \"durationSeconds\": 25800,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY487\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-20T02:15:00\",\n            \"arrivalTime\": \"2026-12-20T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea10ff51460000f6b3c85d_0|10ff1f2b51460000ddbb6397_0|10ff1f2b51460000ddbb6397_1\",\n      \"price\": 1291.777266,\n      \"priceFormatted\": \"1292 EUR\",\n      \"totalDurationSeconds\": 76500,\n      \"bookingUrl\": \"https://kiwi.com/u/vc293t\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-19T16:15:00\",\n        \"arrivalTime\": \"2026-12-20T06:30:00\",\n        \"durationSeconds\": 76500,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"KUL\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"KUL\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Kuala Lumpur\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport international de Kuala Lumpur\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Malaisie\",\n            \"departureTime\": \"2026-12-19T16:15:00\",\n            \"arrivalTime\": \"2026-12-19T17:30:00\",\n            \"durationSeconds\": 4500,\n            \"carrier\": \"AK\",\n            \"carrierName\": \"AirAsia\",\n            \"flightNumber\": \"AK6332\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"KUL\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Kuala Lumpur\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Kuala Lumpur\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-19T21:40:00\",\n            \"arrivalTime\": \"2026-12-20T00:50:00\",\n            \"durationSeconds\": 25800,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY487\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-20T02:15:00\",\n            \"arrivalTime\": \"2026-12-20T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"22ea10ff5146000036e3b4c2_0|10ff1f2b51460000ddbb6397_0|10ff1f2b51460000ddbb6397_1\",\n      \"price\": 1304.50734,\n      \"priceFormatted\": \"1305 EUR\",\n      \"totalDurationSeconds\": 74100,\n      \"bookingUrl\": \"https://kiwi.com/u/6x57r2\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"LGK\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-19T16:55:00\",\n        \"arrivalTime\": \"2026-12-20T06:30:00\",\n        \"durationSeconds\": 74100,\n        \"stops\": 2,\n        \"route\": [\n          \"LGK\",\n          \"KUL\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"LGK\",\n            \"to\": \"KUL\",\n            \"fromCity\": \"Langkawi\",\n            \"toCity\": \"Kuala Lumpur\",\n            \"fromName\": \"Aéroport international de Langkawi\",\n            \"toName\": \"Aéroport international de Kuala Lumpur\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Malaisie\",\n            \"departureTime\": \"2026-12-19T16:55:00\",\n            \"arrivalTime\": \"2026-12-19T18:00:00\",\n            \"durationSeconds\": 3900,\n            \"carrier\": \"OD\",\n            \"carrierName\": \"Batik Air Malaysia\",\n            \"flightNumber\": \"OD2206\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"KUL\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Kuala Lumpur\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Kuala Lumpur\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Malaisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-19T21:40:00\",\n            \"arrivalTime\": \"2026-12-20T00:50:00\",\n            \"durationSeconds\": 25800,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY487\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-20T02:15:00\",\n            \"arrivalTime\": \"2026-12-20T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 476,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "LGK → BRU on 12/12/2026–20/12/2026, 2 adults [≤2 stops/sector]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 15,
+   "itineraries": [
+    {
+     "id": "22ea18845142000046da60ff_0|18841f2b51420000c0aadc5f_0|18841f2b51420000c0aadc5f_1",
+     "price": 974.768692,
+     "priceFormatted": "975 EUR",
+     "totalDurationSeconds": 90000,
+     "bookingUrl": "https://kiwi.com/u/6ucwuu",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-15T12:40:00",
+      "arrivalTime": "2026-12-16T06:40:00",
+      "durationSeconds": 90000,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "SIN",
+       "PEK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "SIN",
+        "fromCity": "Langkawi",
+        "toCity": "Singapour",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport de Singapour-Changi",
+        "fromCountry": "Malaisie",
+        "toCountry": "Singapour",
+        "departureTime": "2026-12-15T12:40:00",
+        "arrivalTime": "2026-12-15T14:25:00",
+        "durationSeconds": 6300,
+        "carrier": "AK",
+        "carrierName": "AirAsia",
+        "flightNumber": "AK732",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "SIN",
+        "to": "PEK",
+        "fromCity": "Singapour",
+        "toCity": "Pékin",
+        "fromName": "Aéroport de Singapour-Changi",
+        "toName": "Aéroport international de Pékin-Capitale",
+        "fromCountry": "Singapour",
+        "toCountry": "Chine",
+        "departureTime": "2026-12-15T17:45:00",
+        "arrivalTime": "2026-12-16T00:15:00",
+        "durationSeconds": 23400,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA890",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "PEK",
+        "to": "BRU",
+        "fromCity": "Pékin",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Pékin-Capitale",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Chine",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-16T02:30:00",
+        "arrivalTime": "2026-12-16T06:40:00",
+        "durationSeconds": 40200,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA963",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea1884513f00004b94419f_0|18841f2b513f0000d59b02a3_0|18841f2b513f0000d59b02a3_1",
+     "price": 993.830766,
+     "priceFormatted": "994 EUR",
+     "totalDurationSeconds": 90000,
+     "bookingUrl": "https://kiwi.com/u/qdh953",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-12T12:40:00",
+      "arrivalTime": "2026-12-13T06:40:00",
+      "durationSeconds": 90000,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "SIN",
+       "PEK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "SIN",
+        "fromCity": "Langkawi",
+        "toCity": "Singapour",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport de Singapour-Changi",
+        "fromCountry": "Malaisie",
+        "toCountry": "Singapour",
+        "departureTime": "2026-12-12T12:40:00",
+        "arrivalTime": "2026-12-12T14:25:00",
+        "durationSeconds": 6300,
+        "carrier": "AK",
+        "carrierName": "AirAsia",
+        "flightNumber": "AK732",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "SIN",
+        "to": "PEK",
+        "fromCity": "Singapour",
+        "toCity": "Pékin",
+        "fromName": "Aéroport de Singapour-Changi",
+        "toName": "Aéroport international de Pékin-Capitale",
+        "fromCountry": "Singapour",
+        "toCountry": "Chine",
+        "departureTime": "2026-12-12T17:45:00",
+        "arrivalTime": "2026-12-13T00:15:00",
+        "durationSeconds": 23400,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA890",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "PEK",
+        "to": "BRU",
+        "fromCity": "Pékin",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Pékin-Capitale",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Chine",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-13T02:30:00",
+        "arrivalTime": "2026-12-13T06:40:00",
+        "durationSeconds": 40200,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA963",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea18845143000098c0934b_0|18841f2b51430000a708e5fb_0|18841f2b51430000a708e5fb_1",
+     "price": 995.796898,
+     "priceFormatted": "996 EUR",
+     "totalDurationSeconds": 89400,
+     "bookingUrl": "https://kiwi.com/u/grvcfp",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-16T12:40:00",
+      "arrivalTime": "2026-12-17T06:30:00",
+      "durationSeconds": 89400,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "SIN",
+       "AUH",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "SIN",
+        "fromCity": "Langkawi",
+        "toCity": "Singapour",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport de Singapour-Changi",
+        "fromCountry": "Malaisie",
+        "toCountry": "Singapour",
+        "departureTime": "2026-12-16T12:40:00",
+        "arrivalTime": "2026-12-16T14:25:00",
+        "durationSeconds": 6300,
+        "carrier": "AK",
+        "carrierName": "AirAsia",
+        "flightNumber": "AK732",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "SIN",
+        "to": "AUH",
+        "fromCity": "Singapour",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport de Singapour-Changi",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Singapour",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T19:25:00",
+        "arrivalTime": "2026-12-16T23:20:00",
+        "durationSeconds": 28500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY499",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BRU",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-17T02:15:00",
+        "arrivalTime": "2026-12-17T06:30:00",
+        "durationSeconds": 26100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY57",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea18845143000098c0934b_0|18841f2b51430000490684d7_0|18841f2b51430000490684d7_1",
+     "price": 995.796898,
+     "priceFormatted": "996 EUR",
+     "totalDurationSeconds": 134400,
+     "bookingUrl": "https://kiwi.com/u/smsvcb",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-16T12:40:00",
+      "arrivalTime": "2026-12-17T19:00:00",
+      "durationSeconds": 134400,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "SIN",
+       "AUH",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "SIN",
+        "fromCity": "Langkawi",
+        "toCity": "Singapour",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport de Singapour-Changi",
+        "fromCountry": "Malaisie",
+        "toCountry": "Singapour",
+        "departureTime": "2026-12-16T12:40:00",
+        "arrivalTime": "2026-12-16T14:25:00",
+        "durationSeconds": 6300,
+        "carrier": "AK",
+        "carrierName": "AirAsia",
+        "flightNumber": "AK732",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "SIN",
+        "to": "AUH",
+        "fromCity": "Singapour",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport de Singapour-Changi",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Singapour",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T19:25:00",
+        "arrivalTime": "2026-12-16T23:20:00",
+        "durationSeconds": 28500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY499",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BRU",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-17T14:25:00",
+        "arrivalTime": "2026-12-17T19:00:00",
+        "durationSeconds": 27300,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY55",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea1884514600008c7f3ca7_0|18841f2b51460000643030bb_0|18841f2b51460000643030bb_1",
+     "price": 998.768692,
+     "priceFormatted": "999 EUR",
+     "totalDurationSeconds": 90000,
+     "bookingUrl": "https://kiwi.com/u/cmdu9h",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-19T12:40:00",
+      "arrivalTime": "2026-12-20T06:40:00",
+      "durationSeconds": 90000,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "SIN",
+       "PEK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "SIN",
+        "fromCity": "Langkawi",
+        "toCity": "Singapour",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport de Singapour-Changi",
+        "fromCountry": "Malaisie",
+        "toCountry": "Singapour",
+        "departureTime": "2026-12-19T12:40:00",
+        "arrivalTime": "2026-12-19T14:25:00",
+        "durationSeconds": 6300,
+        "carrier": "AK",
+        "carrierName": "AirAsia",
+        "flightNumber": "AK732",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "SIN",
+        "to": "PEK",
+        "fromCity": "Singapour",
+        "toCity": "Pékin",
+        "fromName": "Aéroport de Singapour-Changi",
+        "toName": "Aéroport international de Pékin-Capitale",
+        "fromCountry": "Singapour",
+        "toCountry": "Chine",
+        "departureTime": "2026-12-19T17:45:00",
+        "arrivalTime": "2026-12-20T00:15:00",
+        "durationSeconds": 23400,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA890",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "PEK",
+        "to": "BRU",
+        "fromCity": "Pékin",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Pékin-Capitale",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Chine",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-20T02:30:00",
+        "arrivalTime": "2026-12-20T06:40:00",
+        "durationSeconds": 40200,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA963",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea188451470000e4c93ce1_0|18841f2b514700007922e2ea_0|18841f2b514700007922e2ea_1",
+     "price": 1015.768692,
+     "priceFormatted": "1016 EUR",
+     "totalDurationSeconds": 90000,
+     "bookingUrl": "https://kiwi.com/u/fyg6km",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-20T12:40:00",
+      "arrivalTime": "2026-12-21T06:40:00",
+      "durationSeconds": 90000,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "SIN",
+       "PEK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "SIN",
+        "fromCity": "Langkawi",
+        "toCity": "Singapour",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport de Singapour-Changi",
+        "fromCountry": "Malaisie",
+        "toCountry": "Singapour",
+        "departureTime": "2026-12-20T12:40:00",
+        "arrivalTime": "2026-12-20T14:25:00",
+        "durationSeconds": 6300,
+        "carrier": "AK",
+        "carrierName": "AirAsia",
+        "flightNumber": "AK732",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "SIN",
+        "to": "PEK",
+        "fromCity": "Singapour",
+        "toCity": "Pékin",
+        "fromName": "Aéroport de Singapour-Changi",
+        "toName": "Aéroport international de Pékin-Capitale",
+        "fromCountry": "Singapour",
+        "toCountry": "Chine",
+        "departureTime": "2026-12-20T17:45:00",
+        "arrivalTime": "2026-12-21T00:15:00",
+        "durationSeconds": 23400,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA890",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "PEK",
+        "to": "BRU",
+        "fromCity": "Pékin",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Pékin-Capitale",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Chine",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-21T02:30:00",
+        "arrivalTime": "2026-12-21T06:40:00",
+        "durationSeconds": 40200,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA963",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea1884514000005e720c3b_0|18841f2b5140000072da8265_0|18841f2b5140000072da8265_1",
+     "price": 1020.830766,
+     "priceFormatted": "1021 EUR",
+     "totalDurationSeconds": 90000,
+     "bookingUrl": "https://kiwi.com/u/45kkzt",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-13T12:40:00",
+      "arrivalTime": "2026-12-14T06:40:00",
+      "durationSeconds": 90000,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "SIN",
+       "PEK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "SIN",
+        "fromCity": "Langkawi",
+        "toCity": "Singapour",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport de Singapour-Changi",
+        "fromCountry": "Malaisie",
+        "toCountry": "Singapour",
+        "departureTime": "2026-12-13T12:40:00",
+        "arrivalTime": "2026-12-13T14:25:00",
+        "durationSeconds": 6300,
+        "carrier": "AK",
+        "carrierName": "AirAsia",
+        "flightNumber": "AK732",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "SIN",
+        "to": "PEK",
+        "fromCity": "Singapour",
+        "toCity": "Pékin",
+        "fromName": "Aéroport de Singapour-Changi",
+        "toName": "Aéroport international de Pékin-Capitale",
+        "fromCountry": "Singapour",
+        "toCountry": "Chine",
+        "departureTime": "2026-12-13T17:45:00",
+        "arrivalTime": "2026-12-14T00:15:00",
+        "durationSeconds": 23400,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA890",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "PEK",
+        "to": "BRU",
+        "fromCity": "Pékin",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Pékin-Capitale",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Chine",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-14T02:30:00",
+        "arrivalTime": "2026-12-14T06:40:00",
+        "durationSeconds": 40200,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA963",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea18845143000058487dc1_0|18841f2b51430000a708e5fb_0|18841f2b51430000a708e5fb_1",
+     "price": 1042.715942,
+     "priceFormatted": "1043 EUR",
+     "totalDurationSeconds": 78600,
+     "bookingUrl": "https://kiwi.com/u/ut72rm",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-16T15:40:00",
+      "arrivalTime": "2026-12-17T06:30:00",
+      "durationSeconds": 78600,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "SIN",
+       "AUH",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "SIN",
+        "fromCity": "Langkawi",
+        "toCity": "Singapour",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport de Singapour-Changi",
+        "fromCountry": "Malaisie",
+        "toCountry": "Singapour",
+        "departureTime": "2026-12-16T15:40:00",
+        "arrivalTime": "2026-12-16T17:25:00",
+        "durationSeconds": 6300,
+        "carrier": "TR",
+        "carrierName": "Scoot",
+        "flightNumber": "TR477",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "SIN",
+        "to": "AUH",
+        "fromCity": "Singapour",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport de Singapour-Changi",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Singapour",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T19:25:00",
+        "arrivalTime": "2026-12-16T23:20:00",
+        "durationSeconds": 28500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY499",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BRU",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-17T02:15:00",
+        "arrivalTime": "2026-12-17T06:30:00",
+        "durationSeconds": 26100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY57",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea188451440000ce87ad2d_0|18841f2b51440000799b9ee1_0|18841f2b51440000799b9ee1_1",
+     "price": 1072.768692,
+     "priceFormatted": "1073 EUR",
+     "totalDurationSeconds": 90000,
+     "bookingUrl": "https://kiwi.com/u/mj4qr3",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-17T12:40:00",
+      "arrivalTime": "2026-12-18T06:40:00",
+      "durationSeconds": 90000,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "SIN",
+       "PEK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "SIN",
+        "fromCity": "Langkawi",
+        "toCity": "Singapour",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport de Singapour-Changi",
+        "fromCountry": "Malaisie",
+        "toCountry": "Singapour",
+        "departureTime": "2026-12-17T12:40:00",
+        "arrivalTime": "2026-12-17T14:25:00",
+        "durationSeconds": 6300,
+        "carrier": "AK",
+        "carrierName": "AirAsia",
+        "flightNumber": "AK732",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "SIN",
+        "to": "PEK",
+        "fromCity": "Singapour",
+        "toCity": "Pékin",
+        "fromName": "Aéroport de Singapour-Changi",
+        "toName": "Aéroport international de Pékin-Capitale",
+        "fromCountry": "Singapour",
+        "toCountry": "Chine",
+        "departureTime": "2026-12-17T17:45:00",
+        "arrivalTime": "2026-12-18T00:15:00",
+        "durationSeconds": 23400,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA890",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "PEK",
+        "to": "BRU",
+        "fromCity": "Pékin",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Pékin-Capitale",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Chine",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-18T02:30:00",
+        "arrivalTime": "2026-12-18T06:40:00",
+        "durationSeconds": 40200,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA963",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea18845145000071ddc6f5_0|18841f2b514500007aaaf15e_0|18841f2b514500007aaaf15e_1",
+     "price": 1098.768692,
+     "priceFormatted": "1099 EUR",
+     "totalDurationSeconds": 90000,
+     "bookingUrl": "https://kiwi.com/u/8unbfz",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-18T12:40:00",
+      "arrivalTime": "2026-12-19T06:40:00",
+      "durationSeconds": 90000,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "SIN",
+       "PEK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "SIN",
+        "fromCity": "Langkawi",
+        "toCity": "Singapour",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport de Singapour-Changi",
+        "fromCountry": "Malaisie",
+        "toCountry": "Singapour",
+        "departureTime": "2026-12-18T12:40:00",
+        "arrivalTime": "2026-12-18T14:25:00",
+        "durationSeconds": 6300,
+        "carrier": "AK",
+        "carrierName": "AirAsia",
+        "flightNumber": "AK732",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "SIN",
+        "to": "PEK",
+        "fromCity": "Singapour",
+        "toCity": "Pékin",
+        "fromName": "Aéroport de Singapour-Changi",
+        "toName": "Aéroport international de Pékin-Capitale",
+        "fromCountry": "Singapour",
+        "toCountry": "Chine",
+        "departureTime": "2026-12-18T17:45:00",
+        "arrivalTime": "2026-12-19T00:15:00",
+        "durationSeconds": 23400,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA890",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "PEK",
+        "to": "BRU",
+        "fromCity": "Pékin",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Pékin-Capitale",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Chine",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-19T02:30:00",
+        "arrivalTime": "2026-12-19T06:40:00",
+        "durationSeconds": 40200,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA963",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea10ff5142000093c9b4c7_0|10ff1f2b51420000a81b042d_0|10ff1f2b51420000a81b042d_1",
+     "price": 1208.258308,
+     "priceFormatted": "1208 EUR",
+     "totalDurationSeconds": 78600,
+     "bookingUrl": "https://kiwi.com/u/wy4g63",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-15T16:15:00",
+      "arrivalTime": "2026-12-16T07:05:00",
+      "durationSeconds": 78600,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "KUL",
+       "BKK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "KUL",
+        "fromCity": "Langkawi",
+        "toCity": "Kuala Lumpur",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport international de Kuala Lumpur",
+        "fromCountry": "Malaisie",
+        "toCountry": "Malaisie",
+        "departureTime": "2026-12-15T16:15:00",
+        "arrivalTime": "2026-12-15T17:30:00",
+        "durationSeconds": 4500,
+        "carrier": "AK",
+        "carrierName": "AirAsia",
+        "flightNumber": "AK6332",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "KUL",
+        "to": "BKK",
+        "fromCity": "Kuala Lumpur",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Kuala Lumpur",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Malaisie",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-15T21:05:00",
+        "arrivalTime": "2026-12-15T22:10:00",
+        "durationSeconds": 7500,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG418",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "BRU",
+        "fromCity": "Bangkok",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-16T00:30:00",
+        "arrivalTime": "2026-12-16T07:05:00",
+        "durationSeconds": 45300,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG934",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea10ff514200005399c858_0|10ff1f2b51420000a81b042d_0|10ff1f2b51420000a81b042d_1",
+     "price": 1245.98837,
+     "priceFormatted": "1246 EUR",
+     "totalDurationSeconds": 76200,
+     "bookingUrl": "https://kiwi.com/u/hqvkn5",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-15T16:55:00",
+      "arrivalTime": "2026-12-16T07:05:00",
+      "durationSeconds": 76200,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "KUL",
+       "BKK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "KUL",
+        "fromCity": "Langkawi",
+        "toCity": "Kuala Lumpur",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport international de Kuala Lumpur",
+        "fromCountry": "Malaisie",
+        "toCountry": "Malaisie",
+        "departureTime": "2026-12-15T16:55:00",
+        "arrivalTime": "2026-12-15T18:00:00",
+        "durationSeconds": 3900,
+        "carrier": "OD",
+        "carrierName": "Batik Air Malaysia",
+        "flightNumber": "OD2206",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "KUL",
+        "to": "BKK",
+        "fromCity": "Kuala Lumpur",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Kuala Lumpur",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Malaisie",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-15T21:05:00",
+        "arrivalTime": "2026-12-15T22:10:00",
+        "durationSeconds": 7500,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG418",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "BRU",
+        "fromCity": "Bangkok",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-16T00:30:00",
+        "arrivalTime": "2026-12-16T07:05:00",
+        "durationSeconds": 45300,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG934",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea227e51460000e49b7978_0|10ff1f2b51460000ddbb6397_0|10ff1f2b51460000ddbb6397_1",
+     "price": 1261.518966,
+     "priceFormatted": "1262 EUR",
+     "totalDurationSeconds": 80400,
+     "bookingUrl": "https://kiwi.com/u/kbkyrv",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-19T15:10:00",
+      "arrivalTime": "2026-12-20T06:30:00",
+      "durationSeconds": 80400,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "SZB",
+       "AUH",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "SZB",
+        "fromCity": "Langkawi",
+        "toCity": "Kuala Lumpur",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport Sultan Abdul Aziz Shah",
+        "fromCountry": "Malaisie",
+        "toCountry": "Malaisie",
+        "departureTime": "2026-12-19T15:10:00",
+        "arrivalTime": "2026-12-19T16:25:00",
+        "durationSeconds": 4500,
+        "carrier": "FY",
+        "carrierName": "Firefly",
+        "flightNumber": "FY1579",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "KUL",
+        "to": "AUH",
+        "fromCity": "Kuala Lumpur",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Kuala Lumpur",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Malaisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-19T21:40:00",
+        "arrivalTime": "2026-12-20T00:50:00",
+        "durationSeconds": 25800,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY487",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BRU",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-20T02:15:00",
+        "arrivalTime": "2026-12-20T06:30:00",
+        "durationSeconds": 26100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY57",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea10ff51460000f6b3c85d_0|10ff1f2b51460000ddbb6397_0|10ff1f2b51460000ddbb6397_1",
+     "price": 1291.777266,
+     "priceFormatted": "1292 EUR",
+     "totalDurationSeconds": 76500,
+     "bookingUrl": "https://kiwi.com/u/vc293t",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-19T16:15:00",
+      "arrivalTime": "2026-12-20T06:30:00",
+      "durationSeconds": 76500,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "KUL",
+       "AUH",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "KUL",
+        "fromCity": "Langkawi",
+        "toCity": "Kuala Lumpur",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport international de Kuala Lumpur",
+        "fromCountry": "Malaisie",
+        "toCountry": "Malaisie",
+        "departureTime": "2026-12-19T16:15:00",
+        "arrivalTime": "2026-12-19T17:30:00",
+        "durationSeconds": 4500,
+        "carrier": "AK",
+        "carrierName": "AirAsia",
+        "flightNumber": "AK6332",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "KUL",
+        "to": "AUH",
+        "fromCity": "Kuala Lumpur",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Kuala Lumpur",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Malaisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-19T21:40:00",
+        "arrivalTime": "2026-12-20T00:50:00",
+        "durationSeconds": 25800,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY487",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BRU",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-20T02:15:00",
+        "arrivalTime": "2026-12-20T06:30:00",
+        "durationSeconds": 26100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY57",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "22ea10ff5146000036e3b4c2_0|10ff1f2b51460000ddbb6397_0|10ff1f2b51460000ddbb6397_1",
+     "price": 1304.50734,
+     "priceFormatted": "1305 EUR",
+     "totalDurationSeconds": 74100,
+     "bookingUrl": "https://kiwi.com/u/6x57r2",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "LGK",
+      "to": "BRU",
+      "departureTime": "2026-12-19T16:55:00",
+      "arrivalTime": "2026-12-20T06:30:00",
+      "durationSeconds": 74100,
+      "stops": 2,
+      "route": [
+       "LGK",
+       "KUL",
+       "AUH",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "LGK",
+        "to": "KUL",
+        "fromCity": "Langkawi",
+        "toCity": "Kuala Lumpur",
+        "fromName": "Aéroport international de Langkawi",
+        "toName": "Aéroport international de Kuala Lumpur",
+        "fromCountry": "Malaisie",
+        "toCountry": "Malaisie",
+        "departureTime": "2026-12-19T16:55:00",
+        "arrivalTime": "2026-12-19T18:00:00",
+        "durationSeconds": 3900,
+        "carrier": "OD",
+        "carrierName": "Batik Air Malaysia",
+        "flightNumber": "OD2206",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "KUL",
+        "to": "AUH",
+        "fromCity": "Kuala Lumpur",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Kuala Lumpur",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Malaisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-19T21:40:00",
+        "arrivalTime": "2026-12-20T00:50:00",
+        "durationSeconds": 25800,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY487",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BRU",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-20T02:15:00",
+        "arrivalTime": "2026-12-20T06:30:00",
+        "durationSeconds": 26100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY57",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 476,
+   "error": null
+  }
+ }
+}
