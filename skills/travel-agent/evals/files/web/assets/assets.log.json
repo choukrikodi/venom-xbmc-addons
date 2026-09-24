@@ -2,90 +2,66 @@
  "manifest": "skills/travel-agent/evals/files/web/assets.json",
  "assets": [
   {
-   "name": "carte-andaman.png",
-   "requested": "https://staticmap.openstreetmap.de/staticmap.php?center=8.40,98.56&zoom=9&size=900x640&maptype=mapnik&markers=8.1132,98.3169,ol-marker-blue|8.0835,98.2926,ol-marker|8.7284,98.2312,ol-marker|8.0383,98.8193,ol-marker|8.0991,98.9862,ol-marker-blue",
-   "kind": "image",
-   "source": "© OpenStreetMap contributors, staticmap.openstreetmap.de",
-   "utc": "2026-09-24T22:35:54+00:00",
-   "ok": false,
-   "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
-  },
-  {
-   "name": "carte-nai-yang.png",
-   "requested": "https://staticmap.openstreetmap.de/staticmap.php?center=8.095,98.302&zoom=13&size=900x640&maptype=mapnik&markers=8.08347,98.292556,ol-marker|8.101237,98.308592,ol-marker-gold|8.1132,98.3169,ol-marker-blue",
-   "kind": "image",
-   "source": "© OpenStreetMap contributors, staticmap.openstreetmap.de",
-   "utc": "2026-09-24T22:35:54+00:00",
-   "ok": false,
-   "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
-  },
-  {
-   "name": "carte-khao-lak.png",
-   "requested": "https://staticmap.openstreetmap.de/staticmap.php?center=8.70,98.25&zoom=12&size=900x640&maptype=mapnik&markers=8.72839,98.231152,ol-marker",
-   "kind": "image",
-   "source": "© OpenStreetMap contributors, staticmap.openstreetmap.de",
-   "utc": "2026-09-24T22:35:55+00:00",
-   "ok": false,
-   "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
-  },
-  {
-   "name": "carte-ao-nang.png",
-   "requested": "https://staticmap.openstreetmap.de/staticmap.php?center=8.045,98.83&zoom=13&size=900x640&maptype=mapnik&markers=8.038326,98.819294,ol-marker|8.0991,98.9862,ol-marker-blue",
-   "kind": "image",
-   "source": "© OpenStreetMap contributors, staticmap.openstreetmap.de",
-   "utc": "2026-09-24T22:35:55+00:00",
-   "ok": false,
-   "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
-  },
-  {
    "name": "carte-thailande.png",
-   "requested": "https://maps.wikimedia.org/img/osm-intl,5,12.5,100.5,700x800.png",
+   "requested": "https://maps.wikimedia.org/img/osm-intl,5,12.5,100.5,700x800.png?lang=fr",
    "kind": "image",
    "source": "© OpenStreetMap contributors, Wikimedia Maps",
-   "utc": "2026-09-24T22:35:55+00:00",
-   "final_url": "https://maps.wikimedia.org/img/osm-intl,5,12.5,100.5,700x800.png",
+   "utc": "2026-09-24T22:38:16+00:00",
+   "final_url": "https://maps.wikimedia.org/img/osm-intl,5,12.5,100.5,700x800.png?lang=fr",
    "content_type": "image/png",
-   "bytes": 96899,
+   "bytes": 95190,
    "ok": true
   },
   {
    "name": "carte-andaman-wm.png",
-   "requested": "https://maps.wikimedia.org/img/osm-intl,9,8.40,98.56,900x640.png",
+   "requested": "https://maps.wikimedia.org/img/osm-intl,9,8.40,98.56,900x640.png?lang=fr",
    "kind": "image",
-   "source": "© OpenStreetMap contributors, Wikimedia Maps (secours sans marqueurs)",
-   "utc": "2026-09-24T22:36:32+00:00",
-   "final_url": "https://maps.wikimedia.org/img/osm-intl,9,8.40,98.56,900x640.png",
+   "source": "© OpenStreetMap contributors, Wikimedia Maps",
+   "utc": "2026-09-24T22:38:17+00:00",
+   "final_url": "https://maps.wikimedia.org/img/osm-intl,9,8.40,98.56,900x640.png?lang=fr",
    "content_type": "image/png",
-   "bytes": 117819,
+   "bytes": 117926,
    "ok": true
   },
   {
-   "name": "hotel-palm-galleria.jpg",
-   "requested": "https://khaolakpalmgalleria.com/",
-   "kind": "og_image",
-   "source": "khaolakpalmgalleria.com, image de partage du site officiel",
-   "utc": "2026-09-24T22:36:32+00:00",
-   "image_url": "https://khaolakpalmgalleria.com/asset_theme/images/icon/favicon.png",
-   "final_url": "https://khaolakpalmgalleria.com/asset_theme/images/icon/favicon.png",
+   "name": "carte-nai-yang-wm.png",
+   "requested": "https://maps.wikimedia.org/img/osm-intl,13,8.095,98.302,900x640.png?lang=fr",
+   "kind": "image",
+   "source": "© OpenStreetMap contributors, Wikimedia Maps",
+   "utc": "2026-09-24T22:38:45+00:00",
+   "final_url": "https://maps.wikimedia.org/img/osm-intl,13,8.095,98.302,900x640.png?lang=fr",
    "content_type": "image/png",
-   "bytes": 3205,
+   "bytes": 80184,
    "ok": true
   },
   {
-   "name": "hotel-anyavee.jpg",
-   "requested": "https://www.aonangbayresort.com/",
-   "kind": "og_image",
-   "source": "aonangbayresort.com, image de partage du site officiel",
-   "utc": "2026-09-24T22:36:34+00:00",
-   "ok": false,
-   "error": "ValueError: og:image absent"
+   "name": "carte-khao-lak-wm.png",
+   "requested": "https://maps.wikimedia.org/img/osm-intl,12,8.70,98.25,900x640.png?lang=fr",
+   "kind": "image",
+   "source": "© OpenStreetMap contributors, Wikimedia Maps",
+   "utc": "2026-09-24T22:38:45+00:00",
+   "final_url": "https://maps.wikimedia.org/img/osm-intl,12,8.70,98.25,900x640.png?lang=fr",
+   "content_type": "image/png",
+   "bytes": 47629,
+   "ok": true
+  },
+  {
+   "name": "carte-ao-nang-wm.png",
+   "requested": "https://maps.wikimedia.org/img/osm-intl,13,8.045,98.83,900x640.png?lang=fr",
+   "kind": "image",
+   "source": "© OpenStreetMap contributors, Wikimedia Maps",
+   "utc": "2026-09-24T22:38:45+00:00",
+   "final_url": "https://maps.wikimedia.org/img/osm-intl,13,8.045,98.83,900x640.png?lang=fr",
+   "content_type": "image/png",
+   "bytes": 88237,
+   "ok": true
   },
   {
    "name": "hotel-panphuree.jpg",
    "requested": "https://panphuree.com/",
    "kind": "og_image",
    "source": "panphuree.com, image de partage du site officiel",
-   "utc": "2026-09-24T22:36:39+00:00",
+   "utc": "2026-09-24T22:38:46+00:00",
    "image_url": "https://panphuree.com/wp-content/uploads/2023/08/panphuree-themoropool_bar_5-scaled.webp",
    "final_url": "https://panphuree.com/wp-content/uploads/2023/08/panphuree-themoropool_bar_5-scaled.webp",
    "content_type": "image/webp",
@@ -93,40 +69,73 @@
    "ok": true
   },
   {
-   "name": "hotel-esprit-booking.jpg",
-   "requested": "https://www.booking.com/hotel/th/esprit-de-naiyang.html",
-   "kind": "og_image",
-   "source": "Booking.com, image de partage de la fiche L'esprit De Naiyang",
-   "utc": "2026-09-24T22:36:43+00:00",
-   "ok": false,
-   "error": "ValueError: og:image absent"
+   "name": "hotel-palm-galleria.jpg",
+   "requested": "https://khaolakpalmgalleria.com/",
+   "kind": "page_image",
+   "source": "khaolakpalmgalleria.com, photo de la page d'accueil du site officiel",
+   "utc": "2026-09-24T22:38:50+00:00",
+   "image_url": "https://khaolakpalmgalleria.com/images/1415.jpg",
+   "final_url": "https://khaolakpalmgalleria.com/images/1415.jpg",
+   "content_type": "image/jpeg",
+   "bytes": 1374568,
+   "ok": true
   },
   {
-   "name": "hotel-palm-booking.jpg",
-   "requested": "https://www.booking.com/hotel/th/palm-galleria-resort.html",
-   "kind": "og_image",
-   "source": "Booking.com, image de partage de la fiche Palm Galleria",
-   "utc": "2026-09-24T22:36:43+00:00",
-   "ok": false,
-   "error": "ValueError: og:image absent"
+   "name": "hotel-anyavee.jpg",
+   "requested": "https://www.aonangbayresort.com/",
+   "kind": "page_image",
+   "source": "aonangbayresort.com, photo de la page d'accueil du site officiel",
+   "utc": "2026-09-24T22:38:54+00:00",
+   "image_url": "https://www.aonangbayresort.com/wp-content/uploads/2023/03/swimming-pool-aonang-bay-resort.jpg",
+   "final_url": "https://www.aonangbayresort.com/wp-content/uploads/2023/03/swimming-pool-aonang-bay-resort.jpg",
+   "content_type": "image/jpeg",
+   "bytes": 459191,
+   "ok": true
   },
   {
-   "name": "hotel-anyavee-booking.jpg",
-   "requested": "https://www.booking.com/hotel/th/ao-nang-bay-resort-emuue-ngkrabii.html",
+   "name": "hotel-esprit.jpg",
+   "requested": "https://www.trivago.be/en-US/lm/l-esprit-de-naiyang-beach-resort-sha-extra-plus-nai-yang-beach",
    "kind": "og_image",
-   "source": "Booking.com, image de partage de la fiche Anyavee",
-   "utc": "2026-09-24T22:36:43+00:00",
+   "source": "trivago.be, image de partage de la fiche L'esprit De Naiyang",
+   "utc": "2026-09-24T22:38:58+00:00",
    "ok": false,
-   "error": "ValueError: og:image absent"
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
-   "name": "hotel-panphuree-booking.jpg",
-   "requested": "https://www.booking.com/hotel/th/panphuree-residence.html",
-   "kind": "og_image",
-   "source": "Booking.com, image de partage de la fiche Panphuree",
-   "utc": "2026-09-24T22:36:44+00:00",
+   "name": "hotel-esprit-page.jpg",
+   "requested": "https://www.trivago.be/en-US/lm/l-esprit-de-naiyang-beach-resort-sha-extra-plus-nai-yang-beach",
+   "kind": "page_image",
+   "source": "trivago.be, première photo de la fiche L'esprit De Naiyang",
+   "utc": "2026-09-24T22:38:58+00:00",
    "ok": false,
-   "error": "ValueError: og:image absent"
+   "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "hotel-naiyang-beach.jpg",
+   "requested": "https://www.trivago.be/en-US/lm/naiyang-beach-hotel-nai-yang-beach",
+   "kind": "og_image",
+   "source": "trivago.be, image de partage de la fiche Naiyang Beach Hotel",
+   "utc": "2026-09-24T22:38:59+00:00",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "hotel-apsara.jpg",
+   "requested": "https://www.trivago.be/en-US/lm/apsara-beachfront-resort-villa-khao-lak",
+   "kind": "og_image",
+   "source": "trivago.be, image de partage de la fiche Apsara Beachfront",
+   "utc": "2026-09-24T22:38:59+00:00",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "hotel-krabi-resort.jpg",
+   "requested": "https://www.trivago.be/en-US/lm/krabi-resort-ao-nang",
+   "kind": "og_image",
+   "source": "trivago.be, image de partage de la fiche Krabi Resort",
+   "utc": "2026-09-24T22:38:59+00:00",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   }
  ]
 }
