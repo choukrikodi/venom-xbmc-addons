@@ -1,17 +1,17 @@
-=== 2026-09-24T06:16:02+00:00 https://mcp.kiwi.com call search-flight {"flyFrom":"MNL","flyTo":"BRU","departureDate":"12/12/2026","departureDateTo":"20/12/2026","adults":2,"adults_hold_bags":[1,1],"currency":"EUR","locale":"fr","sort":"price","max_sector_stopovers":1}
+=== 2026-09-24T08:33:04+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "MNL", "flyTo": "BRU", "departureDate": "12/12/2026", "departureDateTo": "20/12/2026", "adults": 2, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 1, "allow_self_transfer": false}
 {
  "jsonrpc": "2.0",
  "id": 2,
  "result": {
   "content": [
    {
-    "text": "{\n  \"query\": \"MNL → BRU on 12/12/2026–20/12/2026, 2 adults [≤1 stops/sector]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"1edb1f2b5142000029eab2ef_0|1edb1f2b5142000029eab2ef_1\",\n      \"price\": 783.0,\n      \"priceFormatted\": \"783 EUR\",\n      \"totalDurationSeconds\": 125100,\n      \"bookingUrl\": \"https://kiwi.com/u/g6drbh\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T03:10:00\",\n        \"arrivalTime\": \"2026-12-16T06:55:00\",\n        \"durationSeconds\": 125100,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"PVG\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"PVG\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Shanghai\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international de Shanghai-Pudong\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-15T03:10:00\",\n            \"arrivalTime\": \"2026-12-15T06:35:00\",\n            \"durationSeconds\": 12300,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1566\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PVG\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Shanghai\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Shanghai-Pudong\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T01:35:00\",\n            \"arrivalTime\": \"2026-12-16T06:55:00\",\n            \"durationSeconds\": 44400,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1659\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b514600009eba5b84_0|1edb1f2b514600009eba5b84_1\",\n      \"price\": 785.0,\n      \"priceFormatted\": \"785 EUR\",\n      \"totalDurationSeconds\": 125100,\n      \"bookingUrl\": \"https://kiwi.com/u/zj5qrd\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-19T03:10:00\",\n        \"arrivalTime\": \"2026-12-20T06:55:00\",\n        \"durationSeconds\": 125100,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"PVG\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"PVG\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Shanghai\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international de Shanghai-Pudong\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-19T03:10:00\",\n            \"arrivalTime\": \"2026-12-19T06:35:00\",\n            \"durationSeconds\": 12300,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1566\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PVG\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Shanghai\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Shanghai-Pudong\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-20T01:35:00\",\n            \"arrivalTime\": \"2026-12-20T06:55:00\",\n            \"durationSeconds\": 44400,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1659\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b513f0000efc4048e_0|1edb1f2b513f0000efc4048e_1\",\n      \"price\": 789.0,\n      \"priceFormatted\": \"789 EUR\",\n      \"totalDurationSeconds\": 125100,\n      \"bookingUrl\": \"https://kiwi.com/u/2mhpnx\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-12T03:10:00\",\n        \"arrivalTime\": \"2026-12-13T06:55:00\",\n        \"durationSeconds\": 125100,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"PVG\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"PVG\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Shanghai\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international de Shanghai-Pudong\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-12T03:10:00\",\n            \"arrivalTime\": \"2026-12-12T06:35:00\",\n            \"durationSeconds\": 12300,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1566\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PVG\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Shanghai\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Shanghai-Pudong\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-13T01:35:00\",\n            \"arrivalTime\": \"2026-12-13T06:55:00\",\n            \"durationSeconds\": 44400,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1659\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51410000aff47cba_0|1edb1f2b51410000aff47cba_1\",\n      \"price\": 1044.0,\n      \"priceFormatted\": \"1044 EUR\",\n      \"totalDurationSeconds\": 69600,\n      \"bookingUrl\": \"https://kiwi.com/u/mn8f3b\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-14T18:30:00\",\n        \"arrivalTime\": \"2026-12-15T06:50:00\",\n        \"durationSeconds\": 69600,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"DOH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-12-14T18:30:00\",\n            \"arrivalTime\": \"2026-12-14T23:25:00\",\n            \"durationSeconds\": 35700,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR933\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-15T02:10:00\",\n            \"arrivalTime\": \"2026-12-15T06:50:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR195\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b514300007ed4cd61_0|1edb1f2b514300007ed4cd61_1\",\n      \"price\": 1044.0,\n      \"priceFormatted\": \"1044 EUR\",\n      \"totalDurationSeconds\": 69600,\n      \"bookingUrl\": \"https://kiwi.com/u/n6zzf8\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-16T18:30:00\",\n        \"arrivalTime\": \"2026-12-17T06:50:00\",\n        \"durationSeconds\": 69600,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"DOH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-12-16T18:30:00\",\n            \"arrivalTime\": \"2026-12-16T23:25:00\",\n            \"durationSeconds\": 35700,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR933\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T02:10:00\",\n            \"arrivalTime\": \"2026-12-17T06:50:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR195\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51420000235bc3be_0|1edb1f2b51420000235bc3be_1\",\n      \"price\": 1099.0,\n      \"priceFormatted\": \"1099 EUR\",\n      \"totalDurationSeconds\": 72900,\n      \"bookingUrl\": \"https://kiwi.com/u/zq3mfh\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T23:30:00\",\n        \"arrivalTime\": \"2026-12-16T12:45:00\",\n        \"durationSeconds\": 72900,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"DXB\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-15T23:30:00\",\n            \"arrivalTime\": \"2026-12-16T04:45:00\",\n            \"durationSeconds\": 33300,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK335\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T08:30:00\",\n            \"arrivalTime\": \"2026-12-16T12:45:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK183\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51420000cd55a292_0|1edb1f2b51420000cd55a292_1\",\n      \"price\": 1099.0,\n      \"priceFormatted\": \"1099 EUR\",\n      \"totalDurationSeconds\": 93300,\n      \"bookingUrl\": \"https://kiwi.com/u/g8m24y\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T23:30:00\",\n        \"arrivalTime\": \"2026-12-16T18:25:00\",\n        \"durationSeconds\": 93300,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"DXB\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-15T23:30:00\",\n            \"arrivalTime\": \"2026-12-16T04:45:00\",\n            \"durationSeconds\": 33300,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK335\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T14:05:00\",\n            \"arrivalTime\": \"2026-12-16T18:25:00\",\n            \"durationSeconds\": 26400,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK181\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51420000e2ccdd06_0|1edb1f2b51420000e2ccdd06_1\",\n      \"price\": 1113.0,\n      \"priceFormatted\": \"1113 EUR\",\n      \"totalDurationSeconds\": 79200,\n      \"bookingUrl\": \"https://kiwi.com/u/wvq4zk\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T03:25:00\",\n        \"arrivalTime\": \"2026-12-15T18:25:00\",\n        \"durationSeconds\": 79200,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"DXB\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-15T03:25:00\",\n            \"arrivalTime\": \"2026-12-15T09:00:00\",\n            \"durationSeconds\": 34500,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK331\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-15T14:05:00\",\n            \"arrivalTime\": \"2026-12-15T18:25:00\",\n            \"durationSeconds\": 26400,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK181\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51440000acbf7ad3_0|1edb1f2b51440000acbf7ad3_1\",\n      \"price\": 1169.980228,\n      \"priceFormatted\": \"1170 EUR\",\n      \"totalDurationSeconds\": 72900,\n      \"bookingUrl\": \"https://kiwi.com/u/gqtjbs\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-17T05:45:00\",\n        \"arrivalTime\": \"2026-12-17T19:00:00\",\n        \"durationSeconds\": 72900,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-17T05:45:00\",\n            \"arrivalTime\": \"2026-12-17T11:30:00\",\n            \"durationSeconds\": 35100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY447\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T14:25:00\",\n            \"arrivalTime\": \"2026-12-17T19:00:00\",\n            \"durationSeconds\": 27300,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY55\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51400000c319a09a_0|1edb1f2b51400000c319a09a_1\",\n      \"price\": 1227.980228,\n      \"priceFormatted\": \"1228 EUR\",\n      \"totalDurationSeconds\": 69600,\n      \"bookingUrl\": \"https://kiwi.com/u/3f5t6h\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-13T18:10:00\",\n        \"arrivalTime\": \"2026-12-14T06:30:00\",\n        \"durationSeconds\": 69600,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-13T18:10:00\",\n            \"arrivalTime\": \"2026-12-14T00:10:00\",\n            \"durationSeconds\": 36000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY441\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-14T02:15:00\",\n            \"arrivalTime\": \"2026-12-14T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51420000d04e727b_0|1edb1f2b51420000d04e727b_1\",\n      \"price\": 1227.980228,\n      \"priceFormatted\": \"1228 EUR\",\n      \"totalDurationSeconds\": 72900,\n      \"bookingUrl\": \"https://kiwi.com/u/xgyx9u\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T05:45:00\",\n        \"arrivalTime\": \"2026-12-15T19:00:00\",\n        \"durationSeconds\": 72900,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-15T05:45:00\",\n            \"arrivalTime\": \"2026-12-15T11:30:00\",\n            \"durationSeconds\": 35100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY447\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-15T14:25:00\",\n            \"arrivalTime\": \"2026-12-15T19:00:00\",\n            \"durationSeconds\": 27300,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY55\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b5143000085129b4e_0|1edb1f2b5143000085129b4e_1\",\n      \"price\": 1240.980228,\n      \"priceFormatted\": \"1241 EUR\",\n      \"totalDurationSeconds\": 69600,\n      \"bookingUrl\": \"https://kiwi.com/u/wgnqf7\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-16T18:10:00\",\n        \"arrivalTime\": \"2026-12-17T06:30:00\",\n        \"durationSeconds\": 69600,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T18:10:00\",\n            \"arrivalTime\": \"2026-12-17T00:10:00\",\n            \"durationSeconds\": 36000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY441\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T02:15:00\",\n            \"arrivalTime\": \"2026-12-17T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51470000624cbc8b_0|1edb1f2b51470000624cbc8b_1\",\n      \"price\": 1251.0,\n      \"priceFormatted\": \"1251 EUR\",\n      \"totalDurationSeconds\": 66000,\n      \"bookingUrl\": \"https://kiwi.com/u/9pu38n\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-20T19:45:00\",\n        \"arrivalTime\": \"2026-12-21T07:05:00\",\n        \"durationSeconds\": 66000,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"BKK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-20T19:45:00\",\n            \"arrivalTime\": \"2026-12-20T22:20:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG625\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-21T00:30:00\",\n            \"arrivalTime\": \"2026-12-21T07:05:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG934\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b513f0000cef55cc2_0|1edb1f2b513f0000cef55cc2_1\",\n      \"price\": 1258.0,\n      \"priceFormatted\": \"1258 EUR\",\n      \"totalDurationSeconds\": 66000,\n      \"bookingUrl\": \"https://kiwi.com/u/fhkcn8\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-12T19:45:00\",\n        \"arrivalTime\": \"2026-12-13T07:05:00\",\n        \"durationSeconds\": 66000,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"BKK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-12T19:45:00\",\n            \"arrivalTime\": \"2026-12-12T22:20:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG625\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-13T00:30:00\",\n            \"arrivalTime\": \"2026-12-13T07:05:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG934\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b5144000062f5c080_0|1edb1f2b5144000062f5c080_1\",\n      \"price\": 1261.0,\n      \"priceFormatted\": \"1261 EUR\",\n      \"totalDurationSeconds\": 66000,\n      \"bookingUrl\": \"https://kiwi.com/u/sv72tj\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-17T19:45:00\",\n        \"arrivalTime\": \"2026-12-18T07:05:00\",\n        \"durationSeconds\": 66000,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"BKK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-17T19:45:00\",\n            \"arrivalTime\": \"2026-12-17T22:20:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG625\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-18T00:30:00\",\n            \"arrivalTime\": \"2026-12-18T07:05:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG934\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 584,\n  \"error\": null\n}",
+    "text": "{\n  \"query\": \"MNL → BRU on 12/12/2026–20/12/2026, 2 adults [≤1 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"1edb1f2b5142000029eab2ef_0|1edb1f2b5142000029eab2ef_1\",\n      \"price\": 784.0,\n      \"priceFormatted\": \"784 EUR\",\n      \"totalDurationSeconds\": 125100,\n      \"bookingUrl\": \"https://kiwi.com/u/8x56k7b\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T03:10:00\",\n        \"arrivalTime\": \"2026-12-16T06:55:00\",\n        \"durationSeconds\": 125100,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"PVG\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"PVG\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Shanghai\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international de Shanghai-Pudong\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-15T03:10:00\",\n            \"arrivalTime\": \"2026-12-15T06:35:00\",\n            \"durationSeconds\": 12300,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1566\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PVG\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Shanghai\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Shanghai-Pudong\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T01:35:00\",\n            \"arrivalTime\": \"2026-12-16T06:55:00\",\n            \"durationSeconds\": 44400,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1659\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b514600009eba5b84_0|1edb1f2b514600009eba5b84_1\",\n      \"price\": 785.0,\n      \"priceFormatted\": \"785 EUR\",\n      \"totalDurationSeconds\": 125100,\n      \"bookingUrl\": \"https://kiwi.com/u/3twp76\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-19T03:10:00\",\n        \"arrivalTime\": \"2026-12-20T06:55:00\",\n        \"durationSeconds\": 125100,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"PVG\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"PVG\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Shanghai\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international de Shanghai-Pudong\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-19T03:10:00\",\n            \"arrivalTime\": \"2026-12-19T06:35:00\",\n            \"durationSeconds\": 12300,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1566\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PVG\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Shanghai\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Shanghai-Pudong\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-20T01:35:00\",\n            \"arrivalTime\": \"2026-12-20T06:55:00\",\n            \"durationSeconds\": 44400,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1659\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b513f0000efc4048e_0|1edb1f2b513f0000efc4048e_1\",\n      \"price\": 789.0,\n      \"priceFormatted\": \"789 EUR\",\n      \"totalDurationSeconds\": 125100,\n      \"bookingUrl\": \"https://kiwi.com/u/5mx3ux\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-12T03:10:00\",\n        \"arrivalTime\": \"2026-12-13T06:55:00\",\n        \"durationSeconds\": 125100,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"PVG\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"PVG\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Shanghai\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international de Shanghai-Pudong\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-12T03:10:00\",\n            \"arrivalTime\": \"2026-12-12T06:35:00\",\n            \"durationSeconds\": 12300,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1566\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PVG\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Shanghai\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Shanghai-Pudong\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-13T01:35:00\",\n            \"arrivalTime\": \"2026-12-13T06:55:00\",\n            \"durationSeconds\": 44400,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1659\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b514300007ed4cd61_0|1edb1f2b514300007ed4cd61_1\",\n      \"price\": 1044.0,\n      \"priceFormatted\": \"1044 EUR\",\n      \"totalDurationSeconds\": 69600,\n      \"bookingUrl\": \"https://kiwi.com/u/wyfvq5\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-16T18:30:00\",\n        \"arrivalTime\": \"2026-12-17T06:50:00\",\n        \"durationSeconds\": 69600,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"DOH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-12-16T18:30:00\",\n            \"arrivalTime\": \"2026-12-16T23:25:00\",\n            \"durationSeconds\": 35700,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR933\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T02:10:00\",\n            \"arrivalTime\": \"2026-12-17T06:50:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR195\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51410000aff47cba_0|1edb1f2b51410000aff47cba_1\",\n      \"price\": 1044.0,\n      \"priceFormatted\": \"1044 EUR\",\n      \"totalDurationSeconds\": 69600,\n      \"bookingUrl\": \"https://kiwi.com/u/xmz5dx\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-14T18:30:00\",\n        \"arrivalTime\": \"2026-12-15T06:50:00\",\n        \"durationSeconds\": 69600,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"DOH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-12-14T18:30:00\",\n            \"arrivalTime\": \"2026-12-14T23:25:00\",\n            \"durationSeconds\": 35700,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR933\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-15T02:10:00\",\n            \"arrivalTime\": \"2026-12-15T06:50:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR195\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51420000235bc3be_0|1edb1f2b51420000235bc3be_1\",\n      \"price\": 1100.0,\n      \"priceFormatted\": \"1100 EUR\",\n      \"totalDurationSeconds\": 72900,\n      \"bookingUrl\": \"https://kiwi.com/u/ksvtu3\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T23:30:00\",\n        \"arrivalTime\": \"2026-12-16T12:45:00\",\n        \"durationSeconds\": 72900,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"DXB\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-15T23:30:00\",\n            \"arrivalTime\": \"2026-12-16T04:45:00\",\n            \"durationSeconds\": 33300,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK335\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T08:30:00\",\n            \"arrivalTime\": \"2026-12-16T12:45:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK183\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51420000e2ccdd06_0|1edb1f2b51420000e2ccdd06_1\",\n      \"price\": 1115.0,\n      \"priceFormatted\": \"1115 EUR\",\n      \"totalDurationSeconds\": 79200,\n      \"bookingUrl\": \"https://kiwi.com/u/hvgvstx\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T03:25:00\",\n        \"arrivalTime\": \"2026-12-15T18:25:00\",\n        \"durationSeconds\": 79200,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"DXB\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-15T03:25:00\",\n            \"arrivalTime\": \"2026-12-15T09:00:00\",\n            \"durationSeconds\": 34500,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK331\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-15T14:05:00\",\n            \"arrivalTime\": \"2026-12-15T18:25:00\",\n            \"durationSeconds\": 26400,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK181\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51440000acbf7ad3_0|1edb1f2b51440000acbf7ad3_1\",\n      \"price\": 1169.980228,\n      \"priceFormatted\": \"1170 EUR\",\n      \"totalDurationSeconds\": 72900,\n      \"bookingUrl\": \"https://kiwi.com/u/frtpvd\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-17T05:45:00\",\n        \"arrivalTime\": \"2026-12-17T19:00:00\",\n        \"durationSeconds\": 72900,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-17T05:45:00\",\n            \"arrivalTime\": \"2026-12-17T11:30:00\",\n            \"durationSeconds\": 35100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY447\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T14:25:00\",\n            \"arrivalTime\": \"2026-12-17T19:00:00\",\n            \"durationSeconds\": 27300,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY55\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51400000c319a09a_0|1edb1f2b51400000c319a09a_1\",\n      \"price\": 1227.980228,\n      \"priceFormatted\": \"1228 EUR\",\n      \"totalDurationSeconds\": 69600,\n      \"bookingUrl\": \"https://kiwi.com/u/cjydz6m\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-13T18:10:00\",\n        \"arrivalTime\": \"2026-12-14T06:30:00\",\n        \"durationSeconds\": 69600,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-13T18:10:00\",\n            \"arrivalTime\": \"2026-12-14T00:10:00\",\n            \"durationSeconds\": 36000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY441\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-14T02:15:00\",\n            \"arrivalTime\": \"2026-12-14T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51420000d04e727b_0|1edb1f2b51420000d04e727b_1\",\n      \"price\": 1227.980228,\n      \"priceFormatted\": \"1228 EUR\",\n      \"totalDurationSeconds\": 72900,\n      \"bookingUrl\": \"https://kiwi.com/u/8w8kk2\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T05:45:00\",\n        \"arrivalTime\": \"2026-12-15T19:00:00\",\n        \"durationSeconds\": 72900,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-15T05:45:00\",\n            \"arrivalTime\": \"2026-12-15T11:30:00\",\n            \"durationSeconds\": 35100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY447\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-15T14:25:00\",\n            \"arrivalTime\": \"2026-12-15T19:00:00\",\n            \"durationSeconds\": 27300,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY55\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b5143000085129b4e_0|1edb1f2b5143000085129b4e_1\",\n      \"price\": 1240.980228,\n      \"priceFormatted\": \"1241 EUR\",\n      \"totalDurationSeconds\": 69600,\n      \"bookingUrl\": \"https://kiwi.com/u/p6xhpr\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-16T18:10:00\",\n        \"arrivalTime\": \"2026-12-17T06:30:00\",\n        \"durationSeconds\": 69600,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T18:10:00\",\n            \"arrivalTime\": \"2026-12-17T00:10:00\",\n            \"durationSeconds\": 36000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY441\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T02:15:00\",\n            \"arrivalTime\": \"2026-12-17T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b514600007f5e6eda_0|1edb1f2b514600007f5e6eda_1\",\n      \"price\": 1251.0,\n      \"priceFormatted\": \"1251 EUR\",\n      \"totalDurationSeconds\": 66000,\n      \"bookingUrl\": \"https://kiwi.com/u/z95jsu\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-19T19:45:00\",\n        \"arrivalTime\": \"2026-12-20T07:05:00\",\n        \"durationSeconds\": 66000,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"BKK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-19T19:45:00\",\n            \"arrivalTime\": \"2026-12-19T22:20:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG625\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-20T00:30:00\",\n            \"arrivalTime\": \"2026-12-20T07:05:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG934\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51470000624cbc8b_0|1edb1f2b51470000624cbc8b_1\",\n      \"price\": 1251.0,\n      \"priceFormatted\": \"1251 EUR\",\n      \"totalDurationSeconds\": 66000,\n      \"bookingUrl\": \"https://kiwi.com/u/k3j3y8\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-20T19:45:00\",\n        \"arrivalTime\": \"2026-12-21T07:05:00\",\n        \"durationSeconds\": 66000,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"BKK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-20T19:45:00\",\n            \"arrivalTime\": \"2026-12-20T22:20:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG625\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-21T00:30:00\",\n            \"arrivalTime\": \"2026-12-21T07:05:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG934\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b51420000dbc4823e_0|1edb1f2b51420000dbc4823e_1\",\n      \"price\": 1252.0,\n      \"priceFormatted\": \"1252 EUR\",\n      \"totalDurationSeconds\": 66000,\n      \"bookingUrl\": \"https://kiwi.com/u/9mtn7r8\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T19:45:00\",\n        \"arrivalTime\": \"2026-12-16T07:05:00\",\n        \"durationSeconds\": 66000,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"BKK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-15T19:45:00\",\n            \"arrivalTime\": \"2026-12-15T22:20:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG625\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T00:30:00\",\n            \"arrivalTime\": \"2026-12-16T07:05:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG934\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"1edb1f2b513f0000cef55cc2_0|1edb1f2b513f0000cef55cc2_1\",\n      \"price\": 1258.0,\n      \"priceFormatted\": \"1258 EUR\",\n      \"totalDurationSeconds\": 66000,\n      \"bookingUrl\": \"https://kiwi.com/u/hgbx839\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"MNL\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-12T19:45:00\",\n        \"arrivalTime\": \"2026-12-13T07:05:00\",\n        \"durationSeconds\": 66000,\n        \"stops\": 1,\n        \"route\": [\n          \"MNL\",\n          \"BKK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"MNL\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Manille\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Ninoy-Aquino\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Philippines\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-12T19:45:00\",\n            \"arrivalTime\": \"2026-12-12T22:20:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG625\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-13T00:30:00\",\n            \"arrivalTime\": \"2026-12-13T07:05:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG934\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 575,\n  \"error\": null\n}",
     "type": "text"
    }
   ],
   "isError": false,
   "structuredContent": {
-   "query": "MNL → BRU on 12/12/2026–20/12/2026, 2 adults [≤1 stops/sector]",
+   "query": "MNL → BRU on 12/12/2026–20/12/2026, 2 adults [≤1 stops/sector; no self-transfer]",
    "currency": "EUR",
    "passengers": {
     "adults": 2,
@@ -22,10 +22,10 @@
    "itineraries": [
     {
      "id": "1edb1f2b5142000029eab2ef_0|1edb1f2b5142000029eab2ef_1",
-     "price": 783.0,
-     "priceFormatted": "783 EUR",
+     "price": 784.0,
+     "priceFormatted": "784 EUR",
      "totalDurationSeconds": 125100,
-     "bookingUrl": "https://kiwi.com/u/g6drbh",
+     "bookingUrl": "https://kiwi.com/u/8x56k7b",
      "imageId": "brussels_be",
      "baggage": {
       "personalItem": 0,
@@ -89,7 +89,7 @@
      "price": 785.0,
      "priceFormatted": "785 EUR",
      "totalDurationSeconds": 125100,
-     "bookingUrl": "https://kiwi.com/u/zj5qrd",
+     "bookingUrl": "https://kiwi.com/u/3twp76",
      "imageId": "brussels_be",
      "baggage": {
       "personalItem": 0,
@@ -153,7 +153,7 @@
      "price": 789.0,
      "priceFormatted": "789 EUR",
      "totalDurationSeconds": 125100,
-     "bookingUrl": "https://kiwi.com/u/2mhpnx",
+     "bookingUrl": "https://kiwi.com/u/5mx3ux",
      "imageId": "brussels_be",
      "baggage": {
       "personalItem": 0,
@@ -213,75 +213,11 @@
      "inbound": null
     },
     {
-     "id": "1edb1f2b51410000aff47cba_0|1edb1f2b51410000aff47cba_1",
-     "price": 1044.0,
-     "priceFormatted": "1044 EUR",
-     "totalDurationSeconds": 69600,
-     "bookingUrl": "https://kiwi.com/u/mn8f3b",
-     "imageId": "brussels_be",
-     "baggage": {
-      "personalItem": 2,
-      "cabinBag": 2,
-      "checkedBag": 2
-     },
-     "outbound": {
-      "from": "MNL",
-      "to": "BRU",
-      "departureTime": "2026-12-14T18:30:00",
-      "arrivalTime": "2026-12-15T06:50:00",
-      "durationSeconds": 69600,
-      "stops": 1,
-      "route": [
-       "MNL",
-       "DOH",
-       "BRU"
-      ],
-      "cabinClass": "Economy",
-      "segments": [
-       {
-        "from": "MNL",
-        "to": "DOH",
-        "fromCity": "Manille",
-        "toCity": "Doha",
-        "fromName": "Aéroport international Ninoy-Aquino",
-        "toName": "Aéroport international Hamad",
-        "fromCountry": "Philippines",
-        "toCountry": "Qatar",
-        "departureTime": "2026-12-14T18:30:00",
-        "arrivalTime": "2026-12-14T23:25:00",
-        "durationSeconds": 35700,
-        "carrier": "QR",
-        "carrierName": "Qatar Airways",
-        "flightNumber": "QR933",
-        "cabinClass": "Economy"
-       },
-       {
-        "from": "DOH",
-        "to": "BRU",
-        "fromCity": "Doha",
-        "toCity": "Bruxelles",
-        "fromName": "Aéroport international Hamad",
-        "toName": "Aéroport de Bruxelles-National",
-        "fromCountry": "Qatar",
-        "toCountry": "Belgique",
-        "departureTime": "2026-12-15T02:10:00",
-        "arrivalTime": "2026-12-15T06:50:00",
-        "durationSeconds": 24000,
-        "carrier": "QR",
-        "carrierName": "Qatar Airways",
-        "flightNumber": "QR195",
-        "cabinClass": "Economy"
-       }
-      ]
-     },
-     "inbound": null
-    },
-    {
      "id": "1edb1f2b514300007ed4cd61_0|1edb1f2b514300007ed4cd61_1",
      "price": 1044.0,
      "priceFormatted": "1044 EUR",
      "totalDurationSeconds": 69600,
-     "bookingUrl": "https://kiwi.com/u/n6zzf8",
+     "bookingUrl": "https://kiwi.com/u/wyfvq5",
      "imageId": "brussels_be",
      "baggage": {
       "personalItem": 2,
@@ -341,11 +277,75 @@
      "inbound": null
     },
     {
+     "id": "1edb1f2b51410000aff47cba_0|1edb1f2b51410000aff47cba_1",
+     "price": 1044.0,
+     "priceFormatted": "1044 EUR",
+     "totalDurationSeconds": 69600,
+     "bookingUrl": "https://kiwi.com/u/xmz5dx",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "MNL",
+      "to": "BRU",
+      "departureTime": "2026-12-14T18:30:00",
+      "arrivalTime": "2026-12-15T06:50:00",
+      "durationSeconds": 69600,
+      "stops": 1,
+      "route": [
+       "MNL",
+       "DOH",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "MNL",
+        "to": "DOH",
+        "fromCity": "Manille",
+        "toCity": "Doha",
+        "fromName": "Aéroport international Ninoy-Aquino",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Philippines",
+        "toCountry": "Qatar",
+        "departureTime": "2026-12-14T18:30:00",
+        "arrivalTime": "2026-12-14T23:25:00",
+        "durationSeconds": 35700,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR933",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "BRU",
+        "fromCity": "Doha",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Qatar",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-15T02:10:00",
+        "arrivalTime": "2026-12-15T06:50:00",
+        "durationSeconds": 24000,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR195",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
      "id": "1edb1f2b51420000235bc3be_0|1edb1f2b51420000235bc3be_1",
-     "price": 1099.0,
-     "priceFormatted": "1099 EUR",
+     "price": 1100.0,
+     "priceFormatted": "1100 EUR",
      "totalDurationSeconds": 72900,
-     "bookingUrl": "https://kiwi.com/u/zq3mfh",
+     "bookingUrl": "https://kiwi.com/u/ksvtu3",
      "imageId": "brussels_be",
      "baggage": {
       "personalItem": 0,
@@ -405,75 +405,11 @@
      "inbound": null
     },
     {
-     "id": "1edb1f2b51420000cd55a292_0|1edb1f2b51420000cd55a292_1",
-     "price": 1099.0,
-     "priceFormatted": "1099 EUR",
-     "totalDurationSeconds": 93300,
-     "bookingUrl": "https://kiwi.com/u/g8m24y",
-     "imageId": "brussels_be",
-     "baggage": {
-      "personalItem": 0,
-      "cabinBag": 2,
-      "checkedBag": 2
-     },
-     "outbound": {
-      "from": "MNL",
-      "to": "BRU",
-      "departureTime": "2026-12-15T23:30:00",
-      "arrivalTime": "2026-12-16T18:25:00",
-      "durationSeconds": 93300,
-      "stops": 1,
-      "route": [
-       "MNL",
-       "DXB",
-       "BRU"
-      ],
-      "cabinClass": "Economy",
-      "segments": [
-       {
-        "from": "MNL",
-        "to": "DXB",
-        "fromCity": "Manille",
-        "toCity": "Dubaï",
-        "fromName": "Aéroport international Ninoy-Aquino",
-        "toName": "Aéroport international de Dubaï",
-        "fromCountry": "Philippines",
-        "toCountry": "Émirats arabes unis",
-        "departureTime": "2026-12-15T23:30:00",
-        "arrivalTime": "2026-12-16T04:45:00",
-        "durationSeconds": 33300,
-        "carrier": "EK",
-        "carrierName": "Emirates",
-        "flightNumber": "EK335",
-        "cabinClass": "Economy"
-       },
-       {
-        "from": "DXB",
-        "to": "BRU",
-        "fromCity": "Dubaï",
-        "toCity": "Bruxelles",
-        "fromName": "Aéroport international de Dubaï",
-        "toName": "Aéroport de Bruxelles-National",
-        "fromCountry": "Émirats arabes unis",
-        "toCountry": "Belgique",
-        "departureTime": "2026-12-16T14:05:00",
-        "arrivalTime": "2026-12-16T18:25:00",
-        "durationSeconds": 26400,
-        "carrier": "EK",
-        "carrierName": "Emirates",
-        "flightNumber": "EK181",
-        "cabinClass": "Economy"
-       }
-      ]
-     },
-     "inbound": null
-    },
-    {
      "id": "1edb1f2b51420000e2ccdd06_0|1edb1f2b51420000e2ccdd06_1",
-     "price": 1113.0,
-     "priceFormatted": "1113 EUR",
+     "price": 1115.0,
+     "priceFormatted": "1115 EUR",
      "totalDurationSeconds": 79200,
-     "bookingUrl": "https://kiwi.com/u/wvq4zk",
+     "bookingUrl": "https://kiwi.com/u/hvgvstx",
      "imageId": "brussels_be",
      "baggage": {
       "personalItem": 0,
@@ -537,7 +473,7 @@
      "price": 1169.980228,
      "priceFormatted": "1170 EUR",
      "totalDurationSeconds": 72900,
-     "bookingUrl": "https://kiwi.com/u/gqtjbs",
+     "bookingUrl": "https://kiwi.com/u/frtpvd",
      "imageId": "brussels_be",
      "baggage": {
       "personalItem": 0,
@@ -601,7 +537,7 @@
      "price": 1227.980228,
      "priceFormatted": "1228 EUR",
      "totalDurationSeconds": 69600,
-     "bookingUrl": "https://kiwi.com/u/3f5t6h",
+     "bookingUrl": "https://kiwi.com/u/cjydz6m",
      "imageId": "brussels_be",
      "baggage": {
       "personalItem": 0,
@@ -665,7 +601,7 @@
      "price": 1227.980228,
      "priceFormatted": "1228 EUR",
      "totalDurationSeconds": 72900,
-     "bookingUrl": "https://kiwi.com/u/xgyx9u",
+     "bookingUrl": "https://kiwi.com/u/8w8kk2",
      "imageId": "brussels_be",
      "baggage": {
       "personalItem": 0,
@@ -729,7 +665,7 @@
      "price": 1240.980228,
      "priceFormatted": "1241 EUR",
      "totalDurationSeconds": 69600,
-     "bookingUrl": "https://kiwi.com/u/wgnqf7",
+     "bookingUrl": "https://kiwi.com/u/p6xhpr",
      "imageId": "brussels_be",
      "baggage": {
       "personalItem": 0,
@@ -789,11 +725,75 @@
      "inbound": null
     },
     {
+     "id": "1edb1f2b514600007f5e6eda_0|1edb1f2b514600007f5e6eda_1",
+     "price": 1251.0,
+     "priceFormatted": "1251 EUR",
+     "totalDurationSeconds": 66000,
+     "bookingUrl": "https://kiwi.com/u/z95jsu",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "MNL",
+      "to": "BRU",
+      "departureTime": "2026-12-19T19:45:00",
+      "arrivalTime": "2026-12-20T07:05:00",
+      "durationSeconds": 66000,
+      "stops": 1,
+      "route": [
+       "MNL",
+       "BKK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "MNL",
+        "to": "BKK",
+        "fromCity": "Manille",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Ninoy-Aquino",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Philippines",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-19T19:45:00",
+        "arrivalTime": "2026-12-19T22:20:00",
+        "durationSeconds": 12900,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG625",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "BRU",
+        "fromCity": "Bangkok",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-20T00:30:00",
+        "arrivalTime": "2026-12-20T07:05:00",
+        "durationSeconds": 45300,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG934",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
      "id": "1edb1f2b51470000624cbc8b_0|1edb1f2b51470000624cbc8b_1",
      "price": 1251.0,
      "priceFormatted": "1251 EUR",
      "totalDurationSeconds": 66000,
-     "bookingUrl": "https://kiwi.com/u/9pu38n",
+     "bookingUrl": "https://kiwi.com/u/k3j3y8",
      "imageId": "brussels_be",
      "baggage": {
       "personalItem": 2,
@@ -853,11 +853,75 @@
      "inbound": null
     },
     {
+     "id": "1edb1f2b51420000dbc4823e_0|1edb1f2b51420000dbc4823e_1",
+     "price": 1252.0,
+     "priceFormatted": "1252 EUR",
+     "totalDurationSeconds": 66000,
+     "bookingUrl": "https://kiwi.com/u/9mtn7r8",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "MNL",
+      "to": "BRU",
+      "departureTime": "2026-12-15T19:45:00",
+      "arrivalTime": "2026-12-16T07:05:00",
+      "durationSeconds": 66000,
+      "stops": 1,
+      "route": [
+       "MNL",
+       "BKK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "MNL",
+        "to": "BKK",
+        "fromCity": "Manille",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Ninoy-Aquino",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Philippines",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-15T19:45:00",
+        "arrivalTime": "2026-12-15T22:20:00",
+        "durationSeconds": 12900,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG625",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "BRU",
+        "fromCity": "Bangkok",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-16T00:30:00",
+        "arrivalTime": "2026-12-16T07:05:00",
+        "durationSeconds": 45300,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG934",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
      "id": "1edb1f2b513f0000cef55cc2_0|1edb1f2b513f0000cef55cc2_1",
      "price": 1258.0,
      "priceFormatted": "1258 EUR",
      "totalDurationSeconds": 66000,
-     "bookingUrl": "https://kiwi.com/u/fhkcn8",
+     "bookingUrl": "https://kiwi.com/u/hgbx839",
      "imageId": "brussels_be",
      "baggage": {
       "personalItem": 2,
@@ -915,73 +979,9 @@
       ]
      },
      "inbound": null
-    },
-    {
-     "id": "1edb1f2b5144000062f5c080_0|1edb1f2b5144000062f5c080_1",
-     "price": 1261.0,
-     "priceFormatted": "1261 EUR",
-     "totalDurationSeconds": 66000,
-     "bookingUrl": "https://kiwi.com/u/sv72tj",
-     "imageId": "brussels_be",
-     "baggage": {
-      "personalItem": 2,
-      "cabinBag": 2,
-      "checkedBag": 2
-     },
-     "outbound": {
-      "from": "MNL",
-      "to": "BRU",
-      "departureTime": "2026-12-17T19:45:00",
-      "arrivalTime": "2026-12-18T07:05:00",
-      "durationSeconds": 66000,
-      "stops": 1,
-      "route": [
-       "MNL",
-       "BKK",
-       "BRU"
-      ],
-      "cabinClass": "Economy",
-      "segments": [
-       {
-        "from": "MNL",
-        "to": "BKK",
-        "fromCity": "Manille",
-        "toCity": "Bangkok",
-        "fromName": "Aéroport international Ninoy-Aquino",
-        "toName": "Aéroport de Bangkok-Suvarnabhumi",
-        "fromCountry": "Philippines",
-        "toCountry": "Thaïlande",
-        "departureTime": "2026-12-17T19:45:00",
-        "arrivalTime": "2026-12-17T22:20:00",
-        "durationSeconds": 12900,
-        "carrier": "TG",
-        "carrierName": "Thai Airways",
-        "flightNumber": "TG625",
-        "cabinClass": "Economy"
-       },
-       {
-        "from": "BKK",
-        "to": "BRU",
-        "fromCity": "Bangkok",
-        "toCity": "Bruxelles",
-        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
-        "toName": "Aéroport de Bruxelles-National",
-        "fromCountry": "Thaïlande",
-        "toCountry": "Belgique",
-        "departureTime": "2026-12-18T00:30:00",
-        "arrivalTime": "2026-12-18T07:05:00",
-        "durationSeconds": 45300,
-        "carrier": "TG",
-        "carrierName": "Thai Airways",
-        "flightNumber": "TG934",
-        "cabinClass": "Economy"
-       }
-      ]
-     },
-     "inbound": null
     }
    ],
-   "searchTimeMs": 584,
+   "searchTimeMs": 575,
    "error": null
   }
  }

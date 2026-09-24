@@ -1,4 +1,4 @@
-=== 2026-09-24T06:13:49+00:00 https://mcp.trivago.com/mcp call trivago-destination-price-trends {"query":"El Nido","start_month":"2026-11","end_month":"2026-12","country":"BE","currency":"EUR","hotel_rating":{"3star":true,"4star":true,"5star":true}}
+=== 2026-09-24T08:33:59+00:00 https://mcp.trivago.com/mcp call trivago-destination-price-trends {"query": "El Nido", "start_month": "2026-11", "end_month": "2026-12", "country": "BE", "currency": "EUR", "hotel_rating": {"3star": true, "4star": true, "5star": true}}
 {
  "jsonrpc": "2.0",
  "id": 2,
