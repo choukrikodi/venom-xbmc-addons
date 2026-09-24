@@ -72,3 +72,11 @@ C1_khaolak|Khao Lak|2026-11-30|2026-12-05
 C2_kohyaoyai|Koh Yao Yai|2026-12-05|2026-12-10
 C3_naiyang|Nai Yang, Phuket|2026-12-10|2026-12-16
 STAGES
+
+# --- Retours aller simple, UNE origine par appel (one_for_city groupe par ville de destination → 1 seul résultat en multi-origine) ---
+for o in LGK KUL HKT MPH MNL; do
+  case $o in KUL|HKT|MNL) s=1 ;; *) s=2 ;; esac
+  python3 $C https://mcp.kiwi.com call search-flight \
+    "{\"flyFrom\":\"$o\",\"flyTo\":\"BRU\",\"departureDate\":\"12/12/2026\",\"departureDateTo\":\"20/12/2026\",\"adults\":2,\"adults_hold_bags\":[1,1],\"currency\":\"EUR\",\"locale\":\"fr\",\"sort\":\"price\",\"max_sector_stopovers\":$s}" \
+    > out/kiwi_bags_ow_back_$(echo $o | tr A-Z a-z).json || true
+done
