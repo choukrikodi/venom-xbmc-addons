@@ -1,11 +1,11 @@
-=== 2026-09-24T05:49:23+00:00 https://mcp.kiwi.com call search-flight {"flyFrom":"BRU","flyTo":"MNL,CEB,PPS","departureDate":"15/11/2026","departureDateTo":"10/12/2026","one_for_city":true,"adults":2,"currency":"EUR","locale":"fr","sort":"price"}
+=== 2026-09-24T06:13:42+00:00 https://mcp.kiwi.com call search-flight {"flyFrom":"BRU","flyTo":"MNL,CEB,PPS","departureDate":"15/11/2026","departureDateTo":"10/12/2026","one_for_city":true,"adults":2,"currency":"EUR","locale":"fr","sort":"price"}
 {
  "jsonrpc": "2.0",
  "id": 2,
  "result": {
   "content": [
    {
-    "text": "{\n  \"query\": \"BRU → MNL,CEB,PPS on 15/11/2026–10/12/2026, 2 adults [one per city]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 0,\n  \"itineraries\": [],\n  \"searchTimeMs\": 1820,\n  \"error\": null\n}",
+    "text": "{\n  \"query\": \"BRU → MNL,CEB,PPS on 15/11/2026–10/12/2026, 2 adults [one per city]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 0,\n  \"itineraries\": [],\n  \"searchTimeMs\": 1801,\n  \"error\": null\n}",
     "type": "text"
    }
   ],
@@ -20,7 +20,7 @@
    },
    "resultsCount": 0,
    "itineraries": [],
-   "searchTimeMs": 1820,
+   "searchTimeMs": 1801,
    "error": null
   }
  }
