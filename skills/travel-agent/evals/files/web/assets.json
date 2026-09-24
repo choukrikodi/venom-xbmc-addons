@@ -1,23 +1,248 @@
 {
   "notice": "Ressources visuelles du configurateur Asie 2026. Cartes : Wikimedia Maps (tuiles © contributeurs OpenStreetMap, ODbL), sans marqueurs ; les marqueurs sont dessinés par la page à partir des coordonnées Booking (projection Web Mercator). Photos : image de partage (og:image) ou première photo de contenu de la page publique citée, usage privé de comparaison, source affichée sous chaque image. Téléchargées par scripts/fetch_assets.py dans le workflow GitHub Actions ; les échecs restent journalisés dans assets.log.json.",
   "assets": [
-    { "name": "carte-thailande.png", "kind": "image", "source": "© OpenStreetMap contributors, Wikimedia Maps", "center": [12.5, 100.5], "zoom": 5, "size": [700, 800],
-      "url": "https://maps.wikimedia.org/img/osm-intl,5,12.5,100.5,700x800.png?lang=fr" },
-    { "name": "carte-andaman-wm.png", "kind": "image", "source": "© OpenStreetMap contributors, Wikimedia Maps", "center": [8.40, 98.56], "zoom": 9, "size": [900, 640],
-      "url": "https://maps.wikimedia.org/img/osm-intl,9,8.40,98.56,900x640.png?lang=fr" },
-    { "name": "carte-nai-yang-wm.png", "kind": "image", "source": "© OpenStreetMap contributors, Wikimedia Maps", "center": [8.095, 98.302], "zoom": 13, "size": [900, 640],
-      "url": "https://maps.wikimedia.org/img/osm-intl,13,8.095,98.302,900x640.png?lang=fr" },
-    { "name": "carte-khao-lak-wm.png", "kind": "image", "source": "© OpenStreetMap contributors, Wikimedia Maps", "center": [8.70, 98.25], "zoom": 12, "size": [900, 640],
-      "url": "https://maps.wikimedia.org/img/osm-intl,12,8.70,98.25,900x640.png?lang=fr" },
-    { "name": "carte-ao-nang-wm.png", "kind": "image", "source": "© OpenStreetMap contributors, Wikimedia Maps", "center": [8.045, 98.83], "zoom": 13, "size": [900, 640],
-      "url": "https://maps.wikimedia.org/img/osm-intl,13,8.045,98.83,900x640.png?lang=fr" },
-    { "name": "hotel-panphuree.jpg", "kind": "og_image", "source": "panphuree.com, image de partage du site officiel", "url": "https://panphuree.com/" },
-    { "name": "hotel-palm-galleria.jpg", "kind": "page_image", "source": "khaolakpalmgalleria.com, photo de la page d'accueil du site officiel", "url": "https://khaolakpalmgalleria.com/" },
-    { "name": "hotel-anyavee.jpg", "kind": "page_image", "source": "aonangbayresort.com, photo de la page d'accueil du site officiel", "url": "https://www.aonangbayresort.com/" },
-    { "name": "hotel-esprit.jpg", "kind": "og_image", "source": "trivago.be, image de partage de la fiche L'esprit De Naiyang", "url": "https://www.trivago.be/en-US/lm/l-esprit-de-naiyang-beach-resort-sha-extra-plus-nai-yang-beach" },
-    { "name": "hotel-esprit-page.jpg", "kind": "page_image", "source": "trivago.be, première photo de la fiche L'esprit De Naiyang", "url": "https://www.trivago.be/en-US/lm/l-esprit-de-naiyang-beach-resort-sha-extra-plus-nai-yang-beach" },
-    { "name": "hotel-naiyang-beach.jpg", "kind": "og_image", "source": "trivago.be, image de partage de la fiche Naiyang Beach Hotel", "url": "https://www.trivago.be/en-US/lm/naiyang-beach-hotel-nai-yang-beach" },
-    { "name": "hotel-apsara.jpg", "kind": "og_image", "source": "trivago.be, image de partage de la fiche Apsara Beachfront", "url": "https://www.trivago.be/en-US/lm/apsara-beachfront-resort-villa-khao-lak" },
-    { "name": "hotel-krabi-resort.jpg", "kind": "og_image", "source": "trivago.be, image de partage de la fiche Krabi Resort", "url": "https://www.trivago.be/en-US/lm/krabi-resort-ao-nang" }
+    {
+      "name": "carte-thailande.png",
+      "kind": "image",
+      "source": "© OpenStreetMap contributors, Wikimedia Maps",
+      "center": [
+        12.5,
+        100.5
+      ],
+      "zoom": 5,
+      "size": [
+        700,
+        800
+      ],
+      "url": "https://maps.wikimedia.org/img/osm-intl,5,12.5,100.5,700x800.png?lang=fr"
+    },
+    {
+      "name": "carte-andaman-wm.png",
+      "kind": "image",
+      "source": "© OpenStreetMap contributors, Wikimedia Maps",
+      "center": [
+        8.4,
+        98.56
+      ],
+      "zoom": 9,
+      "size": [
+        900,
+        640
+      ],
+      "url": "https://maps.wikimedia.org/img/osm-intl,9,8.40,98.56,900x640.png?lang=fr"
+    },
+    {
+      "name": "carte-nai-yang-wm.png",
+      "kind": "image",
+      "source": "© OpenStreetMap contributors, Wikimedia Maps",
+      "center": [
+        8.095,
+        98.302
+      ],
+      "zoom": 13,
+      "size": [
+        900,
+        640
+      ],
+      "url": "https://maps.wikimedia.org/img/osm-intl,13,8.095,98.302,900x640.png?lang=fr"
+    },
+    {
+      "name": "carte-khao-lak-wm.png",
+      "kind": "image",
+      "source": "© OpenStreetMap contributors, Wikimedia Maps",
+      "center": [
+        8.7,
+        98.25
+      ],
+      "zoom": 12,
+      "size": [
+        900,
+        640
+      ],
+      "url": "https://maps.wikimedia.org/img/osm-intl,12,8.70,98.25,900x640.png?lang=fr"
+    },
+    {
+      "name": "carte-ao-nang-wm.png",
+      "kind": "image",
+      "source": "© OpenStreetMap contributors, Wikimedia Maps",
+      "center": [
+        8.045,
+        98.83
+      ],
+      "zoom": 13,
+      "size": [
+        900,
+        640
+      ],
+      "url": "https://maps.wikimedia.org/img/osm-intl,13,8.045,98.83,900x640.png?lang=fr"
+    },
+    {
+      "name": "hotel-panphuree.jpg",
+      "kind": "og_image",
+      "source": "panphuree.com, image de partage du site officiel",
+      "url": "https://panphuree.com/"
+    },
+    {
+      "name": "hotel-palm-galleria.jpg",
+      "kind": "page_image",
+      "source": "khaolakpalmgalleria.com, photo de la page d'accueil du site officiel",
+      "url": "https://khaolakpalmgalleria.com/"
+    },
+    {
+      "name": "hotel-anyavee.jpg",
+      "kind": "page_image",
+      "source": "aonangbayresort.com, photo de la page d'accueil du site officiel",
+      "url": "https://www.aonangbayresort.com/"
+    },
+    {
+      "name": "hotel-esprit.jpg",
+      "kind": "og_image",
+      "source": "trivago.be, image de partage de la fiche L'esprit De Naiyang",
+      "url": "https://www.trivago.be/en-US/lm/l-esprit-de-naiyang-beach-resort-sha-extra-plus-nai-yang-beach"
+    },
+    {
+      "name": "hotel-esprit-page.jpg",
+      "kind": "page_image",
+      "source": "trivago.be, première photo de la fiche L'esprit De Naiyang",
+      "url": "https://www.trivago.be/en-US/lm/l-esprit-de-naiyang-beach-resort-sha-extra-plus-nai-yang-beach"
+    },
+    {
+      "name": "hotel-naiyang-beach.jpg",
+      "kind": "og_image",
+      "source": "trivago.be, image de partage de la fiche Naiyang Beach Hotel",
+      "url": "https://www.trivago.be/en-US/lm/naiyang-beach-hotel-nai-yang-beach"
+    },
+    {
+      "name": "hotel-apsara.jpg",
+      "kind": "og_image",
+      "source": "trivago.be, image de partage de la fiche Apsara Beachfront",
+      "url": "https://www.trivago.be/en-US/lm/apsara-beachfront-resort-villa-khao-lak"
+    },
+    {
+      "name": "hotel-krabi-resort.jpg",
+      "kind": "og_image",
+      "source": "trivago.be, image de partage de la fiche Krabi Resort",
+      "url": "https://www.trivago.be/en-US/lm/krabi-resort-ao-nang"
+    },
+    {
+      "name": "yt-1iml7VCGzxI.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo 1iml7VCGzxI (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/1iml7VCGzxI/hqdefault.jpg"
+    },
+    {
+      "name": "yt-5Re1DFEsFy8.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo 5Re1DFEsFy8 (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/5Re1DFEsFy8/hqdefault.jpg"
+    },
+    {
+      "name": "yt-7yl8uCa476U.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo 7yl8uCa476U (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/7yl8uCa476U/hqdefault.jpg"
+    },
+    {
+      "name": "yt-BUpypDX1yfM.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo BUpypDX1yfM (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/BUpypDX1yfM/hqdefault.jpg"
+    },
+    {
+      "name": "yt-FrX_EFYs_ec.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo FrX_EFYs_ec (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/FrX_EFYs_ec/hqdefault.jpg"
+    },
+    {
+      "name": "yt-GJtmTEY5L3Q.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo GJtmTEY5L3Q (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/GJtmTEY5L3Q/hqdefault.jpg"
+    },
+    {
+      "name": "yt-INhKZBqTeE8.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo INhKZBqTeE8 (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/INhKZBqTeE8/hqdefault.jpg"
+    },
+    {
+      "name": "yt-JrbSrovgmeE.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo JrbSrovgmeE (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/JrbSrovgmeE/hqdefault.jpg"
+    },
+    {
+      "name": "yt-OroiYJBK6OU.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo OroiYJBK6OU (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/OroiYJBK6OU/hqdefault.jpg"
+    },
+    {
+      "name": "yt-WbBKq8Z67EU.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo WbBKq8Z67EU (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/WbBKq8Z67EU/hqdefault.jpg"
+    },
+    {
+      "name": "yt-Y8EC_1R1Z8A.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo Y8EC_1R1Z8A (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/Y8EC_1R1Z8A/hqdefault.jpg"
+    },
+    {
+      "name": "yt-YCx-1eOJgGQ.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo YCx-1eOJgGQ (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/YCx-1eOJgGQ/hqdefault.jpg"
+    },
+    {
+      "name": "yt-YVwyViwCdb0.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo YVwyViwCdb0 (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/YVwyViwCdb0/hqdefault.jpg"
+    },
+    {
+      "name": "yt-YYUfly_-bjA.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo YYUfly_-bjA (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/YYUfly_-bjA/hqdefault.jpg"
+    },
+    {
+      "name": "yt-fiSnt7GtCRA.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo fiSnt7GtCRA (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/fiSnt7GtCRA/hqdefault.jpg"
+    },
+    {
+      "name": "yt-hsOpbAw0G8g.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo hsOpbAw0G8g (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/hsOpbAw0G8g/hqdefault.jpg"
+    },
+    {
+      "name": "yt-lsYpbvcx_B8.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo lsYpbvcx_B8 (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/lsYpbvcx_B8/hqdefault.jpg"
+    },
+    {
+      "name": "yt-pXcg3nQzf8o.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo pXcg3nQzf8o (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/pXcg3nQzf8o/hqdefault.jpg"
+    },
+    {
+      "name": "yt-qSJI0SejkUw.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo qSJI0SejkUw (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/qSJI0SejkUw/hqdefault.jpg"
+    },
+    {
+      "name": "yt-qfFtFjks-Rk.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo qfFtFjks-Rk (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/qfFtFjks-Rk/hqdefault.jpg"
+    }
   ]
 }
