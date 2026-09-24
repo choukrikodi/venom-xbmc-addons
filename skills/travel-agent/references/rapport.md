@@ -1,0 +1,14 @@
+# Format constant du rapport Markdown et PDF
+
+Conserver les mêmes titres et tableaux dans les deux formats ; les longueurs s'adaptent au voyage. N'écrire « vérifié » que si les paramètres et l'écho concordent. Le PDF provient du Markdown final contrôlé.
+
+1. **Titre, date UTC, paramètres** : voyageurs, passeports déclarés/à confirmer, départs admis, fenêtre et durée, style, confort, bagages, contraintes et budget éventuel.
+2. **Hypothèses** : chacune avec conséquence concrète, sensibilité et élément à confirmer. Si aucune, écrire « aucune hypothèse supplémentaire ».
+3. **Synthèse** : un tableau de trois lignes avec circuit, meilleures dates (départ origine, dernière nuit, retour), total bas–haut du groupe, écart à un éventuel plafond, note plage ou pertinence au style, transferts, statut de vérification. Recommandation argumentée immédiatement après, puis raison du classement.
+4. **Options A/B/C** : arbitrages ; étapes et nuits ; météo par étape avec type de donnée et date ; vols aller/retour/open-jaw et liaisons ; hôtels par étape et conditions ; transferts porte à porte ; programme quotidien ou par étape ; variante confort chiffrée.
+5. **Budgets détaillés** : pour chacune, tableau `poste | bas | haut | quantité/formule | ✅/⚠️ | source + UTC + paramètres + URL`. Postes : vol international, vol/ferry/train interne, hôtel, transferts, repas, assurance, activités, formalités/frais obligatoires, marge si requise. Additionner bas et haut séparément ; afficher écart `plafond - total haut`, total par personne et ligne des exclusions éventuelles. Ne pas annoncer qu'un budget tient si sa borne haute dépasse le plafond.
+6. **Formalités et santé** : par nationalité et transit, SPF belge quand applicable et autorité du pays ; date de consultation, validité, délais et incertitude. Avis de voyage séparé des obligations d'entrée.
+7. **Tracker** : `tâche | option/étape | responsable | échéance officielle ou conseillée | preuve/lien | état` ; inclure contrôles prix/bagages, documents, assurances, échéances de gratuité, réservations restant à faire. Ne rien marquer « réservé » sans preuve.
+8. **Sources et limites** : pour chaque prix une URL de réservation ou page de recherche paramétrée, horodatage UTC, voyageurs/chambres/dates/aéroports/bagages, devise et taxes ; taux de change et sa date ; dates des sources météo et formalités ; postes non vérifiés et conséquence sur la recommandation.
+
+**Notation** : ✅ tarif observé aux critères demandés et écho concordant, sous réserve de disponibilité et revalidation au paiement ; ⚠️ estimation ou critère non confirmé. Les montants numériques ne sont jamais « indéterminables » si une source datée offre un ordre de grandeur : celui-ci reste ⚠️ et sa formule est montrée. Ne pas substituer une URL générique à un lien de réservation vérifié sans le dire.
