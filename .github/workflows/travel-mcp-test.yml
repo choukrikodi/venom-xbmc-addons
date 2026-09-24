@@ -2,6 +2,13 @@ name: travel-mcp-test
 
 on:
   workflow_dispatch:
+    inputs:
+      case_file:
+        description: Manifeste de requêtes (chemin dans le dépôt)
+        default: skills/travel-agent/evals/files/asie_v2.json
+      output_dir:
+        description: Dossier de sortie commité
+        default: skills/travel-agent/test-output
   push:
     branches: [claude/travel-agent-skill-setup-vhqmwf]
     paths: [.github/workflows/travel-mcp-test.yml, skills/travel-agent/scripts/**, skills/travel-agent/evals/files/**]
@@ -24,13 +31,14 @@ jobs:
         run: python3 -B skills/travel-agent/evals/test_mcp_call.py
       - name: Test calls
         id: calls
-        run: TRAVEL_CASE_FILE=skills/travel-agent/evals/files/asie_v2.json bash skills/travel-agent/scripts/test_case.sh
+        run: TRAVEL_CASE_FILE="${{ inputs.case_file || 'skills/travel-agent/evals/files/asie_v2.json' }}" bash skills/travel-agent/scripts/test_case.sh
       - name: Save raw responses to branch
         if: always() && steps.calls.outcome != 'skipped'
         run: |
+          DEST="${{ inputs.output_dir || 'skills/travel-agent/test-output' }}"
           git pull --rebase --autostash origin ${{ github.ref_name }} || true
-          rm -rf skills/travel-agent/test-output && mv out skills/travel-agent/test-output
+          rm -rf "$DEST" && mv out "$DEST"
           git config user.name "github-actions[bot]"
           git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
-          git add skills/travel-agent/test-output
+          git add "$DEST"
           git commit -m "Raw MCP responses (run ${{ github.run_id }})" && git push || true
