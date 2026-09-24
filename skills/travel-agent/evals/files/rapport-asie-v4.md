@@ -116,7 +116,7 @@ Plan B budget : rester dans le même lieu, choisir le plan B aux mêmes dates se
 | Retenu | Anyavee Ao Nang Bay Resort ; 4★ déclarées ; 7.8/10, 2,319 avis | 2026-12-02→2026-12-20 | `€ 1.393` → **⚠️ 1 393,00 €** | Ao Nang, 0.9 km to City center ; `test-output-v3/trivago_aonang_comparatif_18n.json` [24], 2026-09-24T09:48:17+00:00, [offre](https://www.trivago.be/en-US/lm/hotel-anyavee-ao-nang-bay-resort?cip=234716015&currencyCode=EUR&search=100-80577;105-1320;105-1322;200-16207;dr-20261202-20261220;drs-40;rc-1-2&dealId=-4795975138524420988) ; annonceur Trip.com |
 | Plan B | Krabi Resort ; 4★ déclarées ; 7.8/10, 12,698 avis | 2026-12-02→2026-12-20 | `€ 1.890` → **⚠️ 1 890,00 €** | Ao Nang, 0.7 km to City center ; `test-output-v3/trivago_aonang_comparatif_18n.json` [11], 2026-09-24T09:48:17+00:00, [offre](https://www.trivago.be/en-US/lm/krabi-resort-ao-nang?cip=234716015&currencyCode=EUR&search=100-111139;105-1320;105-1322;200-16207;dr-20261202-20261220;drs-40;rc-1-2&dealId=7759765529606037666) ; annonceur Stayforlong |
 
-Anyavee est le prix hôtel minimum retenu dans la zone ; identité et activité hôtelière recoupées sur [ANYAVEE](https://www.aonangbayresort.com/). Krabi Resort est à la fois plan B et variante confort (une seule dépense de remplacement). Le vol à 1 583,27 € aux mêmes dates existe mais allonge l’aller de 11 h 50 : B conserve le scénario détente à 1 804,27 €. L’offre 16 nuits à 1 777,57 € est **sans bagage cabine** ; elle n’est pas retenue.
+Anyavee est le prix hôtel minimum retenu dans la zone ; identité et activité hôtelière recoupées sur [ANYAVEE](https://www.aonangbayresort.com/). Krabi Resort est à la fois plan B et variante confort (une seule dépense de remplacement). Le vol à 1 583,27 € aux mêmes dates existe mais allonge l’aller de 11 h 50 : B conserve le scénario détente à 1 804,27 €. L’offre 16 nuits (29/11→16/12) à 1 778,57 € est **sans bagage cabine** ; elle n’est pas retenue. Preuve : `test-output/kiwi_bags_rt_kbv.json` [1], 2026-09-24T09:47:02+00:00, [offre](https://kiwi.com/u/ru852y).
 
 #### Budget bas–haut du groupe
 
@@ -190,7 +190,7 @@ Dans tous les cas, ajouter 30 min de marge aéroport au planning, sans remplacer
 
 ### Contrôle de zone
 
-Application stricte du prompt L3b : **distance affichée >10 km = exclusion**, même si la distance semble mesurée à un centre différent. Naiyang Park, Bell, Sugar Aviator, Maya et Wyndham Royal Lee apparaissent notamment autour de « Phuket-Town 24–25 km » ; Dewa autour de « Cape Panwa 34 km » : ces lignes ne fondent plus les recommandations. Leur géolocalisation réelle peut être différente ; on ne corrige pas silencieusement le champ fournisseur. Une distance courte vers une autre localité (Naithon, Mai Khao, Bang Tao) ne prouve pas l’appartenance à Nai Yang.
+Application stricte du prompt L3b : **distance affichée >10 km = exclusion**, même si la distance semble mesurée à un centre différent. Naiyang Park, Bell, Sugar Aviator, Maya et Wyndham Royal Lee apparaissent notamment autour de « Phuket-Town 24–25 km » ; l’entrée « Dewa Nai Yang Beach » autour de « Cape Panwa 34,2 km » (Dewa Phuket Resort & Villas reste à 0,3 km mais coûte 4 292 € sur 16 nuits) : ces lignes ne fondent plus les recommandations. Leur géolocalisation réelle peut être différente ; on ne corrige pas silencieusement le champ fournisseur. Une distance courte vers une autre localité (Naithon, Mai Khao, Bang Tao) ne prouve pas l’appartenance à Nai Yang.
 
 Pour Khao Lak, sont notamment exclus Eden 10,7 km, Le Méridien 11,2, Merlin 10,6, Pullman 16,7, Kalima 11,4, Le Menara 14,3, Thai Life 15,7, Sunset Koh Kho Khao 24,5, Andaman Princess 29,6, Fondness 21,9, Robinson Phangnga 44,8 et Haven 41. Les trois principaux et leurs plans B ont une distance affichée ≤10 km. Les hôtels 3★ et logements non hôteliers sont exclus.
 
@@ -236,18 +236,20 @@ Wanda sert de référence sanitaire : vaccinations usuelles et conseil personnal
 
 Aucune réservation ni création de compte effectuée. Les liens de recherche/réservation sont dans chaque preuve, les prix ne sont pas bloqués.
 
-| Élément | Statut | Prochaine action / dépendance |
-|---|---|---|
-| Choix A/B/C et confort | À décider | A minimum documenté ; confort selon fatigue et U |
-| Vols et soutes | Offre horodatée, non réservée | Vérifier 2 adultes, 1 soute chacun, cabine, poids, protection, frais, transit |
-| Hôtel unique | Séjour exact chiffré | Vérifier chambre/étoiles, taxes, annulation et total final |
-| Transfert aller/retour | Estimation sourcée | Confirmer véhicule, bagages, horaires et devis hôtel exact |
-| Repas | Estimation sourcée | Confirmer éventuels repas inclus et préférences |
-| Assurance | Manquant | Âges, résidence/couverture existante puis devis ; pas de double assurance |
-| Activités / domicile↔BRU | Manquant | Choisir sorties et origine terrestre, obtenir montants |
-| Passeports / transit / TDAC | À contrôler | Validité, règles et saisie TDAC dans la fenêtre autorisée |
-| Météo / mer | Climat seulement | Prévision proche du départ, remplacement terrestre si mer mauvaise |
-| Budget final | Non concluant | Borner U, vérifier total haut + réserve ≤8 000 € |
+| Tâche | Option | Responsable | Échéance officielle/conseillée | Source | Statut / lien |
+|---|---|---|---|---|---|
+| Choisir A/B/C et base ou confort | A/B/C | Voyageurs | Avant achat — conseillé | Synthèse | À décider ; A minimum documenté, confort selon fatigue et U |
+| Vérifier 2 adultes, 1 soute chacun, cabine, poids, protection, frais et transit | Vol choisi | Voyageurs / vendeur | Avant paiement — conseillé | Offre Kiwi | Offre horodatée, non réservée ; liens des vols ci-dessus |
+| Vérifier chambre, étoiles, occupation, taxes, repas, annulation et total final | Hôtel retenu | Voyageurs / vendeur | Avant achat — conseillé | Trivago / vendeur | Séjour exact chiffré ; liens des hôtels ci-dessus |
+| Confirmer transfert aller/retour : véhicule, bagages, horaires, devis hôtel | A/B/C | Voyageurs / hôtel | Avant bouclage budget — conseillé | Hôtels | Estimation sourcée |
+| Confirmer repas inclus et préférences | A/B/C | Voyageurs | Avant bouclage budget — conseillé | Hôtel / vendeur | Estimation sourcée |
+| Obtenir assurance adaptée (âges, couverture existante, pas de double assurance) | A/B/C | Voyageurs | Avant achat — conseillé | Assureur | Manquant (U) |
+| Chiffrer activités et domicile↔BRU | A/B/C | Voyageurs | Avant décision — conseillé | Données personnelles | Manquant (U) |
+| Contrôler passeports, billet de sortie et transit | A/B/C | Chaque voyageur | Dès décision — conseillé | SPF / ambassade / compagnie | [SPF](https://diplomatie.belgium.be/fr/pays/thailande/voyager-en-thailande-conseils-aux-voyageurs/informations-pratiques-pour-la-thailande) |
+| Préparer TDAC | Vol choisi | Chaque voyageur | J−3 avant arrivée — fenêtre officielle | SPF | Non déposé ; https://tdac.immigration.go.th |
+| Médecine de voyage, vaccins et prévention | A/B/C | Voyageurs / médecin | Début octobre — conseillé | Wanda | [WANDA](https://www.wanda.be/fr/landen/thailande/) |
+| Relire météo, mer, SPF et Wanda | Lieu retenu | Voyageurs | J−7 puis J−2 — conseillé | Services officiels | Climat seulement ; prévision proche du départ |
+| Recalculer total haut + réserve ≤ 8 000 € après bornage de U | Lieu retenu | Claude Code | Après compléments — conseillé | Registre des prix | Non concluant |
 
 ## Sources, matrice et limites
 
