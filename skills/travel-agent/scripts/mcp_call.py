@@ -11,11 +11,19 @@ Les scripts existants qui ignorent cette première ligne restent compatibles.
 """
 
 import json
+import hashlib
+import os
+import random
 import sys
+import tempfile
+import time
 import urllib.error
 import urllib.request
+from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone
 from urllib.parse import urlsplit
+
+import fcntl
 
 
 HEADERS = {
@@ -24,6 +32,10 @@ HEADERS = {
     "User-Agent": "travel-agent-skill/1.0",
 }
 TIMEOUT_SECONDS = 90
+RETRY_STATUS = {429, 500, 502, 503, 504}
+MAX_RETRIES = 2
+MAX_DELAY_SECONDS = 5.0
+KIWI_INTERVAL_SECONDS = 0.5
 
 
 def timestamp():
@@ -52,16 +64,66 @@ def decode_sse(body, request_id):
     raise ValueError(f"Aucune réponse SSE pour id={request_id}")
 
 
+def pace_kiwi(url):
+    """Limiter les débuts d'appels Kiwi, y compris entre processus concurrents."""
+    if urlsplit(url).hostname != "mcp.kiwi.com":
+        return
+    rate_dir = os.environ.get("TRAVEL_MCP_RATE_DIR") or tempfile.gettempdir()
+    key = hashlib.sha256(url.encode("utf-8")).hexdigest()[:16]
+    with open(os.path.join(rate_dir, f"travel-mcp-kiwi-{key}.clock"), "a+") as clock:
+        fcntl.flock(clock, fcntl.LOCK_EX)
+        clock.seek(0)
+        try:
+            last = float(clock.read() or 0)
+        except ValueError:
+            last = 0
+        time.sleep(max(0, KIWI_INTERVAL_SECONDS - (time.monotonic() - last)))
+        clock.seek(0)
+        clock.truncate()
+        clock.write(str(time.monotonic()))
+        clock.flush()
+        fcntl.flock(clock, fcntl.LOCK_UN)
+
+
+def retry_delay(retry_after, retry_index):
+    """Respecter Retry-After (secondes/date HTTP), avec attente plafonnée."""
+    seconds = None
+    if retry_after:
+        try:
+            seconds = float(retry_after)
+        except ValueError:
+            try:
+                date = parsedate_to_datetime(retry_after)
+                seconds = (date - datetime.now(timezone.utc)).total_seconds()
+            except (ValueError, TypeError, OverflowError):
+                pass
+    if seconds is None:
+        seconds = 2 ** retry_index + random.uniform(0, 1)
+    return min(MAX_DELAY_SECONDS, max(0, seconds))
+
+
 def post(url, payload, session=None):
     headers = dict(HEADERS)
     if session:
         headers["Mcp-Session-Id"] = session
     data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
     request = urllib.request.Request(url, data=data, headers=headers)
-    with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:
-        session = response.headers.get("Mcp-Session-Id") or session
-        body = response.read().decode("utf-8", "replace")
-        content_type = response.headers.get("Content-Type", "")
+    for retry_index in range(MAX_RETRIES + 1):
+        pace_kiwi(url)
+        try:
+            with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:
+                session = response.headers.get("Mcp-Session-Id") or session
+                body = response.read().decode("utf-8", "replace")
+                content_type = response.headers.get("Content-Type", "")
+            break
+        except urllib.error.HTTPError as exc:
+            if exc.code not in RETRY_STATUS or retry_index == MAX_RETRIES:
+                raise
+            time.sleep(retry_delay(exc.headers.get("Retry-After") if exc.headers else None, retry_index))
+        except (urllib.error.URLError, TimeoutError, ConnectionError):
+            if retry_index == MAX_RETRIES:
+                raise
+            time.sleep(retry_delay(None, retry_index))
     if "text/event-stream" in content_type:
         result = decode_sse(body, payload.get("id"))
     else:
@@ -73,7 +135,7 @@ def open_session(url):
     session, result = post(url, {
         "jsonrpc": "2.0", "id": 1, "method": "initialize",
         "params": {
-            "protocolVersion": "2025-03-26", "capabilities": {},
+            "protocolVersion": "2025-06-18", "capabilities": {},
             "clientInfo": {"name": "travel-agent", "version": "1.0"},
         },
     })
