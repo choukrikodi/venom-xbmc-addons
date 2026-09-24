@@ -1,0 +1,31 @@
+{
+  "notice": "Ressources visuelles du configurateur Asie 2026. Cartes : tuiles OpenStreetMap (© contributeurs OpenStreetMap, ODbL) via le service de cartes statiques ; photos : image de partage (og:image) déclarée par le site de chaque hôtel, usage privé de comparaison, source citée sous chaque image. Téléchargées par scripts/fetch_assets.py dans le workflow GitHub Actions.",
+  "assets": [
+    { "name": "carte-andaman.png", "kind": "image", "source": "© OpenStreetMap contributors, staticmap.openstreetmap.de",
+      "url": "https://staticmap.openstreetmap.de/staticmap.php?center=8.40,98.56&zoom=9&size=900x640&maptype=mapnik&markers=8.1132,98.3169,ol-marker-blue|8.0835,98.2926,ol-marker|8.7284,98.2312,ol-marker|8.0383,98.8193,ol-marker|8.0991,98.9862,ol-marker-blue" },
+    { "name": "carte-nai-yang.png", "kind": "image", "source": "© OpenStreetMap contributors, staticmap.openstreetmap.de",
+      "url": "https://staticmap.openstreetmap.de/staticmap.php?center=8.095,98.302&zoom=13&size=900x640&maptype=mapnik&markers=8.08347,98.292556,ol-marker|8.101237,98.308592,ol-marker-gold|8.1132,98.3169,ol-marker-blue" },
+    { "name": "carte-khao-lak.png", "kind": "image", "source": "© OpenStreetMap contributors, staticmap.openstreetmap.de",
+      "url": "https://staticmap.openstreetmap.de/staticmap.php?center=8.70,98.25&zoom=12&size=900x640&maptype=mapnik&markers=8.72839,98.231152,ol-marker" },
+    { "name": "carte-ao-nang.png", "kind": "image", "source": "© OpenStreetMap contributors, staticmap.openstreetmap.de",
+      "url": "https://staticmap.openstreetmap.de/staticmap.php?center=8.045,98.83&zoom=13&size=900x640&maptype=mapnik&markers=8.038326,98.819294,ol-marker|8.0991,98.9862,ol-marker-blue" },
+    { "name": "carte-thailande.png", "kind": "image", "source": "© OpenStreetMap contributors, Wikimedia Maps",
+      "url": "https://maps.wikimedia.org/img/osm-intl,5,12.5,100.5,700x800.png" },
+    { "name": "carte-andaman-wm.png", "kind": "image", "source": "© OpenStreetMap contributors, Wikimedia Maps (secours sans marqueurs)",
+      "url": "https://maps.wikimedia.org/img/osm-intl,9,8.40,98.56,900x640.png" },
+    { "name": "hotel-palm-galleria.jpg", "kind": "og_image", "source": "khaolakpalmgalleria.com, image de partage du site officiel",
+      "url": "https://khaolakpalmgalleria.com/" },
+    { "name": "hotel-anyavee.jpg", "kind": "og_image", "source": "aonangbayresort.com, image de partage du site officiel",
+      "url": "https://www.aonangbayresort.com/" },
+    { "name": "hotel-panphuree.jpg", "kind": "og_image", "source": "panphuree.com, image de partage du site officiel",
+      "url": "https://panphuree.com/" },
+    { "name": "hotel-esprit-booking.jpg", "kind": "og_image", "source": "Booking.com, image de partage de la fiche L'esprit De Naiyang",
+      "url": "https://www.booking.com/hotel/th/esprit-de-naiyang.html" },
+    { "name": "hotel-palm-booking.jpg", "kind": "og_image", "source": "Booking.com, image de partage de la fiche Palm Galleria",
+      "url": "https://www.booking.com/hotel/th/palm-galleria-resort.html" },
+    { "name": "hotel-anyavee-booking.jpg", "kind": "og_image", "source": "Booking.com, image de partage de la fiche Anyavee",
+      "url": "https://www.booking.com/hotel/th/ao-nang-bay-resort-emuue-ngkrabii.html" },
+    { "name": "hotel-panphuree-booking.jpg", "kind": "og_image", "source": "Booking.com, image de partage de la fiche Panphuree",
+      "url": "https://www.booking.com/hotel/th/panphuree-residence.html" }
+  ]
+}

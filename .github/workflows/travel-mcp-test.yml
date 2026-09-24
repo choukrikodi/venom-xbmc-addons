@@ -11,7 +11,7 @@ on:
         default: skills/travel-agent/test-output
   push:
     branches: [claude/travel-agent-skill-setup-vhqmwf]
-    paths: [.github/workflows/travel-mcp-test.yml, skills/travel-agent/scripts/**, skills/travel-agent/evals/files/*.json]
+    paths: [.github/workflows/travel-mcp-test.yml, skills/travel-agent/scripts/**, skills/travel-agent/evals/files/*.json, skills/travel-agent/evals/files/web/assets.json]
 
 permissions:
   contents: write
@@ -45,7 +45,7 @@ jobs:
               ok = before and not before.startswith("0000000") and subprocess.run(["git", "cat-file", "-e", before]).returncode == 0
               changed = subprocess.run(["git", "diff", "--name-only", before, sha] if ok else ["git", "show", "--name-only", "--format=", sha], capture_output=True, text=True).stdout.split()
               for f in sorted(set(changed)):
-                  if f.startswith("skills/travel-agent/evals/files/") and f.endswith(".json") and os.path.exists(f):
+                  if os.path.dirname(f) == "skills/travel-agent/evals/files" and f.endswith(".json") and os.path.exists(f):
                       items.append({"case": f, "out": dest(f)})
           print("matrix=" + json.dumps({"include": items}))
           print("empty=" + ("true" if not items else "false"))
@@ -54,6 +54,40 @@ jobs:
           BEFORE: ${{ github.event.before }}
           IN_CASE: ${{ inputs.case_file }}
           IN_OUT: ${{ inputs.output_dir }}
+
+  # Ressources visuelles (cartes OSM, photos publiques) du configurateur :
+  # téléchargées seulement quand le manifeste assets.json ou le script change.
+  assets:
+    needs: plan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Decide
+        id: decide
+        run: |
+          BEFORE="${{ github.event.before }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ -z "$BEFORE" ] || ! git cat-file -e "$BEFORE" 2>/dev/null; then
+            echo "run=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          if git diff --name-only "$BEFORE" "${{ github.sha }}" | grep -qE '^skills/travel-agent/(evals/files/web/assets\.json|scripts/fetch_assets\.py)$'; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Fetch assets
+        id: fetch
+        if: steps.decide.outputs.run == 'true'
+        run: python3 skills/travel-agent/scripts/fetch_assets.py skills/travel-agent/evals/files/web/assets.json skills/travel-agent/evals/files/web/assets || true
+      - name: Save assets to branch
+        if: steps.fetch.outcome == 'success'
+        run: |
+          git pull --rebase --autostash origin ${{ github.ref_name }} || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add skills/travel-agent/evals/files/web/assets
+          git commit -m "Assets du configurateur (run ${{ github.run_id }})" && git push || true
 
   probe:
     needs: plan
