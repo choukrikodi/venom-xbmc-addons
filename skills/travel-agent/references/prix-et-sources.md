@@ -77,3 +77,17 @@ Avec `1 devise_base = r unités locales`, convertir un prix local en base par di
 ## 7. Étoiles et références de contre-vérification
 
 La réponse Trivago ne certifie pas l’origine officielle de ses étoiles. Les planchers de prix et signaux `stars_unverified` de SKILL.md sont des heuristiques demandées par l’orchestrateur. TripAdvisor sert à recouper l’identité et les informations, pas à délivrer un classement officiel. Pour confirmer : [PH, DOT et bureaux régionaux](https://www.tourism.gov.ph/directory/local-regional-offices/), [MY, MOTAC Hotel Grading](https://www.motac.gov.my/en/kategori-semakan-new/hotel-grading/), [TH, Thailand Hotel Standard Foundation](https://www.thaihotels.org/16679475/thailand-hotel-standard-foundation). Vérifier nom, adresse, catégorie et validité du certificat ; distinguer accréditation, licence, appartenance à une association et attribution d’étoiles. Ne pas prétendre qu’un registre est exhaustif sans preuve.
+
+## 8. Connecteurs à installer (gratuits, sans compte)
+
+Le client `scripts/mcp_call.py` suffit pour Kiwi et Trivago. Les connecteurs ci-dessous sont facultatifs et servent à l'agent interactif ; chaque installation reste à zéro coût, sans clé ni carte. Vérifier la disponibilité réseau du lieu d'exécution avant de les déclarer actifs.
+
+| Connecteur | Usage dans le skill | Claude Code | Codex CLI (`~/.codex/config.toml`) |
+| --- | --- | --- | --- |
+| Kiwi MCP | Phase 3, vols (seule source examinée avec `adults_hold_bags`) | `claude mcp add --transport http kiwi https://mcp.kiwi.com` | `[mcp_servers.kiwi]` `url = "https://mcp.kiwi.com"` |
+| Trivago MCP | Phase 4, hôtels et tendances | `claude mcp add --transport http trivago https://mcp.trivago.com/mcp` | `[mcp_servers.trivago]` `url = "https://mcp.trivago.com/mcp"` |
+| Skiplagged MCP | Repli vols, hors hidden-city | `claude mcp add --transport http skiplagged https://mcp.skiplagged.com/mcp` | `[mcp_servers.skiplagged]` `url = "https://mcp.skiplagged.com/mcp"` |
+| google-flights-mcp | Repli découverte multi-villes, ⚠️ soute/devise | `claude mcp add google-flights -- npx -y google-flights-mcp` | `[mcp_servers.google_flights]` `command = "npx"` `args = ["-y", "google-flights-mcp"]` |
+| Playwright MCP | Phase 4 et 7 : relire la page de réservation (chambre, taxes, annulation, protection des connexions) avant tout ✅ | `claude mcp add playwright -- npx -y @playwright/mcp@latest` | `[mcp_servers.playwright]` `command = "npx"` `args = ["-y", "@playwright/mcp@latest"]` |
+
+Frankfurter, Open-Meteo, Nominatim, SPF et Wanda restent des appels HTTP/pages publiques (sections 1 et 6) : pas de connecteur requis. Google Drive et Agenda ne servent qu'au dépôt des livrables et au tracker ; ils ne fournissent aucun prix. La syntaxe `url =` pour un serveur HTTP dépend de la version de Codex CLI ; à défaut, passer par un pont stdio ou par `scripts/mcp_call.py`. Ne jamais lire un connecteur comme une preuve d'accès illimité : consigner date, endpoint et limites observées.

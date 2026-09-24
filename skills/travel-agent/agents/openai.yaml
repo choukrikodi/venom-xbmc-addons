@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent de voyage"
+  short_description: "Planifier ou comparer un voyage sans réservation"
+  default_prompt: "Charge SKILL.md, suis les 7 phases, écris ## Hypothèses avant tout chiffrage, ne réserve rien."
