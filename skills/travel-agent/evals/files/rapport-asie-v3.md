@@ -30,7 +30,7 @@ Les prix courts d’hôtel sont conservés **à leurs dates et durées réelles*
 | **B — Ao Nang (Krabi)** | 2026-12-01 / 2026-12-02 / 2026-12-20 | 18 | ⚠️ 2 401,85 €–3 502,22 € | **Manquant / non concluant** : hôtel long et autres postes absents ; formule ci-dessous | 3,5/5 ; KBV↔hôtel ; 2 trajets terrestres, aucun changement d’étape |
 | **C — Khao Lak** | 2026-11-29 / 2026-11-30 / 2026-12-19 | 18 | ⚠️ 1 967,46 €–3 067,84 € | **Manquant / non concluant** : hôtel long et autres postes absents ; formule ci-dessous | 4,5/5 ; HKT↔hôtel ; 2 trajets terrestres, aucun changement d’étape |
 
-**Recommandation conditionnelle : A, Nai Yang**, pour réduire le transfert et la fatigue sans déplacer les bagages pendant le séjour. Le vol retenu arrive via une seule escale ; l’hôtel Dewa est annoncé par son site à cinq minutes de HKT. Cette proximité est l’argument décisif, pas une prétendue économie hôtelière sur 18 nuits. C, Khao Lak, est le repli balnéaire avec le même vol, mais davantage de route. B, Ao Nang, convient mieux à qui souhaite plus de sorties locales, avec un vol plus cher dans le scénario retenu et un départ retour matinal.
+**Recommandation conditionnelle : A, Nai Yang**, pour réduire le transfert et la fatigue sans déplacer les bagages pendant le séjour. Le vol retenu arrive via une seule escale ; l’hôtel Dewa est annoncé par son site à cinq minutes de HKT (source unique, non recoupée). Cette proximité est l’argument décisif, pas une prétendue économie hôtelière sur 18 nuits. C, Khao Lak, est le repli balnéaire avec le même vol, mais davantage de route. B, Ao Nang, convient mieux à qui souhaite plus de sorties locales, avec un vol plus cher dans le scénario retenu et un départ retour matinal.
 
 Arbitrage fatigue : les vols A/C totalisent 35 h 20 aller-retour, dont une escale retour de 6 h 40 à AUH. B totalise 30 h 45, soit 4 h 35 de moins, pour 387 € de plus sur les vols, mais impose le transfert hôtel très matinal. La préférence A privilégie l’accès simple et le départ retour en après-midi ; elle ne signifie pas que tous ses temps de vol sont les plus courts.
 
@@ -66,7 +66,7 @@ Paramètres transmis : `{"flyFrom":"BRU","flyTo":"HKT","departureDate":"26/11/20
 
 Pour **2026-11-30→2026-12-18**, prix total hôtel : **manquant**. Ni l’offre principale ni le plan B n’est confirmé sur 18 nuits. Les nuits hors de la trace ne valent pas zéro.
 
-**Transfert et fatigue :** [DEWA](https://www.dewaphuketresort.com/) annonce HKT→Dewa en 5 min de route. Ajouter au moins 15 min de prudence transfert ; immigration/bagages et +30 min de marge aéroport sont séparés. Le porte-à-porte après atterrissage n’est donc pas de 5 min. Tarif transfert manquant. Arrivée 06:15 : chambre tôt non garantie, repos dans les espaces autorisés de l’hôtel ; supplément éventuel d’early check-in manquant. Retour à 15:30, prévoir la marge d’enregistrement de la compagnie. Pas de ferry ni changement d’hôtel. Plan B : Proud dans la même localité, après devis long et confirmation de type/étoiles ; replanifier hôtel et transfert seulement si vols inchangés. Confort : The Slate, prix 18 nuits manquant, réserve inchangée.
+**Transfert et fatigue :** [DEWA](https://www.dewaphuketresort.com/) annonce HKT→Dewa en 5 min de route (source unique, non recoupée). Ajouter au moins 15 min de prudence transfert ; immigration/bagages et +30 min de marge aéroport sont séparés. Le porte-à-porte après atterrissage n’est donc pas de 5 min. Tarif transfert manquant. Arrivée 06:15 : chambre tôt non garantie, repos dans les espaces autorisés de l’hôtel ; supplément éventuel d’early check-in manquant. Retour à 15:30, prévoir la marge d’enregistrement de la compagnie. Pas de ferry ni changement d’hôtel. Plan B : Proud dans la même localité, après devis long et confirmation de type/étoiles ; replanifier hôtel et transfert seulement si vols inchangés. Confort : The Slate, prix 18 nuits manquant, réserve inchangée.
 
 **Budget — uniquement les postes documentés :**
 
@@ -74,7 +74,7 @@ Pour **2026-11-30→2026-12-18**, prix total hôtel : **manquant**. Ni l’offre
 |---|---:|---:|---|
 | Vol international A/R | 1 417,27 € | 1 417,27 € | ⚠️ Offre Kiwi et paramètres détaillés ci-dessus, pas tarif garanti au paiement |
 | Hôtel, 18 nuits | manquant | manquant | ⚠️ Dates longues absentes ; aucun prix court extrapolé |
-| Liaisons inter-étapes | 0 € | 0 € | ✅ Aucun déplacement inter-étapes prévu : c’est un choix de programme, pas un prix fournisseur |
+| Liaisons inter-étapes | 0 € | 0 € | n/a Aucun déplacement inter-étapes prévu : c’est un choix de programme, pas un prix fournisseur |
 | Transfert aéroport A/R | manquant | manquant | Coût non obtenu dans les sources consultées |
 | Repas/boissons ordinaires, 19 jours | 550,19 € | 1 650,56 € | ⚠️ 19 × (1 100–3 300 THB)/37,987 ; [REPAS](https://fr.numbeo.com/co%C3%BBt-de-la-vie/ville/Phuket), UTC 2026-09-24T09:00:33.928Z–2026-09-24T09:00:36.363Z ; hypothèses ci-dessous |
 | Assurance | manquant | manquant | Devis nécessaire : âge, résidence, garanties et couverture existante inconnus ; source ASSURANCE |
@@ -114,7 +114,7 @@ Pour **2026-12-02→2026-12-20**, prix total hôtel : **manquant**. Ni l’offre
 |---|---:|---:|---|
 | Vol international A/R | 1 804,27 € | 1 804,27 € | ⚠️ Offre Kiwi et paramètres détaillés ci-dessus, pas tarif garanti au paiement |
 | Hôtel, 18 nuits | manquant | manquant | ⚠️ Dates longues absentes ; aucun prix court extrapolé |
-| Liaisons inter-étapes | 0 € | 0 € | ✅ Aucun déplacement inter-étapes prévu : c’est un choix de programme, pas un prix fournisseur |
+| Liaisons inter-étapes | 0 € | 0 € | n/a Aucun déplacement inter-étapes prévu : c’est un choix de programme, pas un prix fournisseur |
 | Transfert aéroport A/R | 47,38 € | 47,38 € | ⚠️ 2 × 900 THB ; Golden Beach, retour extrapolé et validité à confirmer |
 | Repas/boissons ordinaires, 19 jours | 550,19 € | 1 650,56 € | ⚠️ 19 × (1 100–3 300 THB)/37,987 ; [REPAS](https://fr.numbeo.com/co%C3%BBt-de-la-vie/ville/Phuket), UTC 2026-09-24T09:00:33.928Z–2026-09-24T09:00:36.363Z ; hypothèses ci-dessous |
 | Assurance | manquant | manquant | Devis nécessaire : âge, résidence, garanties et couverture existante inconnus ; source ASSURANCE |
@@ -155,7 +155,7 @@ Pour **2026-11-30→2026-12-18**, prix total hôtel : **manquant**. Ni l’offre
 |---|---:|---:|---|
 | Vol international A/R | 1 417,27 € | 1 417,27 € | ⚠️ Offre Kiwi et paramètres détaillés ci-dessus, pas tarif garanti au paiement |
 | Hôtel, 18 nuits | manquant | manquant | ⚠️ Dates longues absentes ; aucun prix court extrapolé |
-| Liaisons inter-étapes | 0 € | 0 € | ✅ Aucun déplacement inter-étapes prévu : c’est un choix de programme, pas un prix fournisseur |
+| Liaisons inter-étapes | 0 € | 0 € | n/a Aucun déplacement inter-étapes prévu : c’est un choix de programme, pas un prix fournisseur |
 | Transfert aéroport A/R | manquant | manquant | Coût non obtenu dans les sources consultées |
 | Repas/boissons ordinaires, 19 jours | 550,19 € | 1 650,56 € | ⚠️ 19 × (1 100–3 300 THB)/37,987 ; [REPAS](https://fr.numbeo.com/co%C3%BBt-de-la-vie/ville/Phuket), UTC 2026-09-24T09:00:33.928Z–2026-09-24T09:00:36.363Z ; hypothèses ci-dessous |
 | Assurance | manquant | manquant | Devis nécessaire : âge, résidence, garanties et couverture existante inconnus ; source ASSURANCE |
@@ -198,7 +198,7 @@ Somme : nuits J1 à J18 dans **le même hôtel** = 18 ; J19 départ, aucune nuit
 Les trois options sont en Thaïlande, avec transits AUH sur les vols principaux. Hypothèse : passeports belges ordinaires, tourisme uniquement.
 
 - **Passeport** : [SPF](https://diplomatie.belgium.be/fr/pays/thailande/voyager-en-thailande-conseils-aux-voyageurs/informations-pratiques-pour-la-thailande), page mise à jour le 04/09/2026, demande au moins six mois de validité à l’entrée. A/C : entrée le 30/11, validité au moins jusqu’au 30/05/2027 ; B : entrée le 02/12, au moins jusqu’au 02/06/2027. Contrôler les deux documents.
-- **Visa** : [VISA](https://brussels.thaiembassy.org/en/page/visa-exemption) annonce pour les Belges une exemption touristique de **30 jours à partir du 15/09/2026**. Dix-huit nuits restent sous ce seuil. Billet de sortie et moyens de subsistance à pouvoir justifier. Ne pas réutiliser une ancienne règle de 60 jours ; la page contient une formulation incohérente sur les prolongations, sans incidence sur ce séjour court.
+- **Visa** : [VISA](https://brussels.thaiembassy.org/en/page/visa-exemption) annonce pour les Belges une exemption touristique de **30 jours à partir du 15/09/2026** (source unique, à confirmer). Dix-huit nuits restent sous ce seuil. Billet de sortie et moyens de subsistance à pouvoir justifier. Ne pas réutiliser une ancienne règle de 60 jours ; la page contient une formulation incohérente sur les prolongations, sans incidence sur ce séjour court.
 - **TDAC** : [SPF](https://diplomatie.belgium.be/fr/pays/thailande/voyager-en-thailande-conseils-aux-voyageurs/informations-pratiques-pour-la-thailande) indique une déclaration dans les trois jours avant arrivée, sur [le portail officiel](https://tdac.immigration.go.th). Pour A/C : à préparer à partir du 27/11 ; pour B : à partir du 29/11, selon la date locale d’entrée. Aucune déclaration déposée, aucun compte créé. Frais non vérifiés dans les pages effectivement lues : pas de zéro arbitraire au poste formalités.
 - **Transit AUH** : [ETIHAD](https://www.etihad.com/en/plan/travel-essentials) et la recherche officielle [UAE](https://u.ae/en/information-and-services/visa-and-emirates-id/transit-visa) distinguent transit et sortie de l’aéroport. Hypothèse de maintien airside, bagages enregistrés jusqu’à destination ; à confirmer sur le billet final. La page UAE directe ne s’est pas rendue complètement : pas de certification générale des droits d’entrée si récupération de bagages ou sortie en ville. Les variantes via TFU/PEK/SIN exigent un contrôle séparé avant sélection.
 - **Santé** : [WANDA](https://www.wanda.be/fr/landen/thailande/) recommande notamment de vérifier vaccinations de base, hépatite A et protection antimoustiques. Phuket est cité dans les zones de faible risque palustre ; cela ne supprime pas les autres risques transmis par les moustiques. Avis médical à adapter au profil personnel ; aucune prescription individuelle dans ce rapport. Prévoir une consultation avant le départ, idéalement début octobre. Vérifier sécurité baignade et recommandations locales.
@@ -237,7 +237,7 @@ Demande : BRU, départs du 15/11 au 10/12, 16/17/18 nuits locales, 2 adultes, 2 
 | `kiwi_bags_rt_hkt` [7], 2026-09-24T08:33:15+00:00 | BRU→HKT→BRU | 2026-11-28 / 2026-11-29 | 2026-12-16 / 17 | ⚠️ [1 366,71 €](https://kiwi.com/u/44yqz6) | Alternative de dates/prix/fatigue ; hôtel long absent |
 | `kiwi_bags_rt_hkt` [9], 2026-09-24T08:33:15+00:00 | BRU→HKT→BRU | 2026-11-29 / 2026-11-30 | 2026-12-18 / 18 | ⚠️ [1 417,27 €](https://kiwi.com/u/777zpu) | Retenu A/C ; hôtel long absent |
 | `kiwi_bags_rt_kbv` [0], 2026-09-24T08:33:19+00:00 | BRU→KBV→BRU | 2026-12-01 / 2026-12-02 | 2026-12-20 / 18 | ⚠️ [1 583,27 €](https://kiwi.com/u/gnrc9r2) | Alternative de dates/prix/fatigue ; hôtel long absent |
-| `kiwi_bags_rt_kbv` [2], 2026-09-24T08:33:19+00:00 | BRU→KBV→BRU | 2026-11-29 / 2026-11-30 | 2026-12-16 / 16 | ⚠️ [1 777,57 €](https://kiwi.com/u/dn3fkb) | Alternative de dates/prix/fatigue ; hôtel long absent |
+| `kiwi_bags_rt_kbv` [2], 2026-09-24T08:33:19+00:00 | BRU→KBV→BRU | 2026-11-29 / 2026-11-30 | 2026-12-16 / 16 | ⚠️ [1 777,57 €](https://kiwi.com/u/dn3fkb) | Alternative de dates/prix/fatigue (sans bagage cabine) ; hôtel long absent |
 | `kiwi_bags_rt_kbv` [6], 2026-09-24T08:33:19+00:00 | BRU→KBV→BRU | 2026-12-01 / 2026-12-02 | 2026-12-20 / 18 | ⚠️ [1 804,27 €](https://kiwi.com/u/3rq5vb) | Retenu B ; hôtel long absent |
 | `trivago_C3_naiyang`, 2026-09-24T08:34:53+00:00 | Nai Yang (Phuket) | Hôtel reçu 2026-12-10 | 2026-12-16 / 6 nuits | Candidats détaillés ci-dessus | Demandé 2026-11-30→2026-12-18 (18 nuits) : **non couvert** |
 | `trivago_A1_aonang`, 2026-09-24T08:34:06+00:00 | Ao Nang (Krabi) | Hôtel reçu 2026-12-03 | 2026-12-07 / 4 nuits | Candidats détaillés ci-dessus | Demandé 2026-12-02→2026-12-20 (18 nuits) : **non couvert** |
