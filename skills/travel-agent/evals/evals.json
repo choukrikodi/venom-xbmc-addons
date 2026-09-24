@@ -69,7 +69,7 @@
       "expected_output": "Rapport standard avec ## Hypothèses (dates exactes de Pâques 2027 retenues, âge des enfants au voyage), trois options dont Lisbonne, Sicile et une troisième européenne, vols BRU directs ou escale justifiée pour 2 adultes + 2 enfants, hôtels en occupation 4, budgets bas/haut comparés à 3 000 EUR, aucune trace du cas Asie.",
       "files": [],
       "expectations": [
-        "echo_adultes_enfants: chaque tarif de vol marqué ✅ est accompagné d'un écho de requête indiquant 2 adultes et 2 enfants avec leurs âges (6, 10) ; un écho sans enfants invalide le ✅.",
+        "echo_adultes_enfants: chaque tarif de vol marqué ✅ est accompagné d'un écho de requête indiquant 2 adultes et 2 enfants ; les âges (6, 10) sont déclarés en Hypothèses et signalés comme non prouvés par l'écho si le schéma ne les expose pas ; un écho sans enfants invalide le ✅.",
         "bru_pas_crl: tous les vols partent de BRU ; CRL n'est jamais substitué ni présenté comme équivalent.",
         "sept_nuits: chaque option compte exactement 7 nuits sur place, dates de départ, dernière nuit et retour explicitées, dans la fenêtre des vacances de Pâques 2027 dont les dates sont écrites.",
         "occupation_hotel_4: chaque recherche d'hôtel citée mentionne 4 occupants (2 adultes + 2 enfants) et 1 chambre familiale ou 2 chambres ; le prix par nuit et le prix total de séjour sont distingués.",

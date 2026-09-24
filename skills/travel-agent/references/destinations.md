@@ -1,12 +1,29 @@
-# Repères de destination extensibles
+# Découverte de destinations : repères extensibles
 
-Ces repères sont des **hypothèses de recherche**, jamais des horaires, prévisions météorologiques ou règles d'entrée confirmés. Pour toute option, revérifier le mois et la micro-région dans une source météo datée, les traversées dans l'horaire du transporteur, et les formalités selon chaque nationalité et transit. Ajouter des régions ici seulement avec la même discipline.
+Ces repères orientent les **questions à vérifier**, sans constituer une prévision, un horaire ou une règle de visa. Les aéroports sont des candidats, à sélectionner depuis les entrées du voyage. Ne jamais transformer une heuristique régionale en exclusion générale permanente.
 
-| Zone / profil | Période à investiguer | Portes et liaisons à examiner | Vigilance à confirmer |
-| --- | --- | --- | --- |
-| Mer d'Andaman, Thaïlande | Saison plus sèche généralement de fin d'année au printemps ; variation locale et mer | KBV ou HKT, transferts terrestres et ferries entre îles | Fréquence des ferries, mer et durée porte à porte ; règles d'entrée selon passeport |
-| Côtes est et ouest malaisiennes | Saison et mousson distinctes selon façade | KUL, LGK, PEN et liaisons maritimes aériennes | Certaines îles de la côte est réduisent fortement l'offre durant la mousson ; vérifier ouverture réelle |
-| Philippines, archipels | Typhons/pluie selon région et saison ; contrastes forts entre côtes | MNL, CEB, PPS et aéroports régionaux ; bateau/vol entre étapes | Correspondances longues et saison des traversées ; exigences d'entrée et transit |
-| Amériques et Europe | Saisons et climats très variables selon latitude et altitude | Aéroports locaux et escales possibles | Durée de vol, décalage horaire, saison cyclonique ou hivernale, autorisations de transit |
+## Construire trois options
 
-Un parcours proposé doit respecter le nombre d'étapes, les nuits minimales et la durée maximale de transfert convenues. Ne jamais extrapoler la durée d'une liaison courte adjacente à une autre liaison, ni qualifier un ferry de garanti sur la seule base d'un tracé géographique. Sources de vérification : services météorologiques nationaux, offices locaux avec données datées, transporteurs, [SPF Affaires étrangères](https://diplomatie.belgium.be/fr/conseils-aux-voyageurs) et autorités d'immigration officielles.
+Comparer en priorité des destinations compatibles avec style, durée, plafond et contraintes de mobilité. Pour un circuit, vérifier l'existence et le calendrier des liaisons avant de fixer les étapes. Compter l'ensemble du trajet porte à porte (hôtel, port/aéroport, attente, contrôles, arrivée), pas seulement le temps de navigation ou de vol.
+
+| Zone ou style | Repères de découverte | Vérifications à effectuer aux dates demandées |
+| --- | --- | --- |
+| Andaman / îles thaïlandaises | KBV/HKT comme portes candidates ; distinguer littoral andaman et golfe | Comparer saisons par côte et micro-région ; mer, ferries, fermeture éventuelle, durée terrestre et accès hôtel. |
+| Malaisie | KUL/LGK/PEN selon circuit ; séparer les façades est et ouest | Ouverture des hôtels et transports insulaires, mousson locale, formalités d'entrée par ferry. |
+| Philippines | MNL/CEB/PPS ou aéroports régionaux selon les étapes | Saison locale, cyclones, circulation des ferries, distance des aéroports et protection des correspondances. |
+| Méditerranée | Côte, île ou ville selon style et aéroports autorisés | Température eau/air, vent, chaleur et fréquentation, saison des ferries et fermetures locales ; sources nationales/offices/transporteurs datés. |
+| Canaries / Madère | Choisir île, côte, altitude et accès depuis l’origine | Vent/houle et microclimats, disponibilité des plages et sentiers, location/transferts ; ne pas extrapoler une île à l’archipel. |
+| Caraïbes | Destination et escale selon passeport, budget et durée | Saison cyclonique propre à la zone, précipitations, sargasses documentées, disponibilité des liaisons et formalités de transit. |
+| Océan Indien | Île et côte adaptées au style et à la fenêtre | Mousson/cyclones selon sous-région, mer, transferts inter-îles, escales et formalités ; sources nationales datées. |
+| Europe / culture | Villes, trains et aéroports autorisés | Fermetures hebdomadaires, jours fériés/événements, durée des déplacements, accessibilité réelle. |
+| Montagne / ski | Station et altitude, transfert depuis gare/aéroport | Ouverture des remontées, enneigement historique, prévision disponible, équipement et capacité sans escaliers. |
+| Amériques continentales | Zones choisies selon latitude, altitude et rythme | Climat local, saison cyclonique éventuelle, transit et autorisations selon passeport, saison tarifaire. |
+| Afrique / Pacifique | Sous-région et porte d'entrée adaptées au trajet | Pluie/chaleur/mer selon lieu et saison, connexions, couverture assurance et formalités officielles. |
+
+Pour enrichir cette table, ajouter la région, le facteur saisonnier pertinent, des portes candidates, une source primaire datée et la condition de revalidation. Les exclusions données pour un cas particulier restent dans ses entrées/évaluations.
+
+## Météo et formalités
+
+Météo : services nationaux ou jeux climatiques officiels ; relever URL, période observée, zone/station, date de publication et variable utile (pluie, température, vent, neige, état de mer). Une moyenne mensuelle et un pourcentage de pluie ne décrivent pas le même risque. À long terme, expliciter la variabilité plutôt qu'affirmer une météo garantie.
+
+Formalités : partir du [SPF belge, conseils aux voyageurs](https://diplomatie.belgium.be/fr/conseils-aux-voyageurs) et des [documents de voyage](https://diplomatie.belgium.be/fr/documents-de-voyage), puis ouvrir les autorités d'entrée compétentes. Rechercher selon nationalité, type de document, durée, motif, points d'entrée et transits. L'exemption de visa n'exclut pas une autorisation préalable ou une déclaration d'arrivée ; ne citer frais et délais qu'après contrôle officiel actuel.

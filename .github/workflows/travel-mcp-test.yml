@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [claude/travel-agent-skill-setup-vhqmwf]
-    paths: [.github/workflows/travel-mcp-test.yml, skills/travel-agent/scripts/**]
+    paths: [.github/workflows/travel-mcp-test.yml, skills/travel-agent/scripts/**, skills/travel-agent/evals/files/**]
 
 permissions:
   contents: write
@@ -20,8 +20,10 @@ jobs:
           mkdir -p out
           python3 $C https://mcp.kiwi.com list > out/tools_kiwi.json || true
           python3 $C https://mcp.trivago.com/mcp list > out/tools_trivago.json || true
+      - name: Local tests (no network)
+        run: python3 -B skills/travel-agent/evals/test_mcp_call.py
       - name: Test calls
-        run: bash skills/travel-agent/scripts/test_case.sh
+        run: TRAVEL_CASE_FILE=skills/travel-agent/evals/files/asie_v2.json bash skills/travel-agent/scripts/test_case.sh
       - name: Save raw responses to branch
         if: always()
         run: |
