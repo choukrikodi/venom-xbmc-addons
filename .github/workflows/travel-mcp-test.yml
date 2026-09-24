@@ -7,16 +7,42 @@ on:
         description: Manifeste de requêtes (chemin dans le dépôt)
         default: skills/travel-agent/evals/files/asie_v2.json
       output_dir:
-        description: Dossier de sortie commité
-        default: skills/travel-agent/test-output
+        description: Dossier de sortie commité (vide = déduit du manifeste)
+        default: ""
   push:
     branches: [claude/travel-agent-skill-setup-vhqmwf]
-    paths: [.github/workflows/travel-mcp-test.yml, skills/travel-agent/scripts/**, skills/travel-agent/evals/files/*.json, skills/travel-agent/evals/files/web/assets.json]
+    paths:
+      - .github/workflows/travel-mcp-test.yml
+      - skills/travel-agent/scripts/**
+      - skills/travel-agent/evals/test_mcp_call.py
+      - skills/travel-agent/evals/test_ci_paths.py
+      - skills/travel-agent/evals/evals.json
+      - skills/travel-agent/evals/files/*.json
+      - skills/travel-agent/evals/files/web/assets.json
 
+# Lecture seule par défaut ; seuls probe et assets écrivent sur la branche.
 permissions:
-  contents: write
+  contents: read
+
+# Un seul run par branche à la fois : espacement Kiwi et pushes du bot sérialisés.
+concurrency:
+  group: travel-mcp-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  CI_BRANCH: ${{ github.ref_name }}
 
 jobs:
+  # Tests locaux (stdlib, sans réseau) : client MCP, runner, validation des chemins CI.
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Client, runner et références
+        run: python3 -B skills/travel-agent/evals/test_mcp_call.py
+      - name: Chemins CI et sauvegarde
+        run: python3 -B skills/travel-agent/evals/test_ci_paths.py
+
   # Détermine les manifestes à exécuter : ceux modifiés par le push (ou celui
   # demandé en lancement manuel). Un manifeste inchangé n'est jamais rejoué,
   # pour ne pas écraser des traces déjà citées dans un rapport.
@@ -30,26 +56,7 @@ jobs:
         with:
           fetch-depth: 0
       - id: plan
-        run: |
-          python3 - <<'EOF' >> "$GITHUB_OUTPUT"
-          import json, os, subprocess
-          ev = os.environ["GITHUB_EVENT_NAME"]
-          def dest(case):
-              base = os.path.basename(case)[:-5]
-              return "skills/travel-agent/test-output" if base == "asie_v2" else "skills/travel-agent/test-output-" + base.replace("asie_", "").replace("_", "-")
-          items = []
-          if ev == "workflow_dispatch":
-              items = [{"case": os.environ["IN_CASE"], "out": os.environ["IN_OUT"] or dest(os.environ["IN_CASE"])}]
-          else:
-              before, sha = os.environ["BEFORE"], os.environ["GITHUB_SHA"]
-              ok = before and not before.startswith("0000000") and subprocess.run(["git", "cat-file", "-e", before]).returncode == 0
-              changed = subprocess.run(["git", "diff", "--name-only", before, sha] if ok else ["git", "show", "--name-only", "--format=", sha], capture_output=True, text=True).stdout.split()
-              for f in sorted(set(changed)):
-                  if os.path.dirname(f) == "skills/travel-agent/evals/files" and f.endswith(".json") and os.path.exists(f):
-                      items.append({"case": f, "out": dest(f)})
-          print("matrix=" + json.dumps({"include": items}))
-          print("empty=" + ("true" if not items else "false"))
-          EOF
+        run: python3 -B skills/travel-agent/scripts/ci_paths.py plan >> "$GITHUB_OUTPUT"
         env:
           BEFORE: ${{ github.event.before }}
           IN_CASE: ${{ inputs.case_file }}
@@ -58,8 +65,10 @@ jobs:
   # Ressources visuelles (cartes OSM, photos publiques) du configurateur :
   # téléchargées seulement quand le manifeste assets.json ou le script change.
   assets:
-    needs: plan
+    needs: [plan, tests]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -79,20 +88,30 @@ jobs:
       - name: Fetch assets
         id: fetch
         if: steps.decide.outputs.run == 'true'
-        run: python3 skills/travel-agent/scripts/fetch_assets.py skills/travel-agent/evals/files/web/assets.json skills/travel-agent/evals/files/web/assets || true
-      - name: Save assets to branch
-        if: steps.fetch.outcome == 'success'
+        # rc=1 : au moins un asset manquant (journalisé dans assets.log.json) ; rc>1 : script en erreur.
         run: |
-          git pull --rebase --autostash origin ${{ github.ref_name }} || true
-          git config user.name "github-actions[bot]"
-          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
-          git add skills/travel-agent/evals/files/web/assets
-          git commit -m "Assets du configurateur (run ${{ github.run_id }})" && git push || true
+          python3 skills/travel-agent/scripts/fetch_assets.py skills/travel-agent/evals/files/web/assets.json skills/travel-agent/evals/files/web/assets
+          rc=$?
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          exit 0
+      - name: Save assets to branch
+        id: save
+        if: always() && steps.decide.outputs.run == 'true'
+        run: bash skills/travel-agent/scripts/ci_save.sh skills/travel-agent/evals/files/web/assets "Assets du configurateur (run ${{ github.run_id }})"
+      - name: Report
+        if: always() && steps.decide.outputs.run == 'true'
+        run: |
+          rc="${{ steps.fetch.outputs.rc }}"
+          if [ "$rc" = "1" ]; then echo "::warning::Certains assets n'ont pas pu être téléchargés (voir assets.log.json)"; fi
+          if [ -n "$rc" ] && [ "$rc" != "0" ] && [ "$rc" != "1" ]; then echo "::error::fetch_assets.py a échoué (code $rc)"; exit 1; fi
+          if [ "${{ steps.save.outcome }}" != "success" ]; then echo "::error::Sauvegarde des assets échouée"; exit 1; fi
 
   probe:
-    needs: plan
+    needs: [plan, tests]
     if: needs.plan.outputs.empty == 'false'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     # Un manifeste à la fois : espacement Kiwi et push du bot sérialisés.
     strategy:
       max-parallel: 1
@@ -100,24 +119,39 @@ jobs:
       matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
+      - name: Validate paths
+        run: python3 -B skills/travel-agent/scripts/ci_paths.py check "${{ matrix.case }}" "${{ matrix.out }}"
       - name: List tools
+        id: list
+        continue-on-error: true
         run: |
           C=skills/travel-agent/scripts/mcp_call.py
           mkdir -p out
-          python3 $C https://mcp.kiwi.com list > out/tools_kiwi.json || true
-          python3 $C https://mcp.trivago.com/mcp list > out/tools_trivago.json || true
-      - name: Local tests (no network)
-        run: python3 -B skills/travel-agent/evals/test_mcp_call.py
+          ok=0
+          python3 $C https://mcp.kiwi.com list > out/tools_kiwi.json || ok=1
+          python3 $C https://mcp.trivago.com/mcp list > out/tools_trivago.json || ok=1
+          exit $ok
       - name: Test calls
         id: calls
+        continue-on-error: true
         run: TRAVEL_CASE_FILE="${{ matrix.case }}" bash skills/travel-agent/scripts/test_case.sh
       - name: Save raw responses to branch
+        id: save
         if: always() && steps.calls.outcome != 'skipped'
         run: |
           DEST="${{ matrix.out }}"
-          git pull --rebase --autostash origin ${{ github.ref_name }} || true
+          python3 -B skills/travel-agent/scripts/ci_paths.py check "${{ matrix.case }}" "$DEST"
+          # Référence des traces précédentes avant réécriture (dossier suivi par git).
+          PREV="$(mktemp)"
+          python3 -B skills/travel-agent/scripts/ci_paths.py previous "$DEST" "${{ github.run_id }}" > "$PREV"
           rm -rf "$DEST" && mv out "$DEST"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
-          git add "$DEST"
-          git commit -m "Raw MCP responses (run ${{ github.run_id }}, ${{ matrix.out }})" && git push || true
+          if [ -s "$PREV" ]; then cp "$PREV" "$DEST/PREVIOUS.md"; fi
+          bash skills/travel-agent/scripts/ci_save.sh "$DEST" "Raw MCP responses (run ${{ github.run_id }}, $DEST)"
+      - name: Report
+        if: always()
+        run: |
+          fail=0
+          [ "${{ steps.list.outcome }}" = "success" ] || { echo "::error::tools/list en échec (Kiwi ou Trivago)"; fail=1; }
+          [ "${{ steps.calls.outcome }}" = "success" ] || { echo "::error::Au moins un appel MCP du manifeste a échoué"; fail=1; }
+          [ "${{ steps.save.outcome }}" = "success" ] || { echo "::error::Sauvegarde des traces échouée"; fail=1; }
+          exit $fail
