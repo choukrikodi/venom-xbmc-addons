@@ -1,0 +1,612 @@
+<title>Andaman 2026 Configurateur</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{
+  --paper:#f2f5f4; --surface:#ffffff; --ink:#15242b; --muted:#5b6c72; --line:#d3dcde;
+  --accent:#0d6d78; --accent-ink:#ffffff; --accent-soft:#dcedef;
+  --warn:#9a6300; --warn-soft:#fbf0d6; --bad:#a23a2b; --bad-soft:#f8e2de; --ok:#2f6f3e; --ok-soft:#e0f0e3;
+  --gantt-hotel:#0d6d78; --gantt-fly:#3f5563; --gantt-act:#c98a1b; --gantt-home:#8a9aa0;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#0f1b20; --surface:#17262d; --ink:#e4ecee; --muted:#9db0b6; --line:#2c3f47;
+    --accent:#4cc2cd; --accent-ink:#0b1a1d; --accent-soft:#163a40;
+    --warn:#e6b45a; --warn-soft:#3a2e12; --bad:#e8836f; --bad-soft:#42211b; --ok:#7fc98f; --ok-soft:#1c3523;
+    --gantt-hotel:#4cc2cd; --gantt-fly:#8fa6b3; --gantt-act:#e6b45a; --gantt-home:#5f727a;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#0f1b20; --surface:#17262d; --ink:#e4ecee; --muted:#9db0b6; --line:#2c3f47;
+  --accent:#4cc2cd; --accent-ink:#0b1a1d; --accent-soft:#163a40;
+  --warn:#e6b45a; --warn-soft:#3a2e12; --bad:#e8836f; --bad-soft:#42211b; --ok:#7fc98f; --ok-soft:#1c3523;
+  --gantt-hotel:#4cc2cd; --gantt-fly:#8fa6b3; --gantt-act:#e6b45a; --gantt-home:#5f727a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:24px 64px}
+header.top{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:end;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:24px}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(26px,4vw,38px);line-height:1.1;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:500;font-size:20px;margin:0 0 12px;text-wrap:balance}
+h3{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:600}
+.lede{color:var(--muted);max-width:62ch;margin:6px 0 0}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:24px;align-items:start}
+@media (max-width:860px){.layout{grid-template-columns:1fr}}
+section.block{margin-bottom:28px}
+fieldset{border:0;padding:0;margin:0 0 20px}
+legend{font-weight:600;padding:0;margin-bottom:8px;font-size:15px}
+.choices{display:grid;gap:8px}
+.choice{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:start;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--surface);cursor:pointer}
+.choice:has(input:checked){border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.choice:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+.choice input{margin-top:4px;accent-color:var(--accent)}
+.choice .t{font-weight:600}
+.choice .d{color:var(--muted);font-size:13px}
+.choice .p{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
+.tag{display:inline-block;font-size:11px;letter-spacing:.04em;padding:1px 6px;border-radius:3px;margin-left:6px;vertical-align:middle;font-weight:600}
+.tag.warn{background:var(--warn-soft);color:var(--warn)}
+.tag.ok{background:var(--ok-soft);color:var(--ok)}
+.tag.bad{background:var(--bad-soft);color:var(--bad)}
+.tag.acc{background:var(--accent-soft);color:var(--accent)}
+.row{display:flex;flex-wrap:wrap;gap:8px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--surface)}
+.seg label{padding:6px 12px;cursor:pointer;border-right:1px solid var(--line);font-size:14px}
+.seg label:last-child{border-right:0}
+.seg label:has(input:checked){background:var(--accent);color:var(--accent-ink)}
+.seg input{position:absolute;opacity:0;width:0;height:0}
+.seg label:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:-2px}
+.opt{display:grid;grid-template-columns:1fr auto;gap:6px 12px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}
+.opt:last-child{border-bottom:0}
+.opt .l{font-weight:600}.opt .s{color:var(--muted);font-size:13px;grid-column:1 / -1}
+@media (max-width:520px){.opt{grid-template-columns:1fr}}
+aside.summary{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px}
+.big{font-family:var(--display);font-size:28px;font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums;margin:2px 0}
+.kv{display:grid;grid-template-columns:1fr auto;gap:4px 12px;font-variant-numeric:tabular-nums;font-size:14px}
+.kv dt{color:var(--muted)}.kv dd{margin:0;text-align:right;font-weight:600}
+.state{margin-top:12px;padding:10px 12px;border-radius:6px;font-size:14px}
+.state.warn{background:var(--warn-soft);color:var(--warn)}
+.state.bad{background:var(--bad-soft);color:var(--bad)}
+.state.ok{background:var(--ok-soft);color:var(--ok)}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.total td{font-weight:600;border-top:2px solid var(--ink)}
+tr:last-child td{border-bottom:0}
+.gantt{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface);padding:12px}
+.g{display:grid;grid-template-columns:160px repeat(var(--days),minmax(26px,1fr));gap:2px 0;min-width:720px;font-size:12px}
+.g .hd{color:var(--muted);text-align:center;padding-bottom:4px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.g .hd.we{color:var(--ink);font-weight:600}
+.g .lab{padding:4px 6px 4px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-bottom:1px dotted var(--line)}
+.g .bar{height:22px;border-radius:3px;margin:3px 1px;color:#fff;font-size:11px;line-height:22px;padding:0 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.g .cell{border-bottom:1px dotted var(--line);min-height:28px}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--muted);margin-top:8px}
+.legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+.milestones{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.ms{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 12px}
+.ms .when{font-variant-numeric:tabular-nums;font-weight:600}
+.ms .what{font-size:14px}
+.ms .why{color:var(--muted);font-size:13px}
+button{font:inherit;border-radius:6px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px 16px;cursor:pointer;font-weight:600}
+button.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button[disabled]{opacity:.5;cursor:not-allowed}
+.lists{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.list{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px}
+.list h4{margin:0 0 8px;font-size:14px}
+.card{border:1px solid var(--line);border-radius:4px;padding:6px 8px;margin-bottom:6px;font-size:13px;background:var(--paper)}
+.card .due{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px}
+.card ul{margin:4px 0 0;padding-left:16px;color:var(--muted);font-size:12px}
+.note{color:var(--muted);font-size:13px;max-width:70ch}
+.valid{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px;display:grid;gap:12px}
+textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);padding:8px}
+.status{font-size:14px}
+@media (prefers-reduced-motion:no-preference){.choice{transition:border-color .15s}}
+/* Décor de fond : côte d'Andaman, discret et fixe */
+.bg{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:var(--paper)}
+.bg svg{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;opacity:.55}
+.bg .sun{position:absolute;right:6%;top:4%;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle at 40% 40%,var(--gantt-act),transparent 70%);opacity:.25}
+/* Page de garde */
+.cover{position:relative;overflow:hidden;border-radius:12px;background:linear-gradient(160deg,var(--accent) 0%,#0a4d56 60%,#083a41 100%);color:#fff;padding:32px 24px;margin-bottom:24px;isolation:isolate}
+.cover::after{content:"";position:absolute;inset:auto -10% -30% -10%;height:70%;background:radial-gradient(ellipse at 50% 100%,rgba(255,255,255,.18),transparent 60%);z-index:-1}
+.cover .eyebrow{color:#cdeef2}
+.cover h1{color:#fff}
+.cover .lede{color:#dff3f5}
+.cover svg.boat{position:absolute;right:20px;bottom:10px;width:220px;max-width:40%;height:auto;opacity:.9}
+.cover .facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;font-size:14px;color:#e6f6f8}
+.cover .facts b{font-variant-numeric:tabular-nums}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-bottom:24px}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.step .n{font-family:var(--display);font-size:26px;line-height:1;color:var(--accent);font-weight:600}
+.step .t{font-weight:600}.step .d{color:var(--muted);font-size:13px}
+.compare td:first-child{font-weight:600}
+.compare tr.sel td{background:var(--accent-soft)}
+.dest{display:grid;gap:12px}
+.dcard{background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.dcard .dhead{padding:14px 16px;background:linear-gradient(120deg,var(--accent-soft),transparent);display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.dcard .dhead h4{margin:0;font-family:var(--display);font-size:20px;font-weight:600}
+.dcard .dbody{padding:12px 16px;display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.dcard .dbody p{margin:0;font-size:14px}
+.dcard ul{margin:4px 0 0;padding-left:18px;font-size:14px}
+.dcard .src{font-size:12px;color:var(--muted);padding:8px 16px 12px;border-top:1px solid var(--line)}
+.dcard .src a{color:var(--accent)}
+.section-cover{display:flex;align-items:center;gap:12px;margin:0 0 12px}
+.section-cover svg{width:34px;height:34px;flex:none}
+</style>
+<div class="bg" aria-hidden="true">
+  <div class="sun"></div>
+  <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path fill="var(--accent-soft)" d="M0,224 C240,290 480,160 720,200 C960,240 1200,300 1440,220 L1440,320 L0,320 Z"/>
+    <path fill="var(--accent)" opacity=".25" d="M0,260 C220,300 480,230 760,262 C1040,294 1240,250 1440,280 L1440,320 L0,320 Z"/>
+    <path fill="var(--accent)" opacity=".12" d="M0,300 C300,260 700,320 1440,296 L1440,320 L0,320 Z"/>
+  </svg>
+</div>
+
+<div class="wrap">
+<header class="cover">
+  <div class="eyebrow">Côte d'Andaman, Thaïlande · 15/11 → 10/12/2026 · 2 adultes belges · départ BRU</div>
+  <h1>Andaman 2026 : choisir le scénario</h1>
+  <p class="lede">Chaque variable vient du rapport v5 (arrêté le 24/09/2026). Le budget, le calendrier Gantt et la structure du tableau Trello se recalculent à chaque choix. Rien n'est réservé ; le Trello n'est construit qu'après « Valider ».</p>
+  <div class="facts"><span>Plafond <b>8 000 €</b></span><span>Réserve <b>1 000 €</b> séparée</span><span>Hôtels <b>4–5★</b>, un seul lieu</span><span>1 soute par adulte</span><span>Tout ⚠️ estimation ; X = suppléments obligatoires non exposés</span></div>
+  <svg class="boat" viewBox="0 0 220 90" aria-hidden="true">
+    <path d="M10 60 Q110 85 210 55 L200 70 Q110 95 20 72 Z" fill="#f3d9a4"/>
+    <path d="M18 62 Q110 80 205 57" stroke="#a8743a" stroke-width="2" fill="none"/>
+    <path d="M150 58 L150 20 L166 8 L162 58 Z" fill="#fff" opacity=".9"/>
+    <path d="M60 60 L68 40 L76 60 Z" fill="#0b3a41"/>
+    <path d="M0 76 Q40 68 80 76 T160 76 T220 76" stroke="#ffffff" stroke-width="2" fill="none" opacity=".6"/>
+  </svg>
+</header>
+
+<div class="steps">
+  <div class="step"><span class="n">1</span><span><span class="t">Choisir</span><br><span class="d">Lieu, vol, hôtel, séances et hypothèses ouvertes. Chaque option affiche son prix et son statut (retenu, certifié, à vérifier).</span></span></div>
+  <div class="step"><span class="n">2</span><span><span class="t">Lire</span><br><span class="d">Budget bas–haut du groupe, tolérance restante pour X, calendrier Gantt, jalons et fiches destination.</span></span></div>
+  <div class="step"><span class="n">3</span><span><span class="t">Valider</span><br><span class="d">Le bouton enregistre le scénario ; Claude Code construit alors le tableau Trello (présentation, achats, avant départ, voyage, budget).</span></span></div>
+</div>
+
+<section class="block">
+  <h2>Les trois scénarios en un coup d'œil</h2>
+  <div class="tablewrap"><table class="compare" id="compare"></table></div>
+  <p class="note">Totaux du rapport v5 pour le vol et l'hôtel retenus, activités complètes, hypothèses en fourchette. Cliquer une ligne sélectionne le scénario.</p>
+</section>
+
+<div class="layout">
+<div>
+  <section class="block">
+    <fieldset>
+      <legend>1. Lieu et durée (une étape, un hôtel)</legend>
+      <div class="choices" id="placeChoices"></div>
+    </fieldset>
+    <fieldset>
+      <legend>2. Vols (2 adultes, 1 soute chacun)</legend>
+      <div class="choices" id="flightChoices"></div>
+    </fieldset>
+    <fieldset>
+      <legend>3. Hôtel unique, 4–5★</legend>
+      <div class="choices" id="hotelChoices"></div>
+    </fieldset>
+    <fieldset>
+      <legend>4. Activités payantes proposées (cocher les séances retenues)</legend>
+      <div class="choices" id="actChoices"></div>
+      <p class="note" id="actNote"></p>
+    </fieldset>
+    <fieldset>
+      <legend>5. Hypothèses ouvertes</legend>
+      <div id="opts"></div>
+    </fieldset>
+  </section>
+</div>
+
+<aside class="summary" id="summary"></aside>
+</div>
+
+<section class="block">
+  <h2>Budget du groupe, poste par poste</h2>
+  <div class="tablewrap"><table id="budget"></table></div>
+  <p class="note">Lignes arrondies au centime ; le rapport additionne les valeurs non arrondies, d'où un écart possible de quelques centimes. Réserve fixe de 1 000 € séparée, sous le plafond de 8 000 €.</p>
+</section>
+
+<section class="block">
+  <h2>Calendrier du voyage (vue Gantt)</h2>
+  <div class="gantt" id="gantt"></div>
+  <div class="legend">
+    <span style="--c:var(--gantt-home)">Domicile ↔ BRU</span>
+    <span style="--c:var(--gantt-fly)">Vols</span>
+    <span style="--c:var(--gantt-hotel)">Hôtel</span>
+    <span style="--c:var(--gantt-act)">Séance retenue</span>
+  </div>
+  <h3 style="margin-top:20px">Jalons avant le départ</h3>
+  <div class="milestones" id="milestones"></div>
+</section>
+
+<section class="block">
+  <div class="section-cover"><svg viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="16" fill="var(--accent-soft)"/><path d="M17 6 L20 14 L28 14 L22 19 L24 27 L17 22 L10 27 L12 19 L6 14 L14 14 Z" fill="var(--accent)"/></svg><h2 style="margin:0">Destinations : pays et lieu de séjour</h2></div>
+  <p class="note">Fiches documentaires sourcées (URL et date de consultation). Elles deviennent la liste « Présentation » du Trello : une carte pour la Thaïlande, une pour le lieu choisi, avec les « à ne pas rater » en checklist.</p>
+  <div class="dest" id="dest"></div>
+</section>
+
+<section class="block">
+  <h2>Aperçu du tableau Trello qui sera créé</h2>
+  <p class="note">Listes et cartes générées à partir des choix ci-dessus et du tracker du rapport. Rien n'est envoyé à Trello depuis cette page : après validation, Claude Code crée le tableau avec le connecteur Trello.</p>
+  <div class="lists" id="trello"></div>
+</section>
+
+<section class="block">
+  <h2>Validation</h2>
+  <div class="valid">
+    <div class="status" id="lastValid">Aucune validation enregistrée pour l'instant.</div>
+    <div class="row">
+      <button class="primary" id="validate">Valider ce scénario pour le Trello</button>
+      <button id="copy">Copier le récapitulatif</button>
+    </div>
+    <div class="status" id="validStatus"></div>
+    <textarea id="spec" readonly aria-label="Récapitulatif JSON du scénario"></textarea>
+  </div>
+</section>
+</div>
+
+<script>
+const FX = 37.987;
+const CAP = 8000, RESERVE = 1000, DAY_RATE = 4.68, CANCEL = 574;
+const DATA = {
+  A: {
+    name: "Nai Yang, Phuket", short: "A", nights: 16, localDays: 17, insuredDays: 19,
+    dep: "2026-11-29", ret: "2026-12-17", hin: "2026-11-30", hout: "2026-12-16",
+    airport: "HKT", tdacFrom: "2026-11-27", passport: "2027-05-30",
+    desc: "Plage près de l'aéroport HKT, transferts courts ; calendrier le moins cher documenté (16 nuits exactes).",
+    flights: [
+      { id: "ca", label: "Air China via TFU", price: 1018, detail: "Aller 18 h 20 (29/11 12:25 → 30/11 12:45), retour 22 h 20 (16/12 14:00 → 17/12 06:20). Kiwi exact_16n [0].", rec: true },
+      { id: "ey", label: "Etihad via AUH (confort aérien)", price: 1575.27, detail: "Aller 14 h 20, retour 21 h : 5 h 20 gagnées. Kiwi exact_16n [11]." }
+    ],
+    hotels: [
+      { id: "esprit_bk", label: "L'esprit De Naiyang Beach Resort, Booking", price: 1900.41, tag: "certifié 4★ Booking", tagc: "ok", detail: "4★ « officiel » selon Booking, 8,3/10 ; navette gratuite annoncée, non déduite. Recommandé par le rapport.", rec: true },
+      { id: "nbh", label: "Naiyang Beach Hotel, Trivago/Agoda", price: 771, tag: "stars_unverified", tagc: "warn", detail: "4★ déclarées, 7,6/10, 1 878 avis ; nom non reconnu par Booking, identité et catégorie à résoudre." },
+      { id: "esprit_tv", label: "L'esprit De Naiyang, Trivago/Agoda", price: 1807, tag: "confort", tagc: "acc", detail: "Même hôtel que la variante Booking, autre vendeur ; pas de fusion de tarifs." },
+      { id: "pan", label: "Panphuree Residence, Trivago/Trip.com", price: 1035, tag: "secondaire", tagc: "acc", detail: "4★ déclarées, 8,3/10, 6 451 avis ; 1,7 km du centre." }
+    ],
+    transfers: [10.53, 26.32], meals: [492.27, 1476.82], transit: [96, 240], tipsMax: 44.75, atm: [51.26, 169.58],
+    acts: [
+      { d: "2026-12-02", j: "J3", label: "Parc Sirinat, promenade courte (2 entrées)", lo: 400, hi: 400, planB: "Promenade hors zone payante ou piscine" },
+      { d: "2026-12-04", j: "J5", label: "Spa Lime Leaf Nai Yang, 60–90 min", lo: 3800, hi: 5000, planB: "Repos, lecture" },
+      { d: "2026-12-06", j: "J7", label: "Phang Nga / James Bond, grand bateau, journée", lo: 4000, hi: 4000, planB: "Piscine et courte marche si mer défavorable" },
+      { d: "2026-12-09", j: "J10", label: "Visite matinale du temple avec panier (Proud)", lo: 198, hi: 198, planB: "Promenade locale sans panier" },
+      { d: "2026-12-11", j: "J12", label: "Deuxième visite Sirinat (2 entrées)", lo: 400, hi: 400, planB: "Piscine, lecture" },
+      { d: "2026-12-13", j: "J14", label: "Deuxième spa Nai Yang", lo: 3800, hi: 5000, planB: "Promenade, repos" }
+    ],
+    access: { label: "Accès hors excursions : 0–6 trajets courts (proxy)", lo: 0, hi: 3000 },
+    actNote: "Plans B de marche AllTrails : Mai Khao → Nai Yang (4,3 km, entrée Sirinat déjà comptée J3/J12), Nai Yang Hills East Loop (4,7 km, J4, 0 € sous hypothèse d'accès libre)."
+  },
+  B: {
+    name: "Ao Nang, Krabi", short: "B", nights: 18, localDays: 19, insuredDays: 20,
+    dep: "2026-12-01", ret: "2026-12-20", hin: "2026-12-02", hout: "2026-12-20",
+    airport: "KBV", tdacFrom: "2026-11-29", passport: "2027-06-02",
+    desc: "18 nuits, vols Etihad directs vers KBV ; option la plus chère du scénario détente.",
+    flights: [
+      { id: "ey", label: "Etihad via AUH", price: 1804.27, detail: "Aller 14 h 25 (01/12 09:55 → 02/12 06:20), retour 16 h 20 (20/12 08:40 → 19:00). Kiwi bags_rt_kbv [5].", rec: true },
+      { id: "ey2", label: "Etihad, aller plus long (non retenu)", price: 1583.27, detail: "Mêmes dates, aller allongé de 11 h 50 ; écarté du scénario détente." }
+    ],
+    hotels: [
+      { id: "anyavee", label: "Anyavee Ao Nang Bay Resort, Trivago/Trip.com", price: 1393, tag: "retenu", tagc: "ok", detail: "4★ déclarées, 7,8/10, 2 319 avis ; 0,9 km du centre.", rec: true },
+      { id: "krabi", label: "Krabi Resort, Trivago/Stayforlong", price: 1890, tag: "plan B / confort", tagc: "acc", detail: "4★ déclarées, 7,8/10, 12 698 avis ; le haut dépasse le plafond avant X." }
+    ],
+    transfers: [47.38, 57.91], meals: [550.19, 1650.56], transit: [96, 240], tipsMax: 50.02, atm: [51.26, 169.58],
+    acts: [
+      { d: "2026-12-04", j: "J3", label: "Massage Sankara, 60 min, 2 personnes", lo: 598, hi: 998, planB: "Promenade d'Ao Nang" },
+      { d: "2026-12-07", j: "J6", label: "Quatre îles, longtail ou speedboat (parc inclus)", lo: 2380, hi: 2780, planB: "Piscine, bord de mer sans embarquement" },
+      { d: "2026-12-10", j: "J9", label: "Thai Charm, cours de cuisine", lo: 2800, hi: 2800, planB: "Marché en promenade" },
+      { d: "2026-12-13", j: "J12", label: "Hong Island, longtail ou speedboat (parc inclus)", lo: 2980, hi: 3380, planB: "Repos à l'hôtel" },
+      { d: "2026-12-16", j: "J15", label: "Deuxième massage Sankara", lo: 598, hi: 998, planB: "Marche douce" }
+    ],
+    access: { label: "Accès spas : 0–4 trajets courts (hypothèse)", lo: 0, hi: 800 },
+    actNote: "Frais de parc cités par l'opérateur, source unique : grille étrangère à vérifier au guichet."
+  },
+  C: {
+    name: "Khao Lak, Phang Nga", short: "C", nights: 18, localDays: 19, insuredDays: 21,
+    dep: "2026-11-29", ret: "2026-12-19", hin: "2026-11-30", hout: "2026-12-18",
+    airport: "HKT", tdacFrom: "2026-11-27", passport: "2027-05-30",
+    desc: "18 nuits en resort, 1 h 45 de route depuis HKT ; alternative à A pour un séjour plus long.",
+    flights: [
+      { id: "ow", label: "Deux allers simples : Air China + Qatar", price: 1302, detail: "Aller CA 18 h 20 (29/11 → 30/11 12:45) ; retour QR 28 h 30 dont 14 h 45 à DOH (18/12 08:20 → 19/12 06:50). Deux contrats séparés.", rec: true },
+      { id: "ey", label: "Aller-retour Etihad (confort aérien)", price: 1417.27, detail: "11 h 30 d'avion en moins, retour HKT l'après-midi. Kiwi fenetre_18n [5]." }
+    ],
+    hotels: [
+      { id: "palm", label: "Palm Galleria Resort, Trivago/Stayforlong", price: 1116, tag: "retenu", tagc: "ok", detail: "4★ déclarées, 8,2/10, 1 901 avis ; 4,2 km du centre, proche de Pakarang.", rec: true },
+      { id: "apsara", label: "Apsara Beachfront Resort & Villa, Trivago", price: 1710, tag: "plan B / confort", tagc: "acc", detail: "4★ déclarées, 9,1/10, 8 171 avis ; 3,3 km du centre." }
+    ],
+    transfers: [152.68, 189.54], meals: [550.19, 1650.56], transit: [96, 240], tipsMax: 50.02, atm: [76.89, 169.58],
+    acts: [
+      { d: "2026-12-02", j: "J3", label: "Massage Bussaba, 60 min, 2 personnes", lo: 600, hi: 1000, planB: "Piscine, repos" },
+      { d: "2026-12-05", j: "J6", label: "Similan, snorkeling, départ standard (parc, transfert, déjeuner annoncés inclus)", lo: 8000, hi: 8000, planB: "Marche de plage sûre, hôtel" },
+      { d: "2026-12-08", j: "J9", label: "Cours de cuisine privé avec Pam", lo: 4000, hi: 4000, planB: "Promenade locale" },
+      { d: "2026-12-11", j: "J12", label: "Deuxième massage Bussaba", lo: 600, hi: 1000, planB: "Lecture, repos" },
+      { d: "2026-12-14", j: "J15", label: "Parc Khao Lak–Lam Ru, promenade côtière (100 ou 200 THB/adulte, contradiction déclarée)", lo: 200, hi: 400, planB: "Piscine, plage hors parc" }
+    ],
+    access: { label: "Accès spas et parc : 3 A/R en voiture (proxy Khao Lak→Taplamu)", lo: 2400, hi: 4200 },
+    actNote: "Similan : saison, ouverture effective et prise en charge de l'hôtel à confirmer ; +50 % sur la durée de navigation annoncée."
+  }
+};
+const OPTS = [
+  { id: "ins", label: "Assurance (Europ Assistance via TUI, 4,68 €/pers./jour)", sub: "Le haut ajoute 574 € de provision annulation (8,2 % × 7 000 €).", vals: [["range", "Fourchette du rapport"], ["assist", "Assistance seule"], ["cancel", "Assistance + annulation"]] },
+  { id: "home", label: "Domicile ↔ BRU", sub: "Train 53,60 € (30 km tarifaires, gare à pied) ou voiture 233,10 € (100 km A/R + P3 21 jours). Jamais additionnés.", vals: [["range", "Fourchette"], ["train", "Train"], ["car", "Voiture + P3"]] },
+  { id: "sim", label: "SIM touristique AIS 30 jours", sub: "1 199 THB + TVA 7 % par carte.", vals: [["range", "Fourchette"], ["1", "1 carte partagée"], ["2", "2 cartes"]] },
+  { id: "tips", label: "Pourboires volontaires", sub: "0 ou 100 THB par groupe et jour local ; les service charges imposés restent dans X.", vals: [["range", "Fourchette"], ["0", "Aucun"], ["100", "100 THB/jour"]] }
+];
+/* Fiches destination : remplies par l'orchestrateur à partir de sources consultées. */
+const DEST = {"country": {"name": "Thaïlande", "history": "Le royaume de Sukhothai (1238-1438) est considéré comme le premier État thaï indépendant, avant d'être éclipsé par le royaume d'Ayutthaya (1351-1767). Après la chute d'Ayutthaya, la brève période de Thonburi (1767-1782) précède la fondation du royaume de Rattanakosin le 6 avril 1782 par la dynastie Chakri, qui installe la capitale à Bangkok. La révolution sans effusion de sang du 24 juin 1932 met fin à la monarchie absolue ; le roi Prajadhipok signe la première constitution le 10 décembre 1932. Le pays est depuis une monarchie constitutionnelle, toujours sous la dynastie Chakri (le fait que le Siam n'ait jamais été colonisé et le changement de nom en 1939 n'ont pas été confirmés par les extraits consultés : non vérifié).", "population": {"value": "70,3 millions de résidents (26,3 millions de ménages) selon les résultats préliminaires du recensement 2025 ; 65,95 millions d'habitants enregistrés au 8 janvier 2025 selon le Department of Provincial Administration (registre administratif)", "year": "2025", "source": "https://www.nationthailand.com/news/general/40061744"}, "geography": "La côte d'Andaman s'étend sur l'ouest de la péninsule sud, face à la mer d'Andaman : elle regroupe notamment Phuket (île reliée au continent), Phang Nga (Khao Lak, baie de Phang Nga à karsts calcaires, archipel des Similan à environ 70 km au large) et Krabi (falaises calcaires, îles proches d'Ao Nang et Railay). Les trois étapes du séjour se trouvent à moins de 1 h 15 de route de l'un des deux aéroports HKT (Phuket) ou KBV (Krabi).", "climateDecember": "Décembre marque le début de la saison sèche sur la côte d'Andaman (mousson du sud-ouest de mai à octobre, saison sèche de décembre à mars). À Phuket, températures d'environ 24-31 °C, pluie tombée à environ 60-70 mm sur le mois, environ 8 h d'ensoleillement par jour, mer autour de 28 °C. À Krabi/Ao Nang, 24-30 °C, avec encore une dizaine de jours de pluie (estimations de 102 à 215 mm selon les sources), sous forme d'averses plutôt que de bruine. Mer généralement calme, propice aux excursions en bateau ; le parc des Similan est ouvert du 15 octobre au 15 mai.", "formalities": "Rappel sans montant : selon les extraits consultés, la Thaïlande a remplacé, pour les entrées à partir du 15 septembre 2026, l'exemption de visa de 60 jours par une exemption de 30 jours pour le tourisme, la Belgique figurant parmi les nationalités éligibles ; une prolongation unique de 30 jours auprès de l'immigration est mentionnée. Le passeport doit être valide (durée exacte non vérifiée) et une preuve de sortie du territoire peut être demandée (non vérifié). À confirmer auprès de l'ambassade royale de Thaïlande à Bruxelles (page FAQ inaccessible via le proxy) avant le départ.", "mustSee": ["Baie de Phang Nga (parc national Ao Phang Nga) : karsts, grottes marines, île de James Bond (Ko Tapu) et village flottant de Koh Panyee, en excursion d'une journée depuis Phuket, Khao Lak ou Krabi", "Îles Similan (parc national Mu Ko Similan, créé en 1982) : 11 îles à 70 km au large, snorkeling et plongée, départ en vedette de l'embarcadère de Thap Lamu près de Khao Lak, ouvertes mi-octobre à mi-mai", "Vieille ville de Phuket : shophouses sino-portugaises héritées du boom de l'étain au XIXe siècle, musée Thai Hua sur l'immigration chinoise", "Wat Chalong et Grand Bouddha (sud de Phuket) : principal temple de l'île (statue de Luang Pho Chaem, lié à la révolte des mineurs d'étain de 1876) et point de vue sur la baie de Chalong", "Railay et les îles de Krabi (Koh Poda, Phra Nang Cave Beach, Koh Hong) : péninsule de falaises calcaires accessible uniquement en bateau, à 10-15 min en long-tail d'Ao Nang"], "sources": [{"label": "Nation Thailand – Preliminary Results of the 2025 Population and Housing Census (NSO)", "url": "https://www.nationthailand.com/news/general/40061744", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Wikipedia – Demographics of Thailand (chiffre DOPA 8 janvier 2025)", "url": "https://en.wikipedia.org/wiki/Demographics_of_Thailand", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Wikipedia – Thailand / Monarchy of Thailand (Sukhothai, Ayutthaya, Rattanakosin, 1932)", "url": "https://en.wikipedia.org/wiki/Thailand", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Britannica – The 1932 coup and the creation of a constitutional order", "url": "https://www.britannica.com/place/Thailand/The-1932-coup-and-the-creation-of-a-constitutional-order", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Fragomen – Thailand: Reduction in Visa-Exempt Stay Duration Forthcoming", "url": "https://www.fragomen.com/insights/thailand-reduction-in-visa-exempt-stay-duration-forthcoming.html", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Ambassade royale de Thaïlande à Bruxelles – FAQ visa (page bloquée par le proxy, à consulter)", "url": "https://brussels.thaiembassy.org/en/page/faq", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Climates to Travel – Phuket climate", "url": "https://www.climatestotravel.com/climate/thailand/phuket", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Holiday-Weather – Krabi, December averages", "url": "https://www.holiday-weather.com/krabi/averages/december/", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Thai National Parks – Mu Ko Similan National Park", "url": "https://www.thainationalparks.com/mu-ko-similan-national-park", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Phuket 101 – Phang Nga Bay 2026: James Bond Island, Koh Panyee", "url": "https://www.phuket101.net/phang-nga-bay/", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Phuket 101 – Phuket Old Town walking guide", "url": "https://www.phuket101.net/phuket-town-guide/", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Northabroad – Phuket Old Town guide (Wat Chalong, Big Buddha)", "url": "https://northabroad.com/phuket-old-town-guide/", "accessed": "2026-09-24", "how": "extrait"}]}, "cities": {"A": {"name": "Nai Yang, Phuket", "history": "Nai Yang est une plage bordée de casuarinas au nord-ouest de l'île, dans le district de Thalang, à proximité immédiate de l'aéroport international de Phuket. Elle fait partie du parc national créé le 13 juillet 1981 sous le nom de Nai Yang National Park (32e parc national de Thaïlande), renommé Sirinat en 1992 en l'honneur du 60e anniversaire de la reine Sirikit. Le parc protège environ 90 km² (22 km² terrestres, 68 km² marins) et les plages de Nai Thon, Nai Yang, Mai Khao et Sai Kaeo, où des tortues luth et imbriquées viennent pondre entre novembre et février. Le district de Thalang est aussi le théâtre de la défense de 1785 contre l'invasion birmane, commémorée par le monument des Héroïnes.", "population": {"value": "422 021 habitants enregistrés pour la province de Phuket (registre du Department of Provincial Administration ; population réelle estimée plus élevée). Population du tambon Sakhu (dont dépend Nai Yang) : non vérifiée.", "year": "2023/2024", "source": "https://www.c9hotelworks.com/wp-content/uploads/2023/12/2023-2024-the-phuket-report.pdf"}, "location": "Province de Phuket, district de Thalang, tambon Sakhu, côte nord-ouest de l'île. À environ 5-7,5 km (env. 5-15 min) de l'aéroport HKT selon les sources ; environ 30 km au nord de Phuket Town. Coordonnées approximatives : 8,088° N, 98,296° E.", "attractions": [{"name": "Plage de Nai Yang (parc national Sirinat)", "type": "plage", "note": "Plage calme bordée de casuarinas ; baignade, snorkeling, kitesurf ; observation des avions à l'atterrissage. Droit d'entrée au parc mentionné, montant non vérifié."}, {"name": "Plage de Mai Khao", "type": "plage", "note": "Plus longue et plus tranquille plage de Phuket, collée à la piste de l'aéroport ; spot d'observation des avions en bout de piste."}, {"name": "Parc national Sirinat", "type": "parc national", "note": "90 km² de forêt côtière et zone marine ; quatre plages (Nai Thon, Nai Yang, Mai Khao, Sai Kaeo) ; ponte des tortues nov.-fév."}, {"name": "Mai Khao Marine Turtle Foundation / Turtle Village", "type": "parc national", "note": "Programme de conservation des tortues ; à environ 20 min de l'aéroport ; lâchers de tortues mentionnés surtout à Songkran (avril), pas garantis en décembre."}, {"name": "Wat Phra Thong (temple du Bouddha doré)", "type": "temple", "note": "Temple historique du tambon Thep Krasattri (Thalang) avec un Bouddha à demi enterré, tête et épaules visibles ; légende locale interdisant son extraction."}, {"name": "Monument des Héroïnes et Musée national de Thalang", "type": "temple", "note": "Monument à Thao Thep Kasattri et Thao Sri Sunthon (défense de 1785) ; musée annexe du Musée national ouvert en 1989 sur le rond-point."}, {"name": "Wat Mai Khao", "type": "temple", "note": "Temple peu fréquenté avec un petit sanctuaire d'oiseaux (lac, oiseaux blancs) dans le parc à l'arrière."}, {"name": "Massages en bord de plage à Nai Yang", "type": "spa", "note": "Massages sous les parasols de la plage mentionnés dans les guides ; établissements précis non vérifiés."}], "mustSee": ["Nai Yang au coucher du soleil, avec les avions en approche au-dessus de la plage", "Marche sur la plage de Mai Khao jusqu'au bout de piste de l'aéroport", "Forêt côtière et plages du parc national Sirinat (Nai Thon, Sai Kaeo)", "Wat Phra Thong et son Bouddha à demi enterré", "Monument des Héroïnes et Musée national de Thalang"], "sources": [{"label": "Wikipedia – Sirinat National Park", "url": "https://en.wikipedia.org/wiki/Sirinat_National_Park", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Thai National Parks – Sirinat National Park", "url": "https://www.thainationalparks.com/sirinat-national-park", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Phuket 101 – Nai Yang Beach, complete local guide", "url": "https://www.phuket101.net/nai-yang-beach/", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Phuket 101 – Mai Khao Beach", "url": "https://www.phuket101.net/mai-khao-beach/", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Wikipedia – Thalang district (Heroines Monument, musée 1989, tambons)", "url": "https://en.wikipedia.org/wiki/Thalang_district", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Phuket.Net – Wat Phra Thong", "url": "https://www.phuket.net/directory/profile/pra-tong-temple-wat-pra-tong/", "accessed": "2026-09-24", "how": "extrait"}, {"label": "C9 Hotelworks – Phuket Economy Report 2023/2024 (population enregistrée 422 021)", "url": "https://www.c9hotelworks.com/wp-content/uploads/2023/12/2023-2024-the-phuket-report.pdf", "accessed": "2026-09-24", "how": "extrait"}]}, "B": {"name": "Ao Nang, Krabi", "history": "Ao Nang était à l'origine un petit village de pêcheurs, à une vingtaine de kilomètres à l'ouest de Krabi Town. Le tourisme y apparaît dans les années 1980 avec les routards attirés par les falaises calcaires et les plages ; dans les années 1990-2000, la localité devient une station balnéaire internationale avec hôtels de chaîne. Le tsunami du 26 décembre 2004 a atteint Ao Nang, mais les falaises et îlots calcaires au large ont limité les dégâts par rapport au reste de la côte, et la reconstruction a été rapide. Administrativement, Ao Nang est l'un des dix tambons du district de Mueang Krabi.", "population": {"value": "14 435 habitants pour le tambon d'Ao Nang (50 km², densité 288,7 hab./km²) ; province de Krabi : environ 484 000 habitants en décembre 2024", "year": "2020 (tambon) / 2024 (province)", "source": "https://en.wikipedia.org/wiki/Ao_Nang"}, "location": "Province de Krabi, district de Mueang Krabi, sur la côte est de la baie de Phang Nga. Environ 26 km de l'aéroport international de Krabi (KBV), 30-45 min par la route 4 puis la route 4034 ; environ 20 km à l'ouest de Krabi Town. Coordonnées approximatives : non vérifiées via les extraits (ordre de grandeur 8,03° N, 98,82° E, à confirmer).", "attractions": [{"name": "Plage d'Ao Nang", "type": "plage", "note": "Plage principale devant la rue commerçante, départ des long-tails ; couchers de soleil."}, {"name": "Railay (West, East, Phra Nang Cave Beach)", "type": "plage", "note": "Péninsule accessible uniquement par bateau, 10-15 min en long-tail depuis Ao Nang (environ 100 THB/trajet, départ une fois le bateau plein) ; escalade et grotte de Phra Nang."}, {"name": "Tour des 4 îles (Koh Poda, Koh Kai/Chicken, Koh Tub, Phra Nang)", "type": "île", "note": "Excursion classique à la journée en long-tail ou vedette ; snorkeling à Koh Poda."}, {"name": "Koh Hong", "type": "île", "note": "Île avec lagon intérieur, accessible en excursion depuis le comptoir de long-tails d'Ao Nang."}, {"name": "Wat Tham Suea (Tiger Cave Temple)", "type": "temple", "note": "Temple sur un piton calcaire, environ 1 200 marches jusqu'au sommet ; 45-60 min de route dans l'intérieur."}, {"name": "Emerald Pool et Blue Lagoon (Sa Morakot)", "type": "parc national", "note": "Bassins naturels dans la forêt, 45-60 min de route ; baignade possible."}, {"name": "Marché de nuit d'Ao Nang / Ao Nang Landmark Night Market", "type": "marché", "note": "Petit marché de street food, ambiance animée le soir."}, {"name": "Massages et spas d'Ao Nang", "type": "spa", "note": "Offre abondante le long de la rue principale ; établissements non vérifiés."}], "mustSee": ["Traversée en long-tail vers Railay et Phra Nang Cave Beach", "Tour des 4 îles avec snorkeling à Koh Poda", "Lagon de Koh Hong", "Montée au Wat Tham Suea pour la vue sur le karst de Krabi", "Dîner au marché de nuit d'Ao Nang"], "sources": [{"label": "Wikipedia – Ao Nang (tambon, population 2020, superficie)", "url": "https://en.wikipedia.org/wiki/Ao_Nang", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Wikipedia – Krabi province (population décembre 2024)", "url": "https://en.wikipedia.org/wiki/Krabi_province", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Travelsetu – Ao Nang Beach tourism history", "url": "https://travelsetu.com/guide/ao-nang-beach-tourism/ao-nang-beach-tourism-history", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Krabi Spesialisten – Krabi and Ao Nang (village de pêcheurs, tsunami 2004)", "url": "https://krabi-spesialisten.com/krabi-and-ao-nang/", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Byklo – Krabi Airport to Ao Nang (26 km, 45 min)", "url": "https://blog.byklo.rent/how-to-get-from-krabi-airport-to-ao-nang/", "accessed": "2026-09-24", "how": "extrait"}, {"label": "We Seek Travel – 22 things to do in Ao Nang", "url": "https://www.weseektravel.com/things-to-do-in-ao-nang/", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Hop On World – 13 things to do in Ao Nang (Tiger Cave, Emerald Pool)", "url": "https://hoponworld.com/things-to-do-ao-nang-krabi/", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Tripadvisor – Ao Nang Longtail Boat Service Club", "url": "https://www.tripadvisor.com/Attraction_Review-g1507054-d13535361-Reviews-Ao_Nang_Longtail_Boat_Service_Club-Ao_Nang_Krabi_Province.html", "accessed": "2026-09-24", "how": "extrait"}, {"label": "CK Travels – Ao Nang to Railay by longtail boat", "url": "https://www.cktravels.com/krabi-ao-nang-to-railay-beach-longtail-boat/", "accessed": "2026-09-24", "how": "extrait"}]}, "C": {"name": "Khao Lak, Phang Nga", "history": "Khao Lak désigne une suite de villages côtiers (Nang Thong, Bang Niang, Khuk Khak, Pakarang, Bang Sak) du district de Takua Pa et, pour partie, de Thai Mueang, dans la province de Phang Nga ; le sable noir de Nang Thong rappelle le passé d'orpaillage et d'extraction minière de la région. Le 26 décembre 2004, Khao Lak a été la zone de Thaïlande la plus touchée par le tsunami de l'océan Indien : environ 5 000 morts, 80 % de la capacité hôtelière détruite, avec la plus grande hauteur de run-up hors Sumatra en raison des récifs et du plateau peu profond au large. Le bateau de police 813, projeté à près de 2 km à l'intérieur des terres à Bang Niang, est resté sur place comme mémorial. La station s'est reconstruite depuis autour de resorts de plage et sert de porte d'accès aux îles Similan et Surin.", "population": {"value": "266 296 habitants pour la province de Phang Nga (72e province thaïlandaise ; 234 188 avant le tsunami de 2004). Population des tambons de Khuk Khak, Bang Muang ou Lam Kaen : non vérifiée.", "year": "2024", "source": "https://en.wikipedia.org/wiki/Phang_Nga_province"}, "location": "Province de Phang Nga, districts de Takua Pa (et Thai Mueang), côte d'Andaman au nord de Phuket. Environ 70-82 km au nord de l'aéroport de Phuket (HKT), 1 h à 1 h 15 de route (jusqu'à 2 h pour les resorts les plus éloignés). Coordonnées approximatives : 8,69° N, 98,25° E (village de Khao Lak selon Wikipedia ; le mont Khao Lak est à 8,63° N, 98,27° E).", "attractions": [{"name": "Plages de Nang Thong, Bang Niang, Khuk Khak et Bang Sak", "type": "plage", "note": "Enchaînement de plages du sud au nord ; Nang Thong concentre les grands hôtels et présente du sable noir d'origine minière ; Khuk Khak est large, bordée de pins."}, {"name": "Cap et plage de Pakarang", "type": "plage", "note": "Village de pêcheurs avec quelques resorts, entre Khuk Khak et Bang Sak."}, {"name": "Parc national Khao Lak-Lam Ru", "type": "parc national", "note": "Petit parc côtier à moins de 5 km au sud de Nang Thong ; sentier nature Hat Lek jusqu'à une petite plage, cascade Ton Chong Fa ; hébergements 560-800 THB et camping au centre des visiteurs."}, {"name": "Îles Similan (parc national Mu Ko Similan)", "type": "île", "note": "Excursion à la journée en vedette depuis Thap Lamu (1 h 30-2 h) ; ouvertes 15 oct.-15 mai ; droit d'entrée mentionné à 500 THB pour les étrangers (à confirmer)."}, {"name": "Mémorial du bateau de police 813 (Bang Niang)", "type": "temple", "note": "Parc mémoriel gratuit autour du navire échoué à près de 2 km de la côte par le tsunami de 2004 ; petites expositions."}, {"name": "Marché de nuit de Bang Niang", "type": "marché", "note": "Près du bateau 813 ; ouvert lundi, mercredi et samedi, vers 17 h-22 h ; stands de nourriture, vêtements, souvenirs."}, {"name": "Baie de Phang Nga (Ao Phang Nga)", "type": "île", "note": "Excursion à la journée possible depuis Khao Lak : île de James Bond, Koh Panyee, kayak dans les grottes."}, {"name": "Spas de Khao Lak", "type": "spa", "note": "Offre de spas d'hôtel le long de Nang Thong et Bang Niang ; établissements non vérifiés."}], "mustSee": ["Journée aux îles Similan depuis Thap Lamu", "Sentier Hat Lek et cascade Ton Chong Fa dans le parc Khao Lak-Lam Ru", "Mémorial du bateau 813 à Bang Niang, puis marché de nuit (lun., mer., sam.)", "Plage de Nang Thong au coucher du soleil", "Baie de Phang Nga en bateau ou en kayak"], "sources": [{"label": "Wikipedia – Khao Lak (villages, districts, coordonnées, tsunami)", "url": "https://en.wikipedia.org/wiki/Khao_Lak", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Wikipedia – 2004 Indian Ocean earthquake and tsunami (bilan Khao Lak)", "url": "https://en.wikipedia.org/wiki/2004_Indian_Ocean_earthquake_and_tsunami", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Mård Karlsson et al. 2009, JGR Oceans – Reconstructions of the coastal impact of the 2004 tsunami in the Khao Lak area", "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2009JC005516", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Wikipedia – Phang Nga province (population 2024)", "url": "https://en.wikipedia.org/wiki/Phang_Nga_province", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Wikipedia – Takua Pa district (parc Khao Lak-Lam Ru)", "url": "https://en.wikipedia.org/wiki/Takua_Pa_district", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Khao Lak Center – Police Boat 813 Tsunami Memorial Park", "url": "https://khaolakcenter.com/tsunami-boat-813-bang-niang/", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Home is where your bag is – Khao Lak things to do (marché Bang Niang, Similan)", "url": "https://homeiswhereyourbagis.com/en/khao-lak-things-to-do/", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Thailande-et-Asie – Que faire à Khao Lak (plages, cascades)", "url": "https://thailande-et-asie.com/en/que-faire-khao-lak-plages-cascades", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Thai National Parks – Khao Lak-Lam Ru National Park", "url": "https://www.thainationalparks.com/khao-lak-lam-ru-national-park", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Thai National Parks – Mu Ko Similan National Park", "url": "https://www.thainationalparks.com/mu-ko-similan-national-park", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Simba Sea Trips – Similan Islands opening & closing dates 2026", "url": "https://simbaseatrips.com/blog/similan-islands/similan-islands-set-to-close-in-may/", "accessed": "2026-09-24", "how": "extrait"}, {"label": "Trip.com – How to get from Phuket Airport to Khao Lak", "url": "https://uk.trip.com/guide/transport/phuket-airport-to-khao-lak.html", "accessed": "2026-09-24", "how": "extrait"}]}}, "note": "Toutes les sources ont été lues via extraits de recherche le 24/09/2026 (pages non ouvertes directement). Non vérifié : conditions d'entrée exactes après le 15/09/2026, population des communes (seuls les chiffres provinciaux sont sourcés), coordonnées d'Ao Nang, droits d'entrée Sirinat et Similan, noms des spas, pluviométrie de décembre à Krabi."};
+const state = { place: "A", flight: "ca", hotel: "esprit_bk", acts: new Set(), ins: "range", home: "range", sim: "range", tips: "range" };
+DATA.A.acts.forEach((_, i) => state.acts.add(i));
+
+const fmt = n => n.toLocaleString("fr-BE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
+const fmtD = s => { const [y, m, d] = s.split("-"); return `${d}/${m}/${y}`; };
+const addDays = (s, n) => { const d = new Date(s + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
+const daysBetween = (a, b) => Math.round((new Date(b + "T00:00:00Z") - new Date(a + "T00:00:00Z")) / 864e5);
+const r2 = n => Math.round(n * 100) / 100;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function compute() {
+  const P = DATA[state.place];
+  const fl = P.flights.find(f => f.id === state.flight) || P.flights[0];
+  const ho = P.hotels.find(h => h.id === state.hotel) || P.hotels[0];
+  let actLo = 0, actHi = 0; const chosen = [];
+  P.acts.forEach((a, i) => { if (state.acts.has(i)) { actLo += a.lo; actHi += a.hi; chosen.push(a); } });
+  if (chosen.length) { actLo += P.access.lo; actHi += P.access.hi; }
+  const assist = r2(2 * P.insuredDays * DAY_RATE);
+  const ins = state.ins === "assist" ? [assist, assist] : state.ins === "cancel" ? [assist + CANCEL, assist + CANCEL] : [assist, assist + CANCEL];
+  const home = state.home === "train" ? [53.6, 53.6] : state.home === "car" ? [233.1, 233.1] : [53.6, 233.1];
+  const simOne = 1199 * 1.07 / FX;
+  const sim = state.sim === "1" ? [simOne, simOne] : state.sim === "2" ? [2 * simOne, 2 * simOne] : [simOne, 2 * simOne];
+  const tips = state.tips === "0" ? [0, 0] : state.tips === "100" ? [P.tipsMax, P.tipsMax] : [0, P.tipsMax];
+  const lines = [
+    ["Vols", fl.price, fl.price, fl.label],
+    ["Hôtel unique, " + P.nights + " nuits", ho.price, ho.price, ho.label + (ho.tag ? " · " + ho.tag : "")],
+    ["Transferts aéroport thaïlandais A/R", P.transfers[0], P.transfers[1], "Proxies TA/TB/TC, pas de devis"],
+    ["Repas sur place, " + P.localDays + " jours", P.meals[0], P.meals[1], "2 × jours × 550–1 650 THB / " + FX],
+    ["Repas pendant les trajets", P.transit[0], P.transit[1], "2 × 4 repas × 12–30 €"],
+    ["Assurance, " + P.insuredDays + " jours assurés", ins[0], ins[1], state.ins === "range" ? "Bas sans annulation, haut avec 574 €" : state.ins === "assist" ? "Assistance seule" : "Assistance + annulation 574 €"],
+    ["Activités et accès (" + chosen.length + " séance" + (chosen.length > 1 ? "s" : "") + ")", actLo / FX, actHi / FX, actLo.toLocaleString("fr-BE") + "–" + actHi.toLocaleString("fr-BE") + " THB"],
+    ["Domicile ↔ BRU", home[0], home[1], state.home === "range" ? "Train ou voiture" : state.home === "train" ? "Train SNCB" : "Voiture + P3"],
+    ["SIM touristique, TVA provisionnée", sim[0], sim[1], "1–2 cartes AIS"],
+    ["Pourboires volontaires", tips[0], tips[1], "0–100 THB/jour"],
+    ["Banque belge + ATM thaïlandais", P.atm[0], P.atm[1], "Modèle KBC + Krungsri, 2–6 retraits"],
+    ["TDAC officiel", 0, 0, "Gratuit, portail vérifié"]
+  ].map(l => [l[0], r2(l[1]), r2(l[2]), l[3]]);
+  const sLo = r2(lines.reduce((s, l) => s + l[1], 0)), sHi = r2(lines.reduce((s, l) => s + l[2], 0));
+  return { P, fl, ho, chosen, lines, sLo, sHi, tLo: r2(sLo + RESERVE), tHi: r2(sHi + RESERVE), tol: r2(CAP - sHi - RESERVE) };
+}
+
+function renderChoices() {
+  const P = DATA[state.place];
+  document.getElementById("placeChoices").innerHTML = Object.values(DATA).map(p => `
+    <label class="choice"><input type="radio" name="place" id="place_${p.short}" value="${p.short}" ${state.place === p.short ? "checked" : ""}>
+      <span><span class="t">${p.short} · ${esc(p.name)}</span> — ${p.nights} nuits, BRU ${fmtD(p.dep)} → ${fmtD(p.ret)}<br><span class="d">${esc(p.desc)}</span></span>
+      <span class="p"></span></label>`).join("");
+  document.getElementById("flightChoices").innerHTML = P.flights.map(f => `
+    <label class="choice"><input type="radio" name="flight" id="flight_${f.id}" value="${f.id}" ${state.flight === f.id ? "checked" : ""}>
+      <span><span class="t">${esc(f.label)}</span>${f.rec ? '<span class="tag ok">retenu</span>' : ""}<br><span class="d">${esc(f.detail)}</span></span>
+      <span class="p">${fmt(f.price)}</span></label>`).join("");
+  document.getElementById("hotelChoices").innerHTML = P.hotels.map(h => `
+    <label class="choice"><input type="radio" name="hotel" id="hotel_${h.id}" value="${h.id}" ${state.hotel === h.id ? "checked" : ""}>
+      <span><span class="t">${esc(h.label)}</span>${h.tag ? `<span class="tag ${h.tagc}">${esc(h.tag)}</span>` : ""}<br><span class="d">${fmtD(P.hin)} → ${fmtD(P.hout)} · ${esc(h.detail)}</span></span>
+      <span class="p">${fmt(h.price)}</span></label>`).join("");
+  document.getElementById("actChoices").innerHTML = P.acts.map((a, i) => `
+    <label class="choice"><input type="checkbox" name="act" id="act_${i}" value="${i}" ${state.acts.has(i) ? "checked" : ""}>
+      <span><span class="t">${fmtD(a.d)} ${a.j} · ${esc(a.label)}</span><br><span class="d">Plan B gratuit : ${esc(a.planB)}</span></span>
+      <span class="p">${a.lo === a.hi ? a.lo.toLocaleString("fr-BE") : a.lo.toLocaleString("fr-BE") + "–" + a.hi.toLocaleString("fr-BE")} THB</span></label>`).join("") +
+    `<div class="note">${esc(P.access.label)} : ${P.access.lo.toLocaleString("fr-BE")}–${P.access.hi.toLocaleString("fr-BE")} THB, ajouté dès qu'une séance est cochée.</div>`;
+  document.getElementById("actNote").textContent = P.actNote;
+  document.getElementById("opts").innerHTML = OPTS.map(o => `
+    <div class="opt"><div class="l">${esc(o.label)}</div>
+      <div class="seg">${o.vals.map(v => `<label><input type="radio" name="${o.id}" id="${o.id}_${v[0]}" value="${v[0]}" ${state[o.id] === v[0] ? "checked" : ""}>${v[1]}</label>`).join("")}</div>
+      <div class="s">${esc(o.sub)}</div></div>`).join("");
+}
+
+function renderAll() {
+  const c = compute();
+  const { P, fl, ho } = c;
+  const over = c.tHi > CAP;
+  const stateCls = over ? "bad" : "warn";
+  const stateTxt = over
+    ? `Le haut dépasse le plafond de ${fmt(c.tHi - CAP)} avant même X : scénario non conforme au sens du skill.`
+    : `Budget non concluant tant que X (taxes, service, chambre, bagages imposés) n'est pas borné. Tolérance restante pour X au haut : ${fmt(c.tol)}.`;
+  document.getElementById("summary").innerHTML = `
+    <h3>Scénario ${P.short} · ${esc(P.name)}</h3>
+    <div class="note">${esc(fl.label)} · ${esc(ho.label)}</div>
+    <div class="big">${fmt(c.tLo)} – ${fmt(c.tHi)} + X</div>
+    <div class="note">Groupe, réserve de 1 000 € comprise</div>
+    <dl class="kv" style="margin-top:12px">
+      <dt>Postes chiffrés hors réserve</dt><dd>${fmt(c.sLo)} – ${fmt(c.sHi)}</dd>
+      <dt>Par personne, réserve comprise</dt><dd>${fmt(c.tLo / 2)} – ${fmt(c.tHi / 2)} + X/2</dd>
+      <dt>Solde sur 8 000 € au haut</dt><dd>${fmt(c.tol)} − X</dd>
+      <dt>Nuits / jours assurés</dt><dd>${P.nights} / ${P.insuredDays}</dd>
+    </dl>
+    <div class="state ${stateCls}">${stateTxt}</div>
+    ${ho.tag === "stars_unverified" ? '<div class="state warn" style="margin-top:8px">Hôtel sous <code>stars_unverified</code> : le niveau 4★ n\'est pas prouvé ; résoudre l\'identité avant tout achat.</div>' : ""}`;
+  document.getElementById("budget").innerHTML = `<thead><tr><th>Poste</th><th class="n">Bas</th><th class="n">Haut</th><th>Quantité et statut</th></tr></thead><tbody>` +
+    c.lines.map(l => `<tr><td>${esc(l[0])}</td><td class="n">${fmt(l[1])}</td><td class="n">${fmt(l[2])}</td><td>⚠️ ${esc(l[3])}</td></tr>`).join("") +
+    `<tr><td>Suppléments obligatoires des offres finales X</td><td class="n">manquant</td><td class="n">manquant</td><td>Pas de zéro par défaut</td></tr>
+     <tr class="total"><td>S : postes chiffrés hors réserve</td><td class="n">${fmt(c.sLo)}</td><td class="n">${fmt(c.sHi)}</td><td></td></tr>
+     <tr><td>Réserve fixe</td><td class="n">${fmt(RESERVE)}</td><td class="n">${fmt(RESERVE)}</td><td>Séparée, intacte</td></tr>
+     <tr class="total"><td>Total groupe</td><td class="n">${fmt(c.tLo)} + X</td><td class="n">${fmt(c.tHi)} + X</td><td>${over ? "Au-dessus du plafond" : "Non concluant"}</td></tr></tbody>`;
+  renderCompare(); renderDest(); renderGantt(c); renderMilestones(c); renderTrello(c);
+  document.getElementById("spec").value = JSON.stringify(buildSpec(c), null, 2);
+}
+
+function renderCompare() {
+  const saved = { ...state, acts: new Set(state.acts) };
+  const rows = Object.keys(DATA).map(k => {
+    const P = DATA[k];
+    Object.assign(state, { place: k, flight: P.flights[0].id, hotel: P.hotels[0].id, acts: new Set(P.acts.map((_, i) => i)), ins: "range", home: "range", sim: "range", tips: "range" });
+    const c = compute();
+    return { k, P, c };
+  });
+  Object.assign(state, saved);
+  document.getElementById("compare").innerHTML = `<thead><tr><th>Scénario</th><th>Dates BRU</th><th class="n">Nuits</th><th>Vol retenu</th><th>Hôtel retenu</th><th class="n">Total groupe + X</th><th class="n">Tolérance X</th></tr></thead><tbody>` +
+    rows.map(r => `<tr class="${r.k === state.place ? "sel" : ""}" data-place="${r.k}" style="cursor:pointer"><td>${r.k} · ${esc(r.P.name)}</td><td>${fmtD(r.P.dep)} → ${fmtD(r.P.ret)}</td><td class="n">${r.P.nights}</td><td>${esc(r.c.fl.label)}<br><span class="note">${fmt(r.c.fl.price)}</span></td><td>${esc(r.c.ho.label.split(",")[0])}${r.c.ho.tag ? ` <span class="tag ${r.c.ho.tagc}">${esc(r.c.ho.tag)}</span>` : ""}<br><span class="note">${fmt(r.c.ho.price)}</span></td><td class="n">${fmt(r.c.tLo)} – ${fmt(r.c.tHi)}</td><td class="n">${fmt(r.c.tol)}</td></tr>`).join("") + "</tbody>";
+}
+
+function renderDest() {
+  const el = document.getElementById("dest");
+  if (!DEST) { el.innerHTML = '<div class="dcard"><div class="dbody"><p class="note">Fiches en cours de sourçage : elles apparaîtront ici avec leurs références.</p></div></div>'; return; }
+  const city = DEST.cities[state.place];
+  const card = (title, sub, d) => `<div class="dcard"><div class="dhead"><h4>${esc(title)}</h4><span class="note">${esc(sub)}</span></div>
+    <div class="dbody">
+      <div><h3>Histoire</h3><p>${esc(d.history)}</p></div>
+      <div><h3>Population</h3><p>${esc(d.population.value)} (${esc(d.population.year)})</p><h3 style="margin-top:10px">Emplacement</h3><p>${esc(d.location || d.geography)}</p>${d.climateDecember ? `<h3 style="margin-top:10px">Climat en décembre</h3><p>${esc(d.climateDecember)}</p>` : ""}</div>
+      ${d.attractions ? `<div><h3>Attractions pendant le séjour</h3><ul>${d.attractions.map(a => `<li><b>${esc(a.name)}</b> · ${esc(a.type)}${a.note ? " — " + esc(a.note) : ""}</li>`).join("")}</ul></div>` : `<div><h3>Formalités, rappel</h3><p>${esc(d.formalities)}</p></div>`}
+      <div><h3>À ne pas rater</h3><ul>${d.mustSee.map(m => `<li>${esc(m)}</li>`).join("")}</ul></div>
+    </div>
+    <div class="src">Sources : ${d.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a> (${esc(s.accessed)}${s.how === "extrait" ? ", extrait" : ""})`).join(" · ")}</div></div>`;
+  el.innerHTML = card(DEST.country.name, "Le pays", DEST.country) + card(city.name, "Lieu de séjour du scénario " + state.place, city) + (DEST.note ? `<p class="note">⚠️ ${esc(DEST.note)}</p>` : "");
+}
+
+function renderGantt(c) {
+  const { P } = c;
+  const start = P.dep, end = P.ret, n = daysBetween(start, end) + 1;
+  const rows = [
+    ["Domicile → BRU", start, start, "home"],
+    ["Vol aller BRU → " + P.airport, start, addDays(start, 1), "fly"],
+    ["Hôtel " + (c.ho.label.split(",")[0]), P.hin, P.hout, "hotel"],
+    ...c.chosen.map(a => [a.j + " " + a.label.split(",")[0].split(" (")[0], a.d, a.d, "act"]),
+    ["Vol retour " + P.airport + " → BRU", P.hout, end, "fly"],
+    ["BRU → domicile", end, end, "home"]
+  ];
+  let html = `<div class="g" style="--days:${n}"><div class="hd"></div>`;
+  for (let i = 0; i < n; i++) { const d = addDays(start, i); const dow = new Date(d + "T00:00:00Z").getUTCDay(); html += `<div class="hd ${dow === 0 || dow === 6 ? "we" : ""}">${d.slice(8)}/${d.slice(5, 7)}</div>`; }
+  rows.forEach((r, ri) => {
+    const row = ri + 2;
+    const s = daysBetween(start, r[1]) + 2, e = daysBetween(start, r[2]) + 3;
+    html += `<div class="lab" style="grid-row:${row};grid-column:1" title="${esc(r[0])}">${esc(r[0])}</div>`;
+    for (let i = 0; i < n; i++) html += `<div class="cell" style="grid-row:${row};grid-column:${i + 2}"></div>`;
+    html += `<div class="bar" style="grid-row:${row};grid-column:${s} / ${e};background:var(--gantt-${r[3]});z-index:1">${fmtD(r[1])}${r[1] !== r[2] ? " → " + fmtD(r[2]) : ""}</div>`;
+  });
+  html += "</div>";
+  document.getElementById("gantt").innerHTML = html;
+}
+
+function milestones(c) {
+  const { P } = c;
+  return [
+    { when: "Dès maintenant", what: "Choisir lieu, vol, hôtel ; résoudre l'identité de l'hôtel si stars_unverified", why: "Avant tout achat" },
+    { when: "Avant paiement", what: "Obtenir total TTC, chambre, annulation ; relire soutes et transit", why: "Ferme X puis recalcule S_haut + X + réserve" },
+    { when: "Avant achat des prestations", what: "Fixer l'assurance sur âges réels, capital et couverture existante", why: "Prime estimée 4,68 €/pers./jour × " + P.insuredDays + " jours" },
+    { when: "Début octobre 2026", what: "Point prévention et besoins médicaux (Wanda)", why: "Conseil personnalisé, pas de vaccin déduit" },
+    { when: "Passeport valable jusqu'au " + fmtD(P.passport), what: "Contrôler validité 6 mois après l'entrée, billet de sortie, exemption 30 jours", why: "Exemption : source unique, à confirmer" },
+    { when: fmtD(addDays(P.dep, -7)) + " puis " + fmtD(addDays(P.dep, -2)), what: "Relire météo/mer, SPF et Wanda", why: "Normales climatiques seulement" },
+    { when: "À partir du " + fmtD(P.tdacFrom), what: "Déposer la TDAC (gratuite) dans les 3 jours avant l'arrivée", why: "Arrivée " + fmtD(P.hin) },
+    { when: fmtD(P.dep), what: "Départ BRU ; arriver ~3 h avant le vol, marge 30 min", why: "Train ou voiture selon l'hypothèse choisie" }
+  ];
+}
+function renderMilestones(c) {
+  document.getElementById("milestones").innerHTML = milestones(c).map(m => `<div class="ms"><div class="when">${esc(m.when)}</div><div class="what">${esc(m.what)}</div><div class="why">${esc(m.why)}</div></div>`).join("");
+}
+
+function buildTrello(c) {
+  const { P, fl, ho } = c;
+  const due = d => d + "T08:00:00.000Z";
+  const pres = [];
+  if (DEST) {
+    const co = DEST.country, ci = DEST.cities[state.place];
+    const src = d => "\n\nSources : " + d.sources.map(s => `${s.label} — ${s.url} (${s.accessed})`).join(" ; ");
+    pres.push({ name: `Page de garde : ${co.name}`, desc: `${co.history}\n\nPopulation : ${co.population.value} (${co.population.year}).\n\nGéographie : ${co.geography}\n\nDécembre : ${co.climateDecember}\n\nFormalités : ${co.formalities}` + src(co), checklist: co.mustSee });
+    pres.push({ name: `Page de garde : ${ci.name}`, desc: `${ci.history}\n\nPopulation : ${ci.population.value} (${ci.population.year}).\n\nEmplacement : ${ci.location}\n\nAttractions pendant le séjour :\n` + ci.attractions.map(a => `• ${a.name} (${a.type})${a.note ? " — " + a.note : ""}`).join("\n") + src(ci), checklist: ci.mustSee });
+  } else {
+    pres.push({ name: "Page de garde : Thaïlande (fiche à sourcer)", desc: "Histoire, population, géographie, climat de décembre, formalités." });
+    pres.push({ name: `Page de garde : ${P.name} (fiche à sourcer)`, desc: "Histoire, population, emplacement, attractions du séjour, à ne pas rater." });
+  }
+  const lists = [
+    { name: "Présentation", cards: pres },
+    { name: "Décisions et achats", cards: [
+      { name: `Scénario ${P.short} validé : ${P.name}, ${P.nights} nuits`, desc: `Budget ${fmt(c.tLo)}–${fmt(c.tHi)} + X, réserve 1 000 € comprise. Tolérance X : ${fmt(c.tol)}.`, checklist: ["Lieu confirmé", "Vol confirmé", "Hôtel confirmé", "X borné et recalculé"] },
+      { name: `Vol : ${fl.label} — ${fmt(fl.price)}`, desc: fl.detail, checklist: ["Prix final", "2 soutes + cabine + poids", "Transit et protection", "Conditions d'annulation"] },
+      { name: `Hôtel : ${ho.label} — ${fmt(ho.price)}`, desc: `${fmtD(P.hin)} → ${fmtD(P.hout)}, 1 chambre, 2 adultes.` + (ho.tag === "stars_unverified" ? " stars_unverified : identité et catégorie à résoudre." : ""), checklist: ["Total TTC et taxes", "Type de chambre et lit", "Annulation et prépaiement", "Navette / transfert"] },
+      { name: "Assurance : assistance " + (state.ins === "assist" ? "seule" : state.ins === "cancel" ? "+ annulation" : "(annulation à décider)"), desc: `2 × ${P.insuredDays} jours × 4,68 € ; provision annulation 574 € au haut.`, checklist: ["Âges réels", "Capital admissible", "Franchise médicale", "Couverture carte / mutualité"] }
+    ] },
+    { name: "Avant le départ", cards: [
+      { name: "Point prévention et besoins médicaux (Wanda)", due: due("2026-10-05"), checklist: ["Consultation si besoin", "Vaccins usuels à jour"] },
+      { name: "Contrôler passeports et exemption 30 jours", due: due(addDays(P.dep, -30)), desc: `Validité au moins jusqu'au ${fmtD(P.passport)}.`, checklist: ["Passeport 1", "Passeport 2", "Billet de sortie", "Adresse hôtel"] },
+      { name: "Banque, ATM, SIM et change", due: due(addDays(P.dep, -14)), checklist: ["Carte et plafond ATM", "SIM AIS ou eSIM", "Espèces de départ"] },
+      { name: "Relire météo/mer, SPF, Wanda (J−7)", due: due(addDays(P.dep, -7)) },
+      { name: "Déposer la TDAC (gratuite)", due: due(P.tdacFrom), desc: `Fenêtre : 3 jours avant l'arrivée du ${fmtD(P.hin)}.`, checklist: ["TDAC voyageur 1", "TDAC voyageur 2"] },
+      { name: "Relire météo/mer (J−2), bagages", due: due(addDays(P.dep, -2)) }
+    ] },
+    { name: "Voyage", cards: [
+      { name: `Domicile → BRU, vol aller ${fl.label}`, due: due(P.dep), desc: state.home === "car" ? "Voiture + parking P3." : state.home === "train" ? "Train SNCB, arrivée ~3 h avant." : "Train ou voiture à décider." },
+      { name: `Arrivée ${P.airport}, transfert, check-in ${ho.label.split(",")[0]}`, due: due(P.hin), desc: "Chambre tôt non garantie ; J1 repos." },
+      ...c.chosen.map(a => ({ name: `${a.j} · ${a.label}`, due: due(a.d), desc: `Plan B gratuit : ${a.planB}. ${a.lo === a.hi ? a.lo : a.lo + "–" + a.hi} THB.`, checklist: ["Places et transfert confirmés", "Météo/mer J−2", "Taxes et annulation lues"] })),
+      { name: `Check-out, vol retour ${P.airport} → BRU`, due: due(P.hout) },
+      { name: "Arrivée BRU → domicile", due: due(P.ret) }
+    ] },
+    { name: "Budget et X", cards: [
+      { name: `S hors réserve : ${fmt(c.sLo)} – ${fmt(c.sHi)}`, desc: c.lines.map(l => `${l[0]} : ${fmt(l[1])} – ${fmt(l[2])}`).join("\n") },
+      { name: `X à borner : tolérance ${fmt(c.tol)} au haut`, desc: "Taxes/service hôtel ou activités, frais vendeur, chambre/bagages imposés. Ne jamais consommer la réserve pour X.", checklist: ["Taxes hôtel", "Service charge activités", "Frais vendeur vol", "Recalcul final"] },
+      { name: "Réserve 1 000 € intacte", desc: "Séparée, sous le plafond de 8 000 €." }
+    ] }
+  ];
+  return { board: `Voyage Asie 2026 — ${P.name}`, lists };
+}
+function renderTrello(c) {
+  const t = buildTrello(c);
+  document.getElementById("trello").innerHTML = t.lists.map(l => `<div class="list"><h4>${esc(l.name)}</h4>` +
+    l.cards.map(k => `<div class="card"><div>${esc(k.name)}</div>${k.due ? `<div class="due">Échéance ${fmtD(k.due.slice(0, 10))}</div>` : ""}${k.checklist ? `<ul>${k.checklist.map(i => `<li>${esc(i)}</li>`).join("")}</ul>` : ""}</div>`).join("") + "</div>").join("");
+}
+function buildSpec(c) {
+  return {
+    source: "rapport-asie-v5.md, travel-agent v1.3.0",
+    choices: { place: state.place, placeName: c.P.name, nights: c.P.nights, dep: c.P.dep, ret: c.P.ret, flight: c.fl.id, flightLabel: c.fl.label, flightPrice: c.fl.price, hotel: c.ho.id, hotelLabel: c.ho.label, hotelPrice: c.ho.price, hotelFlag: c.ho.tag || null, activities: c.chosen.map(a => ({ date: a.d, day: a.j, label: a.label, thbLow: a.lo, thbHigh: a.hi })), insurance: state.ins, homeToBru: state.home, sim: state.sim, tips: state.tips },
+    budget: { lines: c.lines.map(l => ({ post: l[0], low: l[1], high: l[2], note: l[3] })), sLow: c.sLo, sHigh: c.sHi, reserve: RESERVE, totalLow: c.tLo, totalHigh: c.tHi, toleranceX: c.tol, state: c.tHi > CAP ? "au-dessus du plafond" : "non concluant (X non borné)" },
+    trello: buildTrello(c)
+  };
+}
+
+document.getElementById("compare").addEventListener("click", e => {
+  const tr = e.target.closest("tr[data-place]"); if (!tr) return;
+  const inp = document.getElementById("place_" + tr.dataset.place); if (inp) { inp.checked = true; inp.dispatchEvent(new Event("change", { bubbles: true })); }
+});
+document.addEventListener("change", e => {
+  const t = e.target; if (!t.name) return;
+  if (t.name === "place") { state.place = t.value; const P = DATA[t.value]; state.flight = P.flights[0].id; state.hotel = P.hotels[0].id; state.acts = new Set(P.acts.map((_, i) => i)); renderChoices(); }
+  else if (t.name === "flight") state.flight = t.value;
+  else if (t.name === "hotel") state.hotel = t.value;
+  else if (t.name === "act") { t.checked ? state.acts.add(+t.value) : state.acts.delete(+t.value); }
+  else if (OPTS.some(o => o.id === t.name)) state[t.name] = t.value;
+  renderAll();
+});
+
+document.getElementById("copy").addEventListener("click", () => {
+  const ta = document.getElementById("spec");
+  navigator.clipboard.writeText(ta.value).then(() => setStatus("Récapitulatif copié."), () => { ta.focus(); ta.select(); setStatus("Copie refusée : le texte est sélectionné, copiez-le manuellement."); });
+});
+function setStatus(t) { document.getElementById("validStatus").textContent = t; }
+
+let db = null;
+document.getElementById("validate").addEventListener("click", async () => {
+  const btn = document.getElementById("validate"); btn.disabled = true;
+  const spec = buildSpec(compute());
+  spec.validatedAt = new Date().toISOString();
+  if (!db) { setStatus("Enregistrement partagé indisponible ici : copiez le récapitulatif et collez-le dans la conversation."); btn.disabled = false; return; }
+  try {
+    await db.doc("validations/current").set(spec);
+    setStatus("Scénario validé et enregistré. Claude Code peut maintenant construire le tableau Trello.");
+  } catch (e) {
+    setStatus("Enregistrement refusé (" + (e && e.code ? e.code : "erreur") + "). Copiez le récapitulatif à la place.");
+  }
+  btn.disabled = false;
+});
+
+function showLast(snap) {
+  const el = document.getElementById("lastValid");
+  if (!snap.exists) { el.textContent = "Aucune validation enregistrée pour l'instant."; return; }
+  const d = snap.data(); const c = d.choices || {};
+  el.textContent = `Dernière validation : ${c.placeName || "?"}, ${c.nights || "?"} nuits, ${c.flightLabel || "?"}, ${c.hotelLabel || "?"} — ${d.validatedAt ? new Date(d.validatedAt).toLocaleString("fr-BE") : ""}`;
+}
+
+renderChoices(); renderAll();
+(async () => {
+  try { db = await window.claude.use("db"); } catch (e) { db = null; }
+  if (db) db.doc("validations/current").onSnapshot(showLast, () => {});
+})();
+</script>
