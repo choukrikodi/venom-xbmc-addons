@@ -1,4 +1,4 @@
-=== 2026-09-23T20:19:39+00:00 https://mcp.trivago.com/mcp list 
+=== 2026-09-24T05:32:59+00:00 https://mcp.trivago.com/mcp list
 {
  "jsonrpc": "2.0",
  "id": 2,
@@ -19,7 +19,7 @@
      "idempotentHint": false,
      "openWorldHint": false
     },
-    "description": "Search live hotel and accommodation listings near specific coordinates — a landmark, address, venue, or neighborhood — aggregated via trivago's metasearch of major booking sites. Returns the same, filterable results as trivago-accommodation-search. Use when the user anchors their search to a place rather than a named destination (e.g. \"near the stadium,\" \"within walking distance of X\").\n\nAdditional Information: {\"knownInformation\":{\"currentYear\":\"2026\",\"today\":\"2026-09-23\"}}",
+    "description": "Search live hotel and accommodation listings near specific coordinates — a landmark, address, venue, or neighborhood — aggregated via trivago's metasearch of major booking sites. Returns the same, filterable results as trivago-accommodation-search. Use when the user anchors their search to a place rather than a named destination (e.g. \"near the stadium,\" \"within walking distance of X\").\n\nAdditional Information: {\"knownInformation\":{\"currentYear\":\"2026\",\"today\":\"2026-09-24\"}}",
     "inputSchema": {
      "properties": {
       "adults": {
@@ -28,7 +28,7 @@
        "type": "number"
       },
       "arrival": {
-       "description": "\n\t\tThe arrival date in YYYY-MM-DD format, today is 2026-09-23.\n\n\t\tThe arrival date MUST be before the departure date. If the arrival date is not in the future, notify the user that the arrival date is not in the future.\n\t\t",
+       "description": "\n\t\tThe arrival date in YYYY-MM-DD format, today is 2026-09-24.\n\n\t\tThe arrival date MUST be before the departure date. If the arrival date is not in the future, notify the user that the arrival date is not in the future.\n\t\t",
        "type": "string"
       },
       "children": {
@@ -144,7 +144,7 @@
        "type": "string"
       },
       "departure": {
-       "description": "\n\t\tThe departure date in YYYY-MM-DD format, today is 2026-09-23.\n\n\t\tThe departure date MUST be after the arrival date. If the departure date is not after the arrival date, notify the user that the departure date is not after the arrival date.\n\t\t",
+       "description": "\n\t\tThe departure date in YYYY-MM-DD format, today is 2026-09-24.\n\n\t\tThe departure date MUST be after the arrival date. If the departure date is not after the arrival date, notify the user that the departure date is not after the arrival date.\n\t\t",
        "type": "string"
       },
       "filters": {
@@ -505,7 +505,7 @@
      "idempotentHint": false,
      "openWorldHint": false
     },
-    "description": "Search live hotel and accommodation listings by destination or point of interest, aggregated via trivago's metasearch of major booking sites. Returns results with price, rating, amenities, and a link per property. Supports date range, guest/room configuration, and filters for star rating, guest rating, and amenities. Use for destination- or place-name-based lodging search.\n\nAdditional Information: {\"knownInformation\":{\"currentYear\":\"2026\",\"today\":\"2026-09-23\"}}",
+    "description": "Search live hotel and accommodation listings by destination or point of interest, aggregated via trivago's metasearch of major booking sites. Returns results with price, rating, amenities, and a link per property. Supports date range, guest/room configuration, and filters for star rating, guest rating, and amenities. Use for destination- or place-name-based lodging search.\n\nAdditional Information: {\"knownInformation\":{\"currentYear\":\"2026\",\"today\":\"2026-09-24\"}}",
     "inputSchema": {
      "properties": {
       "adults": {
@@ -514,7 +514,7 @@
        "type": "number"
       },
       "arrival": {
-       "description": "\n\t\tThe arrival date in YYYY-MM-DD format, today is 2026-09-23.\n\n\t\tThe arrival date MUST be before the departure date. If the arrival date is not in the future, notify the user that the arrival date is not in the future.\n\t\t",
+       "description": "\n\t\tThe arrival date in YYYY-MM-DD format, today is 2026-09-24.\n\n\t\tThe arrival date MUST be before the departure date. If the arrival date is not in the future, notify the user that the arrival date is not in the future.\n\t\t",
        "type": "string"
       },
       "children": {
@@ -630,7 +630,7 @@
        "type": "string"
       },
       "departure": {
-       "description": "\n\t\tThe departure date in YYYY-MM-DD format, today is 2026-09-23.\n\n\t\tThe departure date MUST be after the arrival date. If the departure date is not after the arrival date, notify the user that the departure date is not after the arrival date.\n\t\t",
+       "description": "\n\t\tThe departure date in YYYY-MM-DD format, today is 2026-09-24.\n\n\t\tThe departure date MUST be after the arrival date. If the departure date is not after the arrival date, notify the user that the departure date is not after the arrival date.\n\t\t",
        "type": "string"
       },
       "filters": {
@@ -978,7 +978,7 @@
      "idempotentHint": false,
      "openWorldHint": false
     },
-    "description": "Forecast monthly hotel price trends for a destination — average, minimum, and maximum nightly rate by star rating, across a date window. Use for planning questions like \"when is the cheapest month to visit X\" or \"how do prices change through the year\" — this is a forecasting tool, not a live-availability search.\n\nAdditional Information: {\"knownInformation\":{\"currentYear\":\"2026\",\"today\":\"2026-09-23\"}}",
+    "description": "Forecast monthly hotel price trends for a destination — average, minimum, and maximum nightly rate by star rating, across a date window. Use for planning questions like \"when is the cheapest month to visit X\" or \"how do prices change through the year\" — this is a forecasting tool, not a live-availability search.\n\nAdditional Information: {\"knownInformation\":{\"currentYear\":\"2026\",\"today\":\"2026-09-24\"}}",
     "inputSchema": {
      "properties": {
       "country": {
