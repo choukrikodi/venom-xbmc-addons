@@ -19,6 +19,16 @@ permissions:
 jobs:
   probe:
     runs-on: ubuntu-latest
+    # Un manifeste à la fois : espacement Kiwi et push du bot sérialisés.
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        include:
+          - case: ${{ inputs.case_file || 'skills/travel-agent/evals/files/asie_v2.json' }}
+            out: ${{ inputs.output_dir || 'skills/travel-agent/test-output' }}
+          - case: ${{ inputs.case_file || 'skills/travel-agent/evals/files/asie_v3.json' }}
+            out: ${{ inputs.output_dir || 'skills/travel-agent/test-output-v3' }}
     steps:
       - uses: actions/checkout@v4
       - name: List tools
@@ -31,14 +41,14 @@ jobs:
         run: python3 -B skills/travel-agent/evals/test_mcp_call.py
       - name: Test calls
         id: calls
-        run: TRAVEL_CASE_FILE="${{ inputs.case_file || 'skills/travel-agent/evals/files/asie_v2.json' }}" bash skills/travel-agent/scripts/test_case.sh
+        run: TRAVEL_CASE_FILE="${{ matrix.case }}" bash skills/travel-agent/scripts/test_case.sh
       - name: Save raw responses to branch
         if: always() && steps.calls.outcome != 'skipped'
         run: |
-          DEST="${{ inputs.output_dir || 'skills/travel-agent/test-output' }}"
+          DEST="${{ matrix.out }}"
           git pull --rebase --autostash origin ${{ github.ref_name }} || true
           rm -rf "$DEST" && mv out "$DEST"
           git config user.name "github-actions[bot]"
           git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
           git add "$DEST"
-          git commit -m "Raw MCP responses (run ${{ github.run_id }})" && git push || true
+          git commit -m "Raw MCP responses (run ${{ github.run_id }}, ${{ matrix.out }})" && git push || true
