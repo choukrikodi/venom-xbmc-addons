@@ -38,6 +38,23 @@ def og_image(page_url):
     return html.unescape(m.group(1))
 
 
+def page_image(page_url):
+    """Première image « de contenu » d'une page : balise <img> dont le nom ne
+    contient pas logo/icon/sprite, en jpg/jpeg/png/webp ; URL rendue absolue."""
+    import urllib.parse
+    final, ctype, body = fetch(page_url)
+    text = body.decode("utf-8", "replace")
+    for m in re.finditer(r'<img[^>]+(?:data-src|src)=["\']([^"\']+)["\']', text, re.I):
+        src = html.unescape(m.group(1))
+        low = src.lower().split("?")[0]
+        if not low.endswith((".jpg", ".jpeg", ".png", ".webp")):
+            continue
+        if any(k in low for k in ("logo", "icon", "sprite", "pixel", "badge")):
+            continue
+        return urllib.parse.urljoin(final, src)
+    raise ValueError("aucune image de contenu")
+
+
 def main(manifest_path, out_dir):
     import os
     os.makedirs(out_dir, exist_ok=True)
@@ -51,6 +68,9 @@ def main(manifest_path, out_dir):
             url = a["url"]
             if a.get("kind") == "og_image":
                 url = og_image(url)
+                entry["image_url"] = url
+            elif a.get("kind") == "page_image":
+                url = page_image(url)
                 entry["image_url"] = url
             final, ctype, body = fetch(url)
             if len(body) > MAX_BYTES:
