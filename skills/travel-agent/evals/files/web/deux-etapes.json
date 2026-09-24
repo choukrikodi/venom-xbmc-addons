@@ -8,7 +8,8 @@
   "network": "aucun appel réseau ; traces du 2026-09-24T23:00–23:01 UTC (test-output-v5-2etapes) et reprises 23:07–23:08 UTC (test-output-v5-2etapes-bkk, test-output-v5-2etapes-cnx)",
   "tracesReprises": [
    "skills/travel-agent/test-output-v5-2etapes-bkk/",
-   "skills/travel-agent/test-output-v5-2etapes-cnx/"
+   "skills/travel-agent/test-output-v5-2etapes-cnx/",
+   "skills/travel-agent/test-output-v5-2etapes-bkk-hotels/"
   ],
   "oneStageRef": "L'esprit De Naiyang Booking 1 900,41 € 30/11→16/12 (16 n)"
  },
@@ -199,7 +200,7 @@
      "stars_declared": 4,
      "price_per_stay_raw": "€ 390",
      "price_per_stay": "390",
-     "price_per_night_calc": "55.71",
+     "price_per_night_calc": "55.72",
      "price_per_night_raw": "€ 56",
      "review_rating": "9.0",
      "review_count": 3654,
@@ -214,6 +215,7 @@
      "stars_unverified": false,
      "trace": "trivago_chiangmai_ville_7n.json",
      "utc": "2026-09-24T23:07:47+00:00",
+     "zone_note": null,
      "note": []
     },
     {
@@ -222,7 +224,7 @@
      "stars_declared": 4,
      "price_per_stay_raw": "€ 400",
      "price_per_stay": "400",
-     "price_per_night_calc": "57.14",
+     "price_per_night_calc": "57.15",
      "price_per_night_raw": "€ 57",
      "review_rating": "7.9",
      "review_count": 8580,
@@ -237,6 +239,7 @@
      "stars_unverified": false,
      "trace": "trivago_chiangmai_ville_7n.json",
      "utc": "2026-09-24T23:07:47+00:00",
+     "zone_note": null,
      "note": []
     },
     {
@@ -245,7 +248,7 @@
      "stars_declared": 4,
      "price_per_stay_raw": "€ 418",
      "price_per_stay": "418",
-     "price_per_night_calc": "59.71",
+     "price_per_night_calc": "59.72",
      "price_per_night_raw": "€ 60",
      "review_rating": "8.5",
      "review_count": 2227,
@@ -260,6 +263,7 @@
      "stars_unverified": false,
      "trace": "trivago_chiangmai_ville_7n.json",
      "utc": "2026-09-24T23:07:47+00:00",
+     "zone_note": null,
      "note": []
     }
    ],
@@ -530,7 +534,55 @@
    },
    "hotels": [
     {
-     "index": 0,
+     "index": 14,
+     "name": "Baiyoke Sky Hotel",
+     "stars_declared": 4,
+     "price_per_stay_raw": "€ 420",
+     "price_per_stay": "420",
+     "price_per_night_calc": "60.00",
+     "price_per_night_raw": "€ 60",
+     "review_rating": "8.1",
+     "review_count": 69564,
+     "distance": "5.3 km to Phra Borom Maha ratchawang",
+     "distance_km": "5.3",
+     "arrival": "2026-12-08",
+     "departure": "2026-12-15",
+     "advertiser": "Booking.com",
+     "amenities": "WiFi in lobby, WiFi in rooms, Pool, Spa, Parking, A/C, Restaurant, Hotel bar, Gym",
+     "url": "https://www.trivago.be/en-US/lm/baiyoke-sky-hotel-bangkok?cip=234716015&currencyCode=EUR&search=100-80624;105-1320;105-1322;200-15893;dr-20261208-20261215;drs-40;rc-1-2&dealId=-5218868343533005026",
+     "stars_unverified_signals": [],
+     "stars_unverified": false,
+     "trace": "trivago_bangkok_ville_7n.json",
+     "utc": "2026-09-24T23:16:49+00:00",
+     "zone_note": null,
+     "note": []
+    },
+    {
+     "index": 8,
+     "name": "Akara Hotel",
+     "stars_declared": 5,
+     "price_per_stay_raw": "€ 618",
+     "price_per_stay": "618",
+     "price_per_night_calc": "88.29",
+     "price_per_night_raw": "€ 88",
+     "review_rating": "9.1",
+     "review_count": 9041,
+     "distance": "Bangkok, 3.6 km to City center",
+     "distance_km": "3.6",
+     "arrival": "2026-12-08",
+     "departure": "2026-12-15",
+     "advertiser": "Trip.com",
+     "amenities": "WiFi in lobby, WiFi in rooms, Pool, Parking, A/C, Restaurant, Hotel bar, Gym",
+     "url": "https://www.trivago.be/en-US/lm/akara-hotel-bangkok?cip=234716015&currencyCode=EUR&search=100-9006340;105-1320;105-1322;200-15893;dr-20261208-20261215;drs-40;rc-1-2&dealId=-8733048801818116472",
+     "stars_unverified_signals": [],
+     "stars_unverified": false,
+     "trace": "trivago_bangkok_ville_7n.json",
+     "utc": "2026-09-24T23:16:49+00:00",
+     "zone_note": null,
+     "note": []
+    },
+    {
+     "index": 20,
      "name": "Ramada Plaza by Wyndham Bangkok Menam Riverside",
      "stars_declared": 5,
      "price_per_stay_raw": "€ 647",
@@ -545,17 +597,18 @@
      "departure": "2026-12-15",
      "advertiser": "Trip.com",
      "amenities": "WiFi in lobby, WiFi in rooms, Pool, Spa, Parking, A/C, Restaurant, Hotel bar, Gym",
-     "url": "https://www.trivago.be/en-US/lm/hotel-ramada-plaza-by-wyndham-bangkok-menam-riverside?cip=234716015&currencyCode=EUR&search=100-80664;dr-20261208-20261215;drs-40;rc-1-2&dealId=5142058801826442047",
+     "url": "https://www.trivago.be/en-US/lm/hotel-ramada-plaza-by-wyndham-bangkok-menam-riverside?cip=234716015&currencyCode=EUR&search=100-80664;105-1320;105-1322;200-15893;dr-20261208-20261215;drs-40;rc-1-2&dealId=5142058801826442047",
      "stars_unverified_signals": [],
      "stars_unverified": false,
-     "trace": "trivago_bangkok_7n.json",
-     "utc": "2026-09-24T23:01:00+00:00",
+     "trace": "trivago_bangkok_ville_7n.json",
+     "utc": "2026-09-24T23:16:49+00:00",
+     "zone_note": null,
      "note": []
     }
    ],
    "hotelSearch": {
-    "trace": "Bangkok riverside, Thailand",
-    "utc": "2026-09-24T23:01:00+00:00",
+    "trace": "Bangkok, Thailand",
+    "utc": "2026-09-24T23:16:49+00:00",
     "args": {
      "adults": 2,
      "children": 0,
@@ -566,19 +619,19 @@
       "4star": true,
       "5star": true
      },
-     "query": "Bangkok riverside, Thailand",
+     "query": "Bangkok, Thailand",
      "arrival": "2026-12-08",
      "departure": "2026-12-15"
     },
-    "resultsReturned": 1,
-    "compliantCount": 1,
+    "resultsReturned": 25,
+    "compliantCount": 25,
     "excluded": []
    },
    "cheapestFlightsTotal": {
     "retour1512": "263.65",
     "retour1612": "265.65"
    },
-   "cheapestHotel": "Ramada Plaza by Wyndham Bangkok Menam Riverside 647 € (idx 0)"
+   "cheapestHotel": "Baiyoke Sky Hotel 420 € (idx 14)"
   },
   "USM": {
    "name": "Koh Samui",
@@ -783,6 +836,7 @@
      "stars_unverified": false,
      "trace": "trivago_samui_chaweng_7n.json",
      "utc": "2026-09-24T23:01:06+00:00",
+     "zone_note": null,
      "note": [
       "prix/nuit calculé 44,43 € sous plancher 4★ 45 € = 1 seul signal, non stars_unverified mais à contre-vérifier"
      ]
@@ -793,7 +847,7 @@
      "stars_declared": 4,
      "price_per_stay_raw": "€ 382",
      "price_per_stay": "382",
-     "price_per_night_calc": "54.57",
+     "price_per_night_calc": "54.58",
      "price_per_night_raw": "€ 55",
      "review_rating": "8.0",
      "review_count": 3981,
@@ -808,6 +862,7 @@
      "stars_unverified": false,
      "trace": "trivago_samui_chaweng_7n.json",
      "utc": "2026-09-24T23:01:06+00:00",
+     "zone_note": null,
      "note": []
     },
     {
@@ -831,6 +886,7 @@
      "stars_unverified": false,
      "trace": "trivago_samui_chaweng_7n.json",
      "utc": "2026-09-24T23:01:06+00:00",
+     "zone_note": null,
      "note": []
     }
    ],
@@ -883,7 +939,7 @@
       "name": "Three Monkeys Chaweng Beach",
       "price_per_stay": "246",
       "reasons": [
-       "stars_unverified: prix/nuit 35.14 < plancher 5★ 80 €; 0 avis (<100); terme suspect: hostel; ni piscine ni restaurant listés"
+       "stars_unverified: prix/nuit 35.15 < plancher 5★ 80 €; 0 avis (<100); terme suspect: hostel; ni piscine ni restaurant listés"
       ]
      },
      {
@@ -933,6 +989,7 @@
    "stars_unverified": false,
    "trace": "trivago_naiyang_8n.json",
    "utc": "2026-09-24T23:01:15+00:00",
+   "zone_note": null,
    "note": [
     "retenu en priorité pour cohérence avec le scénario A ; 603 € / 8 n = 75,38 €/nuit vs 1 900,41 € / 16 n = 118,78 €/nuit sur Booking scénario A : chambre/taxes/repas probablement différents, à vérifier"
    ]
@@ -960,8 +1017,37 @@
    "stars_unverified": false,
    "trace": "trivago_naiyang_8n.json",
    "utc": "2026-09-24T23:01:15+00:00",
+   "zone_note": null,
    "note": [
     "42 €/nuit sous plancher 4★ (1 signal) ; 8,9 km du centre Nai Yang, le plus loin des retenus"
+   ]
+  },
+  {
+   "index": 22,
+   "name": "The Bell Airport Phuket Hotel - SHA Extra Plus",
+   "stars_declared": 4,
+   "price_per_stay_raw": "€ 355",
+   "price_per_stay": "355",
+   "price_per_night_calc": "44.38",
+   "price_per_night_raw": "€ 44",
+   "review_rating": "8.3",
+   "review_count": 1393,
+   "distance": "Phuket-Town, 24.6 km to City center",
+   "distance_km": "24.6",
+   "arrival": "2026-11-30",
+   "departure": "2026-12-08",
+   "advertiser": "Stayforlong",
+   "amenities": "WiFi in lobby, WiFi in rooms, Pool, Parking, A/C, Restaurant, Hotel bar",
+   "url": "https://www.trivago.be/en-US/lm/the-bell-airport-phuket-hotel-sha-extra-plus-phuket-town?cip=234716015&currencyCode=EUR&search=100-18098876;105-1320;105-1322;200-15960;dr-20261130-20261208;drs-40;rc-1-2&dealId=-7616215768349769492",
+   "stars_unverified_signals": [
+    "prix/nuit 44.38 < plancher 4★ 45 €"
+   ],
+   "stars_unverified": false,
+   "trace": "trivago_naiyang_8n.json",
+   "utc": "2026-09-24T23:01:15+00:00",
+   "zone_note": "distance Trivago vers Phuket Town (Phuket-Town, 24.6 km to City center) ; coordonnées dans la zone : 1.98 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus",
+   "note": [
+    "distance Trivago vers Phuket Town (Phuket-Town, 24.6 km to City center) ; coordonnées dans la zone : 1.98 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus"
    ]
   },
   {
@@ -985,6 +1071,7 @@
    "stars_unverified": false,
    "trace": "trivago_naiyang_8n.json",
    "utc": "2026-09-24T23:01:15+00:00",
+   "zone_note": null,
    "note": []
   }
  ],
@@ -1010,6 +1097,7 @@
    "stars_unverified": false,
    "trace": "trivago_naiyang_1n_1512.json",
    "utc": "2026-09-24T23:01:22+00:00",
+   "zone_note": null,
    "note": [
     "retenu en priorité pour cohérence ; 131 € pour 1 nuit vs 75 €/nuit sur 8 n : tarif court séjour, à vérifier"
    ]
@@ -1035,7 +1123,34 @@
    "stars_unverified": false,
    "trace": "trivago_naiyang_1n_1512.json",
    "utc": "2026-09-24T23:01:22+00:00",
+   "zone_note": null,
    "note": []
+  },
+  {
+   "index": 20,
+   "name": "The Bell Airport Phuket Hotel - SHA Extra Plus",
+   "stars_declared": 4,
+   "price_per_stay_raw": "€ 48",
+   "price_per_stay": "48",
+   "price_per_night_calc": "48.00",
+   "price_per_night_raw": "€ 48",
+   "review_rating": "8.3",
+   "review_count": 1393,
+   "distance": "Phuket-Town, 24.6 km to City center",
+   "distance_km": "24.6",
+   "arrival": "2026-12-15",
+   "departure": "2026-12-16",
+   "advertiser": "Booking.com",
+   "amenities": "WiFi in lobby, WiFi in rooms, Pool, Parking, A/C, Restaurant, Hotel bar",
+   "url": "https://www.trivago.be/en-US/lm/the-bell-airport-phuket-hotel-sha-extra-plus-phuket-town?cip=234716015&currencyCode=EUR&search=100-18098876;105-1320;105-1322;200-15960;dr-20261215-20261216;drs-40;rc-1-2&dealId=-3938516115132283132",
+   "stars_unverified_signals": [],
+   "stars_unverified": false,
+   "trace": "trivago_naiyang_1n_1512.json",
+   "utc": "2026-09-24T23:01:22+00:00",
+   "zone_note": "distance Trivago vers Phuket Town (Phuket-Town, 24.6 km to City center) ; coordonnées dans la zone : 1.98 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus",
+   "note": [
+    "distance Trivago vers Phuket Town (Phuket-Town, 24.6 km to City center) ; coordonnées dans la zone : 1.98 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus"
+   ]
   },
   {
    "index": 3,
@@ -1058,6 +1173,7 @@
    "stars_unverified": false,
    "trace": "trivago_naiyang_1n_1512.json",
    "utc": "2026-09-24T23:01:22+00:00",
+   "zone_note": null,
    "note": []
   }
  ],
@@ -1068,7 +1184,7 @@
    "stars_declared": 4,
    "price_per_stay_raw": "€ 1.626",
    "price_per_stay": "1626",
-   "price_per_night_calc": "101.62",
+   "price_per_night_calc": "101.63",
    "price_per_night_raw": "€ 102",
    "review_rating": "8.3",
    "review_count": 4167,
@@ -1083,6 +1199,7 @@
    "stars_unverified": false,
    "trace": "trivago_naiyang_16n_align.json",
    "utc": "2026-09-24T23:07:58+00:00",
+   "zone_note": null,
    "note": []
   },
   {
@@ -1108,32 +1225,68 @@
    "stars_unverified": false,
    "trace": "trivago_naiyang_16n_align.json",
    "utc": "2026-09-24T23:07:58+00:00",
+   "zone_note": null,
    "note": []
   },
   {
-   "index": 9,
-   "name": "Naiyang Beach Hotel",
+   "index": 19,
+   "name": "The Bell Airport Phuket Hotel - SHA Extra Plus",
    "stars_declared": 4,
-   "price_per_stay_raw": "€ 770",
-   "price_per_stay": "770",
-   "price_per_night_calc": "48.12",
-   "price_per_night_raw": "€ 48",
-   "review_rating": "7.6",
-   "review_count": 1878,
-   "distance": "Nai Yang Beach, 0.5 km to City center",
-   "distance_km": "0.5",
+   "price_per_stay_raw": "€ 721",
+   "price_per_stay": "721",
+   "price_per_night_calc": "45.07",
+   "price_per_night_raw": "€ 45",
+   "review_rating": "8.3",
+   "review_count": 1393,
+   "distance": "Phuket-Town, 24.6 km to City center",
+   "distance_km": "24.6",
    "arrival": "2026-11-30",
    "departure": "2026-12-16",
-   "advertiser": "Agoda",
-   "amenities": "WiFi in lobby, WiFi in rooms, Pool, Parking, A/C, Restaurant, Gym",
-   "url": "https://www.trivago.be/en-US/lm/naiyang-beach-hotel-nai-yang-beach?cip=234716015&currencyCode=EUR&search=100-2722380;105-1320;105-1322;200-15960;dr-20261130-20261216;drs-40;rc-1-2&dealId=2689928565514063471",
+   "advertiser": "Stayforlong",
+   "amenities": "WiFi in lobby, WiFi in rooms, Pool, Parking, A/C, Restaurant, Hotel bar",
+   "url": "https://www.trivago.be/en-US/lm/the-bell-airport-phuket-hotel-sha-extra-plus-phuket-town?cip=234716015&currencyCode=EUR&search=100-18098876;105-1320;105-1322;200-15960;dr-20261130-20261216;drs-40;rc-1-2&dealId=1509411169661334755",
    "stars_unverified_signals": [],
    "stars_unverified": false,
    "trace": "trivago_naiyang_16n_align.json",
    "utc": "2026-09-24T23:07:58+00:00",
-   "note": []
+   "zone_note": "distance Trivago vers Phuket Town (Phuket-Town, 24.6 km to City center) ; coordonnées dans la zone : 1.98 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus",
+   "note": [
+    "distance Trivago vers Phuket Town (Phuket-Town, 24.6 km to City center) ; coordonnées dans la zone : 1.98 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus"
+   ]
   }
  ],
+ "bkkOtherSearches": {
+  "riverside_nameResolution": {
+   "trace": "test-output-v5-2etapes/trivago_bangkok_7n.json",
+   "utc": "2026-09-24T23:01:00+00:00",
+   "resultsReturned": 1,
+   "result": [
+    [
+     0,
+     "Ramada Plaza by Wyndham Bangkok Menam Riverside",
+     "647"
+    ]
+   ],
+   "note": "requête « Bangkok riverside, Thailand » résolue par Trivago comme nom d'établissement (Ramada Plaza Menam Riverside, seul résultat) ; remplacé par la trace ville"
+  },
+  "sukhumvit_nameResolution": {
+   "trace": "test-output-v5-2etapes-bkk-hotels/trivago_bangkok_sukhumvit_7n.json",
+   "utc": "2026-09-24T23:16:57+00:00",
+   "resultsReturned": 1,
+   "result": [
+    [
+     0,
+     "Eleven Hotel Bangkok Sukhumvit 11",
+     "400",
+     "8.7",
+     10049,
+     "Bangkok, 3.8 km to City center"
+    ]
+   ],
+   "excluded": [],
+   "note": "requête « Sukhumvit, Bangkok » probablement résolue comme nom d'établissement (Eleven Hotel Bangkok Sukhumvit 11, seul résultat, 400 € / 7 n, 8,7/10, 10 049 avis) ; non retenu pour le minimum, la trace ville fait référence"
+  }
+ },
  "cnxOtherSearches": {
   "old_city": {
    "resultsReturned": 1,
@@ -1174,12 +1327,13 @@
      "name": "S48 River Ping",
      "price_per_stay": "557",
      "reasons": [
-      "stars_unverified: prix/nuit 79.57 < plancher 5★ 80 €; 0 avis (<100)"
+      "stars_unverified: prix/nuit 79.58 < plancher 5★ 80 €; 0 avis (<100)"
      ]
     }
    ],
    "utc": "2026-09-24T23:07:56+00:00"
-  }
+  },
+  "explanation": "les trois requêtes « Chiang Mai old city », « Nimmanhaemin, Chiang Mai » et « Ping River, Chiang Mai » ont été résolues par Trivago comme noms d'établissement (1 résultat chacune) ; le filtre hotel_rating 4–5★ a été ignoré (hotel_rating 0 pour old city et Nimman)"
  },
  "bkkOldTrace_oneForCity": {
   "label": "ancienne trace one_for_city (09/12 DMK), remplacée",
@@ -1240,6 +1394,92 @@
    "departureDateFlexDays": 1
   }
  },
+ "naiYang_zoneReintegrated": {
+  "8n": [
+   {
+    "index": 22,
+    "name": "The Bell Airport Phuket Hotel - SHA Extra Plus",
+    "price_per_stay": "355",
+    "review_rating": "8.3",
+    "review_count": 1393,
+    "note": "distance Trivago vers Phuket Town (Phuket-Town, 24.6 km to City center) ; coordonnées dans la zone : 1.98 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus"
+   },
+   {
+    "index": 24,
+    "name": "Sugar Marina Hotel -AVIATOR- Phuket Airport",
+    "price_per_stay": "410",
+    "review_rating": "8.3",
+    "review_count": 5117,
+    "note": "distance Trivago vers Phuket Town (Phuket-Town, 24.9 km to City center) ; coordonnées dans la zone : 2.28 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus"
+   },
+   {
+    "index": 23,
+    "name": "Maya Phuket Airport Hotel",
+    "price_per_stay": "491",
+    "review_rating": "7.6",
+    "review_count": 3289,
+    "note": "distance Trivago vers Phuket Town (Phuket-Town, 25.2 km to City center) ; coordonnées dans la zone : 2.33 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus"
+   },
+   {
+    "index": 18,
+    "name": "Naiyang Park Resort",
+    "price_per_stay": "752",
+    "review_rating": "8.4",
+    "review_count": 3510,
+    "note": "distance Trivago vers Phuket Town (Phuket-Town, 24.6 km to City center) ; coordonnées dans la zone : 1.29 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus"
+   }
+  ],
+  "1n": [
+   {
+    "index": 20,
+    "name": "The Bell Airport Phuket Hotel - SHA Extra Plus",
+    "price_per_stay": "48",
+    "review_rating": "8.3",
+    "review_count": 1393,
+    "note": "distance Trivago vers Phuket Town (Phuket-Town, 24.6 km to City center) ; coordonnées dans la zone : 1.98 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus"
+   },
+   {
+    "index": 17,
+    "name": "Naiyang Park Resort",
+    "price_per_stay": "103",
+    "review_rating": "8.4",
+    "review_count": 3510,
+    "note": "distance Trivago vers Phuket Town (Phuket-Town, 24.6 km to City center) ; coordonnées dans la zone : 1.29 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus"
+   }
+  ],
+  "16n": [
+   {
+    "index": 19,
+    "name": "The Bell Airport Phuket Hotel - SHA Extra Plus",
+    "price_per_stay": "721",
+    "note": "distance Trivago vers Phuket Town (Phuket-Town, 24.6 km to City center) ; coordonnées dans la zone : 1.98 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus"
+   },
+   {
+    "index": 23,
+    "name": "Maya Phuket Airport Hotel",
+    "price_per_stay": "1005",
+    "note": "distance Trivago vers Phuket Town (Phuket-Town, 25.2 km to City center) ; coordonnées dans la zone : 2.33 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus"
+   },
+   {
+    "index": 18,
+    "name": "Sugar Marina Hotel -AVIATOR- Phuket Airport",
+    "price_per_stay": "1040",
+    "note": "distance Trivago vers Phuket Town (Phuket-Town, 24.9 km to City center) ; coordonnées dans la zone : 2.28 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus"
+   },
+   {
+    "index": 17,
+    "name": "Naiyang Park Resort",
+    "price_per_stay": "4850",
+    "note": "distance Trivago vers Phuket Town (Phuket-Town, 24.6 km to City center) ; coordonnées dans la zone : 1.29 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus"
+   },
+   {
+    "index": 24,
+    "name": "Dewa Nai Yang Beach",
+    "price_per_stay": "4972",
+    "note": "distance Trivago vers Phuket Town (Cape Panwa, 34.2 km to City center) ; coordonnées dans la zone : 1.21 km de L'esprit De Naiyang Beach Resort - SHA Extra Plus"
+   }
+  ]
+ },
  "naiYang8n_excluded": [
   {
    "index": 14,
@@ -1258,44 +1498,11 @@
    ]
   },
   {
-   "index": 18,
-   "name": "Naiyang Park Resort",
-   "price_per_stay": "752",
-   "reasons": [
-    "distance Phuket-Town, 24.6 km to City center >10 km"
-   ]
-  },
-  {
    "index": 21,
    "name": "Wyndham Royal Lee Phuket",
    "price_per_stay": "470",
    "reasons": [
-    "distance Phuket-Town, 24.7 km to City center >10 km",
     "stars_unverified: prix/nuit 58.75 < plancher 5★ 80 €; note 6.7<7,5 avec 417 avis"
-   ]
-  },
-  {
-   "index": 22,
-   "name": "The Bell Airport Phuket Hotel - SHA Extra Plus",
-   "price_per_stay": "355",
-   "reasons": [
-    "distance Phuket-Town, 24.6 km to City center >10 km"
-   ]
-  },
-  {
-   "index": 23,
-   "name": "Maya Phuket Airport Hotel",
-   "price_per_stay": "491",
-   "reasons": [
-    "distance Phuket-Town, 25.2 km to City center >10 km"
-   ]
-  },
-  {
-   "index": 24,
-   "name": "Sugar Marina Hotel -AVIATOR- Phuket Airport",
-   "price_per_stay": "410",
-   "reasons": [
-    "distance Phuket-Town, 24.9 km to City center >10 km"
    ]
   }
  ],
@@ -1317,27 +1524,10 @@
    ]
   },
   {
-   "index": 17,
-   "name": "Naiyang Park Resort",
-   "price_per_stay": "103",
-   "reasons": [
-    "distance Phuket-Town, 24.6 km to City center >10 km"
-   ]
-  },
-  {
-   "index": 20,
-   "name": "The Bell Airport Phuket Hotel - SHA Extra Plus",
-   "price_per_stay": "48",
-   "reasons": [
-    "distance Phuket-Town, 24.6 km to City center >10 km"
-   ]
-  },
-  {
    "index": 22,
    "name": "Wyndham Royal Lee Phuket",
    "price_per_stay": "70",
    "reasons": [
-    "distance Phuket-Town, 24.7 km to City center >10 km",
     "stars_unverified: prix/nuit 70.00 < plancher 5★ 80 €; note 6.7<7,5 avec 417 avis"
    ]
   }
@@ -1345,16 +1535,24 @@
  "domesticCarriersObserved": {
   "Thai Vietjet": [
    "kiwi_bkk_hkt_ow_1512",
+   "kiwi_bkk_hkt_ow_1512_b",
    "kiwi_cnx_hkt_ow_1512",
+   "kiwi_hkt_bkk_ow_0812_b",
    "kiwi_hkt_cnx_ow_0812"
   ],
   "Thai AirAsia": [
+   "kiwi_bkk_hkt_ow_1512_b",
    "kiwi_cnx_hkt_ow_1512",
+   "kiwi_dmk_hkt_ow_1512",
    "kiwi_hkt_bkk_ow_0812",
-   "kiwi_hkt_cnx_ow_0812"
+   "kiwi_hkt_bkk_ow_0812_b",
+   "kiwi_hkt_cnx_ow_0812",
+   "kiwi_hkt_dmk_ow_0812"
   ],
   "Thai Airways": [
-   "kiwi_cnx_hkt_ow_1512"
+   "kiwi_bkk_hkt_ow_1512_b",
+   "kiwi_cnx_hkt_ow_1512",
+   "kiwi_hkt_bkk_ow_0812_b"
   ],
   "Thai Lion Air": [
    "kiwi_cnx_hkt_ow_1512"
@@ -1363,7 +1561,24 @@
    "kiwi_cnx_hkt_ow_1512",
    "kiwi_hkt_usm_ow_0812",
    "kiwi_usm_hkt_ow_1512"
+  ],
+  "Nok Air": [
+   "kiwi_dmk_hkt_ow_1512"
   ]
+ },
+ "starsUnverifiedRule": {
+  "suspectTerms": [
+   "inn",
+   "lodging",
+   "hostel",
+   "homestay",
+   "guesthouse",
+   "apartelle",
+   "apartment",
+   "villa"
+  ],
+  "note": "« villa » au singulier étend la liste SKILL.md (qui cite « villas ») ; le motif regex accepte villa/villas. Les exclusions USM Samui Sunrise Villa, Villa Melo, Moonrise Villa & Bungalow reposent sur ce terme élargi plus un second signal (avis <100) ; sans l'extension, seul le signal « avis » resterait et ces hôtels ne seraient pas stars_unverified.",
+  "floors": "4★ 45 € / 5★ 80 € par nuit (TH), calcul price_per_stay / nuits arrondi au centime supérieur"
  },
  "comparison": {
   "oneStage": {
@@ -1378,7 +1593,7 @@
     "name": "L'esprit De Naiyang Beach Resort - SHA Extra Plus",
     "index": 5,
     "price_per_stay_raw": "€ 1.626",
-    "price_per_night_calc": "101.62",
+    "price_per_night_calc": "101.63",
     "advertiser": "Booking.com",
     "url": "https://www.trivago.be/en-US/lm/l-esprit-de-naiyang-beach-resort-sha-extra-plus-nai-yang-beach?cip=234716015&currencyCode=EUR&search=100-2614304;105-1320;105-1322;200-15960;dr-20261130-20261216;drs-40;rc-1-2&dealId=6044693298269651357",
     "trace": "test-output-v5-2etapes-cnx/trivago_naiyang_16n_align.json",
@@ -1464,27 +1679,27 @@
    },
    "BKK": {
     "hotels8n": "603",
-    "hotels7n": "647",
+    "hotels7n": "420",
     "hotels1n": "131",
     "domesticFlights": "263.65",
-    "total": "1644.65",
-    "deltaVsOneStage": "-255.76",
-    "deltaVsOneStage_booking1900": "-255.76",
-    "deltaVsOneStage_trivago16n": "18.65",
+    "total": "1417.65",
+    "deltaVsOneStage": "-482.76",
+    "deltaVsOneStage_booking1900": "-482.76",
+    "deltaVsOneStage_trivago16n": "-208.35",
     "basis": "Nai Yang L'esprit 8 n + étape 7 n (moins cher conforme) + L'esprit 1 n, vol retour 15/12",
     "variants": {
      "base_Lesprit_retour1512": {
       "hotels8n": "603",
-      "hotels7n": "647",
+      "hotels7n": "420",
       "hotels1n": "131",
       "domesticFlights": "263.65",
-      "total": "1644.65",
-      "deltaVsOneStage": "-255.76",
-      "deltaVsOneStage_booking1900": "-255.76",
-      "deltaVsOneStage_trivago16n": "18.65",
+      "total": "1417.65",
+      "deltaVsOneStage": "-482.76",
+      "deltaVsOneStage_booking1900": "-482.76",
+      "deltaVsOneStage_trivago16n": "-208.35",
       "hotelsUsed": {
        "8n": "L'esprit De Naiyang Beach Resort - SHA Extra Plus (idx 6)",
-       "7n": "Ramada Plaza by Wyndham Bangkok Menam Riverside (idx 0)",
+       "7n": "Baiyoke Sky Hotel (idx 14)",
        "1n": "L'esprit De Naiyang Beach Resort - SHA Extra Plus (idx 8)"
       },
       "flightsUsed": [
@@ -1495,16 +1710,16 @@
      },
      "alt_cheapestNaiYang_retour1512": {
       "hotels8n": "336",
-      "hotels7n": "647",
+      "hotels7n": "420",
       "hotels1n": "48",
       "domesticFlights": "263.65",
-      "total": "1294.65",
-      "deltaVsOneStage": "-605.76",
-      "deltaVsOneStage_booking1900": "-605.76",
-      "deltaVsOneStage_trivago16n": "-331.35",
+      "total": "1067.65",
+      "deltaVsOneStage": "-832.76",
+      "deltaVsOneStage_booking1900": "-832.76",
+      "deltaVsOneStage_trivago16n": "-558.35",
       "hotelsUsed": {
        "8n": "The Rubber Hotel Phuket (idx 12)",
-       "7n": "Ramada Plaza by Wyndham Bangkok Menam Riverside (idx 0)",
+       "7n": "Baiyoke Sky Hotel (idx 14)",
        "1n": "Naiyang Beach Hotel (idx 6)"
       },
       "flightsUsed": [
@@ -1515,16 +1730,16 @@
      },
      "variant_Lesprit_retour1612_sans_nuit": {
       "hotels8n": "603",
-      "hotels7n": "647",
+      "hotels7n": "420",
       "hotels1n": "0",
       "domesticFlights": "265.65",
-      "total": "1515.65",
-      "deltaVsOneStage": "-384.76",
-      "deltaVsOneStage_booking1900": "-384.76",
-      "deltaVsOneStage_trivago16n": "-110.35",
+      "total": "1288.65",
+      "deltaVsOneStage": "-611.76",
+      "deltaVsOneStage_booking1900": "-611.76",
+      "deltaVsOneStage_trivago16n": "-337.35",
       "hotelsUsed": {
        "8n": "L'esprit De Naiyang Beach Resort - SHA Extra Plus (idx 6)",
-       "7n": "Ramada Plaza by Wyndham Bangkok Menam Riverside (idx 0)",
+       "7n": "Baiyoke Sky Hotel (idx 14)",
        "1n": null
       },
       "flightsUsed": [
@@ -1534,7 +1749,7 @@
       "label": "L'esprit 8 n + étape 7 n, vol retour 16/12 matin, sans nuit du 15/12"
      }
     },
-    "status": "reprises sans one_for_city : aller TG202 08/12 vers BKK Suvarnabhumi, retour VZ308 15/12 ou VZ314 16/12 ; dates vols/hôtel cohérentes (hôtel 08/12→15/12)"
+    "status": "reprises sans one_for_city : aller TG202 08/12 vers BKK Suvarnabhumi, retour VZ308 15/12 ou VZ314 16/12 ; hôtels de la reprise trivago_bangkok_ville_7n (25 résultats) ; « Bangkok riverside » et « Sukhumvit » ont été résolus par Trivago comme noms d'établissement (1 résultat chacun)"
    },
    "USM": {
     "hotels8n": "603",
@@ -1616,12 +1831,13 @@
   "Toutes les traces Kiwi (6 initiales + 4 reprises BKK/DMK) : query contient « 2 adults », passengers.adults=2, currency EUR, checkedBag=2 sur chaque itinéraire inspecté, isError=false.",
   "Alignement de source : L'esprit De Naiyang 16 n (30/11→16/12) sur Trivago/Booking.com = 1 626 € (idx 5, trivago_naiyang_16n_align, 23:07:58 UTC) contre 1 900,41 € Booking direct (scénario A). Les deux bases sont utilisées ; la base Trivago 16 n est celle à source égale avec les 8 n (603 €) + 1 n (131 €). Écart 274,41 € entre les deux bases non expliqué (chambre/taxes/repas).",
   "USM (Koh Samui) : PG252 08/12 09:45→10:40 256,00 € (idx 13) + PG407 15/12 09:20→10:20 177,00 € (idx 0) ; hôtel Chaweng le moins cher conforme The Canale Samui Resort 311 € / 7 n (idx 8, 8,6/10, 1 660 avis) ; total 1478.00 € (Booking -422.41 € ; Trivago 16 n -148.00 €). Variante retour PG251 16/12 08:15→09:15 181,00 € (idx 1, marge 4 h 45) sans nuit du 15/12 : 1351.00 € (Booking -549.41 € ; Trivago 16 n -275.00 €).",
-  "CNX (Chiang Mai) : VZ415 08/12 08:15→10:20 224,65 € (idx 0) + FD3168 15/12 21:25→23:25 224,95 € (idx 0) ; reprise trivago_chiangmai_ville_7n (25 résultats) : Hotel MAYU 390 € (idx 22, 9,0/10, 3 654 avis, 2,4 km), Amora Thapae 400 € (idx 13, 7,9/10, 8 580 avis, 0,8 km), Hotel De Sripoom 418 € (idx 16, 8,5/10, 2 227 avis, 0,8 km) ; total 1573.60 € (Booking -326.81 € ; Trivago 16 n -52.40 €). Variante FD3160 16/12 06:25→08:30 260,95 € (idx 2, marge 5 h 30) : 1478.60 € (Booking -421.81 € ; Trivago 16 n -147.40 €). Les requêtes « old city », Nimman et Ping River ne donnent aucun hôtel conforme (1 résultat chacune : guesthouse 0★ ; résultat sans prix ni étoiles ; S48 River Ping 5★ 0 avis et 79,57 €/nuit < 80 € = stars_unverified).",
-  "BKK (Bangkok) : reprises sans one_for_city ; aller le moins cher au 08/12 = TG202 09:50→11:20 HKT→BKK Suvarnabhumi 129,00 € (idx 0, kiwi_hkt_bkk_ow_0812_b ; TG228 09:05 même prix idx 1 ; DMK au mieux FD3032 21:55 136,95 €) ; retour VZ308 15/12 19:20→20:50 134,65 € (idx 0, kiwi_bkk_hkt_ow_1512_b) ; 16/12 avant 11:00 = VZ314 06:50→08:25 136,65 € (idx 3, marge 5 h 35 ; TG227 06:40→08:05 138,00 € idx 5). Hôtel Ramada Plaza Menam Riverside 5★ 647 € / 7 n (idx 0, 8,6/10, 19 577 avis, 4,8 km) ; total 1644.65 € (Booking -255.76 € ; Trivago 16 n 18.65 €) ; variante 16/12 : 1515.65 € (Booking -384.76 € ; Trivago 16 n -110.35 €). L'ancienne trace one_for_city (FD3036 09/12 DMK) est conservée à titre documentaire dans bkkOldTrace_oneForCity.",
-  "Nai Yang 8 n : L'esprit présent (idx 6, Booking.com, 603 €, 8,3/10, 4 167 avis, 0,9 km) ; moins cher conforme The Rubber Hotel 336 € (idx 12, 8,9 km, 42 €/nuit = 1 signal) puis Naiyang Beach Hotel 384 € (idx 11). Nai Yang 1 n (15→16/12) : L'esprit 131 € (idx 8) ; moins cher conforme Naiyang Beach Hotel 48 € (idx 6) ; 777 Beach Condo 24 € exclu (0 avis, serviced-apartment, 24 € < 80 €). Variante « Nai Yang le moins cher » : USM 1128.00 € (Booking -772.41 € ; Trivago 16 n -498.00 €), CNX 1223.60 € (Booking -676.81 € ; Trivago 16 n -402.40 €), BKK 1294.65 € (Booking -605.76 € ; Trivago 16 n -331.35 €).",
+  "CNX (Chiang Mai) : VZ415 08/12 08:15→10:20 224,65 € (idx 0) + FD3168 15/12 21:25→23:25 224,95 € (idx 0) ; reprise trivago_chiangmai_ville_7n (25 résultats) : Hotel MAYU 390 € (idx 22, 9,0/10, 3 654 avis, 2,4 km), Amora Thapae 400 € (idx 13, 7,9/10, 8 580 avis, 0,8 km), Hotel De Sripoom 418 € (idx 16, 8,5/10, 2 227 avis, 0,8 km) ; total 1573.60 € (Booking -326.81 € ; Trivago 16 n -52.40 €). Variante FD3160 16/12 06:25→08:30 260,95 € (idx 2, marge 5 h 30) : 1478.60 € (Booking -421.81 € ; Trivago 16 n -147.40 €). Les requêtes « old city », Nimman et Ping River ne donnent aucun hôtel conforme (1 résultat chacune : guesthouse 0★ ; résultat sans prix ni étoiles ; S48 River Ping 5★ 0 avis et 79,57 €/nuit < 80 € = stars_unverified) : requêtes résolues par Trivago comme noms d'établissement, filtre 4–5★ ignoré (hotel_rating 0).",
+  "BKK (Bangkok) : reprises sans one_for_city ; aller le moins cher au 08/12 = TG202 09:50→11:20 HKT→BKK Suvarnabhumi 129,00 € (idx 0, kiwi_hkt_bkk_ow_0812_b ; TG228 09:05 même prix idx 1 ; DMK au mieux FD3032 21:55 136,95 €) ; retour VZ308 15/12 19:20→20:50 134,65 € (idx 0, kiwi_bkk_hkt_ow_1512_b) ; 16/12 avant 11:00 = VZ314 06:50→08:25 136,65 € (idx 3, marge 5 h 35 ; TG227 06:40→08:05 138,00 € idx 5). Hôtels de la reprise trivago_bangkok_ville_7n (25 résultats, 23:16:49 UTC) : Baiyoke Sky Hotel 4★ 420 € (idx 14, 8,1/10, 69 564 avis, 5,3 km du Grand Palais), Akara Hotel 5★ 618 € (idx 8, 9,1/10, 9 041 avis, 3,6 km), Ramada Plaza Menam Riverside 5★ 647 € (idx 20). Total 1417.65 € (Booking -482.76 € ; Trivago 16 n -208.35 €) ; variante 16/12 : 1288.65 € (Booking -611.76 € ; Trivago 16 n -337.35 €). « Bangkok riverside » (Ramada seul) et « Sukhumvit » (Eleven Hotel Sukhumvit 11 seul, 400 €) sont des résolutions par nom d'établissement, non retenues comme minima. L'ancienne trace one_for_city (FD3036 09/12 DMK) reste documentée dans bkkOldTrace_oneForCity.",
+  "Nai Yang 8 n : L'esprit présent (idx 6, Booking.com, 603 €, 8,3/10, 4 167 avis, 0,9 km) ; moins cher conforme The Rubber Hotel 336 € (idx 12, 8,9 km, 42 €/nuit = 1 signal) puis Naiyang Beach Hotel 384 € (idx 11). Nai Yang 1 n (15→16/12) : L'esprit 131 € (idx 8) ; moins cher conforme Naiyang Beach Hotel 48 € (idx 6) ; 777 Beach Condo 24 € exclu (0 avis, serviced-apartment, 24 € < 80 €). Variante « Nai Yang le moins cher » : USM 1128.00 € (Booking -772.41 € ; Trivago 16 n -498.00 €), CNX 1223.60 € (Booking -676.81 € ; Trivago 16 n -402.40 €), BKK 1067.65 € (Booking -832.76 € ; Trivago 16 n -558.35 €).",
   "Tarifs L'esprit non linéaires sur la même source Trivago/Booking.com : 75,38 €/nuit (8 n), 131 € (1 n), 101,63 €/nuit (16 n). La somme 8 n + 1 n (734 €) n'est donc pas 9/16 de 1 626 € (915 €) ; chambre et conditions à relire avant d'attribuer l'économie au découpage.",
-  "Cinq hôtels « Phuket-Town, 24,6–25,2 km » (The Bell Airport, Maya Airport, Sugar Marina AVIATOR, Naiyang Park, Wyndham Royal Lee) exclus par la règle >10 km alors que leur nom suggère la zone aéroport : la distance Trivago est mesurée vers Phuket Town, pas vers Nai Yang ; coordonnées à recouper si l'on veut les réintégrer.",
-  "Compagnies intérieures observées : Thai Vietjet (VZ), Thai AirAsia (FD), Bangkok Airways (PG, seule sur HKT–USM), Thai Airways (TG, la moins chère sur HKT–BKK et via BKK pour CNX avec 1 escale), Thai Lion Air (SL via DMK, 1 escale), Nok Air (DD, DMK–HKT). Tous les vols intérieurs retenus sont directs.",
+  "Zone Nai Yang : les cinq hôtels affichés « Phuket-Town, 24,6–25,2 km » ont des coordonnées à 1,3–2,3 km de L'esprit (distance Trivago vers Phuket Town, coordonnées dans la zone) ; Naiyang Park, Bell Airport, Maya et Sugar Marina AVIATOR sont réintégrés comme conformes, Wyndham Royal Lee reste stars_unverified (2 signaux : 58,75–70 €/nuit < 80 € 5★, note 6,7 avec 417 avis). Les minima ne changent pas : Rubber 336 € (8 n) et Naiyang Beach Hotel 48 € (1 n, à égalité avec Bell Airport 48 €).",
+  "Compagnies intérieures observées : Thai Vietjet (VZ), Thai AirAsia (FD), Bangkok Airways (PG, seule sur HKT–USM), Thai Airways (TG, la moins chère sur HKT–BKK et via BKK pour CNX avec 1 escale), Thai Lion Air (SL via DMK, 1 escale), Nok Air (DD, DMK–HKT uniquement, 149,79 €). TG figure dans hkt_bkk_b et bkk_hkt_b, DD dans dmk_hkt. Tous les vols intérieurs retenus sont directs.",
+  "Exclusions USM : Samui Sunrise Villa, Villa Melo et Moonrise Villa & Bungalow sont stars_unverified via le terme « villa » au singulier, extension de la liste SKILL.md (« villas »), combiné au signal avis <100 ; Three Monkeys (hostel) et idyllic apartment restent exclus sans cette extension.",
   "Billets séparés : le vol intérieur du 16/12 et le long-courrier Air China 14:00 ne sont pas liés ; aucune protection. Marges calculées ≥ 3 h (USM 4 h 45, CNX 5 h 30, BKK 5 h 35) mais horaires Air China et fermeture d'enregistrement non relus ici."
  ],
  "unverified": [
@@ -1641,8 +1857,8 @@
   "Deux bases une étape : Booking 1 900,41 € (scénario A) et Trivago/Booking.com 1 626 € (L'esprit 16 n, idx 5) ; les deltas sont donnés sur chacune.",
   "USM : 1478.00 € (Booking -422.41 € ; Trivago 16 n -148.00 €) ; sans nuit du 15/12 (PG251 16/12 08:15→09:15) : 1351.00 € (Booking -549.41 € ; Trivago 16 n -275.00 €).",
   "CNX : 1573.60 € (Booking -326.81 € ; Trivago 16 n -52.40 €) ; variante FD3160 16/12 06:25→08:30 : 1478.60 € (Booking -421.81 € ; Trivago 16 n -147.40 €).",
-  "BKK : aller TG202 08/12 vers Suvarnabhumi 129 € ; 1644.65 € (Booking -255.76 € ; Trivago 16 n 18.65 €) ; variante VZ314 16/12 06:50→08:25 : 1515.65 € (Booking -384.76 € ; Trivago 16 n -110.35 €).",
-  "À source Trivago égale (1 626 €), toutes les combinaisons restent moins chères sauf BKK avec nuit du 15/12 (+18,65 €) ; USM est la plus économe, CNX base ne gagne que 52,40 €.",
+  "BKK : aller TG202 08/12 vers Suvarnabhumi 129 € ; Baiyoke Sky 420 € / 7 n (trace ville) ; 1417.65 € (Booking -482.76 € ; Trivago 16 n -208.35 €) ; variante VZ314 16/12 06:50→08:25 : 1288.65 € (Booking -611.76 € ; Trivago 16 n -337.35 €).",
+  "À source Trivago égale (1 626 €), toutes les combinaisons sont moins chères ; BKK (Baiyoke) devient la plus économe devant USM, CNX base ne gagne que 52,40 €. Riverside/Sukhumvit/old city/Nimman/Ping River = résolutions par nom d'établissement chez Trivago.",
   "Non vérifiés : climat Samui en décembre, taxes/chambre/annulation, étoiles, écart Booking vs Trivago sur L'esprit, horaires Air China, transferts."
  ]
 }
