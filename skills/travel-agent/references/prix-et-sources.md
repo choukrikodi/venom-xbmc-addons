@@ -78,16 +78,32 @@ Avec `1 devise_base = r unités locales`, convertir un prix local en base par di
 
 La réponse Trivago ne certifie pas l’origine officielle de ses étoiles. Les planchers de prix et signaux `stars_unverified` de SKILL.md sont des heuristiques demandées par l’orchestrateur. TripAdvisor sert à recouper l’identité et les informations, pas à délivrer un classement officiel. Pour confirmer : [PH, DOT et bureaux régionaux](https://www.tourism.gov.ph/directory/local-regional-offices/), [MY, MOTAC Hotel Grading](https://www.motac.gov.my/en/kategori-semakan-new/hotel-grading/), [TH, Thailand Hotel Standard Foundation](https://www.thaihotels.org/16679475/thailand-hotel-standard-foundation). Vérifier nom, adresse, catégorie et validité du certificat ; distinguer accréditation, licence, appartenance à une association et attribution d’étoiles. Ne pas prétendre qu’un registre est exhaustif sans preuve.
 
-## 8. Connecteurs à installer (gratuits, sans compte)
+## 8. Connecteurs à installer (gratuits, sans clé ni compte)
 
-Le client `scripts/mcp_call.py` suffit pour Kiwi et Trivago. Les connecteurs ci-dessous sont facultatifs et servent à l'agent interactif ; chaque installation reste à zéro coût, sans clé ni carte. Vérifier la disponibilité réseau du lieu d'exécution avant de les déclarer actifs.
+Le client `scripts/mcp_call.py` suffit pour Kiwi et Trivago dans le workflow. Les connecteurs ci-dessous servent à l'agent interactif (Claude Code, Codex CLI/app). Règle : aucune carte, aucun compte payant ; un serveur hébergé marqué « à valider » n'a pas été testé depuis le bac à sable (proxy) et doit l'être une fois depuis la machine de l'utilisateur avant d'être déclaré actif. Fichiers prêts : `.mcp.json` à la racine du dépôt (Claude Code, portée projet) et `codex.config.example.toml` dans ce dossier (Codex, à copier dans `~/.codex/config.toml`). Audit complet daté du 24/09/2026 : trois recherches (registre MCP officiel et catalogue claude.ai, veille GitHub/forums, code source openai/codex).
 
-| Connecteur | Usage dans le skill | Claude Code | Codex CLI (`~/.codex/config.toml`) |
-| --- | --- | --- | --- |
-| Kiwi MCP | Phase 3, vols (seule source examinée avec `adults_hold_bags`) | `claude mcp add --transport http kiwi https://mcp.kiwi.com` | `[mcp_servers.kiwi]` `url = "https://mcp.kiwi.com"` |
-| Trivago MCP | Phase 4, hôtels et tendances | `claude mcp add --transport http trivago https://mcp.trivago.com/mcp` | `[mcp_servers.trivago]` `url = "https://mcp.trivago.com/mcp"` |
-| Skiplagged MCP | Repli vols, hors hidden-city | `claude mcp add --transport http skiplagged https://mcp.skiplagged.com/mcp` | `[mcp_servers.skiplagged]` `url = "https://mcp.skiplagged.com/mcp"` |
-| google-flights-mcp | Repli découverte multi-villes, ⚠️ soute/devise | `claude mcp add google-flights -- npx -y google-flights-mcp` | `[mcp_servers.google_flights]` `command = "npx"` `args = ["-y", "google-flights-mcp"]` |
-| Playwright MCP | Phase 4 et 7 : relire la page de réservation (chambre, taxes, annulation, protection des connexions) avant tout ✅ | `claude mcp add playwright -- npx -y @playwright/mcp@latest` | `[mcp_servers.playwright]` `command = "npx"` `args = ["-y", "@playwright/mcp@latest"]` |
+| # | Connecteur | Phase | Transport | Statut |
+| --- | --- | --- | --- | --- |
+| 1 | Kiwi MCP `https://mcp.kiwi.com` | 3 vols, seule source examinée avec `adults_hold_bags` ; 1 req/s, 15 000 req/mois annoncés | HTTP hébergé | validé live |
+| 2 | Trivago MCP `https://mcp.trivago.com/mcp` | 4 hôtels et tendances | HTTP hébergé (Codex : `codex mcp login trivago`) | validé live |
+| 3 | Skiplagged MCP `https://mcp.skiplagged.com/mcp` | 3 repli vols, hors hidden-city | HTTP hébergé | validé |
+| 4 | Booking.com (connecteur claude.ai, sans login) | 4 comparateur hôtels, étoiles « officielles », `attractions_search` pour les activités | connecteur | validé 24/09/2026 |
+| 5 | lastminute.com MCP | 3 et 4 seconde source vols/hôtels Europe ; bagages non documentés | connecteur / HTTP | validé 24/09/2026 |
+| 6 | AllTrails | 6 sentiers gratuits et météo de sentier | connecteur | validé 24/09/2026 |
+| 7 | Open-Meteo `npx -y open-meteo-mcp` | 2 météo (normales et prévision) | stdio | à installer |
+| 8 | Frankfurter `https://mcp.frankfurter.dev/` | 5 change BCE | HTTP hébergé | à installer |
+| 9 | OpenStreetMap `npx -y @cyanheads/openstreetmap-mcp-server` | 6 géocodage, distances, transferts (Nominatim 1 req/s) | stdio | à installer |
+| 10 | Fetch officiel `uvx mcp-server-fetch` | toutes : pages SPF, Wanda, parcs nationaux, ambassades | stdio | à installer |
+| 11 | Playwright `npx -y @playwright/mcp@latest --headless --isolated` | 4 et 7 relire la page de réservation avant tout ✅ | stdio | à installer |
+| 12 | HelloSafe assurance `https://hellosafe.com/api/mcp-travel` | 5 assurance voyage (comparateur, 40 assureurs) | HTTP hébergé | à valider |
+| 13 | EasyOnward `https://mcp.easyonward.com/mcp` | 6 visa, entrée, transit (sources gouvernementales) | HTTP hébergé | à valider |
+| 14 | Ferryhopper `https://mcp.ferryhopper.com/mcp` | 3 ferries Europe et Méditerranée, pas d'Asie | HTTP hébergé (plugin travel-hacker, désactivé) | à réactiver |
+| 15 | OctoTrip flights `https://mcp.octotrip.app/flights/mcp` | 3 seconde source annonçant les bagages | HTTP hébergé | à valider |
+| 16 | Transitous `npx -y transitous-mcp` | 6 trains et bus, horaires sans prix | stdio | à valider |
+| 17 | TicketLens `https://mcp.ticketlens.com/` | 6 excursions et billets | HTTP hébergé | à valider |
+| 18 | Wikipedia `npx -y @cyanheads/wikipedia-mcp-server` | 2 et 6 | stdio | à installer |
+| 19 | google-flights-mcp `npx -y google-flights-mcp` | 3 découverte multi-villes, ⚠️ soute et devise | stdio | validé, fragile |
 
-Frankfurter, Open-Meteo, Nominatim, SPF et Wanda restent des appels HTTP/pages publiques (sections 1 et 6) : pas de connecteur requis. Google Drive et Agenda ne servent qu'au dépôt des livrables et au tracker ; ils ne fournissent aucun prix. La syntaxe `url =` pour un serveur HTTP dépend de la version de Codex CLI ; à défaut, passer par un pont stdio ou par `scripts/mcp_call.py`. Ne jamais lire un connecteur comme une preuve d'accès illimité : consigner date, endpoint et limites observées.
+Écartés : tout service exigeant une clé ou un compte même gratuit (Ignav, TripAdvisor, Brave, SerpAPI, Navitia, Travelpayouts, HasData, Yelp), tout service payant (Google Maps Platform, Apify, RapidAPI, Duffel, Seats.aero, Firecrawl, Tavily, Exa, Bright Data), Turkish Airlines (OAuth, une compagnie), Airbnb (hors périmètre hôtels). Aucun MCP gratuit n'existe pour 12Go, Rome2Rio, Omio, GetYourGuide, Viator, Klook, les alertes prix et Google Hotels : utiliser Playwright ou un lien sortant.
+
+Codex : pas de transport SSE ; `startup_timeout_sec = 60` sur les serveurs `npx` ; Codex web/cloud a l'internet coupé par défaut et son support MCP n'est pas confirmé, donc les appels passent par le workflow GitHub Actions. Google Drive et Agenda ne servent qu'au dépôt des livrables et au tracker ; ils ne fournissent aucun prix. Ne jamais lire un connecteur comme une preuve d'accès illimité : consigner date, endpoint et limites observées.
