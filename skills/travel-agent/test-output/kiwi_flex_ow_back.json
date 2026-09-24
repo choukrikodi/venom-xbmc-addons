@@ -1,11 +1,11 @@
-=== 2026-09-24T05:33:25+00:00 https://mcp.kiwi.com call search-flight {"flyFrom":"KUL,PEN,LGK,HKT,KBV","flyTo":"BRU","departureDate":"01/12/2026","departureDateTo":"28/12/2026","one_for_city":true,"adults":2,"currency":"EUR","locale":"fr","sort":"price"}
+=== 2026-09-24T05:35:14+00:00 https://mcp.kiwi.com call search-flight {"flyFrom":"KUL,PEN,LGK,HKT,KBV","flyTo":"BRU","departureDate":"01/12/2026","departureDateTo":"28/12/2026","one_for_city":true,"adults":2,"currency":"EUR","locale":"fr","sort":"price"}
 {
  "jsonrpc": "2.0",
  "id": 2,
  "result": {
   "content": [
    {
-    "text": "{\n  \"query\": \"KUL,PEN,LGK,HKT,KBV → BRU on 01/12/2026–28/12/2026, 2 adults [one per city]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 1,\n  \"itineraries\": [\n    {\n      \"id\": \"23651f2b514800003b567413_0|23651f2b514800003b567413_1\",\n      \"price\": 535.0,\n      \"priceFormatted\": \"535 EUR\",\n      \"totalDurationSeconds\": 55800,\n      \"bookingUrl\": \"https://kiwi.com/u/h4ycuq4\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 0\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-21T21:00:00\",\n        \"arrivalTime\": \"2026-12-22T06:30:00\",\n        \"durationSeconds\": 55800,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-21T21:00:00\",\n            \"arrivalTime\": \"2026-12-22T00:35:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY413\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-22T02:15:00\",\n            \"arrivalTime\": \"2026-12-22T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 2076,\n  \"error\": null\n}",
+    "text": "{\n  \"query\": \"KUL,PEN,LGK,HKT,KBV → BRU on 01/12/2026–28/12/2026, 2 adults [one per city]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 1,\n  \"itineraries\": [\n    {\n      \"id\": \"23651f2b514d0000c08e8ffd_0|23651f2b514d0000c08e8ffd_1\",\n      \"price\": 535.0,\n      \"priceFormatted\": \"535 EUR\",\n      \"totalDurationSeconds\": 57300,\n      \"bookingUrl\": \"https://kiwi.com/u/h3n98v\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 0\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-26T09:05:00\",\n        \"arrivalTime\": \"2026-12-26T19:00:00\",\n        \"durationSeconds\": 57300,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-26T09:05:00\",\n            \"arrivalTime\": \"2026-12-26T12:35:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY411\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-26T14:25:00\",\n            \"arrivalTime\": \"2026-12-26T19:00:00\",\n            \"durationSeconds\": 27300,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY55\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 2067,\n  \"error\": null\n}",
     "type": "text"
    }
   ],
@@ -21,11 +21,11 @@
    "resultsCount": 1,
    "itineraries": [
     {
-     "id": "23651f2b514800003b567413_0|23651f2b514800003b567413_1",
+     "id": "23651f2b514d0000c08e8ffd_0|23651f2b514d0000c08e8ffd_1",
      "price": 535.0,
      "priceFormatted": "535 EUR",
-     "totalDurationSeconds": 55800,
-     "bookingUrl": "https://kiwi.com/u/h4ycuq4",
+     "totalDurationSeconds": 57300,
+     "bookingUrl": "https://kiwi.com/u/h3n98v",
      "imageId": "brussels_be",
      "baggage": {
       "personalItem": 0,
@@ -35,9 +35,9 @@
      "outbound": {
       "from": "HKT",
       "to": "BRU",
-      "departureTime": "2026-12-21T21:00:00",
-      "arrivalTime": "2026-12-22T06:30:00",
-      "durationSeconds": 55800,
+      "departureTime": "2026-12-26T09:05:00",
+      "arrivalTime": "2026-12-26T19:00:00",
+      "durationSeconds": 57300,
       "stops": 1,
       "route": [
        "HKT",
@@ -55,12 +55,12 @@
         "toName": "Aéroport international Zayed",
         "fromCountry": "Thaïlande",
         "toCountry": "Émirats arabes unis",
-        "departureTime": "2026-12-21T21:00:00",
-        "arrivalTime": "2026-12-22T00:35:00",
-        "durationSeconds": 23700,
+        "departureTime": "2026-12-26T09:05:00",
+        "arrivalTime": "2026-12-26T12:35:00",
+        "durationSeconds": 23400,
         "carrier": "EY",
         "carrierName": "Etihad Airways",
-        "flightNumber": "EY413",
+        "flightNumber": "EY411",
         "cabinClass": "Economy"
        },
        {
@@ -72,12 +72,12 @@
         "toName": "Aéroport de Bruxelles-National",
         "fromCountry": "Émirats arabes unis",
         "toCountry": "Belgique",
-        "departureTime": "2026-12-22T02:15:00",
-        "arrivalTime": "2026-12-22T06:30:00",
-        "durationSeconds": 26100,
+        "departureTime": "2026-12-26T14:25:00",
+        "arrivalTime": "2026-12-26T19:00:00",
+        "durationSeconds": 27300,
         "carrier": "EY",
         "carrierName": "Etihad Airways",
-        "flightNumber": "EY57",
+        "flightNumber": "EY55",
         "cabinClass": "Economy"
        }
       ]
@@ -85,7 +85,7 @@
      "inbound": null
     }
    ],
-   "searchTimeMs": 2076,
+   "searchTimeMs": 2067,
    "error": null
   }
  }
