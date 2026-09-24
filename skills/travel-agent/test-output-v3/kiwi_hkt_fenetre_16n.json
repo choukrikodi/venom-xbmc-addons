@@ -1,11 +1,11 @@
-=== 2026-09-24T09:48:37+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "BRU", "flyTo": "HKT", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false, "one_for_city": false, "departureDate": "15/11/2026", "departureDateTo": "10/12/2026", "nights_in_dst_from": 16, "nights_in_dst_to": 16}
+=== 2026-09-24T11:43:51+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "BRU", "flyTo": "HKT", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false, "one_for_city": false, "departureDate": "15/11/2026", "departureDateTo": "10/12/2026", "nights_in_dst_from": 16, "nights_in_dst_to": 16}
 {
  "jsonrpc": "2.0",
  "id": 2,
  "result": {
   "content": [
    {
-    "text": "{\n  \"query\": \"BRU → HKT on 15/11/2026–10/12/2026, 2 adults, 16–16 nights [≤2 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"1f2b23655136514702b30fa4_0|1f2b23655136514702b30fa4_1|1f2b23655136514702b30fa4_2|1f2b23655136514702b30fa4_3\",\n      \"price\": 1096.0,\n      \"priceFormatted\": \"1096 EUR\",\n      \"totalDurationSeconds\": 131700,\n      \"bookingUrl\": \"https://kiwi.com/u/fs29nb\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-03T12:25:00\",\n        \"arrivalTime\": \"2026-12-04T12:45:00\",\n        \"durationSeconds\": 66000,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"TFU\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"TFU\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Chengdu\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Chengdu Tianfu International Airport\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-03T12:25:00\",\n            \"arrivalTime\": \"2026-12-04T05:55:00\",\n            \"durationSeconds\": 37800,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA464\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"TFU\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Chengdu\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Chengdu Tianfu International Airport\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-04T09:45:00\",\n            \"arrivalTime\": \"2026-12-04T12:45:00\",\n            \"durationSeconds\": 14400,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA413\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-20T18:25:00\",\n        \"arrivalTime\": \"2026-12-21T06:40:00\",\n        \"durationSeconds\": 65700,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"PEK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-20T18:25:00\",\n            \"arrivalTime\": \"2026-12-21T00:50:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA822\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-21T02:30:00\",\n            \"arrivalTime\": \"2026-12-21T06:40:00\",\n            \"durationSeconds\": 40200,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA963\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b236551310000ac1dffe4_0|1f2b236551310000ac1dffe4_1|23651f2b514200007106fa21_0|23651f2b514200007106fa21_1\",\n      \"price\": 1366.708208,\n      \"priceFormatted\": \"1367 EUR\",\n      \"totalDurationSeconds\": 149700,\n      \"bookingUrl\": \"https://kiwi.com/u/xnpvk2\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-28T11:20:00\",\n        \"arrivalTime\": \"2026-11-29T13:55:00\",\n        \"durationSeconds\": 74100,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"SIN\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-11-28T11:20:00\",\n            \"arrivalTime\": \"2026-11-29T06:55:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"SQ\",\n            \"carrierName\": \"Singapore Airlines\",\n            \"flightNumber\": \"SQ303\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-29T12:50:00\",\n            \"arrivalTime\": \"2026-11-29T13:55:00\",\n            \"durationSeconds\": 7500,\n            \"carrier\": \"SQ\",\n            \"carrierName\": \"Singapore Airlines\",\n            \"flightNumber\": \"SQ732\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T15:30:00\",\n        \"arrivalTime\": \"2026-12-16T06:30:00\",\n        \"durationSeconds\": 75600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-15T15:30:00\",\n            \"arrivalTime\": \"2026-12-15T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T02:15:00\",\n            \"arrivalTime\": \"2026-12-16T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b23655124513556c3d602_0|1f2b23655124513556c3d602_1|1f2b23655124513556c3d602_2|1f2b23655124513556c3d602_3\",\n      \"price\": 1373.0,\n      \"priceFormatted\": \"1373 EUR\",\n      \"totalDurationSeconds\": 139800,\n      \"bookingUrl\": \"https://kiwi.com/u/b9mbxf\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-15T12:00:00\",\n        \"arrivalTime\": \"2026-11-16T14:35:00\",\n        \"durationSeconds\": 74100,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"PEK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-11-15T12:00:00\",\n            \"arrivalTime\": \"2026-11-16T04:45:00\",\n            \"durationSeconds\": 35100,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA964\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-16T09:15:00\",\n            \"arrivalTime\": \"2026-11-16T14:35:00\",\n            \"durationSeconds\": 22800,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA691\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-02T18:25:00\",\n        \"arrivalTime\": \"2026-12-03T06:40:00\",\n        \"durationSeconds\": 65700,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"PEK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-02T18:25:00\",\n            \"arrivalTime\": \"2026-12-03T00:50:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA822\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-03T02:30:00\",\n            \"arrivalTime\": \"2026-12-03T06:40:00\",\n            \"durationSeconds\": 40200,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA963\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b236551325143515f5029_0|1f2b236551325143515f5029_1|1f2b236551325143515f5029_2|1f2b236551325143515f5029_3\",\n      \"price\": 1380.274956,\n      \"priceFormatted\": \"1380 EUR\",\n      \"totalDurationSeconds\": 147900,\n      \"bookingUrl\": \"https://kiwi.com/u/tg3n2k\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T09:55:00\",\n        \"arrivalTime\": \"2026-11-30T12:00:00\",\n        \"durationSeconds\": 72300,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T09:55:00\",\n            \"arrivalTime\": \"2026-11-29T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T02:25:00\",\n            \"arrivalTime\": \"2026-11-30T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-16T15:30:00\",\n        \"arrivalTime\": \"2026-12-17T06:30:00\",\n        \"durationSeconds\": 75600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T15:30:00\",\n            \"arrivalTime\": \"2026-12-16T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T02:15:00\",\n            \"arrivalTime\": \"2026-12-17T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2365512b513c4824a095_0|1f2b2365512b513c4824a095_1|1f2b2365512b513c4824a095_2|1f2b2365512b513c4824a095_3\",\n      \"price\": 1396.274956,\n      \"priceFormatted\": \"1396 EUR\",\n      \"totalDurationSeconds\": 147900,\n      \"bookingUrl\": \"https://kiwi.com/u/425c2n\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-22T09:55:00\",\n        \"arrivalTime\": \"2026-11-23T12:00:00\",\n        \"durationSeconds\": 72300,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-22T09:55:00\",\n            \"arrivalTime\": \"2026-11-22T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T02:25:00\",\n            \"arrivalTime\": \"2026-11-23T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-09T15:30:00\",\n        \"arrivalTime\": \"2026-12-10T06:30:00\",\n        \"durationSeconds\": 75600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-09T15:30:00\",\n            \"arrivalTime\": \"2026-12-09T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-10T02:15:00\",\n            \"arrivalTime\": \"2026-12-10T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2365513a514bda5a5e93_0|1f2b2365513a514bda5a5e93_1|1f2b2365513a514bda5a5e93_2|1f2b2365513a514bda5a5e93_3\",\n      \"price\": 1436.274956,\n      \"priceFormatted\": \"1436 EUR\",\n      \"totalDurationSeconds\": 108900,\n      \"bookingUrl\": \"https://kiwi.com/u/85xmsw\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-07T09:55:00\",\n        \"arrivalTime\": \"2026-12-08T06:15:00\",\n        \"durationSeconds\": 51600,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-07T09:55:00\",\n            \"arrivalTime\": \"2026-12-07T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T21:00:00\",\n            \"arrivalTime\": \"2026-12-08T06:15:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY410\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-24T09:05:00\",\n        \"arrivalTime\": \"2026-12-24T19:00:00\",\n        \"durationSeconds\": 57300,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-24T09:05:00\",\n            \"arrivalTime\": \"2026-12-24T12:35:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY411\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-24T14:25:00\",\n            \"arrivalTime\": \"2026-12-24T19:00:00\",\n            \"durationSeconds\": 27300,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY55\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b236551245135b19553fa_0|1f2b236551245135b19553fa_1|1f2b236551245135b19553fa_2|1f2b236551245135b19553fa_3\",\n      \"price\": 1436.274956,\n      \"priceFormatted\": \"1436 EUR\",\n      \"totalDurationSeconds\": 147900,\n      \"bookingUrl\": \"https://kiwi.com/u/w4bp5cv\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-15T09:55:00\",\n        \"arrivalTime\": \"2026-11-16T12:00:00\",\n        \"durationSeconds\": 72300,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-15T09:55:00\",\n            \"arrivalTime\": \"2026-11-15T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-16T02:25:00\",\n            \"arrivalTime\": \"2026-11-16T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-02T15:30:00\",\n        \"arrivalTime\": \"2026-12-03T06:30:00\",\n        \"durationSeconds\": 75600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-02T15:30:00\",\n            \"arrivalTime\": \"2026-12-02T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-03T02:15:00\",\n            \"arrivalTime\": \"2026-12-03T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b236551245135a549829f_0|1f2b236551245135a549829f_1|1f2b236551245135a549829f_2|1f2b236551245135a549829f_3\",\n      \"price\": 1445.274956,\n      \"priceFormatted\": \"1445 EUR\",\n      \"totalDurationSeconds\": 127200,\n      \"bookingUrl\": \"https://kiwi.com/u/3vsv8q\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-15T09:55:00\",\n        \"arrivalTime\": \"2026-11-16T06:15:00\",\n        \"durationSeconds\": 51600,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-15T09:55:00\",\n            \"arrivalTime\": \"2026-11-15T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-15T21:00:00\",\n            \"arrivalTime\": \"2026-11-16T06:15:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY410\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-02T15:30:00\",\n        \"arrivalTime\": \"2026-12-03T06:30:00\",\n        \"durationSeconds\": 75600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-02T15:30:00\",\n            \"arrivalTime\": \"2026-12-02T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-03T02:15:00\",\n            \"arrivalTime\": \"2026-12-03T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2365512a0000798f6728_0|1f2b2365512a0000798f6728_1|23651f2b513b0000cdef5502_0|23651f2b513b0000cdef5502_1\",\n      \"price\": 1462.0,\n      \"priceFormatted\": \"1462 EUR\",\n      \"totalDurationSeconds\": 141300,\n      \"bookingUrl\": \"https://kiwi.com/u/nfs4bx\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-21T11:20:00\",\n        \"arrivalTime\": \"2026-11-22T13:55:00\",\n        \"durationSeconds\": 74100,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"SIN\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-11-21T11:20:00\",\n            \"arrivalTime\": \"2026-11-22T06:55:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"SQ\",\n            \"carrierName\": \"Singapore Airlines\",\n            \"flightNumber\": \"SQ303\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-22T12:50:00\",\n            \"arrivalTime\": \"2026-11-22T13:55:00\",\n            \"durationSeconds\": 7500,\n            \"carrier\": \"SQ\",\n            \"carrierName\": \"Singapore Airlines\",\n            \"flightNumber\": \"SQ732\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-08T18:15:00\",\n        \"arrivalTime\": \"2026-12-09T06:55:00\",\n        \"durationSeconds\": 67200,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"PVG\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"PVG\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Shanghai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Shanghai-Pudong\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-08T18:15:00\",\n            \"arrivalTime\": \"2026-12-09T00:05:00\",\n            \"durationSeconds\": 17400,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1324\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PVG\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Shanghai\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Shanghai-Pudong\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-09T01:35:00\",\n            \"arrivalTime\": \"2026-12-09T06:55:00\",\n            \"durationSeconds\": 44400,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1659\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b236551345145f67b47af_0|1f2b236551345145f67b47af_1|1f2b236551345145f67b47af_2|1f2b236551345145f67b47af_3\",\n      \"price\": 1462.274956,\n      \"priceFormatted\": \"1462 EUR\",\n      \"totalDurationSeconds\": 147900,\n      \"bookingUrl\": \"https://kiwi.com/u/d927kx\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-01T09:55:00\",\n        \"arrivalTime\": \"2026-12-02T12:00:00\",\n        \"durationSeconds\": 72300,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-01T09:55:00\",\n            \"arrivalTime\": \"2026-12-01T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-02T02:25:00\",\n            \"arrivalTime\": \"2026-12-02T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T15:30:00\",\n        \"arrivalTime\": \"2026-12-19T06:30:00\",\n        \"durationSeconds\": 75600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-18T15:30:00\",\n            \"arrivalTime\": \"2026-12-18T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-19T02:15:00\",\n            \"arrivalTime\": \"2026-12-19T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2365513a514bb3176b88_0|1f2b2365513a514bb3176b88_1|1f2b2365513a514bb3176b88_2|1f2b2365513a514bb3176b88_3\",\n      \"price\": 1464.274956,\n      \"priceFormatted\": \"1464 EUR\",\n      \"totalDurationSeconds\": 107400,\n      \"bookingUrl\": \"https://kiwi.com/u/zsgjp3x\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-07T09:55:00\",\n        \"arrivalTime\": \"2026-12-08T06:15:00\",\n        \"durationSeconds\": 51600,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-07T09:55:00\",\n            \"arrivalTime\": \"2026-12-07T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T21:00:00\",\n            \"arrivalTime\": \"2026-12-08T06:15:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY410\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-24T21:00:00\",\n        \"arrivalTime\": \"2026-12-25T06:30:00\",\n        \"durationSeconds\": 55800,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-24T21:00:00\",\n            \"arrivalTime\": \"2026-12-25T00:35:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY413\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-25T02:15:00\",\n            \"arrivalTime\": \"2026-12-25T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b23655129513a4fca65c3_0|1f2b23655129513a4fca65c3_1|1f2b23655129513a4fca65c3_2|1f2b23655129513a4fca65c3_3\",\n      \"price\": 1509.274956,\n      \"priceFormatted\": \"1509 EUR\",\n      \"totalDurationSeconds\": 128100,\n      \"bookingUrl\": \"https://kiwi.com/u/c2myt6\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-20T09:55:00\",\n        \"arrivalTime\": \"2026-11-21T12:00:00\",\n        \"durationSeconds\": 72300,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-20T09:55:00\",\n            \"arrivalTime\": \"2026-11-20T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-21T02:25:00\",\n            \"arrivalTime\": \"2026-11-21T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-07T21:00:00\",\n        \"arrivalTime\": \"2026-12-08T06:30:00\",\n        \"durationSeconds\": 55800,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-07T21:00:00\",\n            \"arrivalTime\": \"2026-12-08T00:35:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY413\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-08T02:15:00\",\n            \"arrivalTime\": \"2026-12-08T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2365513c514d573229a3_0|1f2b2365513c514d573229a3_1|1f2b2365513c514d573229a3_2|1f2b2365513c514d573229a3_3\",\n      \"price\": 1511.274956,\n      \"priceFormatted\": \"1511 EUR\",\n      \"totalDurationSeconds\": 129600,\n      \"bookingUrl\": \"https://kiwi.com/u/8xhpmw\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-09T09:55:00\",\n        \"arrivalTime\": \"2026-12-10T12:00:00\",\n        \"durationSeconds\": 72300,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-09T09:55:00\",\n            \"arrivalTime\": \"2026-12-09T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-10T02:25:00\",\n            \"arrivalTime\": \"2026-12-10T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-26T09:05:00\",\n        \"arrivalTime\": \"2026-12-26T19:00:00\",\n        \"durationSeconds\": 57300,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-26T09:05:00\",\n            \"arrivalTime\": \"2026-12-26T12:35:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY411\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-26T14:25:00\",\n            \"arrivalTime\": \"2026-12-26T19:00:00\",\n            \"durationSeconds\": 27300,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY55\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2365513c514df9158db1_0|1f2b2365513c514df9158db1_1|1f2b2365513c514df9158db1_2|1f2b2365513c514df9158db1_3\",\n      \"price\": 1548.274956,\n      \"priceFormatted\": \"1548 EUR\",\n      \"totalDurationSeconds\": 129600,\n      \"bookingUrl\": \"https://kiwi.com/u/5v6d6n\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-09T09:55:00\",\n        \"arrivalTime\": \"2026-12-10T12:00:00\",\n        \"durationSeconds\": 72300,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-09T09:55:00\",\n            \"arrivalTime\": \"2026-12-09T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-10T02:25:00\",\n            \"arrivalTime\": \"2026-12-10T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-26T20:35:00\",\n        \"arrivalTime\": \"2026-12-27T06:30:00\",\n        \"durationSeconds\": 57300,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-26T20:35:00\",\n            \"arrivalTime\": \"2026-12-27T00:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY419\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-27T02:15:00\",\n            \"arrivalTime\": \"2026-12-27T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b23655132514351353256_0|1f2b23655132514351353256_1|1f2b23655132514351353256_2|1f2b23655132514351353256_3\",\n      \"price\": 1575.274956,\n      \"priceFormatted\": \"1575 EUR\",\n      \"totalDurationSeconds\": 127200,\n      \"bookingUrl\": \"https://kiwi.com/u/u23hb9\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T09:55:00\",\n        \"arrivalTime\": \"2026-11-30T06:15:00\",\n        \"durationSeconds\": 51600,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T09:55:00\",\n            \"arrivalTime\": \"2026-11-29T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-29T21:00:00\",\n            \"arrivalTime\": \"2026-11-30T06:15:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY410\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-16T15:30:00\",\n        \"arrivalTime\": \"2026-12-17T06:30:00\",\n        \"durationSeconds\": 75600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T15:30:00\",\n            \"arrivalTime\": \"2026-12-16T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T02:15:00\",\n            \"arrivalTime\": \"2026-12-17T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    }\n  ],\n  \"searchTimeMs\": 1016,\n  \"error\": null\n}",
+    "text": "{\n  \"query\": \"BRU → HKT on 15/11/2026–10/12/2026, 2 adults, 16–16 nights [≤2 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"1f2b2365513251433cf14117_0|1f2b2365513251433cf14117_1|1f2b2365513251433cf14117_2|1f2b2365513251433cf14117_3\",\n      \"price\": 1018.0,\n      \"priceFormatted\": \"1018 EUR\",\n      \"totalDurationSeconds\": 146400,\n      \"bookingUrl\": \"https://kiwi.com/u/3w96d7\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T12:25:00\",\n        \"arrivalTime\": \"2026-11-30T12:45:00\",\n        \"durationSeconds\": 66000,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"TFU\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"TFU\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Chengdu\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Chengdu Tianfu International Airport\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-11-29T12:25:00\",\n            \"arrivalTime\": \"2026-11-30T05:55:00\",\n            \"durationSeconds\": 37800,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA464\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"TFU\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Chengdu\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Chengdu Tianfu International Airport\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T09:45:00\",\n            \"arrivalTime\": \"2026-11-30T12:45:00\",\n            \"durationSeconds\": 14400,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA413\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-16T14:00:00\",\n        \"arrivalTime\": \"2026-12-17T06:20:00\",\n        \"durationSeconds\": 80400,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"TFU\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"TFU\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chengdu\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Chengdu Tianfu International Airport\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-16T14:00:00\",\n            \"arrivalTime\": \"2026-12-16T19:05:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA414\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"TFU\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Chengdu\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Chengdu Tianfu International Airport\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T01:55:00\",\n            \"arrivalTime\": \"2026-12-17T06:20:00\",\n            \"durationSeconds\": 41100,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA463\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b236551245135b8e2e971_0|1f2b236551245135b8e2e971_1|1f2b236551245135b8e2e971_2|1f2b236551245135b8e2e971_3\",\n      \"price\": 1096.0,\n      \"priceFormatted\": \"1096 EUR\",\n      \"totalDurationSeconds\": 131700,\n      \"bookingUrl\": \"https://kiwi.com/u/d66qtb\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-15T12:25:00\",\n        \"arrivalTime\": \"2026-11-16T12:45:00\",\n        \"durationSeconds\": 66000,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"TFU\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"TFU\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Chengdu\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Chengdu Tianfu International Airport\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-11-15T12:25:00\",\n            \"arrivalTime\": \"2026-11-16T05:55:00\",\n            \"durationSeconds\": 37800,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA464\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"TFU\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Chengdu\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Chengdu Tianfu International Airport\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-16T09:45:00\",\n            \"arrivalTime\": \"2026-11-16T12:45:00\",\n            \"durationSeconds\": 14400,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA413\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-02T18:25:00\",\n        \"arrivalTime\": \"2026-12-03T06:40:00\",\n        \"durationSeconds\": 65700,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"PEK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-02T18:25:00\",\n            \"arrivalTime\": \"2026-12-03T00:50:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA822\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-03T02:30:00\",\n            \"arrivalTime\": \"2026-12-03T06:40:00\",\n            \"durationSeconds\": 40200,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA963\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b236551320000872bf21d_0|1f2b236551320000872bf21d_1|23651f2b51430000fa58d34c_0|23651f2b51430000fa58d34c_1\",\n      \"price\": 1168.708208,\n      \"priceFormatted\": \"1169 EUR\",\n      \"totalDurationSeconds\": 141600,\n      \"bookingUrl\": \"https://kiwi.com/u/qj285u\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T12:25:00\",\n        \"arrivalTime\": \"2026-11-30T12:45:00\",\n        \"durationSeconds\": 66000,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"TFU\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"TFU\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Chengdu\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Chengdu Tianfu International Airport\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-11-29T12:25:00\",\n            \"arrivalTime\": \"2026-11-30T05:55:00\",\n            \"durationSeconds\": 37800,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA464\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"TFU\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Chengdu\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Chengdu Tianfu International Airport\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T09:45:00\",\n            \"arrivalTime\": \"2026-11-30T12:45:00\",\n            \"durationSeconds\": 14400,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA413\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-16T15:30:00\",\n        \"arrivalTime\": \"2026-12-17T06:30:00\",\n        \"durationSeconds\": 75600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T15:30:00\",\n            \"arrivalTime\": \"2026-12-16T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T02:15:00\",\n            \"arrivalTime\": \"2026-12-17T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b236551245135fac415eb_0|1f2b236551245135fac415eb_1|1f2b236551245135fac415eb_2|1f2b236551245135fac415eb_3\",\n      \"price\": 1319.0,\n      \"priceFormatted\": \"1319 EUR\",\n      \"totalDurationSeconds\": 154500,\n      \"bookingUrl\": \"https://kiwi.com/u/8dp57f\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-15T12:00:00\",\n        \"arrivalTime\": \"2026-11-16T14:35:00\",\n        \"durationSeconds\": 74100,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"PEK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-11-15T12:00:00\",\n            \"arrivalTime\": \"2026-11-16T04:45:00\",\n            \"durationSeconds\": 35100,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA964\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-16T09:15:00\",\n            \"arrivalTime\": \"2026-11-16T14:35:00\",\n            \"durationSeconds\": 22800,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA691\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-02T14:00:00\",\n        \"arrivalTime\": \"2026-12-03T06:20:00\",\n        \"durationSeconds\": 80400,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"TFU\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"TFU\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chengdu\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Chengdu Tianfu International Airport\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-02T14:00:00\",\n            \"arrivalTime\": \"2026-12-02T19:05:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA414\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"TFU\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Chengdu\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Chengdu Tianfu International Airport\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-03T01:55:00\",\n            \"arrivalTime\": \"2026-12-03T06:20:00\",\n            \"durationSeconds\": 41100,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA463\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b236551310000ac1dffe4_0|1f2b236551310000ac1dffe4_1|23651f2b514200007106fa21_0|23651f2b514200007106fa21_1\",\n      \"price\": 1365.708208,\n      \"priceFormatted\": \"1366 EUR\",\n      \"totalDurationSeconds\": 149700,\n      \"bookingUrl\": \"https://kiwi.com/u/fsgqw5\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-28T11:20:00\",\n        \"arrivalTime\": \"2026-11-29T13:55:00\",\n        \"durationSeconds\": 74100,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"SIN\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-11-28T11:20:00\",\n            \"arrivalTime\": \"2026-11-29T06:55:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"SQ\",\n            \"carrierName\": \"Singapore Airlines\",\n            \"flightNumber\": \"SQ303\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-29T12:50:00\",\n            \"arrivalTime\": \"2026-11-29T13:55:00\",\n            \"durationSeconds\": 7500,\n            \"carrier\": \"SQ\",\n            \"carrierName\": \"Singapore Airlines\",\n            \"flightNumber\": \"SQ732\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T15:30:00\",\n        \"arrivalTime\": \"2026-12-16T06:30:00\",\n        \"durationSeconds\": 75600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-15T15:30:00\",\n            \"arrivalTime\": \"2026-12-15T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T02:15:00\",\n            \"arrivalTime\": \"2026-12-16T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b236551325143515f5029_0|1f2b236551325143515f5029_1|1f2b236551325143515f5029_2|1f2b236551325143515f5029_3\",\n      \"price\": 1380.274956,\n      \"priceFormatted\": \"1380 EUR\",\n      \"totalDurationSeconds\": 147900,\n      \"bookingUrl\": \"https://kiwi.com/u/y6du9p8\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T09:55:00\",\n        \"arrivalTime\": \"2026-11-30T12:00:00\",\n        \"durationSeconds\": 72300,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T09:55:00\",\n            \"arrivalTime\": \"2026-11-29T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T02:25:00\",\n            \"arrivalTime\": \"2026-11-30T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-16T15:30:00\",\n        \"arrivalTime\": \"2026-12-17T06:30:00\",\n        \"durationSeconds\": 75600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T15:30:00\",\n            \"arrivalTime\": \"2026-12-16T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T02:15:00\",\n            \"arrivalTime\": \"2026-12-17T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2365512b513c4824a095_0|1f2b2365512b513c4824a095_1|1f2b2365512b513c4824a095_2|1f2b2365512b513c4824a095_3\",\n      \"price\": 1396.274956,\n      \"priceFormatted\": \"1396 EUR\",\n      \"totalDurationSeconds\": 147900,\n      \"bookingUrl\": \"https://kiwi.com/u/r4z8wr\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-22T09:55:00\",\n        \"arrivalTime\": \"2026-11-23T12:00:00\",\n        \"durationSeconds\": 72300,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-22T09:55:00\",\n            \"arrivalTime\": \"2026-11-22T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T02:25:00\",\n            \"arrivalTime\": \"2026-11-23T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-09T15:30:00\",\n        \"arrivalTime\": \"2026-12-10T06:30:00\",\n        \"durationSeconds\": 75600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-09T15:30:00\",\n            \"arrivalTime\": \"2026-12-09T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-10T02:15:00\",\n            \"arrivalTime\": \"2026-12-10T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2365513a514bda5a5e93_0|1f2b2365513a514bda5a5e93_1|1f2b2365513a514bda5a5e93_2|1f2b2365513a514bda5a5e93_3\",\n      \"price\": 1436.274956,\n      \"priceFormatted\": \"1436 EUR\",\n      \"totalDurationSeconds\": 108900,\n      \"bookingUrl\": \"https://kiwi.com/u/f6d9jk\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-07T09:55:00\",\n        \"arrivalTime\": \"2026-12-08T06:15:00\",\n        \"durationSeconds\": 51600,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-07T09:55:00\",\n            \"arrivalTime\": \"2026-12-07T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T21:00:00\",\n            \"arrivalTime\": \"2026-12-08T06:15:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY410\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-24T09:05:00\",\n        \"arrivalTime\": \"2026-12-24T19:00:00\",\n        \"durationSeconds\": 57300,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-24T09:05:00\",\n            \"arrivalTime\": \"2026-12-24T12:35:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY411\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-24T14:25:00\",\n            \"arrivalTime\": \"2026-12-24T19:00:00\",\n            \"durationSeconds\": 27300,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY55\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b236551245135a549829f_0|1f2b236551245135a549829f_1|1f2b236551245135a549829f_2|1f2b236551245135a549829f_3\",\n      \"price\": 1445.274956,\n      \"priceFormatted\": \"1445 EUR\",\n      \"totalDurationSeconds\": 127200,\n      \"bookingUrl\": \"https://kiwi.com/u/d33vjg\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-15T09:55:00\",\n        \"arrivalTime\": \"2026-11-16T06:15:00\",\n        \"durationSeconds\": 51600,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-15T09:55:00\",\n            \"arrivalTime\": \"2026-11-15T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-15T21:00:00\",\n            \"arrivalTime\": \"2026-11-16T06:15:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY410\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-02T15:30:00\",\n        \"arrivalTime\": \"2026-12-03T06:30:00\",\n        \"durationSeconds\": 75600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-02T15:30:00\",\n            \"arrivalTime\": \"2026-12-02T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-03T02:15:00\",\n            \"arrivalTime\": \"2026-12-03T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2365512a0000798f6728_0|1f2b2365512a0000798f6728_1|23651f2b513b0000cdef5502_0|23651f2b513b0000cdef5502_1\",\n      \"price\": 1462.0,\n      \"priceFormatted\": \"1462 EUR\",\n      \"totalDurationSeconds\": 141300,\n      \"bookingUrl\": \"https://kiwi.com/u/uqzfv2\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-21T11:20:00\",\n        \"arrivalTime\": \"2026-11-22T13:55:00\",\n        \"durationSeconds\": 74100,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"SIN\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"SIN\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Singapour\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport de Singapour-Changi\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Singapour\",\n            \"departureTime\": \"2026-11-21T11:20:00\",\n            \"arrivalTime\": \"2026-11-22T06:55:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"SQ\",\n            \"carrierName\": \"Singapore Airlines\",\n            \"flightNumber\": \"SQ303\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"SIN\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Singapour\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Singapour-Changi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Singapour\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-22T12:50:00\",\n            \"arrivalTime\": \"2026-11-22T13:55:00\",\n            \"durationSeconds\": 7500,\n            \"carrier\": \"SQ\",\n            \"carrierName\": \"Singapore Airlines\",\n            \"flightNumber\": \"SQ732\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-08T18:15:00\",\n        \"arrivalTime\": \"2026-12-09T06:55:00\",\n        \"durationSeconds\": 67200,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"PVG\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"PVG\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Shanghai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Shanghai-Pudong\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-08T18:15:00\",\n            \"arrivalTime\": \"2026-12-09T00:05:00\",\n            \"durationSeconds\": 17400,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1324\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PVG\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Shanghai\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Shanghai-Pudong\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-09T01:35:00\",\n            \"arrivalTime\": \"2026-12-09T06:55:00\",\n            \"durationSeconds\": 44400,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1659\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2365513a514bb3176b88_0|1f2b2365513a514bb3176b88_1|1f2b2365513a514bb3176b88_2|1f2b2365513a514bb3176b88_3\",\n      \"price\": 1464.274956,\n      \"priceFormatted\": \"1464 EUR\",\n      \"totalDurationSeconds\": 107400,\n      \"bookingUrl\": \"https://kiwi.com/u/zh2kkb8\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-07T09:55:00\",\n        \"arrivalTime\": \"2026-12-08T06:15:00\",\n        \"durationSeconds\": 51600,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-07T09:55:00\",\n            \"arrivalTime\": \"2026-12-07T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T21:00:00\",\n            \"arrivalTime\": \"2026-12-08T06:15:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY410\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-24T21:00:00\",\n        \"arrivalTime\": \"2026-12-25T06:30:00\",\n        \"durationSeconds\": 55800,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-24T21:00:00\",\n            \"arrivalTime\": \"2026-12-25T00:35:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY413\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-25T02:15:00\",\n            \"arrivalTime\": \"2026-12-25T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b23655129513a4fca65c3_0|1f2b23655129513a4fca65c3_1|1f2b23655129513a4fca65c3_2|1f2b23655129513a4fca65c3_3\",\n      \"price\": 1509.274956,\n      \"priceFormatted\": \"1509 EUR\",\n      \"totalDurationSeconds\": 128100,\n      \"bookingUrl\": \"https://kiwi.com/u/vst9mk\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-20T09:55:00\",\n        \"arrivalTime\": \"2026-11-21T12:00:00\",\n        \"durationSeconds\": 72300,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-20T09:55:00\",\n            \"arrivalTime\": \"2026-11-20T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-21T02:25:00\",\n            \"arrivalTime\": \"2026-11-21T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-07T21:00:00\",\n        \"arrivalTime\": \"2026-12-08T06:30:00\",\n        \"durationSeconds\": 55800,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-07T21:00:00\",\n            \"arrivalTime\": \"2026-12-08T00:35:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY413\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-08T02:15:00\",\n            \"arrivalTime\": \"2026-12-08T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2365513c514d573229a3_0|1f2b2365513c514d573229a3_1|1f2b2365513c514d573229a3_2|1f2b2365513c514d573229a3_3\",\n      \"price\": 1511.274956,\n      \"priceFormatted\": \"1511 EUR\",\n      \"totalDurationSeconds\": 129600,\n      \"bookingUrl\": \"https://kiwi.com/u/db9x2z\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-09T09:55:00\",\n        \"arrivalTime\": \"2026-12-10T12:00:00\",\n        \"durationSeconds\": 72300,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-09T09:55:00\",\n            \"arrivalTime\": \"2026-12-09T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-10T02:25:00\",\n            \"arrivalTime\": \"2026-12-10T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-26T09:05:00\",\n        \"arrivalTime\": \"2026-12-26T19:00:00\",\n        \"durationSeconds\": 57300,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-26T09:05:00\",\n            \"arrivalTime\": \"2026-12-26T12:35:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY411\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-26T14:25:00\",\n            \"arrivalTime\": \"2026-12-26T19:00:00\",\n            \"durationSeconds\": 27300,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY55\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2365513c514df9158db1_0|1f2b2365513c514df9158db1_1|1f2b2365513c514df9158db1_2|1f2b2365513c514df9158db1_3\",\n      \"price\": 1548.274956,\n      \"priceFormatted\": \"1548 EUR\",\n      \"totalDurationSeconds\": 129600,\n      \"bookingUrl\": \"https://kiwi.com/u/zkmsj4\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-09T09:55:00\",\n        \"arrivalTime\": \"2026-12-10T12:00:00\",\n        \"durationSeconds\": 72300,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-09T09:55:00\",\n            \"arrivalTime\": \"2026-12-09T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-10T02:25:00\",\n            \"arrivalTime\": \"2026-12-10T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-26T20:35:00\",\n        \"arrivalTime\": \"2026-12-27T06:30:00\",\n        \"durationSeconds\": 57300,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-26T20:35:00\",\n            \"arrivalTime\": \"2026-12-27T00:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY419\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-27T02:15:00\",\n            \"arrivalTime\": \"2026-12-27T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b23655132514351353256_0|1f2b23655132514351353256_1|1f2b23655132514351353256_2|1f2b23655132514351353256_3\",\n      \"price\": 1575.274956,\n      \"priceFormatted\": \"1575 EUR\",\n      \"totalDurationSeconds\": 127200,\n      \"bookingUrl\": \"https://kiwi.com/u/6v4sc3\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T09:55:00\",\n        \"arrivalTime\": \"2026-11-30T06:15:00\",\n        \"durationSeconds\": 51600,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T09:55:00\",\n            \"arrivalTime\": \"2026-11-29T19:30:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY58\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-29T21:00:00\",\n            \"arrivalTime\": \"2026-11-30T06:15:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY410\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-16T15:30:00\",\n        \"arrivalTime\": \"2026-12-17T06:30:00\",\n        \"durationSeconds\": 75600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T15:30:00\",\n            \"arrivalTime\": \"2026-12-16T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-17T02:15:00\",\n            \"arrivalTime\": \"2026-12-17T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    }\n  ],\n  \"searchTimeMs\": 660,\n  \"error\": null\n}",
     "type": "text"
    }
   ],
@@ -21,11 +21,11 @@
    "resultsCount": 15,
    "itineraries": [
     {
-     "id": "1f2b23655136514702b30fa4_0|1f2b23655136514702b30fa4_1|1f2b23655136514702b30fa4_2|1f2b23655136514702b30fa4_3",
-     "price": 1096.0,
-     "priceFormatted": "1096 EUR",
-     "totalDurationSeconds": 131700,
-     "bookingUrl": "https://kiwi.com/u/fs29nb",
+     "id": "1f2b2365513251433cf14117_0|1f2b2365513251433cf14117_1|1f2b2365513251433cf14117_2|1f2b2365513251433cf14117_3",
+     "price": 1018.0,
+     "priceFormatted": "1018 EUR",
+     "totalDurationSeconds": 146400,
+     "bookingUrl": "https://kiwi.com/u/3w96d7",
      "imageId": "phuket-city_th",
      "baggage": {
       "personalItem": 2,
@@ -35,8 +35,8 @@
      "outbound": {
       "from": "BRU",
       "to": "HKT",
-      "departureTime": "2026-12-03T12:25:00",
-      "arrivalTime": "2026-12-04T12:45:00",
+      "departureTime": "2026-11-29T12:25:00",
+      "arrivalTime": "2026-11-30T12:45:00",
       "durationSeconds": 66000,
       "stops": 1,
       "route": [
@@ -55,8 +55,8 @@
         "toName": "Chengdu Tianfu International Airport",
         "fromCountry": "Belgique",
         "toCountry": "Chine",
-        "departureTime": "2026-12-03T12:25:00",
-        "arrivalTime": "2026-12-04T05:55:00",
+        "departureTime": "2026-11-29T12:25:00",
+        "arrivalTime": "2026-11-30T05:55:00",
         "durationSeconds": 37800,
         "carrier": "CA",
         "carrierName": "Air China",
@@ -72,8 +72,8 @@
         "toName": "Aéroport international de Phuket",
         "fromCountry": "Chine",
         "toCountry": "Thaïlande",
-        "departureTime": "2026-12-04T09:45:00",
-        "arrivalTime": "2026-12-04T12:45:00",
+        "departureTime": "2026-11-30T09:45:00",
+        "arrivalTime": "2026-11-30T12:45:00",
         "durationSeconds": 14400,
         "carrier": "CA",
         "carrierName": "Air China",
@@ -85,8 +85,121 @@
      "inbound": {
       "from": "HKT",
       "to": "BRU",
-      "departureTime": "2026-12-20T18:25:00",
-      "arrivalTime": "2026-12-21T06:40:00",
+      "departureTime": "2026-12-16T14:00:00",
+      "arrivalTime": "2026-12-17T06:20:00",
+      "durationSeconds": 80400,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "TFU",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "TFU",
+        "fromCity": "Phuket",
+        "toCity": "Chengdu",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Chengdu Tianfu International Airport",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Chine",
+        "departureTime": "2026-12-16T14:00:00",
+        "arrivalTime": "2026-12-16T19:05:00",
+        "durationSeconds": 14700,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA414",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "TFU",
+        "to": "BRU",
+        "fromCity": "Chengdu",
+        "toCity": "Bruxelles",
+        "fromName": "Chengdu Tianfu International Airport",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Chine",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-17T01:55:00",
+        "arrivalTime": "2026-12-17T06:20:00",
+        "durationSeconds": 41100,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA463",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b236551245135b8e2e971_0|1f2b236551245135b8e2e971_1|1f2b236551245135b8e2e971_2|1f2b236551245135b8e2e971_3",
+     "price": 1096.0,
+     "priceFormatted": "1096 EUR",
+     "totalDurationSeconds": 131700,
+     "bookingUrl": "https://kiwi.com/u/d66qtb",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "HKT",
+      "departureTime": "2026-11-15T12:25:00",
+      "arrivalTime": "2026-11-16T12:45:00",
+      "durationSeconds": 66000,
+      "stops": 1,
+      "route": [
+       "BRU",
+       "TFU",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "TFU",
+        "fromCity": "Bruxelles",
+        "toCity": "Chengdu",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Chengdu Tianfu International Airport",
+        "fromCountry": "Belgique",
+        "toCountry": "Chine",
+        "departureTime": "2026-11-15T12:25:00",
+        "arrivalTime": "2026-11-16T05:55:00",
+        "durationSeconds": 37800,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA464",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "TFU",
+        "to": "HKT",
+        "fromCity": "Chengdu",
+        "toCity": "Phuket",
+        "fromName": "Chengdu Tianfu International Airport",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Chine",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-16T09:45:00",
+        "arrivalTime": "2026-11-16T12:45:00",
+        "durationSeconds": 14400,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA413",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-02T18:25:00",
+      "arrivalTime": "2026-12-03T06:40:00",
       "durationSeconds": 65700,
       "stops": 1,
       "route": [
@@ -105,8 +218,8 @@
         "toName": "Aéroport international de Pékin-Capitale",
         "fromCountry": "Thaïlande",
         "toCountry": "Chine",
-        "departureTime": "2026-12-20T18:25:00",
-        "arrivalTime": "2026-12-21T00:50:00",
+        "departureTime": "2026-12-02T18:25:00",
+        "arrivalTime": "2026-12-03T00:50:00",
         "durationSeconds": 19500,
         "carrier": "CA",
         "carrierName": "Air China",
@@ -122,8 +235,8 @@
         "toName": "Aéroport de Bruxelles-National",
         "fromCountry": "Chine",
         "toCountry": "Belgique",
-        "departureTime": "2026-12-21T02:30:00",
-        "arrivalTime": "2026-12-21T06:40:00",
+        "departureTime": "2026-12-03T02:30:00",
+        "arrivalTime": "2026-12-03T06:40:00",
         "durationSeconds": 40200,
         "carrier": "CA",
         "carrierName": "Air China",
@@ -134,11 +247,237 @@
      }
     },
     {
+     "id": "1f2b236551320000872bf21d_0|1f2b236551320000872bf21d_1|23651f2b51430000fa58d34c_0|23651f2b51430000fa58d34c_1",
+     "price": 1168.708208,
+     "priceFormatted": "1169 EUR",
+     "totalDurationSeconds": 141600,
+     "bookingUrl": "https://kiwi.com/u/qj285u",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "HKT",
+      "departureTime": "2026-11-29T12:25:00",
+      "arrivalTime": "2026-11-30T12:45:00",
+      "durationSeconds": 66000,
+      "stops": 1,
+      "route": [
+       "BRU",
+       "TFU",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "TFU",
+        "fromCity": "Bruxelles",
+        "toCity": "Chengdu",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Chengdu Tianfu International Airport",
+        "fromCountry": "Belgique",
+        "toCountry": "Chine",
+        "departureTime": "2026-11-29T12:25:00",
+        "arrivalTime": "2026-11-30T05:55:00",
+        "durationSeconds": 37800,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA464",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "TFU",
+        "to": "HKT",
+        "fromCity": "Chengdu",
+        "toCity": "Phuket",
+        "fromName": "Chengdu Tianfu International Airport",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Chine",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-30T09:45:00",
+        "arrivalTime": "2026-11-30T12:45:00",
+        "durationSeconds": 14400,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA413",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-16T15:30:00",
+      "arrivalTime": "2026-12-17T06:30:00",
+      "durationSeconds": 75600,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T15:30:00",
+        "arrivalTime": "2026-12-16T19:35:00",
+        "durationSeconds": 25500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY417",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BRU",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-17T02:15:00",
+        "arrivalTime": "2026-12-17T06:30:00",
+        "durationSeconds": 26100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY57",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b236551245135fac415eb_0|1f2b236551245135fac415eb_1|1f2b236551245135fac415eb_2|1f2b236551245135fac415eb_3",
+     "price": 1319.0,
+     "priceFormatted": "1319 EUR",
+     "totalDurationSeconds": 154500,
+     "bookingUrl": "https://kiwi.com/u/8dp57f",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "HKT",
+      "departureTime": "2026-11-15T12:00:00",
+      "arrivalTime": "2026-11-16T14:35:00",
+      "durationSeconds": 74100,
+      "stops": 1,
+      "route": [
+       "BRU",
+       "PEK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "PEK",
+        "fromCity": "Bruxelles",
+        "toCity": "Pékin",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international de Pékin-Capitale",
+        "fromCountry": "Belgique",
+        "toCountry": "Chine",
+        "departureTime": "2026-11-15T12:00:00",
+        "arrivalTime": "2026-11-16T04:45:00",
+        "durationSeconds": 35100,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA964",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "PEK",
+        "to": "HKT",
+        "fromCity": "Pékin",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international de Pékin-Capitale",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Chine",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-16T09:15:00",
+        "arrivalTime": "2026-11-16T14:35:00",
+        "durationSeconds": 22800,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA691",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-02T14:00:00",
+      "arrivalTime": "2026-12-03T06:20:00",
+      "durationSeconds": 80400,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "TFU",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "TFU",
+        "fromCity": "Phuket",
+        "toCity": "Chengdu",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Chengdu Tianfu International Airport",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Chine",
+        "departureTime": "2026-12-02T14:00:00",
+        "arrivalTime": "2026-12-02T19:05:00",
+        "durationSeconds": 14700,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA414",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "TFU",
+        "to": "BRU",
+        "fromCity": "Chengdu",
+        "toCity": "Bruxelles",
+        "fromName": "Chengdu Tianfu International Airport",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Chine",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-03T01:55:00",
+        "arrivalTime": "2026-12-03T06:20:00",
+        "durationSeconds": 41100,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA463",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
      "id": "1f2b236551310000ac1dffe4_0|1f2b236551310000ac1dffe4_1|23651f2b514200007106fa21_0|23651f2b514200007106fa21_1",
-     "price": 1366.708208,
-     "priceFormatted": "1367 EUR",
+     "price": 1365.708208,
+     "priceFormatted": "1366 EUR",
      "totalDurationSeconds": 149700,
-     "bookingUrl": "https://kiwi.com/u/xnpvk2",
+     "bookingUrl": "https://kiwi.com/u/fsgqw5",
      "imageId": "phuket-city_th",
      "baggage": {
       "personalItem": 0,
@@ -247,124 +586,11 @@
      }
     },
     {
-     "id": "1f2b23655124513556c3d602_0|1f2b23655124513556c3d602_1|1f2b23655124513556c3d602_2|1f2b23655124513556c3d602_3",
-     "price": 1373.0,
-     "priceFormatted": "1373 EUR",
-     "totalDurationSeconds": 139800,
-     "bookingUrl": "https://kiwi.com/u/b9mbxf",
-     "imageId": "phuket-city_th",
-     "baggage": {
-      "personalItem": 2,
-      "cabinBag": 2,
-      "checkedBag": 2
-     },
-     "outbound": {
-      "from": "BRU",
-      "to": "HKT",
-      "departureTime": "2026-11-15T12:00:00",
-      "arrivalTime": "2026-11-16T14:35:00",
-      "durationSeconds": 74100,
-      "stops": 1,
-      "route": [
-       "BRU",
-       "PEK",
-       "HKT"
-      ],
-      "cabinClass": "Economy",
-      "segments": [
-       {
-        "from": "BRU",
-        "to": "PEK",
-        "fromCity": "Bruxelles",
-        "toCity": "Pékin",
-        "fromName": "Aéroport de Bruxelles-National",
-        "toName": "Aéroport international de Pékin-Capitale",
-        "fromCountry": "Belgique",
-        "toCountry": "Chine",
-        "departureTime": "2026-11-15T12:00:00",
-        "arrivalTime": "2026-11-16T04:45:00",
-        "durationSeconds": 35100,
-        "carrier": "CA",
-        "carrierName": "Air China",
-        "flightNumber": "CA964",
-        "cabinClass": "Economy"
-       },
-       {
-        "from": "PEK",
-        "to": "HKT",
-        "fromCity": "Pékin",
-        "toCity": "Phuket",
-        "fromName": "Aéroport international de Pékin-Capitale",
-        "toName": "Aéroport international de Phuket",
-        "fromCountry": "Chine",
-        "toCountry": "Thaïlande",
-        "departureTime": "2026-11-16T09:15:00",
-        "arrivalTime": "2026-11-16T14:35:00",
-        "durationSeconds": 22800,
-        "carrier": "CA",
-        "carrierName": "Air China",
-        "flightNumber": "CA691",
-        "cabinClass": "Economy"
-       }
-      ]
-     },
-     "inbound": {
-      "from": "HKT",
-      "to": "BRU",
-      "departureTime": "2026-12-02T18:25:00",
-      "arrivalTime": "2026-12-03T06:40:00",
-      "durationSeconds": 65700,
-      "stops": 1,
-      "route": [
-       "HKT",
-       "PEK",
-       "BRU"
-      ],
-      "cabinClass": "Economy",
-      "segments": [
-       {
-        "from": "HKT",
-        "to": "PEK",
-        "fromCity": "Phuket",
-        "toCity": "Pékin",
-        "fromName": "Aéroport international de Phuket",
-        "toName": "Aéroport international de Pékin-Capitale",
-        "fromCountry": "Thaïlande",
-        "toCountry": "Chine",
-        "departureTime": "2026-12-02T18:25:00",
-        "arrivalTime": "2026-12-03T00:50:00",
-        "durationSeconds": 19500,
-        "carrier": "CA",
-        "carrierName": "Air China",
-        "flightNumber": "CA822",
-        "cabinClass": "Economy"
-       },
-       {
-        "from": "PEK",
-        "to": "BRU",
-        "fromCity": "Pékin",
-        "toCity": "Bruxelles",
-        "fromName": "Aéroport international de Pékin-Capitale",
-        "toName": "Aéroport de Bruxelles-National",
-        "fromCountry": "Chine",
-        "toCountry": "Belgique",
-        "departureTime": "2026-12-03T02:30:00",
-        "arrivalTime": "2026-12-03T06:40:00",
-        "durationSeconds": 40200,
-        "carrier": "CA",
-        "carrierName": "Air China",
-        "flightNumber": "CA963",
-        "cabinClass": "Economy"
-       }
-      ]
-     }
-    },
-    {
      "id": "1f2b236551325143515f5029_0|1f2b236551325143515f5029_1|1f2b236551325143515f5029_2|1f2b236551325143515f5029_3",
      "price": 1380.274956,
      "priceFormatted": "1380 EUR",
      "totalDurationSeconds": 147900,
-     "bookingUrl": "https://kiwi.com/u/tg3n2k",
+     "bookingUrl": "https://kiwi.com/u/y6du9p8",
      "imageId": "phuket-city_th",
      "baggage": {
       "personalItem": 0,
@@ -477,7 +703,7 @@
      "price": 1396.274956,
      "priceFormatted": "1396 EUR",
      "totalDurationSeconds": 147900,
-     "bookingUrl": "https://kiwi.com/u/425c2n",
+     "bookingUrl": "https://kiwi.com/u/r4z8wr",
      "imageId": "phuket-city_th",
      "baggage": {
       "personalItem": 0,
@@ -590,7 +816,7 @@
      "price": 1436.274956,
      "priceFormatted": "1436 EUR",
      "totalDurationSeconds": 108900,
-     "bookingUrl": "https://kiwi.com/u/85xmsw",
+     "bookingUrl": "https://kiwi.com/u/f6d9jk",
      "imageId": "phuket-city_th",
      "baggage": {
       "personalItem": 0,
@@ -699,124 +925,11 @@
      }
     },
     {
-     "id": "1f2b236551245135b19553fa_0|1f2b236551245135b19553fa_1|1f2b236551245135b19553fa_2|1f2b236551245135b19553fa_3",
-     "price": 1436.274956,
-     "priceFormatted": "1436 EUR",
-     "totalDurationSeconds": 147900,
-     "bookingUrl": "https://kiwi.com/u/w4bp5cv",
-     "imageId": "phuket-city_th",
-     "baggage": {
-      "personalItem": 0,
-      "cabinBag": 2,
-      "checkedBag": 2
-     },
-     "outbound": {
-      "from": "BRU",
-      "to": "HKT",
-      "departureTime": "2026-11-15T09:55:00",
-      "arrivalTime": "2026-11-16T12:00:00",
-      "durationSeconds": 72300,
-      "stops": 1,
-      "route": [
-       "BRU",
-       "AUH",
-       "HKT"
-      ],
-      "cabinClass": "Economy",
-      "segments": [
-       {
-        "from": "BRU",
-        "to": "AUH",
-        "fromCity": "Bruxelles",
-        "toCity": "Abou Dabi",
-        "fromName": "Aéroport de Bruxelles-National",
-        "toName": "Aéroport international Zayed",
-        "fromCountry": "Belgique",
-        "toCountry": "Émirats arabes unis",
-        "departureTime": "2026-11-15T09:55:00",
-        "arrivalTime": "2026-11-15T19:30:00",
-        "durationSeconds": 23700,
-        "carrier": "EY",
-        "carrierName": "Etihad Airways",
-        "flightNumber": "EY58",
-        "cabinClass": "Economy"
-       },
-       {
-        "from": "AUH",
-        "to": "HKT",
-        "fromCity": "Abou Dabi",
-        "toCity": "Phuket",
-        "fromName": "Aéroport international Zayed",
-        "toName": "Aéroport international de Phuket",
-        "fromCountry": "Émirats arabes unis",
-        "toCountry": "Thaïlande",
-        "departureTime": "2026-11-16T02:25:00",
-        "arrivalTime": "2026-11-16T12:00:00",
-        "durationSeconds": 23700,
-        "carrier": "EY",
-        "carrierName": "Etihad Airways",
-        "flightNumber": "EY416",
-        "cabinClass": "Economy"
-       }
-      ]
-     },
-     "inbound": {
-      "from": "HKT",
-      "to": "BRU",
-      "departureTime": "2026-12-02T15:30:00",
-      "arrivalTime": "2026-12-03T06:30:00",
-      "durationSeconds": 75600,
-      "stops": 1,
-      "route": [
-       "HKT",
-       "AUH",
-       "BRU"
-      ],
-      "cabinClass": "Economy",
-      "segments": [
-       {
-        "from": "HKT",
-        "to": "AUH",
-        "fromCity": "Phuket",
-        "toCity": "Abou Dabi",
-        "fromName": "Aéroport international de Phuket",
-        "toName": "Aéroport international Zayed",
-        "fromCountry": "Thaïlande",
-        "toCountry": "Émirats arabes unis",
-        "departureTime": "2026-12-02T15:30:00",
-        "arrivalTime": "2026-12-02T19:35:00",
-        "durationSeconds": 25500,
-        "carrier": "EY",
-        "carrierName": "Etihad Airways",
-        "flightNumber": "EY417",
-        "cabinClass": "Economy"
-       },
-       {
-        "from": "AUH",
-        "to": "BRU",
-        "fromCity": "Abou Dabi",
-        "toCity": "Bruxelles",
-        "fromName": "Aéroport international Zayed",
-        "toName": "Aéroport de Bruxelles-National",
-        "fromCountry": "Émirats arabes unis",
-        "toCountry": "Belgique",
-        "departureTime": "2026-12-03T02:15:00",
-        "arrivalTime": "2026-12-03T06:30:00",
-        "durationSeconds": 26100,
-        "carrier": "EY",
-        "carrierName": "Etihad Airways",
-        "flightNumber": "EY57",
-        "cabinClass": "Economy"
-       }
-      ]
-     }
-    },
-    {
      "id": "1f2b236551245135a549829f_0|1f2b236551245135a549829f_1|1f2b236551245135a549829f_2|1f2b236551245135a549829f_3",
      "price": 1445.274956,
      "priceFormatted": "1445 EUR",
      "totalDurationSeconds": 127200,
-     "bookingUrl": "https://kiwi.com/u/3vsv8q",
+     "bookingUrl": "https://kiwi.com/u/d33vjg",
      "imageId": "phuket-city_th",
      "baggage": {
       "personalItem": 0,
@@ -929,7 +1042,7 @@
      "price": 1462.0,
      "priceFormatted": "1462 EUR",
      "totalDurationSeconds": 141300,
-     "bookingUrl": "https://kiwi.com/u/nfs4bx",
+     "bookingUrl": "https://kiwi.com/u/uqzfv2",
      "imageId": "phuket-city_th",
      "baggage": {
       "personalItem": 0,
@@ -1038,124 +1151,11 @@
      }
     },
     {
-     "id": "1f2b236551345145f67b47af_0|1f2b236551345145f67b47af_1|1f2b236551345145f67b47af_2|1f2b236551345145f67b47af_3",
-     "price": 1462.274956,
-     "priceFormatted": "1462 EUR",
-     "totalDurationSeconds": 147900,
-     "bookingUrl": "https://kiwi.com/u/d927kx",
-     "imageId": "phuket-city_th",
-     "baggage": {
-      "personalItem": 0,
-      "cabinBag": 2,
-      "checkedBag": 2
-     },
-     "outbound": {
-      "from": "BRU",
-      "to": "HKT",
-      "departureTime": "2026-12-01T09:55:00",
-      "arrivalTime": "2026-12-02T12:00:00",
-      "durationSeconds": 72300,
-      "stops": 1,
-      "route": [
-       "BRU",
-       "AUH",
-       "HKT"
-      ],
-      "cabinClass": "Economy",
-      "segments": [
-       {
-        "from": "BRU",
-        "to": "AUH",
-        "fromCity": "Bruxelles",
-        "toCity": "Abou Dabi",
-        "fromName": "Aéroport de Bruxelles-National",
-        "toName": "Aéroport international Zayed",
-        "fromCountry": "Belgique",
-        "toCountry": "Émirats arabes unis",
-        "departureTime": "2026-12-01T09:55:00",
-        "arrivalTime": "2026-12-01T19:30:00",
-        "durationSeconds": 23700,
-        "carrier": "EY",
-        "carrierName": "Etihad Airways",
-        "flightNumber": "EY58",
-        "cabinClass": "Economy"
-       },
-       {
-        "from": "AUH",
-        "to": "HKT",
-        "fromCity": "Abou Dabi",
-        "toCity": "Phuket",
-        "fromName": "Aéroport international Zayed",
-        "toName": "Aéroport international de Phuket",
-        "fromCountry": "Émirats arabes unis",
-        "toCountry": "Thaïlande",
-        "departureTime": "2026-12-02T02:25:00",
-        "arrivalTime": "2026-12-02T12:00:00",
-        "durationSeconds": 23700,
-        "carrier": "EY",
-        "carrierName": "Etihad Airways",
-        "flightNumber": "EY416",
-        "cabinClass": "Economy"
-       }
-      ]
-     },
-     "inbound": {
-      "from": "HKT",
-      "to": "BRU",
-      "departureTime": "2026-12-18T15:30:00",
-      "arrivalTime": "2026-12-19T06:30:00",
-      "durationSeconds": 75600,
-      "stops": 1,
-      "route": [
-       "HKT",
-       "AUH",
-       "BRU"
-      ],
-      "cabinClass": "Economy",
-      "segments": [
-       {
-        "from": "HKT",
-        "to": "AUH",
-        "fromCity": "Phuket",
-        "toCity": "Abou Dabi",
-        "fromName": "Aéroport international de Phuket",
-        "toName": "Aéroport international Zayed",
-        "fromCountry": "Thaïlande",
-        "toCountry": "Émirats arabes unis",
-        "departureTime": "2026-12-18T15:30:00",
-        "arrivalTime": "2026-12-18T19:35:00",
-        "durationSeconds": 25500,
-        "carrier": "EY",
-        "carrierName": "Etihad Airways",
-        "flightNumber": "EY417",
-        "cabinClass": "Economy"
-       },
-       {
-        "from": "AUH",
-        "to": "BRU",
-        "fromCity": "Abou Dabi",
-        "toCity": "Bruxelles",
-        "fromName": "Aéroport international Zayed",
-        "toName": "Aéroport de Bruxelles-National",
-        "fromCountry": "Émirats arabes unis",
-        "toCountry": "Belgique",
-        "departureTime": "2026-12-19T02:15:00",
-        "arrivalTime": "2026-12-19T06:30:00",
-        "durationSeconds": 26100,
-        "carrier": "EY",
-        "carrierName": "Etihad Airways",
-        "flightNumber": "EY57",
-        "cabinClass": "Economy"
-       }
-      ]
-     }
-    },
-    {
      "id": "1f2b2365513a514bb3176b88_0|1f2b2365513a514bb3176b88_1|1f2b2365513a514bb3176b88_2|1f2b2365513a514bb3176b88_3",
      "price": 1464.274956,
      "priceFormatted": "1464 EUR",
      "totalDurationSeconds": 107400,
-     "bookingUrl": "https://kiwi.com/u/zsgjp3x",
+     "bookingUrl": "https://kiwi.com/u/zh2kkb8",
      "imageId": "phuket-city_th",
      "baggage": {
       "personalItem": 0,
@@ -1268,7 +1268,7 @@
      "price": 1509.274956,
      "priceFormatted": "1509 EUR",
      "totalDurationSeconds": 128100,
-     "bookingUrl": "https://kiwi.com/u/c2myt6",
+     "bookingUrl": "https://kiwi.com/u/vst9mk",
      "imageId": "phuket-city_th",
      "baggage": {
       "personalItem": 0,
@@ -1381,7 +1381,7 @@
      "price": 1511.274956,
      "priceFormatted": "1511 EUR",
      "totalDurationSeconds": 129600,
-     "bookingUrl": "https://kiwi.com/u/8xhpmw",
+     "bookingUrl": "https://kiwi.com/u/db9x2z",
      "imageId": "phuket-city_th",
      "baggage": {
       "personalItem": 0,
@@ -1494,7 +1494,7 @@
      "price": 1548.274956,
      "priceFormatted": "1548 EUR",
      "totalDurationSeconds": 129600,
-     "bookingUrl": "https://kiwi.com/u/5v6d6n",
+     "bookingUrl": "https://kiwi.com/u/zkmsj4",
      "imageId": "phuket-city_th",
      "baggage": {
       "personalItem": 0,
@@ -1607,7 +1607,7 @@
      "price": 1575.274956,
      "priceFormatted": "1575 EUR",
      "totalDurationSeconds": 127200,
-     "bookingUrl": "https://kiwi.com/u/u23hb9",
+     "bookingUrl": "https://kiwi.com/u/6v4sc3",
      "imageId": "phuket-city_th",
      "baggage": {
       "personalItem": 0,
@@ -1716,7 +1716,7 @@
      }
     }
    ],
-   "searchTimeMs": 1016,
+   "searchTimeMs": 660,
    "error": null
   }
  }
