@@ -156,7 +156,8 @@ textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,m
 .hcard .ph img{width:100%;height:100%;object-fit:cover;display:block}
 .hcard .ph.clickable{cursor:zoom-in;padding:0;border:0;font:inherit;text-align:left;color:inherit;width:100%}
 .hcard .ph .count{position:absolute;right:6px;bottom:6px;background:rgba(0,0,0,.6);color:#fff;font-size:12px;padding:2px 8px;border-radius:12px;pointer-events:none}
-.lightbox{position:fixed;inset:0;z-index:50;background:rgba(10,16,18,.92);display:grid;place-items:center;padding:16px}
+.lightbox:not([hidden]){display:grid}
+.lightbox{position:fixed;inset:0;z-index:50;background:rgba(10,16,18,.92);place-items:center;padding:16px}
 .lightbox img{max-width:min(92vw,1100px);max-height:74vh;object-fit:contain;border-radius:6px;background:#111}
 .lightbox .lb-caption{position:absolute;left:0;right:0;bottom:16px;text-align:center;color:#f2f5f4;font-size:13px;padding:0 60px}
 .lightbox .lb-close{position:absolute;top:16px;right:16px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3);font-size:18px;cursor:pointer}
@@ -171,6 +172,48 @@ textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,m
 .hcard .src a{color:var(--accent)}
 .section-cover{display:flex;align-items:center;gap:12px;margin:0 0 12px}
 .section-cover svg{width:34px;height:34px;flex:none}
+
+/* Menu latéral (sommaire) : colonne sticky à droite ≥640px, tiroir sous 640px */
+.page-shell{display:flex;align-items:flex-start;gap:0}
+.page-shell > .wrap{flex:1 1 auto;min-width:0}
+.side-toc{flex:0 0 220px;position:sticky;top:16px;align-self:flex-start;max-height:calc(100vh - 32px);overflow-y:auto;padding:20px 14px;border-left:1px solid var(--line);font-size:13px}
+.side-toc .toc-h{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:8px}
+.toc-list{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.toc-list li.toc-sub{padding-left:12px}
+.toc-list a{display:block;padding:5px 8px;border-radius:5px;color:var(--muted);text-decoration:none;line-height:1.3}
+.toc-list li.toc-sub a{font-size:12px}
+.toc-list a:hover{background:var(--accent-soft);color:var(--ink)}
+.toc-list a:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.toc-list a.current{background:var(--accent);color:var(--accent-ink);font-weight:600}
+.toc-toggle{display:none}
+.toc-backdrop{display:none}
+@media (max-width:640px){
+  .side-toc{position:fixed;top:0;right:0;bottom:0;width:min(86vw,320px);max-height:100vh;transform:translateX(100%);transition:transform .2s ease;z-index:41;background:var(--surface);box-shadow:-8px 0 24px rgba(0,0,0,.3);margin:0}
+  .side-toc.open{transform:translateX(0)}
+  .toc-toggle{display:flex;position:fixed;right:16px;bottom:16px;z-index:40;align-items:center;gap:6px;border-radius:20px;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+  .toc-backdrop{display:block;position:fixed;inset:0;background:rgba(10,16,18,.4);z-index:39}
+  .toc-backdrop[hidden]{display:none}
+}
+
+/* Carrousel générique : une proposition à la fois, scroll-snap natif */
+.layout,.layout > div,section.block,fieldset,.carousel-wrap{min-width:0}
+.carousel-wrap{margin-top:2px;min-width:0;max-width:100%}
+.ctrack{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:10px;padding-bottom:2px;min-width:0;max-width:100%}
+.ctrack::-webkit-scrollbar{display:none}
+.ctrack:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.ctrack > .choice,.ctrack > .hcard{flex:0 0 100%;max-width:100%;min-width:0;scroll-snap-align:center;overflow-wrap:anywhere}
+.ctrack > .choice > .cphoto{grid-column:1/-1;aspect-ratio:16/9;background:var(--accent-soft);display:grid;place-items:center;overflow:hidden;border-radius:6px 6px 0 0;margin:-10px -12px 8px;color:var(--muted);font-size:32px}
+.ctrack > .choice > .cphoto img{width:100%;height:100%;object-fit:cover;display:block}
+.cdetail{margin-top:6px}
+.cdetail summary{cursor:pointer;color:var(--accent);font-size:13px;font-weight:600;list-style:none}
+.cdetail summary::-webkit-details-marker{display:none}
+.cdetail summary::before{content:"▸ Détails";display:inline-block}
+.cdetail[open] summary::before{content:"▾ Détails"}
+.carousel-controls{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:8px}
+.cnav{width:34px;height:34px;border-radius:50%;padding:0;display:grid;place-items:center;font-size:18px;line-height:1;flex:none}
+.cdots{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;max-width:220px}
+.cdot{width:9px;height:9px;padding:0;border-radius:50%;border:1px solid var(--line);background:var(--surface);cursor:pointer}
+.cdot.active{background:var(--accent);border-color:var(--accent)}
 </style>
 <div class="bg" aria-hidden="true">
   <div class="sun"></div>
@@ -181,8 +224,11 @@ textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,m
   </svg>
 </div>
 
+<div class="page-shell">
+<button type="button" id="tocToggle" class="toc-toggle" aria-expanded="false" aria-controls="sideToc">☰ Sommaire</button>
+<div id="tocBackdrop" class="toc-backdrop" hidden></div>
 <div class="wrap">
-<header class="cover">
+<header class="cover" id="cover" data-toc="Présentation">
   <div class="eyebrow">Côte d'Andaman, Thaïlande · fenêtre de départ 15/11 → 10/12/2026 · 2 adultes belges · départ TUN ou BRU</div>
   <h1>Andaman 2026 : choisir le scénario</h1>
   <p class="lede">Dossier initial du rapport v5 (24/09/2026, 16–18 nuits) et variante décidée le 25/09/2026 : 10 jours, 9 nuits, hôtels 5★, départ Tunis. Le budget, le calendrier Gantt et la structure du tableau Trello se recalculent à chaque choix. Rien n'est réservé ; le Trello n'est construit qu'après « Valider ».</p>
@@ -202,13 +248,13 @@ textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,m
   <div class="step"><span class="n">3</span><span><span class="t">Valider</span><br><span class="d">Le bouton enregistre le scénario ; Claude Code construit alors le tableau Trello (présentation, achats, avant départ, voyage, budget).</span></span></div>
 </div>
 
-<section class="block">
+<section class="block" id="compare-section" data-toc="Comparer les scénarios">
   <h2>Les trois scénarios en un coup d'œil</h2>
   <div class="tablewrap"><table class="compare" id="compare"></table></div>
   <p class="note">Totaux du rapport v5 pour le vol et l'hôtel retenus, activités complètes, hypothèses en fourchette. Cliquer une ligne sélectionne le scénario.</p>
 </section>
 
-<section class="block">
+<section class="block" id="hotels-section" data-toc="Hôtels du scénario">
   <h2>Hôtels du scénario : fiches et photos</h2>
   <p class="note">Descriptions et équipements issus du connecteur Booking.com (date et heure de lecture indiquées), photos des sites publics cités. Les prix Booking servent de recoupement ; le budget garde les prix du rapport.</p>
   <div class="hotels" id="hotels"></div>
@@ -216,43 +262,43 @@ textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,m
 
 <div class="layout">
 <div>
-  <section class="block">
-    <fieldset>
+  <section class="block" id="configurer" data-toc="Configurer le voyage">
+    <fieldset id="fs-origin" data-toc-sub="0. Point de départ">
       <legend>0. Point de départ</legend>
       <div class="choices" id="originChoices"></div>
     </fieldset>
-    <fieldset>
+    <fieldset id="fs-duration" data-toc-sub="0 bis. Durée">
       <legend>0 bis. Durée</legend>
       <div class="choices" id="durationChoices"></div>
     </fieldset>
-    <fieldset>
+    <fieldset id="fs-place" data-toc-sub="1. Lieu">
       <legend>1. Lieu (une étape, un hôtel)</legend>
       <div class="choices" id="placeChoices"></div>
       <div class="place-map" id="placeMap"></div>
     </fieldset>
-    <fieldset>
+    <fieldset id="fs-flight" data-toc-sub="2. Vols">
       <legend>2. Vols (2 adultes, 1 soute chacun)</legend>
       <p class="note" id="flightNote" hidden></p>
       <div class="choices" id="flightChoices"></div>
     </fieldset>
-    <fieldset>
+    <fieldset id="fs-hotel" data-toc-sub="3. Hôtel">
       <legend id="hotelLegend">3. Hôtel unique, 4–5★</legend>
       <p class="note" id="hotelNote" hidden></p>
       <div class="choices" id="hotelChoices"></div>
     </fieldset>
-    <fieldset id="stagesBox">
+    <fieldset id="stagesBox" data-toc-sub="3 bis. Étapes">
       <legend>3 bis. Une ou deux étapes (vol intérieur)</legend>
       <p class="note" id="stagesOff" hidden>Non proposé sur 9 nuits : le découpage 8 n + 7 n (+ 1 n) n'a été chiffré que pour le dossier initial de 16 nuits. Une seule étape, un seul hôtel.</p>
       <p class="note" id="stagesIntro">Découpage testé sur le scénario A : Nai Yang 30/11→08/12 (8 nuits), seconde étape 08/12→15/12 (7 nuits), puis Nai Yang 15/12→16/12 (1 nuit près de l'aéroport) ou vol intérieur retour le 16/12 au matin. Hôtels de la seconde étape : Trivago 4–5★, zone ≤10 km. Programme d'activités et transferts de la seconde étape non chiffrés.</p>
       <div class="choices" id="stageChoices"></div>
       <div class="row" id="lastNightRow" style="margin-top:8px"></div>
     </fieldset>
-    <fieldset>
+    <fieldset id="fs-acts" data-toc-sub="4. Activités">
       <legend>4. Activités payantes proposées (cocher les séances retenues)</legend>
       <div class="choices" id="actChoices"></div>
       <p class="note" id="actNote"></p>
     </fieldset>
-    <fieldset>
+    <fieldset id="fs-opts" data-toc-sub="5. Hypothèses">
       <legend>5. Hypothèses ouvertes</legend>
       <div id="opts"></div>
     </fieldset>
@@ -262,19 +308,19 @@ textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,m
 <aside class="summary" id="summary"></aside>
 </div>
 
-<section class="block" id="hypos">
+<section class="block" id="hypos" data-toc="Hypothèses du dossier">
   <h2>Hypothèses du dossier</h2>
   <p class="note">Déclarées, jamais devinées en silence. Les hypothèses du 24/09/2026 (rapport v5, 16–18 nuits) restent dans leurs sections ; celles du 25/09/2026 s'appliquent à la variante 10 jours.</p>
   <div class="milestones" id="hypoList"></div>
 </section>
 
-<section class="block">
+<section class="block" id="budget-section" data-toc="Budget du groupe">
   <h2>Budget du groupe, poste par poste</h2>
   <div class="tablewrap"><table id="budget"></table></div>
   <p class="note">Lignes arrondies au centime ; le rapport additionne les valeurs non arrondies, d'où un écart possible de quelques centimes. Réserve fixe de 1 000 € séparée, sous le plafond de 8 000 €.</p>
 </section>
 
-<section class="block">
+<section class="block" id="gantt-section" data-toc="Calendrier (Gantt)">
   <h2>Calendrier du voyage (vue Gantt)</h2>
   <div class="gantt" id="gantt"></div>
   <div class="legend">
@@ -287,31 +333,31 @@ textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,m
   <div class="milestones" id="milestones"></div>
 </section>
 
-<section class="block">
+<section class="block" id="dest-section" data-toc="Destinations">
   <div class="section-cover"><svg viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="16" fill="var(--accent-soft)"/><path d="M17 6 L20 14 L28 14 L22 19 L24 27 L17 22 L10 27 L12 19 L6 14 L14 14 Z" fill="var(--accent)"/></svg><h2 style="margin:0">Destinations : pays et lieu de séjour</h2></div>
   <p class="note">Fiches documentaires sourcées (URL et date de consultation). Elles deviennent la liste « Présentation » du Trello : une carte pour la Thaïlande, une pour le lieu choisi, avec les « à ne pas rater » en checklist.</p>
   <div class="dest" id="dest"></div>
 </section>
 
-<section class="block">
+<section class="block" id="videos-section" data-toc="Vidéos">
   <h2>Vidéos en français sur le lieu (non visionnées)</h2>
   <p class="note">Sélection par recherche web du 24/09/2026 sur le titre et la date ; chaînes, durées et audiences rarement visibles dans les extraits. Aucune vidéo n'a été regardée : le lien ouvre YouTube.</p>
   <div class="hotels" id="videos"></div>
 </section>
 
-<section class="block">
+<section class="block" id="maps-section" data-toc="Cartes">
   <h2>Cartes</h2>
   <p class="note">Fonds Wikimedia Maps (© contributeurs OpenStreetMap, ODbL). Les marqueurs sont placés par la page à partir des coordonnées Booking des hôtels ; les positions des aéroports sont indicatives.</p>
   <div class="maps" id="maps"></div>
 </section>
 
-<section class="block">
+<section class="block" id="trello-section" data-toc="Aperçu Trello">
   <h2>Aperçu du tableau Trello qui sera créé</h2>
   <p class="note">Listes et cartes générées à partir des choix ci-dessus et du tracker du rapport. Rien n'est envoyé à Trello depuis cette page : après validation, Claude Code crée le tableau avec le connecteur Trello.</p>
   <div class="lists" id="trello"></div>
 </section>
 
-<section class="block">
+<section class="block" id="validation-section" data-toc="Validation">
   <h2>Validation</h2>
   <div class="valid">
     <div class="status" id="lastValid">Aucune validation enregistrée pour l'instant.</div>
@@ -323,6 +369,8 @@ textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,m
     <textarea id="spec" readonly aria-label="Récapitulatif JSON du scénario"></textarea>
   </div>
 </section>
+</div>
+<nav class="side-toc" id="sideToc" aria-label="Sommaire de la page"></nav>
 </div>
 
 <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photos de l'hôtel">
@@ -670,6 +718,7 @@ function renderChoices() {
     <label class="choice"><input type="radio" name="place" id="place_${p.short}" value="${p.short}" ${state.place === p.short ? "checked" : ""}>
       <span><span class="t">${p.short} · ${esc(p.name)}</span> — ${nine ? `9 nuits visées, référence ${fmtD(REF9.dep)} → ${fmtD(REF9.ret)}` : `${p.nights} nuits, BRU ${fmtD(p.dep)} → ${fmtD(p.ret)}`}<br><span class="d">${esc(p.desc)}</span></span>
       <span class="p"></span></label>`).join("");
+  carouselize("placeChoices", { label: "Lieux proposés", photo: placePhotoHtml });
   renderPlaceMap();
   const fn = document.getElementById("flightNote");
   fn.hidden = !nine;
@@ -680,6 +729,7 @@ function renderChoices() {
     <label class="choice"><input type="radio" name="flight" id="flight_${f.id}" value="${f.id}" ${state.flight === f.id ? "checked" : ""}>
       <span><span class="t">${esc(f.label)}</span>${f.rec ? '<span class="tag ok">retenu</span>' : ""}${f.missing ? '<span class="tag bad">manquant</span>' : ""}${f.nightsTxt ? `<span class="tag ${f.nights === 9 ? "ok" : "warn"}">${esc(f.nightsTxt)}</span>` : ""}${f.datesMatch === false ? '<span class="tag warn">dates ≠ hôtel</span>' : ""}${f.transferMissing ? '<span class="tag warn">transfert routier manquant</span>' : ""}${f.dep ? `<br><span class="d">${state.origin} ${fmtD(f.dep)} → ${state.origin} ${fmtD(f.ret)}${f.hin ? ` · hôtel ${fmtD(f.hin)} → ${fmtD(f.hout)}` : ""}</span>` : ""}<br><span class="d">${esc(f.detail)}</span></span>
       <span class="p">${f.missing ? "MANQUANT" : fmt(f.price)}</span></label>`).join("");
+  carouselize("flightChoices", { label: "Vols proposés", photo: flightPhotoHtml });
   document.getElementById("hotelLegend").textContent = nine ? "3. Hôtel unique, 5★ (présélection Trivago du 25/09/2026)" : "3. Hôtel unique, 4–5★";
   const hn = document.getElementById("hotelNote");
   hn.hidden = !nine;
@@ -688,6 +738,7 @@ function renderChoices() {
     <label class="choice"><input type="radio" name="hotel" id="hotel_${h.id}" value="${h.id}" ${state.hotel === h.id ? "checked" : ""}>
       <span><span class="t">${esc(h.label)}</span>${h.tag ? `<span class="tag ${h.tagc}">${esc(h.tag)}</span>` : ""}${(h.tags || []).map(t => `<span class="tag ${t[1]}">${esc(t[0])}</span>`).join("")}<br><span class="d">${h.dates ? `${fmtD(h.dates.arrival)} → ${fmtD(h.dates.departure)}` : `${fmtD(P.hin)} → ${fmtD(P.hout)}`} · ${esc(h.detail)}</span>${h.v10 ? `<br><span class="d"><a href="${esc(h.v10.accommodation_url)}" target="_blank" rel="noopener">Offre Trivago</a></span>` : ""}</span>
       <span class="p">${fmt(h.price)}</span></label>`).join("");
+  carouselize("hotelChoices", { label: "Hôtels proposés", photo: hotelPhotoHtml });
   const stWin = (!nine && P.short === "A" && state.stages !== "one" && typeof STAGES !== "undefined" && STAGES.stages[state.stages]) ? STAGES.stages[state.stages].hotels[0] : null;
   const win = nine ? { hin: flSel.hin, hout: flSel.hout } : null;
   document.getElementById("actChoices").innerHTML = P.acts.map((a, i) => { const off = stWin && a.d >= stWin.arrival && a.d < stWin.departure; const out = win && !(a.d >= win.hin && a.d < win.hout); return `
@@ -854,6 +905,7 @@ function renderHotels() {
       return `<div class="hcard"${sel ? ' style="border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)"' : ""}>${photoBlock(h.id, d.accommodation_name)}<div class="hb"><h4>${esc(d.accommodation_name)}${sel ? ' <span class="tag ok">choisi</span>' : ""}${h.v10.variant ? ' <span class="tag acc">variante</span>' : ""}</h4>
         <dl class="kv2">${kv.map(x => `<dt>${esc(x[0])}</dt><dd>${esc(x[1])}</dd>`).join("")}</dl>
         <div class="src"><a href="${esc(d.accommodation_url)}" target="_blank" rel="noopener">Offre Trivago</a> · ${esc(d.file.split("/").pop())} [${d.index}] · ${esc(d.utc)} · recherche « ${esc(d.searchQuery)} »</div></div></div>`; }).join("");
+    carouselizeCards("hotels", { label: "Hôtels du scénario" });
     return;
   }
   if (!HOTELS) { el.innerHTML = '<div class="hcard"><div class="hb"><p class="note">Fiches hôtels en cours de constitution.</p></div></div>'; return; }
@@ -871,6 +923,7 @@ function renderHotels() {
       ${d.facilitiesTop ? `<div class="note">${esc(d.facilitiesTop.join(" · "))}</div>` : ""}
       <div class="src">${d.bookingUrl ? `<a href="${esc(d.bookingUrl)}" target="_blank" rel="noopener">Fiche Booking</a> · ` : ""}${(d.sources || []).map(s => esc(s.tool + " " + (s.utc || ""))).join(" · ")}${ph ? ` · Photo : ${esc(ph.source)}` : ""}</div></div></div>`;
   }).join("");
+  carouselizeCards("hotels", { label: "Hôtels du scénario" });
 }
 function renderVideos() {
   const el = document.getElementById("videos"); if (!el || typeof VIDEOS === "undefined") return;
@@ -1070,7 +1123,195 @@ function showLast(snap) {
   el.textContent = `Dernière validation : ${c.placeName || "?"}, ${d.duration && d.duration.mode === "9n" ? "10 jours / 9 nuits visées, " : ""}${c.nights || "?"} nuits, ${c.flightLabel || "?"}, ${c.hotelLabel || "?"} — ${d.validatedAt ? new Date(d.validatedAt).toLocaleString("fr-BE") : ""}`;
 }
 
+/* ---------- Menu latéral (sommaire) : arborescence des sections + scrollspy ---------- */
+function buildSideToc() {
+  const targets = Array.from(document.querySelectorAll("[data-toc], [data-toc-sub]"));
+  const nav = document.getElementById("sideToc");
+  if (!nav || !targets.length) return;
+  let auto = 0;
+  const items = targets.map(el => {
+    if (!el.id) el.id = "toc-auto-" + (++auto);
+    const sub = el.hasAttribute("data-toc-sub");
+    return { id: el.id, label: sub ? el.getAttribute("data-toc-sub") : el.getAttribute("data-toc"), sub };
+  });
+  nav.innerHTML = '<div class="toc-h">Sommaire</div><ul class="toc-list">' +
+    items.map(it => `<li class="${it.sub ? "toc-sub" : ""}"><a href="#${it.id}" data-target="${it.id}">${esc(it.label)}</a></li>`).join("") +
+    "</ul>";
+  const links = Array.from(nav.querySelectorAll("a[data-target]"));
+  const byId = new Map(links.map(a => [a.dataset.target, a]));
+  nav.addEventListener("click", e => {
+    const a = e.target.closest("a[data-target]");
+    if (!a) return;
+    e.preventDefault();
+    const el = document.getElementById(a.dataset.target);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    closeToc();
+  });
+  if ("IntersectionObserver" in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(en => { const a = byId.get(en.target.id); if (!a) return; if (en.isIntersecting) a.dataset.active = "1"; else delete a.dataset.active; });
+      const active = links.filter(a => a.dataset.active);
+      links.forEach(a => a.classList.remove("current"));
+      if (active.length) active[0].classList.add("current");
+    }, { rootMargin: "-10% 0px -70% 0px", threshold: 0 });
+    items.forEach(it => { const el = document.getElementById(it.id); if (el) obs.observe(el); });
+  }
+}
+function toggleToc() {
+  const nav = document.getElementById("sideToc"), bd = document.getElementById("tocBackdrop"), btn = document.getElementById("tocToggle");
+  const open = nav.classList.toggle("open");
+  bd.hidden = !open;
+  btn.setAttribute("aria-expanded", open ? "true" : "false");
+}
+function closeToc() {
+  const nav = document.getElementById("sideToc"), bd = document.getElementById("tocBackdrop"), btn = document.getElementById("tocToggle");
+  nav.classList.remove("open"); bd.hidden = true; btn.setAttribute("aria-expanded", "false");
+}
+document.getElementById("tocToggle").addEventListener("click", toggleToc);
+document.getElementById("tocBackdrop").addEventListener("click", closeToc);
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeToc(); });
+
+/* ---------- Carrousel générique : une proposition par diapositive, scroll-snap natif ---------- */
+function mkNavBtn(cls, glyph, label) {
+  const b = document.createElement("button");
+  b.type = "button"; b.className = cls; b.textContent = glyph; b.setAttribute("aria-label", label);
+  return b;
+}
+function ensureCarouselChrome(track, opts) {
+  if (track.dataset.cMounted) return;
+  track.dataset.cMounted = "1";
+  track.classList.add("ctrack");
+  track.setAttribute("tabindex", "0");
+  track.setAttribute("role", "region");
+  track.setAttribute("aria-label", opts.label || "Carrousel de propositions");
+  track.addEventListener("keydown", e => {
+    if (e.key === "ArrowRight") { stepTrack(track, 1); e.preventDefault(); }
+    if (e.key === "ArrowLeft") { stepTrack(track, -1); e.preventDefault(); }
+  });
+  const wrap = document.createElement("div");
+  wrap.className = "carousel-wrap";
+  track.parentNode.insertBefore(wrap, track);
+  wrap.appendChild(track);
+  const controls = document.createElement("div");
+  controls.className = "carousel-controls";
+  const prev = mkNavBtn("cnav cprev", "‹", opts.prevLabel || "Proposition précédente");
+  const next = mkNavBtn("cnav cnext", "›", opts.nextLabel || "Proposition suivante");
+  const dots = document.createElement("div");
+  dots.className = "cdots"; dots.setAttribute("role", "tablist");
+  prev.addEventListener("click", () => stepTrack(track, -1));
+  next.addEventListener("click", () => stepTrack(track, 1));
+  controls.appendChild(prev); controls.appendChild(dots); controls.appendChild(next);
+  wrap.appendChild(controls);
+  track._dots = dots;
+  let t;
+  track.addEventListener("scroll", () => { clearTimeout(t); t = setTimeout(() => refreshDots(track), 80); }, { passive: true });
+}
+function stepTrack(track, dir) { track.scrollBy({ left: dir * track.clientWidth, behavior: "smooth" }); }
+function currentIndex(track) {
+  const kids = Array.from(track.children);
+  let best = 0, bestDist = Infinity;
+  kids.forEach((k, i) => { const d = Math.abs(k.offsetLeft - track.scrollLeft); if (d < bestDist) { bestDist = d; best = i; } });
+  return best;
+}
+function refreshDots(track) {
+  const dots = track._dots; if (!dots) return;
+  const kids = Array.from(track.children);
+  if (dots.children.length !== kids.length) {
+    dots.innerHTML = kids.map((_, i) => `<button type="button" class="cdot" aria-label="Aller à la proposition ${i + 1}"></button>`).join("");
+    Array.from(dots.children).forEach((d, i) => d.addEventListener("click", () => track.scrollTo({ left: kids[i].offsetLeft - track.offsetLeft, behavior: "smooth" })));
+  }
+  const idx = currentIndex(track);
+  Array.from(dots.children).forEach((d, i) => { d.classList.toggle("active", i === idx); d.setAttribute("aria-current", i === idx ? "true" : "false"); });
+}
+/* Réduit un <label class="choice"> à l'essentiel (titre + 2 statuts) et déplace le
+   reste (description, dates, détails) dans un <details> replié, sans toucher au
+   radio ni au prix. Idempotent via data-cReady. */
+function compactChoice(choice) {
+  const content = choice.querySelector(":scope > span:not(.p)");
+  if (!content) return;
+  const keep = [], rest = [];
+  let tagCount = 0;
+  Array.from(content.childNodes).forEach(node => {
+    if (node.nodeType === 1 && node.classList && node.classList.contains("t")) { keep.push(node); return; }
+    if (node.nodeType === 1 && node.classList && node.classList.contains("tag")) {
+      if (tagCount < 2) { keep.push(node); tagCount++; } else rest.push(node);
+      return;
+    }
+    rest.push(node);
+  });
+  while (rest.length && rest[0].nodeName === "BR") rest.shift();
+  if (!rest.length) return;
+  const det = document.createElement("details");
+  det.className = "cdetail";
+  const sum = document.createElement("summary"); sum.textContent = "Détails";
+  det.appendChild(sum);
+  rest.forEach(n => det.appendChild(n));
+  content.appendChild(det);
+}
+function choiceValue(choice) { const inp = choice.querySelector("input"); return inp ? inp.value : null; }
+function carouselize(id, opts) {
+  opts = opts || {};
+  const track = document.getElementById(id);
+  if (!track) return;
+  ensureCarouselChrome(track, opts);
+  Array.from(track.children).forEach(choice => {
+    if (!choice.classList.contains("choice") || choice.dataset.cReady) return;
+    choice.dataset.cReady = "1";
+    if (opts.photo) {
+      const ph = document.createElement("div");
+      ph.className = "cphoto";
+      ph.innerHTML = opts.photo(choice);
+      choice.insertBefore(ph, choice.firstChild);
+    }
+    compactChoice(choice);
+  });
+  refreshDots(track);
+}
+/* Variante pour les fiches hôtels déjà illustrées (#hotels) : la photo existe déjà
+   (photoBlock/openGallery), on replie seulement le corps texte sous le titre. */
+function carouselizeCards(id, opts) {
+  const track = document.getElementById(id);
+  if (!track) return;
+  ensureCarouselChrome(track, opts || {});
+  Array.from(track.children).forEach(card => {
+    if (!card.classList.contains("hcard") || card.dataset.cReady) return;
+    card.dataset.cReady = "1";
+    const hb = card.querySelector(".hb");
+    if (hb) {
+      const kids = Array.from(hb.children);
+      const h4 = kids.find(k => k.tagName === "H4");
+      const rest = kids.filter(k => k !== h4);
+      if (rest.length) {
+        const det = document.createElement("details");
+        det.className = "cdetail";
+        const sum = document.createElement("summary"); sum.textContent = "Détails";
+        det.appendChild(sum);
+        rest.forEach(n => det.appendChild(n));
+        hb.appendChild(det);
+      }
+    }
+  });
+  refreshDots(track);
+}
+function placePhotoHtml(choice) {
+  const m = MAPS[choiceValue(choice)];
+  if (!m) return '<span aria-hidden="true">🗺️</span>';
+  return `<img src="${esc(m.file)}" alt="Carte : ${esc(m.title)}" loading="lazy" onerror="this.parentElement.innerHTML='<span aria-hidden=&quot;true&quot;>🗺️</span>'">`;
+}
+function flightPhotoHtml() {
+  return '<span aria-hidden="true" style="font-size:30px">✈️</span>';
+}
+function hotelPhotoHtml(choice) {
+  const val = choiceValue(choice);
+  const imgs = (typeof galleryFor === "function") ? galleryFor(val) : [];
+  const legacy = typeof PHOTOS !== "undefined" ? PHOTOS[val] : null;
+  const file = imgs.length ? imgs[0].file : (legacy ? legacy.file : null);
+  if (!file) return '<span aria-hidden="true" style="font-size:30px">🏨</span>';
+  return `<img src="${esc(file)}" alt="" loading="lazy" onerror="this.parentElement.innerHTML='<span aria-hidden=&quot;true&quot;>🏨</span>'">`;
+}
+
 renderChoices(); renderAll();
+buildSideToc();
 (async () => {
   try { db = await window.claude.use("db"); } catch (e) { db = null; }
   if (db) db.doc("validations/current").onSnapshot(showLast, () => {});

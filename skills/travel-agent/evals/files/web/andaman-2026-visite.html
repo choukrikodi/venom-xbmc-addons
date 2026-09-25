@@ -135,6 +135,46 @@ section.block{margin-bottom:28px}
 .vcard .vm{margin:0;color:var(--muted);font-size:13px}
 .vcard .vs{margin:0}
 .vcard .src{margin:2px 0 0;font-size:12px;color:var(--muted)}
+
+/* Menu latéral (sommaire) : colonne sticky à droite ≥640px, tiroir sous 640px */
+.page-shell{display:flex;align-items:flex-start;gap:0}
+.page-shell > .wrap{flex:1 1 auto;min-width:0}
+.side-toc{flex:0 0 220px;position:sticky;top:16px;align-self:flex-start;max-height:calc(100vh - 32px);overflow-y:auto;padding:20px 14px;border-left:1px solid var(--line);font-size:13px}
+.side-toc .toc-h{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:8px}
+.toc-list{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.toc-list li.toc-sub{padding-left:12px}
+.toc-list a{display:block;padding:5px 8px;border-radius:5px;color:var(--muted);text-decoration:none;line-height:1.3}
+.toc-list li.toc-sub a{font-size:12px}
+.toc-list a:hover{background:var(--accent-soft);color:var(--ink)}
+.toc-list a:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.toc-list a.current{background:var(--accent);color:var(--accent-ink);font-weight:600}
+.toc-toggle{display:none}
+.toc-backdrop{display:none}
+@media (max-width:640px){
+  .side-toc{position:fixed;top:0;right:0;bottom:0;width:min(86vw,320px);max-height:100vh;transform:translateX(100%);transition:transform .2s ease;z-index:41;background:var(--surface);box-shadow:-8px 0 24px rgba(0,0,0,.3);margin:0}
+  .side-toc.open{transform:translateX(0)}
+  .toc-toggle{display:flex;position:fixed;right:16px;bottom:16px;z-index:40;align-items:center;gap:6px;border-radius:20px;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+  .toc-backdrop{display:block;position:fixed;inset:0;background:rgba(10,16,18,.4);z-index:39}
+  .toc-backdrop[hidden]{display:none}
+}
+
+/* Carrousel générique : une proposition à la fois, scroll-snap natif */
+.hotels,.hotels *{min-width:0}
+.carousel-wrap{margin-top:2px;min-width:0;max-width:100%}
+.ctrack{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:10px;padding-bottom:2px;min-width:0;max-width:100%}
+.ctrack::-webkit-scrollbar{display:none}
+.ctrack:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.ctrack > .hcard{flex:0 0 100%;max-width:100%;min-width:0;scroll-snap-align:center;overflow-wrap:anywhere}
+.cdetail{margin-top:6px}
+.cdetail summary{cursor:pointer;color:var(--accent);font-size:13px;font-weight:600;list-style:none}
+.cdetail summary::-webkit-details-marker{display:none}
+.cdetail summary::before{content:"▸ Détails";display:inline-block}
+.cdetail[open] summary::before{content:"▾ Détails"}
+.carousel-controls{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:8px}
+.cnav{width:34px;height:34px;border-radius:50%;padding:0;display:grid;place-items:center;font-size:18px;line-height:1;flex:none}
+.cdots{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;max-width:220px}
+.cdot{width:9px;height:9px;padding:0;border-radius:50%;border:1px solid var(--line);background:var(--surface);cursor:pointer}
+.cdot.active{background:var(--accent);border-color:var(--accent)}
 </style>
 <div class="bg" aria-hidden="true">
   <div class="sun"></div>
@@ -145,8 +185,11 @@ section.block{margin-bottom:28px}
   </svg>
 </div>
 
+<div class="page-shell">
+<button type="button" id="tocToggle" class="toc-toggle" aria-expanded="false" aria-controls="sideToc">☰ Sommaire</button>
+<div id="tocBackdrop" class="toc-backdrop" hidden></div>
 <div class="wrap">
-<header class="cover" id="top">
+<header class="cover" id="top" data-toc="Présentation">
   <div class="eyebrow">Côte d'Andaman, Thaïlande · décembre 2026</div>
   <h1>Trois plages, un seul choix</h1>
   <p class="lede">16 à 18 nuits sur la côte d'Andaman, décembre 2026</p>
@@ -182,6 +225,8 @@ section.block{margin-bottom:28px}
   <div class="panel" id="panel-CHOIX" role="tabpanel"></div>
   <div class="panel" id="panel-SRC" role="tabpanel"></div>
 </main>
+</div>
+<nav class="side-toc" id="sideToc" aria-label="Sommaire de la page"></nav>
 </div>
 
 <script>
@@ -529,7 +574,7 @@ const yt = id => "https://www.youtube.com/watch?v=" + id;
 function videosBlock(k) {
   const list = VIDEOS[k] || [];
   const intro = k === "A" ? `<p class="note" style="margin:0 0 8px">Aucune vidéo française spécifique à Nai Yang trouvée : vidéos Phuket générales. Deux alternatives anglophones sur la plage elle-même : ${VIDEO_ALT_A.map(v => ext(yt(v[0]), v[1])).join(" · ")}.</p>` : "";
-  return `<section class="block">
+  return `<section class="block" id="sec-${k}-videos" data-toc-sub="Vidéos">
     <h3>Vidéos en français (non visionnées)</h3>${intro}
     <div class="videos">${list.map(v => `<article class="vcard">
       <a class="vph" href="${esc(yt(v[0]))}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="assets/yt-${esc(v[0])}.jpg" alt="" loading="lazy" onerror="this.parentNode.classList.add('nophoto');this.remove()"><span class="vnp">vignette non disponible</span></a>
@@ -645,17 +690,17 @@ function scenarioPanel(k) {
     ? `Scénario ${k} · 9 nuits d'hôtel visées (${D.hin} → ${D.hout}) · aucun vol daté aligné`
     : `Scénario ${k} · ${D.nights} nuits · hôtel du ${D.hin} au ${D.hout} · avion ${D.dep} → ${D.ret}`;
   return `
-  <section class="block">
+  <section class="block" id="sec-${k}-intro" data-toc="${esc(S.name)}">
     <div class="eyebrow">${esc(eyebrowDates)}</div>
     <h2>${esc(S.name)}</h2>
     <p class="lede">${esc(S.ambiance)}</p>
     ${durBar()}
   </section>
-  <section class="block">
+  <section class="block" id="sec-${k}-carte" data-toc-sub="Carte">
     <h3>Carte</h3>
     ${mapHtml(k, S.mapPins)}
   </section>
-  <section class="block">
+  <section class="block" id="sec-${k}-lieu" data-toc-sub="Le lieu">
     <h3>Le lieu</h3>
     <div class="dcard"><div class="dhead"><h4>${esc(S.name)}</h4><span class="note">Fiches consultées le 24/09/2026</span></div>
       <div class="dbody">
@@ -666,35 +711,35 @@ function scenarioPanel(k) {
       </div>
     </div>
   </section>
-  <section class="block">
+  <section class="block" id="sec-${k}-hotels" data-toc-sub="Hôtels">
     ${is9 ? `
       <h3>Hôtels candidats (5★ déclarées, hôtel unique à retenir)</h3>
-      <div class="hotels">${S.hotels9.map(hotelCand9Card).join("")}</div>
+      <div class="hotels" id="hotels-${k}">${S.hotels9.map(hotelCand9Card).join("")}</div>
       <p class="note" style="margin-top:8px">Candidats Trivago (traces v7/v7b du 25/09/2026), classés selon le dossier source mais aucun montant n'est repris ici. Annulation, petit-déjeuner et vue mer réelle non confirmés : à vérifier avant réservation.</p>
     ` : `
       <h3>L'hôtel proposé${S.alt ? " et son alternative" : ""}</h3>
-      <div class="hotels">${hotelCard(S.hotel, "Hôtel proposé")}${S.alt ? hotelCard(S.alt, "Alternative") : ""}</div>
+      <div class="hotels" id="hotels-${k}">${hotelCard(S.hotel, "Hôtel proposé")}${S.alt ? hotelCard(S.alt, "Alternative") : ""}</div>
       ${S.alt ? "" : `<p class="note" style="margin-top:8px">Les autres hôtels évoqués pour ce lieu n'ont pas de fiche Booking exploitable : aucune alternative documentée.</p>`}
     `}
   </section>
-  <section class="block">
+  <section class="block" id="sec-${k}-prog" data-toc-sub="Programme">
     <h3>Programme de séances proposé</h3>
     <div class="prog">${S.sessions.map(s => `<div class="sess"><span class="when">${esc(s[0])} · ${esc(s[1])}</span><span>${esc(s[2])}</span><span class="pb">Plan B gratuit : ${esc(s[3])}</span></div>`).join("")}</div>
     <p class="note" style="margin-top:8px">${esc(S.sessionsNote)} Les autres jours sont libres : plage, piscine, promenades.</p>
   </section>
-  <section class="block">
+  <section class="block" id="sec-${k}-rater" data-toc-sub="À ne pas rater">
     <h3>À ne pas rater</h3>
     <div class="dcard"><div class="dbody">
       <div><ul style="margin:0;padding-left:18px">${li(S.mustSee)}</ul></div>
       <div><h3>Autour du lieu</h3><ul style="margin:0;padding-left:18px">${S.attractions.map(a => `<li><b>${esc(a[0])}</b> — ${esc(a[1])}</li>`).join("")}</ul></div>
     </div></div>
   </section>
-  <section class="block">
+  <section class="block" id="sec-${k}-excs" data-toc-sub="Excursions">
     <h3>Excursions réservables (Booking, disponibilités 1-15 décembre 2026)</h3>
     <ul class="excs">${S.excursions.map(x => `<li>${ext(x[1] + BK, x[0])}${x[2] ? `<br><span class="note">Départ : ${esc(x[2])}</span>` : ""}</li>`).join("")}</ul>
     <p class="note" style="margin-top:8px">${esc(S.excNote)} Booking ne fournit ni description ni photo pour ces activités ; les pages s'ouvrent dans un nouvel onglet.</p>
   </section>
-  <section class="block">
+  <section class="block" id="sec-${k}-vols" data-toc-sub="Vols">
     <h3>Vols (durées et horaires, sans engagement)</h3>
     <div class="grid2">
       <div><h3>Départ de Bruxelles (BRU) → ${esc(S.airport)}</h3><div class="flights">${S.flightsBRU.map(f => `<div class="fl"><div class="t">${esc(f[0])}</div><div class="d">${esc(f[1])}</div></div>`).join("")}</div>${is9 ? `<p class="note" style="margin-top:6px">${esc(S.flightsBRU9Note)}</p>` : ""}</div>
@@ -710,15 +755,15 @@ function scenarioPanel(k) {
 
 function countryPanel() {
   return `
-  <section class="block">
+  <section class="block" id="sec-TH-intro" data-toc="Thaïlande">
     <div class="eyebrow">Fiche pays</div>
     <h2>Thaïlande</h2>
     <p class="lede">${esc(COUNTRY.geography)}</p>
   </section>
-  <section class="block">
+  <section class="block" id="sec-TH-cartes" data-toc-sub="Cartes">
     <div class="grid2">${mapHtml("andaman", ["esprit", "palm", "anyavee"])}${mapHtml("thailand", [])}</div>
   </section>
-  <section class="block">
+  <section class="block" id="sec-TH-reperes" data-toc-sub="Repères">
     <div class="dcard"><div class="dhead"><h4>Repères</h4><span class="note">Fiches consultées le 24/09/2026</span></div>
       <div class="dbody">
         <div><h3>Histoire</h3><p>${esc(COUNTRY.history)}</p></div>
@@ -749,18 +794,18 @@ const COMPARE = [
 
 function choixPanel() {
   return `
-  <section class="block">
+  <section class="block" id="sec-choix-intro" data-toc="Comment choisir">
     <div class="eyebrow">Comparer</div>
     <h2>Comment choisir</h2>
     <p class="lede">Le même séjour, trois façons de le vivre. Le tableau reprend uniquement ce qui change d'un lieu à l'autre.</p>
   </section>
-  <section class="block">
+  <section class="block" id="sec-choix-tableau" data-toc-sub="Tableau comparatif">
     <div class="tablewrap"><table class="compare" id="cmp">
       <thead><tr><th></th><th>A · Nai Yang</th><th>B · Ao Nang</th><th>C · Khao Lak</th></tr></thead>
       <tbody>${COMPARE.map(r => `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td>${esc(r[2])}</td><td>${esc(r[3])}</td></tr>`).join("")}</tbody>
     </table></div>
   </section>
-  <section class="block">
+  <section class="block" id="sec-choix-coupdecoeur" data-toc-sub="Mon coup de cœur">
     <h3>Mon coup de cœur</h3>
     <div class="favbox">
       <div class="row">
@@ -776,23 +821,23 @@ function choixPanel() {
 function srcPanel() {
   const lines = (arr, how) => arr.map(s => `<li>${ext(s[1], s[0])} — consulté le 24/09/2026${how ? ", " + how : ""}</li>`).join("");
   return `
-  <section class="block">
+  <section class="block" id="sec-src-intro" data-toc="Sources">
     <div class="eyebrow">Transparence</div>
     <h2>Sources</h2>
     <p class="lede">Toutes les pages ont été lues via extraits de moteur de recherche le 24 septembre 2026 (pages non ouvertes directement). Les fiches hôtel et les excursions viennent des outils Booking.com (réponses textuelles, sans page ouverte).</p>
   </section>
-  <section class="block"><h3>Thaïlande</h3><ul class="srcs">${lines(COUNTRY.sources, "lu via extrait")}</ul></section>
-  <section class="block"><h3>A · Nai Yang</h3><ul class="srcs">${lines(SCEN.A.sources, "lu via extrait")}</ul></section>
-  <section class="block"><h3>B · Ao Nang</h3><ul class="srcs">${lines(SCEN.B.sources, "lu via extrait")}</ul></section>
-  <section class="block"><h3>C · Khao Lak</h3><ul class="srcs">${lines(SCEN.C.sources, "lu via extrait")}</ul></section>
-  <section class="block"><h3>Hôtels et excursions (Booking.com)</h3><ul class="srcs">
+  <section class="block" id="sec-src-th" data-toc-sub="Thaïlande"><h3>Thaïlande</h3><ul class="srcs">${lines(COUNTRY.sources, "lu via extrait")}</ul></section>
+  <section class="block" id="sec-src-a" data-toc-sub="A · Nai Yang"><h3>A · Nai Yang</h3><ul class="srcs">${lines(SCEN.A.sources, "lu via extrait")}</ul></section>
+  <section class="block" id="sec-src-b" data-toc-sub="B · Ao Nang"><h3>B · Ao Nang</h3><ul class="srcs">${lines(SCEN.B.sources, "lu via extrait")}</ul></section>
+  <section class="block" id="sec-src-c" data-toc-sub="C · Khao Lak"><h3>C · Khao Lak</h3><ul class="srcs">${lines(SCEN.C.sources, "lu via extrait")}</ul></section>
+  <section class="block" id="sec-src-hotels" data-toc-sub="Hôtels et excursions"><h3>Hôtels et excursions (Booking.com)</h3><ul class="srcs">
     <li>Fiches hôtel : outil Booking « answer_property_qa » du 24/09/2026 à 22:34:31 UTC (description, chambre, plage, aéroport, petit-déjeuner, navette, annulation, spa et piscine, points faibles) et 22:34:55 UTC (annulation, équipements, distance plage). Liens : ${ext(HOTELS.esprit.url, "L'esprit De Naiyang")}, ${ext(HOTELS.panphuree.url, "Panphuree")}, ${ext(HOTELS.palm.url, "Palm Galleria")}, ${ext(HOTELS.anyavee.url, "Anyavee")} (construits à partir des identifiants, non testés).</li>
     <li>Excursions : outil Booking « attractions_search » du 24/09/2026 à 22:34:31 UTC, catégories nature et circuits, dates 1-15/12/2026 ; liens dans chaque onglet.</li>
     <li>Vols : rapport v5 pour Bruxelles ; relevés Kiwi du 24/09/2026 22:16-22:20 UTC pour Tunis.</li>
     <li>Cartes : fonds © OpenStreetMap contributors ; positions des hôtels d'après Booking, aéroports placés à titre indicatif.</li>
     <li>Vidéos : recherche par extraits WebSearch le 24/09/2026, non visionnées. Chaîne, durée et audience rarement visibles dans les extraits ; dates reprises des extraits (mois seul quand le jour n'était pas indiqué) ; aucune vidéo française spécifique à Nai Yang trouvée.</li>
   </ul></section>
-  <section class="block"><h3>Points non vérifiés</h3><ul class="srcs">
+  <section class="block" id="sec-src-nonverif" data-toc-sub="Points non vérifiés"><h3>Points non vérifiés</h3><ul class="srcs">
     <li>Conditions d'entrée exactes en Thaïlande après le 15/09/2026 (page de l'ambassade inaccessible lors de la consultation).</li>
     <li>Population des communes : seuls les chiffres provinciaux sont sourcés (tambon Sakhu, tambons de Khao Lak).</li>
     <li>Coordonnées d'Ao Nang (ordre de grandeur confirmé seulement par la position de l'hôtel).</li>
@@ -822,6 +867,8 @@ function render() {
   document.getElementById("panel-CHOIX").innerHTML = choixPanel();
   document.getElementById("panel-SRC").innerHTML = srcPanel();
   renderFav();
+  ["A", "B", "C"].forEach(k => carouselizeCards("hotels-" + k, { label: "Hôtels du scénario " + k }));
+  buildSideToc();
 }
 function show(tab, push) {
   if (!TABS.includes(tab)) tab = "A";
@@ -834,6 +881,7 @@ function show(tab, push) {
   }
   const nav = document.getElementById("tabs");
   if (push !== false) window.scrollTo({ top: Math.max(0, nav.offsetTop - 4), behavior: "smooth" });
+  buildSideToc();
 }
 function renderFav() {
   const out = document.getElementById("favout");
@@ -880,6 +928,143 @@ document.addEventListener("click", e => {
   }
 });
 window.addEventListener("hashchange", () => show(location.hash.replace("#", "") || "A", false));
+
+/* ---------- Menu latéral (sommaire) : sections de l'onglet actif + scrollspy ---------- */
+let tocObserver = null;
+function buildSideToc() {
+  const nav = document.getElementById("sideToc");
+  if (!nav) return;
+  const activeTab = TABS.find(t => { const p = document.getElementById("panel-" + t); return p && p.classList.contains("on"); }) || "A";
+  const header = document.getElementById("top");
+  const scopeRoot = document.getElementById("panel-" + activeTab);
+  const targets = [];
+  if (header) targets.push(header);
+  if (scopeRoot) targets.push(...scopeRoot.querySelectorAll("[data-toc], [data-toc-sub]"));
+  if (!targets.length) { nav.innerHTML = ""; return; }
+  let auto = 0;
+  const items = targets.map(el => {
+    if (!el.id) el.id = "toc-auto-" + (++auto);
+    const sub = el.hasAttribute("data-toc-sub");
+    return { id: el.id, label: sub ? el.getAttribute("data-toc-sub") : el.getAttribute("data-toc"), sub };
+  });
+  nav.innerHTML = '<div class="toc-h">Sommaire · ' + esc(TAB_LABEL[activeTab] || activeTab) + '</div><ul class="toc-list">' +
+    items.map(it => `<li class="${it.sub ? "toc-sub" : ""}"><a href="#${it.id}" data-target="${it.id}">${esc(it.label)}</a></li>`).join("") +
+    "</ul>";
+  const links = Array.from(nav.querySelectorAll("a[data-target]"));
+  const byId = new Map(links.map(a => [a.dataset.target, a]));
+  if (tocObserver) tocObserver.disconnect();
+  if ("IntersectionObserver" in window) {
+    tocObserver = new IntersectionObserver(entries => {
+      entries.forEach(en => { const a = byId.get(en.target.id); if (!a) return; if (en.isIntersecting) a.dataset.active = "1"; else delete a.dataset.active; });
+      const active = links.filter(a => a.dataset.active);
+      links.forEach(a => a.classList.remove("current"));
+      if (active.length) active[0].classList.add("current");
+    }, { rootMargin: "-10% 0px -70% 0px", threshold: 0 });
+    items.forEach(it => { const el = document.getElementById(it.id); if (el) tocObserver.observe(el); });
+  }
+}
+document.getElementById("sideToc").addEventListener("click", e => {
+  const a = e.target.closest("a[data-target]");
+  if (!a) return;
+  e.preventDefault();
+  const el = document.getElementById(a.dataset.target);
+  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  closeToc();
+});
+function toggleToc() {
+  const nav = document.getElementById("sideToc"), bd = document.getElementById("tocBackdrop"), btn = document.getElementById("tocToggle");
+  const open = nav.classList.toggle("open");
+  bd.hidden = !open;
+  btn.setAttribute("aria-expanded", open ? "true" : "false");
+}
+function closeToc() {
+  const nav = document.getElementById("sideToc"), bd = document.getElementById("tocBackdrop"), btn = document.getElementById("tocToggle");
+  nav.classList.remove("open"); bd.hidden = true; btn.setAttribute("aria-expanded", "false");
+}
+document.getElementById("tocToggle").addEventListener("click", toggleToc);
+document.getElementById("tocBackdrop").addEventListener("click", closeToc);
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeToc(); });
+
+/* ---------- Carrousel générique : une fiche hôtel par diapositive, scroll-snap natif ---------- */
+function mkNavBtn(cls, glyph, label) {
+  const b = document.createElement("button");
+  b.type = "button"; b.className = cls; b.textContent = glyph; b.setAttribute("aria-label", label);
+  return b;
+}
+function ensureCarouselChrome(track, opts) {
+  if (track.dataset.cMounted) return;
+  track.dataset.cMounted = "1";
+  track.classList.add("ctrack");
+  track.setAttribute("tabindex", "0");
+  track.setAttribute("role", "region");
+  track.setAttribute("aria-label", opts.label || "Carrousel de propositions");
+  track.addEventListener("keydown", e => {
+    if (e.key === "ArrowRight") { stepTrack(track, 1); e.preventDefault(); }
+    if (e.key === "ArrowLeft") { stepTrack(track, -1); e.preventDefault(); }
+  });
+  const wrap = document.createElement("div");
+  wrap.className = "carousel-wrap";
+  track.parentNode.insertBefore(wrap, track);
+  wrap.appendChild(track);
+  const controls = document.createElement("div");
+  controls.className = "carousel-controls";
+  const prev = mkNavBtn("cnav cprev", "‹", opts.prevLabel || "Proposition précédente");
+  const next = mkNavBtn("cnav cnext", "›", opts.nextLabel || "Proposition suivante");
+  const dots = document.createElement("div");
+  dots.className = "cdots"; dots.setAttribute("role", "tablist");
+  prev.addEventListener("click", () => stepTrack(track, -1));
+  next.addEventListener("click", () => stepTrack(track, 1));
+  controls.appendChild(prev); controls.appendChild(dots); controls.appendChild(next);
+  wrap.appendChild(controls);
+  track._dots = dots;
+  let t;
+  track.addEventListener("scroll", () => { clearTimeout(t); t = setTimeout(() => refreshDots(track), 80); }, { passive: true });
+}
+function stepTrack(track, dir) { track.scrollBy({ left: dir * track.clientWidth, behavior: "smooth" }); }
+function currentIndex(track) {
+  const kids = Array.from(track.children);
+  let best = 0, bestDist = Infinity;
+  kids.forEach((k, i) => { const d = Math.abs(k.offsetLeft - track.scrollLeft); if (d < bestDist) { bestDist = d; best = i; } });
+  return best;
+}
+function refreshDots(track) {
+  const dots = track._dots; if (!dots) return;
+  const kids = Array.from(track.children);
+  if (dots.children.length !== kids.length) {
+    dots.innerHTML = kids.map((_, i) => `<button type="button" class="cdot" aria-label="Aller à la proposition ${i + 1}"></button>`).join("");
+    Array.from(dots.children).forEach((d, i) => d.addEventListener("click", () => track.scrollTo({ left: kids[i].offsetLeft - track.offsetLeft, behavior: "smooth" })));
+  }
+  const idx = currentIndex(track);
+  Array.from(dots.children).forEach((d, i) => { d.classList.toggle("active", i === idx); d.setAttribute("aria-current", i === idx ? "true" : "false"); });
+}
+/* Les fiches hôtel (hotelCard/hotelCand9Card) sont déjà illustrées (photo ou
+   mention d'absence) : on replie seulement le corps texte sous le titre. */
+function carouselizeCards(id, opts) {
+  const track = document.getElementById(id);
+  if (!track) return;
+  ensureCarouselChrome(track, opts || {});
+  Array.from(track.children).forEach(card => {
+    if (!card.classList.contains("hcard") || card.dataset.cReady) return;
+    card.dataset.cReady = "1";
+    const hb = card.querySelector(".hb");
+    if (hb) {
+      const kids = Array.from(hb.children);
+      const h4 = kids.find(k => k.tagName === "H4");
+      const lead = kids.find(k => k !== h4 && k.tagName === "DIV" && k.querySelector && k.querySelector(".pill"));
+      const rest = kids.filter(k => k !== h4 && k !== lead);
+      if (rest.length) {
+        const det = document.createElement("details");
+        det.className = "cdetail";
+        const sum = document.createElement("summary"); sum.textContent = "Détails";
+        det.appendChild(sum);
+        rest.forEach(n => det.appendChild(n));
+        hb.appendChild(det);
+      }
+    }
+  });
+  refreshDots(track);
+}
+
 render();
 show(location.hash.replace("#", "") || "A", false);
 </script>
