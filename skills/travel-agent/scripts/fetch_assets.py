@@ -16,16 +16,58 @@ import html
 import json
 import re
 import sys
+import time
+import urllib.error
+import urllib.parse
 import urllib.request
 
 UA = "travel-agent-assets/1.0 (+https://github.com/choukrikodi/venom-xbmc-addons)"
+# Beaucoup d'hôtels protègent leurs images contre le hotlinking (referer
+# attendu) ou filtrent les user-agents non navigateurs : un user-agent de
+# navigateur courant, avec en-têtes usuels et referer de même origine, est
+# une pratique standard pour lire une page publique comme le ferait un
+# visiteur normal, sans contourner d'authentification ni de paiement.
+BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
 MAX_BYTES = 6 * 1024 * 1024
+RETRYABLE_HTTP = {403, 429, 503}
 
 
-def fetch(url, timeout=40):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.geturl(), r.headers.get("Content-Type", ""), r.read(MAX_BYTES + 1)
+def _origin(url):
+    p = urllib.parse.urlsplit(url)
+    return f"{p.scheme}://{p.netloc}/"
+
+
+def _request(url, browser, referer):
+    if browser:
+        headers = {"User-Agent": BROWSER_UA, "Accept": "text/html,image/*,*/*;q=0.8",
+                   "Accept-Language": "fr-BE,fr;q=0.9,en;q=0.6", "Referer": referer or _origin(url)}
+    else:
+        headers = {"User-Agent": UA, "Accept": "*/*"}
+    return urllib.request.Request(url, headers=headers)
+
+
+def fetch(url, timeout=40, referer=None):
+    """Un essai normal (UA transparent du projet), puis en cas de blocage ou
+    de lenteur, un second essai en UA navigateur avec referer et délai plus
+    long. Toujours la même image publique, jamais de contournement d'accès
+    restreint (compte, paiement, CAPTCHA)."""
+    last = None
+    for attempt, (browser, to) in enumerate(((False, timeout), (True, max(timeout, 70)))):
+        try:
+            req = _request(url, browser, referer)
+            with urllib.request.urlopen(req, timeout=to) as r:
+                return r.geturl(), r.headers.get("Content-Type", ""), r.read(MAX_BYTES + 1)
+        except urllib.error.HTTPError as e:
+            last = e
+            if e.code not in RETRYABLE_HTTP or attempt == 1:
+                raise
+        except (TimeoutError, urllib.error.URLError) as e:
+            last = e
+            if attempt == 1:
+                raise
+        time.sleep(1)
+    raise last  # pragma: no cover - garde-fou, la boucle retourne ou lève avant
 
 
 def og_image(page_url):
@@ -41,7 +83,6 @@ def og_image(page_url):
 def page_image(page_url):
     """Première image « de contenu » d'une page : balise <img> dont le nom ne
     contient pas logo/icon/sprite, en jpg/jpeg/png/webp ; URL rendue absolue."""
-    import urllib.parse
     final, ctype, body = fetch(page_url)
     text = body.decode("utf-8", "replace")
     for m in re.finditer(r'<img[^>]+(?:data-src|src)=["\']([^"\']+)["\']', text, re.I):
@@ -66,13 +107,16 @@ def main(manifest_path, out_dir):
                  "source": a.get("source", ""), "utc": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")}
         try:
             url = a["url"]
+            page_referer = None
             if a.get("kind") == "og_image":
+                page_referer = url
                 url = og_image(url)
                 entry["image_url"] = url
             elif a.get("kind") == "page_image":
+                page_referer = url
                 url = page_image(url)
                 entry["image_url"] = url
-            final, ctype, body = fetch(url)
+            final, ctype, body = fetch(url, referer=page_referer)
             if len(body) > MAX_BYTES:
                 raise ValueError("fichier trop volumineux")
             if not ctype.startswith("image/"):
