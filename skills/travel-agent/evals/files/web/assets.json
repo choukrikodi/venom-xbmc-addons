@@ -636,55 +636,55 @@
     },
     {
       "name": "hotel-pullman_naithon.jpg",
-      "kind": "og_image",
+      "kind": "page_image",
       "source": "trivago.be, image de partage de la fiche Pullman Phuket Arcadia Naithon Beach",
       "url": "https://www.trivago.be/en-US/lm/hotel-pullman-phuket-arcadia-naithon-beach-nai-thon-beach?cip=234716015&currencyCode=EUR&search=100-2219122;105-1322;200-15960;dr-20261129-20261208;drs-40;rc-1-2&dealId=-8616975218387875851"
     },
     {
       "name": "hotel-jw_maikhao.jpg",
-      "kind": "og_image",
+      "kind": "page_image",
       "source": "trivago.be, image de partage de la fiche JW Marriott Phuket Resort & Spa",
       "url": "https://www.trivago.be/en-US/lm/hotel-jw-marriott-phuket-resort-spa-mai-khao-beach?cip=234716015&currencyCode=EUR&search=100-16361;105-1322;200-15961;dr-20261129-20261208;drs-40;rc-1-2&dealId=-6572766252607007463"
     },
     {
       "name": "hotel-renaissance_maikhao.jpg",
-      "kind": "og_image",
+      "kind": "page_image",
       "source": "trivago.be, image de partage de la fiche Renaissance Phuket Resort & Spa",
       "url": "https://www.trivago.be/en-US/lm/renaissance-phuket-resort-spa-mai-khao-beach?cip=234716015&currencyCode=EUR&search=100-1390786;105-1322;200-15961;dr-20261129-20261208;drs-40;rc-1-2&dealId=2014551077164767973"
     },
     {
       "name": "hotel-slate.jpg",
-      "kind": "og_image",
+      "kind": "page_image",
       "source": "trivago.be, image de partage de la fiche The Slate",
       "url": "https://www.trivago.be/en-US/lm/resort-the-slate-nai-yang-beach?cip=234716015&currencyCode=EUR&search=100-9398;105-1322;200-15960;dr-20261129-20261208;drs-40;rc-1-2&dealId=-4170102154282534162"
     },
     {
       "name": "hotel-sands_katathani.jpg",
-      "kind": "og_image",
+      "kind": "page_image",
       "source": "trivago.be, image de partage de la fiche The Sands Khao Lak by Katathani",
       "url": "https://www.trivago.be/en-US/lm/resort-the-sands-khao-lak-by-katathani?cip=234716015&currencyCode=EUR&search=100-2378712;105-1322;200-15941;dr-20261129-20261208;drs-40;rc-1-2&dealId=8542429402599277393"
     },
     {
       "name": "hotel-jw_khaolak.jpg",
-      "kind": "og_image",
+      "kind": "page_image",
       "source": "trivago.be, image de partage de la fiche JW Marriott Khao Lak Resort and Spa",
       "url": "https://www.trivago.be/en-US/lm/hotel-jw-marriott-khao-lak-resort-and-spa?cip=234716015&currencyCode=EUR&search=100-1116583;105-1322;200-15941;dr-20261129-20261208;drs-40;rc-1-2&dealId=-3353249895648236366"
     },
     {
       "name": "hotel-sofitel_klongmuang.jpg",
-      "kind": "og_image",
+      "kind": "page_image",
       "source": "trivago.be, image de partage de la fiche Sofitel Krabi Phokeethra Golf & Spa Resort",
       "url": "https://www.trivago.be/en-US/lm/hotel-sofitel-krabi-phokeethra-golf-spa-resort-klong-muang?cip=234716015&currencyCode=EUR&search=100-152785;105-1322;200-16207;dr-20261129-20261208;drs-40;rc-1-2&dealId=-3980787297258193091"
     },
     {
       "name": "hotel-grand_mercure_aonang.jpg",
-      "kind": "og_image",
+      "kind": "page_image",
       "source": "trivago.be, image de partage de la fiche Grand Mercure Krabi Aonang",
       "url": "https://www.trivago.be/en-US/lm/hotel-grand-mercure-krabi-aonang-ao-nang?cip=234716015&currencyCode=EUR&search=100-50723138;105-1322;200-16207;dr-20261129-20261208;drs-40;rc-1-2&dealId=-4175545458776111846"
     },
     {
       "name": "hotel-nakamanda_klongmuang.jpg",
-      "kind": "og_image",
+      "kind": "page_image",
       "source": "trivago.be, image de partage de la fiche Nakamanda Resort & Spa",
       "url": "https://www.trivago.be/en-US/lm/nakamanda-resort-spa-klong-muang?cip=234716015&currencyCode=EUR&search=100-111147;105-1322;200-16207;dr-20261130-20261209;drs-40;rc-1-2&dealId=-8954684522380500976"
     }
