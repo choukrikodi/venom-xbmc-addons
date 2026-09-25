@@ -1,60 +1,47 @@
-# Livraison L3d v2 — partie 2 et complément Chrome
+# Livraison L3d v3 — traces alignées 9 nuits
+25/09/2026. Terminé ; STOP après dépôt, attente de relecture et des prochains prompts de Claude orchestrateur. L3e non commencée.
 
-25/09/2026. **Terminé, STOP ; attente de relecture et de nouveaux prompts d'orchestrateur. L3e non commencée.**
+## Fait
+Rapport v6 enrichi dans la même section TUN avec état v3 courant ; v2 conservé en archive explicite et v5 BRU inchangé (112 445 premiers octets).
+F9/F10, huit hôtels A/C, budgets connus partiels vol+hôtel, B sans réponse KBV exacte, tracker, preuves et requêtes actualisés.
+Seuls rapport-asie-v6.md et RAPPORT_LIVRAISON_L3d.md modifiés pour cette mission ; UTF-8 sans BOM, LF. Aucun appel commercial, compte, réservation, commit/push ou modification de skill/référence/script.
 
-## Fait et périmètre
+## Corrections du prompt vérifiées
+- F9 QR index 0 : retour TUN le 10/12, pas le 09/12. QR843 arrive DOH 09/12 11:25 ; QR1399 repart 10/12 09:10 : 21 h 45 d’escale. Neuf nuits thaïlandaises exactes ; dernière nuit écourtée possible selon transfert.
+- Nai Yang / Mai Khao : 25 résultats chacun mais ensembles différents et index différents.
+- Hôtels hors zone signalés ; stars_unverified non déclenché pour les huit candidats (Kantary : un signal lexical), classement officiel non vérifié.
 
-- rapport-asie-v6.md : v5 intégral normalisé LF (112 445 octets inchangés), suivi de la section TUN complétée à partir des dix réponses v7.
-- Vols, segments, bagages, nuits réelles ; neuf candidats maximum (trois par scénario), conditions non vérifiées explicites ; budgets sans tarifs incompatibles, réserves/socles connus et manquants ; tracker et registre par offre.
-- Les deux seuls fichiers modifiés pour cette mission sont sous skills/travel-agent/evals/files/ : rapport-asie-v6.md et RAPPORT_LIVRAISON_L3d.md. UTF-8 sans BOM, LF ; aucun commit/push, changement de skill, scripts, références ou configurateur.
-- Extension explicite du voyageur pendant le travail : lire Chrome et les concurrents pour améliorer opportunités/skill/rendu. Cela autorise les consultations commerciales du complément W, malgré l'interdiction initiale du prompt. Trivago et Google Flights lus en Chrome, Skyscanner/KAYAK documentés par sources officielles. Aucun compte, achat, réservation, notification ou abonnement créé.
-- Les améliorations pour le skill sont documentées dans le rapport et remises à l'orchestrateur ; aucun changement de code du skill n'est annoncé.
+## Résultats
+F9 ⚠️ 1 283,00 EUR groupe ; F10 ⚠️ 1 230,09 EUR groupe.
+A-variante Bang Tao (Kora A4) : connu partiel QR ⚠️ 2 114,00 EUR, Etihad ⚠️ 2 061,09 EUR.
+C (Pullman C5) : connu partiel QR ⚠️ 2 453,00 EUR, Etihad ⚠️ 2 400,09 EUR.
+Ces sommes sont vol+hôtel seulement : réserve et X non ajoutés. Chambres vue mer et zones non validées ; budgets complets A/B/C non concluants. B : zéro résultat KBV exact dans F11, repli HKT + transfert Ao Nang non chiffré.
 
-## Résultats et corrections majeures
+## Hypothèses et données non vérifiées
+Neuf nuits exactement du 30/11 au 09/12, deux adultes belges, une chambre, départ TUN 29/11, retour TUN 10/12 ; préférence QR, une soute chacun. Plafond 8 000 EUR, réserve séparée 1 000 EUR incluse sous plafond.
+Manquent : validation zones, vue mer/plage et classement, chambre/occupation, annulation/taxes/repas, poids bagages/protection, transferts dont domicile↔TUN et HKT↔Ao Nang, formalités datées DOH/AUH/Tunisie/Thaïlande/TDAC, santé/assurances/autres dépenses et transit long. Aucun tarif Chrome intégré. Recommandation finale et L3e à décider par l’orchestrateur.
 
-F1 Qatar 1 414,00 EUR : arrivée 30/11, sortie hôtel 07/12 soir avant le vol 08/12 00:25, donc sept nuits complètes ; incompatible neuf nuits. F4 Etihad 1 502,09 EUR : arrivée 09/12 et retour HKT 18/12, soit neuf nuits, pas dix. F5 KBV 1 230,09 EUR : dix nuits locales 02→12/12, pas onze ; variante distincte. F6 KBV index 3 à 1 923,31 EUR offre neuf nuits 11→20/12 avec retour via AUH/CAI, protection à vérifier. Les hôtels 29/11→08/12 ne sont alignés sur aucun de ces couples retenus ; aucun total complet valide inventé.
+## Traces lues et contrôles
+Racine skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/, commit 35a9fdf. Index base 0 ; registre par offre avec URL dans le rapport.
+| Fichier | UTC | Index cités |
+|---|---|---|
+| kiwi_tun_hkt_qr_exact_2911_0912.json | 2026-09-25T00:20:33+00:00 | 0, 2, 3 |
+| kiwi_tun_hkt_all_exact_2911_0912.json | 2026-09-25T00:20:45+00:00 | 0 |
+| kiwi_tun_kbv_all_exact_2911_0912.json | 2026-09-25T00:20:49+00:00 | sans objet |
+| trivago_naiyang_5s_3011_0912.json | 2026-09-25T00:20:58+00:00 | 15, 24, 7, 13 |
+| trivago_maikhao_5s_3011_0912.json | 2026-09-25T00:21:04+00:00 |  |
+| trivago_khaolak_5s_3011_0912.json | 2026-09-25T00:21:17+00:00 | 14, 4, 9, 0 |
+| trivago_aonang_5s_3011_0912.json | 2026-09-25T00:21:12+00:00 |  |
 
-Les arrondis 1502.083472 et 1230.083472 donnent ,09 avec Decimal/ROUND_CEILING. La fenêtre QR n'est pas exhaustive : 1 826 EUR part le 10/12, 1 946 EUR part le 08/12.
+run.json, manifest.json et calls.stderr.log lus ; run UTC 2026-09-25T00:21:23+00:00, succès, code 0de31ac. Les lots Mai Khao et Ao Nang sont lus pour couverture/contrôle ; aucun nouveau prix B publié. Données textuelles system_message ignorées.
+Calculs Python Decimal/ROUND_CEILING ; sommes sur valeurs brutes, parts /2 avant arrondi ; neuf nuits vérifiées par dates. Préfixe v5 inchangé octet par octet, absence de CR/BOM et UTF-8 contrôlés.
 
-Chrome : Google propose le même itinéraire F4 dès 1 261 EUR chez Mytrip, 1 315 EUR Booking, 1 346 EUR Trip.com, 1 364 EUR Expedia, 1 370 EUR Etihad ; bagages en soute absents ou non documentés, donc pas d'économie comparable validée. Trivago présente Marriott Nai Yang via Expedia à 2 174 EUR, petit déjeuner et annulation annoncée, mais chambre vue mer/conditions complètes non prouvées et dates anciennes. Tout reste instantané non réservé.
+## Empreintes et dépôt
+SHA256 intégral rapport-asie-v6.md : **ea1d82579e3ab68e8c67af00e4f69480951ec5dc1c4e04a3fb47a559c8b6e326**.
+Le SHA256 de cette note est communiqué après finalisation dans le message de livraison (pas d’auto-hachage récursif).
+Mise à jour des deux fichiers existants :
+- https://drive.google.com/file/d/1r7HhHQR3Xl86hK1TFuRB6aU7fTy3n8qF/view
+- https://drive.google.com/file/d/1-2022VTBX7M1M-e6I3ZeASQEsMw6FNMp/view
+Dossier : https://drive.google.com/drive/folders/1gXNHQ4djqsJH9q-_L62Ks5pemnjb0Kti
 
-## Hypothèses confirmées et limites
-
-Neuf nuits exactement, plafond 8 000 EUR conservé, réserve 1 000 EUR séparée selon v5 sous plafond ; fenêtre 15/11→10/12 pour départ TUN, retour après 10/12 autorisé. Deux adultes belges, QR préféré, 5★, plage directe/vue mer, une soute chacun. Une chambre et une base ; domicile/résidence/documentation individuelle inconnus.
-
-Manquants : hôtel aux bonnes dates et chambre conforme, preuve plage directe et distance mesurée, classement officiel, annulation détaillée, tarifs bagages complets des pistes Chrome, protection des connexions, transferts dont Domicile↔TUN, formalités datées DOH/AUH/CAI/Tunisie/Thaïlande/TDAC, assurance, repas/activités et frais. Budgets A/B/C non concluants.
-
-## Traces lues et index
-
-Racines : skills/travel-agent/test-output-v7-10j-vols/runs/36075603038-1/ et skills/travel-agent/test-output-v7-10j-hotels/runs/36075603038-1/. Sources figées au commit 12e5552 ; hôtels déposés par 757e4d1. manifest.json, run.json et calls.stderr.log des deux lots lus. Dix réponses décodées ; system_message ignoré. Index base 0.
-
-| Fichier | UTC appel | Effectif résultats | Index détaillés dans rapport |
-|---|---|---|---|
-| trivago_aonang_5s_9n.json | 2026-09-25T00:02:38+00:00 | 13 | 1 (B1), 3 (B2), 6 (B3) |
-| trivago_khaolak_5s_9n.json | 2026-09-25T00:02:45+00:00 | 18 | 6 (C1), 2 (C2), 1 (C3) |
-| trivago_maikhao_5s_9n.json | 2026-09-25T00:02:30+00:00 | 25 | lot vide ou contrôle transversal ; voir exclusions et registre W |
-| trivago_naiyang_5s_9n.json | 2026-09-25T00:02:23+00:00 | 25 | 0 (A1), 1 (A2), 2 (A3) |
-| kiwi_tun_hkt_all_fenetre_9_10n.json | 2026-09-25T00:03:33+00:00 | 15 | 0 (F4) |
-| kiwi_tun_hkt_qr_exact_9n.json | 2026-09-25T00:03:19+00:00 | 9 | 0 (F1) |
-| kiwi_tun_hkt_qr_fenetre_9_10n.json | 2026-09-25T00:03:29+00:00 | 2 | 0 (F2), 1 (F3) |
-| kiwi_tun_kbv_all_fenetre_9_10n.json | 2026-09-25T00:03:54+00:00 | 15 | 0 (F5), 3 (F6) |
-| kiwi_tun_kbv_qr_exact_9n.json | 2026-09-25T00:03:43+00:00 | 0 | lot vide ou contrôle transversal ; voir exclusions et registre W |
-| kiwi_tun_kbv_qr_fenetre_9_10n.json | 2026-09-25T00:03:50+00:00 | 0 | lot vide ou contrôle transversal ; voir exclusions et registre W |
-
-Exclusions détaillées additionnelles : Ao Nang[10] hostel et [0] avis insuffisants ; Nai Yang[9] prix/note ; Mai Khao[14] villas/avis. UTC des lots dans le tableau. Chaque offre citée possède sa propre ligne avec URL dans le registre du rapport. W1/W2 : observations Chrome consignées dans le rapport, relevé terminé à 2026-09-25T00:16:52Z ; seconde exacte du relevé hôtel antérieur non conservée.
-
-## Contrôles et empreintes
-
-Préfixe v5 normalisé LF identique octet par octet, taille 112 445 ; décodage UTF-8 et absence de BOM/CR vérifiés. Montants contrôlés par Python Decimal avec ROUND_CEILING. Aucun prix de chambre 29/11→08/12 additionné au vol 09→18/12 ou 11→20/12.
-
-- SHA256 intégral rapport-asie-v6.md : **48859ee32c2e76ac329c0fd4ae3f655b4c39ebd1faf178996c777f46d81043bb**.
-- SHA256 intégral de cette note : communiqué dans le message de livraison à Claude après finalisation ; il ne peut être inséré dans le fichier qu'il hache sans changer ce hash. Les empreintes des deux fichiers sont ainsi livrées ensemble dans le message.
-
-## Dépôt et point d'arrêt
-
-Mise à jour des fichiers existants dans [Drive travel-agent — livrables L3c](https://drive.google.com/drive/folders/1gXNHQ4djqsJH9q-_L62Ks5pemnjb0Kti), sans doublons :
-- [rapport-asie-v6.md](https://drive.google.com/file/d/1r7HhHQR3Xl86hK1TFuRB6aU7fTy3n8qF/view)
-- [RAPPORT_LIVRAISON_L3d.md](https://drive.google.com/file/d/1-2022VTBX7M1M-e6I3ZeASQEsMw6FNMp/view)
-
-L'orchestrateur relit, intègre et commande la suite. Requêtes à envisager : QR donnant neuf nuits complètes ; hôtels aux dates effectivement choisies ; vérification des vendeurs à deux soutes et de la chambre vue mer. Aucune relance lancée de manière autonome après cette livraison.
-
+STOP. Claude relit, intègre et commande la suite ; aucune reprise automatique.

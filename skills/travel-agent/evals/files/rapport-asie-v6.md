@@ -707,7 +707,7 @@ Preuve du prix Snapper (exclu) : `test-output-v3/trivago_khaolak_comparatif_18n.
 
 # Variante 10 jours, hôtels 5★, départ Tunis
 
-**L3d v2 — partie 2, 25/09/2026.** Le v5 intégral ci-dessus reste historique, avec ses chiffres BRU inchangés ; fins de ligne normalisées en LF. Cette section remplace la partie 1. Sources : run Actions **36075603038**, tentative 1, traces reçues au commit **12e5552** (hôtels précédemment déposés par **757e4d1**). Aucun appel commercial nouveau. Tous les prix présentés sont **⚠️ instantanés non réservés**, non garantis au paiement.
+**L3d v3 — 25/09/2026.** État courant fondé sur les traces v7b, run 36077040045 tentative 1, code 0de31ac, dépôt 35a9fdf. Le v5 BRU reste intégralement inchangé. Les tableaux v2 conservés en archive à la fin de cette section sont historiques et ne déterminent plus les budgets courants. Tous les tarifs sont **⚠️ instantanés non réservés**. Aucun nouvel appel commercial.
 
 ## Hypothèses
 
@@ -717,7 +717,206 @@ Préférence Qatar Airways, une soute par adulte. Une chambre double et une base
 
 « 10 jours » décrit ici la durée sur place ; neuf nuits n'impliquent pas dix jours domicile–domicile. Compter les nuits depuis l'arrivée locale, non depuis le départ TUN. Une chambre facturée pour une nuit passée en avion ne prouve pas une nuit sur place ; une dernière chambre conservée avant un vol à 00:25 n'est pas une nuit complète de sommeil. Les variantes de dix nuits sur place restent distinctes.
 
-## Synthèse et recommandation révisée
+## Synthèse v3 — offres alignées 9 nuits réelles
+
+Vols départ TUN le 29/11/2026, arrivée HKT le 30/11 ; hôtels du 30/11 au 09/12, exactement neuf nuits. Retour HKT le 09/12 et arrivée TUN le **10/12 pour F9 comme F10**. Le prompt indiquait à tort le 09/12 pour la dernière correspondance QR : le fichier brut indique le 10/12.
+
+L’alignement des dates est résolu pour A/C. La conformité complète 5★ certifié, plage directe et chambre vue mer reste non démontrée. Les sous-totaux ci-dessous sont des associations de prix aux mêmes dates, pas des séjours conformes validés. A est ici une **variante de zone à valider**, car le moins cher cité est à Bang Tao, pas à Nai Yang. La recommandation finale A/B/C et L3e restent réservées à l’orchestrateur.
+
+## Vols — complément du tableau F1–F8
+
+F1–F3 et F4–F6 sont conservés sans changement dans l’archive v2 : **aucun n’est aligné sur le couple hôtel 30/11→09/12**. F4/F6 restent des alternatives à d’autres dates, sans nouvel assemblage ici. F7/F8 sont les anciens résultats QR KBV.
+
+| ID | Prix groupe | Départ TUN → arrivée HKT | Départ HKT → arrivée TUN | Durée aller / retour fournisseur | Nuits |
+|---|---|---|---|---|---|
+| F9 — offres alignées 9 nuits réelles | ⚠️ 1 283,00 EUR | 2026-11-29T16:00:00 → 2026-11-30T18:55:00 | 2026-12-09T08:20:00 → 2026-12-10T13:35:00 | 20 h 55 / 35 h 15 | 30/11→09/12 : 9 ; départ hôtel matinal à vérifier pour F9 |
+| F10 — offres alignées 9 nuits réelles | ⚠️ 1 230,09 EUR | 2026-11-29T10:40:00 → 2026-11-30T06:15:00 | 2026-12-09T15:30:00 → 2026-12-10T06:15:00 | 13 h 35 / 20 h 45 | 30/11→09/12 : 9 ; départ hôtel matinal à vérifier pour F9 |
+
+| ID | Sens | Compagnie annoncée / vol | Segment | Départ local | Arrivée locale | Cabine |
+|---|---|---|---|---|---|---|
+| F9 | aller | QR1400 / Qatar Airways | TUN→DOH | 2026-11-29T16:00:00 | 2026-11-29T23:25:00 | Economy |
+| F9 | aller | QR846 / Qatar Airways | DOH→HKT | 2026-11-30T08:15:00 | 2026-11-30T18:55:00 | Economy |
+| F9 | retour | QR843 / Qatar Airways | HKT→DOH | 2026-12-09T08:20:00 | 2026-12-09T11:25:00 | Economy |
+| F9 | retour | QR1399 / Qatar Airways | DOH→TUN | 2026-12-10T09:10:00 | 2026-12-10T13:35:00 | Economy |
+| F10 | aller | EY740 / Etihad Airways | TUN→AUH | 2026-11-29T10:40:00 | 2026-11-29T19:25:00 | Economy |
+| F10 | aller | EY410 / Etihad Airways | AUH→HKT | 2026-11-29T21:00:00 | 2026-11-30T06:15:00 | Economy |
+| F10 | retour | EY417 / Etihad Airways | HKT→AUH | 2026-12-09T15:30:00 | 2026-12-09T19:35:00 | Economy |
+| F10 | retour | EY739 / Etihad Airways | AUH→TUN | 2026-12-10T02:20:00 | 2026-12-10T06:15:00 | Economy |
+
+| ID | Sens | Escale | Durée calculée au même aéroport |
+|---|---|---|---|
+| F9 | aller | DOH | 8 h 50 |
+| F9 | retour | DOH | 21 h 45 |
+| F10 | aller | AUH | 1 h 35 |
+| F10 | retour | AUH | 6 h 45 |
+
+**F9** : Qatar seule confirmé dans query (« only QR ») et tous les segments QR ; Economy ; personalItem=2, cabinBag=2, checkedBag=2. **F10** : toutes compagnies recherchées, Etihad annoncé sur les quatre segments ; Economy ; personalItem=0, cabinBag=2, checkedBag=2. Les deux échos indiquent « 2 adults », passengers.adults=2, children=0, infants=0 et EUR. Paramètres adults_hold_bags=[1,1], allow_self_transfer=false et ≤2 escales ; un seul arrêt par sens reçu. Poids, attribution effective par voyageur/segment, protection et codeshare restent à confirmer auprès du vendeur : aucun supplément bagage supposé gratuit.
+
+F9 : escale retour DOH **21 h 45**, nuit en transit hors des neuf nuits thaïlandaises. Un hébergement de transit, des repas et l’entrée au Qatar ne sont ni inclus ni supposés gratuits. F10 : arrivée HKT à 06:15, chambre disponible avant l’heure normale non prouvée ; early check-in manquant. Pour F9, départ HKT 08:20 : vérifier transfert et heure de sortie d’hôtel, particulièrement depuis Khao Lak. Neuf nuits calendaires ne garantissent pas une dernière nuit entière de sommeil.
+
+F9-exclu : ⚠️ 1 543,00 EUR ; 8 nuits complètes seulement : retour HKT le 09/12 à 00:25, sortie hôtel le 08/12 au soir ; exclu du budget neuf nuits.
+
+F9-alt : ⚠️ 1 543,00 EUR ; 9 nuits calendaires, retour HKT le 09/12 à 20:30 et TUN le 10/12 à 13:35 ; variante confort non additionnée.
+
+## Hôtels — nouveaux candidats v7b
+
+Tous : arrivée 30/11/2026, départ 09/12/2026, neuf nuits ; demande 2 adultes/1 chambre, BE/EUR. Dates et EUR reçus, occupation à corroborer sur l’offre finale. Les huit candidats demandés par v3 sont documentés (exception explicite à la limite v2 de trois par scénario). Ils satisfont le filtre déclaré 5★, note ≥8,5 et ≥500 avis. Prix total price_per_stay, jamais prix/nuit multiplié.
+
+| ID | Hôtel | Total 9 nuits | Note et avis | Annonceur | Classement / flag heuristique | Plage directe | Chambre vue mer |
+|---|---|---|---|---|---|---|---|
+| A4 | Kora Beach Resort Phuket | ⚠️ 831,00 EUR | 8.8/10 ; 1,958 avis | Trip.com | 5★ déclarés ; stars_unverified non déclenché : 0 signal établi | à vérifier | à vérifier |
+| A5 | Cassia Phuket | ⚠️ 946,00 EUR | 9.0/10 ; 8,612 avis | Stayforlong | 5★ déclarés ; stars_unverified non déclenché : 0 signal établi | à vérifier | à vérifier |
+| A6 | Bella Nara Phuket Naiyang Beach | ⚠️ 1 098,00 EUR | 8.7/10 ; 1,856 avis | Stayforlong | 5★ déclarés ; stars_unverified non déclenché : 0 signal établi | à vérifier | à vérifier |
+| A7 | Wyndham Garden Naithon Phuket | ⚠️ 1 332,00 EUR | 8.9/10 ; 1,414 avis | trivago DEALS | 5★ déclarés ; stars_unverified non déclenché : 0 signal établi | à vérifier | à vérifier |
+| C4 | Mai Khaolak Beach Resort & Spa - TUIBLUE Mai Khaolak | ⚠️ 981,00 EUR | 8.5/10 ; 4,304 avis | Stayforlong | 5★ déclarés ; stars_unverified non déclenché : 0 signal établi | à vérifier | à vérifier |
+| C5 | Pullman Khao Lak Resort | ⚠️ 1 170,00 EUR | 9.0/10 ; 4,875 avis | Stayforlong | 5★ déclarés ; stars_unverified non déclenché : 0 signal établi | à vérifier | à vérifier |
+| C6 | Kantary Beach Hotel Villas & Suites | ⚠️ 1 234,00 EUR | 8.8/10 ; 4,408 avis | ZenHotels.com | 5★ déclarés ; stars_unverified non déclenché : 1 signal lexical « villas » ; seuil de 2 non atteint | à vérifier | à vérifier |
+| C7 | Eden Beach Khao Lak Resort & Spa | ⚠️ 1 413,00 EUR | 8.8/10 ; 4,050 avis | Stayforlong | 5★ déclarés ; stars_unverified non déclenché : 0 signal établi | à vérifier | à vérifier |
+
+| ID | Localité renvoyée | Latitude ; longitude | Distance renvoyée au centre, PAS plage | Distance mesurée à la plage |
+|---|---|---|---|---|
+| A4 | Bang Tao Beach, Thailand | 8.022939682006836 ; 98.29183959960938 | Bang Tao Beach, 1.9 km to City center | manquant |
+| A5 | Bang Tao Beach, Thailand | 8.000229835510254 ; 98.29669952392578 | Bang Tao Beach, 0.8 km to City center | manquant |
+| A6 | Nathon, Thailand | 8.070019721984863 ; 98.29638671875 | Nathon, 2.1 km to City center | manquant |
+| A7 | Nathon, Thailand | 8.0585298538208 ; 98.27982330322266 | Nathon, 0.5 km to City center | manquant |
+| C4 | Phangnga, Thailand | 8.756979942321777 ; 98.2598876953125 | Phangnga, 45.4 km to City center | manquant |
+| C5 | Khao Lak, Thailand | 8.853469848632812 ; 98.26728820800781 | Khao Lak, 16.7 km to City center | manquant |
+| C6 | Khao Lak, Thailand | 8.734100341796875 ; 98.23980712890625 | Khao Lak, 3.9 km to City center | manquant |
+| C7 | Khao Lak, Thailand | 8.609219551086426 ; 98.24028778076172 | Khao Lak, 10.7 km to City center | manquant |
+
+A4/A5 : Bang Tao, hors Nai Yang strict. A6/A7 : libellé « Nathon » renvoyé, identité/localité à recouper ; ne pas assimiler silencieusement Nathon à Nai Yang ou Nai Thon. C4 : Phangnga, 45,4 km au centre ; zone à vérifier. C5 : 16,7 km au centre de Khao Lak ; C7 : 10,7 km ; ce ne sont pas des distances à la plage ni une preuve de changement de station. Aucun déplacement de zone n’est réputé accepté.
+
+Tous les classements officiels restent non vérifiés malgré l’absence de déclenchement heuristique stars_unverified ; aucun hôtel n’est certifié. Prix/9 au-dessus du seuil heuristique 5★ TH, avis nombreux, notes élevées, piscine et restaurant listés ; Kantary a un seul signal lexical. Vue mer, accès direct et distance plage, type de chambre, petit déjeuner, annulation gratuite/date/heure/fuseau, prépaiement et taxes restent à vérifier sur l’offre annonceur et le site officiel de chaque hôtel. Sources officielles précises non consultées dans cette mission.
+
+## B — Ao Nang : aucune solution KBV exacte reçue
+
+F11 : resultsCount=0 et itineraries=[] sans erreur pour TUN→KBV, départ 29/11, retour 09/12, deux adultes, toutes compagnies, deux soutes demandées. Cela décrit uniquement cette recherche, pas l’absence absolue de vols. Seule piste documentée à ces dates : **F9 ou F10 vers HKT + transfert routier HKT↔Ao Nang**, coût et durée manquants ; aucun budget B couplé n’est validé. Une fenêtre KBV plus large nécessite une nouvelle commande de l’orchestrateur. Le lot hôtel Ao Nang v7b (14 résultats) est reçu, sans validation d’une offre vol KBV associée.
+
+## Budgets A/B/C — connus partiels, autres lignes manquantes
+
+Hypothèses de calcul uniquement : A-variante Bang Tao avec A4 Kora, C avec C5 Pullman. Une seule chambre/hôtel par somme ; ni les autres hôtels ni les variantes aériennes ne sont cumulés. Pour A, ce calcul ne vaut pas approbation du changement de station. Pour A/C, il ne chiffre pas encore une chambre vue mer garantie.
+
+| Scénario | Offres | Vol groupe EUR | Hôtel groupe EUR | Connu partiel bas / haut EUR | Connu partiel / personne EUR | État |
+|---|---|---|---|---|---|---|
+| A-variante de zone | F9 QR + A4 | ⚠️ 1 283,00 | ⚠️ 831,00 | ⚠️ 2 114,00 / 2 114,00 | ⚠️ 1 057,00 | Budget complet non concluant |
+| A-variante de zone | F10 Etihad + A4 | ⚠️ 1 230,09 | ⚠️ 831,00 | ⚠️ 2 061,09 / 2 061,09 | ⚠️ 1 030,55 | Budget complet non concluant |
+| C | F9 QR + C5 | ⚠️ 1 283,00 | ⚠️ 1 170,00 | ⚠️ 2 453,00 / 2 453,00 | ⚠️ 1 226,50 | Budget complet non concluant |
+| C | F10 Etihad + C5 | ⚠️ 1 230,09 | ⚠️ 1 170,00 | ⚠️ 2 400,09 / 2 400,09 | ⚠️ 1 200,05 | Budget complet non concluant |
+
+Le **connu partiel = vol + hôtel uniquement**, sans réserve ni X. Les bornes égales représentent un instantané, pas une garantie de prix futur. Calculs en Decimal à partir des valeurs brutes (F10=1230.083472), ROUND_CEILING au centime seulement à l’affichage ; parts calculées sur la somme exacte/2.
+
+| Poste | Quantité / formule | A bas–haut EUR | B bas–haut EUR | C bas–haut EUR |
+|---|---|---|---|---|
+| Vol international | 2 adultes AR | F9 ⚠️ 1 283,00 ou F10 ⚠️ 1 230,09 | KBV manquant ; repli HKT non couplé | F9 ⚠️ 1 283,00 ou F10 ⚠️ 1 230,09 |
+| Hôtel | 1 chambre × 9 nuits | A4 ⚠️ 831,00, zone/chambre à valider | manquant pour assemblage retenu | C5 ⚠️ 1 170,00, chambre à valider |
+| Liaisons internes | Mono-station | sans objet sous hypothèse | transfert HKT ci-dessous | sans objet sous hypothèse |
+| Supplément bagages | Si franchise effective insuffisante ; éviter double compte | manquant | manquant | manquant |
+| Transferts locaux | AR HKT↔hôtel ; groupe/bagages | manquant | manquant | manquant |
+| Repas sur place | 2 adultes, moins repas inclus prouvés | manquant | manquant | manquant |
+| Repas internationaux/transit | Durées réelles, DOH/AUH inclus | manquant | manquant | manquant |
+| Assurance assistance | 2 adultes, domicile à domicile | manquant | manquant | manquant |
+| Assurance annulation | Capital et contrat adaptés | manquant | manquant | manquant |
+| Activités | Programme 9 nuits | manquant | manquant | manquant |
+| Formalités / TDAC / visa éventuel | Sources officielles datées | manquant | manquant | manquant |
+| Taxes et frais obligatoires | Hors inclusions attestées | manquant | manquant | manquant |
+| Domicile↔TUN | Domicile encore inconnu | manquant | manquant | manquant |
+| SIM/connectivité | Forfait à établir | manquant | manquant | manquant |
+| Pourboires volontaires | Choix du voyageur | manquant | manquant | manquant |
+| Banque/change/retraits | Frais séparés, offres EUR | manquant | manquant | manquant |
+| Early check-in / late check-out | F10 arrivée 06:15 ; aucune gratuité présumée | manquant | manquant | manquant |
+| Hébergement éventuel de transit | F9 DOH 21 h 45 ; besoin/coût non établis | manquant | manquant | manquant |
+| Repli HKT↔Ao Nang | 2 trajets routiers à chiffrer | sans objet | manquant | sans objet |
+| B/H dépenses complètes | Somme des postes hors réserve/X | manquant | manquant | manquant |
+| Réserve fixe | Paramètre confirmé, incluse sous plafond | 1 000,00 | 1 000,00 | 1 000,00 |
+| X suppléments supplémentaires | Hors dépenses déjà comptées | manquant | manquant | manquant |
+| Total complet bas/haut | B+1 000+Xbas / H+1 000+Xhaut | manquant | manquant | manquant |
+| Total complet par personne | Total exact/2 | manquant | manquant | manquant |
+| Tolérance X / solde complet | 8 000−1 000−H ; puis −Xhaut | manquant | manquant | manquant |
+| État | Essentiels sans borne haute | Budget non concluant | Budget non concluant | Budget non concluant |
+
+Poser Ubas/Uhaut = dépenses ordinaires encore manquantes et Xbas/Xhaut = autres suppléments obligatoires non déjà comptés. Le total complet A/C s’écrit ceil(vol brut + hôtel + U + 1 000 + X). U et X ne sont jamais nuls par défaut. La réserve est séparée et reste sous le plafond de 8 000 EUR ; aucun solde disponible ou respect du plafond n’est conclu tant que H manque. Les tarifs Chrome W restent hors sommes, sans requalification deux soutes/même chambre.
+
+## Itinéraire et formalités — état v3
+
+TUN 29/11 → HKT 30/11 ; une base du 30/11 au 09/12, neuf nuits ; retour TUN 10/12. J1 récupération/installation, journées intermédiaires avec au plus deux activités et plan B repos/pluie, dernier jour selon transfert/embarquement réels ; programme détaillé et durées porte à porte manquants. F9 : retour matinal et nuit de transit ; F10 : arrivée matinale et retour HKT l’après-midi. Le comparatif qualitatif 9 nuits contre 16–18 nuits de l’archive reste applicable (temps de transport proportionnellement plus important, moins d’activités, récupération plus courte).
+
+Passeports belges, entrée Thaïlande/TDAC, sortie et réadmission Tunisie, transit DOH/AUH, santé/assurance : **à confirmer, sources officielles datées manquantes**. Aucun texte juridique nouveau ni frais nul affirmé. Le passage CAI de F6 appartient seulement à la variante historique, pas aux F9/F10.
+
+## Tracker
+
+| Tâche | Étape | Responsable | Échéance | Source | Statut |
+|---|---|---|---|---|---|
+| Contrôler neuf nuits et horaires | A/C | Codex | Livraison v3 | F9/F10 + hôtels v7b | fait ; retour QR corrigé au 10/12 |
+| Contrôler absence KBV exact | B | Codex | Livraison v3 | F11 | fait ; couverture limitée |
+| Valider zone A et localités C | A/C | Orchestrateur / voyageur | Avant sélection finale | coordonnées et localités v7b | à faire |
+| Vérifier chambre/vue mer/plage/classement | A/B/C | Orchestrateur | Avant recommandation | offre vendeur + hôtel + registre à consulter | manquant |
+| Vérifier bagages/protection/transit | F9/F10 | Orchestrateur | Avant recommandation | Kiwi puis transporteur | compteurs lus ; conditions manquantes |
+| Chiffrer transferts et domicile↔TUN | A/B/C | Orchestrateur / voyageur | Avant budget final | devis datés à obtenir | manquant |
+| Formalités, assurance et autres postes | A/B/C | Orchestrateur | Avant budget final | autorités / contrats datés | manquant |
+| Relire/intégrer puis décider L3e | Livraison | Claude orchestrateur | Après dépôt | deux fichiers Drive | attente ; STOP Codex |
+
+## Registre de preuves v7b — index base 0
+
+Pour chaque chiffre : fichier figé à 35a9fdf, index original (jamais index après tri), UTC d’appel et URL offre. Les quantités/budgets de voyage sont des paramètres confirmés, pas des cotations.
+
+| ID | Fichier | Index | UTC collecte | URL offre | Paramètres / constat |
+|---|---|---|---|---|---|
+| F9 | [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_hkt_qr_exact_2911_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_hkt_qr_exact_2911_0912.json) | itineraries[0] | 2026-09-25T00:20:33+00:00 | [Kiwi](https://kiwi.com/u/8x8955) | TUN → HKT on 29/11/2026–29/11/2026, returning 09/12/2026–09/12/2026, 2 adults [≤2 stops/sector; only QR; no self-transfer] |
+| F10 | [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_hkt_all_exact_2911_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_hkt_all_exact_2911_0912.json) | itineraries[0] | 2026-09-25T00:20:45+00:00 | [Kiwi](https://kiwi.com/u/zuskgx) | TUN → HKT on 29/11/2026–29/11/2026, returning 09/12/2026–09/12/2026, 2 adults [≤2 stops/sector; no self-transfer] |
+| F9-exclu | [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_hkt_qr_exact_2911_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_hkt_qr_exact_2911_0912.json) | itineraries[2] | 2026-09-25T00:20:33+00:00 | [Kiwi](https://kiwi.com/u/kwyqv8) | 8 nuits complètes seulement : retour HKT le 09/12 à 00:25, sortie hôtel le 08/12 au soir ; exclu du budget neuf nuits |
+| F9-alt | [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_hkt_qr_exact_2911_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_hkt_qr_exact_2911_0912.json) | itineraries[3] | 2026-09-25T00:20:33+00:00 | [Kiwi](https://kiwi.com/u/8py43h) | 9 nuits calendaires, retour HKT le 09/12 à 20:30 et TUN le 10/12 à 13:35 ; variante confort non additionnée |
+| A4 | [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_naiyang_5s_3011_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_naiyang_5s_3011_0912.json) | accommodations[15] / output[15] | 2026-09-25T00:20:58+00:00 | [Trivago → Trip.com](https://www.trivago.be/en-US/lm/kora-beach-resort-phuket-bang-tao-beach?cip=234716015&currencyCode=EUR&search=100-40863800;105-1322;200-15960;dr-20261130-20261209;drs-40;rc-1-2&dealId=79253178531914661) | 30/11→09/12 ; 9 nuits ; 2 adultes/1 chambre demandés |
+| A5 | [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_naiyang_5s_3011_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_naiyang_5s_3011_0912.json) | accommodations[24] / output[24] | 2026-09-25T00:20:58+00:00 | [Trivago → Stayforlong](https://www.trivago.be/en-US/lm/hotel-cassia-phuket-bang-tao-beach?cip=234716015&currencyCode=EUR&search=100-4799848;105-1322;200-15960;dr-20261130-20261209;drs-40;rc-1-2&dealId=7000248583006938386) | 30/11→09/12 ; 9 nuits ; 2 adultes/1 chambre demandés |
+| A6 | [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_naiyang_5s_3011_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_naiyang_5s_3011_0912.json) | accommodations[7] / output[7] | 2026-09-25T00:20:58+00:00 | [Trivago → Stayforlong](https://www.trivago.be/en-US/lm/hotel-bella-nara-phuket-naiyang-beach-nathon?cip=234716015&currencyCode=EUR&search=100-35753936;105-1322;200-15960;dr-20261130-20261209;drs-40;rc-1-2&dealId=5417391939841472498) | 30/11→09/12 ; 9 nuits ; 2 adultes/1 chambre demandés |
+| A7 | [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_naiyang_5s_3011_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_naiyang_5s_3011_0912.json) | accommodations[13] / output[13] | 2026-09-25T00:20:58+00:00 | [Trivago → trivago DEALS](https://www.trivago.be/en-US/lm/hotel-wyndham-garden-naithon-phuket-nathon?cip=234716015&currencyCode=EUR&search=100-36316236;105-1322;200-15960;dr-20261130-20261209;drs-40;rc-1-2&dealId=-1929439623622417452) | 30/11→09/12 ; 9 nuits ; 2 adultes/1 chambre demandés |
+| C4 | [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_khaolak_5s_3011_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_khaolak_5s_3011_0912.json) | accommodations[14] / output[14] | 2026-09-25T00:21:17+00:00 | [Trivago → Stayforlong](https://www.trivago.be/en-US/lm/hotel-mai-khaolak-beach-resort-spa-tuiblue-mai-khaolak-phangnga?cip=234716015&currencyCode=EUR&search=100-2318868;105-1322;200-15941;dr-20261130-20261209;drs-40;rc-1-2&dealId=-9148175811389435837) | 30/11→09/12 ; 9 nuits ; 2 adultes/1 chambre demandés |
+| C5 | [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_khaolak_5s_3011_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_khaolak_5s_3011_0912.json) | accommodations[4] / output[4] | 2026-09-25T00:21:17+00:00 | [Trivago → Stayforlong](https://www.trivago.be/en-US/lm/hotel-pullman-khao-lak-resort?cip=234716015&currencyCode=EUR&search=100-22945772;105-1322;200-15941;dr-20261130-20261209;drs-40;rc-1-2&dealId=8607966930618910143) | 30/11→09/12 ; 9 nuits ; 2 adultes/1 chambre demandés |
+| C6 | [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_khaolak_5s_3011_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_khaolak_5s_3011_0912.json) | accommodations[9] / output[9] | 2026-09-25T00:21:17+00:00 | [Trivago → ZenHotels.com](https://www.trivago.be/en-US/lm/resort-kantary-beach-hotel-villas-suites-khao-lak?cip=234716015&currencyCode=EUR&search=100-1711343;105-1322;200-15941;dr-20261130-20261209;drs-40;rc-1-2&dealId=-2738949014471020485) | 30/11→09/12 ; 9 nuits ; 2 adultes/1 chambre demandés |
+| C7 | [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_khaolak_5s_3011_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_khaolak_5s_3011_0912.json) | accommodations[0] / output[0] | 2026-09-25T00:21:17+00:00 | [Trivago → Stayforlong](https://www.trivago.be/en-US/lm/hotel-eden-beach-khao-lak-resort-spa?cip=234716015&currencyCode=EUR&search=100-11340296;105-1322;200-15941;dr-20261130-20261209;drs-40;rc-1-2&dealId=4494840780824978905) | 30/11→09/12 ; 9 nuits ; 2 adultes/1 chambre demandés |
+| F11 | [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_kbv_all_exact_2911_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_kbv_all_exact_2911_0912.json) | resultsCount=0 ; index sans objet | 2026-09-25T00:20:49+00:00 | URL offre absente | TUN → KBV on 29/11/2026–29/11/2026, returning 09/12/2026–09/12/2026, 2 adults [≤2 stops/sector; no self-transfer] |
+
+### Inventaire des traces lues
+
+| Fichier | UTC appel | Résultats | Index cités |
+|---|---|---|---|
+| [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_hkt_qr_exact_2911_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_hkt_qr_exact_2911_0912.json) | 2026-09-25T00:20:33+00:00 | 9 | 0, 2, 3 |
+| [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_hkt_all_exact_2911_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_hkt_all_exact_2911_0912.json) | 2026-09-25T00:20:45+00:00 | 15 | 0 |
+| [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_kbv_all_exact_2911_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/kiwi_tun_kbv_all_exact_2911_0912.json) | 2026-09-25T00:20:49+00:00 | 0 | sans objet |
+| [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_naiyang_5s_3011_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_naiyang_5s_3011_0912.json) | 2026-09-25T00:20:58+00:00 | 25 | 15, 24, 7, 13 |
+| [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_maikhao_5s_3011_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_maikhao_5s_3011_0912.json) | 2026-09-25T00:21:04+00:00 | 25 |  |
+| [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_khaolak_5s_3011_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_khaolak_5s_3011_0912.json) | 2026-09-25T00:21:17+00:00 | 20 | 14, 4, 9, 0 |
+| [skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_aonang_5s_3011_0912.json](https://github.com/choukrikodi/venom-xbmc-addons/blob/35a9fdf/skills/travel-agent/test-output-v7b-9n-aligne/runs/36077040045-1/trivago_aonang_5s_3011_0912.json) | 2026-09-25T00:21:12+00:00 | 14 |  |
+
+run.json : UTC 2026-09-25T00:21:23+00:00, list_status=calls_status=success, checkout/event SHA 0de31acb9392ef593cadf46e057f1fdf9884dec6 ; manifest.json lu (7 requêtes) ; calls.stderr.log indique « Reprise HTTP 2/2 dans 1.317s », sans échec final. Fichiers métadonnées dans la même racine. Le succès technique ne certifie ni chambre ni exhaustivité.
+
+## Requêtes manquantes
+
+**Résolu** : QR HKT et toutes compagnies aux dates aériennes 29/11→09/12 ; hôtels 30/11→09/12 ; contrôle neuf nuits ; réponse KBV exacte reçue. Les recotations hôtel F4/F6 ne sont plus nécessaires au scénario courant (uniquement si ces alternatives sont rouvertes).
+
+Restent :
+
+- Chambre vue mer exacte, plage directe, distance mesurée jusqu’à la plage de la station, classement officiel ; localités A/B/C à confirmer.
+- Occupation contractuelle, taxes, repas, annulation gratuite si offerte, date/heure/fuseau/pénalités et prépaiement.
+- Domicile↔TUN ; HKT↔hôtels A/C ; HKT↔Ao Nang pour B ; durées compatibles avec F9 matin, bagages et devis groupe.
+- Franchise poids/dimensions/attribution et protection ; transit long DOH, éventuels repas/hébergement/transfert airside/landside.
+- Formalités datées Thaïlande/TDAC, Tunisie, DOH/AUH ; santé, assurance, repas, activités et autres frais.
+- Fenêtre KBV élargie ou autres dates uniquement sur nouvelle commande ; aucune recherche lancée.
+
+## Écarts du skill
+
+1. Correction du prompt : F9 QR1399 part de DOH le 10/12 09:10 et arrive TUN le 10/12 13:35, pas le 09/12 ; escale retour 21 h 45. Données brutes prioritaires.
+2. Les lots Nai Yang et Mai Khao ont chacun 25 résultats mais **pas les mêmes établissements ni les mêmes index** ; Kora/Cassia/Wyndham Garden figurent dans Nai Yang, pas dans le lot Mai Khao. Ne pas fusionner les index.
+3. Tri par prix effectué pour le tableau de candidats, pas supposé dans la réponse brute. Filtre 5★ non certifiant ; absence de deux signaux stars_unverified n’est pas une preuve de classement.
+4. Huit candidats A/C documentés sur demande explicite v3 ; aucune inclusion silencieuse hors station. A-variante Bang Tao calculée conditionnellement, choix de zone non validé.
+5. Dates alignées ne prouvent pas la chambre vue mer ni la faisabilité porte à porte. Aucun total complet, borne haute ou classement final fabriqué.
+6. Aucun appel commercial nouveau ; W historique inchangé et hors budgets. Seuls les deux Markdown sont modifiés, UTF-8 sans BOM et LF ; aucun commit/push, changement de skill/scripts/références ou lancement L3e.
+7. STOP après dépôt, selon le prompt v3 ; attente de relecture de l’orchestrateur.
+
+## Archive v2 — historique conservé, remplacé par v3 pour les décisions
+
+Les affirmations « actuellement », budgets, requêtes et points d’arrêt ci-dessous décrivent la livraison v2 uniquement. Les chiffres F1–F8, hôtels v7 et preuves W sont conservés pour traçabilité. Pour le travail courant, utiliser les tableaux v3 ci-dessus.
+
+## Archive v2 — Synthèse et recommandation révisée
 
 **Aucun assemblage vol + hôtel des traces n'est actuellement aligné sur neuf nuits et une chambre vue mer prouvée.** Le vol QR à 1 414,00 EUR n'est pas admissible comme neuf nuits. Les hôtels sont tous cotés du 29/11 au 08/12, alors que les vols exacts arrivent le 30/11 ou le 01/12. Ne pas additionner leurs prix comme un séjour conforme.
 
@@ -731,7 +930,7 @@ Préférence Qatar Airways, une soute par adulte. Une chambre double et une base
 
 La préférence QR demeure : demander une offre QR compatible avec neuf nuits complètes avant de l'écarter au profit de F4. Aucun seuil de supplément QR n'est inventé. F4 est le moins cher compatible avec neuf nuits dans les résultats HKT toutes compagnies reçus, pas une preuve du minimum du marché. F6 est le moins cher compatible avec neuf nuits dans le lot KBV, sous contrôle de protection et transferts. Les notes /5 sont différées faute de preuve plage.
 
-## Vols — résultats contrôlés, index base 0
+## Archive v2 — Vols — résultats contrôlés, index base 0
 
 Prix groupe EUR provenant de la valeur brute price, jamais de priceFormatted qui arrondit à l'euro. Les heures sont les chaînes locales renvoyées ; elles n'incluent pas de fuseau explicite. Les durées sont celles du fournisseur ; les escales sont calculées entre horaires au même aéroport. Franchise de poids/dimensions, attribution par adulte et transporteur opérant effectif restent à confirmer : carrier/carrierName donnent la compagnie annoncée, pas une attestation séparée de codeshare.
 
@@ -746,7 +945,7 @@ Prix groupe EUR provenant de la valeur brute price, jamais de priceFormatted qui
 
 **TUN–KBV QR seule : zéro résultat** dans l'exact et la fenêtre (F7/F8 ci-dessous). Cela décrit ces réponses, pas une impossibilité générale de desserte. Alternative pour B : QR TUN–HKT (F1 à réaligner), puis **HKT↔Ao Nang : manquant**, durée, prix et faisabilité non établis.
 
-### Segments et correspondances des offres examinées
+### Archive v2 — Segments et correspondances des offres examinées
 
 | Offre | Sens | Vol / compagnie annoncée | Segment | Départ local | Arrivée locale | Cabine |
 |---|---|---|---|---|---|---|
@@ -789,7 +988,7 @@ F1 : DOH 8 h 50 à l'aller et 5 h 45 au retour ; l'escale longue alourdit un sé
 
 **Contrôle de l'ensemble des lots :** exact QR HKT 9 offres, toutes arrivent après le 29/11 et ne donnent pas neuf nuits complètes avant le 08/12 ; fenêtre QR HKT 2 offres (F2/F3) ; toutes compagnies HKT 15 offres, minimum neuf nuits F4 index 0 ; toutes compagnies KBV 15 offres, minimum neuf nuits F6 index 3 ; deux lots QR KBV vides. Recherche fenêtre non exhaustive : elle omet l'offre exacte du 29/11. F2 correspond au départ **10/12 à 1 826,00 EUR**, F3 au **08/12 à 1 946,00 EUR**, association contrôlée dans les traces.
 
-## Hôtels — trois candidats au maximum par scénario
+## Archive v2 — Hôtels — trois candidats au maximum par scénario
 
 Toutes les offres suivantes : arrival=2026-11-29, departure=2026-12-08, **9 nuits**, EUR ; demandes 2 adultes, 0 enfant, 1 chambre, marché BE. price_per_stay est le total de séjour affiché, sans multiplication par neuf. Les prix ne sont pas ceux des chambres vue mer vérifiées, ni ceux des dates de travail F4/F6. Le type de chambre, l'occupation contractuelle, les repas, les taxes finales, le prépaiement et l'annulation sont absents : **à vérifier**. Aucune annulation gratuite annoncée.
 
@@ -824,13 +1023,13 @@ Tous ces candidats dépassent 500 avis et la note minimale. Ne pas confondre pr�
 
 Pour prouver plage directe : vérifier l'accès depuis l'établissement, routes/obstacles/navette/bateau éventuels, puis mesurer la distance vers un point identifié de la plage de la station avec méthode (trajet ou ligne droite), coordonnées, date et source. Le champ **City center n'est jamais une distance plage**. Pour vue mer : obtenir l'intitulé de la chambre vendue, distinguer vue partielle, ne rien inférer du nom de l'hôtel. Pour annulation : date/heure/fuseau, pénalité, prépaiement et remboursement. Sources à consulter lors d'une mission autorisée : site officiel de chaque hôtel identifié ci-dessus, offre de l'annonceur et registre officiel de classement ; aucun lien officiel précis n'est inventé ici.
 
-### Règle stars_unverified et exclusions
+### Archive v2 — Règle stars_unverified et exclusions
 
 Flag à partir de deux signaux établis : prix 5★ TH <80 EUR/nuit/chambre ; <100 avis ; mot inn/lodging/hostel/homestay/guesthouse/apartelle/apartment/villas dans nom ou URL (un seul signal lexical) ; absence confirmée de piscine ET restaurant ; note <7,5 avec ≥300 avis. Une donnée absente n'est pas une absence d'équipement. Contre-vérifier identité, TripAdvisor et classement officiel ; absence de flag ≠ certification. Le plancher est une heuristique du skill, pas une offre.
 
 Exemples rejetés et vérifiés : **Klong Muang Hostel**, lot Ao Nang index 10, 281 EUR/9 nuits, 0 avis, lexical hostel : au moins trois signaux, stars_unverified=true, note absente. **Wyndham Royal Lee Phuket**, Nai Yang index 9, 616 EUR/9 nuits, note 6,7 et 417 avis : prix sous plancher + mauvaise note, true. **Andaman Pool Villas**, Mai Khao index 14, 0 avis + lexical villas : true. Grand Mercure Ao Nang index 0 n'a que 6 avis et ne remplit pas les 500 avis demandés ; un seul signal ne suffit pas à déclencher le flag. Le filtre 5★ n'est donc pas une validation. Ces rejets ne sont pas des candidats supplémentaires.
 
-## Budgets A/B/C — toutes les lignes
+## Archive v2 — Budgets A/B/C — toutes les lignes
 
 Dates de travail : A/C 09→18/12 sur F4, B 11→20/12 sur F6. Versions QR : vol neuf nuits conforme **manquant**, donc budget QR non calculable. Les hôtels de référence du 29/11→08/12 ne sont pas incorporés aux dates de travail. Aucun assemblage F1+hôtel n'est présenté comme voyage neuf nuits.
 
@@ -864,7 +1063,7 @@ Colonnes bas/haut = montants EUR pour le groupe. Un prix ponctuel identique aux 
 | Tolérance X / solde complet | 8 000−1 000−H ; puis −Xhaut | manquant | manquant | manquant | H incomplet |
 | État | Classement | Budget non concluant | Budget non concluant | Budget non concluant | Pas « dans le budget » |
 
-### Socle connu : vol et réserve seulement, pas prix du voyage
+### Archive v2 — Socle connu : vol et réserve seulement, pas prix du voyage
 
 Poser Ubas/Uhaut = toutes les dépenses ordinaires manquantes, dont **hôtel aux bonnes dates, repas, transferts et Domicile↔TUN** ; X ne contient que d'autres suppléments obligatoires non déjà comptés. U et X ne sont pas estimés à zéro. Cette écriture permet de montrer ce qui est connu sans fabriquer B/H.
 
@@ -879,7 +1078,7 @@ Calcul déterministe vérifié en Python Decimal, à partir des chaînes brutes 
 
 Aucun prix v5 réutilisé dans ces budgets : le prompt permet une ligne explicitement journalière et pertinente, mais ne l'impose pas. Sans résidence/contrat, programme et taux admissible, conserver manquant plutôt qu'appliquer mécaniquement une ancienne grille. Pour futures devises non EUR : source/date effective et formule du taux, frais séparés. Classement final : borne haute complète sous plafond → dans le budget ; plafond entre bornes → risque de dépassement ; borne basse au-dessus → dépassement ; poste essentiel sans borne haute → non concluant. B1 est écarté pour son offre hôtel seule à 19 242,00 EUR, sans généraliser ce prix à de nouvelles dates.
 
-## Itinéraire de travail, confort et comparaison des durées
+## Archive v2 — Itinéraire de travail, confort et comparaison des durées
 
 | Option | Arrivée locale / départ local avion | Hôtel à rechercher | Nuits | Hébergement actuel | Transfert / durée porte à porte / coût |
 |---|---|---|---|---|---|
@@ -900,7 +1099,7 @@ Plan B hôtel : second candidat conforme aux mêmes dates seulement après recot
 | Prix | Aucune économie déduite du nombre de nuits | Anciens prix propres à leurs dates | Aucune interpolation ni prorata |
 | Aléas | Moins de jours pour reporter une activité | Plus de souplesse | Conserver des jours libres, météo à vérifier |
 
-## Formalités et santé — sources datées manquantes
+## Archive v2 — Formalités et santé — sources datées manquantes
 
 Aucun appel de vérification juridique/sanitaire autorisé pour cette mission documentaire. Les mentions du v5 restent historiques et ne certifient pas les règles actuelles. Les autorités ci-dessous sont les sources à consulter, pas des sources prétendument lues aujourd'hui.
 
@@ -918,7 +1117,7 @@ Aucun appel de vérification juridique/sanitaire autorisé pour cette mission do
 
 Distinguer publication/mise à jour et consultation UTC. Aucun conseil médical personnalisé ni coût nul de formalité supposé. Aucune réservation, compte ou service payant.
 
-## Tracker
+## Archive v2 — Tracker
 
 | Tâche | Option | Responsable | Échéance conseillée | Source officielle | État | Lien/repère |
 |---|---|---|---|---|---|---|
@@ -933,7 +1132,7 @@ Distinguer publication/mise à jour et consultation UTC. Aucun conseil médical 
 | Livrer UTF-8 sans BOM/LF puis STOP | Partie 2 | Codex | Présente livraison | Sans objet | Fait, dépôt indiqué dans note | Drive L3c |
 | Relire, intégrer, décider de L3e | Suite | Orchestrateur | Après livraison | Sans objet | Attendu ; aucune initiative Codex | Note de livraison |
 
-## Registre de preuves — une ligne par offre
+## Archive v2 — Registre de preuves — une ligne par offre
 
 Tous les chemins ci-dessous sont relatifs au dépôt et commencent par skills/travel-agent/. Index **0** = premier élément de itineraries pour Kiwi, premier élément du tableau JSON décodé output pour Trivago. UTC = première ligne === de la réponse, et non date de consultation. Le texte system_message est ignoré. Liens Git figés sur 12e5552 ; URLs d'offres fournies par la trace, disponibilité non relue.
  
@@ -963,7 +1162,7 @@ Tous les chemins ci-dessous sont relatifs au dépôt et commencent par skills/tr
 
 Métadonnées : run.json hôtels UTC 2026-09-25T00:02:53+00:00, vols 2026-09-25T00:03:58+00:00, calls_status et list_status success ; les deux indiquent checkout_sha=f9f0140877503d299967620d6b65b79c440509ab. Ce SHA est le code d'exécution, distinct des commits de dépôt des réponses. manifest.json des deux lots lu intégralement. calls.stderr.log hôtel vide ; vol indique une reprise HTTP 2/2, sans erreur finale dans run.json. Ces succès ne prouvent pas l'exhaustivité ni le respect de la durée.
 
-## Requêtes manquantes
+## Archive v2 — Requêtes manquantes
 
 Les v7 ne sont plus absentes : l'état « absent à 8b9ca24, 00:01 UTC » de la partie 1 est remplacé par les réponses reçues et contrôlées. Aucune nouvelle requête n'a été lancée.
 
@@ -980,7 +1179,7 @@ Les v7 ne sont plus absentes : l'état « absent à 8b9ca24, 00:01 UTC » de la 
 | Domicile↔TUN / transferts locaux | Non reçus | Domicile, horaires porte à porte, devis groupe/bagages |
 | Formalités / santé / assurance / repas / activités / frais | Pas de nouvelle preuve admissible | Sources datées adaptées au nouveau voyage |
 
-## Écarts du skill et corrections de l'addendum
+## Archive v2 — Écarts du skill et corrections de l'addendum
 
 1. Le mot « 9n » dans un nom de fichier ne valide pas neuf nuits sur place. F1 arrive le 30/11 et repart à 00:25 le 08/12 : 7 nuits complètes, pas neuf. Aucun résultat exact QR ne résout l'alignement hôtel 29/11→08/12.
 2. F4 permet **9 nuits 09→18/12**, malgré dix jours entre les dates de départ aériennes. F5 permet **10 nuits 02→12/12**, pas onze nuits sur place. Ces constats corrigent les raccourcis de l'addendum ; F6 offre une piste KBV de neuf nuits plus chère.
@@ -992,11 +1191,11 @@ Les v7 ne sont plus absentes : l'état « absent à 8b9ca24, 00:01 UTC » de la 
 8. Seuls rapport-asie-v6.md et RAPPORT_LIVRAISON_L3d.md sont modifiés pour cette mission ; UTF-8 sans BOM, LF. Pas de changement au skill, références, scripts, configurateur, ni de commit/push. Aucun PDF.
 9. **STOP après dépôt partie 2 et complément Chrome demandé par le voyageur ci-dessous. L'orchestrateur relit, intègre et commande la suite séparément. L3e non commencée ; aucune reprise automatique.**
 
-## Complément demandé par le voyageur — Chrome et concurrence
+## Archive v2 — Complément demandé par le voyageur — Chrome et concurrence
 
 **Extension de mission reçue pendant la rédaction**, postérieure à l'interdiction de réseau commercial du prompt partie 2 : le voyageur demande de lire les pages Chrome et les concurrents pour améliorer les opportunités, le skill et le rendu. Les observations ci-dessous sont distinctes des traces v7 et ne remplacent pas leurs prix dans les budgets. Aucun compte créé, réservation ou alerte activée. À l'inventaire initial de Chrome, seul l'onglet Claude était accessible ; Trivago et Google Flights ont ensuite été ouverts.
 
-### Opportunités observées le 25/09/2026, relevé arrêté à 00:16:52 UTC
+### Archive v2 — Opportunités observées le 25/09/2026, relevé arrêté à 00:16:52 UTC
 
 | Preuve | Source et périmètre | Observation ⚠️ instantanée non réservée | Limite avant comparaison |
 |---|---|---|---|
@@ -1012,7 +1211,7 @@ Les résultats avant sélection du retour affichaient aussi des pistes Qatar dep
 
 **Conclusion de comparaison :** les montants Google inférieurs à F4 ne prouvent aucune économie tant que deux soutes ne sont pas intégrées au tarif final. Ils justifient une contre-vérification compagnie/agences. Le petit déjeuner et l'annulation vus sur Trivago peuvent améliorer la valeur de l'offre, mais uniquement après contrôle de la même chambre et des conditions. Le calendrier Trivago n'a pas fourni de recotation exploitable aux dates 09→18/12 pendant cette lecture ; aucune nouvelle cotation alignée n'est inventée.
 
-### Améliorations concrètes pour le skill et le rendu
+### Archive v2 — Améliorations concrètes pour le skill et le rendu
 
 1. **Normaliser avant de classer** : même itinéraire et dates locales, deux adultes, une soute chacun, même cabine et protection ; même hôtel/chambre vue mer, repas, taxes et annulation. Afficher un prix nu séparé du prix conforme, puis « non comparable » si un supplément essentiel manque.
 2. **Contrôler la durée réelle** : calculer arrivée locale→départ hôtel, signaler les retours après minuit et les nuits facturées non dormies ; recoter les hôtels seulement après ce contrôle.
@@ -1022,7 +1221,7 @@ Les résultats avant sélection du retour affichaient aussi des pistes Qatar dep
 
 Les calendriers et graphiques de [Google Flights](https://support.google.com/travel/answer/7664728?hl=en), la recherche mensuelle de [Skyscanner](https://help.skyscanner.net/hc/en-gb/articles/201750142-How-do-I-find-the-cheapest-prices-across-a-month) et le calendrier de [KAYAK](https://www.kayak.com/c/help/pricing/) constituent des moyens de contrôle complémentaires, d'après leur documentation officielle consultée le 25/09/2026. Skyscanner et KAYAK n'ont pas fait l'objet d'une recherche tarifaire effective ici. Ces suggestions sont remises à l'orchestrateur ; **aucun changement de code/skill/configurateur n'est revendiqué dans cette livraison**.
 
-### Registre complémentaire W
+### Archive v2 — Registre complémentaire W
 
 | ID | Fichier/repère de conservation | UTC de relevé | URL | Nature |
 |---|---|---|---|---|
