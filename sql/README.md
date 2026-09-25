@@ -11,19 +11,39 @@ niveau gratuit) a été provisionnée pour ce projet :
 `plugin.video.vstream/resources/lib/db.py` (`history`, `resume`, `watched`,
 `favorite`), pour pouvoir les interroger à distance (typiquement depuis un
 Cloudflare Worker exposant une petite API REST) plutôt que seulement en
-local sur l'appareil Kodi.
+local sur l'appareil Kodi. Cette base D1 n'est pas encore connectée à
+l'addon : aucune donnée locale (favoris, historique, etc.) n'est
+synchronisée pour l'instant. Une future API partagée devra prévoir
+authentification et isolation par utilisateur avant tout usage réel.
+
+`ENAM` (est de l'Amérique du Nord) est la [localisation](https://developers.cloudflare.com/d1/configuration/data-location/)
+par défaut de Cloudflare à la création ; ce n'est qu'une préférence de
+placement, pas une garantie de résidence des données. Pour un usage
+essentiellement européen, préférer `weur` ou `eeur` (voir
+`primary_location_hint` à la création de la base).
 
 ## Utilisation
 
 Avec [Wrangler](https://developers.cloudflare.com/workers/wrangler/) et un
-compte Cloudflare (gratuit) :
+compte Cloudflare (gratuit) ayant accès à cette base (l'UUID seul ne donne
+pas d'autorisation), ajouter dans `wrangler.toml` :
+
+```toml
+[[d1_databases]]
+binding = "DB"
+database_name = "venom-xbmc-addons-db"
+database_id = "c770c2dc-e95e-468b-8b95-c96e4238b8a3"
+```
+
+Puis, en ciblant explicitement la base **distante** avec `--remote`
+(sans ce flag, Wrangler exécute la commande sur une base locale/simulée) :
 
 ```bash
 # Appliquer le schéma
-wrangler d1 execute venom-xbmc-addons-db --file=sql/schema.sql
+wrangler d1 execute venom-xbmc-addons-db --remote --file=sql/schema.sql
 
 # Requête ad-hoc
-wrangler d1 execute venom-xbmc-addons-db --command "SELECT * FROM favorite"
+wrangler d1 execute venom-xbmc-addons-db --remote --command "SELECT * FROM favorite"
 ```
 
 Ou via l'API HTTP D1 (REST), en remplaçant `<ACCOUNT_ID>` et `<API_TOKEN>` :
