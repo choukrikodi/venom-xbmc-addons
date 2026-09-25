@@ -68,6 +68,7 @@ textarea{width:100%;min-height:110px;font:14px/1.45 var(--body);border:1px solid
 .tabs{display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:20px;position:sticky;top:0;background:var(--paper);z-index:2;padding-top:8px}
 .tabs button{padding:8px 12px;font-size:14px}
 .tabs button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+[data-dur][aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 .panel{display:none}
 .panel.on{display:block}
 section.block{margin-bottom:28px}
@@ -274,10 +275,33 @@ const HOTELS = {
   }
 };
 
+/* Variante « 10 jours / 9 nuits, hôtels 5★ » : candidats issus des traces Trivago v7 et v7b
+   du 25/09/2026 (mêmes données que le configurateur, sans aucun montant). Étoiles déclarées
+   par Trivago, registre officiel non consulté. Aucun champ monétaire dans cet objet. */
+const HOTELS9 = {
+  slate: { name: "The Slate", stars: "5 étoiles (déclarées, Trivago)", score: "9,3/10", reviews: "11 331 avis", zone: "Nai Yang Beach, à 0,5 km du centre (mesure Trivago, pas de la plage)", zoneBadge: false, advertiser: "Stayforlong", reviewsLow: false, url: "https://www.trivago.be/en-US/lm/resort-the-slate-nai-yang-beach?cip=234716015&currencyCode=EUR&search=100-9398;105-1322;200-15960;dr-20261129-20261208;drs-40;rc-1-2&dealId=-4170102154282534162" },
+  bella_nara: { name: "Bella Nara Phuket Naiyang Beach", stars: "5 étoiles (déclarées, Trivago)", score: "8,7/10", reviews: "1 856 avis", zone: "Nathon, secteur Nai Yang, à 2,1 km du centre (mesure Trivago)", zoneBadge: false, advertiser: "Stayforlong", reviewsLow: false, url: "https://www.trivago.be/en-US/lm/hotel-bella-nara-phuket-naiyang-beach-nathon?cip=234716015&currencyCode=EUR&search=100-35753936;105-1322;200-15960;dr-20261130-20261209;drs-40;rc-1-2&dealId=5417391939841472498" },
+  wyndham_naithon: { name: "Wyndham Garden Naithon Phuket", stars: "5 étoiles (déclarées, Trivago)", score: "8,9/10", reviews: "1 414 avis", zone: "Nathon, secteur Nai Thon, à 0,5 km du centre (mesure Trivago)", zoneBadge: false, advertiser: "trivago DEALS", reviewsLow: false, url: "https://www.trivago.be/en-US/lm/hotel-wyndham-garden-naithon-phuket-nathon?cip=234716015&currencyCode=EUR&search=100-36316236;105-1322;200-15960;dr-20261130-20261209;drs-40;rc-1-2&dealId=-1929439623622417452" },
+  jw_maikhao: { name: "JW Marriott Phuket Resort & Spa", stars: "5 étoiles (déclarées, Trivago)", score: "9,3/10", reviews: "14 341 avis", zone: "Mai Khao Beach, à 2,1 km du centre (mesure Trivago)", zoneBadge: false, advertiser: "Stayforlong", reviewsLow: false, url: "https://www.trivago.be/en-US/lm/hotel-jw-marriott-phuket-resort-spa-mai-khao-beach?cip=234716015&currencyCode=EUR&search=100-16361;105-1322;200-15961;dr-20261129-20261208;drs-40;rc-1-2&dealId=-6572766252607007463" },
+  kora_bangtao: { name: "Kora Beach Resort Phuket", stars: "5 étoiles (déclarées, Trivago)", score: "8,8/10", reviews: "1 958 avis", zone: "Bang Tao Beach, à 1,9 km du centre (mesure Trivago)", zoneBadge: true, advertiser: "Trip.com", reviewsLow: false, url: "https://www.trivago.be/en-US/lm/kora-beach-resort-phuket-bang-tao-beach?cip=234716015&currencyCode=EUR&search=100-40863800;105-1322;200-15960;dr-20261130-20261209;drs-40;rc-1-2&dealId=79253178531914661" },
+  grand_mercure_aonang: { name: "Grand Mercure Krabi Aonang", stars: "5 étoiles (déclarées, Trivago)", score: "8,7/10", reviews: "6 avis", zone: "Ao Nang, à 1,5 km du centre (mesure Trivago)", zoneBadge: false, advertiser: "Stayforlong", reviewsLow: true, url: "https://www.trivago.be/en-US/lm/hotel-grand-mercure-krabi-aonang-ao-nang?cip=234716015&currencyCode=EUR&search=100-50723138;105-1322;200-16207;dr-20261129-20261208;drs-40;rc-1-2&dealId=-4175545458776111846" },
+  anana_aligned: { name: "Anana Ecological Resort Krabi", stars: "5 étoiles (déclarées, Trivago)", score: "9,2/10", reviews: "5 985 avis", zone: "Krabi (ville), à 9,1 km du centre (mesure Trivago)", zoneBadge: false, advertiser: "Stayforlong", reviewsLow: false, url: "https://www.trivago.be/en-US/lm/hotel-anana-ecological-resort-krabi?cip=234716015&currencyCode=EUR&search=100-12103646;105-1322;200-16207;dr-20261130-20261209;drs-40;rc-1-2&dealId=-6264736600108029689" },
+  sofitel_klongmuang_aligned: { name: "Sofitel Krabi Phokeethra Golf & Spa Resort", stars: "5 étoiles (déclarées, Trivago)", score: "9,0/10", reviews: "10 197 avis", zone: "Klong Muang, à 3,9 km du centre (mesure Trivago) — plage distincte d'Ao Nang", zoneBadge: true, advertiser: "Stayforlong", reviewsLow: false, url: "https://www.trivago.be/en-US/lm/hotel-sofitel-krabi-phokeethra-golf-spa-resort-klong-muang?cip=234716015&currencyCode=EUR&search=100-152785;105-1322;200-16207;dr-20261130-20261209;drs-40;rc-1-2&dealId=2650684302682681382" },
+  nakamanda_klongmuang: { name: "Nakamanda Resort & Spa", stars: "5 étoiles (déclarées, Trivago)", score: "9,2/10", reviews: "5 320 avis", zone: "Klong Muang, à 3,1 km du centre (mesure Trivago) — plage distincte d'Ao Nang", zoneBadge: true, advertiser: "Agoda", reviewsLow: false, url: "https://www.trivago.be/en-US/lm/nakamanda-resort-spa-klong-muang?cip=234716015&currencyCode=EUR&search=100-111147;105-1322;200-16207;dr-20261130-20261209;drs-40;rc-1-2&dealId=-8954684522380500976" },
+  varana_klongmuang: { name: "Varana Krabi Hotel", stars: "5 étoiles (déclarées, Trivago)", score: "9,2/10", reviews: "3 118 avis", zone: "Klong Muang, à 3,2 km du centre (mesure Trivago) — plage distincte d'Ao Nang", zoneBadge: true, advertiser: "Trip.com", reviewsLow: false, url: "https://www.trivago.be/en-US/lm/varana-krabi-hotel-klong-muang?cip=234716015&currencyCode=EUR&search=100-32776746;105-1322;200-16207;dr-20261130-20261209;drs-40;rc-1-2&dealId=2809214585212288429" },
+  pullman_khaolak_aligned: { name: "Pullman Khao Lak Resort", stars: "5 étoiles (déclarées, Trivago)", score: "9,0/10", reviews: "4 875 avis", zone: "Khao Lak, à 16,7 km du centre (mesure Trivago)", zoneBadge: false, advertiser: "Stayforlong", reviewsLow: false, url: "https://www.trivago.be/en-US/lm/hotel-pullman-khao-lak-resort?cip=234716015&currencyCode=EUR&search=100-22945772;105-1322;200-15941;dr-20261130-20261209;drs-40;rc-1-2&dealId=8607966930618910143" },
+  jw_khaolak: { name: "JW Marriott Khao Lak Resort and Spa", stars: "5 étoiles (déclarées, Trivago)", score: "9,3/10", reviews: "12 883 avis", zone: "Khao Lak, à 2,0 km du centre (mesure Trivago)", zoneBadge: false, advertiser: "Stayforlong", reviewsLow: false, url: "https://www.trivago.be/en-US/lm/hotel-jw-marriott-khao-lak-resort-and-spa?cip=234716015&currencyCode=EUR&search=100-1116583;105-1322;200-15941;dr-20261129-20261208;drs-40;rc-1-2&dealId=-3353249895648236366" },
+  sands_katathani: { name: "The Sands Khao Lak by Katathani", stars: "5 étoiles (déclarées, Trivago)", score: "9,0/10", reviews: "12 248 avis", zone: "Khao Lak, à 6,1 km du centre (mesure Trivago)", zoneBadge: false, advertiser: "Stayforlong", reviewsLow: false, url: "https://www.trivago.be/en-US/lm/resort-the-sands-khao-lak-by-katathani?cip=234716015&currencyCode=EUR&search=100-2378712;105-1322;200-15941;dr-20261129-20261208;drs-40;rc-1-2&dealId=8542429402599277393" },
+  eden_khaolak: { name: "Eden Beach Khao Lak Resort & Spa", stars: "5 étoiles (déclarées, Trivago)", score: "8,8/10", reviews: "4 050 avis", zone: "Khao Lak, à 10,7 km du centre (mesure Trivago)", zoneBadge: false, advertiser: "Stayforlong", reviewsLow: false, url: "https://www.trivago.be/en-US/lm/hotel-eden-beach-khao-lak-resort-spa?cip=234716015&currencyCode=EUR&search=100-11340296;105-1322;200-15941;dr-20261130-20261209;drs-40;rc-1-2&dealId=4494840780824978905" },
+  tuiblue_maikhaolak: { name: "Mai Khaolak Beach Resort & Spa – TUIBLUE Mai Khaolak", stars: "5 étoiles (déclarées, Trivago)", score: "8,5/10", reviews: "4 304 avis", zone: "Phangnga, à 45,4 km du centre de Khao Lak (mesure Trivago)", zoneBadge: true, advertiser: "Stayforlong", reviewsLow: false, url: "https://www.trivago.be/en-US/lm/hotel-mai-khaolak-beach-resort-spa-tuiblue-mai-khaolak-phangnga?cip=234716015&currencyCode=EUR&search=100-2318868;105-1322;200-15941;dr-20261130-20261209;drs-40;rc-1-2&dealId=-9148175811389435837" }
+};
+
 const SCEN = {
   A: {
     name: "Nai Yang, Phuket", nights: 16, hin: "30/11/2026", hout: "16/12/2026", dep: "29/11/2026", ret: "17/12/2026", airport: "HKT", airportName: "aéroport de Phuket (HKT)",
     hotel: "esprit", alt: "panphuree", mapPins: ["esprit", "panphuree", "HKT"],
+    hotels9: ["slate", "bella_nara", "wyndham_naithon", "jw_maikhao", "kora_bangtao"],
+    dur9: { nights: 9, hin: "30/11/2026", hout: "09/12/2026", dep: "29/11/2026", ret: "10/12/2026" },
     ambiance: "Plage calme bordée de casuarinas dans un parc national, juste à côté de l'aéroport : avions en approche, tortues en saison, peu d'animation.",
     history: "Nai Yang est une plage bordée de casuarinas au nord-ouest de l'île, dans le district de Thalang, à proximité immédiate de l'aéroport international de Phuket. Elle fait partie du parc national créé le 13 juillet 1981 sous le nom de Nai Yang National Park (32e parc national de Thaïlande), renommé Sirinat en 1992 en l'honneur du 60e anniversaire de la reine Sirikit. Le parc protège environ 90 km² (22 km² terrestres, 68 km² marins) et les plages de Nai Thon, Nai Yang, Mai Khao et Sai Kaeo, où des tortues luth et imbriquées viennent pondre entre novembre et février. Le district de Thalang est aussi le théâtre de la défense de 1785 contre l'invasion birmane, commémorée par le monument des Héroïnes.",
     population: "422 021 habitants enregistrés pour la province de Phuket (registre du Department of Provincial Administration, 2023/2024 ; population réelle estimée plus élevée). Population du tambon Sakhu, dont dépend Nai Yang : non vérifiée.",
@@ -322,6 +346,11 @@ const SCEN = {
       ["Qatar Airways via Doha (DOH) · retenu", "Aller QR1400 + QR846 : 29/11 16:00 → 30/11 18:55 (20 h 55, escale nocturne à Doha d'environ 8 h 50). Retour QR841 + QR1399 : 16/12 00:25 → 13:35 (19 h 10). Décollage de HKT à 00:25 le 16/12 : il faut quitter l'hôtel le 15/12 au soir, la nuit du 15 au 16 est quasi inutilisée. Deux bagages en soute et deux en cabine."],
       ["Etihad via Abu Dhabi (AUH)", "Aller EY740 + EY410 : 29/11 10:40 → 30/11 06:15 (13 h 35). Retour EY417 + EY739 : 16/12 15:30 → 17/12 06:15 (20 h 45). Mêmes dates que l'hôtel. Bagage à main : 2 bagages cabine, pas d'article personnel."]
     ],
+    flightsBRU9Note: "Aucune trace de vol Bruxelles pour la fenêtre 9 nuits : seuls les vols 16-18 nuits ci-dessus ont été relevés (rapport v5, 24/09/2026).",
+    flightsTUN9: [
+      ["Qatar Airways via Doha (DOH) · retenu, dates alignées sur 9 nuits d'hôtel exactes", "Aller QR1400 + QR846 : 29/11 16:00 → 30/11 18:55 (20 h 55, escale nocturne à Doha d'environ 8 h 50). Retour QR843 + QR1399 : 09/12 08:20 → 10/12 13:35 (escale à Doha d'environ 21 h 45 : arrivée Doha 11:25, départ 09:10 le lendemain ; hébergement d'escale non prévu). Nuits d'hôtel réelles : 9 exactes (arrivée 30/11 au soir, sortie 09/12 au matin), alignées sur la recherche hôtel v7b. Deux bagages en soute et deux en cabine par passager."],
+      ["Etihad via Abou Dabi (AUH) · alternative alignée sur les mêmes 9 nuits", "Aller EY740 + EY410 : 29/11 10:40 → 30/11 06:15 (13 h 35). Retour EY417 + EY739 : 09/12 15:30 → 10/12 06:15 (14 h 45). Nuits d'hôtel réelles : 9 exactes, mêmes dates que la recherche hôtel v7b. Bagage à main : pas d'article personnel, 2 bagages cabine ; un bagage en soute par passager."]
+    ],
     sources: [
       ["Wikipedia – Sirinat National Park", "https://en.wikipedia.org/wiki/Sirinat_National_Park"],
       ["Thai National Parks – Sirinat National Park", "https://www.thainationalparks.com/sirinat-national-park"],
@@ -335,6 +364,8 @@ const SCEN = {
   B: {
     name: "Ao Nang, Krabi", nights: 18, hin: "02/12/2026", hout: "20/12/2026", dep: "01/12/2026", ret: "20/12/2026", airport: "KBV", airportName: "aéroport de Krabi (KBV)",
     hotel: "anyavee", alt: null, mapPins: ["anyavee", "KBV"],
+    hotels9: ["grand_mercure_aonang", "anana_aligned", "sofitel_klongmuang_aligned", "nakamanda_klongmuang", "varana_klongmuang"],
+    dur9: { nights: 9, hin: "30/11/2026", hout: "09/12/2026", dep: null, ret: null, noFlight: true },
     ambiance: "Station balnéaire internationale née d'un village de pêcheurs : rue commerçante, marché de nuit, long-tails vers Railay et les îles, falaises calcaires.",
     history: "Ao Nang était à l'origine un petit village de pêcheurs, à une vingtaine de kilomètres à l'ouest de Krabi Town. Le tourisme y apparaît dans les années 1980 avec les routards attirés par les falaises calcaires et les plages ; dans les années 1990-2000, la localité devient une station balnéaire internationale avec hôtels de chaîne. Le tsunami du 26 décembre 2004 a atteint Ao Nang, mais les falaises et îlots calcaires au large ont limité les dégâts par rapport au reste de la côte, et la reconstruction a été rapide. Administrativement, Ao Nang est l'un des dix tambons du district de Mueang Krabi.",
     population: "14 435 habitants pour le tambon d'Ao Nang (50 km², densité 288,7 hab./km², 2020) ; province de Krabi : environ 484 000 habitants en décembre 2024.",
@@ -378,6 +409,8 @@ const SCEN = {
       ["Etihad + flydubai + Royal Jordanian, retour le 19/12 (2 escales) · option la plus proche", "Aucun itinéraire Qatar Airways seule Tunis → Krabi avec au plus 2 escales n'a été trouvé. Aller 01/12 10:40 → KBV 02/12 18:10 (25 h 30). Retour 19/12 22:55 → TUN 21/12 13:00 (44 h 05 : attente à Dubaï d'environ 10 h 35 puis nuit à Amman d'environ 18 h 35, hébergement d'escale non prévu ; trois compagnies, protection de correspondance à confirmer). Retour un jour avant la fin de l'hôtel (20/12)."],
       ["Etihad via Abu Dhabi (AUH), dates différentes (26/11 → 15/12)", "Aller 25 h 30 (longue escale à Abu Dhabi), retour 15 h 35 ; départ le 26/11, retour le 14/12 avec arrivée à Tunis le 15/12 : l'hôtel d'Ao Nang n'a pas été étudié à ces dates."]
     ],
+    flightsBRU9Note: "Aucune trace de vol Bruxelles pour la fenêtre 9 nuits : seuls les vols 16-18 nuits ci-dessus ont été relevés (rapport v5, 24/09/2026).",
+    flightsTUN9Note: "Aucun vol daté aligné trouvé pour Ao Nang à ces dates : la recherche Qatar Airways stricte (29/11 → 08/12) et la recherche toutes compagnies sur la fenêtre 15/11-10/12 ne donnent aucun itinéraire exact vers Krabi (KBV) correspondant à 9 nuits d'hôtel. Piste non chiffrée : vol Tunis → Phuket (HKT) avec Qatar Airways via Doha (mêmes horaires que pour Nai Yang/Khao Lak : arrivée HKT 30/11 18:55, décollage retour HKT 08/12 00:25, soit seulement 7 nuits d'hôtel réelles, pas 9), puis transfert routier HKT → Ao Nang (durée et modalités non sourcées). Deux autres pistes Etihad vers KBV ont été écartées : l'une donne 10 nuits d'hôtel (02/12 → 12/12), l'autre 9 nuits mais hors fenêtre de référence, avec un retour à 2 escales et une nuit au Caire (départ TUN le 10/12, arrivée le 21/12).",
     sources: [
       ["Wikipedia – Ao Nang (tambon, population 2020, superficie)", "https://en.wikipedia.org/wiki/Ao_Nang"],
       ["Wikipedia – Krabi province (population décembre 2024)", "https://en.wikipedia.org/wiki/Krabi_province"],
@@ -393,6 +426,8 @@ const SCEN = {
   C: {
     name: "Khao Lak, Phang Nga", nights: 18, hin: "30/11/2026", hout: "18/12/2026", dep: "29/11/2026", ret: "19/12/2026", airport: "HKT", airportName: "aéroport de Phuket (HKT)",
     hotel: "palm", alt: null, mapPins: ["palm", "HKT"],
+    hotels9: ["pullman_khaolak_aligned", "jw_khaolak", "sands_katathani", "eden_khaolak", "tuiblue_maikhaolak"],
+    dur9: { nights: 9, hin: "30/11/2026", hout: "09/12/2026", dep: "29/11/2026", ret: "10/12/2026" },
     ambiance: "Suite de villages côtiers reconstruits autour de resorts de plage, sable noir à Nang Thong, marché de nuit de Bang Niang ; porte d'accès aux îles Similan et Surin.",
     history: "Khao Lak désigne une suite de villages côtiers (Nang Thong, Bang Niang, Khuk Khak, Pakarang, Bang Sak) du district de Takua Pa et, pour partie, de Thai Mueang, dans la province de Phang Nga ; le sable noir de Nang Thong rappelle le passé d'orpaillage et d'extraction minière de la région. Le 26 décembre 2004, Khao Lak a été la zone de Thaïlande la plus touchée par le tsunami de l'océan Indien : environ 5 000 morts, 80 % de la capacité hôtelière détruite, avec la plus grande hauteur de run-up hors Sumatra en raison des récifs et du plateau peu profond au large. Le bateau de police 813, projeté à près de 2 km à l'intérieur des terres à Bang Niang, est resté sur place comme mémorial. La station s'est reconstruite depuis autour de resorts de plage et sert de porte d'accès aux îles Similan et Surin.",
     population: "266 296 habitants pour la province de Phang Nga en 2024 (72e province thaïlandaise ; 234 188 avant le tsunami de 2004). Population des tambons de Khuk Khak, Bang Muang ou Lam Kaen : non vérifiée.",
@@ -435,6 +470,11 @@ const SCEN = {
     flightsTUN: [
       ["Qatar Airways via Doha (DOH) · retenu", "Aller QR1400 + QR846 : 29/11 16:00 → 30/11 18:55 (20 h 55). Retour QR843 + QR1399 : 18/12 08:20 → 19/12 13:35 (35 h 15, nuit d'escale à Doha : arrivée 11:25, départ 09:10 le lendemain ; hébergement d'escale non prévu). Une variante Qatar en 19 h 10 existe pour le retour."],
       ["Etihad via Abu Dhabi (AUH), dates différentes (29/11 → 17/12)", "Aucun itinéraire toutes compagnies n'a été trouvé aux dates exactes 29/11 → 18/12 (ce serait 19 nuits, hors de la fenêtre demandée ; ce n'est pas une absence de vol). L'itinéraire trouvé part le 29/11 et revient le 16/12 (arrivée à Tunis le 17/12) : 16 nuits, hôtel de Khao Lak non étudié à ces dates."]
+    ],
+    flightsBRU9Note: "Aucune trace de vol Bruxelles pour la fenêtre 9 nuits : seuls les vols 16-18 nuits ci-dessus ont été relevés (rapport v5, 24/09/2026).",
+    flightsTUN9: [
+      ["Qatar Airways via Doha (DOH) · retenu, dates alignées sur 9 nuits d'hôtel exactes", "Aller QR1400 + QR846 : 29/11 16:00 → 30/11 18:55 (20 h 55, escale nocturne à Doha d'environ 8 h 50). Retour QR843 + QR1399 : 09/12 08:20 → 10/12 13:35 (escale à Doha d'environ 21 h 45 : arrivée Doha 11:25, départ 09:10 le lendemain ; hébergement d'escale non prévu). Nuits d'hôtel réelles : 9 exactes (arrivée 30/11 au soir, sortie 09/12 au matin), alignées sur la recherche hôtel v7b. Deux bagages en soute et deux en cabine par passager."],
+      ["Etihad via Abou Dabi (AUH) · alternative alignée sur les mêmes 9 nuits", "Aller EY740 + EY410 : 29/11 10:40 → 30/11 06:15 (13 h 35). Retour EY417 + EY739 : 09/12 15:30 → 10/12 06:15 (14 h 45). Nuits d'hôtel réelles : 9 exactes, mêmes dates que la recherche hôtel v7b. Bagage à main : pas d'article personnel, 2 bagages cabine ; un bagage en soute par passager."]
     ],
     sources: [
       ["Wikipedia – Khao Lak (villages, districts, coordonnées, tsunami)", "https://en.wikipedia.org/wiki/Khao_Lak"],
@@ -565,13 +605,51 @@ function hotelCard(id, role) {
   </article>`;
 }
 
+function hotelCand9Card(id) {
+  const h = HOTELS9[id];
+  const badges = [];
+  if (h.zoneBadge) badges.push(`<span class="tag warn">variante de zone à valider</span>`);
+  if (h.reviewsLow) badges.push(`<span class="tag warn">avis insuffisants</span>`);
+  return `<article class="hcard">
+    <div class="ph"><span>Photo non disponible, voir la fiche Trivago</span></div>
+    <div class="hb">
+      <div><span class="pill">Candidat 5★</span>${badges.join("")}</div>
+      <h4>${esc(h.name)}</h4>
+      <dl class="kv2">
+        <dt>Étoiles</dt><dd>${esc(h.stars)}</dd>
+        <dt>Avis</dt><dd>${esc(h.score)}, ${esc(h.reviews)}</dd>
+        <dt>Zone</dt><dd>${esc(h.zone)}</dd>
+        <dt>Plage directe</dt><dd>À vérifier (aucune trace)</dd>
+        <dt>Chambre vue mer</dt><dd>À vérifier (aucune trace)</dd>
+      </dl>
+      <p class="src">Source : ${ext(h.url, "fiche Trivago (" + h.advertiser + ")")} (lien construit à partir des traces du 25/09/2026, non testé). Étoiles déclarées par Trivago, registre officiel non consulté. Aucun montant repris ici.</p>
+    </div>
+  </article>`;
+}
+
+const DUR_KEY = "andaman2026.duration";
+let duration = "9n";
+try { const savedDur = localStorage.getItem(DUR_KEY); if (savedDur === "hist" || savedDur === "9n") duration = savedDur; } catch (e) {}
+function durBar() {
+  return `<div class="row" role="radiogroup" aria-label="Durée du séjour" style="margin:10px 0 4px;flex-wrap:wrap;gap:8px">
+    <button type="button" data-dur="hist" aria-pressed="${duration === "hist"}">16-18 nuits, circuit historique</button>
+    <button type="button" data-dur="9n" aria-pressed="${duration === "9n"}">10 jours, 9 nuits, hôtels 5★ — recommandé</button>
+  </div>`;
+}
+
 function scenarioPanel(k) {
   const S = SCEN[k];
+  const is9 = duration === "9n";
+  const D = is9 ? S.dur9 : S;
+  const eyebrowDates = is9 && D.noFlight
+    ? `Scénario ${k} · 9 nuits d'hôtel visées (${D.hin} → ${D.hout}) · aucun vol daté aligné`
+    : `Scénario ${k} · ${D.nights} nuits · hôtel du ${D.hin} au ${D.hout} · avion ${D.dep} → ${D.ret}`;
   return `
   <section class="block">
-    <div class="eyebrow">Scénario ${k} · ${S.nights} nuits · hôtel du ${S.hin} au ${S.hout} · avion ${S.dep} → ${S.ret}</div>
+    <div class="eyebrow">${esc(eyebrowDates)}</div>
     <h2>${esc(S.name)}</h2>
     <p class="lede">${esc(S.ambiance)}</p>
+    ${durBar()}
   </section>
   <section class="block">
     <h3>Carte</h3>
@@ -589,9 +667,15 @@ function scenarioPanel(k) {
     </div>
   </section>
   <section class="block">
-    <h3>L'hôtel proposé${S.alt ? " et son alternative" : ""}</h3>
-    <div class="hotels">${hotelCard(S.hotel, "Hôtel proposé")}${S.alt ? hotelCard(S.alt, "Alternative") : ""}</div>
-    ${S.alt ? "" : `<p class="note" style="margin-top:8px">Les autres hôtels évoqués pour ce lieu n'ont pas de fiche Booking exploitable : aucune alternative documentée.</p>`}
+    ${is9 ? `
+      <h3>Hôtels candidats (5★ déclarées, hôtel unique à retenir)</h3>
+      <div class="hotels">${S.hotels9.map(hotelCand9Card).join("")}</div>
+      <p class="note" style="margin-top:8px">Candidats Trivago (traces v7/v7b du 25/09/2026), classés selon le dossier source mais aucun montant n'est repris ici. Annulation, petit-déjeuner et vue mer réelle non confirmés : à vérifier avant réservation.</p>
+    ` : `
+      <h3>L'hôtel proposé${S.alt ? " et son alternative" : ""}</h3>
+      <div class="hotels">${hotelCard(S.hotel, "Hôtel proposé")}${S.alt ? hotelCard(S.alt, "Alternative") : ""}</div>
+      ${S.alt ? "" : `<p class="note" style="margin-top:8px">Les autres hôtels évoqués pour ce lieu n'ont pas de fiche Booking exploitable : aucune alternative documentée.</p>`}
+    `}
   </section>
   <section class="block">
     <h3>Programme de séances proposé</h3>
@@ -613,10 +697,12 @@ function scenarioPanel(k) {
   <section class="block">
     <h3>Vols (durées et horaires, sans engagement)</h3>
     <div class="grid2">
-      <div><h3>Départ de Bruxelles (BRU) → ${esc(S.airport)}</h3><div class="flights">${S.flightsBRU.map(f => `<div class="fl"><div class="t">${esc(f[0])}</div><div class="d">${esc(f[1])}</div></div>`).join("")}</div></div>
-      <div><h3>Départ de Tunis (TUN) → ${esc(S.airport)}</h3><div class="flights">${S.flightsTUN.map(f => `<div class="fl"><div class="t">${esc(f[0])}</div><div class="d">${esc(f[1])}</div></div>`).join("")}</div></div>
+      <div><h3>Départ de Bruxelles (BRU) → ${esc(S.airport)}</h3><div class="flights">${S.flightsBRU.map(f => `<div class="fl"><div class="t">${esc(f[0])}</div><div class="d">${esc(f[1])}</div></div>`).join("")}</div>${is9 ? `<p class="note" style="margin-top:6px">${esc(S.flightsBRU9Note)}</p>` : ""}</div>
+      <div><h3>Départ de Tunis (TUN) → ${esc(S.airport)}</h3><div class="flights">${is9
+        ? (S.flightsTUN9 ? S.flightsTUN9.map(f => `<div class="fl"><div class="t">${esc(f[0])}</div><div class="d">${esc(f[1])}</div></div>`).join("") : `<div class="fl"><div class="t">Aucun vol daté aligné</div><div class="d">${esc(S.flightsTUN9Note)}</div></div>`)
+        : S.flightsTUN.map(f => `<div class="fl"><div class="t">${esc(f[0])}</div><div class="d">${esc(f[1])}</div></div>`).join("")}</div></div>
     </div>
-    <p class="note" style="margin-top:8px">Vols relevés le 24/09/2026 (Bruxelles : rapport v5 ; Tunis : relevé du 24/09/2026 22:16-22:20 UTC). Rien n'est réservé.</p>
+    <p class="note" style="margin-top:8px">${is9 ? "Vols de la variante 9 nuits relevés le 25/09/2026 (traces v7/v7b, départ Tunis)." : "Vols relevés le 24/09/2026 (Bruxelles : rapport v5 ; Tunis : relevé du 24/09/2026 22:16-22:20 UTC)."} Rien n'est réservé.</p>
   </section>
   ${videosBlock(k)}
   <div class="foot"><button type="button" class="primary" data-fav="${k}">Mon coup de cœur : scénario ${k}</button><button type="button" data-tab="CHOIX">Comparer les trois</button></div>`;
@@ -774,6 +860,13 @@ function renderFav() {
 }
 
 document.addEventListener("click", e => {
+  const dur = e.target.closest("[data-dur]");
+  if (dur) {
+    duration = dur.dataset.dur;
+    try { localStorage.setItem(DUR_KEY, duration); } catch (e2) {}
+    render();
+    return;
+  }
   const go = e.target.closest("[data-go]");
   if (go) { show(go.dataset.go); return; }
   const tab = e.target.closest("[data-tab]");
