@@ -31,9 +31,10 @@ BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
               "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
 MAX_BYTES = 6 * 1024 * 1024
 # 403/429 : blocage anti-robot, contourné par le second essai (UA navigateur).
-# 500/502/503/504 et 520-524 (codes Cloudflare : serveur d'origine en panne ou
-# surchargé) : erreurs transitoires côté serveur, indépendantes de nos en-têtes.
-RETRYABLE_HTTP = {403, 429, 500, 502, 503, 504, 520, 521, 522, 523, 524}
+# 500/502/503/504 et toute la plage Cloudflare 520-530 (serveur d'origine en
+# panne, surchargé ou handshake TLS en échec) : erreurs transitoires côté
+# serveur, indépendantes de nos en-têtes.
+RETRYABLE_HTTP = {403, 429, 500, 502, 503, 504, *range(520, 531)}
 # Signatures de fichier (magic bytes) pour accepter une image même quand le
 # serveur déclare un Content-Type générique (application/octet-stream) :
 # vérifier le contenu réel plutôt que se fier à un en-tête mal renseigné.
