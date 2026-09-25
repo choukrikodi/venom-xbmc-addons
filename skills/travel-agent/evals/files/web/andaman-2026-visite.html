@@ -64,6 +64,10 @@ textarea{width:100%;min-height:110px;font:14px/1.45 var(--body);border:1px solid
 .cover .visit button{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.45);color:#fff}
 .cover .visit button:hover{background:rgba(255,255,255,.26)}
 .cover .visit button .s{display:block;font-weight:400;font-size:12px;color:#cdeef2}
+.cover-top{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;position:relative;z-index:1}
+.travelers{display:flex;align-items:center;gap:8px;flex:none}
+.travelers img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.85);box-shadow:0 2px 8px rgba(0,0,0,.3);display:block}
+.travelers span{font-size:11px;letter-spacing:.03em;color:#cdeef2;max-width:9ch}
 /* Onglets */
 .tabs{display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:20px;position:sticky;top:0;background:var(--paper);z-index:2;padding-top:8px}
 .tabs button{padding:8px 12px;font-size:14px}
@@ -190,7 +194,10 @@ section.block{margin-bottom:28px}
 <div id="tocBackdrop" class="toc-backdrop" hidden></div>
 <div class="wrap">
 <header class="cover" id="top" data-toc="Présentation">
-  <div class="eyebrow">Côte d'Andaman, Thaïlande · décembre 2026</div>
+  <div class="cover-top">
+    <div class="eyebrow">Côte d'Andaman, Thaïlande · décembre 2026</div>
+    <div class="travelers"><img src="assets/couple.png" alt="Les deux voyageurs" loading="lazy"><span>Les voyageurs</span></div>
+  </div>
   <h1>Trois plages, un seul choix</h1>
   <p class="lede">16 à 18 nuits sur la côte d'Andaman, décembre 2026</p>
   <p class="lede">Une visite guidée des trois lieux envisagés : Nai Yang à Phuket, Ao Nang à Krabi et Khao Lak dans la province de Phang Nga. Tout ce qui est écrit ici vient de fiches consultées le 24 septembre 2026 ; ce qui n'a pas pu être vérifié est signalé.</p>

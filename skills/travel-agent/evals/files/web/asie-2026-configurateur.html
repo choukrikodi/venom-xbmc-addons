@@ -120,6 +120,10 @@ textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,m
 .cover svg.boat{position:absolute;right:20px;bottom:10px;width:220px;max-width:40%;height:auto;opacity:.9}
 .cover .facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;font-size:14px;color:#e6f6f8}
 .cover .facts b{font-variant-numeric:tabular-nums}
+.cover-top{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;position:relative;z-index:1}
+.travelers{display:flex;align-items:center;gap:8px;flex:none}
+.travelers img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.85);box-shadow:0 2px 8px rgba(0,0,0,.3);display:block}
+.travelers span{font-size:11px;letter-spacing:.03em;color:#cdeef2;max-width:9ch}
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-bottom:24px}
 .step{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
 .step .n{font-family:var(--display);font-size:26px;line-height:1;color:var(--accent);font-weight:600}
@@ -229,7 +233,10 @@ textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,m
 <div id="tocBackdrop" class="toc-backdrop" hidden></div>
 <div class="wrap">
 <header class="cover" id="cover" data-toc="Présentation">
-  <div class="eyebrow">Côte d'Andaman, Thaïlande · fenêtre de départ 15/11 → 10/12/2026 · 2 adultes belges · départ TUN ou BRU</div>
+  <div class="cover-top">
+    <div class="eyebrow">Côte d'Andaman, Thaïlande · fenêtre de départ 15/11 → 10/12/2026 · 2 adultes belges · départ TUN ou BRU</div>
+    <div class="travelers"><img src="assets/couple.png" alt="Les deux voyageurs" loading="lazy"><span>Les voyageurs</span></div>
+  </div>
   <h1>Andaman 2026 : choisir le scénario</h1>
   <p class="lede">Dossier initial du rapport v5 (24/09/2026, 16–18 nuits) et variante décidée le 25/09/2026 : 10 jours, 9 nuits, hôtels 5★, départ Tunis. Le budget, le calendrier Gantt et la structure du tableau Trello se recalculent à chaque choix. Rien n'est réservé ; le Trello n'est construit qu'après « Valider ».</p>
   <div class="facts"><span>Plafond <b>8 000 €</b></span><span>Réserve <b>1 000 €</b> séparée</span><span>Hôtels <b>5★</b> sur 9 nuits (4–5★ dans le dossier initial), un seul lieu</span><span>1 soute par adulte</span><span>Tout ⚠️ estimation ; X = suppléments obligatoires non exposés</span></div>
