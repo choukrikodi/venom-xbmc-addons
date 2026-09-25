@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "kiwi": { "type": "http", "url": "https://mcp.kiwi.com" },
+    "trivago": { "type": "http", "url": "https://mcp.trivago.com/mcp" },
+    "skiplagged": { "type": "http", "url": "https://mcp.skiplagged.com/mcp" },
+    "frankfurter": { "type": "http", "url": "https://mcp.frankfurter.dev/" },
+    "hellosafe": { "type": "http", "url": "https://hellosafe.com/api/mcp-travel" },
+    "easyonward": { "type": "http", "url": "https://mcp.easyonward.com/mcp" },
+    "ferryhopper": { "type": "http", "url": "https://mcp.ferryhopper.com/mcp" },
+    "octotrip": { "type": "http", "url": "https://mcp.octotrip.app/flights/mcp" },
+    "ticketlens": { "type": "http", "url": "https://mcp.ticketlens.com/" },
+    "open-meteo": { "command": "npx", "args": ["-y", "open-meteo-mcp"] },
+    "osm": { "command": "npx", "args": ["-y", "@cyanheads/openstreetmap-mcp-server"] },
+    "wikipedia": { "command": "npx", "args": ["-y", "@cyanheads/wikipedia-mcp-server"] },
+    "fetch": { "command": "uvx", "args": ["mcp-server-fetch"] },
+    "playwright": { "command": "npx", "args": ["-y", "@playwright/mcp@latest", "--headless", "--isolated"] },
+    "transitous": { "command": "npx", "args": ["-y", "transitous-mcp"] },
+    "google-flights": { "command": "npx", "args": ["-y", "google-flights-mcp"] }
+  }
+}

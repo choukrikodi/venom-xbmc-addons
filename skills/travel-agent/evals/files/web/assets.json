@@ -1,0 +1,878 @@
+{
+  "notice": "Ressources visuelles du configurateur Asie 2026. Cartes : Wikimedia Maps (tuiles © contributeurs OpenStreetMap, ODbL), sans marqueurs ; les marqueurs sont dessinés par la page à partir des coordonnées Booking (projection Web Mercator). Photos : image de partage (og:image) ou première photo de contenu de la page publique citée, usage privé de comparaison, source affichée sous chaque image. Téléchargées par scripts/fetch_assets.py dans le workflow GitHub Actions ; les échecs restent journalisés dans assets.log.json.",
+  "assets": [
+    {
+      "name": "carte-thailande.png",
+      "kind": "image",
+      "source": "© OpenStreetMap contributors, Wikimedia Maps",
+      "center": [
+        12.5,
+        100.5
+      ],
+      "zoom": 5,
+      "size": [
+        700,
+        800
+      ],
+      "url": "https://maps.wikimedia.org/img/osm-intl,5,12.5,100.5,700x800.png?lang=fr"
+    },
+    {
+      "name": "carte-andaman-wm.png",
+      "kind": "image",
+      "source": "© OpenStreetMap contributors, Wikimedia Maps",
+      "center": [
+        8.4,
+        98.56
+      ],
+      "zoom": 9,
+      "size": [
+        900,
+        640
+      ],
+      "url": "https://maps.wikimedia.org/img/osm-intl,9,8.40,98.56,900x640.png?lang=fr"
+    },
+    {
+      "name": "carte-nai-yang-wm.png",
+      "kind": "image",
+      "source": "© OpenStreetMap contributors, Wikimedia Maps",
+      "center": [
+        8.095,
+        98.302
+      ],
+      "zoom": 13,
+      "size": [
+        900,
+        640
+      ],
+      "url": "https://maps.wikimedia.org/img/osm-intl,13,8.095,98.302,900x640.png?lang=fr"
+    },
+    {
+      "name": "carte-khao-lak-wm.png",
+      "kind": "image",
+      "source": "© OpenStreetMap contributors, Wikimedia Maps",
+      "center": [
+        8.7,
+        98.25
+      ],
+      "zoom": 12,
+      "size": [
+        900,
+        640
+      ],
+      "url": "https://maps.wikimedia.org/img/osm-intl,12,8.70,98.25,900x640.png?lang=fr"
+    },
+    {
+      "name": "carte-ao-nang-wm.png",
+      "kind": "image",
+      "source": "© OpenStreetMap contributors, Wikimedia Maps",
+      "center": [
+        8.045,
+        98.83
+      ],
+      "zoom": 13,
+      "size": [
+        900,
+        640
+      ],
+      "url": "https://maps.wikimedia.org/img/osm-intl,13,8.045,98.83,900x640.png?lang=fr"
+    },
+    {
+      "name": "hotel-panphuree.jpg",
+      "kind": "og_image",
+      "source": "panphuree.com, image de partage du site officiel",
+      "url": "https://panphuree.com/"
+    },
+    {
+      "name": "hotel-palm-galleria.jpg",
+      "kind": "page_image",
+      "source": "khaolakpalmgalleria.com, photo de la page d'accueil du site officiel",
+      "url": "https://khaolakpalmgalleria.com/"
+    },
+    {
+      "name": "hotel-anyavee.jpg",
+      "kind": "page_image",
+      "source": "aonangbayresort.com, photo de la page d'accueil du site officiel",
+      "url": "https://www.aonangbayresort.com/"
+    },
+    {
+      "name": "hotel-esprit.jpg",
+      "kind": "og_image",
+      "source": "trivago.be, image de partage de la fiche L'esprit De Naiyang",
+      "url": "https://www.trivago.be/en-US/lm/l-esprit-de-naiyang-beach-resort-sha-extra-plus-nai-yang-beach"
+    },
+    {
+      "name": "hotel-naiyang-beach.jpg",
+      "kind": "og_image",
+      "source": "trivago.be, image de partage de la fiche Naiyang Beach Hotel",
+      "url": "https://www.trivago.be/en-US/lm/naiyang-beach-hotel-nai-yang-beach"
+    },
+    {
+      "name": "hotel-apsara.jpg",
+      "kind": "og_image",
+      "source": "trivago.be, image de partage de la fiche Apsara Beachfront",
+      "url": "https://www.trivago.be/en-US/lm/apsara-beachfront-resort-villa-khao-lak"
+    },
+    {
+      "name": "hotel-krabi-resort.jpg",
+      "kind": "og_image",
+      "source": "trivago.be, image de partage de la fiche Krabi Resort",
+      "url": "https://www.trivago.be/en-US/lm/krabi-resort-ao-nang"
+    },
+    {
+      "name": "yt-1iml7VCGzxI.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo 1iml7VCGzxI (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/1iml7VCGzxI/hqdefault.jpg"
+    },
+    {
+      "name": "yt-5Re1DFEsFy8.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo 5Re1DFEsFy8 (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/5Re1DFEsFy8/hqdefault.jpg"
+    },
+    {
+      "name": "yt-7yl8uCa476U.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo 7yl8uCa476U (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/7yl8uCa476U/hqdefault.jpg"
+    },
+    {
+      "name": "yt-BUpypDX1yfM.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo BUpypDX1yfM (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/BUpypDX1yfM/hqdefault.jpg"
+    },
+    {
+      "name": "yt-FrX_EFYs_ec.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo FrX_EFYs_ec (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/FrX_EFYs_ec/hqdefault.jpg"
+    },
+    {
+      "name": "yt-GJtmTEY5L3Q.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo GJtmTEY5L3Q (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/GJtmTEY5L3Q/hqdefault.jpg"
+    },
+    {
+      "name": "yt-INhKZBqTeE8.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo INhKZBqTeE8 (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/INhKZBqTeE8/hqdefault.jpg"
+    },
+    {
+      "name": "yt-JrbSrovgmeE.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo JrbSrovgmeE (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/JrbSrovgmeE/hqdefault.jpg"
+    },
+    {
+      "name": "yt-OroiYJBK6OU.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo OroiYJBK6OU (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/OroiYJBK6OU/hqdefault.jpg"
+    },
+    {
+      "name": "yt-WbBKq8Z67EU.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo WbBKq8Z67EU (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/WbBKq8Z67EU/hqdefault.jpg"
+    },
+    {
+      "name": "yt-Y8EC_1R1Z8A.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo Y8EC_1R1Z8A (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/Y8EC_1R1Z8A/hqdefault.jpg"
+    },
+    {
+      "name": "yt-YCx-1eOJgGQ.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo YCx-1eOJgGQ (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/YCx-1eOJgGQ/hqdefault.jpg"
+    },
+    {
+      "name": "yt-YVwyViwCdb0.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo YVwyViwCdb0 (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/YVwyViwCdb0/hqdefault.jpg"
+    },
+    {
+      "name": "yt-YYUfly_-bjA.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo YYUfly_-bjA (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/YYUfly_-bjA/hqdefault.jpg"
+    },
+    {
+      "name": "yt-fiSnt7GtCRA.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo fiSnt7GtCRA (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/fiSnt7GtCRA/hqdefault.jpg"
+    },
+    {
+      "name": "yt-hsOpbAw0G8g.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo hsOpbAw0G8g (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/hsOpbAw0G8g/hqdefault.jpg"
+    },
+    {
+      "name": "yt-lsYpbvcx_B8.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo lsYpbvcx_B8 (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/lsYpbvcx_B8/hqdefault.jpg"
+    },
+    {
+      "name": "yt-pXcg3nQzf8o.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo pXcg3nQzf8o (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/pXcg3nQzf8o/hqdefault.jpg"
+    },
+    {
+      "name": "yt-qSJI0SejkUw.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo qSJI0SejkUw (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/qSJI0SejkUw/hqdefault.jpg"
+    },
+    {
+      "name": "yt-qfFtFjks-Rk.jpg",
+      "kind": "image",
+      "source": "Vignette YouTube de la vidéo qfFtFjks-Rk (i.ytimg.com), lien vers la vidéo",
+      "url": "https://i.ytimg.com/vi/qfFtFjks-Rk/hqdefault.jpg"
+    },
+    {
+      "name": "hotel-radisson.jpg",
+      "kind": "image",
+      "source": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-phuket-mai-khao — Extérieur, piscine et façade côté océan — consulté le 25/09/2026",
+      "url": "https://media.radissonhotels.net/image/radisson-blu-resort-phuket-mai-khao-beach/exterior/16256-168987-f93597581_4K.jpg?impolicy=HomeHero"
+    },
+    {
+      "name": "hotel-radisson-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-phuket-mai-khao/rooms — Superior Room Ocean Front with Balcony — consulté le 25/09/2026",
+      "url": "https://media.radissonhotels.net/image/radisson-blu-resort-phuket-mai-khao-beach/guest-room/16256-168987-f93815959_3XL.jpg?impolicy=HomeHero"
+    },
+    {
+      "name": "hotel-marriott.jpg",
+      "kind": "image",
+      "source": "https://www.marriott.com/en-us/hotels/hktnb-phuket-marriott-resort-and-spa-nai-yang-beach/photos/ — Entrée du resort — consulté le 25/09/2026",
+      "url": "https://cache.marriott.com/content/dam/marriott-renditions/HKTNB/hktnb-entrance-5131-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*"
+    },
+    {
+      "name": "hotel-marriott-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.marriott.com/en-us/hotels/hktnb-phuket-marriott-resort-and-spa-nai-yang-beach/photos/ — Deluxe King Room ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://cache.marriott.com/content/dam/marriott-renditions/HKTNB/hktnb-deluxe-0040-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*"
+    },
+    {
+      "name": "hotel-kora.jpg",
+      "kind": "image",
+      "source": "https://korabeachresort.com/gallery/ — Façades et piscine, Gallery6 — consulté le 25/09/2026",
+      "url": "https://korabeachresort.com/wp-content/uploads/2026/04/Gallery6-scaled.webp"
+    },
+    {
+      "name": "hotel-kora-chambre.jpg",
+      "kind": "image",
+      "source": "https://korabeachresort.com/accommodation/premier-sea-view/ — Premier Sea View ; libellé Sea View sur la page — consulté le 25/09/2026",
+      "url": "https://korabeachresort.com/wp-content/uploads/2026/03/Kora-Beach-Resort-Phuket_Accomodations_Premier-Sea-View-1-1.webp"
+    },
+    {
+      "name": "hotel-cassia.jpg",
+      "kind": "image",
+      "source": "https://www.cassia.com/thailand/cassia-phuket/gallery — Vue aérienne du resort — consulté le 25/09/2026",
+      "url": "https://www.cassia.com/assets/Hotels/Phuket/Gallery/Gallery-Image-ariel2.jpg"
+    },
+    {
+      "name": "hotel-cassia-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.cassia.com/thailand/cassia-phuket/gallery — One Bedroom Suite ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://www.cassia.com/assets/Hotels/Phuket/Gallery/Gallery-Image-One%20Bedroom%20Suite.jpg"
+    },
+    {
+      "name": "hotel-bellanara.jpg",
+      "kind": "image",
+      "source": "https://www.bellanaraphuket.com/gallery/ — Galerie Building, photo 1 — consulté le 25/09/2026",
+      "url": "https://www.bellanaraphuket.com/img/gallery/building/1.jpg"
+    },
+    {
+      "name": "hotel-bellanara-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.bellanaraphuket.com/gallery/ — Galerie Rooms, photo 1 ; catégorie et vue mer non attestées — consulté le 25/09/2026",
+      "url": "https://www.bellanaraphuket.com/img/gallery/room/1.jpg"
+    },
+    {
+      "name": "hotel-wyndhamnaithon.jpg",
+      "kind": "image",
+      "source": "https://www.wyndhamgardennaithon.com/ — Extérieur du resort — consulté le 25/09/2026",
+      "url": "https://www.wyndhamgardennaithon.com/wp-content/uploads/2023/12/wyndham-naithon-exterior01.jpg"
+    },
+    {
+      "name": "hotel-wyndhamnaithon-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.wyndhamgardennaithon.com/accommodation/ — Deluxe ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://www.wyndhamgardennaithon.com/wp-content/uploads/2023/03/Wyndham-Garden-Naithon-Phuket-Deluxe-001-1440x810.jpg"
+    },
+    {
+      "name": "hotel-srisuksant.jpg",
+      "kind": "image",
+      "source": "https://www.srisuksantresort.com/ — Façade et enseigne, galerie photo 1 — consulté le 25/09/2026",
+      "url": "https://www.srisuksantresort.com/images/gallery/1.jpg"
+    },
+    {
+      "name": "hotel-srisuksant-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.srisuksantresort.com/deluxe-sea-view-room.php — Deluxe Sea View Room, galerie photo 1 — consulté le 25/09/2026",
+      "url": "https://www.srisuksantresort.com/images/rooms/deluxe-sea-view/01.jpg"
+    },
+    {
+      "name": "hotel-buri.jpg",
+      "kind": "image",
+      "source": "https://www.aonangburi.com/ — Façade du resort, image publique M2_07899 — consulté le 25/09/2026",
+      "url": "https://www.aonangburi.com/wp-content/uploads/2024/12/M2_07899-1440x802.jpg"
+    },
+    {
+      "name": "hotel-buri-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.aonangburi.com/ — Deluxe Room ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://www.aonangburi.com/wp-content/uploads/2018/04/Deluxe-Room.jpg3_-1024x683.jpg"
+    },
+    {
+      "name": "hotel-anana.jpg",
+      "kind": "image",
+      "source": "https://www.ananakrabi.com/ — Bâtiments et piscine, Slide 1 — consulté le 25/09/2026",
+      "url": "https://webbox.imgix.net/images/pjgelwcbsjbnfved/5fe900a1-54a8-4a66-86a8-fb5b64bfad62.jpeg?auto=format,compress&fit=crop&crop=entropy&w=1600&h=600&q=55"
+    },
+    {
+      "name": "hotel-anana-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.ananakrabi.com/ — Thai Studio ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://webbox.imgix.net/images/pjgelwcbsjbnfved/000370da-40f2-408e-ac66-5152f7d5ada6.jpg?auto=format,compress&fit=crop&crop=entropy&w=344&h=190&q=55"
+    },
+    {
+      "name": "hotel-varana.jpg",
+      "kind": "image",
+      "source": "https://www.varanahotel.com/gallery — Galerie officielle, exterior 29 — consulté le 25/09/2026",
+      "url": "https://www.varanahotel.com/wp-content/uploads/2025/09/varana-krabi-hotel-exterior-29.webp"
+    },
+    {
+      "name": "hotel-varana-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.varanahotel.com/gallery — Chambre, fichier Luxe Pool King ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://www.varanahotel.com/wp-content/uploads/2026/05/4.Luxe-Pool-King.webp"
+    },
+    {
+      "name": "hotel-pullman_kl.jpg",
+      "kind": "image",
+      "source": "https://www.pullmankhaolakresort.com/pullman-khao-lak-resort/moments-gallery/ — Hotel exterior — consulté le 25/09/2026",
+      "url": "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/236/2021/01/12033450/hotel-exterior1.jpg"
+    },
+    {
+      "name": "hotel-pullman_kl-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.pullmankhaolakresort.com/pullman-khao-lak-resort/moments-gallery/ — Deluxe Sea View ; configuration King non confirmée par la légende de cette photo — consulté le 25/09/2026",
+      "url": "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/236/2025/08/06071751/Deluxe-Seaview-1-390x250.jpg"
+    },
+    {
+      "name": "hotel-emerald.jpg",
+      "kind": "image",
+      "source": "https://whitesandbluesea.com/khaolakemeraldbeachresortandspa/ — Extérieur : Beachfront Pool, piscine en bord de mer ; façade non visible — consulté le 25/09/2026",
+      "url": "https://whitesandbluesea.com/wp-content/uploads/2026/02/075A1243-1024x683.jpg"
+    },
+    {
+      "name": "hotel-emerald-chambre.jpg",
+      "kind": "image",
+      "source": "https://whitesandbluesea.com/room/deluxe-garden-view/ — Deluxe Garden View, og:image ; vue jardin, pas vue mer — consulté le 25/09/2026",
+      "url": "https://whitesandbluesea.com/wp-content/uploads/2026/07/01.-Deluxe-Garden-View.webp"
+    },
+    {
+      "name": "hotel-tuiblue.jpg",
+      "kind": "image",
+      "source": "https://www.maikhaolak.com/khaolak/gallery — Galerie Overview — consulté le 25/09/2026",
+      "url": "https://www.maikhaolak.com/khaolak/images/464x1024x567.jpg"
+    },
+    {
+      "name": "hotel-tuiblue-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.maikhaolak.com/khaolak/gallery — Deluxe Suite ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://www.maikhaolak.com/khaolak/images/468x1024x567.jpg"
+    },
+    {
+      "name": "hotel-kantary.jpg",
+      "kind": "image",
+      "source": "https://www.kantarybeach-khaolak.com/gallery/ — Vue aérienne plage et bâtiments, Slide14 — consulté le 25/09/2026",
+      "url": "https://www.kantarybeach-khaolak.com/gallery/images/Slide14.jpg"
+    },
+    {
+      "name": "hotel-kantary-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.kantarybeach-khaolak.com/gallery/ — Suite, Slide15 ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://www.kantarybeach-khaolak.com/gallery/images/Slide15.jpg"
+    },
+    {
+      "name": "hotel-eden.jpg",
+      "kind": "image",
+      "source": "https://www.edenbeachkhaolak.com/gallery — Hotel Exterior — consulté le 25/09/2026",
+      "url": "https://www.edenbeachkhaolak.com/images/382.jpg"
+    },
+    {
+      "name": "hotel-eden-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.edenbeachkhaolak.com/gallery — Superior Room ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://www.edenbeachkhaolak.com/images/270.jpg"
+    },
+    {
+      "name": "hotel-radisson-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-phuket-mai-khao/rooms — Superior Room Ocean Front with Balcony, autre vue — consulté le 25/09/2026",
+      "url": "https://media.radissonhotels.net/image/radisson-blu-resort-phuket-mai-khao-beach/guest-room/16256-168987-f93815895_3XL.jpg?impolicy=HomeHero"
+    },
+    {
+      "name": "hotel-marriott-2.jpg",
+      "kind": "image",
+      "source": "https://www.marriott.com/en-us/hotels/hktnb-phuket-marriott-resort-and-spa-nai-yang-beach/photos/ — Nai Yang Beach, photo de la galerie de l’hôtel — consulté le 25/09/2026",
+      "url": "https://cache.marriott.com/content/dam/marriott-renditions/HKTNB/hktnb-attraction-beach-0062-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*"
+    },
+    {
+      "name": "hotel-marriott-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://www.marriott.com/en-us/hotels/hktnb-phuket-marriott-resort-and-spa-nai-yang-beach/photos/ — Deluxe King Room, autre vue ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://cache.marriott.com/content/dam/marriott-renditions/HKTNB/hktnb-deluxe-0031-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*"
+    },
+    {
+      "name": "hotel-kora-2.jpg",
+      "kind": "image",
+      "source": "https://korabeachresort.com/gallery/ — Piscine — consulté le 25/09/2026",
+      "url": "https://korabeachresort.com/wp-content/uploads/2026/04/Gallery2-scaled.webp"
+    },
+    {
+      "name": "hotel-kora-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://korabeachresort.com/accommodation/premier-sea-view/ — Premier Sea View, autre vue — consulté le 25/09/2026",
+      "url": "https://korabeachresort.com/wp-content/uploads/2026/03/Kora-Beach-Resort-Phuket_Accomodations_Premier-Sea-View-2-1.webp"
+    },
+    {
+      "name": "hotel-cassia-2.jpg",
+      "kind": "image",
+      "source": "https://www.cassia.com/thailand/cassia-phuket/gallery — Main Pool — consulté le 25/09/2026",
+      "url": "https://www.cassia.com/assets/Hotels/Phuket/Gallery/Gallery-Image-Main%20Pool.jpg"
+    },
+    {
+      "name": "hotel-cassia-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://www.cassia.com/thailand/cassia-phuket/gallery — One Bedroom Loft Water, autre catégorie ; Water ne prouve pas une vue mer — consulté le 25/09/2026",
+      "url": "https://www.cassia.com/assets/Hotels/Phuket/Gallery/Gallery-Image-One%20Bedroom%20Loft%20Water.jpg"
+    },
+    {
+      "name": "hotel-bellanara-2.jpg",
+      "kind": "image",
+      "source": "https://www.bellanaraphuket.com/gallery/ — Galerie building, photo 2 ; catégorie de chambre et vue mer non attestées — consulté le 25/09/2026",
+      "url": "https://www.bellanaraphuket.com/img/gallery/building/2.jpg"
+    },
+    {
+      "name": "hotel-bellanara-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://www.bellanaraphuket.com/gallery/ — Galerie room, photo 2 ; catégorie de chambre et vue mer non attestées — consulté le 25/09/2026",
+      "url": "https://www.bellanaraphuket.com/img/gallery/room/2.jpg"
+    },
+    {
+      "name": "hotel-wyndhamnaithon-2.jpg",
+      "kind": "image",
+      "source": "https://www.wyndhamgardennaithon.com/ — Vue générale — consulté le 25/09/2026",
+      "url": "https://www.wyndhamgardennaithon.com/wp-content/uploads/2023/12/wyndham-naithon-overview01.jpg"
+    },
+    {
+      "name": "hotel-wyndhamnaithon-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://www.wyndhamgardennaithon.com/accommodation/ — Premium Deluxe, autre catégorie ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://www.wyndhamgardennaithon.com/wp-content/uploads/2023/03/Wyndham-Garden-Naithon-Phuket-Premium-Deluxe_001-1440x810.jpg"
+    },
+    {
+      "name": "hotel-srisuksant-2.jpg",
+      "kind": "image",
+      "source": "https://www.srisuksantresort.com/ — Piscine et bâtiment, autre vue — consulté le 25/09/2026",
+      "url": "https://www.srisuksantresort.com/images/gallery/2.jpg"
+    },
+    {
+      "name": "hotel-srisuksant-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://www.srisuksantresort.com/deluxe-sea-view-room.php — Deluxe Sea View, autre vue — consulté le 25/09/2026",
+      "url": "https://www.srisuksantresort.com/images/rooms/deluxe-sea-view/02.jpg"
+    },
+    {
+      "name": "hotel-buri-2.jpg",
+      "kind": "image",
+      "source": "https://www.aonangburi.com/ — Terrasses et piscine — consulté le 25/09/2026",
+      "url": "https://www.aonangburi.com/wp-content/uploads/2024/12/M2_07737-1-1440x802.jpg"
+    },
+    {
+      "name": "hotel-buri-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://www.aonangburi.com/ — Superior Room, autre catégorie ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://www.aonangburi.com/wp-content/uploads/2018/04/Superior-Room.jpg1_-1024x683.jpg"
+    },
+    {
+      "name": "hotel-anana-2.jpg",
+      "kind": "image",
+      "source": "https://www.ananakrabi.com/ — Piscine, Slide 2 — consulté le 25/09/2026",
+      "url": "https://webbox.imgix.net/images/pjgelwcbsjbnfved/2ea3d552-9f43-42ed-bc58-c77cdcfc5386.jpg?auto=format,compress&fit=crop&crop=entropy&w=1600&h=600&q=55"
+    },
+    {
+      "name": "hotel-anana-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://www.ananakrabi.com/ — Spa Studio, autre catégorie ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://webbox.imgix.net/images/pjgelwcbsjbnfved/a0416155-d943-4f3e-8613-6d916bca4b32.jpg?auto=format,compress&fit=crop&crop=entropy&w=335&h=190&q=55"
+    },
+    {
+      "name": "hotel-varana-2.jpg",
+      "kind": "image",
+      "source": "https://www.varanahotel.com/gallery — Piscine olympique — consulté le 25/09/2026",
+      "url": "https://www.varanahotel.com/wp-content/uploads/2025/09/Krabi-olympic-swimming-pool1-scaled.webp"
+    },
+    {
+      "name": "hotel-varana-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://www.varanahotel.com/gallery — Luxe Pool Twin, autre configuration ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://www.varanahotel.com/wp-content/uploads/2026/05/5.Luxe-Pool-Twin.webp"
+    },
+    {
+      "name": "hotel-pullman_kl-2.jpg",
+      "kind": "image",
+      "source": "https://www.pullmankhaolakresort.com/pullman-khao-lak-resort/moments-gallery/ — Piscine — consulté le 25/09/2026",
+      "url": "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/236/2021/01/12065856/Swimming-pool-390x250.jpg"
+    },
+    {
+      "name": "hotel-pullman_kl-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://www.pullmankhaolakresort.com/pullman-khao-lak-resort/moments-gallery/ — Deluxe Sea View, autre vue ; King non confirmé — consulté le 25/09/2026",
+      "url": "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/236/2025/08/06071758/Deluxe-Seaview-2-390x250.jpg"
+    },
+    {
+      "name": "hotel-emerald-2.jpg",
+      "kind": "image",
+      "source": "https://whitesandbluesea.com/khaolakemeraldbeachresortandspa/ — Taonga Pool — consulté le 25/09/2026",
+      "url": "https://whitesandbluesea.com/wp-content/uploads/2026/02/Beachfront-Swimming-Pool-at-Taonga-Bar-I-1-1024x683.jpg"
+    },
+    {
+      "name": "hotel-emerald-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://whitesandbluesea.com/room/deluxe-garden-view/ — Deluxe Garden View, autre vue ; vue jardin — consulté le 25/09/2026",
+      "url": "https://whitesandbluesea.com/wp-content/uploads/2026/07/02.-Deluxe-Garden-View-2048x1365.webp"
+    },
+    {
+      "name": "hotel-tuiblue-2.jpg",
+      "kind": "image",
+      "source": "https://www.maikhaolak.com/khaolak/gallery — Overview, autre vue — consulté le 25/09/2026",
+      "url": "https://www.maikhaolak.com/khaolak/images/465x1024x567.jpg"
+    },
+    {
+      "name": "hotel-tuiblue-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://www.maikhaolak.com/khaolak/gallery — Deluxe Suite, autre vue ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://www.maikhaolak.com/khaolak/images/469x1024x567.jpg"
+    },
+    {
+      "name": "hotel-kantary-2.jpg",
+      "kind": "image",
+      "source": "https://www.kantarybeach-khaolak.com/gallery/ — Piscine — consulté le 25/09/2026",
+      "url": "https://www.kantarybeach-khaolak.com/gallery/images/Slide7.jpg"
+    },
+    {
+      "name": "hotel-kantary-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://www.kantarybeach-khaolak.com/gallery/ — Suite, lits jumeaux ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://www.kantarybeach-khaolak.com/gallery/images/Slide16.jpg"
+    },
+    {
+      "name": "hotel-eden-2.jpg",
+      "kind": "image",
+      "source": "https://www.edenbeachkhaolak.com/gallery — Main Pool — consulté le 25/09/2026",
+      "url": "https://www.edenbeachkhaolak.com/images/116.jpg"
+    },
+    {
+      "name": "hotel-eden-chambre-2.jpg",
+      "kind": "image",
+      "source": "https://www.edenbeachkhaolak.com/gallery — Deluxe Room, autre catégorie ; vue mer non attestée — consulté le 25/09/2026",
+      "url": "https://www.edenbeachkhaolak.com/images/42.jpg"
+    },
+    {
+      "name": "lieu-a-1.jpg",
+      "kind": "image",
+      "source": "https://commons.wikimedia.org/wiki/File:Nai_Yang_Beach.jpg — Plage de Nai Yang — © WalkOnWater93 — prise de vue 2022-12-23 — https://creativecommons.org/licenses/by-sa/4.0/ — consulté le 25/09/2026",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Nai_Yang_Beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+    },
+    {
+      "name": "lieu-a-2.jpg",
+      "kind": "wm_thumb",
+      "source": "https://commons.wikimedia.org/wiki/File:Beach_Road,_Nai_Yang_(4447752747).jpg — Beach Road, Nai Yang — © Andy Mitchell — prise de vue 2010-03-12 — https://creativecommons.org/licenses/by-sa/2.0/ — consulté le 25/09/2026",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File%3ABeach%20Road%2C%20Nai%20Yang%20%284447752747%29.jpg&prop=imageinfo&iiprop=url&iiurlwidth=1200&format=json"
+    },
+    {
+      "name": "lieu-b-1.jpg",
+      "kind": "wm_thumb",
+      "source": "https://commons.wikimedia.org/wiki/File:A_view_of_Ao_Nang_beach,_Krabi.jpg — Plage d’Ao Nang, Krabi — © Satdeep Gill — prise de vue 2018-03-30 — https://creativecommons.org/licenses/by-sa/4.0/ — consulté le 25/09/2026",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File%3AA%20view%20of%20Ao%20Nang%20beach%2C%20Krabi.jpg&prop=imageinfo&iiprop=url&iiurlwidth=1200&format=json"
+    },
+    {
+      "name": "lieu-b-2.jpg",
+      "kind": "wm_thumb",
+      "source": "https://commons.wikimedia.org/wiki/File:2016-04-10_Ao_Nang_beach.jpg — Plage d’Ao Nang, autre vue — © Maksym Kozlenko — prise de vue 2016-04-10 — https://creativecommons.org/licenses/by-sa/4.0/ — consulté le 25/09/2026",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File%3A2016-04-10%20Ao%20Nang%20beach.jpg&prop=imageinfo&iiprop=url&iiurlwidth=1200&format=json"
+    },
+    {
+      "name": "lieu-c-1.jpg",
+      "kind": "image",
+      "source": "https://commons.wikimedia.org/wiki/File:Khukkhak_beach_Khao_Lak.jpg — Plage de Khukkhak, Khao Lak — © Jmex — prise de vue 2014-04-22 — https://creativecommons.org/licenses/by-sa/3.0/ — consulté le 25/09/2026",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Khukkhak_beach_Khao_Lak.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+    },
+    {
+      "name": "lieu-c-2.jpg",
+      "kind": "image",
+      "source": "https://commons.wikimedia.org/wiki/File:Khao_Lak_Beach_-_panoramio.jpg — Plage de Khao Lak, autre vue — © Pedro Krtička — prise de vue 2007-06-28 — https://creativecommons.org/licenses/by/3.0/ — consulté le 25/09/2026",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Khao_Lak_Beach_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+    },
+    {
+      "name": "exc-prnp4kghjyvi.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Phuket : James Bond Island en bateau rapide Premium avec déjeuner »",
+      "url": "https://www.booking.com/attractions/th/prnp4kghjyvi-phuket-james-bond-island-by-premium-speedboat-with-lunch.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prfvprpycbtk.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Excursion d'une journée sur la baie de Phang Nga et l'île James Bond au départ de Phuket »",
+      "url": "https://www.booking.com/attractions/th/prfvprpycbtk-phang-nga-bay-and-james-bond-island-day-tour-from-phuket.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-praey9kk4axt.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Phi Phi & Maya Bay PREMIUM Trip en Speedboat : Full Food & Pickup »",
+      "url": "https://www.booking.com/attractions/th/praey9kk4axt-phi-phi-island-by-premium-speedboat-with-lunch-from-phuket.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prpczfcszkkq.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Excursion d'une journée d'aventure aux îles Phi Phi avec déjeuner vue mer (V Marine) »",
+      "url": "https://www.booking.com/attractions/th/prpczfcszkkq-phi-phi-islands-adventure-day-trip-with-seaview-lunch-by-vmarine.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-pr1fehi8doxk.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Réserve naturelle des éléphants de Phuket, sanctuaire éthique »",
+      "url": "https://www.booking.com/attractions/th/pr1fehi8doxk-phuket-elephant-nature-reserve-ethical-sanctuary.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-pr9dhs3hbetn.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Baie de Phang Nga et île James Bond avec canoë en grand bateau »",
+      "url": "https://www.booking.com/attractions/th/pr9dhs3hbetn-phang-nga-bay-and-james-bond-island-with-canoeing-by-big-boat.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prcowmjyqidl.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Phi Phi, Maya Bay et îles Khai – snorkeling Premium au départ de Phuket »",
+      "url": "https://www.booking.com/attractions/th/prcowmjyqidl-phi-phi-don-phi-phi-lay-khai-nai-snorkeling-tour-from-phuket.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prbtwkipazem.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Circuit Phi Phi, Maya Bay et îles Khai avec déjeuner buffet depuis Phuket »",
+      "url": "https://www.booking.com/attractions/th/prbtwkipazem-phi-phi-islands-tour-from-phuket.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prf0nnh91nv9.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Phi Phi Early Bird & 4 Islands – excursion d'une journée en hors-bord depuis Krabi »",
+      "url": "https://www.booking.com/attractions/th/prf0nnh91nv9-phi-phi-early-bird-krabi-4-islands-beat-the-crowds-from-krabi.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prpesqfndtd6.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Krabi : îles Phi Phi et 4 îles – excursion coucher de soleil en petit groupe avec déjeuner »",
+      "url": "https://www.booking.com/attractions/th/prpesqfndtd6-phi-phi-island-sunset-4-island-small-group-tour-from-krabi.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prfqoytyzg89.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Krabi Jungle Escape – Emerald Pool et sources chaudes »",
+      "url": "https://www.booking.com/attractions/th/prfqoytyzg89-krabi-jungle-escape-emerald-pool-and-hot-springs-tour.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prhmo4ntjgfs.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Excursion snorkeling et plage aux îles Hong au départ de Krabi »",
+      "url": "https://www.booking.com/attractions/th/prhmo4ntjgfs-snorkel-and-beach-tour-to-hong-islands-from-krabi.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prl7e4yujjze.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Krabi 7 Islands – snorkeling, coucher de soleil et plancton bioluminescent en grand long-tail »",
+      "url": "https://www.booking.com/attractions/th/prl7e4yujjze-krabi-7-islands-snorkeling-sunset-and-bioluminescence-tour-by-big-l.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prqqdc50bnmb.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Excursion d'une journée aux îles Hong au départ de Krabi »",
+      "url": "https://www.booking.com/attractions/th/prqqdc50bnmb-hong-islands-one-day-tour-from-krabi.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prm7pnyoeswo.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Coucher de soleil aux îles Hong et plancton bioluminescent en bateau rapide depuis Krabi »",
+      "url": "https://www.booking.com/attractions/th/prm7pnyoeswo-hong-island-sunset-and-bioluminescent-trip-from-krabi.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prvq0k1jhavf.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Circuit d'une journée aux îles Phi Phi en bateau rapide depuis Krabi »",
+      "url": "https://www.booking.com/attractions/th/prvq0k1jhavf-phi-phi-islands-one-day-tour-by-speedboat-from-krabi.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prn9vt9qrxig.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Excursion d'une journée aux îles Similan au départ de Khao Lak »",
+      "url": "https://www.booking.com/attractions/th/prn9vt9qrxig-similan-islands-one-day-tour-from-khao-lak.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prfamunbk1ok.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Excursion snorkeling aux îles Surin au départ de Khao Lak (best-seller) »",
+      "url": "https://www.booking.com/attractions/th/prfamunbk1ok-best-seller-surin-islands-snorkeling-trip-from-khao-lak.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prpml1cgc8yb.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « De Khao Lak : lac Cheow Lan et piscine d'émeraude Nam Rad »",
+      "url": "https://www.booking.com/attractions/th/prpml1cgc8yb-from-khao-lak-cheow-lan-lake-nam-rad-emerald-pool.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-pra6avl2crku.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Incroyable excursion d'une journée au lac Cheow Larn depuis Khao Lak »",
+      "url": "https://www.booking.com/attractions/th/pra6avl2crku-amazing-one-day-trip-at-cheow-larn-lake-from-khao-lak.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prewnhycl41y.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Demi-journée rafting en bambou et centre de conservation des tortues de mer depuis Khao Lak »",
+      "url": "https://www.booking.com/attractions/th/prewnhycl41y-bamboo-rafting-and-sea-turtle-conservation-center-half-day-tour-fro.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prgjp2gj46ui.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Visite guidée en petit groupe du sanctuaire des éléphants de Khao Lak »",
+      "url": "https://www.booking.com/attractions/th/prgjp2gj46ui-guide-tour-to-khaolak-elephant-sanctuary-in-small-group.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-przlfollulma.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Demi-journée : rivière Sok + temple des singes + point de vue »",
+      "url": "https://www.booking.com/attractions/th/przlfollulma-half-day-sok-river-monkey-temple-view-point.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "exc-prccim9gdj1p.jpg",
+      "kind": "og_image",
+      "source": "booking.com/attractions, image de partage de la fiche « Visite de Khao Sok avec sanctuaire des éléphants et rafting »",
+      "url": "https://www.booking.com/attractions/th/prccim9gdj1p-khao-sok-tour-with-elephant-sanctuary-and-rafting.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "hotel-pullman_naithon.jpg",
+      "kind": "image",
+      "source": "pullmanphuketarcadia.com/the-resort/gallery/ — Main Pool — piscine principale — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/65/2020/02/18071456/Pullman-Arcadia_Main-Pool.jpg"
+    },
+    {
+      "name": "hotel-pullman_naithon-chambre.jpg",
+      "kind": "image",
+      "source": "pullmanphuketarcadia.com/room-types/phuket-resort-ocean/ — Ocean Room ; vue mer annoncée mais variable selon emplacement, vue mer directe non obstruée et accès plage non confirmés — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/65/2025/12/22080735/ocean-room-2025.jpg"
+    },
+    {
+      "name": "hotel-slate.jpg",
+      "kind": "image",
+      "source": "theslatephuket.com/gallery.html — Pulley Pool & Bar (Adults-only) — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, relance)",
+      "url": "https://www.theslatephuket.com/assets/media/uploads/Swimming%20Pools/Pulley%20Pool/The%20Slate-Pulley%20Pool%20Overall%20Landscape.jpg"
+    },
+    {
+      "name": "hotel-slate-chambre.jpg",
+      "kind": "image",
+      "source": "theslatephuket.com/gallery.html — Pearl Bed Suite ; vue mer/plage non confirmée — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://www.theslatephuket.com/assets/media/uploads/Suites_Villas/Pearl%20Bed%20Suite/Pearl%20Bed%20Suite-01.jpg"
+    },
+    {
+      "name": "hotel-sofitel_klongmuang.jpg",
+      "kind": "image",
+      "source": "sofitelkrabiphokeethra.com/th/gallery/ — vue générale, extérieur — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/32/2024/02/15113147/resort-in-Krabi-2.jpg"
+    },
+    {
+      "name": "hotel-sofitel_klongmuang-chambre.jpg",
+      "kind": "image",
+      "source": "sofitelkrabiphokeethra.com/th/gallery/ — chambre Luxury Room ; vue mer/plage non confirmée, lecture détaillée de catégorie interrompue par timeout — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/32/2020/01/28114920/Luxury-Room_001.jpg"
+    },
+    {
+      "name": "hotel-grand_mercure_aonang.jpg",
+      "kind": "image",
+      "source": "all.accor.com/hotel/B6F7/index.en.shtml — Grand Mercure Krabi Ao Nang, image 1 ; image principale officielle de l'établissement, contrôle visuel final à effectuer par l'orchestrateur — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets). Pas de photo de chambre : Codex a explicitement refusé de substituer une image générique de remplacement (voir room_checks).",
+      "url": "https://www.ahstatic.com/photos/b6f7_ho_00_p_1024x768.jpg"
+    },
+    {
+      "name": "hotel-jw_khaolak.jpg",
+      "kind": "image",
+      "source": "marriott.com/en-us/hotels/hktkl-jw-marriott-khao-lak-resort-and-spa/photos/ — Khao Lak Family Resort at Twilight — extérieur au crépuscule — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://cache.marriott.com/is/image/marriotts7prod/jw-hktkl-resort-at-twilight-20-17224%3AWide-Hor?fit=constrain&wid=375"
+    },
+    {
+      "name": "hotel-jw_khaolak-chambre.jpg",
+      "kind": "image",
+      "source": "marriott.com/en-us/hotels/hktkl-jw-marriott-khao-lak-resort-and-spa/photos/ — Two Bedroom Villa - Master Bedroom ; accès direct plage explicitement annoncé sur la page Premium Rooms, vue non obstruée depuis le lit non confirmée — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://cache.marriott.com/is/image/marriotts7prod/jw-hktkl-2-bedroom-villa---bedroom-33421%3AWide-Hor?fit=constrain&wid=375"
+    },
+    {
+      "name": "hotel-jw_maikhao.jpg",
+      "kind": "image",
+      "source": "https://www.marriott.com/en-us/hotels/hktjw-jw-marriott-phuket-resort-and-spa/photos/ — Exterior Aerial View — consulté le 25/09/2026 — Vue aérienne extérieure du resort et de la plage. (Codex, recherche multi-onglets)",
+      "url": "https://cache.marriott.com/content/dam/marriott-renditions/HKTJW/hktjw-aerial-view-1969-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*"
+    },
+    {
+      "name": "hotel-jw_maikhao-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.marriott.com/en-us/hotels/hktjw-jw-marriott-phuket-resort-and-spa/rooms/premium-rooms/ — Ocean Front Pool Suite — Spacious Bedroom — consulté le 25/09/2026 — Luxury Oceanfront Pool Suite, 187 m². Le descriptif annonce une terrasse face à la mer, une piscine privée et une vue panoramique sur l'océan. Accès direct à la plage non confirmé. Vue entièrement non obstruée non confirmée : végétation visible sur la photo. (Codex, recherche multi-onglets)",
+      "url": "https://cache.marriott.com/content/dam/marriott-renditions/HKTJW/hktjw-suite-7335-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=2880px:*"
+    },
+    {
+      "name": "hotel-renaissance_maikhao.jpg",
+      "kind": "image",
+      "source": "https://www.marriott.com/en-us/hotels/hktbr-renaissance-phuket-resort-and-spa/ — Aerial of the resort beachfront — consulté le 25/09/2026 — Vue aérienne extérieure du resort, de la piscine et de la plage. (Codex, recherche multi-onglets)",
+      "url": "https://cache.marriott.com/is/image/marriotts7prod/br-hktbr-aerial-of-the-resort14131-31948:Classic-Hor?wid=1300&fit=constrain"
+    },
+    {
+      "name": "hotel-renaissance_maikhao-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.marriott.com/en-us/hotels/hktbr-renaissance-phuket-resort-and-spa/rooms/premium-accommodations/ — One-Bedroom Pool Villa Oceanfront — consulté le 25/09/2026 — One-Bedroom Pool Villa Oceanfront. Le descriptif atteste une vue ininterrompue sur la mer depuis la terrasse et la plage à quelques pas. La photographie de la chambre montre des arbres entre la villa et la mer ; vue totalement dégagée depuis le lit non confirmée. (Codex, recherche multi-onglets)",
+      "url": "https://cache.marriott.com/is/image/marriotts7prod/br-hktbr-bedroom-27302-31601:Classic-Hor?wid=1300&fit=constrain"
+    },
+    {
+      "name": "hotel-nakamanda_klongmuang.jpg",
+      "kind": "image",
+      "source": "https://nakamanda.com/?page_id=190 — Aucune légende descriptive affichée pour cette image dans la galerie Photos — consulté le 25/09/2026 — Vue aérienne des bâtiments, jardins et piscine ; identification visuelle de la photo publiée dans la galerie officielle. Nom du fichier source : DJI_0200-scaled.jpg. (Codex, recherche multi-onglets)",
+      "url": "https://nakamanda.com/wp-content/uploads/2025/12/DJI_0200-scaled.jpg"
+    },
+    {
+      "name": "hotel-nakamanda_klongmuang-chambre.jpg",
+      "kind": "image",
+      "source": "https://nakamanda.com/?page_id=170 — Aucune légende individuelle affichée ; section Jacuzzi Villa Sea View 148 SQM. — consulté le 25/09/2026 — Jacuzzi Villa Sea View, 148 m². Le descriptif annonce une vue sur la mer d'Andaman et une terrasse avec jacuzzi extérieur. Accès direct à la plage et absence d'obstacles non confirmés. Photo intérieure sans mer visible ; elle illustre la chambre, pas une preuve de vue mer depuis le lit. Nom du fichier source : Jacuzzi-Bedroom-800Pix.jpg. (Codex, recherche multi-onglets)",
+      "url": "https://nakamanda.com/wp-content/uploads/2025/12/Jacuzzi-Bedroom-800Pix.jpg"
+    },
+    {
+      "name": "hotel-sands_katathani.jpg",
+      "kind": "image",
+      "source": "https://thesandskhaolak.com/gallery.php — The Sands Khao Lak — consulté le 25/09/2026 — Vue extérieure du resort, de la piscine et de la mer. Image ouverte dans la galerie officielle, sans modification du referer. (Codex, recherche multi-onglets)",
+      "url": "https://thesandskhaolak.com/images/gallery/low/01L-TheSandsKhaoLak.jpg"
+    },
+    {
+      "name": "hotel-sands_katathani-chambre.jpg",
+      "kind": "image",
+      "source": "https://thesandskhaolak.com/gallery.php — Pool Access Seaside Junior Suite — consulté le 25/09/2026 — Pool Access Seaside Junior Suite (Seaside Wing). Le descriptif de https://thesandskhaolak.com/sleep_poolaccess_seaside.php atteste une vue côté mer et un accès direct à la piscine. Accès direct à la plage et vue mer non obstruée non confirmés. Photo intérieure affichée dans la galerie ; elle ne démontre pas une vue mer depuis le lit. La page de catégorie indique une rénovation, sans dater individuellement la photographie de galerie. (Codex, recherche multi-onglets)",
+      "url": "https://thesandskhaolak.com/images/gallery/low/Low-Pool-Access-Seaside-03.jpg"
+    }
+  ]
+}

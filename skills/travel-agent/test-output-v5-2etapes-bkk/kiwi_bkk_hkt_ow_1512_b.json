@@ -1,0 +1,718 @@
+=== 2026-09-24T23:07:22+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "BKK", "flyTo": "HKT", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 1, "allow_self_transfer": false, "one_for_city": false, "departureDate": "15/12/2026", "departureDateTo": "16/12/2026"}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"BKK → HKT on 15/12/2026–16/12/2026, 2 adults [≤1 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"075623655142000020892e1d_0\",\n      \"price\": 134.647742,\n      \"priceFormatted\": \"135 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/9qr4w8\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-15T19:20:00\",\n        \"arrivalTime\": \"2026-12-15T20:50:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-15T19:20:00\",\n            \"arrivalTime\": \"2026-12-15T20:50:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"VZ\",\n            \"carrierName\": \"Thai Vietjet\",\n            \"flightNumber\": \"VZ308\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"07562365514300000030c1ef_0\",\n      \"price\": 134.647742,\n      \"priceFormatted\": \"135 EUR\",\n      \"totalDurationSeconds\": 5700,\n      \"bookingUrl\": \"https://kiwi.com/u/wvkyn2\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-16T22:20:00\",\n        \"arrivalTime\": \"2026-12-16T23:55:00\",\n        \"durationSeconds\": 5700,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-16T22:20:00\",\n            \"arrivalTime\": \"2026-12-16T23:55:00\",\n            \"durationSeconds\": 5700,\n            \"carrier\": \"VZ\",\n            \"carrierName\": \"Thai Vietjet\",\n            \"flightNumber\": \"VZ316\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"0756236551420000de2a325b_0\",\n      \"price\": 134.647742,\n      \"priceFormatted\": \"135 EUR\",\n      \"totalDurationSeconds\": 5700,\n      \"bookingUrl\": \"https://kiwi.com/u/dqczmp\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-15T22:20:00\",\n        \"arrivalTime\": \"2026-12-15T23:55:00\",\n        \"durationSeconds\": 5700,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-15T22:20:00\",\n            \"arrivalTime\": \"2026-12-15T23:55:00\",\n            \"durationSeconds\": 5700,\n            \"carrier\": \"VZ\",\n            \"carrierName\": \"Thai Vietjet\",\n            \"flightNumber\": \"VZ316\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"0756236551430000ee3ea0c3_0\",\n      \"price\": 136.647742,\n      \"priceFormatted\": \"137 EUR\",\n      \"totalDurationSeconds\": 5700,\n      \"bookingUrl\": \"https://kiwi.com/u/wv56x6r\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-16T06:50:00\",\n        \"arrivalTime\": \"2026-12-16T08:25:00\",\n        \"durationSeconds\": 5700,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-16T06:50:00\",\n            \"arrivalTime\": \"2026-12-16T08:25:00\",\n            \"durationSeconds\": 5700,\n            \"carrier\": \"VZ\",\n            \"carrierName\": \"Thai Vietjet\",\n            \"flightNumber\": \"VZ314\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"0756236551420000b1e65f46_0\",\n      \"price\": 138.0,\n      \"priceFormatted\": \"138 EUR\",\n      \"totalDurationSeconds\": 5100,\n      \"bookingUrl\": \"https://kiwi.com/u/ms9y25\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-15T06:40:00\",\n        \"arrivalTime\": \"2026-12-15T08:05:00\",\n        \"durationSeconds\": 5100,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-15T06:40:00\",\n            \"arrivalTime\": \"2026-12-15T08:05:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG227\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"07562365514300006ffcacf2_0\",\n      \"price\": 138.0,\n      \"priceFormatted\": \"138 EUR\",\n      \"totalDurationSeconds\": 5100,\n      \"bookingUrl\": \"https://kiwi.com/u/vrrg42\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-16T06:40:00\",\n        \"arrivalTime\": \"2026-12-16T08:05:00\",\n        \"durationSeconds\": 5100,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-16T06:40:00\",\n            \"arrivalTime\": \"2026-12-16T08:05:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG227\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"018b2365514200000b95b017_0\",\n      \"price\": 138.949254,\n      \"priceFormatted\": \"139 EUR\",\n      \"totalDurationSeconds\": 5700,\n      \"bookingUrl\": \"https://kiwi.com/u/gx6g8j\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"DMK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-15T06:25:00\",\n        \"arrivalTime\": \"2026-12-15T08:00:00\",\n        \"durationSeconds\": 5700,\n        \"stops\": 0,\n        \"route\": [\n          \"DMK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"DMK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Don Muang\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-15T06:25:00\",\n            \"arrivalTime\": \"2026-12-15T08:00:00\",\n            \"durationSeconds\": 5700,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3039\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"0756236551430000869f09c7_0\",\n      \"price\": 144.0,\n      \"priceFormatted\": \"144 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/q8qujp\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-16T18:30:00\",\n        \"arrivalTime\": \"2026-12-16T20:00:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-16T18:30:00\",\n            \"arrivalTime\": \"2026-12-16T20:00:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG221\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"0756236551430000aadf9e1d_0\",\n      \"price\": 144.0,\n      \"priceFormatted\": \"144 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/fjwqt9\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-16T15:00:00\",\n        \"arrivalTime\": \"2026-12-16T16:30:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-16T15:00:00\",\n            \"arrivalTime\": \"2026-12-16T16:30:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG215\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"07562365514300005dcace70_0\",\n      \"price\": 144.0,\n      \"priceFormatted\": \"144 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/bd2u7k\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-16T11:30:00\",\n        \"arrivalTime\": \"2026-12-16T13:00:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-16T11:30:00\",\n            \"arrivalTime\": \"2026-12-16T13:00:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG207\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075623655142000073a8a9b0_0\",\n      \"price\": 144.0,\n      \"priceFormatted\": \"144 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/bczfs2\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-15T13:55:00\",\n        \"arrivalTime\": \"2026-12-15T15:25:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-15T13:55:00\",\n            \"arrivalTime\": \"2026-12-15T15:25:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG211\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075623655142000083d03dc4_0\",\n      \"price\": 144.0,\n      \"priceFormatted\": \"144 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/vdwkyx\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-15T11:30:00\",\n        \"arrivalTime\": \"2026-12-15T13:00:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-15T11:30:00\",\n            \"arrivalTime\": \"2026-12-15T13:00:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG207\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"0756236551430000adb25a04_0\",\n      \"price\": 144.0,\n      \"priceFormatted\": \"144 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/qx9w3fq\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-16T13:55:00\",\n        \"arrivalTime\": \"2026-12-16T15:25:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-16T13:55:00\",\n            \"arrivalTime\": \"2026-12-16T15:25:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG211\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"07562365514200006dde5ce8_0\",\n      \"price\": 144.0,\n      \"priceFormatted\": \"144 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/kdf3yy\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-15T09:40:00\",\n        \"arrivalTime\": \"2026-12-15T11:10:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-15T09:40:00\",\n            \"arrivalTime\": \"2026-12-15T11:10:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG205\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"0756236551430000b3c4af5c_0\",\n      \"price\": 144.0,\n      \"priceFormatted\": \"144 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/tjwvjg\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-16T09:40:00\",\n        \"arrivalTime\": \"2026-12-16T11:10:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-16T09:40:00\",\n            \"arrivalTime\": \"2026-12-16T11:10:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG205\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 543,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "BKK → HKT on 15/12/2026–16/12/2026, 2 adults [≤1 stops/sector; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 15,
+   "itineraries": [
+    {
+     "id": "075623655142000020892e1d_0",
+     "price": 134.647742,
+     "priceFormatted": "135 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/9qr4w8",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-15T19:20:00",
+      "arrivalTime": "2026-12-15T20:50:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-15T19:20:00",
+        "arrivalTime": "2026-12-15T20:50:00",
+        "durationSeconds": 5400,
+        "carrier": "VZ",
+        "carrierName": "Thai Vietjet",
+        "flightNumber": "VZ308",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "07562365514300000030c1ef_0",
+     "price": 134.647742,
+     "priceFormatted": "135 EUR",
+     "totalDurationSeconds": 5700,
+     "bookingUrl": "https://kiwi.com/u/wvkyn2",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-16T22:20:00",
+      "arrivalTime": "2026-12-16T23:55:00",
+      "durationSeconds": 5700,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-16T22:20:00",
+        "arrivalTime": "2026-12-16T23:55:00",
+        "durationSeconds": 5700,
+        "carrier": "VZ",
+        "carrierName": "Thai Vietjet",
+        "flightNumber": "VZ316",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "0756236551420000de2a325b_0",
+     "price": 134.647742,
+     "priceFormatted": "135 EUR",
+     "totalDurationSeconds": 5700,
+     "bookingUrl": "https://kiwi.com/u/dqczmp",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-15T22:20:00",
+      "arrivalTime": "2026-12-15T23:55:00",
+      "durationSeconds": 5700,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-15T22:20:00",
+        "arrivalTime": "2026-12-15T23:55:00",
+        "durationSeconds": 5700,
+        "carrier": "VZ",
+        "carrierName": "Thai Vietjet",
+        "flightNumber": "VZ316",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "0756236551430000ee3ea0c3_0",
+     "price": 136.647742,
+     "priceFormatted": "137 EUR",
+     "totalDurationSeconds": 5700,
+     "bookingUrl": "https://kiwi.com/u/wv56x6r",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-16T06:50:00",
+      "arrivalTime": "2026-12-16T08:25:00",
+      "durationSeconds": 5700,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-16T06:50:00",
+        "arrivalTime": "2026-12-16T08:25:00",
+        "durationSeconds": 5700,
+        "carrier": "VZ",
+        "carrierName": "Thai Vietjet",
+        "flightNumber": "VZ314",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "0756236551420000b1e65f46_0",
+     "price": 138.0,
+     "priceFormatted": "138 EUR",
+     "totalDurationSeconds": 5100,
+     "bookingUrl": "https://kiwi.com/u/ms9y25",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-15T06:40:00",
+      "arrivalTime": "2026-12-15T08:05:00",
+      "durationSeconds": 5100,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-15T06:40:00",
+        "arrivalTime": "2026-12-15T08:05:00",
+        "durationSeconds": 5100,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG227",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "07562365514300006ffcacf2_0",
+     "price": 138.0,
+     "priceFormatted": "138 EUR",
+     "totalDurationSeconds": 5100,
+     "bookingUrl": "https://kiwi.com/u/vrrg42",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-16T06:40:00",
+      "arrivalTime": "2026-12-16T08:05:00",
+      "durationSeconds": 5100,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-16T06:40:00",
+        "arrivalTime": "2026-12-16T08:05:00",
+        "durationSeconds": 5100,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG227",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "018b2365514200000b95b017_0",
+     "price": 138.949254,
+     "priceFormatted": "139 EUR",
+     "totalDurationSeconds": 5700,
+     "bookingUrl": "https://kiwi.com/u/gx6g8j",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "DMK",
+      "to": "HKT",
+      "departureTime": "2026-12-15T06:25:00",
+      "arrivalTime": "2026-12-15T08:00:00",
+      "durationSeconds": 5700,
+      "stops": 0,
+      "route": [
+       "DMK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "DMK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Don Muang",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-15T06:25:00",
+        "arrivalTime": "2026-12-15T08:00:00",
+        "durationSeconds": 5700,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3039",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "0756236551430000869f09c7_0",
+     "price": 144.0,
+     "priceFormatted": "144 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/q8qujp",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-16T18:30:00",
+      "arrivalTime": "2026-12-16T20:00:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-16T18:30:00",
+        "arrivalTime": "2026-12-16T20:00:00",
+        "durationSeconds": 5400,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG221",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "0756236551430000aadf9e1d_0",
+     "price": 144.0,
+     "priceFormatted": "144 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/fjwqt9",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-16T15:00:00",
+      "arrivalTime": "2026-12-16T16:30:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-16T15:00:00",
+        "arrivalTime": "2026-12-16T16:30:00",
+        "durationSeconds": 5400,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG215",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "07562365514300005dcace70_0",
+     "price": 144.0,
+     "priceFormatted": "144 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/bd2u7k",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-16T11:30:00",
+      "arrivalTime": "2026-12-16T13:00:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-16T11:30:00",
+        "arrivalTime": "2026-12-16T13:00:00",
+        "durationSeconds": 5400,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG207",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075623655142000073a8a9b0_0",
+     "price": 144.0,
+     "priceFormatted": "144 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/bczfs2",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-15T13:55:00",
+      "arrivalTime": "2026-12-15T15:25:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-15T13:55:00",
+        "arrivalTime": "2026-12-15T15:25:00",
+        "durationSeconds": 5400,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG211",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075623655142000083d03dc4_0",
+     "price": 144.0,
+     "priceFormatted": "144 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/vdwkyx",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-15T11:30:00",
+      "arrivalTime": "2026-12-15T13:00:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-15T11:30:00",
+        "arrivalTime": "2026-12-15T13:00:00",
+        "durationSeconds": 5400,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG207",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "0756236551430000adb25a04_0",
+     "price": 144.0,
+     "priceFormatted": "144 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/qx9w3fq",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-16T13:55:00",
+      "arrivalTime": "2026-12-16T15:25:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-16T13:55:00",
+        "arrivalTime": "2026-12-16T15:25:00",
+        "durationSeconds": 5400,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG211",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "07562365514200006dde5ce8_0",
+     "price": 144.0,
+     "priceFormatted": "144 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/kdf3yy",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-15T09:40:00",
+      "arrivalTime": "2026-12-15T11:10:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-15T09:40:00",
+        "arrivalTime": "2026-12-15T11:10:00",
+        "durationSeconds": 5400,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG205",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "0756236551430000b3c4af5c_0",
+     "price": 144.0,
+     "priceFormatted": "144 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/tjwvjg",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-16T09:40:00",
+      "arrivalTime": "2026-12-16T11:10:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-16T09:40:00",
+        "arrivalTime": "2026-12-16T11:10:00",
+        "durationSeconds": 5400,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG205",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 543,
+   "error": null
+  }
+ }
+}

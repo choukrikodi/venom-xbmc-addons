@@ -1,0 +1,101 @@
+{
+  "skill_name": "travel-agent",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Nous sommes 2 adultes (passeports belges, à confirmer), départ de Bruxelles-National (BRU) entre le 15/11 et le 10/12/2026, 16 à 18 nuits sur place, 1 bagage en soute chacun, Asie du Sud-Est, plages, 2 à 4 étapes d'au moins 3 nuits chacune, transferts courts, plafond total 8 000 EUR pour le groupe. Compare trois circuits et rédige le rapport Markdown avec tracker, sans rien réserver. Le réseau MCP est indisponible : utilise les traces horodatées fournies dans test-output/ et signale leur âge.",
+      "expected_output": "Rapport Markdown suivant references/rapport.md : paramètres, ## Hypothèses, synthèse à trois lignes, options A/B/C, budgets par poste avec ✅/⚠️ et source+UTC, formalités, tracker, sources. Les prix proviennent des traces test-output/ (horodatées 2026-09-24) et sont présentés avec leur âge ; aucune réservation.",
+      "files": [
+        "test-output/kiwi_flex_rt.json",
+        "test-output/kiwi_bags_rt_hkt.json",
+        "test-output/kiwi_bags_rt_kbv.json",
+        "test-output/kiwi_bags_rt_mnl.json",
+        "test-output/kiwi_bags_ow_out.json",
+        "test-output/kiwi_bags_ow_back_hkt.json",
+        "test-output/kiwi_bags_ow_back_kul.json",
+        "test-output/kiwi_bags_ow_back_lgk.json",
+        "test-output/kiwi_bags_ow_back_mnl.json",
+        "test-output/kiwi_bags_ow_back_mph.json",
+        "test-output/trivago_A1_aonang.json",
+        "test-output/trivago_A2_kohlanta.json",
+        "test-output/trivago_A3_kohlipe.json",
+        "test-output/trivago_A4_langkawi.json",
+        "test-output/trivago_B1_coron.json",
+        "test-output/trivago_B2_elnido.json",
+        "test-output/trivago_B3_boracay.json",
+        "test-output/trivago_C1_khaolak.json",
+        "test-output/trivago_C2_kohyaoyai.json",
+        "test-output/trivago_C3_naiyang.json",
+        "test-output/trends_phuket.json",
+        "test-output/trends_krabi.json",
+        "test-output/trends_langkawi.json",
+        "test-output/trends_el_nido.json"
+      ],
+      "expectations": [
+        "prix_horodates: chaque montant de vol ou d'hôtel cité dans les budgets porte un horodatage UTC repris de la première ligne '===' d'un fichier test-output/ et un lien ou une page de recherche paramétrée.",
+        "echo_2_adults: pour chaque tarif de vol marqué ✅, le rapport cite la chaîne 'query' de la réponse Kiwi contenant '2 adults' ; un tarif dont l'écho ne mentionne pas 2 adultes n'est pas marqué ✅.",
+        "bru_pas_crl: tous les vols retenus partent de ou arrivent à BRU ; aucun vol CRL (Charleroi) n'est présenté comme équivalent à BRU.",
+        "fenetre_depart: chaque option indique un départ de BRU compris entre le 15/11/2026 et le 10/12/2026 et un nombre de nuits sur place entre 16 et 18, les dates de retour étant déduites des vols et des nuits.",
+        "etapes_3_nuits: chaque option compte 2 à 4 étapes et chaque étape au moins 3 nuits, avec la durée de transfert entre étapes indiquée.",
+        "checked_bag_explicite: pour chaque vol, le rapport indique si baggage.checkedBag ou adults_hold_bags confirme 1 soute par adulte ; un vol dont l'écho indique checkedBag:0 ou omet la soute est marqué ⚠️ et non ✅.",
+        "open_jaw_dates_coherentes: l'aller-retour est comparé à deux allers simples open-jaw dont les dates aller et retour sont compatibles avec 16 à 18 nuits ; aucune somme de deux minima d'allers simples à dates incompatibles.",
+        "statut_verifie_estime: chaque ligne de budget porte ✅ ou ⚠️ et une formule ou quantité ; les postes non couverts par une trace (repas, assurance, transferts, visas) sont ⚠️.",
+        "total_vs_8000: la synthèse affiche total bas et total haut du groupe par option et l'écart 'plafond - total haut' vis-à-vis de 8 000 EUR ; une option dont le total haut dépasse 8 000 EUR n'est pas annoncée comme tenant dans le budget.",
+        "trois_lignes_synthese: le tableau de synthèse contient exactement trois circuits distincts couvrant au moins deux pays ou zones différentes, suivi d'une recommandation argumentée.",
+        "hypotheses_section: une section '## Hypothèses' existe et déclare au moins la nationalité 'passeports belges à confirmer' et l'âge des traces (2026-09-24) avec sa conséquence sur les prix.",
+        "age_des_traces: le rapport signale explicitement que les prix proviennent de traces datées du 2026-09-24 et qu'aucun appel MCP frais n'a été effectué.",
+        "aucune_action: le rapport ne contient aucune réservation, paiement ou mention 'réservé' ; le tracker liste les réservations comme restant à faire."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Je voudrais partir en vacances quelque part au soleil, propose-moi trois options et prépare le rapport.",
+      "expected_output": "Le rapport ouvre par une section ## Hypothèses qui énumère les entrées manquantes (effectif, ville de départ, dates, durée, budget, nationalité, bagages), déclare des hypothèses explicites, pose au plus quelques questions bloquantes, puis fournit trois options estimées, toutes marquées ⚠️, sans reprendre aucune valeur du cas Asie ou d'un autre test.",
+      "files": [],
+      "expectations": [
+        "hypotheses_avant_chiffrage: une section '## Hypothèses' apparaît avant toute synthèse ou budget.",
+        "manquants_enumeres: la section Hypothèses énumère explicitement au moins effectif, ville de départ, dates ou fenêtre, durée en nuits et budget comme non fournis.",
+        "questions_bloquantes: le rapport pose au moins 3 questions à l'utilisateur (dates, départ, effectif ou budget) tout en poursuivant une estimation révisable.",
+        "aucun_verifie: aucun prix n'est marqué ✅ ; tous les montants sont ⚠️ avec formule ou ordre de grandeur sourcé et daté.",
+        "pas_de_fuite: le rapport ne contient ni 'BRU', ni '15/11', ni '10/12/2026', ni '8 000', ni 'Palawan', ni 'El Nido', ni 'passeports belges', ni 'enfants de 6 et 10 ans', ni aucune date ou prix issus de test-output/.",
+        "effectif_hypothese: le nombre de voyageurs utilisé pour les estimations est présenté comme hypothèse déclarée (par exemple '1 adulte, à confirmer') et non comme donnée fournie.",
+        "pas_appel_mcp_aveugle: aucun appel Kiwi ou Trivago n'est lancé ni cité avec des dates ou une origine inventées ; si un appel est fait, ses paramètres sont ceux des hypothèses déclarées.",
+        "trois_options: trois destinations distinctes sont proposées avec atout, limite et fourchette ⚠️."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Famille de 2 adultes et 2 enfants (6 et 10 ans), nationalité belge, départ de Bruxelles (BRU uniquement) pendant les vacances de Pâques 2027, 7 nuits, Europe, une chambre familiale ou deux chambres pour 4 personnes, vol direct de préférence. Nous hésitons entre Lisbonne et la Sicile ; propose une troisième destination. Budget total 3 000 EUR. Compare trois options sans réserver.",
+      "expected_output": "Rapport standard avec ## Hypothèses (dates exactes de Pâques 2027 retenues, âge des enfants au voyage), trois options dont Lisbonne, Sicile et une troisième européenne, vols BRU directs ou escale justifiée pour 2 adultes + 2 enfants, hôtels en occupation 4, budgets bas/haut comparés à 3 000 EUR, aucune trace du cas Asie.",
+      "files": [],
+      "expectations": [
+        "echo_adultes_enfants: chaque tarif de vol marqué ✅ est accompagné d'un écho de requête indiquant 2 adultes et 2 enfants ; les âges (6, 10) sont déclarés en Hypothèses et signalés comme non prouvés par l'écho si le schéma ne les expose pas ; un écho sans enfants invalide le ✅.",
+        "bru_pas_crl: tous les vols partent de BRU ; CRL n'est jamais substitué ni présenté comme équivalent.",
+        "sept_nuits: chaque option compte exactement 7 nuits sur place, dates de départ, dernière nuit et retour explicitées, dans la fenêtre des vacances de Pâques 2027 dont les dates sont écrites.",
+        "occupation_hotel_4: chaque recherche d'hôtel citée mentionne 4 occupants (2 adultes + 2 enfants) et 1 chambre familiale ou 2 chambres ; le prix par nuit et le prix total de séjour sont distingués.",
+        "total_vs_3000: la synthèse affiche total bas/haut du groupe, total par personne et l'écart 'plafond - total haut' vis-à-vis de 3 000 EUR pour chaque option.",
+        "vol_direct: pour chaque option, le rapport indique si un vol direct BRU existe ; sinon l'escale est expliquée et déclarée en Hypothèses.",
+        "trois_destinations: les trois options sont Lisbonne, la Sicile et une troisième destination européenne distincte, aucune en Asie.",
+        "pas_de_fuite: le rapport ne contient ni 'Palawan', 'El Nido', 'Phuket', 'Langkawi', 'MNL', 'KUL', 'HKT', ni '15/11/2026', ni '8 000 EUR', ni aucune valeur de test-output/.",
+        "hypotheses_section: une section '## Hypothèses' existe et contient au moins les dates exactes retenues pour Pâques 2027 avec leur conséquence sur les prix.",
+        "formalites_enfants: la section formalités traite les documents d'identité des enfants belges (Kids-ID ou passeport) pour la destination retenue, avec date de consultation."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Un adulte, départ de Lisbonne (LIS), séjour de 7 à 9 nuits à New York en juin 2027, classe économique, bagage cabine seulement, budget à estimer. Compare trois variantes de séjour (quartiers ou dates) et prépare le rapport sans réserver.",
+      "expected_output": "Trois variantes pour une destination imposée (New York), vols LIS vers JFK/EWR/LGA pour 1 adulte en juin 2027, hôtels en occupation 1, budget bas/haut par poste sans plafond, formalités selon nationalité déclarée en hypothèse (ESTA ou visa), aucune valeur du cas Asie ou famille.",
+      "files": [],
+      "expectations": [
+        "echo_1_adult: chaque tarif de vol marqué ✅ est accompagné d'un écho de requête contenant '1 adult' ; aucun écho ne mentionne 2 adultes ou des enfants.",
+        "aeroports_reels: les vols retenus partent de LIS et arrivent à JFK, EWR ou LGA, l'aéroport étant nommé pour chaque tarif.",
+        "nuits_7_9: chaque variante indique 7 à 9 nuits en juin 2027 avec dates de départ et de retour explicites.",
+        "bagage_cabine: aucun prix n'inclut de soute ; si l'écho indique une soute, le rapport le signale comme non demandé.",
+        "budget_sans_plafond: le budget bas/haut par poste est fourni avec sources et formules ; comme aucun plafond n'est donné, le rapport n'écrit pas d'écart à un plafond inventé.",
+        "nationalite_hypothese: la nationalité est déclarée en '## Hypothèses' et les formalités d'entrée aux États-Unis (ESTA/visa) en dépendent, non de l'aéroport de départ.",
+        "pas_de_fuite: le rapport ne contient ni 'BRU', 'CRL', 'Palawan', 'Asie', 'passeports belges', ni '8 000 EUR', ni aucune valeur de test-output/.",
+        "trois_variantes: exactement trois variantes distinctes de New York sont comparées dans un tableau de synthèse à trois lignes avec recommandation."
+      ]
+    }
+  ]
+}
