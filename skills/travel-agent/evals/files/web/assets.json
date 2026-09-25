@@ -771,6 +771,60 @@
       "kind": "og_image",
       "source": "booking.com/attractions, image de partage de la fiche « Visite de Khao Sok avec sanctuaire des éléphants et rafting »",
       "url": "https://www.booking.com/attractions/th/prccim9gdj1p-khao-sok-tour-with-elephant-sanctuary-and-rafting.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308"
+    },
+    {
+      "name": "hotel-pullman_naithon.jpg",
+      "kind": "image",
+      "source": "pullmanphuketarcadia.com/the-resort/gallery/ — Main Pool — piscine principale — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/65/2020/02/18071456/Pullman-Arcadia_Main-Pool.jpg"
+    },
+    {
+      "name": "hotel-pullman_naithon-chambre.jpg",
+      "kind": "image",
+      "source": "pullmanphuketarcadia.com/room-types/phuket-resort-ocean/ — Ocean Room ; vue mer annoncée mais variable selon emplacement, vue mer directe non obstruée et accès plage non confirmés — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/65/2025/12/22080735/ocean-room-2025.jpg"
+    },
+    {
+      "name": "hotel-slate.jpg",
+      "kind": "image",
+      "source": "theslatephuket.com/gallery.html — Lagoon Pool — piscine familiale — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://www.theslatephuket.com/assets/media/uploads/Swimming%20Pools/Family%20Pool/The-Slate-Lagoon-Pool_IMG_9171.jpg"
+    },
+    {
+      "name": "hotel-slate-chambre.jpg",
+      "kind": "image",
+      "source": "theslatephuket.com/gallery.html — Pearl Bed Suite ; vue mer/plage non confirmée — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://www.theslatephuket.com/assets/media/uploads/Suites_Villas/Pearl%20Bed%20Suite/Pearl%20Bed%20Suite-01.jpg"
+    },
+    {
+      "name": "hotel-sofitel_klongmuang.jpg",
+      "kind": "image",
+      "source": "sofitelkrabiphokeethra.com/th/gallery/ — vue générale, extérieur — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/32/2024/02/15113147/resort-in-Krabi-2.jpg"
+    },
+    {
+      "name": "hotel-sofitel_klongmuang-chambre.jpg",
+      "kind": "image",
+      "source": "sofitelkrabiphokeethra.com/th/gallery/ — chambre Luxury Room ; vue mer/plage non confirmée, lecture détaillée de catégorie interrompue par timeout — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/32/2020/01/28114920/Luxury-Room_001.jpg"
+    },
+    {
+      "name": "hotel-grand_mercure_aonang.jpg",
+      "kind": "image",
+      "source": "all.accor.com/hotel/B6F7/index.en.shtml — Grand Mercure Krabi Ao Nang, image 1 ; image principale officielle de l'établissement, contrôle visuel final à effectuer par l'orchestrateur — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets). Pas de photo de chambre : Codex a explicitement refusé de substituer une image générique de remplacement (voir room_checks).",
+      "url": "https://www.ahstatic.com/photos/b6f7_ho_00_p_1024x768.jpg"
+    },
+    {
+      "name": "hotel-jw_khaolak.jpg",
+      "kind": "image",
+      "source": "marriott.com/en-us/hotels/hktkl-jw-marriott-khao-lak-resort-and-spa/photos/ — Khao Lak Family Resort at Twilight — extérieur au crépuscule — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://cache.marriott.com/is/image/marriotts7prod/jw-hktkl-resort-at-twilight-20-17224%3AWide-Hor?fit=constrain&wid=375"
+    },
+    {
+      "name": "hotel-jw_khaolak-chambre.jpg",
+      "kind": "image",
+      "source": "marriott.com/en-us/hotels/hktkl-jw-marriott-khao-lak-resort-and-spa/photos/ — Two Bedroom Villa - Master Bedroom ; accès direct plage explicitement annoncé sur la page Premium Rooms, vue non obstruée depuis le lit non confirmée — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
+      "url": "https://cache.marriott.com/is/image/marriotts7prod/jw-hktkl-2-bedroom-villa---bedroom-33421%3AWide-Hor?fit=constrain&wid=375"
     }
   ]
 }
