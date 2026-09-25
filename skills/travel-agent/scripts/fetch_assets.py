@@ -67,24 +67,28 @@ def _request(url, browser, referer):
 
 def fetch(url, timeout=40, referer=None):
     """Un essai normal (UA transparent du projet), puis en cas de blocage ou
-    de lenteur, un second essai en UA navigateur avec referer et délai plus
-    long. Toujours la même image publique, jamais de contournement d'accès
-    restreint (compte, paiement, CAPTCHA)."""
+    de lenteur, deux essais supplémentaires en UA navigateur avec referer et
+    délai croissant : certains petits hébergeurs d'hôtels répondent très
+    lentement (TLS/handshake d'origine derrière Cloudflare) et échouent au
+    second essai mais réussissent avec plus de temps. Toujours la même image
+    publique, jamais de contournement d'accès restreint (compte, paiement,
+    CAPTCHA)."""
     last = None
-    for attempt, (browser, to) in enumerate(((False, timeout), (True, max(timeout, 70)))):
+    attempts = ((False, timeout), (True, max(timeout, 70)), (True, max(timeout, 120)))
+    for attempt, (browser, to) in enumerate(attempts):
         try:
             req = _request(url, browser, referer)
             with urllib.request.urlopen(req, timeout=to) as r:
                 return r.geturl(), r.headers.get("Content-Type", ""), r.read(MAX_BYTES + 1)
         except urllib.error.HTTPError as e:
             last = e
-            if e.code not in RETRYABLE_HTTP or attempt == 1:
+            if e.code not in RETRYABLE_HTTP or attempt == len(attempts) - 1:
                 raise
         except (TimeoutError, urllib.error.URLError) as e:
             last = e
-            if attempt == 1:
+            if attempt == len(attempts) - 1:
                 raise
-        time.sleep(1)
+        time.sleep(2)
     raise last  # pragma: no cover - garde-fou, la boucle retourne ou lève avant
 
 
