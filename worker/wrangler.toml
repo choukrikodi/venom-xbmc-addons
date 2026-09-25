@@ -1,0 +1,14 @@
+name = "venom-xbmc-addons-api"
+main = "src/index.js"
+compatibility_date = "2024-09-25"
+
+# Binds this Worker to the venom-xbmc-addons-db D1 database provisioned for
+# this project (see sql/README.md). No credentials here: access is governed
+# by the Cloudflare account deploying this Worker.
+[[d1_databases]]
+binding = "DB"
+database_name = "venom-xbmc-addons-db"
+database_id = "c770c2dc-e95e-468b-8b95-c96e4238b8a3"
+
+# API_TOKEN is required at runtime but must NOT be set here. Provision it with:
+#   wrangler secret put API_TOKEN
