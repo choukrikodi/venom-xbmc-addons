@@ -825,6 +825,54 @@
       "kind": "image",
       "source": "marriott.com/en-us/hotels/hktkl-jw-marriott-khao-lak-resort-and-spa/photos/ — Two Bedroom Villa - Master Bedroom ; accès direct plage explicitement annoncé sur la page Premium Rooms, vue non obstruée depuis le lit non confirmée — droits à vérifier avant publication — consulté le 25/09/2026 (Codex, recherche multi-onglets)",
       "url": "https://cache.marriott.com/is/image/marriotts7prod/jw-hktkl-2-bedroom-villa---bedroom-33421%3AWide-Hor?fit=constrain&wid=375"
+    },
+    {
+      "name": "hotel-jw_maikhao.jpg",
+      "kind": "image",
+      "source": "https://www.marriott.com/en-us/hotels/hktjw-jw-marriott-phuket-resort-and-spa/photos/ — Exterior Aerial View — consulté le 25/09/2026 — Vue aérienne extérieure du resort et de la plage. (Codex, recherche multi-onglets)",
+      "url": "https://cache.marriott.com/content/dam/marriott-renditions/HKTJW/hktjw-aerial-view-1969-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*"
+    },
+    {
+      "name": "hotel-jw_maikhao-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.marriott.com/en-us/hotels/hktjw-jw-marriott-phuket-resort-and-spa/rooms/premium-rooms/ — Ocean Front Pool Suite — Spacious Bedroom — consulté le 25/09/2026 — Luxury Oceanfront Pool Suite, 187 m². Le descriptif annonce une terrasse face à la mer, une piscine privée et une vue panoramique sur l'océan. Accès direct à la plage non confirmé. Vue entièrement non obstruée non confirmée : végétation visible sur la photo. (Codex, recherche multi-onglets)",
+      "url": "https://cache.marriott.com/content/dam/marriott-renditions/HKTJW/hktjw-suite-7335-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=2880px:*"
+    },
+    {
+      "name": "hotel-renaissance_maikhao.jpg",
+      "kind": "image",
+      "source": "https://www.marriott.com/en-us/hotels/hktbr-renaissance-phuket-resort-and-spa/ — Aerial of the resort beachfront — consulté le 25/09/2026 — Vue aérienne extérieure du resort, de la piscine et de la plage. (Codex, recherche multi-onglets)",
+      "url": "https://cache.marriott.com/is/image/marriotts7prod/br-hktbr-aerial-of-the-resort14131-31948:Classic-Hor?wid=1300&fit=constrain"
+    },
+    {
+      "name": "hotel-renaissance_maikhao-chambre.jpg",
+      "kind": "image",
+      "source": "https://www.marriott.com/en-us/hotels/hktbr-renaissance-phuket-resort-and-spa/rooms/premium-accommodations/ — One-Bedroom Pool Villa Oceanfront — consulté le 25/09/2026 — One-Bedroom Pool Villa Oceanfront. Le descriptif atteste une vue ininterrompue sur la mer depuis la terrasse et la plage à quelques pas. La photographie de la chambre montre des arbres entre la villa et la mer ; vue totalement dégagée depuis le lit non confirmée. (Codex, recherche multi-onglets)",
+      "url": "https://cache.marriott.com/is/image/marriotts7prod/br-hktbr-bedroom-27302-31601:Classic-Hor?wid=1300&fit=constrain"
+    },
+    {
+      "name": "hotel-nakamanda_klongmuang.jpg",
+      "kind": "image",
+      "source": "https://nakamanda.com/?page_id=190 — Aucune légende descriptive affichée pour cette image dans la galerie Photos — consulté le 25/09/2026 — Vue aérienne des bâtiments, jardins et piscine ; identification visuelle de la photo publiée dans la galerie officielle. Nom du fichier source : DJI_0200-scaled.jpg. (Codex, recherche multi-onglets)",
+      "url": "https://nakamanda.com/wp-content/uploads/2025/12/DJI_0200-scaled.jpg"
+    },
+    {
+      "name": "hotel-nakamanda_klongmuang-chambre.jpg",
+      "kind": "image",
+      "source": "https://nakamanda.com/?page_id=170 — Aucune légende individuelle affichée ; section Jacuzzi Villa Sea View 148 SQM. — consulté le 25/09/2026 — Jacuzzi Villa Sea View, 148 m². Le descriptif annonce une vue sur la mer d'Andaman et une terrasse avec jacuzzi extérieur. Accès direct à la plage et absence d'obstacles non confirmés. Photo intérieure sans mer visible ; elle illustre la chambre, pas une preuve de vue mer depuis le lit. Nom du fichier source : Jacuzzi-Bedroom-800Pix.jpg. (Codex, recherche multi-onglets)",
+      "url": "https://nakamanda.com/wp-content/uploads/2025/12/Jacuzzi-Bedroom-800Pix.jpg"
+    },
+    {
+      "name": "hotel-sands_katathani.jpg",
+      "kind": "image",
+      "source": "https://thesandskhaolak.com/gallery.php — The Sands Khao Lak — consulté le 25/09/2026 — Vue extérieure du resort, de la piscine et de la mer. Image ouverte dans la galerie officielle, sans modification du referer. (Codex, recherche multi-onglets)",
+      "url": "https://thesandskhaolak.com/images/gallery/low/01L-TheSandsKhaoLak.jpg"
+    },
+    {
+      "name": "hotel-sands_katathani-chambre.jpg",
+      "kind": "image",
+      "source": "https://thesandskhaolak.com/gallery.php — Pool Access Seaside Junior Suite — consulté le 25/09/2026 — Pool Access Seaside Junior Suite (Seaside Wing). Le descriptif de https://thesandskhaolak.com/sleep_poolaccess_seaside.php atteste une vue côté mer et un accès direct à la piscine. Accès direct à la plage et vue mer non obstruée non confirmés. Photo intérieure affichée dans la galerie ; elle ne démontre pas une vue mer depuis le lit. La page de catégorie indique une rénovation, sans dater individuellement la photographie de galerie. (Codex, recherche multi-onglets)",
+      "url": "https://thesandskhaolak.com/images/gallery/low/Low-Pool-Access-Seaside-03.jpg"
     }
   ]
 }
