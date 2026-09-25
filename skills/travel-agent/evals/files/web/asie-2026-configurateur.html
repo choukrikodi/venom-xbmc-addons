@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>Andaman 2026 Configurateur</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
 <style>
@@ -29,11 +30,11 @@
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
 .wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:24px 64px}
 header.top{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:end;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:24px}
-h1{font-family:var(--display);font-weight:600;font-size:clamp(26px,4vw,38px);line-height:1.1;margin:0;text-wrap:balance}
-h2{font-family:var(--display);font-weight:500;font-size:20px;margin:0 0 12px;text-wrap:balance}
-h3{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:600}
-.lede{color:var(--muted);max-width:62ch;margin:6px 0 0}
-.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(28px,4.2vw,42px);line-height:1.08;margin:14px 0 0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:500;font-size:22px;margin:0 0 14px;text-wrap:balance;letter-spacing:-.005em}
+h3{font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;font-weight:600}
+.lede{font-size:16.5px;line-height:1.68;color:var(--muted);max-width:60ch;margin:16px 0 0}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700;max-width:52ch;line-height:1.5}
 .layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:24px;align-items:start}
 @media (max-width:860px){.layout{grid-template-columns:1fr}}
 section.block{margin-bottom:28px}
@@ -112,13 +113,13 @@ textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,m
 .bg svg{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;opacity:.55}
 .bg .sun{position:absolute;right:6%;top:4%;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle at 40% 40%,var(--gantt-act),transparent 70%);opacity:.25}
 /* Page de garde */
-.cover{position:relative;overflow:hidden;border-radius:12px;background:linear-gradient(160deg,var(--accent) 0%,#0a4d56 60%,#083a41 100%);color:#fff;padding:32px 24px;margin-bottom:24px;isolation:isolate}
+.cover{position:relative;overflow:hidden;border-radius:14px;background:linear-gradient(160deg,var(--accent) 0%,#0a4d56 60%,#083a41 100%);color:#fff;padding:40px 32px 34px;margin-bottom:28px;isolation:isolate}
 .cover::after{content:"";position:absolute;inset:auto -10% -30% -10%;height:70%;background:radial-gradient(ellipse at 50% 100%,rgba(255,255,255,.18),transparent 60%);z-index:-1}
-.cover .eyebrow{color:#cdeef2}
+.cover .eyebrow{color:#a9dee2;position:relative;z-index:1}
 .cover h1{color:#fff}
-.cover .lede{color:#dff3f5}
+.cover .lede{color:#dcf2f3;max-width:56ch;position:relative;z-index:1}
 .cover svg.boat{position:absolute;right:20px;bottom:10px;width:220px;max-width:40%;height:auto;opacity:.9}
-.cover .facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;font-size:14px;color:#e6f6f8}
+.cover .facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:20px;font-size:14px;color:#e6f6f8;position:relative;z-index:1}
 .cover .facts b{font-variant-numeric:tabular-nums}
 .cover-top{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;position:relative;z-index:1}
 .travelers{display:flex;align-items:center;gap:16px;flex:none}
