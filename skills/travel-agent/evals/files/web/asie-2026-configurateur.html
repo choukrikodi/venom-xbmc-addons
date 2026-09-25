@@ -144,6 +144,12 @@ textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,m
 .map .pin.alt i{background:var(--gantt-act)}
 .map .pin b{font-size:11px;background:rgba(255,255,255,.9);color:#15242b;padding:1px 5px;border-radius:3px;margin-bottom:2px;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,.25)}
 .map .cap{padding:8px 12px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
+.map .pin.chosen i{background:var(--accent);width:20px;height:20px;box-shadow:0 0 0 4px var(--accent-soft),0 1px 3px rgba(0,0,0,.4);z-index:2}
+.map .pin.chosen b{background:var(--accent);color:var(--accent-ink);font-weight:600}
+.place-map{display:grid;gap:12px;margin-top:10px}
+.place-map .map:last-child img{animation:mapZoomIn .5s ease-out}
+@keyframes mapZoomIn{from{transform:scale(1.12);opacity:.35}to{transform:scale(1);opacity:1}}
+@media (min-width:640px){.place-map{grid-template-columns:1fr 1fr}}
 .hotels{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
 .hcard{background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
 .hcard .ph{aspect-ratio:16/9;max-width:100%;background:var(--accent-soft);display:grid;place-items:center;color:var(--muted);font-size:13px;overflow:hidden;position:relative}
@@ -222,6 +228,7 @@ textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,m
     <fieldset>
       <legend>1. Lieu (une étape, un hôtel)</legend>
       <div class="choices" id="placeChoices"></div>
+      <div class="place-map" id="placeMap"></div>
     </fieldset>
     <fieldset>
       <legend>2. Vols (2 adultes, 1 soute chacun)</legend>
@@ -497,6 +504,23 @@ function renderMaps() {
     mapHtml(P.short, [state.hotel, ...hotelPins.filter(k => k !== state.hotel), P.airport]) +
     mapHtml("thailand", []);
 }
+/* Widget affiché au choix du lieu (étape 1) : carte d'ensemble des trois
+   destinations avec celle choisie mise en évidence, puis la carte zoomée
+   du lieu choisi juste à côté (l'animation CSS mapZoomIn rejoue à chaque
+   changement puisque l'image est réinsérée dans le DOM). Repères fixes
+   au centre de chaque carte zoomée (MAPS[k].center) : indépendant des
+   hôtels choisis, fonctionne dans les deux modes de durée. */
+function renderPlaceMap() {
+  const S = SCEN(), m = MAPS.andaman;
+  const overviewPins = ["A", "B", "C"].map(k => {
+    const [lat, lon] = MAPS[k].center;
+    const xy = project(lat, lon, m);
+    const chosen = k === state.place;
+    return `<span class="pin${chosen ? " chosen" : ""}" style="left:${xy[0].toFixed(2)}%;top:${xy[1].toFixed(2)}%"><b>${esc(S[k].name.split(",")[0])}</b><i></i></span>`;
+  }).join("");
+  const overview = `<div class="map"><div style="position:relative;aspect-ratio:${m.size[0]}/${m.size[1]}"><img src="${m.file}" alt="Carte des trois lieux, ${esc(S[state.place].name)} mis en évidence" width="${m.size[0]}" height="${m.size[1]}">${overviewPins}</div><div class="cap">Les trois lieux · ${esc(S[state.place].name)} mis en évidence</div></div>`;
+  document.getElementById("placeMap").innerHTML = overview + mapHtml(state.place, [S[state.place].airport]);
+}
 const fmt = n => n.toLocaleString("fr-BE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
 const fmtD = s => { const [y, m, d] = s.split("-"); return `${d}/${m}/${y}`; };
 const addDays = (s, n) => { const d = new Date(s + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
@@ -646,6 +670,7 @@ function renderChoices() {
     <label class="choice"><input type="radio" name="place" id="place_${p.short}" value="${p.short}" ${state.place === p.short ? "checked" : ""}>
       <span><span class="t">${p.short} · ${esc(p.name)}</span> — ${nine ? `9 nuits visées, référence ${fmtD(REF9.dep)} → ${fmtD(REF9.ret)}` : `${p.nights} nuits, BRU ${fmtD(p.dep)} → ${fmtD(p.ret)}`}<br><span class="d">${esc(p.desc)}</span></span>
       <span class="p"></span></label>`).join("");
+  renderPlaceMap();
   const fn = document.getElementById("flightNote");
   fn.hidden = !nine;
   if (nine) fn.textContent = state.origin !== "TUN" ? "Aucune trace de vol au départ de BRU pour 9 nuits : poste MANQUANT."

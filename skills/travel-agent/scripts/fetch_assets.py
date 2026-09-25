@@ -30,7 +30,24 @@ UA = "travel-agent-assets/1.0 (+https://github.com/choukrikodi/venom-xbmc-addons
 BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
               "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
 MAX_BYTES = 6 * 1024 * 1024
-RETRYABLE_HTTP = {403, 429, 503}
+# 403/429 : blocage anti-robot, contourné par le second essai (UA navigateur).
+# 500/502/503/504 et 520-524 (codes Cloudflare : serveur d'origine en panne ou
+# surchargé) : erreurs transitoires côté serveur, indépendantes de nos en-têtes.
+RETRYABLE_HTTP = {403, 429, 500, 502, 503, 504, 520, 521, 522, 523, 524}
+# Signatures de fichier (magic bytes) pour accepter une image même quand le
+# serveur déclare un Content-Type générique (application/octet-stream) :
+# vérifier le contenu réel plutôt que se fier à un en-tête mal renseigné.
+IMAGE_MAGIC = ((b"\xff\xd8\xff", "image/jpeg"), (b"\x89PNG\r\n\x1a\n", "image/png"),
+               (b"GIF87a", "image/gif"), (b"GIF89a", "image/gif"), (b"RIFF", "image/webp"))
+
+
+def sniff_image_type(body):
+    for magic, ctype in IMAGE_MAGIC:
+        if body.startswith(magic):
+            if magic == b"RIFF":
+                return "image/webp" if body[8:12] == b"WEBP" else None
+            return ctype
+    return None
 
 
 def _origin(url):
@@ -120,7 +137,11 @@ def main(manifest_path, out_dir):
             if len(body) > MAX_BYTES:
                 raise ValueError("fichier trop volumineux")
             if not ctype.startswith("image/"):
-                raise ValueError("type inattendu : " + ctype)
+                sniffed = sniff_image_type(body)
+                if not sniffed:
+                    raise ValueError("type inattendu : " + ctype)
+                entry["content_type_declared"] = ctype
+                ctype = sniffed  # en-tête serveur générique, contenu réellement une image
             with open(os.path.join(out_dir, a["name"]), "wb") as f:
                 f.write(body)
             entry.update({"final_url": final, "content_type": ctype, "bytes": len(body), "ok": True})
