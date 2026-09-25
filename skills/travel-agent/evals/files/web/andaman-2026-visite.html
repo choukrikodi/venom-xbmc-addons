@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>Andaman 2026 Visite</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
 <style>
@@ -28,11 +29,12 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
 .wrap{max-width:1100px;margin:0 auto;padding-inline:16px;padding-block:24px 64px}
-h1{font-family:var(--display);font-weight:600;font-size:clamp(26px,4vw,40px);line-height:1.1;margin:0;text-wrap:balance}
-h2{font-family:var(--display);font-weight:500;font-size:22px;margin:0 0 12px;text-wrap:balance}
-h3{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:600}
-.lede{color:var(--muted);max-width:62ch;margin:6px 0 0}
-.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(28px,4.2vw,44px);line-height:1.08;margin:14px 0 0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:500;font-size:24px;margin:0 0 14px;text-wrap:balance;letter-spacing:-.005em}
+h3{font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;font-weight:600}
+.meta{font-family:var(--display);font-weight:500;font-style:italic;font-size:17px;color:var(--accent);margin:10px 0 0}
+.lede{font-size:16.5px;line-height:1.68;color:var(--muted);max-width:60ch;margin:16px 0 0}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
 a{color:var(--accent)}
 .tag{display:inline-block;font-size:11px;letter-spacing:.04em;padding:1px 6px;border-radius:3px;margin-left:6px;vertical-align:middle;font-weight:600}
 .tag.warn{background:var(--warn-soft);color:var(--warn)}
@@ -54,11 +56,13 @@ textarea{width:100%;min-height:110px;font:14px/1.45 var(--body);border:1px solid
 .bg svg{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;opacity:.55}
 .bg .sun{position:absolute;right:6%;top:4%;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle at 40% 40%,var(--gantt-act),transparent 70%);opacity:.25}
 /* Page de garde */
-.cover{position:relative;overflow:hidden;border-radius:12px;background:linear-gradient(160deg,var(--accent) 0%,#0a4d56 60%,#083a41 100%);color:#fff;padding:32px 24px 28px;margin-bottom:20px;isolation:isolate}
+.cover{position:relative;overflow:hidden;border-radius:14px;background:linear-gradient(160deg,var(--accent) 0%,#0a4d56 60%,#083a41 100%);color:#fff;padding:40px 32px 34px;margin-bottom:24px;isolation:isolate}
 .cover::after{content:"";position:absolute;inset:auto -10% -30% -10%;height:70%;background:radial-gradient(ellipse at 50% 100%,rgba(255,255,255,.18),transparent 60%);z-index:-1}
-.cover .eyebrow{color:#cdeef2}
+.cover .eyebrow{color:#a9dee2}
 .cover h1{color:#fff}
-.cover .lede{color:#dff3f5}
+.cover .meta{color:#bfe9ec;position:relative;z-index:1}
+.cover .meta::before{content:"";display:inline-block;width:22px;height:1px;background:#5fb9c2;margin-right:10px;vertical-align:middle}
+.cover .lede{color:#dcf2f3;max-width:56ch;position:relative;z-index:1}
 .cover svg.boat{position:absolute;right:20px;bottom:10px;width:220px;max-width:40%;height:auto;opacity:.9}
 .cover .visit{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;position:relative;z-index:1}
 .cover .visit button{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.45);color:#fff}
@@ -200,8 +204,8 @@ section.block{margin-bottom:28px}
     <div class="travelers"><img src="assets/couple.png" alt="Les deux voyageurs" loading="lazy"><span>Les voyageurs</span></div>
   </div>
   <h1>Trois plages, un seul choix</h1>
-  <p class="lede">16 à 18 nuits sur la côte d'Andaman, décembre 2026</p>
-  <p class="lede">Une visite guidée des trois lieux envisagés : Nai Yang à Phuket, Ao Nang à Krabi et Khao Lak dans la province de Phang Nga. Tout ce qui est écrit ici vient de fiches consultées le 24 septembre 2026 ; ce qui n'a pas pu être vérifié est signalé.</p>
+  <p class="meta">16 à 18 nuits sur la côte d'Andaman &middot; décembre 2026</p>
+  <p class="lede">Une visite guidée des trois lieux envisagés : Nai&nbsp;Yang à Phuket, Ao&nbsp;Nang à Krabi et Khao&nbsp;Lak dans la province de Phang&nbsp;Nga. Tout ce qui est écrit ici vient de fiches consultées le 24 septembre 2026 ; ce qui n'a pas pu être vérifié est signalé.</p>
   <div class="visit">
     <button type="button" data-go="A">Visiter A <span class="s">Nai Yang, Phuket · 16 nuits</span></button>
     <button type="button" data-go="B">Visiter B <span class="s">Ao Nang, Krabi · 18 nuits</span></button>
