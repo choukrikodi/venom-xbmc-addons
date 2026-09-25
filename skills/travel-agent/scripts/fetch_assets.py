@@ -13,6 +13,7 @@ type, taille, UTC, erreur éventuelle). Aucune clé, aucun compte. Stdlib seule.
 """
 import datetime as dt
 import html
+import http.client
 import json
 import re
 import sys
@@ -84,7 +85,10 @@ def fetch(url, timeout=40, referer=None):
             last = e
             if e.code not in RETRYABLE_HTTP or attempt == len(attempts) - 1:
                 raise
-        except (TimeoutError, urllib.error.URLError) as e:
+        except (TimeoutError, urllib.error.URLError, http.client.IncompleteRead) as e:
+            # IncompleteRead : le serveur d'origine a coupé la connexion avant
+            # la fin déclarée du corps (observé sur Palm Galleria, derrière
+            # Cloudflare) — transitoire, comme les autres erreurs réseau.
             last = e
             if attempt == len(attempts) - 1:
                 raise
