@@ -4,10 +4,18 @@ statiques, photos publiques) et les enregistre avec un journal de provenance.
 
 Usage : fetch_assets.py MANIFEST OUT_DIR
 Manifeste : {"assets": [{"name": "carte-a.png", "url": "https://...",
-             "kind": "image" | "og_image", "source": "texte d'attribution"}]}
+             "kind": "image" | "og_image" | "page_image" | "wm_thumb",
+             "source": "texte d'attribution"}]}
 - kind "image"    : l'URL est l'image elle-même.
 - kind "og_image" : l'URL est une page HTML ; on télécharge l'image déclarée
                     dans sa balise <meta property="og:image">.
+- kind "wm_thumb" : l'URL est une requête à l'API imageinfo de Wikimedia
+                    (…/w/api.php?action=query&titles=File:…&prop=imageinfo
+                    &iiprop=url&iiurlwidth=N&format=json) ; le thumburl
+                    renvoyé est téléchargé. Contourne la liste stricte de
+                    largeurs acceptées par la construction directe d'URL
+                    /thumb/.../Npx- (HTTP 400 sinon) : l'API calcule et sert
+                    la largeur demandée sans cette restriction.
 Chaque téléchargement est journalisé dans OUT_DIR/assets.log.json (URL finale,
 type, taille, UTC, erreur éventuelle). Aucune clé, aucun compte. Stdlib seule.
 """
@@ -122,6 +130,20 @@ def page_image(page_url):
     raise ValueError("aucune image de contenu")
 
 
+def wm_thumb(api_url):
+    """Résout un thumburl via l'API imageinfo de Wikimedia (iiurlwidth) :
+    la largeur demandée est calculée et servie par l'API elle-même, sans la
+    liste stricte de largeurs qu'impose la construction directe d'une URL
+    /thumb/.../Npx-fichier (HTTP 400 « Use thumbnail sizes listed on … »)."""
+    final, ctype, body = fetch(api_url)
+    data = json.loads(body.decode("utf-8"))
+    for page in data.get("query", {}).get("pages", {}).values():
+        info = page.get("imageinfo")
+        if info and info[0].get("thumburl"):
+            return info[0]["thumburl"]
+    raise ValueError("imageinfo/thumburl absent de la réponse API")
+
+
 def main(manifest_path, out_dir):
     import os
     os.makedirs(out_dir, exist_ok=True)
@@ -141,6 +163,9 @@ def main(manifest_path, out_dir):
             elif a.get("kind") == "page_image":
                 page_referer = url
                 url = page_image(url)
+                entry["image_url"] = url
+            elif a.get("kind") == "wm_thumb":
+                url = wm_thumb(url)
                 entry["image_url"] = url
             final, ctype, body = fetch(url, referer=page_referer)
             if len(body) > MAX_BYTES:
