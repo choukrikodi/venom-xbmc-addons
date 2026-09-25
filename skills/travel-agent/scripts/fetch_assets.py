@@ -124,7 +124,7 @@ def page_image(page_url):
         low = src.lower().split("?")[0]
         if not low.endswith((".jpg", ".jpeg", ".png", ".webp")):
             continue
-        if any(k in low for k in ("logo", "icon", "sprite", "pixel", "badge")):
+        if any(k in low for k in ("logo", "icon", "sprite", "pixel", "badge", "flag", "hardcodedimages", "placeholder")):
             continue
         return urllib.parse.urljoin(final, src)
     raise ValueError("aucune image de contenu")
