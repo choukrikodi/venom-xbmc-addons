@@ -1,0 +1,16 @@
+{
+  "name": "venom-xbmc-addons-api",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Cloudflare Worker exposing a REST/CRUD API over the venom-xbmc-addons-db D1 database.",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.1",
+    "wrangler": "^3.78.0"
+  }
+}

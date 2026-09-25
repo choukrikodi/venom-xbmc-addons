@@ -4,3 +4,5 @@
 repo/plugin.video.vstream/Thumbs.db
 *.db
 *.db
+node_modules/
+.wrangler/
