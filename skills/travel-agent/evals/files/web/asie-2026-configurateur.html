@@ -174,6 +174,19 @@ textarea{width:100%;min-height:120px;font:12px/1.4 ui-monospace,Menlo,Consolas,m
 .hcard .kv2 dt{color:var(--muted)}.hcard .kv2 dd{margin:0}
 .hcard .src{font-size:12px;color:var(--muted)}
 .hcard .src a{color:var(--accent)}
+.excs{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:6px 0 0;padding:0;list-style:none}
+.exccard{background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.exccard.chosen{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.exccard .ph{aspect-ratio:16/9;background:var(--accent-soft);display:grid;place-items:center;color:var(--muted);font-size:22px;overflow:hidden}
+.exccard .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.exccard .eb{padding:10px 12px;display:grid;gap:6px;font-size:13px;flex:1}
+.exccard .badge{display:inline-flex;align-self:start;align-items:center;gap:4px;font-size:10px;font-weight:700;letter-spacing:.02em;color:#fff;background:#003580;padding:2px 7px;border-radius:3px}
+.exccard .t{font-weight:600;font-size:13.5px;line-height:1.3}
+.exccard .t a{color:inherit;text-decoration:none}
+.exccard .t a:hover{text-decoration:underline}
+.exccard .meta{color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;font-size:12px}
+.exccard .price{font-variant-numeric:tabular-nums;font-weight:600;color:var(--ink)}
+.exccard .pick{display:flex;align-items:center;gap:6px;margin-top:2px;cursor:pointer;font-size:12px}
 .section-cover{display:flex;align-items:center;gap:12px;margin:0 0 12px}
 .section-cover svg{width:34px;height:34px;flex:none}
 
@@ -638,7 +651,10 @@ if (V10) Object.keys(DATA).forEach(k => {
 if (V10) V10.hotels.forEach(h => { POINTS[h.id] = { lat: h.latitude, lon: h.longitude, label: h.accommodation_name, place: h.scenario, v10: true }; });
 const SCEN = () => state.duration === "9n" && V10 ? DATA9 : DATA;
 const isNine = () => state.duration === "9n" && !!V10;
-const state = { duration: V10 ? "9n" : "16-18n", stages: "one", lastNight: "nuit", origin: V10 ? "TUN" : "BRU", place: "A", flight: null, hotel: null, acts: new Set(), ins: "range", home: "range", sim: "range", tips: "range" };
+const state = { duration: V10 ? "9n" : "16-18n", stages: "one", lastNight: "nuit", origin: V10 ? "TUN" : "BRU", place: "A", flight: null, hotel: null, acts: new Set(), ins: "range", home: "range", sim: "range", tips: "range", exc: { A: new Set(), B: new Set(), C: new Set() } };
+/* Identifiant d'excursion Booking dérivé de son URL (même règle que le script
+   qui a nommé les fichiers assets/exc-<id>.jpg depuis assets.json). */
+function excId(url) { const seg = url.split("?")[0].split("/").pop(); return seg.split("-")[0]; }
 
 const nine0 = isNine();
 state.flight = (nine0 ? (state.origin === "TUN" ? DATA9.A.flights : DATA9.A.bruFlights) : (state.origin === "TUN" ? TUN_FLIGHTS.A : DATA.A.flights))[0].id;
@@ -941,6 +957,24 @@ function renderVideos() {
     ${v.summary ? `<p style="margin:0;font-size:14px">${esc(v.summary)}</p>` : ""}</div></div>`;
   el.innerHTML = (state.place === "A" ? `<p class="note" style="grid-column:1/-1">${esc(VIDEOS._note || "")}</p>` : "") + list.map(card).join("");
 }
+/* Fiche excursion : photo (assets/exc-<id>.jpg, repli icône si absente/échec),
+   badge Booking.com (texte, pas une image du logo), prix et note déjà sourcés
+   dans DEST, case à cocher qui ajoute l'excursion à la liste « Voyage » du
+   Trello (buildTrello) sans rien réserver. */
+function excursionCards(list) {
+  return `<ul class="excs">${list.map(x => {
+    const id = excId(x.url);
+    const chosen = state.exc[state.place].has(id);
+    return `<li class="exccard${chosen ? " chosen" : ""}">
+      <div class="ph"><img src="assets/exc-${esc(id)}.jpg" alt="" loading="lazy" onerror="this.parentElement.textContent='🏝️'"></div>
+      <div class="eb">
+        <span class="badge">Booking.com</span>
+        <div class="t"><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a></div>
+        <div class="meta"><span class="price">${esc(x.price || "")}</span>${x.rating ? `<span>★ ${esc(x.rating)}/5</span>` : ""}</div>
+        <label class="pick"><input type="checkbox" name="exc_${state.place}_${esc(id)}" ${chosen ? "checked" : ""}> Réserver dans le plan</label>
+      </div>
+    </li>`; }).join("")}</ul>`;
+}
 function renderDest() {
   const el = document.getElementById("dest");
   if (!DEST) { el.innerHTML = '<div class="dcard"><div class="dbody"><p class="note">Fiches en cours de sourçage : elles apparaîtront ici avec leurs références.</p></div></div>'; return; }
@@ -951,7 +985,7 @@ function renderDest() {
       <div><h3>Population</h3><p>${esc(d.population.value)} (${esc(d.population.year)})</p><h3 style="margin-top:10px">Emplacement</h3><p>${esc(d.location || d.geography)}</p>${d.climateDecember ? `<h3 style="margin-top:10px">Climat en décembre</h3><p>${esc(d.climateDecember)}</p>` : ""}</div>
       ${d.attractions ? `<div><h3>Attractions pendant le séjour</h3><ul>${d.attractions.map(a => `<li><b>${esc(a.name)}</b> · ${esc(a.type)}${a.note ? " — " + esc(a.note) : ""}</li>`).join("")}</ul></div>` : `<div><h3>Formalités, rappel</h3><p>${esc(d.formalities)}</p></div>`}
       <div><h3>À ne pas rater</h3><ul>${d.mustSee.map(m => `<li>${esc(m)}</li>`).join("")}</ul></div>
-      ${d.excursions ? `<div><h3>Excursions réservables (recoupement Booking, prix « à partir de » en €)</h3><ul>${d.excursions.map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a> · ${esc(x.price || "")}${x.rating ? " · " + x.rating + "/5" : ""}</li>`).join("")}</ul></div>` : ""}
+      ${d.excursions ? `<div><h3>Excursions réservables (recoupement Booking, prix « à partir de » en €)</h3>${excursionCards(d.excursions)}<p class="note" style="margin-top:8px">Cocher « Réserver » ajoute l'excursion à la liste « Voyage » du tableau Trello (aperçu plus bas) ; rien n'est réservé depuis cette page.</p></div>` : ""}
     </div>
     <div class="src">Sources : ${d.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a> (${esc(s.accessed)}${s.how === "extrait" ? ", extrait" : ""})`).join(" · ")}</div></div>`;
   el.innerHTML = card(DEST.country.name, "Le pays", DEST.country) + card(city.name, "Lieu de séjour du scénario " + state.place, city) + (DEST.note ? `<p class="note">⚠️ ${esc(DEST.note)}</p>` : "");
@@ -1056,6 +1090,7 @@ function buildTrello(c) {
       { name: `Check-out, vol retour ${P.airport} → ${state.origin}`, due: due(P.hout) },
       { name: `Arrivée ${state.origin} → domicile`, due: due(P.ret) }
     ] },
+    ...(DEST && DEST.cities[state.place].excursions && state.exc[state.place].size ? [{ name: "Excursions à réserver", cards: DEST.cities[state.place].excursions.filter(x => state.exc[state.place].has(excId(x.url))).map(x => ({ name: `${x.name} — ${x.price || ""}`, desc: `Coché depuis le configurateur, pas encore réservé.${x.rating ? ` Note Booking ${x.rating}/5.` : ""}\n\n${x.url}`, checklist: ["Disponibilité aux dates du séjour", "Confirmer l'heure de départ et le point de rendez-vous", "Conditions d'annulation"] })) }] : []),
     { name: "Budget et X", cards: [
       { name: c.aligned ? `S hors réserve : ${fmt(c.sLo)} – ${fmt(c.sHi)}` : `Postes chiffrés, sans total (dates à aligner) : vol ${fl.missing ? "MANQUANT" : fmt(fl.price)} · hôtel ${fmt(ho.price)} · autres ${fmt(c.othersLo)} – ${fmt(c.othersHi)}`, desc: c.lines.map(l => `${l[0]} : ${fmt(l[1])} – ${fmt(l[2])}`).join("\n") },
       { name: c.aligned ? `X à borner : tolérance ${fmt(c.tol)} au haut` : "X à borner : tolérance non calculable tant que les dates vol/hôtel ne sont pas alignées", desc: "Taxes/service hôtel ou activités, frais vendeur, chambre/bagages imposés. Ne jamais consommer la réserve pour X.", checklist: ["Taxes hôtel", "Service charge activités", "Frais vendeur vol", "Recalcul final"] },
@@ -1098,6 +1133,7 @@ document.addEventListener("change", e => {
   else if (t.name === "lastNight") state.lastNight = t.value;
   else if (t.name === "hotel") state.hotel = t.value;
   else if (t.name === "act") { t.checked ? state.acts.add(+t.value) : state.acts.delete(+t.value); }
+  else if (t.name.startsWith("exc_")) { const [, scen, id] = t.name.split("_"); t.checked ? state.exc[scen].add(id) : state.exc[scen].delete(id); }
   else if (OPTS.some(o => o.id === t.name)) state[t.name] = t.value;
   renderAll();
 });
