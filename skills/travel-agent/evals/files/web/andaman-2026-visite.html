@@ -65,9 +65,10 @@ textarea{width:100%;min-height:110px;font:14px/1.45 var(--body);border:1px solid
 .cover .visit button:hover{background:rgba(255,255,255,.26)}
 .cover .visit button .s{display:block;font-weight:400;font-size:12px;color:#cdeef2}
 .cover-top{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;position:relative;z-index:1}
-.travelers{display:flex;align-items:center;gap:10px;flex:none}
-.travelers img{width:84px;height:84px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.85);box-shadow:0 3px 12px rgba(0,0,0,.35);display:block}
-.travelers span{font-size:12px;letter-spacing:.03em;color:#cdeef2;max-width:9ch}
+.travelers{display:flex;align-items:center;gap:16px;flex:none}
+.travelers img{width:340px;height:340px;border-radius:50%;object-fit:cover;border:6px solid rgba(255,255,255,.85);box-shadow:0 6px 26px rgba(0,0,0,.45);display:block}
+.travelers span{font-size:15px;letter-spacing:.03em;color:#cdeef2;max-width:9ch}
+@media (max-width:640px){.travelers img{width:130px;height:130px;border-width:3px}}
 /* Onglets */
 .tabs{display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:20px;position:sticky;top:0;background:var(--paper);z-index:2;padding-top:8px}
 .tabs button{padding:8px 12px;font-size:14px}
