@@ -1,0 +1,2065 @@
+=== 2026-09-24T22:17:51+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "TUN", "flyTo": "KBV", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false, "one_for_city": false, "departureDate": "15/11/2026", "departureDateTo": "10/12/2026", "nights_in_dst_from": 16, "nights_in_dst_to": 18}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"TUN → KBV on 15/11/2026–10/12/2026, 2 adults, 16–18 nights [≤2 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"19e018bc512f00005477b6ef_0|19e018bc512f00005477b6ef_1|18bc19e051410000738bba1d_0|18bc19e051410000738bba1d_1\",\n      \"price\": 2302.083472,\n      \"priceFormatted\": \"2302 EUR\",\n      \"totalDurationSeconds\": 147900,\n      \"bookingUrl\": \"https://kiwi.com/u/5zfb32m\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-26T10:40:00\",\n        \"arrivalTime\": \"2026-11-27T18:10:00\",\n        \"durationSeconds\": 91800,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-26T10:40:00\",\n            \"arrivalTime\": \"2026-11-26T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-27T08:35:00\",\n            \"arrivalTime\": \"2026-11-27T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-14T20:40:00\",\n        \"arrivalTime\": \"2026-12-15T06:15:00\",\n        \"durationSeconds\": 56100,\n        \"stops\": 1,\n        \"route\": [\n          \"KBV\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-14T20:40:00\",\n            \"arrivalTime\": \"2026-12-15T00:50:00\",\n            \"durationSeconds\": 25800,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY425\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-15T02:20:00\",\n            \"arrivalTime\": \"2026-12-15T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e018bc512f00005477b6ef_0|19e018bc512f00005477b6ef_1|18bc19e0514100005fafa711_0|18bc19e0514100005fafa711_1|18bc19e0514100005fafa711_2\",\n      \"price\": 2794.41202,\n      \"priceFormatted\": \"2794 EUR\",\n      \"totalDurationSeconds\": 164100,\n      \"bookingUrl\": \"https://kiwi.com/u/m4vzs4\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-26T10:40:00\",\n        \"arrivalTime\": \"2026-11-27T18:10:00\",\n        \"durationSeconds\": 91800,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-26T10:40:00\",\n            \"arrivalTime\": \"2026-11-26T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-27T08:35:00\",\n            \"arrivalTime\": \"2026-11-27T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-14T22:55:00\",\n        \"arrivalTime\": \"2026-12-15T13:00:00\",\n        \"durationSeconds\": 72300,\n        \"stops\": 2,\n        \"route\": [\n          \"KBV\",\n          \"DXB\",\n          \"AMM\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-14T22:55:00\",\n            \"arrivalTime\": \"2026-12-15T03:10:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"FZ\",\n            \"carrierName\": \"Fly Dubai\",\n            \"flightNumber\": \"FZ1482\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"AMM\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Amman\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport international Reine-Alia\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Jordanie\",\n            \"departureTime\": \"2026-12-15T06:45:00\",\n            \"arrivalTime\": \"2026-12-15T09:20:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ613\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AMM\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Amman\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Reine-Alia\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Jordanie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-15T10:55:00\",\n            \"arrivalTime\": \"2026-12-15T13:00:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ551\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e018bc5134000072a5aaab_0|19e018bc5134000072a5aaab_1|18bc19e05146000025029b00_0|18bc19e05146000025029b00_1|18bc19e05146000025029b00_2\",\n      \"price\": 2796.41202,\n      \"priceFormatted\": \"2796 EUR\",\n      \"totalDurationSeconds\": 250500,\n      \"bookingUrl\": \"https://kiwi.com/u/9tm6ss\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-01T10:40:00\",\n        \"arrivalTime\": \"2026-12-02T18:10:00\",\n        \"durationSeconds\": 91800,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-01T10:40:00\",\n            \"arrivalTime\": \"2026-12-01T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-02T08:35:00\",\n            \"arrivalTime\": \"2026-12-02T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-19T22:55:00\",\n        \"arrivalTime\": \"2026-12-21T13:00:00\",\n        \"durationSeconds\": 158700,\n        \"stops\": 2,\n        \"route\": [\n          \"KBV\",\n          \"DXB\",\n          \"AMM\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-19T22:55:00\",\n            \"arrivalTime\": \"2026-12-20T03:10:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"FZ\",\n            \"carrierName\": \"Fly Dubai\",\n            \"flightNumber\": \"FZ1482\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"AMM\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Amman\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport international Reine-Alia\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Jordanie\",\n            \"departureTime\": \"2026-12-20T13:45:00\",\n            \"arrivalTime\": \"2026-12-20T16:20:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ611\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AMM\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Amman\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Reine-Alia\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Jordanie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-21T10:55:00\",\n            \"arrivalTime\": \"2026-12-21T13:00:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ551\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e018bc512f00003b2e0a71_0|19e018bc512f00003b2e0a71_1|19e018bc512f00003b2e0a71_2|18bc19e051410000738bba1d_0|18bc19e051410000738bba1d_1\",\n      \"price\": 2890.863938,\n      \"priceFormatted\": \"2891 EUR\",\n      \"totalDurationSeconds\": 144600,\n      \"bookingUrl\": \"https://kiwi.com/u/g3ghmw\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-26T11:35:00\",\n        \"arrivalTime\": \"2026-11-27T18:10:00\",\n        \"durationSeconds\": 88500,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"CAI\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"CAI\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Le Caire\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international du Caire\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Égypte\",\n            \"departureTime\": \"2026-11-26T11:35:00\",\n            \"arrivalTime\": \"2026-11-26T15:45:00\",\n            \"durationSeconds\": 11400,\n            \"carrier\": \"MS\",\n            \"carrierName\": \"Egyptair\",\n            \"flightNumber\": \"MS844\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"CAI\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Le Caire\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international du Caire\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Égypte\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-26T19:00:00\",\n            \"arrivalTime\": \"2026-11-27T00:20:00\",\n            \"durationSeconds\": 12000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY716\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-27T08:35:00\",\n            \"arrivalTime\": \"2026-11-27T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-14T20:40:00\",\n        \"arrivalTime\": \"2026-12-15T06:15:00\",\n        \"durationSeconds\": 56100,\n        \"stops\": 1,\n        \"route\": [\n          \"KBV\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-14T20:40:00\",\n            \"arrivalTime\": \"2026-12-15T00:50:00\",\n            \"durationSeconds\": 25800,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY425\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-15T02:20:00\",\n            \"arrivalTime\": \"2026-12-15T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e018bc5134000072a5aaab_0|19e018bc5134000072a5aaab_1|18bc19e051460000d39aa7c7_0|18bc19e051460000d39aa7c7_1|18bc19e051460000d39aa7c7_2\",\n      \"price\": 2913.212042,\n      \"priceFormatted\": \"2913 EUR\",\n      \"totalDurationSeconds\": 165600,\n      \"bookingUrl\": \"https://kiwi.com/u/pzzfv6\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-01T10:40:00\",\n        \"arrivalTime\": \"2026-12-02T18:10:00\",\n        \"durationSeconds\": 91800,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-01T10:40:00\",\n            \"arrivalTime\": \"2026-12-01T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-02T08:35:00\",\n            \"arrivalTime\": \"2026-12-02T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-19T12:00:00\",\n        \"arrivalTime\": \"2026-12-20T02:30:00\",\n        \"durationSeconds\": 73800,\n        \"stops\": 2,\n        \"route\": [\n          \"KBV\",\n          \"DXB\",\n          \"AMM\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-19T12:00:00\",\n            \"arrivalTime\": \"2026-12-19T16:15:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"FZ\",\n            \"carrierName\": \"Fly Dubai\",\n            \"flightNumber\": \"FZ1464\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"AMM\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Amman\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport international Reine-Alia\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Jordanie\",\n            \"departureTime\": \"2026-12-19T19:35:00\",\n            \"arrivalTime\": \"2026-12-19T22:15:00\",\n            \"durationSeconds\": 13200,\n            \"carrier\": \"FZ\",\n            \"carrierName\": \"Fly Dubai\",\n            \"flightNumber\": \"FZ143\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AMM\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Amman\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Reine-Alia\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Jordanie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-20T00:25:00\",\n            \"arrivalTime\": \"2026-12-20T02:30:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ553\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e018bc51340000d94987e9_0|19e018bc51340000d94987e9_1|18bc19e05146000025029b00_0|18bc19e05146000025029b00_1|18bc19e05146000025029b00_2\",\n      \"price\": 3110.41202,\n      \"priceFormatted\": \"3110 EUR\",\n      \"totalDurationSeconds\": 207900,\n      \"bookingUrl\": \"https://kiwi.com/u/wzquw2\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-01T10:40:00\",\n        \"arrivalTime\": \"2026-12-02T06:20:00\",\n        \"durationSeconds\": 49200,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-01T10:40:00\",\n            \"arrivalTime\": \"2026-12-01T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-01T20:55:00\",\n            \"arrivalTime\": \"2026-12-02T06:20:00\",\n            \"durationSeconds\": 23100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY422\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-19T22:55:00\",\n        \"arrivalTime\": \"2026-12-21T13:00:00\",\n        \"durationSeconds\": 158700,\n        \"stops\": 2,\n        \"route\": [\n          \"KBV\",\n          \"DXB\",\n          \"AMM\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-19T22:55:00\",\n            \"arrivalTime\": \"2026-12-20T03:10:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"FZ\",\n            \"carrierName\": \"Fly Dubai\",\n            \"flightNumber\": \"FZ1482\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"AMM\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Amman\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport international Reine-Alia\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Jordanie\",\n            \"departureTime\": \"2026-12-20T13:45:00\",\n            \"arrivalTime\": \"2026-12-20T16:20:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ611\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AMM\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Amman\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Reine-Alia\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Jordanie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-21T10:55:00\",\n            \"arrivalTime\": \"2026-12-21T13:00:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ551\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e018bc51340000d94987e9_0|19e018bc51340000d94987e9_1|18bc19e051460000d39aa7c7_0|18bc19e051460000d39aa7c7_1|18bc19e051460000d39aa7c7_2\",\n      \"price\": 3227.212042,\n      \"priceFormatted\": \"3227 EUR\",\n      \"totalDurationSeconds\": 123000,\n      \"bookingUrl\": \"https://kiwi.com/u/b35r3j\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-01T10:40:00\",\n        \"arrivalTime\": \"2026-12-02T06:20:00\",\n        \"durationSeconds\": 49200,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-01T10:40:00\",\n            \"arrivalTime\": \"2026-12-01T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-01T20:55:00\",\n            \"arrivalTime\": \"2026-12-02T06:20:00\",\n            \"durationSeconds\": 23100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY422\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-19T12:00:00\",\n        \"arrivalTime\": \"2026-12-20T02:30:00\",\n        \"durationSeconds\": 73800,\n        \"stops\": 2,\n        \"route\": [\n          \"KBV\",\n          \"DXB\",\n          \"AMM\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-19T12:00:00\",\n            \"arrivalTime\": \"2026-12-19T16:15:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"FZ\",\n            \"carrierName\": \"Fly Dubai\",\n            \"flightNumber\": \"FZ1464\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"AMM\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Amman\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport international Reine-Alia\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Jordanie\",\n            \"departureTime\": \"2026-12-19T19:35:00\",\n            \"arrivalTime\": \"2026-12-19T22:15:00\",\n            \"durationSeconds\": 13200,\n            \"carrier\": \"FZ\",\n            \"carrierName\": \"Fly Dubai\",\n            \"flightNumber\": \"FZ143\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AMM\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Amman\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Reine-Alia\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Jordanie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-20T00:25:00\",\n            \"arrivalTime\": \"2026-12-20T02:30:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ553\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e018bc512f00003b2e0a71_0|19e018bc512f00003b2e0a71_1|19e018bc512f00003b2e0a71_2|18bc19e0514100005fafa711_0|18bc19e0514100005fafa711_1|18bc19e0514100005fafa711_2\",\n      \"price\": 3384.192516,\n      \"priceFormatted\": \"3384 EUR\",\n      \"totalDurationSeconds\": 160800,\n      \"bookingUrl\": \"https://kiwi.com/u/8ftgckb\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-26T11:35:00\",\n        \"arrivalTime\": \"2026-11-27T18:10:00\",\n        \"durationSeconds\": 88500,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"CAI\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"CAI\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Le Caire\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international du Caire\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Égypte\",\n            \"departureTime\": \"2026-11-26T11:35:00\",\n            \"arrivalTime\": \"2026-11-26T15:45:00\",\n            \"durationSeconds\": 11400,\n            \"carrier\": \"MS\",\n            \"carrierName\": \"Egyptair\",\n            \"flightNumber\": \"MS844\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"CAI\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Le Caire\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international du Caire\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Égypte\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-26T19:00:00\",\n            \"arrivalTime\": \"2026-11-27T00:20:00\",\n            \"durationSeconds\": 12000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY716\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-27T08:35:00\",\n            \"arrivalTime\": \"2026-11-27T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-14T22:55:00\",\n        \"arrivalTime\": \"2026-12-15T13:00:00\",\n        \"durationSeconds\": 72300,\n        \"stops\": 2,\n        \"route\": [\n          \"KBV\",\n          \"DXB\",\n          \"AMM\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-14T22:55:00\",\n            \"arrivalTime\": \"2026-12-15T03:10:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"FZ\",\n            \"carrierName\": \"Fly Dubai\",\n            \"flightNumber\": \"FZ1482\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"AMM\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Amman\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport international Reine-Alia\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Jordanie\",\n            \"departureTime\": \"2026-12-15T06:45:00\",\n            \"arrivalTime\": \"2026-12-15T09:20:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ613\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AMM\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Amman\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Reine-Alia\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Jordanie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-15T10:55:00\",\n            \"arrivalTime\": \"2026-12-15T13:00:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ551\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e018bc51340000b208269f_0|19e018bc51340000b208269f_1|19e018bc51340000b208269f_2|18bc19e05146000025029b00_0|18bc19e05146000025029b00_1|18bc19e05146000025029b00_2\",\n      \"price\": 3502.192516,\n      \"priceFormatted\": \"3502 EUR\",\n      \"totalDurationSeconds\": 252900,\n      \"bookingUrl\": \"https://kiwi.com/u/p87695\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-01T22:10:00\",\n        \"arrivalTime\": \"2026-12-03T06:20:00\",\n        \"durationSeconds\": 94200,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"CAI\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"CAI\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Le Caire\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international du Caire\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Égypte\",\n            \"departureTime\": \"2026-12-01T22:10:00\",\n            \"arrivalTime\": \"2026-12-02T02:15:00\",\n            \"durationSeconds\": 11100,\n            \"carrier\": \"TU\",\n            \"carrierName\": \"Tunisair\",\n            \"flightNumber\": \"TU813\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"CAI\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Le Caire\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international du Caire\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Égypte\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-02T07:25:00\",\n            \"arrivalTime\": \"2026-12-02T12:45:00\",\n            \"durationSeconds\": 12000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY712\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-02T20:55:00\",\n            \"arrivalTime\": \"2026-12-03T06:20:00\",\n            \"durationSeconds\": 23100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY422\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-19T22:55:00\",\n        \"arrivalTime\": \"2026-12-21T13:00:00\",\n        \"durationSeconds\": 158700,\n        \"stops\": 2,\n        \"route\": [\n          \"KBV\",\n          \"DXB\",\n          \"AMM\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-19T22:55:00\",\n            \"arrivalTime\": \"2026-12-20T03:10:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"FZ\",\n            \"carrierName\": \"Fly Dubai\",\n            \"flightNumber\": \"FZ1482\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"AMM\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Amman\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport international Reine-Alia\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Jordanie\",\n            \"departureTime\": \"2026-12-20T13:45:00\",\n            \"arrivalTime\": \"2026-12-20T16:20:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ611\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AMM\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Amman\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Reine-Alia\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Jordanie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-21T10:55:00\",\n            \"arrivalTime\": \"2026-12-21T13:00:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ551\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e018bc5124000029d81286_0|19e018bc5124000029d81286_1|18bc19e051370000a2673521_0|18bc19e051370000a2673521_1|18bc19e051370000a2673521_2\",\n      \"price\": 3511.308092,\n      \"priceFormatted\": \"3511 EUR\",\n      \"totalDurationSeconds\": 120000,\n      \"bookingUrl\": \"https://kiwi.com/u/vmgrmu\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-15T10:40:00\",\n        \"arrivalTime\": \"2026-11-16T06:20:00\",\n        \"durationSeconds\": 49200,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-15T10:40:00\",\n            \"arrivalTime\": \"2026-11-15T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-15T20:55:00\",\n            \"arrivalTime\": \"2026-11-16T06:20:00\",\n            \"durationSeconds\": 23100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY422\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-04T20:40:00\",\n        \"arrivalTime\": \"2026-12-05T10:20:00\",\n        \"durationSeconds\": 70800,\n        \"stops\": 2,\n        \"route\": [\n          \"KBV\",\n          \"AUH\",\n          \"CAI\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-04T20:40:00\",\n            \"arrivalTime\": \"2026-12-05T00:50:00\",\n            \"durationSeconds\": 25800,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY425\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"CAI\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Le Caire\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international du Caire\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Égypte\",\n            \"departureTime\": \"2026-12-05T02:45:00\",\n            \"arrivalTime\": \"2026-12-05T04:50:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY711\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"CAI\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Le Caire\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international du Caire\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Égypte\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-05T07:50:00\",\n            \"arrivalTime\": \"2026-12-05T10:20:00\",\n            \"durationSeconds\": 12600,\n            \"carrier\": \"MS\",\n            \"carrierName\": \"Egyptair\",\n            \"flightNumber\": \"MS843\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e018bc51340000cb51d0fe_0|19e018bc51340000cb51d0fe_1|19e018bc51340000cb51d0fe_2|18bc19e05146000025029b00_0|18bc19e05146000025029b00_1|18bc19e05146000025029b00_2\",\n      \"price\": 3558.192516,\n      \"priceFormatted\": \"3558 EUR\",\n      \"totalDurationSeconds\": 247200,\n      \"bookingUrl\": \"https://kiwi.com/u/29yrph6\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-01T11:35:00\",\n        \"arrivalTime\": \"2026-12-02T18:10:00\",\n        \"durationSeconds\": 88500,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"CAI\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"CAI\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Le Caire\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international du Caire\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Égypte\",\n            \"departureTime\": \"2026-12-01T11:35:00\",\n            \"arrivalTime\": \"2026-12-01T15:45:00\",\n            \"durationSeconds\": 11400,\n            \"carrier\": \"MS\",\n            \"carrierName\": \"Egyptair\",\n            \"flightNumber\": \"MS844\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"CAI\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Le Caire\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international du Caire\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Égypte\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-01T19:00:00\",\n            \"arrivalTime\": \"2026-12-02T00:20:00\",\n            \"durationSeconds\": 12000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY716\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-02T08:35:00\",\n            \"arrivalTime\": \"2026-12-02T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-19T22:55:00\",\n        \"arrivalTime\": \"2026-12-21T13:00:00\",\n        \"durationSeconds\": 158700,\n        \"stops\": 2,\n        \"route\": [\n          \"KBV\",\n          \"DXB\",\n          \"AMM\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-19T22:55:00\",\n            \"arrivalTime\": \"2026-12-20T03:10:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"FZ\",\n            \"carrierName\": \"Fly Dubai\",\n            \"flightNumber\": \"FZ1482\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"AMM\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Amman\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport international Reine-Alia\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Jordanie\",\n            \"departureTime\": \"2026-12-20T13:45:00\",\n            \"arrivalTime\": \"2026-12-20T16:20:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ611\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AMM\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Amman\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Reine-Alia\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Jordanie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-21T10:55:00\",\n            \"arrivalTime\": \"2026-12-21T13:00:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ551\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e018bc5134000072a5aaab_0|19e018bc5134000072a5aaab_1|18bc19e0514600004bce3a48_0|18bc19e0514600004bce3a48_1|18bc19e0514600004bce3a48_2\",\n      \"price\": 3569.308092,\n      \"priceFormatted\": \"3569 EUR\",\n      \"totalDurationSeconds\": 162600,\n      \"bookingUrl\": \"https://kiwi.com/u/tnkwqk\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-01T10:40:00\",\n        \"arrivalTime\": \"2026-12-02T18:10:00\",\n        \"durationSeconds\": 91800,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-01T10:40:00\",\n            \"arrivalTime\": \"2026-12-01T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-02T08:35:00\",\n            \"arrivalTime\": \"2026-12-02T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-19T20:40:00\",\n        \"arrivalTime\": \"2026-12-20T10:20:00\",\n        \"durationSeconds\": 70800,\n        \"stops\": 2,\n        \"route\": [\n          \"KBV\",\n          \"AUH\",\n          \"CAI\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-19T20:40:00\",\n            \"arrivalTime\": \"2026-12-20T00:50:00\",\n            \"durationSeconds\": 25800,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY425\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"CAI\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Le Caire\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international du Caire\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Égypte\",\n            \"departureTime\": \"2026-12-20T02:45:00\",\n            \"arrivalTime\": \"2026-12-20T04:50:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY711\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"CAI\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Le Caire\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international du Caire\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Égypte\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-20T07:50:00\",\n            \"arrivalTime\": \"2026-12-20T10:20:00\",\n            \"durationSeconds\": 12600,\n            \"carrier\": \"MS\",\n            \"carrierName\": \"Egyptair\",\n            \"flightNumber\": \"MS843\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e018bc51340000b208269f_0|19e018bc51340000b208269f_1|19e018bc51340000b208269f_2|18bc19e051460000d39aa7c7_0|18bc19e051460000d39aa7c7_1|18bc19e051460000d39aa7c7_2\",\n      \"price\": 3618.992516,\n      \"priceFormatted\": \"3619 EUR\",\n      \"totalDurationSeconds\": 168000,\n      \"bookingUrl\": \"https://kiwi.com/u/qt4c6j\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-01T22:10:00\",\n        \"arrivalTime\": \"2026-12-03T06:20:00\",\n        \"durationSeconds\": 94200,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"CAI\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"CAI\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Le Caire\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international du Caire\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Égypte\",\n            \"departureTime\": \"2026-12-01T22:10:00\",\n            \"arrivalTime\": \"2026-12-02T02:15:00\",\n            \"durationSeconds\": 11100,\n            \"carrier\": \"TU\",\n            \"carrierName\": \"Tunisair\",\n            \"flightNumber\": \"TU813\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"CAI\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Le Caire\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international du Caire\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Égypte\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-02T07:25:00\",\n            \"arrivalTime\": \"2026-12-02T12:45:00\",\n            \"durationSeconds\": 12000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY712\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-02T20:55:00\",\n            \"arrivalTime\": \"2026-12-03T06:20:00\",\n            \"durationSeconds\": 23100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY422\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-19T12:00:00\",\n        \"arrivalTime\": \"2026-12-20T02:30:00\",\n        \"durationSeconds\": 73800,\n        \"stops\": 2,\n        \"route\": [\n          \"KBV\",\n          \"DXB\",\n          \"AMM\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-19T12:00:00\",\n            \"arrivalTime\": \"2026-12-19T16:15:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"FZ\",\n            \"carrierName\": \"Fly Dubai\",\n            \"flightNumber\": \"FZ1464\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"AMM\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Amman\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport international Reine-Alia\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Jordanie\",\n            \"departureTime\": \"2026-12-19T19:35:00\",\n            \"arrivalTime\": \"2026-12-19T22:15:00\",\n            \"durationSeconds\": 13200,\n            \"carrier\": \"FZ\",\n            \"carrierName\": \"Fly Dubai\",\n            \"flightNumber\": \"FZ143\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AMM\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Amman\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Reine-Alia\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Jordanie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-20T00:25:00\",\n            \"arrivalTime\": \"2026-12-20T02:30:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ553\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e018bc51340000cb51d0fe_0|19e018bc51340000cb51d0fe_1|19e018bc51340000cb51d0fe_2|18bc19e051460000d39aa7c7_0|18bc19e051460000d39aa7c7_1|18bc19e051460000d39aa7c7_2\",\n      \"price\": 3673.992498,\n      \"priceFormatted\": \"3674 EUR\",\n      \"totalDurationSeconds\": 162300,\n      \"bookingUrl\": \"https://kiwi.com/u/h9n7g6m\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-01T11:35:00\",\n        \"arrivalTime\": \"2026-12-02T18:10:00\",\n        \"durationSeconds\": 88500,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"CAI\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"CAI\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Le Caire\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international du Caire\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Égypte\",\n            \"departureTime\": \"2026-12-01T11:35:00\",\n            \"arrivalTime\": \"2026-12-01T15:45:00\",\n            \"durationSeconds\": 11400,\n            \"carrier\": \"MS\",\n            \"carrierName\": \"Egyptair\",\n            \"flightNumber\": \"MS844\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"CAI\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Le Caire\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international du Caire\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Égypte\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-01T19:00:00\",\n            \"arrivalTime\": \"2026-12-02T00:20:00\",\n            \"durationSeconds\": 12000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY716\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-02T08:35:00\",\n            \"arrivalTime\": \"2026-12-02T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-19T12:00:00\",\n        \"arrivalTime\": \"2026-12-20T02:30:00\",\n        \"durationSeconds\": 73800,\n        \"stops\": 2,\n        \"route\": [\n          \"KBV\",\n          \"DXB\",\n          \"AMM\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-19T12:00:00\",\n            \"arrivalTime\": \"2026-12-19T16:15:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"FZ\",\n            \"carrierName\": \"Fly Dubai\",\n            \"flightNumber\": \"FZ1464\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"AMM\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Amman\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport international Reine-Alia\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Jordanie\",\n            \"departureTime\": \"2026-12-19T19:35:00\",\n            \"arrivalTime\": \"2026-12-19T22:15:00\",\n            \"durationSeconds\": 13200,\n            \"carrier\": \"FZ\",\n            \"carrierName\": \"Fly Dubai\",\n            \"flightNumber\": \"FZ143\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AMM\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Amman\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Reine-Alia\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Jordanie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-20T00:25:00\",\n            \"arrivalTime\": \"2026-12-20T02:30:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"RJ\",\n            \"carrierName\": \"Royal Jordanian\",\n            \"flightNumber\": \"RJ553\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e018bc51340000d94987e9_0|19e018bc51340000d94987e9_1|18bc19e0514600004bce3a48_0|18bc19e0514600004bce3a48_1|18bc19e0514600004bce3a48_2\",\n      \"price\": 3884.308092,\n      \"priceFormatted\": \"3884 EUR\",\n      \"totalDurationSeconds\": 120000,\n      \"bookingUrl\": \"https://kiwi.com/u/8m4gxc\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-01T10:40:00\",\n        \"arrivalTime\": \"2026-12-02T06:20:00\",\n        \"durationSeconds\": 49200,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-01T10:40:00\",\n            \"arrivalTime\": \"2026-12-01T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-01T20:55:00\",\n            \"arrivalTime\": \"2026-12-02T06:20:00\",\n            \"durationSeconds\": 23100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY422\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"KBV\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-19T20:40:00\",\n        \"arrivalTime\": \"2026-12-20T10:20:00\",\n        \"durationSeconds\": 70800,\n        \"stops\": 2,\n        \"route\": [\n          \"KBV\",\n          \"AUH\",\n          \"CAI\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"KBV\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Krabi\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Krabi\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-19T20:40:00\",\n            \"arrivalTime\": \"2026-12-20T00:50:00\",\n            \"durationSeconds\": 25800,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY425\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"CAI\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Le Caire\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international du Caire\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Égypte\",\n            \"departureTime\": \"2026-12-20T02:45:00\",\n            \"arrivalTime\": \"2026-12-20T04:50:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY711\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"CAI\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Le Caire\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international du Caire\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Égypte\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-20T07:50:00\",\n            \"arrivalTime\": \"2026-12-20T10:20:00\",\n            \"durationSeconds\": 12600,\n            \"carrier\": \"MS\",\n            \"carrierName\": \"Egyptair\",\n            \"flightNumber\": \"MS843\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    }\n  ],\n  \"searchTimeMs\": 516,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "TUN → KBV on 15/11/2026–10/12/2026, 2 adults, 16–18 nights [≤2 stops/sector; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 15,
+   "itineraries": [
+    {
+     "id": "19e018bc512f00005477b6ef_0|19e018bc512f00005477b6ef_1|18bc19e051410000738bba1d_0|18bc19e051410000738bba1d_1",
+     "price": 2302.083472,
+     "priceFormatted": "2302 EUR",
+     "totalDurationSeconds": 147900,
+     "bookingUrl": "https://kiwi.com/u/5zfb32m",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-26T10:40:00",
+      "arrivalTime": "2026-11-27T18:10:00",
+      "durationSeconds": 91800,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-26T10:40:00",
+        "arrivalTime": "2026-11-26T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-27T08:35:00",
+        "arrivalTime": "2026-11-27T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-14T20:40:00",
+      "arrivalTime": "2026-12-15T06:15:00",
+      "durationSeconds": 56100,
+      "stops": 1,
+      "route": [
+       "KBV",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "AUH",
+        "fromCity": "Krabi",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-14T20:40:00",
+        "arrivalTime": "2026-12-15T00:50:00",
+        "durationSeconds": 25800,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY425",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-15T02:20:00",
+        "arrivalTime": "2026-12-15T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e018bc512f00005477b6ef_0|19e018bc512f00005477b6ef_1|18bc19e0514100005fafa711_0|18bc19e0514100005fafa711_1|18bc19e0514100005fafa711_2",
+     "price": 2794.41202,
+     "priceFormatted": "2794 EUR",
+     "totalDurationSeconds": 164100,
+     "bookingUrl": "https://kiwi.com/u/m4vzs4",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-26T10:40:00",
+      "arrivalTime": "2026-11-27T18:10:00",
+      "durationSeconds": 91800,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-26T10:40:00",
+        "arrivalTime": "2026-11-26T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-27T08:35:00",
+        "arrivalTime": "2026-11-27T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-14T22:55:00",
+      "arrivalTime": "2026-12-15T13:00:00",
+      "durationSeconds": 72300,
+      "stops": 2,
+      "route": [
+       "KBV",
+       "DXB",
+       "AMM",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "DXB",
+        "fromCity": "Krabi",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-14T22:55:00",
+        "arrivalTime": "2026-12-15T03:10:00",
+        "durationSeconds": 26100,
+        "carrier": "FZ",
+        "carrierName": "Fly Dubai",
+        "flightNumber": "FZ1482",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "AMM",
+        "fromCity": "Dubaï",
+        "toCity": "Amman",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport international Reine-Alia",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Jordanie",
+        "departureTime": "2026-12-15T06:45:00",
+        "arrivalTime": "2026-12-15T09:20:00",
+        "durationSeconds": 12900,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ613",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AMM",
+        "to": "TUN",
+        "fromCity": "Amman",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Reine-Alia",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Jordanie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-15T10:55:00",
+        "arrivalTime": "2026-12-15T13:00:00",
+        "durationSeconds": 14700,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ551",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e018bc5134000072a5aaab_0|19e018bc5134000072a5aaab_1|18bc19e05146000025029b00_0|18bc19e05146000025029b00_1|18bc19e05146000025029b00_2",
+     "price": 2796.41202,
+     "priceFormatted": "2796 EUR",
+     "totalDurationSeconds": 250500,
+     "bookingUrl": "https://kiwi.com/u/9tm6ss",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-12-01T10:40:00",
+      "arrivalTime": "2026-12-02T18:10:00",
+      "durationSeconds": 91800,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-01T10:40:00",
+        "arrivalTime": "2026-12-01T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-02T08:35:00",
+        "arrivalTime": "2026-12-02T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-19T22:55:00",
+      "arrivalTime": "2026-12-21T13:00:00",
+      "durationSeconds": 158700,
+      "stops": 2,
+      "route": [
+       "KBV",
+       "DXB",
+       "AMM",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "DXB",
+        "fromCity": "Krabi",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-19T22:55:00",
+        "arrivalTime": "2026-12-20T03:10:00",
+        "durationSeconds": 26100,
+        "carrier": "FZ",
+        "carrierName": "Fly Dubai",
+        "flightNumber": "FZ1482",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "AMM",
+        "fromCity": "Dubaï",
+        "toCity": "Amman",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport international Reine-Alia",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Jordanie",
+        "departureTime": "2026-12-20T13:45:00",
+        "arrivalTime": "2026-12-20T16:20:00",
+        "durationSeconds": 12900,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ611",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AMM",
+        "to": "TUN",
+        "fromCity": "Amman",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Reine-Alia",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Jordanie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-21T10:55:00",
+        "arrivalTime": "2026-12-21T13:00:00",
+        "durationSeconds": 14700,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ551",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e018bc512f00003b2e0a71_0|19e018bc512f00003b2e0a71_1|19e018bc512f00003b2e0a71_2|18bc19e051410000738bba1d_0|18bc19e051410000738bba1d_1",
+     "price": 2890.863938,
+     "priceFormatted": "2891 EUR",
+     "totalDurationSeconds": 144600,
+     "bookingUrl": "https://kiwi.com/u/g3ghmw",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-26T11:35:00",
+      "arrivalTime": "2026-11-27T18:10:00",
+      "durationSeconds": 88500,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "CAI",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "CAI",
+        "fromCity": "Tunis",
+        "toCity": "Le Caire",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international du Caire",
+        "fromCountry": "Tunisie",
+        "toCountry": "Égypte",
+        "departureTime": "2026-11-26T11:35:00",
+        "arrivalTime": "2026-11-26T15:45:00",
+        "durationSeconds": 11400,
+        "carrier": "MS",
+        "carrierName": "Egyptair",
+        "flightNumber": "MS844",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "CAI",
+        "to": "AUH",
+        "fromCity": "Le Caire",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international du Caire",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Égypte",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-26T19:00:00",
+        "arrivalTime": "2026-11-27T00:20:00",
+        "durationSeconds": 12000,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY716",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-27T08:35:00",
+        "arrivalTime": "2026-11-27T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-14T20:40:00",
+      "arrivalTime": "2026-12-15T06:15:00",
+      "durationSeconds": 56100,
+      "stops": 1,
+      "route": [
+       "KBV",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "AUH",
+        "fromCity": "Krabi",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-14T20:40:00",
+        "arrivalTime": "2026-12-15T00:50:00",
+        "durationSeconds": 25800,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY425",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-15T02:20:00",
+        "arrivalTime": "2026-12-15T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e018bc5134000072a5aaab_0|19e018bc5134000072a5aaab_1|18bc19e051460000d39aa7c7_0|18bc19e051460000d39aa7c7_1|18bc19e051460000d39aa7c7_2",
+     "price": 2913.212042,
+     "priceFormatted": "2913 EUR",
+     "totalDurationSeconds": 165600,
+     "bookingUrl": "https://kiwi.com/u/pzzfv6",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-12-01T10:40:00",
+      "arrivalTime": "2026-12-02T18:10:00",
+      "durationSeconds": 91800,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-01T10:40:00",
+        "arrivalTime": "2026-12-01T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-02T08:35:00",
+        "arrivalTime": "2026-12-02T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-19T12:00:00",
+      "arrivalTime": "2026-12-20T02:30:00",
+      "durationSeconds": 73800,
+      "stops": 2,
+      "route": [
+       "KBV",
+       "DXB",
+       "AMM",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "DXB",
+        "fromCity": "Krabi",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-19T12:00:00",
+        "arrivalTime": "2026-12-19T16:15:00",
+        "durationSeconds": 26100,
+        "carrier": "FZ",
+        "carrierName": "Fly Dubai",
+        "flightNumber": "FZ1464",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "AMM",
+        "fromCity": "Dubaï",
+        "toCity": "Amman",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport international Reine-Alia",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Jordanie",
+        "departureTime": "2026-12-19T19:35:00",
+        "arrivalTime": "2026-12-19T22:15:00",
+        "durationSeconds": 13200,
+        "carrier": "FZ",
+        "carrierName": "Fly Dubai",
+        "flightNumber": "FZ143",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AMM",
+        "to": "TUN",
+        "fromCity": "Amman",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Reine-Alia",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Jordanie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-20T00:25:00",
+        "arrivalTime": "2026-12-20T02:30:00",
+        "durationSeconds": 14700,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ553",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e018bc51340000d94987e9_0|19e018bc51340000d94987e9_1|18bc19e05146000025029b00_0|18bc19e05146000025029b00_1|18bc19e05146000025029b00_2",
+     "price": 3110.41202,
+     "priceFormatted": "3110 EUR",
+     "totalDurationSeconds": 207900,
+     "bookingUrl": "https://kiwi.com/u/wzquw2",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-12-01T10:40:00",
+      "arrivalTime": "2026-12-02T06:20:00",
+      "durationSeconds": 49200,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-01T10:40:00",
+        "arrivalTime": "2026-12-01T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-01T20:55:00",
+        "arrivalTime": "2026-12-02T06:20:00",
+        "durationSeconds": 23100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY422",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-19T22:55:00",
+      "arrivalTime": "2026-12-21T13:00:00",
+      "durationSeconds": 158700,
+      "stops": 2,
+      "route": [
+       "KBV",
+       "DXB",
+       "AMM",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "DXB",
+        "fromCity": "Krabi",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-19T22:55:00",
+        "arrivalTime": "2026-12-20T03:10:00",
+        "durationSeconds": 26100,
+        "carrier": "FZ",
+        "carrierName": "Fly Dubai",
+        "flightNumber": "FZ1482",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "AMM",
+        "fromCity": "Dubaï",
+        "toCity": "Amman",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport international Reine-Alia",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Jordanie",
+        "departureTime": "2026-12-20T13:45:00",
+        "arrivalTime": "2026-12-20T16:20:00",
+        "durationSeconds": 12900,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ611",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AMM",
+        "to": "TUN",
+        "fromCity": "Amman",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Reine-Alia",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Jordanie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-21T10:55:00",
+        "arrivalTime": "2026-12-21T13:00:00",
+        "durationSeconds": 14700,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ551",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e018bc51340000d94987e9_0|19e018bc51340000d94987e9_1|18bc19e051460000d39aa7c7_0|18bc19e051460000d39aa7c7_1|18bc19e051460000d39aa7c7_2",
+     "price": 3227.212042,
+     "priceFormatted": "3227 EUR",
+     "totalDurationSeconds": 123000,
+     "bookingUrl": "https://kiwi.com/u/b35r3j",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-12-01T10:40:00",
+      "arrivalTime": "2026-12-02T06:20:00",
+      "durationSeconds": 49200,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-01T10:40:00",
+        "arrivalTime": "2026-12-01T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-01T20:55:00",
+        "arrivalTime": "2026-12-02T06:20:00",
+        "durationSeconds": 23100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY422",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-19T12:00:00",
+      "arrivalTime": "2026-12-20T02:30:00",
+      "durationSeconds": 73800,
+      "stops": 2,
+      "route": [
+       "KBV",
+       "DXB",
+       "AMM",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "DXB",
+        "fromCity": "Krabi",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-19T12:00:00",
+        "arrivalTime": "2026-12-19T16:15:00",
+        "durationSeconds": 26100,
+        "carrier": "FZ",
+        "carrierName": "Fly Dubai",
+        "flightNumber": "FZ1464",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "AMM",
+        "fromCity": "Dubaï",
+        "toCity": "Amman",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport international Reine-Alia",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Jordanie",
+        "departureTime": "2026-12-19T19:35:00",
+        "arrivalTime": "2026-12-19T22:15:00",
+        "durationSeconds": 13200,
+        "carrier": "FZ",
+        "carrierName": "Fly Dubai",
+        "flightNumber": "FZ143",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AMM",
+        "to": "TUN",
+        "fromCity": "Amman",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Reine-Alia",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Jordanie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-20T00:25:00",
+        "arrivalTime": "2026-12-20T02:30:00",
+        "durationSeconds": 14700,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ553",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e018bc512f00003b2e0a71_0|19e018bc512f00003b2e0a71_1|19e018bc512f00003b2e0a71_2|18bc19e0514100005fafa711_0|18bc19e0514100005fafa711_1|18bc19e0514100005fafa711_2",
+     "price": 3384.192516,
+     "priceFormatted": "3384 EUR",
+     "totalDurationSeconds": 160800,
+     "bookingUrl": "https://kiwi.com/u/8ftgckb",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-26T11:35:00",
+      "arrivalTime": "2026-11-27T18:10:00",
+      "durationSeconds": 88500,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "CAI",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "CAI",
+        "fromCity": "Tunis",
+        "toCity": "Le Caire",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international du Caire",
+        "fromCountry": "Tunisie",
+        "toCountry": "Égypte",
+        "departureTime": "2026-11-26T11:35:00",
+        "arrivalTime": "2026-11-26T15:45:00",
+        "durationSeconds": 11400,
+        "carrier": "MS",
+        "carrierName": "Egyptair",
+        "flightNumber": "MS844",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "CAI",
+        "to": "AUH",
+        "fromCity": "Le Caire",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international du Caire",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Égypte",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-26T19:00:00",
+        "arrivalTime": "2026-11-27T00:20:00",
+        "durationSeconds": 12000,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY716",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-27T08:35:00",
+        "arrivalTime": "2026-11-27T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-14T22:55:00",
+      "arrivalTime": "2026-12-15T13:00:00",
+      "durationSeconds": 72300,
+      "stops": 2,
+      "route": [
+       "KBV",
+       "DXB",
+       "AMM",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "DXB",
+        "fromCity": "Krabi",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-14T22:55:00",
+        "arrivalTime": "2026-12-15T03:10:00",
+        "durationSeconds": 26100,
+        "carrier": "FZ",
+        "carrierName": "Fly Dubai",
+        "flightNumber": "FZ1482",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "AMM",
+        "fromCity": "Dubaï",
+        "toCity": "Amman",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport international Reine-Alia",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Jordanie",
+        "departureTime": "2026-12-15T06:45:00",
+        "arrivalTime": "2026-12-15T09:20:00",
+        "durationSeconds": 12900,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ613",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AMM",
+        "to": "TUN",
+        "fromCity": "Amman",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Reine-Alia",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Jordanie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-15T10:55:00",
+        "arrivalTime": "2026-12-15T13:00:00",
+        "durationSeconds": 14700,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ551",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e018bc51340000b208269f_0|19e018bc51340000b208269f_1|19e018bc51340000b208269f_2|18bc19e05146000025029b00_0|18bc19e05146000025029b00_1|18bc19e05146000025029b00_2",
+     "price": 3502.192516,
+     "priceFormatted": "3502 EUR",
+     "totalDurationSeconds": 252900,
+     "bookingUrl": "https://kiwi.com/u/p87695",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-12-01T22:10:00",
+      "arrivalTime": "2026-12-03T06:20:00",
+      "durationSeconds": 94200,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "CAI",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "CAI",
+        "fromCity": "Tunis",
+        "toCity": "Le Caire",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international du Caire",
+        "fromCountry": "Tunisie",
+        "toCountry": "Égypte",
+        "departureTime": "2026-12-01T22:10:00",
+        "arrivalTime": "2026-12-02T02:15:00",
+        "durationSeconds": 11100,
+        "carrier": "TU",
+        "carrierName": "Tunisair",
+        "flightNumber": "TU813",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "CAI",
+        "to": "AUH",
+        "fromCity": "Le Caire",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international du Caire",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Égypte",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-02T07:25:00",
+        "arrivalTime": "2026-12-02T12:45:00",
+        "durationSeconds": 12000,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY712",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-02T20:55:00",
+        "arrivalTime": "2026-12-03T06:20:00",
+        "durationSeconds": 23100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY422",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-19T22:55:00",
+      "arrivalTime": "2026-12-21T13:00:00",
+      "durationSeconds": 158700,
+      "stops": 2,
+      "route": [
+       "KBV",
+       "DXB",
+       "AMM",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "DXB",
+        "fromCity": "Krabi",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-19T22:55:00",
+        "arrivalTime": "2026-12-20T03:10:00",
+        "durationSeconds": 26100,
+        "carrier": "FZ",
+        "carrierName": "Fly Dubai",
+        "flightNumber": "FZ1482",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "AMM",
+        "fromCity": "Dubaï",
+        "toCity": "Amman",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport international Reine-Alia",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Jordanie",
+        "departureTime": "2026-12-20T13:45:00",
+        "arrivalTime": "2026-12-20T16:20:00",
+        "durationSeconds": 12900,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ611",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AMM",
+        "to": "TUN",
+        "fromCity": "Amman",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Reine-Alia",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Jordanie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-21T10:55:00",
+        "arrivalTime": "2026-12-21T13:00:00",
+        "durationSeconds": 14700,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ551",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e018bc5124000029d81286_0|19e018bc5124000029d81286_1|18bc19e051370000a2673521_0|18bc19e051370000a2673521_1|18bc19e051370000a2673521_2",
+     "price": 3511.308092,
+     "priceFormatted": "3511 EUR",
+     "totalDurationSeconds": 120000,
+     "bookingUrl": "https://kiwi.com/u/vmgrmu",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-15T10:40:00",
+      "arrivalTime": "2026-11-16T06:20:00",
+      "durationSeconds": 49200,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-15T10:40:00",
+        "arrivalTime": "2026-11-15T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-15T20:55:00",
+        "arrivalTime": "2026-11-16T06:20:00",
+        "durationSeconds": 23100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY422",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-04T20:40:00",
+      "arrivalTime": "2026-12-05T10:20:00",
+      "durationSeconds": 70800,
+      "stops": 2,
+      "route": [
+       "KBV",
+       "AUH",
+       "CAI",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "AUH",
+        "fromCity": "Krabi",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-04T20:40:00",
+        "arrivalTime": "2026-12-05T00:50:00",
+        "durationSeconds": 25800,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY425",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "CAI",
+        "fromCity": "Abou Dabi",
+        "toCity": "Le Caire",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international du Caire",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Égypte",
+        "departureTime": "2026-12-05T02:45:00",
+        "arrivalTime": "2026-12-05T04:50:00",
+        "durationSeconds": 14700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY711",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "CAI",
+        "to": "TUN",
+        "fromCity": "Le Caire",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international du Caire",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Égypte",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-05T07:50:00",
+        "arrivalTime": "2026-12-05T10:20:00",
+        "durationSeconds": 12600,
+        "carrier": "MS",
+        "carrierName": "Egyptair",
+        "flightNumber": "MS843",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e018bc51340000cb51d0fe_0|19e018bc51340000cb51d0fe_1|19e018bc51340000cb51d0fe_2|18bc19e05146000025029b00_0|18bc19e05146000025029b00_1|18bc19e05146000025029b00_2",
+     "price": 3558.192516,
+     "priceFormatted": "3558 EUR",
+     "totalDurationSeconds": 247200,
+     "bookingUrl": "https://kiwi.com/u/29yrph6",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-12-01T11:35:00",
+      "arrivalTime": "2026-12-02T18:10:00",
+      "durationSeconds": 88500,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "CAI",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "CAI",
+        "fromCity": "Tunis",
+        "toCity": "Le Caire",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international du Caire",
+        "fromCountry": "Tunisie",
+        "toCountry": "Égypte",
+        "departureTime": "2026-12-01T11:35:00",
+        "arrivalTime": "2026-12-01T15:45:00",
+        "durationSeconds": 11400,
+        "carrier": "MS",
+        "carrierName": "Egyptair",
+        "flightNumber": "MS844",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "CAI",
+        "to": "AUH",
+        "fromCity": "Le Caire",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international du Caire",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Égypte",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-01T19:00:00",
+        "arrivalTime": "2026-12-02T00:20:00",
+        "durationSeconds": 12000,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY716",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-02T08:35:00",
+        "arrivalTime": "2026-12-02T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-19T22:55:00",
+      "arrivalTime": "2026-12-21T13:00:00",
+      "durationSeconds": 158700,
+      "stops": 2,
+      "route": [
+       "KBV",
+       "DXB",
+       "AMM",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "DXB",
+        "fromCity": "Krabi",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-19T22:55:00",
+        "arrivalTime": "2026-12-20T03:10:00",
+        "durationSeconds": 26100,
+        "carrier": "FZ",
+        "carrierName": "Fly Dubai",
+        "flightNumber": "FZ1482",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "AMM",
+        "fromCity": "Dubaï",
+        "toCity": "Amman",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport international Reine-Alia",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Jordanie",
+        "departureTime": "2026-12-20T13:45:00",
+        "arrivalTime": "2026-12-20T16:20:00",
+        "durationSeconds": 12900,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ611",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AMM",
+        "to": "TUN",
+        "fromCity": "Amman",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Reine-Alia",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Jordanie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-21T10:55:00",
+        "arrivalTime": "2026-12-21T13:00:00",
+        "durationSeconds": 14700,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ551",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e018bc5134000072a5aaab_0|19e018bc5134000072a5aaab_1|18bc19e0514600004bce3a48_0|18bc19e0514600004bce3a48_1|18bc19e0514600004bce3a48_2",
+     "price": 3569.308092,
+     "priceFormatted": "3569 EUR",
+     "totalDurationSeconds": 162600,
+     "bookingUrl": "https://kiwi.com/u/tnkwqk",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-12-01T10:40:00",
+      "arrivalTime": "2026-12-02T18:10:00",
+      "durationSeconds": 91800,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-01T10:40:00",
+        "arrivalTime": "2026-12-01T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-02T08:35:00",
+        "arrivalTime": "2026-12-02T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-19T20:40:00",
+      "arrivalTime": "2026-12-20T10:20:00",
+      "durationSeconds": 70800,
+      "stops": 2,
+      "route": [
+       "KBV",
+       "AUH",
+       "CAI",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "AUH",
+        "fromCity": "Krabi",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-19T20:40:00",
+        "arrivalTime": "2026-12-20T00:50:00",
+        "durationSeconds": 25800,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY425",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "CAI",
+        "fromCity": "Abou Dabi",
+        "toCity": "Le Caire",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international du Caire",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Égypte",
+        "departureTime": "2026-12-20T02:45:00",
+        "arrivalTime": "2026-12-20T04:50:00",
+        "durationSeconds": 14700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY711",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "CAI",
+        "to": "TUN",
+        "fromCity": "Le Caire",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international du Caire",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Égypte",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-20T07:50:00",
+        "arrivalTime": "2026-12-20T10:20:00",
+        "durationSeconds": 12600,
+        "carrier": "MS",
+        "carrierName": "Egyptair",
+        "flightNumber": "MS843",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e018bc51340000b208269f_0|19e018bc51340000b208269f_1|19e018bc51340000b208269f_2|18bc19e051460000d39aa7c7_0|18bc19e051460000d39aa7c7_1|18bc19e051460000d39aa7c7_2",
+     "price": 3618.992516,
+     "priceFormatted": "3619 EUR",
+     "totalDurationSeconds": 168000,
+     "bookingUrl": "https://kiwi.com/u/qt4c6j",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-12-01T22:10:00",
+      "arrivalTime": "2026-12-03T06:20:00",
+      "durationSeconds": 94200,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "CAI",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "CAI",
+        "fromCity": "Tunis",
+        "toCity": "Le Caire",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international du Caire",
+        "fromCountry": "Tunisie",
+        "toCountry": "Égypte",
+        "departureTime": "2026-12-01T22:10:00",
+        "arrivalTime": "2026-12-02T02:15:00",
+        "durationSeconds": 11100,
+        "carrier": "TU",
+        "carrierName": "Tunisair",
+        "flightNumber": "TU813",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "CAI",
+        "to": "AUH",
+        "fromCity": "Le Caire",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international du Caire",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Égypte",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-02T07:25:00",
+        "arrivalTime": "2026-12-02T12:45:00",
+        "durationSeconds": 12000,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY712",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-02T20:55:00",
+        "arrivalTime": "2026-12-03T06:20:00",
+        "durationSeconds": 23100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY422",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-19T12:00:00",
+      "arrivalTime": "2026-12-20T02:30:00",
+      "durationSeconds": 73800,
+      "stops": 2,
+      "route": [
+       "KBV",
+       "DXB",
+       "AMM",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "DXB",
+        "fromCity": "Krabi",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-19T12:00:00",
+        "arrivalTime": "2026-12-19T16:15:00",
+        "durationSeconds": 26100,
+        "carrier": "FZ",
+        "carrierName": "Fly Dubai",
+        "flightNumber": "FZ1464",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "AMM",
+        "fromCity": "Dubaï",
+        "toCity": "Amman",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport international Reine-Alia",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Jordanie",
+        "departureTime": "2026-12-19T19:35:00",
+        "arrivalTime": "2026-12-19T22:15:00",
+        "durationSeconds": 13200,
+        "carrier": "FZ",
+        "carrierName": "Fly Dubai",
+        "flightNumber": "FZ143",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AMM",
+        "to": "TUN",
+        "fromCity": "Amman",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Reine-Alia",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Jordanie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-20T00:25:00",
+        "arrivalTime": "2026-12-20T02:30:00",
+        "durationSeconds": 14700,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ553",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e018bc51340000cb51d0fe_0|19e018bc51340000cb51d0fe_1|19e018bc51340000cb51d0fe_2|18bc19e051460000d39aa7c7_0|18bc19e051460000d39aa7c7_1|18bc19e051460000d39aa7c7_2",
+     "price": 3673.992498,
+     "priceFormatted": "3674 EUR",
+     "totalDurationSeconds": 162300,
+     "bookingUrl": "https://kiwi.com/u/h9n7g6m",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-12-01T11:35:00",
+      "arrivalTime": "2026-12-02T18:10:00",
+      "durationSeconds": 88500,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "CAI",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "CAI",
+        "fromCity": "Tunis",
+        "toCity": "Le Caire",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international du Caire",
+        "fromCountry": "Tunisie",
+        "toCountry": "Égypte",
+        "departureTime": "2026-12-01T11:35:00",
+        "arrivalTime": "2026-12-01T15:45:00",
+        "durationSeconds": 11400,
+        "carrier": "MS",
+        "carrierName": "Egyptair",
+        "flightNumber": "MS844",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "CAI",
+        "to": "AUH",
+        "fromCity": "Le Caire",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international du Caire",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Égypte",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-01T19:00:00",
+        "arrivalTime": "2026-12-02T00:20:00",
+        "durationSeconds": 12000,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY716",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-02T08:35:00",
+        "arrivalTime": "2026-12-02T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-19T12:00:00",
+      "arrivalTime": "2026-12-20T02:30:00",
+      "durationSeconds": 73800,
+      "stops": 2,
+      "route": [
+       "KBV",
+       "DXB",
+       "AMM",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "DXB",
+        "fromCity": "Krabi",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-19T12:00:00",
+        "arrivalTime": "2026-12-19T16:15:00",
+        "durationSeconds": 26100,
+        "carrier": "FZ",
+        "carrierName": "Fly Dubai",
+        "flightNumber": "FZ1464",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "AMM",
+        "fromCity": "Dubaï",
+        "toCity": "Amman",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport international Reine-Alia",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Jordanie",
+        "departureTime": "2026-12-19T19:35:00",
+        "arrivalTime": "2026-12-19T22:15:00",
+        "durationSeconds": 13200,
+        "carrier": "FZ",
+        "carrierName": "Fly Dubai",
+        "flightNumber": "FZ143",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AMM",
+        "to": "TUN",
+        "fromCity": "Amman",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Reine-Alia",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Jordanie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-20T00:25:00",
+        "arrivalTime": "2026-12-20T02:30:00",
+        "durationSeconds": 14700,
+        "carrier": "RJ",
+        "carrierName": "Royal Jordanian",
+        "flightNumber": "RJ553",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e018bc51340000d94987e9_0|19e018bc51340000d94987e9_1|18bc19e0514600004bce3a48_0|18bc19e0514600004bce3a48_1|18bc19e0514600004bce3a48_2",
+     "price": 3884.308092,
+     "priceFormatted": "3884 EUR",
+     "totalDurationSeconds": 120000,
+     "bookingUrl": "https://kiwi.com/u/8m4gxc",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-12-01T10:40:00",
+      "arrivalTime": "2026-12-02T06:20:00",
+      "durationSeconds": 49200,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-01T10:40:00",
+        "arrivalTime": "2026-12-01T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-01T20:55:00",
+        "arrivalTime": "2026-12-02T06:20:00",
+        "durationSeconds": 23100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY422",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "KBV",
+      "to": "TUN",
+      "departureTime": "2026-12-19T20:40:00",
+      "arrivalTime": "2026-12-20T10:20:00",
+      "durationSeconds": 70800,
+      "stops": 2,
+      "route": [
+       "KBV",
+       "AUH",
+       "CAI",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "KBV",
+        "to": "AUH",
+        "fromCity": "Krabi",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport de Krabi",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-19T20:40:00",
+        "arrivalTime": "2026-12-20T00:50:00",
+        "durationSeconds": 25800,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY425",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "CAI",
+        "fromCity": "Abou Dabi",
+        "toCity": "Le Caire",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international du Caire",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Égypte",
+        "departureTime": "2026-12-20T02:45:00",
+        "arrivalTime": "2026-12-20T04:50:00",
+        "durationSeconds": 14700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY711",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "CAI",
+        "to": "TUN",
+        "fromCity": "Le Caire",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international du Caire",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Égypte",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-20T07:50:00",
+        "arrivalTime": "2026-12-20T10:20:00",
+        "durationSeconds": 12600,
+        "carrier": "MS",
+        "carrierName": "Egyptair",
+        "flightNumber": "MS843",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    }
+   ],
+   "searchTimeMs": 516,
+   "error": null
+  }
+ }
+}

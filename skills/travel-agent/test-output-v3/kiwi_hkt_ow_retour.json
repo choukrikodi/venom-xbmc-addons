@@ -1,0 +1,988 @@
+=== 2026-09-24T09:48:34+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "HKT", "flyTo": "BRU", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false, "one_for_city": false, "departureDate": "18/12/2026", "departureDateTo": "18/12/2026"}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"HKT → BRU on 18/12/2026–18/12/2026, 2 adults [≤2 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"23651f2b514500008735da45_0|23651f2b514500008735da45_1\",\n      \"price\": 770.0,\n      \"priceFormatted\": \"770 EUR\",\n      \"totalDurationSeconds\": 102600,\n      \"bookingUrl\": \"https://kiwi.com/u/b9wfzp\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T08:20:00\",\n        \"arrivalTime\": \"2026-12-19T06:50:00\",\n        \"durationSeconds\": 102600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"DOH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-12-18T08:20:00\",\n            \"arrivalTime\": \"2026-12-18T11:25:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR843\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-19T02:10:00\",\n            \"arrivalTime\": \"2026-12-19T06:50:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR195\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651f2b514500009f0c5850_0|23651f2b514500009f0c5850_1\",\n      \"price\": 840.0,\n      \"priceFormatted\": \"840 EUR\",\n      \"totalDurationSeconds\": 133200,\n      \"bookingUrl\": \"https://kiwi.com/u/2hjb5r\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T23:55:00\",\n        \"arrivalTime\": \"2026-12-20T06:55:00\",\n        \"durationSeconds\": 133200,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"PVG\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"PVG\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Shanghai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Shanghai-Pudong\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-18T23:55:00\",\n            \"arrivalTime\": \"2026-12-19T05:40:00\",\n            \"durationSeconds\": 17100,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1370\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PVG\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Shanghai\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Shanghai-Pudong\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-20T01:35:00\",\n            \"arrivalTime\": \"2026-12-20T06:55:00\",\n            \"durationSeconds\": 44400,\n            \"carrier\": \"HO\",\n            \"carrierName\": \"Juneyao Airlines\",\n            \"flightNumber\": \"HO1659\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651f2b51450000f52f2c15_0|23651f2b51450000f52f2c15_1\",\n      \"price\": 868.0,\n      \"priceFormatted\": \"868 EUR\",\n      \"totalDurationSeconds\": 65700,\n      \"bookingUrl\": \"https://kiwi.com/u/3vfu8cg\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T18:25:00\",\n        \"arrivalTime\": \"2026-12-19T06:40:00\",\n        \"durationSeconds\": 65700,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"PEK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-18T18:25:00\",\n            \"arrivalTime\": \"2026-12-19T00:50:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA822\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-19T02:30:00\",\n            \"arrivalTime\": \"2026-12-19T06:40:00\",\n            \"durationSeconds\": 40200,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA963\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651f2b514500003b637085_0|23651f2b514500003b637085_1\",\n      \"price\": 868.0,\n      \"priceFormatted\": \"868 EUR\",\n      \"totalDurationSeconds\": 73500,\n      \"bookingUrl\": \"https://kiwi.com/u/mkkmv4\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T16:15:00\",\n        \"arrivalTime\": \"2026-12-19T06:40:00\",\n        \"durationSeconds\": 73500,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"PEK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"PEK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Pékin\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Pékin-Capitale\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-18T16:15:00\",\n            \"arrivalTime\": \"2026-12-18T22:40:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA692\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"PEK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Pékin\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Pékin-Capitale\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-19T02:30:00\",\n            \"arrivalTime\": \"2026-12-19T06:40:00\",\n            \"durationSeconds\": 40200,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA963\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651f2b51450000b5a9cdd3_0|23651f2b51450000b5a9cdd3_1\",\n      \"price\": 868.0,\n      \"priceFormatted\": \"868 EUR\",\n      \"totalDurationSeconds\": 132000,\n      \"bookingUrl\": \"https://kiwi.com/u/hw7zg9\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T23:40:00\",\n        \"arrivalTime\": \"2026-12-20T06:20:00\",\n        \"durationSeconds\": 132000,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"TFU\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"TFU\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chengdu\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Chengdu Tianfu International Airport\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Chine\",\n            \"departureTime\": \"2026-12-18T23:40:00\",\n            \"arrivalTime\": \"2026-12-19T04:45:00\",\n            \"durationSeconds\": 14700,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA676\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"TFU\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Chengdu\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Chengdu Tianfu International Airport\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Chine\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-20T01:55:00\",\n            \"arrivalTime\": \"2026-12-20T06:20:00\",\n            \"durationSeconds\": 41100,\n            \"carrier\": \"CA\",\n            \"carrierName\": \"Air China\",\n            \"flightNumber\": \"CA463\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651f2b5145000043cf440a_0|23651f2b5145000043cf440a_1\",\n      \"price\": 987.0,\n      \"priceFormatted\": \"987 EUR\",\n      \"totalDurationSeconds\": 54300,\n      \"bookingUrl\": \"https://kiwi.com/u/4fqmqd\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T09:20:00\",\n        \"arrivalTime\": \"2026-12-18T18:25:00\",\n        \"durationSeconds\": 54300,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"DXB\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-18T09:20:00\",\n            \"arrivalTime\": \"2026-12-18T12:55:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK391\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-18T14:05:00\",\n            \"arrivalTime\": \"2026-12-18T18:25:00\",\n            \"durationSeconds\": 26400,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK181\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651f2b51450000397af51b_0|23651f2b51450000397af51b_1\",\n      \"price\": 987.0,\n      \"priceFormatted\": \"987 EUR\",\n      \"totalDurationSeconds\": 85200,\n      \"bookingUrl\": \"https://kiwi.com/u/4xd49y\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T19:05:00\",\n        \"arrivalTime\": \"2026-12-19T12:45:00\",\n        \"durationSeconds\": 85200,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"DXB\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-18T19:05:00\",\n            \"arrivalTime\": \"2026-12-18T22:40:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK379\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-19T08:30:00\",\n            \"arrivalTime\": \"2026-12-19T12:45:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK183\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651f2b514500009a69dc86_0|23651f2b514500009a69dc86_1\",\n      \"price\": 1053.0,\n      \"priceFormatted\": \"1053 EUR\",\n      \"totalDurationSeconds\": 90000,\n      \"bookingUrl\": \"https://kiwi.com/u/qnf7wk\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T12:20:00\",\n        \"arrivalTime\": \"2026-12-19T07:20:00\",\n        \"durationSeconds\": 90000,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"HKG\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"HKG\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Hong Kong\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Hong Kong\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Hong Kong\",\n            \"departureTime\": \"2026-12-18T12:20:00\",\n            \"arrivalTime\": \"2026-12-18T17:05:00\",\n            \"durationSeconds\": 13500,\n            \"carrier\": \"CX\",\n            \"carrierName\": \"Cathay Pacific\",\n            \"flightNumber\": \"CX770\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"HKG\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Hong Kong\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Hong Kong\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Hong Kong\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-19T00:15:00\",\n            \"arrivalTime\": \"2026-12-19T07:20:00\",\n            \"durationSeconds\": 50700,\n            \"carrier\": \"CX\",\n            \"carrierName\": \"Cathay Pacific\",\n            \"flightNumber\": \"CX291\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651f2b51450000a21fc287_0|23651f2b51450000a21fc287_1\",\n      \"price\": 1058.0,\n      \"priceFormatted\": \"1058 EUR\",\n      \"totalDurationSeconds\": 66600,\n      \"bookingUrl\": \"https://kiwi.com/u/8dr7nr\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T18:50:00\",\n        \"arrivalTime\": \"2026-12-19T07:20:00\",\n        \"durationSeconds\": 66600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"HKG\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"HKG\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Hong Kong\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Hong Kong\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Hong Kong\",\n            \"departureTime\": \"2026-12-18T18:50:00\",\n            \"arrivalTime\": \"2026-12-18T23:25:00\",\n            \"durationSeconds\": 12900,\n            \"carrier\": \"CX\",\n            \"carrierName\": \"Cathay Pacific\",\n            \"flightNumber\": \"CX778\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"HKG\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Hong Kong\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Hong Kong\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Hong Kong\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-19T00:15:00\",\n            \"arrivalTime\": \"2026-12-19T07:20:00\",\n            \"durationSeconds\": 50700,\n            \"carrier\": \"CX\",\n            \"carrierName\": \"Cathay Pacific\",\n            \"flightNumber\": \"CX291\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651f2b51450000d9219544_0|23651f2b51450000d9219544_1\",\n      \"price\": 1077.0,\n      \"priceFormatted\": \"1077 EUR\",\n      \"totalDurationSeconds\": 68100,\n      \"bookingUrl\": \"https://kiwi.com/u/k4sfhz\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T23:50:00\",\n        \"arrivalTime\": \"2026-12-19T12:45:00\",\n        \"durationSeconds\": 68100,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"DXB\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-18T23:50:00\",\n            \"arrivalTime\": \"2026-12-19T03:15:00\",\n            \"durationSeconds\": 23100,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK397\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-19T08:30:00\",\n            \"arrivalTime\": \"2026-12-19T12:45:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK183\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651f2b51450000f72736ec_0|23651f2b51450000f72736ec_1\",\n      \"price\": 1092.0,\n      \"priceFormatted\": \"1092 EUR\",\n      \"totalDurationSeconds\": 59100,\n      \"bookingUrl\": \"https://kiwi.com/u/x6jd4u\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T20:40:00\",\n        \"arrivalTime\": \"2026-12-19T07:05:00\",\n        \"durationSeconds\": 59100,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"BKK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-18T20:40:00\",\n            \"arrivalTime\": \"2026-12-18T22:15:00\",\n            \"durationSeconds\": 5700,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG222\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-19T00:30:00\",\n            \"arrivalTime\": \"2026-12-19T07:05:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG934\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651f2b51450000a4b8d78e_0|23651f2b51450000a4b8d78e_1\",\n      \"price\": 1092.0,\n      \"priceFormatted\": \"1092 EUR\",\n      \"totalDurationSeconds\": 63600,\n      \"bookingUrl\": \"https://kiwi.com/u/2dqukn\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T19:25:00\",\n        \"arrivalTime\": \"2026-12-19T07:05:00\",\n        \"durationSeconds\": 63600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"BKK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-18T19:25:00\",\n            \"arrivalTime\": \"2026-12-18T21:00:00\",\n            \"durationSeconds\": 5700,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG218\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-19T00:30:00\",\n            \"arrivalTime\": \"2026-12-19T07:05:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG934\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651f2b51450000158c83bf_0|23651f2b51450000158c83bf_1\",\n      \"price\": 1092.0,\n      \"priceFormatted\": \"1092 EUR\",\n      \"totalDurationSeconds\": 71700,\n      \"bookingUrl\": \"https://kiwi.com/u/b7nrgg\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T17:10:00\",\n        \"arrivalTime\": \"2026-12-19T07:05:00\",\n        \"durationSeconds\": 71700,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"BKK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-18T17:10:00\",\n            \"arrivalTime\": \"2026-12-18T18:40:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG216\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-19T00:30:00\",\n            \"arrivalTime\": \"2026-12-19T07:05:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG934\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651f2b51450000e40f0f9f_0|23651f2b51450000e40f0f9f_1\",\n      \"price\": 1105.0,\n      \"priceFormatted\": \"1105 EUR\",\n      \"totalDurationSeconds\": 75600,\n      \"bookingUrl\": \"https://kiwi.com/u/6mx6ch\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T16:05:00\",\n        \"arrivalTime\": \"2026-12-19T07:05:00\",\n        \"durationSeconds\": 75600,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"BKK\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-18T16:05:00\",\n            \"arrivalTime\": \"2026-12-18T17:35:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG212\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-19T00:30:00\",\n            \"arrivalTime\": \"2026-12-19T07:05:00\",\n            \"durationSeconds\": 45300,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG934\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651f2b51450000f6739c04_0|23651f2b51450000f6739c04_1\",\n      \"price\": 1151.663316,\n      \"priceFormatted\": \"1152 EUR\",\n      \"totalDurationSeconds\": 55800,\n      \"bookingUrl\": \"https://kiwi.com/u/kjq7zp4\",\n      \"imageId\": \"brussels_be\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-18T21:00:00\",\n        \"arrivalTime\": \"2026-12-19T06:30:00\",\n        \"durationSeconds\": 55800,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-18T21:00:00\",\n            \"arrivalTime\": \"2026-12-19T00:35:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY413\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-19T02:15:00\",\n            \"arrivalTime\": \"2026-12-19T06:30:00\",\n            \"durationSeconds\": 26100,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY57\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 738,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "HKT → BRU on 18/12/2026–18/12/2026, 2 adults [≤2 stops/sector; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 15,
+   "itineraries": [
+    {
+     "id": "23651f2b514500008735da45_0|23651f2b514500008735da45_1",
+     "price": 770.0,
+     "priceFormatted": "770 EUR",
+     "totalDurationSeconds": 102600,
+     "bookingUrl": "https://kiwi.com/u/b9wfzp",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T08:20:00",
+      "arrivalTime": "2026-12-19T06:50:00",
+      "durationSeconds": 102600,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "DOH",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DOH",
+        "fromCity": "Phuket",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Qatar",
+        "departureTime": "2026-12-18T08:20:00",
+        "arrivalTime": "2026-12-18T11:25:00",
+        "durationSeconds": 25500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR843",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "BRU",
+        "fromCity": "Doha",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Qatar",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-19T02:10:00",
+        "arrivalTime": "2026-12-19T06:50:00",
+        "durationSeconds": 24000,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR195",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651f2b514500009f0c5850_0|23651f2b514500009f0c5850_1",
+     "price": 840.0,
+     "priceFormatted": "840 EUR",
+     "totalDurationSeconds": 133200,
+     "bookingUrl": "https://kiwi.com/u/2hjb5r",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T23:55:00",
+      "arrivalTime": "2026-12-20T06:55:00",
+      "durationSeconds": 133200,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "PVG",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "PVG",
+        "fromCity": "Phuket",
+        "toCity": "Shanghai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Shanghai-Pudong",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Chine",
+        "departureTime": "2026-12-18T23:55:00",
+        "arrivalTime": "2026-12-19T05:40:00",
+        "durationSeconds": 17100,
+        "carrier": "HO",
+        "carrierName": "Juneyao Airlines",
+        "flightNumber": "HO1370",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "PVG",
+        "to": "BRU",
+        "fromCity": "Shanghai",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Shanghai-Pudong",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Chine",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-20T01:35:00",
+        "arrivalTime": "2026-12-20T06:55:00",
+        "durationSeconds": 44400,
+        "carrier": "HO",
+        "carrierName": "Juneyao Airlines",
+        "flightNumber": "HO1659",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651f2b51450000f52f2c15_0|23651f2b51450000f52f2c15_1",
+     "price": 868.0,
+     "priceFormatted": "868 EUR",
+     "totalDurationSeconds": 65700,
+     "bookingUrl": "https://kiwi.com/u/3vfu8cg",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T18:25:00",
+      "arrivalTime": "2026-12-19T06:40:00",
+      "durationSeconds": 65700,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "PEK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "PEK",
+        "fromCity": "Phuket",
+        "toCity": "Pékin",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Pékin-Capitale",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Chine",
+        "departureTime": "2026-12-18T18:25:00",
+        "arrivalTime": "2026-12-19T00:50:00",
+        "durationSeconds": 19500,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA822",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "PEK",
+        "to": "BRU",
+        "fromCity": "Pékin",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Pékin-Capitale",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Chine",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-19T02:30:00",
+        "arrivalTime": "2026-12-19T06:40:00",
+        "durationSeconds": 40200,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA963",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651f2b514500003b637085_0|23651f2b514500003b637085_1",
+     "price": 868.0,
+     "priceFormatted": "868 EUR",
+     "totalDurationSeconds": 73500,
+     "bookingUrl": "https://kiwi.com/u/mkkmv4",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T16:15:00",
+      "arrivalTime": "2026-12-19T06:40:00",
+      "durationSeconds": 73500,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "PEK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "PEK",
+        "fromCity": "Phuket",
+        "toCity": "Pékin",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Pékin-Capitale",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Chine",
+        "departureTime": "2026-12-18T16:15:00",
+        "arrivalTime": "2026-12-18T22:40:00",
+        "durationSeconds": 19500,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA692",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "PEK",
+        "to": "BRU",
+        "fromCity": "Pékin",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Pékin-Capitale",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Chine",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-19T02:30:00",
+        "arrivalTime": "2026-12-19T06:40:00",
+        "durationSeconds": 40200,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA963",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651f2b51450000b5a9cdd3_0|23651f2b51450000b5a9cdd3_1",
+     "price": 868.0,
+     "priceFormatted": "868 EUR",
+     "totalDurationSeconds": 132000,
+     "bookingUrl": "https://kiwi.com/u/hw7zg9",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T23:40:00",
+      "arrivalTime": "2026-12-20T06:20:00",
+      "durationSeconds": 132000,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "TFU",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "TFU",
+        "fromCity": "Phuket",
+        "toCity": "Chengdu",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Chengdu Tianfu International Airport",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Chine",
+        "departureTime": "2026-12-18T23:40:00",
+        "arrivalTime": "2026-12-19T04:45:00",
+        "durationSeconds": 14700,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA676",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "TFU",
+        "to": "BRU",
+        "fromCity": "Chengdu",
+        "toCity": "Bruxelles",
+        "fromName": "Chengdu Tianfu International Airport",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Chine",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-20T01:55:00",
+        "arrivalTime": "2026-12-20T06:20:00",
+        "durationSeconds": 41100,
+        "carrier": "CA",
+        "carrierName": "Air China",
+        "flightNumber": "CA463",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651f2b5145000043cf440a_0|23651f2b5145000043cf440a_1",
+     "price": 987.0,
+     "priceFormatted": "987 EUR",
+     "totalDurationSeconds": 54300,
+     "bookingUrl": "https://kiwi.com/u/4fqmqd",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T09:20:00",
+      "arrivalTime": "2026-12-18T18:25:00",
+      "durationSeconds": 54300,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "DXB",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DXB",
+        "fromCity": "Phuket",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-18T09:20:00",
+        "arrivalTime": "2026-12-18T12:55:00",
+        "durationSeconds": 23700,
+        "carrier": "EK",
+        "carrierName": "Emirates",
+        "flightNumber": "EK391",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "BRU",
+        "fromCity": "Dubaï",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-18T14:05:00",
+        "arrivalTime": "2026-12-18T18:25:00",
+        "durationSeconds": 26400,
+        "carrier": "EK",
+        "carrierName": "Emirates",
+        "flightNumber": "EK181",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651f2b51450000397af51b_0|23651f2b51450000397af51b_1",
+     "price": 987.0,
+     "priceFormatted": "987 EUR",
+     "totalDurationSeconds": 85200,
+     "bookingUrl": "https://kiwi.com/u/4xd49y",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T19:05:00",
+      "arrivalTime": "2026-12-19T12:45:00",
+      "durationSeconds": 85200,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "DXB",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DXB",
+        "fromCity": "Phuket",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-18T19:05:00",
+        "arrivalTime": "2026-12-18T22:40:00",
+        "durationSeconds": 23700,
+        "carrier": "EK",
+        "carrierName": "Emirates",
+        "flightNumber": "EK379",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "BRU",
+        "fromCity": "Dubaï",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-19T08:30:00",
+        "arrivalTime": "2026-12-19T12:45:00",
+        "durationSeconds": 26100,
+        "carrier": "EK",
+        "carrierName": "Emirates",
+        "flightNumber": "EK183",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651f2b514500009a69dc86_0|23651f2b514500009a69dc86_1",
+     "price": 1053.0,
+     "priceFormatted": "1053 EUR",
+     "totalDurationSeconds": 90000,
+     "bookingUrl": "https://kiwi.com/u/qnf7wk",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T12:20:00",
+      "arrivalTime": "2026-12-19T07:20:00",
+      "durationSeconds": 90000,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "HKG",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "HKG",
+        "fromCity": "Phuket",
+        "toCity": "Hong Kong",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Hong Kong",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Hong Kong",
+        "departureTime": "2026-12-18T12:20:00",
+        "arrivalTime": "2026-12-18T17:05:00",
+        "durationSeconds": 13500,
+        "carrier": "CX",
+        "carrierName": "Cathay Pacific",
+        "flightNumber": "CX770",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "HKG",
+        "to": "BRU",
+        "fromCity": "Hong Kong",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Hong Kong",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Hong Kong",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-19T00:15:00",
+        "arrivalTime": "2026-12-19T07:20:00",
+        "durationSeconds": 50700,
+        "carrier": "CX",
+        "carrierName": "Cathay Pacific",
+        "flightNumber": "CX291",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651f2b51450000a21fc287_0|23651f2b51450000a21fc287_1",
+     "price": 1058.0,
+     "priceFormatted": "1058 EUR",
+     "totalDurationSeconds": 66600,
+     "bookingUrl": "https://kiwi.com/u/8dr7nr",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T18:50:00",
+      "arrivalTime": "2026-12-19T07:20:00",
+      "durationSeconds": 66600,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "HKG",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "HKG",
+        "fromCity": "Phuket",
+        "toCity": "Hong Kong",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Hong Kong",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Hong Kong",
+        "departureTime": "2026-12-18T18:50:00",
+        "arrivalTime": "2026-12-18T23:25:00",
+        "durationSeconds": 12900,
+        "carrier": "CX",
+        "carrierName": "Cathay Pacific",
+        "flightNumber": "CX778",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "HKG",
+        "to": "BRU",
+        "fromCity": "Hong Kong",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Hong Kong",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Hong Kong",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-19T00:15:00",
+        "arrivalTime": "2026-12-19T07:20:00",
+        "durationSeconds": 50700,
+        "carrier": "CX",
+        "carrierName": "Cathay Pacific",
+        "flightNumber": "CX291",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651f2b51450000d9219544_0|23651f2b51450000d9219544_1",
+     "price": 1077.0,
+     "priceFormatted": "1077 EUR",
+     "totalDurationSeconds": 68100,
+     "bookingUrl": "https://kiwi.com/u/k4sfhz",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T23:50:00",
+      "arrivalTime": "2026-12-19T12:45:00",
+      "durationSeconds": 68100,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "DXB",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DXB",
+        "fromCity": "Phuket",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-18T23:50:00",
+        "arrivalTime": "2026-12-19T03:15:00",
+        "durationSeconds": 23100,
+        "carrier": "EK",
+        "carrierName": "Emirates",
+        "flightNumber": "EK397",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "BRU",
+        "fromCity": "Dubaï",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-19T08:30:00",
+        "arrivalTime": "2026-12-19T12:45:00",
+        "durationSeconds": 26100,
+        "carrier": "EK",
+        "carrierName": "Emirates",
+        "flightNumber": "EK183",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651f2b51450000f72736ec_0|23651f2b51450000f72736ec_1",
+     "price": 1092.0,
+     "priceFormatted": "1092 EUR",
+     "totalDurationSeconds": 59100,
+     "bookingUrl": "https://kiwi.com/u/x6jd4u",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T20:40:00",
+      "arrivalTime": "2026-12-19T07:05:00",
+      "durationSeconds": 59100,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "BKK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "BKK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-18T20:40:00",
+        "arrivalTime": "2026-12-18T22:15:00",
+        "durationSeconds": 5700,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG222",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "BRU",
+        "fromCity": "Bangkok",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-19T00:30:00",
+        "arrivalTime": "2026-12-19T07:05:00",
+        "durationSeconds": 45300,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG934",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651f2b51450000a4b8d78e_0|23651f2b51450000a4b8d78e_1",
+     "price": 1092.0,
+     "priceFormatted": "1092 EUR",
+     "totalDurationSeconds": 63600,
+     "bookingUrl": "https://kiwi.com/u/2dqukn",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T19:25:00",
+      "arrivalTime": "2026-12-19T07:05:00",
+      "durationSeconds": 63600,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "BKK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "BKK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-18T19:25:00",
+        "arrivalTime": "2026-12-18T21:00:00",
+        "durationSeconds": 5700,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG218",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "BRU",
+        "fromCity": "Bangkok",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-19T00:30:00",
+        "arrivalTime": "2026-12-19T07:05:00",
+        "durationSeconds": 45300,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG934",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651f2b51450000158c83bf_0|23651f2b51450000158c83bf_1",
+     "price": 1092.0,
+     "priceFormatted": "1092 EUR",
+     "totalDurationSeconds": 71700,
+     "bookingUrl": "https://kiwi.com/u/b7nrgg",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T17:10:00",
+      "arrivalTime": "2026-12-19T07:05:00",
+      "durationSeconds": 71700,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "BKK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "BKK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-18T17:10:00",
+        "arrivalTime": "2026-12-18T18:40:00",
+        "durationSeconds": 5400,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG216",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "BRU",
+        "fromCity": "Bangkok",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-19T00:30:00",
+        "arrivalTime": "2026-12-19T07:05:00",
+        "durationSeconds": 45300,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG934",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651f2b51450000e40f0f9f_0|23651f2b51450000e40f0f9f_1",
+     "price": 1105.0,
+     "priceFormatted": "1105 EUR",
+     "totalDurationSeconds": 75600,
+     "bookingUrl": "https://kiwi.com/u/6mx6ch",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T16:05:00",
+      "arrivalTime": "2026-12-19T07:05:00",
+      "durationSeconds": 75600,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "BKK",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "BKK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-18T16:05:00",
+        "arrivalTime": "2026-12-18T17:35:00",
+        "durationSeconds": 5400,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG212",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "BRU",
+        "fromCity": "Bangkok",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-19T00:30:00",
+        "arrivalTime": "2026-12-19T07:05:00",
+        "durationSeconds": 45300,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG934",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651f2b51450000f6739c04_0|23651f2b51450000f6739c04_1",
+     "price": 1151.663316,
+     "priceFormatted": "1152 EUR",
+     "totalDurationSeconds": 55800,
+     "bookingUrl": "https://kiwi.com/u/kjq7zp4",
+     "imageId": "brussels_be",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "BRU",
+      "departureTime": "2026-12-18T21:00:00",
+      "arrivalTime": "2026-12-19T06:30:00",
+      "durationSeconds": 55800,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-18T21:00:00",
+        "arrivalTime": "2026-12-19T00:35:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY413",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BRU",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-19T02:15:00",
+        "arrivalTime": "2026-12-19T06:30:00",
+        "durationSeconds": 26100,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY57",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 738,
+   "error": null
+  }
+ }
+}

@@ -1,0 +1,324 @@
+{
+  "case_name": "asie_v3",
+  "notice": "L3 selon PROMPT_L3_codex_v2.md : une étape préférée, deux maximum avec gain net prouvé. 14 requêtes proposées, NON exécutées. Priorité hôtels 16/17/18 nuits à Nai Yang ; prix longs absents des traces d8f8a0d. Aucun quota illimité présumé : exécution gratuite à confirmer par orchestrateur. Les arguments à plat sont placés sous arguments conformément au manifeste asie_v2.json. Vérifier heures locales et nuits à réception ; aucune réservation.",
+  "requests": [
+    {
+      "name": "trivago_naiyang_16n",
+      "server": "trivago",
+      "tool": "trivago-accommodation-search",
+      "arguments": {
+        "adults": 2,
+        "children": 0,
+        "rooms": 1,
+        "country": "BE",
+        "currency": "EUR",
+        "hotel_rating": {
+          "4star": true,
+          "5star": true
+        },
+        "query": "Nai Yang, Phuket",
+        "arrival": "2026-11-30",
+        "departure": "2026-12-16"
+      }
+    },
+    {
+      "name": "trivago_naiyang_17n",
+      "server": "trivago",
+      "tool": "trivago-accommodation-search",
+      "arguments": {
+        "adults": 2,
+        "children": 0,
+        "rooms": 1,
+        "country": "BE",
+        "currency": "EUR",
+        "hotel_rating": {
+          "4star": true,
+          "5star": true
+        },
+        "query": "Nai Yang, Phuket",
+        "arrival": "2026-11-30",
+        "departure": "2026-12-17"
+      }
+    },
+    {
+      "name": "trivago_naiyang_18n",
+      "server": "trivago",
+      "tool": "trivago-accommodation-search",
+      "arguments": {
+        "adults": 2,
+        "children": 0,
+        "rooms": 1,
+        "country": "BE",
+        "currency": "EUR",
+        "hotel_rating": {
+          "4star": true,
+          "5star": true
+        },
+        "query": "Nai Yang, Phuket",
+        "arrival": "2026-11-30",
+        "departure": "2026-12-18"
+      }
+    },
+    {
+      "name": "trivago_aonang_comparatif_18n",
+      "server": "trivago",
+      "tool": "trivago-accommodation-search",
+      "arguments": {
+        "adults": 2,
+        "children": 0,
+        "rooms": 1,
+        "country": "BE",
+        "currency": "EUR",
+        "hotel_rating": {
+          "4star": true,
+          "5star": true
+        },
+        "query": "Ao Nang, Krabi",
+        "arrival": "2026-12-02",
+        "departure": "2026-12-20"
+      }
+    },
+    {
+      "name": "trivago_khaolak_comparatif_18n",
+      "server": "trivago",
+      "tool": "trivago-accommodation-search",
+      "arguments": {
+        "adults": 2,
+        "children": 0,
+        "rooms": 1,
+        "country": "BE",
+        "currency": "EUR",
+        "hotel_rating": {
+          "4star": true,
+          "5star": true
+        },
+        "query": "Khao Lak",
+        "arrival": "2026-11-30",
+        "departure": "2026-12-18"
+      }
+    },
+    {
+      "name": "trivago_naiyang_prix_16n",
+      "server": "trivago",
+      "tool": "trivago-accommodation-search",
+      "arguments": {
+        "adults": 2,
+        "children": 0,
+        "rooms": 1,
+        "country": "BE",
+        "currency": "EUR",
+        "hotel_rating": {
+          "4star": true,
+          "5star": true
+        },
+        "query": "Nai Yang, Phuket",
+        "arrival": "2026-12-04",
+        "departure": "2026-12-20"
+      }
+    },
+    {
+      "name": "trivago_naiyang_variante_17n",
+      "server": "trivago",
+      "tool": "trivago-accommodation-search",
+      "arguments": {
+        "adults": 2,
+        "children": 0,
+        "rooms": 1,
+        "country": "BE",
+        "currency": "EUR",
+        "hotel_rating": {
+          "4star": true,
+          "5star": true
+        },
+        "query": "Nai Yang, Phuket",
+        "arrival": "2026-11-29",
+        "departure": "2026-12-16"
+      }
+    },
+    {
+      "name": "kiwi_hkt_exact_16n",
+      "server": "kiwi",
+      "tool": "search-flight",
+      "arguments": {
+        "flyFrom": "BRU",
+        "flyTo": "HKT",
+        "adults": 2,
+        "children": 0,
+        "infants": 0,
+        "adults_hold_bags": [
+          1,
+          1
+        ],
+        "currency": "EUR",
+        "locale": "fr",
+        "sort": "price",
+        "max_sector_stopovers": 2,
+        "allow_self_transfer": false,
+        "allow_diff_airport_connection": false,
+        "one_for_city": false,
+        "departureDate": "29/11/2026",
+        "departureDateTo": "29/11/2026",
+        "returnDate": "16/12/2026",
+        "returnDateTo": "16/12/2026"
+      }
+    },
+    {
+      "name": "kiwi_hkt_exact_17n",
+      "server": "kiwi",
+      "tool": "search-flight",
+      "arguments": {
+        "flyFrom": "BRU",
+        "flyTo": "HKT",
+        "adults": 2,
+        "children": 0,
+        "infants": 0,
+        "adults_hold_bags": [
+          1,
+          1
+        ],
+        "currency": "EUR",
+        "locale": "fr",
+        "sort": "price",
+        "max_sector_stopovers": 2,
+        "allow_self_transfer": false,
+        "allow_diff_airport_connection": false,
+        "one_for_city": false,
+        "departureDate": "29/11/2026",
+        "departureDateTo": "29/11/2026",
+        "returnDate": "17/12/2026",
+        "returnDateTo": "17/12/2026"
+      }
+    },
+    {
+      "name": "kiwi_hkt_ow_aller",
+      "server": "kiwi",
+      "tool": "search-flight",
+      "arguments": {
+        "flyFrom": "BRU",
+        "flyTo": "HKT",
+        "adults": 2,
+        "children": 0,
+        "infants": 0,
+        "adults_hold_bags": [
+          1,
+          1
+        ],
+        "currency": "EUR",
+        "locale": "fr",
+        "sort": "price",
+        "max_sector_stopovers": 2,
+        "allow_self_transfer": false,
+        "allow_diff_airport_connection": false,
+        "one_for_city": false,
+        "departureDate": "29/11/2026",
+        "departureDateTo": "29/11/2026"
+      }
+    },
+    {
+      "name": "kiwi_hkt_ow_retour",
+      "server": "kiwi",
+      "tool": "search-flight",
+      "arguments": {
+        "flyFrom": "HKT",
+        "flyTo": "BRU",
+        "adults": 2,
+        "children": 0,
+        "infants": 0,
+        "adults_hold_bags": [
+          1,
+          1
+        ],
+        "currency": "EUR",
+        "locale": "fr",
+        "sort": "price",
+        "max_sector_stopovers": 2,
+        "allow_self_transfer": false,
+        "allow_diff_airport_connection": false,
+        "one_for_city": false,
+        "departureDate": "18/12/2026",
+        "departureDateTo": "18/12/2026"
+      }
+    },
+    {
+      "name": "kiwi_hkt_fenetre_16n",
+      "server": "kiwi",
+      "tool": "search-flight",
+      "arguments": {
+        "flyFrom": "BRU",
+        "flyTo": "HKT",
+        "adults": 2,
+        "children": 0,
+        "infants": 0,
+        "adults_hold_bags": [
+          1,
+          1
+        ],
+        "currency": "EUR",
+        "locale": "fr",
+        "sort": "price",
+        "max_sector_stopovers": 2,
+        "allow_self_transfer": false,
+        "allow_diff_airport_connection": false,
+        "one_for_city": false,
+        "departureDate": "15/11/2026",
+        "departureDateTo": "10/12/2026",
+        "nights_in_dst_from": 16,
+        "nights_in_dst_to": 16
+      }
+    },
+    {
+      "name": "kiwi_hkt_fenetre_17n",
+      "server": "kiwi",
+      "tool": "search-flight",
+      "arguments": {
+        "flyFrom": "BRU",
+        "flyTo": "HKT",
+        "adults": 2,
+        "children": 0,
+        "infants": 0,
+        "adults_hold_bags": [
+          1,
+          1
+        ],
+        "currency": "EUR",
+        "locale": "fr",
+        "sort": "price",
+        "max_sector_stopovers": 2,
+        "allow_self_transfer": false,
+        "allow_diff_airport_connection": false,
+        "one_for_city": false,
+        "departureDate": "15/11/2026",
+        "departureDateTo": "10/12/2026",
+        "nights_in_dst_from": 17,
+        "nights_in_dst_to": 17
+      }
+    },
+    {
+      "name": "kiwi_hkt_fenetre_18n",
+      "server": "kiwi",
+      "tool": "search-flight",
+      "arguments": {
+        "flyFrom": "BRU",
+        "flyTo": "HKT",
+        "adults": 2,
+        "children": 0,
+        "infants": 0,
+        "adults_hold_bags": [
+          1,
+          1
+        ],
+        "currency": "EUR",
+        "locale": "fr",
+        "sort": "price",
+        "max_sector_stopovers": 2,
+        "allow_self_transfer": false,
+        "allow_diff_airport_connection": false,
+        "one_for_city": false,
+        "departureDate": "15/11/2026",
+        "departureDateTo": "10/12/2026",
+        "nights_in_dst_from": 18,
+        "nights_in_dst_to": 18
+      }
+    }
+  ]
+}
