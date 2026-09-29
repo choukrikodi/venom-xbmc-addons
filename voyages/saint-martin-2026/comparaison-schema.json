@@ -1,7 +1,7 @@
 {
   "$schema_notice": "Structure de comparaison par offre pour Saint-Martin 2026. Aucune donnée personnelle. Une ligne = une offre (villa, hôtel, ou agence proposant plusieurs unités). Ne pas remplir 'statut': 'confirmé' sans prix + disponibilité + source datée concordants.",
   "fenetres_dates_reference": {
-    "$correction_29_09_2026_v2": "Le voyageur a précisé le 29/09/2026 (deuxième correction, prioritaire sur la première) : pas une date fixe unique, mais une FENÊTRE DE BALAYAGE 'dernière semaine de novembre 2026 aux quinze premiers jours de décembre 2026'. Bornes provisoires explicites données par le voyageur : 23/11/2026 → 15/12/2026. Hypothèse posée faute de précision supplémentaire : 'dernière semaine de novembre' = 23/11 au 30/11 (7-8 jours) ; 'quinze premiers jours de décembre' = 01/12 au 15/12. Si le voyageur voulait dire autre chose (ex: dernière semaine calendaire ISO), le recalcul est trivial : seules les bornes ci-dessous changent, pas la méthode.",
+    "$correction_29_09_2026_v2": "Le voyageur a précisé le 29/09/2026 (deuxième correction, prioritaire sur la première) : pas une date fixe unique, mais une FENÊTRE DE BALAYAGE 'dernière semaine de novembre 2026 aux quinze premiers jours de décembre 2026' — c'est la seule formulation venant du voyageur. Le jour exact '23/11' n'a PAS été donné par le voyageur : c'est une interprétation provisoire proposée pour le balayage (traduction de 'dernière semaine de novembre' en borne numérique), à confirmer ou corriger. 'Quinze premiers jours de décembre' = 01/12 au 15/12 est une lecture littérale plus directe, mais reste elle aussi non confirmée mot pour mot par le voyageur. Si le voyageur voulait dire autre chose (ex: dernière semaine calendaire ISO), le recalcul est trivial : seules les bornes ci-dessous changent, pas la méthode.",
     "A_balayage_9_nuits": {
       "borne_min_arrivee_sxm": "2026-11-23",
       "borne_max_depart_sxm": "2026-12-15",
@@ -31,7 +31,8 @@
           "label": "ancre tardive"
         }
       ],
-      "statut": "SCÉNARIO PRINCIPAL — toute nouvelle cotation villa/hôtel/vol doit se rattacher explicitement à l'une des 14 fenêtres possibles (ou, pour les vols, balayer tout l'intervalle)"
+      "statut": "SCÉNARIO PRINCIPAL — toute nouvelle cotation villa/hôtel/vol doit se rattacher explicitement à l'une des 14 fenêtres possibles (ou, pour les vols, balayer tout l'intervalle)",
+      "origine_des_bornes": "Bornes PROPOSÉES pour le balayage à partir de la formulation du voyageur ('dernière semaine de novembre' à 'quinze premiers jours de décembre'), pas des dates exactes communiquées telles quelles par le voyageur — à faire confirmer avant de les traiter comme définitives."
     },
     "H_16_nuits_historique": {
       "checkin": "2026-11-30",
@@ -51,7 +52,7 @@
   },
   "champs": {
     "offre_id": "identifiant court unique (ex: fr-orientbay-01)",
-    "cote": "enum: FR | NL",
+    "cote": "enum: FR | NL | a_verifier (côté non déterminé par les sources disponibles)",
     "zone": "ex: Orient Bay, Terres Basses, Grand Case, Simpson Bay, Maho, autre",
     "formule": "enum: villa_seule | hotel | package_vol_hebergement | voyage_a_composer | agence_locale_multi_unites",
     "nom_offre": "nom exact de l'établissement ou de la villa tel qu'affiché par la source",
@@ -97,11 +98,7 @@
       "sejour_minimum_nuits": "nombre ou null",
       "autres": "texte libre"
     },
-    "avis": {
-      "nombre": "entier",
-      "note_moyenne": "nombre ou null",
-      "echelle": "ex: /10 ou /5"
-    },
+    "avis": "LISTE d'objets {source, nombre, note_moyenne, echelle} — un élément par plateforme/corpus d'avis distinct (ex: St Martin Blue, Isle Blue, WhereToStay, Airbnb). RÈGLE : ne jamais additionner deux corpus distincts entre eux ; les citer séparément.",
     "photos": {
       "disponibles": "booléen",
       "droits": "enum: lien_externe_uniquement | reutilisables | inconnu",
@@ -148,11 +145,14 @@
         "note": "non documenté"
       },
       "prix": {
+        "fenetre_balayage_checkin": null,
+        "fenetre_balayage_checkout": null,
+        "fenetre_legacy": "H_16_nuits_historique",
         "montant_total": 3729.6,
         "devise": "EUR",
         "montant_par_nuit": null,
         "tarif_correspond_a_l_unite_exacte": false,
-        "fenetre_legacy": "H_16_nuits_historique"
+        "note_estimation": "Tarif de base 16 nuits (scénario historique), pas recalculé pour la fenêtre 9 nuits actuelle"
       },
       "disponibilite": {
         "statut": "inconnue",
@@ -165,11 +165,14 @@
         "sejour_minimum_nuits": null,
         "autres": ""
       },
-      "avis": {
-        "nombre": 400,
-        "note_moyenne": 8.6,
-        "echelle": "/10"
-      },
+      "avis": [
+        {
+          "source": "Booking.com",
+          "nombre": 400,
+          "note_moyenne": 8.6,
+          "echelle": "/10"
+        }
+      ],
       "photos": {
         "disponibles": true,
         "droits": "lien_externe_uniquement",
@@ -182,7 +185,7 @@
       },
       "statut": {
         "valeur": "incomplet",
-        "regle": "prix = tarif de base, pas celui de l'unite_exacte ; disponibilité non confirmée ; type de plage non tranché"
+        "regle": "prix = tarif de base 16 nuits, pas recalculé pour la fenêtre 9 nuits ; disponibilité non confirmée ; type de plage non tranché"
       },
       "ecarts_signales": "Équipements Booking listent 'plage privée' alors que la plage la plus proche est à 550 m ; à retirer de toute sélection 'accès direct au sable'."
     },
@@ -215,11 +218,14 @@
         "note": ""
       },
       "prix": {
+        "fenetre_balayage_checkin": null,
+        "fenetre_balayage_checkout": null,
+        "fenetre_legacy": "X_9_nuits_ci_desalignee",
         "montant_total": null,
         "devise": "EUR",
         "montant_par_nuit": null,
         "tarif_correspond_a_l_unite_exacte": false,
-        "fenetre_legacy": "X_9_nuits_ci_desalignee"
+        "note_estimation": ""
       },
       "disponibilite": {
         "statut": "inconnue",
@@ -232,14 +238,10 @@
         "sejour_minimum_nuits": null,
         "autres": ""
       },
-      "avis": {
-        "nombre": 0,
-        "note_moyenne": null,
-        "echelle": "/10"
-      },
+      "avis": [],
       "photos": {
         "disponibles": false,
-        "droits": "inconnu",
+        "droits": "a_verifier",
         "note": ""
       },
       "source": {
@@ -249,7 +251,7 @@
       },
       "statut": {
         "valeur": "indisponible",
-        "regle": "résultats hors zone demandée (incluant des propriétés à Anguilla), filtre 5★ non respecté par l'outil (un résultat 3★ vu ailleurs), aucun champ plage/piscine/jacuzzi disponible"
+        "regle": "résultats hors zone demandée (incluant des propriétés à Anguilla), filtre 5★ non respecté par l'outil, aucun champ plage/piscine/jacuzzi disponible"
       },
       "ecarts_signales": "Requête géographique trop large : à relancer par nom d'établissement ou coordonnées précises avant réutilisation."
     },
@@ -265,62 +267,71 @@
       "acces_direct_sable": {
         "statut": "a_verifier",
         "distance_m": null,
-        "source_de_la_distance": "Annoncé 'accès direct plage' par le gestionnaire (luxvillavacation.com) et stmartinblue.com ; aucune mesure indépendante, aucune preuve d'un statut légalement privé — voir sources-legales-plages.md"
+        "source_de_la_distance": "'Accès direct plage' annoncé (luxvillavacation.com, stmartinblue.com) ; luxvillavacation.com confirme aussi villa en bord de mer avec piscine/jacuzzi privés (corroboration indépendante des équipements, pas de la distance exacte). Exceptional Villas avertit que l'accès/le sable sont variables selon la houle et la saison."
       },
       "plage": {
         "type": "a_verifier",
         "definition_privee_exclusive": null,
         "definition_publique_acces_prive": null,
-        "note_verification": "Ne jamais présenter comme 'plage privée' sans preuve légale (domaine public maritime côté FR) ; au mieux 'accès direct' à une plage publique depuis la villa"
+        "note_verification": "Ne jamais présenter comme 'plage privée' sans preuve légale (domaine public maritime côté FR) ; au mieux 'accès direct' à une plage publique, variable selon houle/saison"
       },
       "piscine": {
         "statut": "privee_a_l_unite",
-        "note": "annoncée piscine privée par les deux sources agence"
+        "note": "annoncée par l'agence ET confirmée indépendamment par luxvillavacation.com"
       },
       "jacuzzi": {
         "statut": "prive_a_l_unite",
-        "note": "jacuzzi terrasse privé annoncé"
+        "note": "annoncé par l'agence ET confirmé indépendamment par luxvillavacation.com"
       },
       "prix": {
         "fenetre_balayage_checkin": "2026-11-30",
         "fenetre_balayage_checkout": "2026-12-09",
-        "montant_total": 11895,
+        "montant_total": 12705,
         "devise": "USD",
         "montant_par_nuit": null,
         "tarif_correspond_a_l_unite_exacte": true,
-        "note_estimation": "⚠️ ESTIMATION INDICATIVE, PAS UN DEVIS. Calculée à partir de la grille exceptionalvillas.com (1350 USD/nuit 22/11-05/12 ; 1150 USD/nuit +10% du 06 au 19/12) en supposant que la frontière de bande tombe entre le 05/12 et le 06/12 (hypothèse non confirmée). Écart signalé par Codex avec une grille VillaLuxe distincte, non chiffré ici. Aucun devis total ni disponibilité obtenus pour cette fenêtre précise."
+        "note_estimation": "⚠️ SIMULATION ARITHMÉTIQUE, PAS UN DEVIS, PAS RÉSERVABLE. Source exceptionalvillas.com/la-perla-bianca/l51031 : 6 nuits 30/11-06/12 à 1350 USD/nuit + 3 nuits 06/12-09/12 à 1150 USD/nuit, taxe de 10% sur la totalité du séjour ('Additional Information') = (6×1350 + 3×1150) × 1.10 = 12 705 USD. Frais de ménage 150 USD mentionnés mais réservés au séjour minimal de la grille, non ajoutés ici faute de certitude sur son applicabilité à 9 nuits. Autres simulations sur la même grille pour les 2 autres ancres : 23/11→02/12 = 13 365 USD, 06/12→15/12 = 11 385 USD (mêmes réserves). AUCUNE des 3 ancres n'a de prix total final NI de disponibilité publiés (Mission A Codex, 18:49-18:52 UTC le 29/09/2026) : St Martin Blue affiche 'Grand Total $0 / Please select travel dates' tant qu'aucune date n'est sélectionnée dans son calendrier, qui n'expose pas les disponibilités en texte lisible. VillasInLuxury (villasinluxury.com/saint-martin/villa-la-perla-bianca) affiche des prix 7 NUITS distincts (28/11: 9450 USD, 05/12: 8250 USD, 12/12: 8050 USD) avec la mention 'Please enquire for accurate pricing', taxes/service en sus — ces prix 7 nuits ne sont PAS convertis en équivalent 9 nuits ici (base non fiable, changement de durée). Ne jamais comparer ces montants USD à un plafond en EUR sans taux de change daté (Frankfurter/BCE, non appliqué ici, voir méthode skill §6)."
       },
       "disponibilite": {
         "statut": "inconnue",
-        "verifiee_le_utc": "2026-09-29T19:00:00Z"
+        "verifiee_le_utc": null
       },
       "conditions": {
         "annulation": "non précisée",
         "petit_dejeuner_inclus": "non applicable (villa)",
         "caution": "non précisée",
         "sejour_minimum_nuits": null,
-        "autres": "Deux sources agence non recoupées avec un opérateur indépendant"
+        "autres": "Formulaire de contact disponible chez le gestionnaire local pour un devis exact ; NON rempli, aucun contact prestataire (hors périmètre)."
       },
-      "avis": {
-        "nombre": 6,
-        "note_moyenne": null,
-        "echelle": "stmartinblue.com"
-      },
+      "avis": [
+        {
+          "source": "stmartinblue.com",
+          "nombre": 6,
+          "note_moyenne": null,
+          "echelle": ""
+        },
+        {
+          "source": "Airbnb (rooms/756508553515790909)",
+          "nombre": 16,
+          "note_moyenne": 5,
+          "echelle": "/5"
+        }
+      ],
       "photos": {
         "disponibles": true,
-        "droits": "inconnu",
-        "note": "Photos d'agence — droits de réutilisation non vérifiés, ne pas télécharger sans confirmation"
+        "droits": "a_verifier",
+        "note": "Photos d'agence/gestionnaire — droits non acquis, ne pas télécharger"
       },
       "source": {
-        "url": "https://www.luxvillavacation.com/la-perla-bianca ; https://stmartinblue.com/villas/vacation-rentals/st-martin/baie-rouge-beach/la-perla-bianca ; https://www.exceptionalvillas.com/la-perla-bianca/l51031",
-        "date_consultation_utc": "2026-09-29T19:00:00Z",
+        "url": "https://www.luxvillavacation.com/la-perla-bianca ; https://stmartinblue.com/villas/vacation-rentals/st-martin/baie-rouge-beach/la-perla-bianca ; https://www.exceptionalvillas.com/la-perla-bianca/l51031 ; https://www.villasinluxury.com/saint-martin/villa-la-perla-bianca ; https://www.airbnb.fr/rooms/756508553515790909",
+        "date_consultation_utc": null,
         "origine": "codex_villas_fr"
       },
       "statut": {
         "valeur": "incomplet",
-        "regle": "prix estimé sur hypothèse de bande tarifaire, pas un devis ; disponibilité inconnue ; type de plage non tranché légalement"
+        "regle": "AUCUNE ancre avec prix total final ET disponibilité publique démontrés (Mission A Codex) — jamais 'indisponible', c'est un manque de preuve publique, pas une exclusion de l'offre. Simulations arithmétiques fournies à titre indicatif uniquement."
       },
-      "ecarts_signales": "Estimation ~11 895 USD pour 9 nuits dépasse à elle seule le budget total de référence (8000€ + réserve 1000€) même avant les vols, sous réserve de confirmation du devis réel."
+      "ecarts_signales": "Deux corpus d'avis distincts (stmartinblue 6, Airbnb 16) à ne jamais additionner. Écart de grille VillaLuxe non résolu (mentionné dans un lot antérieur, non rechiffré ici). Aucune réservation ni contact effectué."
     },
     {
       "offre_id": "fr-baierouge-villa-laperlaclassic",
@@ -334,131 +345,131 @@
       "acces_direct_sable": {
         "statut": "a_verifier",
         "distance_m": null,
-        "source_de_la_distance": "Annoncé 'plage directe' (stmartinblue.com) ; note du lot Codex : la baignade en face peut être affectée par des rochers — accès direct ne garantit pas une plage de sable continue"
+        "source_de_la_distance": "Annoncé 'plage directe' (stmartinblue.com) ; baignade en face potentiellement gênée par des rochers selon le lot Codex initial, non confirmé/infirmé par avis daté dans ce round"
       },
       "plage": {
         "type": "a_verifier",
         "definition_privee_exclusive": null,
         "definition_publique_acces_prive": null,
-        "note_verification": "Même réserve légale que La Perla Bianca ; en outre zone de baignade potentiellement rocheuse selon le lot Codex, à vérifier avant toute sélection"
+        "note_verification": "Même réserve légale que La Perla Bianca ; zone de baignade potentiellement rocheuse à vérifier"
       },
       "piscine": {
         "statut": "privee_a_l_unite",
-        "note": "piscine privée chauffée annoncée"
+        "note": "annoncée par l'agence (stmartinblue.com), pas de corroboration indépendante trouvée dans ce round"
       },
       "jacuzzi": {
         "statut": "prive_a_l_unite",
-        "note": "jacuzzi privé annoncé"
+        "note": "annoncé par l'agence, pas de corroboration indépendante trouvée dans ce round"
       },
       "prix": {
-        "fenetre_balayage_checkin": null,
-        "fenetre_balayage_checkout": null,
-        "montant_total": null,
+        "fenetre_balayage_checkin": "2026-11-30",
+        "fenetre_balayage_checkout": "2026-12-09",
+        "montant_total": 12705,
         "devise": "USD",
         "montant_par_nuit": null,
-        "tarif_correspond_a_l_unite_exacte": false,
-        "note_estimation": "Aucun chiffre communiqué dans ce lot Codex (grille exceptionalvillas.com consultée mais non chiffrée ici) — à demander explicitement dans la mission de suivi"
+        "tarif_correspond_a_l_unite_exacte": true,
+        "note_estimation": "⚠️ SIMULATION ARITHMÉTIQUE, PAS UN DEVIS, PAS RÉSERVABLE. Grille exceptionalvillas.com/la-perla-classic/l51030 décrite par Codex comme identique à celle de La Perla Bianca (6n×1350 + 3n×1150, +10% = 12 705 USD pour 30/11→09/12 ; 13 365 USD pour 23/11→02/12 ; 11 385 USD pour 06/12→15/12) — à confirmer que ce n'est pas une erreur de regroupement des deux fiches par la source. Comme pour Bianca : St Martin Blue n'affiche aucun total ni disponibilité sans sélection de dates. Ne pas comparer ces USD à un plafond EUR sans taux daté."
       },
       "disponibilite": {
         "statut": "inconnue",
-        "verifiee_le_utc": "2026-09-29T19:00:00Z"
+        "verifiee_le_utc": null
       },
       "conditions": {
         "annulation": "non précisée",
         "petit_dejeuner_inclus": "non applicable (villa)",
         "caution": "non précisée",
         "sejour_minimum_nuits": null,
-        "autres": ""
+        "autres": "Aucun contact prestataire, aucun formulaire rempli"
       },
-      "avis": {
-        "nombre": 8,
-        "note_moyenne": null,
-        "echelle": "stmartinblue.com"
-      },
+      "avis": [
+        {
+          "source": "stmartinblue.com",
+          "nombre": 8,
+          "note_moyenne": null,
+          "echelle": ""
+        }
+      ],
       "photos": {
         "disponibles": true,
-        "droits": "inconnu",
-        "note": "Photos d'agence — droits non vérifiés"
+        "droits": "a_verifier",
+        "note": "Photos d'agence — droits non acquis"
       },
       "source": {
         "url": "https://stmartinblue.com/villas/vacation-rentals/st-martin/baie-rouge-beach/la-perla-classic ; https://www.exceptionalvillas.com/la-perla-classic/l51030",
-        "date_consultation_utc": "2026-09-29T19:00:00Z",
+        "date_consultation_utc": null,
         "origine": "codex_villas_fr"
       },
       "statut": {
         "valeur": "incomplet",
-        "regle": "aucun prix chiffré fourni ; disponibilité inconnue ; risque plage rocheuse à vérifier"
+        "regle": "aucune ancre avec prix total final ET disponibilité publique ; simulation arithmétique seulement"
       },
-      "ecarts_signales": "Baignade potentiellement gênée par des rochers en face de la villa (signalé par Codex, à confirmer visuellement/par avis) ; aucun chiffrage reçu."
+      "ecarts_signales": "Grille identique à La Perla Bianca selon la source — à vérifier que ce n'est pas un doublon/regroupement erroné de fiches."
     },
     {
-      "offre_id": "nl-cupecoy-villa-bahari",
-      "cote": "NL",
-      "zone": "Cupecoy",
+      "offre_id": "fr-baierouge-villa-lavieenbleu",
+      "cote": "FR",
+      "zone": "Baie Rouge (Terres Basses) — présumée, non confirmée",
       "formule": "villa_seule",
-      "nom_offre": "Villa Bahari at Shore Pointe",
-      "unite_exacte": "Villa avec terrasse à accès direct plage, jusqu'à 2 adultes (capacité exacte non précisée par les sources citées)",
+      "nom_offre": "La Vie en Bleu",
+      "unite_exacte": "Non détaillée dans ce lot",
       "capacite_max_personnes": null,
       "capacite_utilisee": 2,
       "acces_direct_sable": {
         "statut": "a_verifier",
-        "distance_m": 0,
-        "source_de_la_distance": "Annoncé accès direct terrasse→plage (coralvillassxm.com, stmartinblue.com) ; MAIS le sable de Cupecoy est signalé variable, parfois plage rocheuse selon la marée/saison — accès direct ne garantit pas du sable en permanence"
+        "distance_m": null,
+        "source_de_la_distance": null
       },
       "plage": {
         "type": "a_verifier",
         "definition_privee_exclusive": null,
         "definition_publique_acces_prive": null,
-        "note_verification": "Statut légal NL à vérifier via sintmaartengov.org (document non accessible depuis cet environnement, egress bloqué) — voir sources-legales-plages.md"
+        "note_verification": "Aucun détail reçu"
       },
       "piscine": {
-        "statut": "privee_a_l_unite",
-        "note": "piscine privée annoncée"
+        "statut": "a_verifier",
+        "note": ""
       },
       "jacuzzi": {
         "statut": "a_verifier",
-        "note": "hot tub/jacuzzi terrasse annoncé, MAIS un avis 2026 cité par Codex signale un hot tub défaillant — fiabilité de l'équipement non garantie"
+        "note": ""
       },
       "prix": {
-        "fenetre_balayage_checkin": "2026-11-30",
-        "fenetre_balayage_checkout": "2026-12-09",
-        "montant_total": 8415,
+        "fenetre_balayage_checkin": null,
+        "fenetre_balayage_checkout": null,
+        "fenetre_legacy": null,
+        "montant_total": null,
         "devise": "USD",
-        "montant_par_nuit": 935,
-        "tarif_correspond_a_l_unite_exacte": true,
-        "note_estimation": "⚠️ ESTIMATION INDICATIVE, PAS UN DEVIS. 850 USD/nuit (grille wheretostay.com, bande 15/04-16/12, couvre toute la fenêtre) +10% = 935 USD/nuit × 9 nuits. Minimum de séjour 5 nuits respecté. Aucune disponibilité confirmée."
+        "montant_par_nuit": null,
+        "tarif_correspond_a_l_unite_exacte": false,
+        "note_estimation": "Mentionnée par Codex (Mission A, 18:49-18:52 UTC 29/09/2026) parmi les villas sans prix total ni disponibilité publique, mais sans URL ni détail supplémentaire transmis dans ce round — nom à clarifier auprès de Codex avant toute exploitation."
       },
       "disponibilite": {
         "statut": "inconnue",
-        "verifiee_le_utc": "2026-09-29T19:00:00Z"
+        "verifiee_le_utc": null
       },
       "conditions": {
-        "annulation": "non précisée",
+        "annulation": "",
         "petit_dejeuner_inclus": "non applicable (villa)",
-        "caution": "non précisée",
-        "sejour_minimum_nuits": 5,
+        "caution": "",
+        "sejour_minimum_nuits": null,
         "autres": ""
       },
-      "avis": {
-        "nombre": 11,
-        "note_moyenne": null,
-        "echelle": "stmartinblue.com"
-      },
+      "avis": [],
       "photos": {
-        "disponibles": true,
-        "droits": "inconnu",
-        "note": "Photos d'agence — droits non vérifiés"
+        "disponibles": false,
+        "droits": "a_verifier",
+        "note": ""
       },
       "source": {
-        "url": "https://coralvillassxm.com/vacation-rental/sint-maarten/villa-bahari ; https://stmartinblue.com/villas/vacation-rentals/st-martin/cupecoy/bahari-at-shore-pointe ; https://www.wheretostay.com/stmartin/cupecoy/bahari-villa/pid-92236",
-        "date_consultation_utc": "2026-09-29T19:00:00Z",
-        "origine": "codex_villas_nl"
+        "url": "",
+        "date_consultation_utc": null,
+        "origine": "codex_villas_fr"
       },
       "statut": {
         "valeur": "incomplet",
-        "regle": "prix estimé (bande tarifaire), pas un devis ; disponibilité inconnue ; fiabilité jacuzzi et nature du sable à vérifier"
+        "regle": "aucune donnée exploitable reçue au-delà du nom — à recompléter, ne pas exclure faute d'info"
       },
-      "ecarts_signales": "Estimation ~8 415 USD pour 9 nuits, proche ou supérieure au budget total de référence à elle seule, avant vols. Hot tub signalé défaillant dans un avis 2026. Sable de Cupecoy variable/rocheux par endroits."
+      "ecarts_signales": "Aucune URL source transmise pour cette entrée — à redemander explicitement dans un prochain round Codex."
     },
     {
       "offre_id": "fr-baienettle-villa-marie-EXCLUE",
@@ -472,25 +483,26 @@
       "acces_direct_sable": {
         "statut": "a_verifier",
         "distance_m": null,
-        "source_de_la_distance": "Accès sable LAGUNE (Baie Nettlé), pas mer ouverte — voir aussi la page officielle sur le rétablissement de l'accès aux plages de la Baie Nettlé"
+        "source_de_la_distance": "Accès sable LAGUNE (Baie Nettlé), pas mer ouverte — reconfirmé par Mission A (18:49-18:52 UTC 29/09/2026)"
       },
       "plage": {
         "type": "a_verifier",
         "definition_privee_exclusive": null,
         "definition_publique_acces_prive": null,
-        "note_verification": "Lagune, pas mer ouverte : ne correspond pas au critère strict 'accès direct au sable' tel que cadré pour cette comparaison"
+        "note_verification": "Lagune, pas mer ouverte : hors critère strict 'accès direct au sable/mer' tel que cadré"
       },
       "piscine": {
         "statut": "a_verifier",
-        "note": "non renseigné"
+        "note": ""
       },
       "jacuzzi": {
         "statut": "a_verifier",
-        "note": "non renseigné"
+        "note": ""
       },
       "prix": {
         "fenetre_balayage_checkin": null,
         "fenetre_balayage_checkout": null,
+        "fenetre_legacy": null,
         "montant_total": null,
         "devise": "EUR",
         "montant_par_nuit": null,
@@ -499,35 +511,577 @@
       },
       "disponibilite": {
         "statut": "inconnue",
-        "verifiee_le_utc": "2026-09-29T19:00:00Z"
+        "verifiee_le_utc": null
+      },
+      "conditions": {
+        "annulation": "",
+        "petit_dejeuner_inclus": "non applicable (villa)",
+        "caution": "",
+        "sejour_minimum_nuits": null,
+        "autres": ""
+      },
+      "avis": [],
+      "photos": {
+        "disponibles": true,
+        "droits": "a_verifier",
+        "note": ""
+      },
+      "source": {
+        "url": "https://www.airbnb.fr/rooms/54373850",
+        "date_consultation_utc": null,
+        "origine": "codex_villas_fr"
+      },
+      "statut": {
+        "valeur": "indisponible",
+        "regle": "hors critère strict (accès lagune, pas mer ouverte) — exclue tant que le voyageur n'approuve pas explicitement d'élargir le critère"
+      },
+      "ecarts_signales": "Reste listée pour mémoire seulement ; ne pas inclure dans un classement ou un budget tant qu'aucun accord explicite du voyageur n'élargit le critère à un accès lagune."
+    },
+    {
+      "offre_id": "fr-baierouge-villa-barefootbeachbungalow",
+      "cote": "FR",
+      "zone": "Baie Rouge (Terres Basses, présumée)",
+      "formule": "villa_seule",
+      "nom_offre": "Barefoot Beach Bungalow",
+      "unite_exacte": "Non détaillée",
+      "capacite_max_personnes": null,
+      "capacite_utilisee": 2,
+      "acces_direct_sable": {
+        "statut": "oui",
+        "distance_m": null,
+        "source_de_la_distance": "luxvillavacation.com/barefootbeachbungalow, accès mer annoncé"
+      },
+      "plage": {
+        "type": "a_verifier",
+        "definition_privee_exclusive": null,
+        "definition_publique_acces_prive": null,
+        "note_verification": "Même réserve légale FR que les autres offres"
+      },
+      "piscine": {
+        "statut": "privee_a_l_unite",
+        "note": "annoncée par la source"
+      },
+      "jacuzzi": {
+        "statut": "aucun",
+        "note": "Aucun jacuzzi listé par la source (Mission A, 29/09/2026) — ne remplit pas le critère strict"
+      },
+      "prix": {
+        "fenetre_balayage_checkin": null,
+        "fenetre_balayage_checkout": null,
+        "fenetre_legacy": null,
+        "montant_total": null,
+        "devise": "USD",
+        "montant_par_nuit": null,
+        "tarif_correspond_a_l_unite_exacte": false,
+        "note_estimation": "Non chiffré — exclue avant chiffrage (critère jacuzzi manquant)"
+      },
+      "disponibilite": {
+        "statut": "inconnue",
+        "verifiee_le_utc": null
+      },
+      "conditions": {
+        "annulation": "",
+        "petit_dejeuner_inclus": "non applicable (villa)",
+        "caution": "",
+        "sejour_minimum_nuits": null,
+        "autres": ""
+      },
+      "avis": [],
+      "photos": {
+        "disponibles": true,
+        "droits": "a_verifier",
+        "note": ""
+      },
+      "source": {
+        "url": "https://www.luxvillavacation.com/barefootbeachbungalow",
+        "date_consultation_utc": null,
+        "origine": "codex_villas_fr"
+      },
+      "statut": {
+        "valeur": "indisponible",
+        "regle": "hors critère strict : aucun jacuzzi confirmé"
+      },
+      "ecarts_signales": "Répond à accès mer + piscine privée mais pas au jacuzzi privé demandé ; à reconsidérer si le voyageur assouplit ce critère."
+    },
+    {
+      "offre_id": "fr-baierouge-villa-bluehorizonbeachbungalow",
+      "cote": "FR",
+      "zone": "Baie Rouge (Terres Basses, présumée)",
+      "formule": "villa_seule",
+      "nom_offre": "Blue Horizon Beach Bungalow",
+      "unite_exacte": "Non détaillée",
+      "capacite_max_personnes": null,
+      "capacite_utilisee": 2,
+      "acces_direct_sable": {
+        "statut": "a_verifier",
+        "distance_m": null,
+        "source_de_la_distance": "luxvillavacation.com/bluehorizonbeachbungalow, accès mer annoncé, MAIS plage rocheuse signalée par des avis"
+      },
+      "plage": {
+        "type": "a_verifier",
+        "definition_privee_exclusive": null,
+        "definition_publique_acces_prive": null,
+        "note_verification": "Plage rocheuse selon avis (Mission A, 29/09/2026) — même réserve légale FR"
+      },
+      "piscine": {
+        "statut": "privee_a_l_unite",
+        "note": "annoncée par la source"
+      },
+      "jacuzzi": {
+        "statut": "aucun",
+        "note": "Aucun jacuzzi listé — ne remplit pas le critère strict"
+      },
+      "prix": {
+        "fenetre_balayage_checkin": null,
+        "fenetre_balayage_checkout": null,
+        "fenetre_legacy": null,
+        "montant_total": null,
+        "devise": "USD",
+        "montant_par_nuit": null,
+        "tarif_correspond_a_l_unite_exacte": false,
+        "note_estimation": "Non chiffré — exclue avant chiffrage"
+      },
+      "disponibilite": {
+        "statut": "inconnue",
+        "verifiee_le_utc": null
+      },
+      "conditions": {
+        "annulation": "",
+        "petit_dejeuner_inclus": "non applicable (villa)",
+        "caution": "",
+        "sejour_minimum_nuits": null,
+        "autres": ""
+      },
+      "avis": [],
+      "photos": {
+        "disponibles": true,
+        "droits": "a_verifier",
+        "note": ""
+      },
+      "source": {
+        "url": "https://www.luxvillavacation.com/bluehorizonbeachbungalow",
+        "date_consultation_utc": null,
+        "origine": "codex_villas_fr"
+      },
+      "statut": {
+        "valeur": "indisponible",
+        "regle": "hors critère strict : aucun jacuzzi confirmé, plus plage rocheuse signalée"
+      },
+      "ecarts_signales": "Double motif d'exclusion (jacuzzi absent + plage rocheuse) ; à reconsidérer seulement si le voyageur assouplit ces deux critères."
+    },
+    {
+      "offre_id": "nl-cupecoy-villa-bahari",
+      "cote": "NL",
+      "zone": "Cupecoy",
+      "formule": "villa_seule",
+      "nom_offre": "Villa Bahari at Shore Pointe",
+      "unite_exacte": "Villa 3 CHAMBRES selon l'agent local (corrigé le 29/09/2026 — précédemment décrite par erreur comme 1 chambre/2 adultes) ; comparée ici en occupation 2 adultes, ce qui sous-utilise sa capacité réelle et pèse sur le rapport qualité-prix",
+      "capacite_max_personnes": null,
+      "capacite_utilisee": 2,
+      "acces_direct_sable": {
+        "statut": "a_verifier",
+        "distance_m": 0,
+        "source_de_la_distance": "Accès direct terrasse→plage annoncé (coralvillassxm.com, stmartinblue.com) ; sable de Cupecoy signalé variable/saisonnier — accès direct ne garantit pas du sable en permanence"
+      },
+      "plage": {
+        "type": "a_verifier",
+        "definition_privee_exclusive": null,
+        "definition_publique_acces_prive": null,
+        "note_verification": "Statut légal NL non tranché — sintmaartengov.org (politique des plages) cité mais son contenu n'a pas pu être lu depuis cet environnement (egress bloqué), et le lot Mission B ne cite pas non plus son contenu exact"
+      },
+      "piscine": {
+        "statut": "privee_a_l_unite",
+        "note": "annoncée par les sources"
+      },
+      "jacuzzi": {
+        "statut": "a_verifier",
+        "note": "Hot tub/jacuzzi terrasse annoncé, MAIS un avis d'AVRIL 2026 (daté précisément par Mission B) le signale inutilisable — fiabilité non garantie à la date du séjour visé"
+      },
+      "prix": {
+        "fenetre_balayage_checkin": "2026-11-30",
+        "fenetre_balayage_checkout": "2026-12-09",
+        "montant_total": 8415,
+        "devise": "USD",
+        "montant_par_nuit": 935,
+        "tarif_correspond_a_l_unite_exacte": true,
+        "note_estimation": "⚠️ ESTIMATION CONDITIONNELLE, PAS UN DEVIS, PAS RÉSERVABLE. 850 USD/nuit (grille wheretostay.com, bande 15/04-16/12, couvre toute la fenêtre) +10% = 935 USD/nuit × 9 nuits = 8 415 USD. Minimum de séjour 5 nuits respecté. AUCUN total final ni disponibilité publique affichés pour les 3 ancres (Mission B Codex, ~18:50 UTC 29/09/2026). Ne pas comparer ce montant USD à un plafond EUR sans taux de change daté."
+      },
+      "disponibilite": {
+        "statut": "inconnue",
+        "verifiee_le_utc": null
       },
       "conditions": {
         "annulation": "non précisée",
         "petit_dejeuner_inclus": "non applicable (villa)",
         "caution": "non précisée",
+        "sejour_minimum_nuits": 5,
+        "autres": "Aucun contact prestataire"
+      },
+      "avis": [
+        {
+          "source": "St Martin Blue",
+          "nombre": 11,
+          "note_moyenne": null,
+          "echelle": ""
+        },
+        {
+          "source": "Isle Blue",
+          "nombre": 12,
+          "note_moyenne": null,
+          "echelle": ""
+        },
+        {
+          "source": "WhereToStay",
+          "nombre": 2,
+          "note_moyenne": null,
+          "echelle": ""
+        }
+      ],
+      "photos": {
+        "disponibles": true,
+        "droits": "a_verifier",
+        "note": "Photos d'agence — droits non acquis"
+      },
+      "source": {
+        "url": "https://coralvillassxm.com/vacation-rental/sint-maarten/villa-bahari ; https://stmartinblue.com/villas/vacation-rentals/st-martin/cupecoy/bahari-at-shore-pointe ; https://www.wheretostay.com/stmartin/cupecoy/bahari-villa/pid-92236",
+        "date_consultation_utc": null,
+        "origine": "codex_villas_nl"
+      },
+      "statut": {
+        "valeur": "incomplet",
+        "regle": "aucun total/disponibilité public sur les 3 ancres ; estimation arithmétique seulement ; capacité réelle (3 chambres) à reconsidérer dans le budget"
+      },
+      "ecarts_signales": "Trois corpus d'avis distincts (St Martin Blue 11, Isle Blue 12, WhereToStay 2) — ne jamais les additionner. Jacuzzi signalé inutilisable dans un avis d'avril 2026. Sable de Cupecoy saisonnier. Villa 3 chambres réservée pour 2 personnes : rapport qualité-prix à reconsidérer."
+    },
+    {
+      "offre_id": "nl-corinnesvilla",
+      "cote": "NL",
+      "zone": "à préciser",
+      "formule": "villa_seule",
+      "nom_offre": "Corinne's Villa",
+      "unite_exacte": "Non détaillée",
+      "capacite_max_personnes": null,
+      "capacite_utilisee": 2,
+      "acces_direct_sable": {
+        "statut": "a_verifier",
+        "distance_m": null,
+        "source_de_la_distance": "corinnesvilla.com/ourvilla"
+      },
+      "plage": {
+        "type": "a_verifier",
+        "definition_privee_exclusive": null,
+        "definition_publique_acces_prive": null,
+        "note_verification": ""
+      },
+      "piscine": {
+        "statut": "a_verifier",
+        "note": ""
+      },
+      "jacuzzi": {
+        "statut": "a_verifier",
+        "note": "Jacuzzi NON CONFIRMÉ par la source (Mission B, 29/09/2026) — ne remplit pas le critère strict en l'état"
+      },
+      "prix": {
+        "fenetre_balayage_checkin": null,
+        "fenetre_balayage_checkout": null,
+        "fenetre_legacy": null,
+        "montant_total": null,
+        "devise": "USD",
+        "montant_par_nuit": null,
+        "tarif_correspond_a_l_unite_exacte": false,
+        "note_estimation": "Non chiffré"
+      },
+      "disponibilite": {
+        "statut": "inconnue",
+        "verifiee_le_utc": null
+      },
+      "conditions": {
+        "annulation": "",
+        "petit_dejeuner_inclus": "non applicable (villa)",
+        "caution": "",
         "sejour_minimum_nuits": null,
         "autres": ""
       },
-      "avis": {
-        "nombre": null,
-        "note_moyenne": null,
-        "echelle": "Airbnb"
-      },
+      "avis": [],
       "photos": {
         "disponibles": true,
-        "droits": "inconnu",
+        "droits": "a_verifier",
         "note": ""
       },
       "source": {
-        "url": "https://www.airbnb.fr/rooms/54373850",
-        "date_consultation_utc": "2026-09-29T19:00:00Z",
-        "origine": "codex_villas_fr"
+        "url": "https://www.corinnesvilla.com/ourvilla",
+        "date_consultation_utc": null,
+        "origine": "codex_villas_nl"
       },
       "statut": {
         "valeur": "indisponible",
-        "regle": "hors critère strict (accès lagune, pas mer ouverte) — exclue de la sélection tant que le voyageur n'approuve pas explicitement d'élargir le critère"
+        "regle": "hors critère strict : jacuzzi non confirmé"
       },
-      "ecarts_signales": "Reste listée pour mémoire seulement ; ne pas inclure dans un classement ou un budget tant qu'aucun accord explicite du voyageur n'élargit le critère 'accès direct au sable' à un accès lagune."
+      "ecarts_signales": "À reconsidérer si jacuzzi confirmé par une source ultérieure, ou si le voyageur assouplit ce critère."
+    },
+    {
+      "offre_id": "nl-bluesanctuary",
+      "cote": "NL",
+      "zone": "à préciser",
+      "formule": "villa_seule",
+      "nom_offre": "Blue Sanctuary",
+      "unite_exacte": "Non détaillée",
+      "capacite_max_personnes": null,
+      "capacite_utilisee": 2,
+      "acces_direct_sable": {
+        "statut": "non",
+        "distance_m": null,
+        "source_de_la_distance": "blue-sanctuary.com/en/overview : plage accessible À PIED, pas un accès direct depuis l'unité"
+      },
+      "plage": {
+        "type": "a_verifier",
+        "definition_privee_exclusive": null,
+        "definition_publique_acces_prive": null,
+        "note_verification": "Accès à pied, pas direct"
+      },
+      "piscine": {
+        "statut": "a_verifier",
+        "note": ""
+      },
+      "jacuzzi": {
+        "statut": "a_verifier",
+        "note": ""
+      },
+      "prix": {
+        "fenetre_balayage_checkin": null,
+        "fenetre_balayage_checkout": null,
+        "fenetre_legacy": null,
+        "montant_total": null,
+        "devise": "USD",
+        "montant_par_nuit": null,
+        "tarif_correspond_a_l_unite_exacte": false,
+        "note_estimation": "Non chiffré"
+      },
+      "disponibilite": {
+        "statut": "inconnue",
+        "verifiee_le_utc": null
+      },
+      "conditions": {
+        "annulation": "",
+        "petit_dejeuner_inclus": "non applicable (villa)",
+        "caution": "",
+        "sejour_minimum_nuits": null,
+        "autres": ""
+      },
+      "avis": [],
+      "photos": {
+        "disponibles": true,
+        "droits": "a_verifier",
+        "note": ""
+      },
+      "source": {
+        "url": "https://blue-sanctuary.com/en/overview",
+        "date_consultation_utc": null,
+        "origine": "codex_villas_nl"
+      },
+      "statut": {
+        "valeur": "indisponible",
+        "regle": "hors critère strict : accès plage à pied, pas direct depuis l'unité"
+      },
+      "ecarts_signales": ""
+    },
+    {
+      "offre_id": "nl-beachsidevillas",
+      "cote": "NL",
+      "zone": "à préciser",
+      "formule": "villa_seule",
+      "nom_offre": "Beachside Villas",
+      "unite_exacte": "Non détaillée",
+      "capacite_max_personnes": null,
+      "capacite_utilisee": 2,
+      "acces_direct_sable": {
+        "statut": "a_verifier",
+        "distance_m": null,
+        "source_de_la_distance": "beachsidevillas.com/vacation-rentals.html"
+      },
+      "plage": {
+        "type": "a_verifier",
+        "definition_privee_exclusive": null,
+        "definition_publique_acces_prive": null,
+        "note_verification": ""
+      },
+      "piscine": {
+        "statut": "commune_partagee",
+        "note": "Piscine COMMUNE selon la source (Mission B, 29/09/2026), pas privée à l'unité"
+      },
+      "jacuzzi": {
+        "statut": "aucun",
+        "note": "Aucun jacuzzi listé"
+      },
+      "prix": {
+        "fenetre_balayage_checkin": null,
+        "fenetre_balayage_checkout": null,
+        "fenetre_legacy": null,
+        "montant_total": null,
+        "devise": "USD",
+        "montant_par_nuit": null,
+        "tarif_correspond_a_l_unite_exacte": false,
+        "note_estimation": "Non chiffré"
+      },
+      "disponibilite": {
+        "statut": "inconnue",
+        "verifiee_le_utc": null
+      },
+      "conditions": {
+        "annulation": "",
+        "petit_dejeuner_inclus": "non applicable (villa)",
+        "caution": "",
+        "sejour_minimum_nuits": null,
+        "autres": ""
+      },
+      "avis": [],
+      "photos": {
+        "disponibles": true,
+        "droits": "a_verifier",
+        "note": ""
+      },
+      "source": {
+        "url": "https://www.beachsidevillas.com/vacation-rentals.html",
+        "date_consultation_utc": null,
+        "origine": "codex_villas_nl"
+      },
+      "statut": {
+        "valeur": "indisponible",
+        "regle": "hors critère strict : piscine commune (pas privée), aucun jacuzzi"
+      },
+      "ecarts_signales": ""
+    },
+    {
+      "offre_id": "sxm-soualigahomes-beachhouse",
+      "cote": "a_verifier",
+      "zone": "non précisée (baie maritime)",
+      "formule": "agence_locale_multi_unites",
+      "nom_offre": "Soualiga Beach House (agence Soualiga Homes)",
+      "unite_exacte": "Non détaillée au-delà de 'Beach House'",
+      "capacite_max_personnes": null,
+      "capacite_utilisee": 2,
+      "acces_direct_sable": {
+        "statut": "oui",
+        "distance_m": null,
+        "source_de_la_distance": "soualigahomes.com/our-houses/beach-house : plage de baie maritime (pas lagune)"
+      },
+      "plage": {
+        "type": "a_verifier",
+        "definition_privee_exclusive": null,
+        "definition_publique_acces_prive": null,
+        "note_verification": "Plage baie maritime confirmée (pas lagune) ; statut légal privé/public non tranché"
+      },
+      "piscine": {
+        "statut": "privee_a_l_unite",
+        "note": "annoncée par l'agence"
+      },
+      "jacuzzi": {
+        "statut": "aucun",
+        "note": "Jacuzzi absent selon la source (Mission C, 29/09/2026)"
+      },
+      "prix": {
+        "fenetre_balayage_checkin": null,
+        "fenetre_balayage_checkout": null,
+        "fenetre_legacy": null,
+        "montant_total": null,
+        "devise": "EUR",
+        "montant_par_nuit": null,
+        "tarif_correspond_a_l_unite_exacte": false,
+        "note_estimation": "Fourchette affichée 'de 714 à 1786 €/nuit' SANS dates associées — inexploitable pour un total 9 nuits sans requête datée"
+      },
+      "disponibilite": {
+        "statut": "inconnue",
+        "verifiee_le_utc": null
+      },
+      "conditions": {
+        "annulation": "",
+        "petit_dejeuner_inclus": "non applicable (villa)",
+        "caution": "",
+        "sejour_minimum_nuits": null,
+        "autres": "Agence légalement vérifiée : Soualiga Homes, SIRET 84458822800024, carte CPI 97812019000040255/SOCAF"
+      },
+      "avis": [],
+      "photos": {
+        "disponibles": true,
+        "droits": "a_verifier",
+        "note": "Photos agence — droits non acquis"
+      },
+      "source": {
+        "url": "https://www.soualigahomes.com/our-houses/beach-house ; https://www.soualigahomes.com/mentions-legales",
+        "date_consultation_utc": null,
+        "origine": "codex_agences_locales"
+      },
+      "statut": {
+        "valeur": "incomplet",
+        "regle": "prix sans dates, disponibilité inconnue ; jacuzzi absent (à reconsidérer avec le voyageur si le critère jacuzzi est assoupli)"
+      },
+      "ecarts_signales": "Agence légalement identifiable (contrairement aux alternatives déjà écartées) — candidat à recreuser avec des dates précises plutôt qu'à exclure d'emblée."
+    },
+    {
+      "offre_id": "nl-simpsonbay-villa-marie-40weeks",
+      "cote": "NL",
+      "zone": "Simpson Bay (lagune)",
+      "formule": "villa_seule",
+      "nom_offre": "Villa Marie (annonce 40Weeks, distincte de l'annonce Airbnb Baie Nettlé)",
+      "unite_exacte": "Non détaillée",
+      "capacite_max_personnes": null,
+      "capacite_utilisee": 2,
+      "acces_direct_sable": {
+        "statut": "a_verifier",
+        "distance_m": null,
+        "source_de_la_distance": "rentals.40weeks.fr/listings/98712 : accès lagune de Simpson Bay, pas mer ouverte"
+      },
+      "plage": {
+        "type": "a_verifier",
+        "definition_privee_exclusive": null,
+        "definition_publique_acces_prive": null,
+        "note_verification": "Lagune, pas mer ouverte — hors critère strict, même motif que l'autre 'Villa Marie'"
+      },
+      "piscine": {
+        "statut": "a_verifier",
+        "note": ""
+      },
+      "jacuzzi": {
+        "statut": "a_verifier",
+        "note": ""
+      },
+      "prix": {
+        "fenetre_balayage_checkin": null,
+        "fenetre_balayage_checkout": null,
+        "fenetre_legacy": null,
+        "montant_total": null,
+        "devise": "EUR",
+        "montant_par_nuit": null,
+        "tarif_correspond_a_l_unite_exacte": false,
+        "note_estimation": "Non chiffré — exclue avant chiffrage"
+      },
+      "disponibilite": {
+        "statut": "inconnue",
+        "verifiee_le_utc": null
+      },
+      "conditions": {
+        "annulation": "",
+        "petit_dejeuner_inclus": "non applicable (villa)",
+        "caution": "",
+        "sejour_minimum_nuits": null,
+        "autres": "Agence 40Weeks/Podium Caraibes, SIREN 891366775, légalement identifiable"
+      },
+      "avis": [],
+      "photos": {
+        "disponibles": true,
+        "droits": "a_verifier",
+        "note": ""
+      },
+      "source": {
+        "url": "https://rentals.40weeks.fr/listings/98712",
+        "date_consultation_utc": null,
+        "origine": "codex_agences_locales"
+      },
+      "statut": {
+        "valeur": "indisponible",
+        "regle": "hors critère strict (accès lagune, pas mer ouverte)"
+      },
+      "ecarts_signales": "Homonyme possible de fr-baienettle-villa-marie-EXCLUE (même nom commercial 'Villa Marie', propriété et plateforme différentes) — ne pas fusionner les deux fiches sans confirmation qu'il s'agit du même bien."
     }
   ]
 }

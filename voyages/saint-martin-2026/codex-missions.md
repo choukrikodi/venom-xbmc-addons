@@ -8,96 +8,106 @@ voyage » (`skills/travel-agent/agents/openai.yaml`) — aucun nouvel agent à c
 (7 phases, `## Hypothèses`, matrice datée UTC, croisement de sources, chambre
 réellement sur la plage, prix total complet, liste vide ≠ absence d'offre).
 
-## Fenêtre commune à toutes les missions villas/hôtels
+## Ordre de mission (priorité fixée par le voyageur le 29/09/2026)
 
-- **Balayage** : check-in entre le 23/11/2026 et le 06/12/2026, 9 nuits sur place
-  (check-out = check-in + 9), donc check-out entre le 02/12 et le 15/12/2026.
-- **Hypothèse de bornes** (à corriger si le voyageur voulait dire autre chose) :
-  « dernière semaine de novembre » = 23/11→30/11 ; « quinze premiers jours de
-  décembre » = 01/12→15/12.
-- **Trois ancres minimales à coter pour chaque villa/hôtel retenu** (si le tarif ne
-  varie pas jour par jour dans cette plage, le dire explicitement plutôt que de deviner) :
-  1. précoce : 23/11→02/12
-  2. référence Thaïlande (illustrative, pas exclusive) : 30/11→09/12
-  3. tardive : 06/12→15/12
-- 2 adultes, 1 chambre/1 unité. Budget de référence : 8 000 € + réserve séparée de
-  1 000 € (2 000 € total réserve dispo si toujours applicable côté voyageur — à
-  confirmer, ne pas supposer un chiffre plus récent que celui donné en mission n°1).
-- **Jamais de prix recyclé d'une fenêtre de dates vers une autre**, même à un jour près.
+1. **Vague 2 — villas « bijoux » (FR/NL/agences)** : EN COURS. Voir ci-dessous.
+2. **Mission D — vols TUN→SXM** : **BLOQUÉE**, ne pas dispatcher avant le retour complet
+   de la Vague 2 (pas seulement dès qu'une offre atteint `incomplet` — la barre est
+   désormais plus haute : au moins une offre `confirmé`, ou une conclusion explicite de
+   la Vague 2 qu'aucun « bijou » à disponibilité démontrée n'existe dans le budget).
+3. **Mission E — budget complet** : **BLOQUÉE**, après la mission D seulement.
 
-## Mission A — Villas côté français (Baie Rouge, Terres Basses, Orient Bay, Grand Case)
+**Aucune villa ne devient réservable à partir d'une grille tarifaire** — une grille (prix
+par nuit/bande) reste une simulation arithmétique tant qu'un total final ET une
+disponibilité ne sont pas affichés publiquement pour les dates exactes visées.
 
-**Objectif** : transformer les pistes déjà remontées (La Perla Bianca, La Perla Classic)
-en devis exploitables, et en trouver 2-3 alternatives si celles-ci restent hors budget.
+## Vague 2 — villas « bijoux », critère strict inchangé + nouvelles propriétés
 
-**Tâches** :
-1. Pour La Perla Bianca et La Perla Classic : demander au gestionnaire/à l'agence un
-   **devis total ferme** (pas une grille par bande) pour chacune des 3 ancres ci-dessus,
-   avec **disponibilité réelle confirmée** (pas juste « la grille l'indique »).
-2. Résoudre l'écart de grille signalé (exceptionalvillas.com vs VillaLuxe pour La Perla
-   Bianca) : citer les deux montants, dater chaque consultation UTC, ne pas trancher sans
-   plus d'info.
-3. Vérifier pour La Perla Classic si la zone de baignade rocheuse signalée est confirmée
-   par des avis récents (2025-2026) ou des photos datées — sinon marquer `a_verifier`.
-4. Chercher 2-3 alternatives supplémentaires (villa 1 chambre, 2 adultes, accès direct
-   sable, piscine privée) dans un budget plus réaliste (viser <150-200 €/nuit tout compris
-   si possible, sinon documenter qu'aucune option de ce standing n'existe à ce prix).
-5. Pour chaque offre : distinguer explicitement piscine/jacuzzi **privés à l'unité** vs
-   **communs à la résidence/au domaine** — ne jamais supposer « privé » sans confirmation
-   écrite de la source.
-6. Ne jamais écrire « plage privée » : au mieux « accès direct » à une plage publique
-   (voir `sources-legales-plages.md` — le domaine public maritime français ne permet pas
-   de plage légalement privée).
+**Objectif** : trouver des villas réellement **en bord de MER** (pas lagune), avec
+**piscine privée ET jacuzzi privé confirmés**, et une **disponibilité démontrée** dans
+la fenêtre 23/11→15/12/2026 pour 9 nuits — en cherchant aussi de **nouvelles propriétés**,
+pas seulement les 3 candidats déjà connus (La Perla Bianca, La Perla Classic, Villa
+Bahari, tous encore `incomplet` faute de preuve publique de prix total + disponibilité).
 
-**Critères d'acceptation (par offre)** :
-- [ ] Nom exact de l'unité + capacité + lien source direct (pas une agrégation)
-- [ ] Prix total (pas prix/nuit seul) pour au moins une des 3 ancres, avec dates exactes
-- [ ] Disponibilité confirmée oui/non/inconnue, datée UTC
-- [ ] Distance/nature de l'accès à la plage décrite factuellement (jamais « privée »)
-- [ ] Piscine et jacuzzi classés privé-unité / commun / aucun, séparément
-- [ ] Nombre d'avis + note si disponible
-- [ ] Droits photo précisés (réutilisable oui/non/inconnu) — ne rien télécharger sinon
-- [ ] Statut proposé : confirmé / incomplet / indisponible, avec justification
+**Règle de preuve — priorité absolue** :
+- Ne retenir que ce qui est **affiché publiquement** : total final daté + disponibilité
+  affichée pour les dates exactes (une des 3 ancres ci-dessous ou une date à l'intérieur
+  de la fenêtre).
+- **Si le prix ou la disponibilité ne sont accessibles qu'en envoyant un formulaire ou en
+  contactant le prestataire : s'arrêter là.** Ne jamais remplir de formulaire ni contacter
+  qui que ce soit. Marquer explicitement le **« plafond de preuve »** atteint dans
+  `ecarts_signales` (ex : « plafond de preuve : calendrier/prix visibles seulement après
+  sélection de dates côté widget de réservation, non simulable sans y entrer d'informations
+  de contact »), avec statut `incomplet`.
+- Une évaluation qualitative de la rareté/du standing « bijou » (avec preuves/photos
+  externes datées) est bienvenue en complément, mais **ne remplace jamais** les critères
+  stricts (mer directe, piscine privée, jacuzzi privé, disponibilité démontrée, prix
+  total). Une très belle villa sans preuve de disponibilité reste `incomplet`.
 
-## Mission B — Villas côté néerlandais (Cupecoy, Simpson Bay, Maho)
+**Fenêtre commune** :
+- Balayage : check-in entre le 23/11/2026 et le 06/12/2026, 9 nuits sur place (check-out
+  = check-in + 9). Bornes = interprétation provisoire du relais, pas des dates exactes
+  données mot pour mot par le voyageur (voir `comparaison-schema.json`).
+- **Trois ancres à essayer en priorité** : 23/11→02/12, 30/11→09/12 (référence
+  Thaïlande, illustrative), 06/12→15/12. Toute autre date dans la fenêtre est acceptable
+  si c'est elle qui affiche une disponibilité publique.
+- 2 adultes. Budget historique : **8 000 € tout compris** + réserve **distincte** de
+  **1 000 €** (jamais 2 000 € — deux montants séparés) ; validité pour SXM à confirmer.
+- Jamais de prix recyclé d'une fenêtre de dates vers une autre. Jamais de comparaison
+  directe entre un montant USD et le plafond EUR sans taux de change daté (Frankfurter/BCE).
 
-Mêmes tâches et critères d'acceptation que la mission A, appliqués à Villa Bahari at
-Shore Pointe et à 2-3 alternatives côté NL. Points spécifiques :
-1. Confirmer ou infirmer le hot tub défaillant signalé dans un avis 2026 (date exacte de
-   l'avis, a-t-il été réparé depuis ?).
-2. Vérifier la nature du sable à Cupecoy pour les dates visées (variable/rocheux par
-   endroits signalé) — si possible via un avis daté de la même saison (fin
-   novembre-décembre).
-3. Consulter, si accessible, `sintmaartengov.org` (politique des plages) pour le statut
-   légal réel côté néerlandais — cette session n'a pas pu y accéder (proxy réseau
-   bloqué), donc c'est un travail encore à faire, pas déjà couvert.
+### A — Villas côté français (Baie Rouge, Terres Basses, Orient Bay, Grand Case)
 
-## Mission C — Agences locales (couvrant les deux côtés)
+1. Pour La Perla Bianca et La Perla Classic (et « La Vie en Bleu », dont l'URL manque
+   encore — la redemander) : retenter un relevé de disponibilité/prix total public sur
+   les 3 ancres ; sinon documenter le plafond de preuve précisément (St Martin Blue
+   affiche « Grand Total $0 » sans sélection de dates — décrire l'obstacle exact
+   rencontré, pas juste « non trouvé »).
+2. Chercher au moins 2-3 **nouvelles** propriétés (pas Barefoot/Blue Horizon Beach
+   Bungalow, déjà exclues faute de jacuzzi) répondant au critère strict complet
+   (mer directe + piscine privée + jacuzzi privé), avec disponibilité publique si possible.
+3. Pour Soualiga Beach House (agence Soualiga Homes, déjà légalement vérifiée) :
+   redemander un prix daté sur des dates précises (la fourchette « 714-1786 €/nuit »
+   sans dates est inexploitable) ; le jacuzzi manquant reste à lever ou à écarter selon
+   le critère strict.
+4. Ne jamais écrire « plage privée » : au mieux « accès direct » à une plage publique
+   (voir `sources-legales-plages.md`).
 
-**Objectif** : identifier 2-3 agences de location locales fiables (pas juste des
-agrégateurs internationaux) couvrant Saint-Martin/Sint Maarten, avec un catalogue
-consultable en ligne.
+### B — Villas côté néerlandais (Cupecoy, Simpson Bay, Maho)
 
-**Tâches** :
-1. Lister les agences avec présence légale vérifiable (adresse, mentions légales,
-   ancienneté) — écarter tout site sans identification claire.
-2. Pour chacune, extraire 2-3 villas correspondant au critère strict (1 chambre, 2
-   adultes, accès direct sable, piscine privée ; jacuzzi privé si possible) dans la
-   fenêtre de balayage.
-3. Mêmes critères d'acceptation que la mission A pour chaque offre remontée.
-4. Signaler si une agence propose un contact direct/formulaire de devis — **ne pas le
-   remplir ni contacter le prestataire**, seulement noter que l'option existe pour une
-   étape ultérieure explicitement demandée par le voyageur.
+1. Villa Bahari (villa 3 chambres, corrigé) : retenter disponibilité/prix total public
+   sur les 3 ancres, sinon documenter le plafond de preuve précisément.
+2. Chercher au moins 2-3 **nouvelles** propriétés répondant au critère strict complet
+   (Corinne's Villa, Blue Sanctuary, Beachside Villas déjà exclues — ne pas les
+   rechercher à nouveau sauf nouvelle information changeant leur statut).
+3. Toujours en attente : lecture de `sintmaartengov.org` (politique des plages, bloquée
+   pour moi par le proxy réseau) pour le statut légal réel côté néerlandais.
 
-## Mission D — Vols TUN→SXM (EN ATTENTE, ne pas dispatcher avant stabilisation des hébergements)
+### C — Agences locales et calendriers publics (les deux côtés)
 
-Manifeste déjà préparé : `manifests/sxm_v2_vols.json` (balayage départ TUN 22/11→06/12,
-nights_in_dst=9, adapté du format `skills/travel-agent`). À dispatcher seulement quand au
-moins une offre villa/hôtel par côté (FR/NL) atteint le statut `confirmé` ou `incomplet`
-documenté, pour pouvoir aligner les dates de vol sur un check-in réel plutôt que sur une
-hypothèse.
+1. Auprès des trois agences déjà vérifiées légalement (VillaVEO, Soualiga Homes,
+   40Weeks/Podium Caraibes) : chercher d'autres biens de leur catalogue répondant au
+   critère strict complet, avec calendrier/prix public si le site en expose un
+   (beaucoup de moteurs de réservation affichent un calendrier sans nécessiter de
+   contact — le vérifier avant de conclure au plafond de preuve).
+2. Chercher 1-2 agences locales supplémentaires légalement vérifiables, si elles existent.
+3. Toujours : aucun contact prestataire, aucun formulaire rempli.
 
-## Mission E — Packages vol+hébergement (APRÈS la mission D)
+**Critères d'acceptation (par offre, inchangés)** :
+- [ ] Nom exact de l'unité + capacité + lien source direct
+- [ ] Prix total (pas prix/nuit seul) pour une date précise dans la fenêtre, avec dates exactes
+- [ ] Disponibilité confirmée oui/non/inconnue, datée UTC (ou plafond de preuve documenté si non atteignable)
+- [ ] Accès à la mer directe décrit factuellement (jamais « privée » sans preuve légale)
+- [ ] Piscine et jacuzzi classés privé-unité / commun / aucun, séparément — les deux doivent être « privé-unité » pour le critère strict
+- [ ] Corpus d'avis listés séparément (jamais additionnés)
+- [ ] Droits photo précisés — ne rien télécharger sauf « réutilisable »
+- [ ] Statut proposé : confirmé / incomplet / indisponible, avec justification et plafond de preuve le cas échéant
 
-Non cadrée pour l'instant. À définir une fois les missions A-D consolidées, en réutilisant
-les mêmes critères d'acceptation (prix total, dates alignées, disponibilité confirmée).
+## Mission D — Vols TUN→SXM (BLOQUÉE)
+
+Manifeste déjà préparé : `manifests/sxm_v2_vols.json`. Ne pas dispatcher avant le retour
+complet de la Vague 2 (voir « Ordre de mission » ci-dessus).
+
+## Mission E — Budget complet (BLOQUÉE, après la mission D)
+
+Non cadrée. À définir une fois D consolidée.

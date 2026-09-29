@@ -8,21 +8,45 @@ toute création réelle.
 
 ## Proposition de structure (module Projet Odoo)
 
+**Correction du 29/09/2026** : la première version de ce document listait 7 "étapes"
+qui étaient en réalité des CHANTIERS (villas FR, villas NL, agences, vols, budget…), pas
+un flux Kanban. Un Kanban Odoo doit représenter une PROGRESSION d'avancement, la même
+pour toute carte, pas une liste de sujets. Corrigé ci-dessous : les chantiers deviennent
+des tâches parentes (ou des étiquettes), et les colonnes Kanban redeviennent un vrai flux.
+
 **Projet** : « Saint-Martin 2026 »
 
-**Étapes (stages)** :
-1. Recherche hébergement (FR) — cartes : une par offre villa/hôtel FR en cours
-2. Recherche hébergement (NL) — cartes : une par offre villa/hôtel NL en cours
-3. Agences locales — cartes : une par agence contactable
-4. Hébergement retenu — critères d'acceptation remplis (voir `codex-missions.md`)
-5. Vols — cartes : recherche TUN→SXM (bloquée tant que l'étape 4 n'a pas au moins une
-   carte par côté)
-6. Budget consolidé
-7. Suivi voyage (itinéraire, formalités)
+**Colonnes Kanban (flux, identique pour toute carte)** :
+1. À faire
+2. En cours
+3. À vérifier (donnée publiée mais prix/disponibilité/critère encore à confirmer —
+   correspond au statut `incomplet` du schéma de comparaison)
+4. Terminé (correspond au statut `confirmé` ou à une exclusion actée `indisponible`)
 
-**Champs proposés par carte/tâche** : offre_id (référence à `comparaison.csv`), statut
-(confirmé/incomplet/indisponible), URL source, date de vérification UTC — mêmes champs
-que le schéma de comparaison, pour rester synchronisé sans double saisie.
+**Tâches parentes (ou étiquettes, selon la préférence du voyageur) — un chantier chacune,
+regroupant les cartes qui le concernent** :
+- Villas côté FR
+- Villas côté NL
+- Agences locales
+- Vols TUN→SXM (bloquée : aucune sous-tâche ne doit avancer au-delà de "À faire" tant que
+  villas FR et NL n'ont pas chacune au moins une carte en "À vérifier" ou "Terminé")
+- Budget consolidé
+- Site vitrine / suivi voyage
+
+**Une carte = une offre** (un `offre_id` de `comparaison.csv`), qui avance dans les 4
+colonnes Kanban tout en restant rattachée à sa tâche parente/étiquette de chantier — pas
+l'inverse (le chantier n'est jamais lui-même une colonne d'avancement).
+
+**Champs proposés par carte** : offre_id (référence à `comparaison.csv`), statut
+(confirmé/incomplet/indisponible — détermine la colonne Kanban), URL source, date de
+vérification UTC (ou vide si non transmise, jamais inventée) — mêmes champs que le
+schéma de comparaison, pour rester synchronisé sans double saisie.
+
+**Méthode** : un skill Codex nommé `odoo-projet` existe déjà côté Codex (signalé par le
+voyageur) et peut guider la structuration de ce plan côté Codex — ce n'est PAS un agent
+Odoo déjà configuré ni une intégration branchée (voir `roles-agents-audit.md` § 3). Si le
+voyageur peut en partager le gabarit exact, cette proposition sera alignée dessus plutôt
+que de rester une structure inventée indépendamment.
 
 ## Pourquoi pas encore de création réelle
 

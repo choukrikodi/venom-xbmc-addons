@@ -25,6 +25,81 @@
   sans preuve légale » — sources officielles non accessibles depuis cet environnement,
   egress bloqué).
 
+## Corrections de preuve appliquées le 29/09/2026 (relecture critique du relais)
+
+- **Horodatages fabriqués retirés.** Le premier lot villa avait reçu un
+  `verifiee_le_utc`/`date_consultation_utc` de "19:00:00Z" que j'avais fabriqué (heure
+  par défaut d'un script), jamais transmis par Codex, et en plus dans le futur par
+  rapport à l'heure réelle du relais (~18:50 UTC). Remplacé par `null` partout où
+  l'horodatage précis par source n'a pas été transmis — je n'invente plus d'heure UTC.
+  Seuls les horodatages issus d'un appel outil réellement effectué dans cette session
+  (Booking.com, run CI Trivago) restent renseignés.
+- **Attribution corrigée.** `23/11/2026` (borne basse du balayage) n'est PAS une date
+  donnée telle quelle par le voyageur : c'est une interprétation provisoire du relais
+  pour traduire « dernière semaine de novembre » en date exacte. Le schéma le dit
+  maintenant explicitement (`fenetres_dates_reference.A_balayage_9_nuits.origine_des_bornes`).
+- **Calcul La Perla Bianca corrigé : 12 705 USD, pas 11 895 USD**, pour l'ancre
+  30/11→09/12 (6 nuits à 1350 USD + 3 nuits à 1150 USD, taxe de 10 % sur l'ensemble du
+  séjour — j'avais à tort appliqué la taxe seulement à la deuxième tranche). Deux autres
+  ancres simulées sur la même grille : 13 365 USD (23/11→02/12) et 11 385 USD
+  (06/12→15/12). **Ce sont des simulations arithmétiques, pas des devis, pas
+  réservables** — aucune des trois ancres n'a de prix total final ni de disponibilité
+  publiés (Mission A Codex).
+- **Comparaison USD/EUR retirée** partout où elle n'était pas adossée à un taux de
+  change daté : les montants villa restent en USD, non convertis, non comparés
+  directement au plafond de 8 000 € tant qu'aucun taux BCE daté (Frankfurter) n'est
+  appliqué (méthode skill §6).
+- **Budget** : le plafond est bien 8 000 € tout compris **plus** une réserve **distincte**
+  de 1 000 € (jamais additionnés en « 2 000 € de réserve » comme écrit par erreur dans une
+  version précédente de `codex-missions.md`) ; validité pour ce projet SXM toujours à
+  confirmer par le voyageur.
+- **Inventaire D1 corrigé** (`roles-agents-audit.md`) : la base distante UUID
+  `c770c2dc-e95e-468b-8b95-c96e4238b8a3` contiendrait aussi des tables Andaman
+  (`hotels`, `vols`, `alias_hotels`, `avis_voyageurs`), signalé par le voyageur — je
+  n'avais mentionné que `venom-xbmc-addons-db` (Kodi). Non vérifié indépendamment depuis
+  cette session (fichier AGENTS.md source introuvable dans ce conteneur), mais reflété
+  dans l'audit et dans les garde-fous de `sql-schema-sxm.sql`.
+- **SQL retravaillé** : montants en centimes (INTEGER), jamais en `REAL`, avec règle
+  d'arrondi supérieur documentée ; une cotation est désormais reliée directement à sa
+  source (`source_id`) et l'unicité porte sur (offre, dates, source) pour permettre
+  plusieurs vendeurs/grilles sur les mêmes dates ; enum des droits photo harmonisé sur
+  `a_verifier` (au lieu de `inconnu`) entre le schéma JSON, le manifeste photo et le SQL.
+- **Odoo retravaillé** : les 7 « étapes » précédentes étaient des chantiers, pas un flux
+  Kanban — corrigé en un vrai flux (à faire/en cours/à vérifier/terminé) avec villas
+  FR/NL, agences, vols et budget en tâches parentes/étiquettes. Toujours non écrit dans
+  Odoo (aucun connecteur disponible côté Claude) ; un skill Codex `odoo-projet` existe et
+  peut guider ce plan côté Codex, sans être un agent déjà configuré.
+
+## Résultats Missions A/B/C Codex (29/09/2026, ~18:49–18:52 UTC)
+
+**Aucune offre villa n'a, à ce stade, de prix total final ET de disponibilité publiés
+simultanément — statut `incomplet` partout, jamais `indisponible` pour ce seul motif**
+(la mention « indisponible » n'est utilisée que pour une exclusion actée sur un critère
+strict : lagune au lieu de mer ouverte, jacuzzi absent, accès plage à pied, etc.).
+
+- **Mission A (FR)** : La Perla Bianca et La Perla Classic sans total/dispo publics sur
+  les 3 ancres ; « La Vie en Bleu » mentionnée sans détail (à reclarifier) ; Villa Marie
+  (Baie Nettlé) reconfirmée hors critère (lagune). Deux alternatives trouvées (Barefoot
+  Beach Bungalow, Blue Horizon Beach Bungalow) mais exclues : aucun jacuzzi.
+- **Mission B (NL)** : Villa Bahari sans total/dispo publics ; **correction importante :
+  c'est une villa 3 chambres**, pas 1 chambre comme indiqué à tort dans le premier lot —
+  comparée ici en occupation 2 adultes (sous-utilisation de sa capacité, à considérer
+  dans le budget). Jacuzzi signalé inutilisable dans un avis d'avril 2026. Trois
+  alternatives NL trouvées, toutes exclues du critère strict (Corinne's Villa : jacuzzi
+  non confirmé ; Blue Sanctuary : plage à pied, pas d'accès direct ; Beachside Villas :
+  piscine commune, pas de jacuzzi).
+- **Mission C (agences locales)** : trois agences légalement vérifiées (VillaVEO/Exclusive
+  Villas SARL, Soualiga Homes, 40Weeks/Podium Caraibes — SIRET/SIREN et cartes
+  professionnelles cités dans `comparaison.csv`). Une offre concrète trouvée (Soualiga
+  Beach House : plage baie maritime + piscine privée, mais pas de jacuzzi, prix en
+  fourchette sans dates) ; une « Villa Marie » distincte trouvée via 40Weeks (lagune de
+  Simpson Bay, exclue, à ne pas confondre avec celle de Baie Nettlé). Aucun forfait
+  TUN+villa exact trouvé ; Tropical Tour n'a que des exemples 3 nuits au départ de
+  Pointe-à-Pitre (PTP), inutilisables pour ce projet.
+- **Aucun prestataire contacté, aucun formulaire rempli, dans aucune des trois missions.**
+- Ne pas conclure qu'aucune autre offre n'existe : c'est un manque de preuve publique à
+  ce stade, pas une exclusion du marché.
+
 ---
 
 Ce dossier n'a **aucun rapport avec l'addon Kodi** de ce dépôt. Il sert de
