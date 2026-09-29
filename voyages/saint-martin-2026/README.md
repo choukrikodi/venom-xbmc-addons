@@ -1,5 +1,30 @@
 # Saint-Martin 2026 — état des lieux et structure de comparaison
 
+## Budget indicatif (agent Codex, taux BCE officiel 29/09/2026 : 1 EUR = 1,1355 USD, arrondi supérieur au centime par ligne)
+
+**Ce ne sont PAS des devis finaux ni des montants réservables** — sous-totaux
+hébergement+vol alignés sur les mêmes dates, hors soutes (sauf ligne Standard), hors
+transferts/repas/assurance/activités/dépôt. Plafond historique de référence : 8 000 €
+(+ réserve distincte de 1 000 €, validité pour ce projet SXM toujours à confirmer).
+
+| Scénario | Villa (USD→EUR) | Vol (EUR) | Sous-total | Écart vs 8 000 € |
+| --- | --- | --- | --- | --- |
+| La Perla 02→11/12 | 12 265 → 10 801,41 | AF Light 1 888 (hors soutes) | **12 689,41 €** | +4 689,41 € |
+| La Perla 06→15/12 | 11 385 → 10 026,43 | AF Light 1 891 (hors soutes) | **11 917,43 €** | +3 917,43 € |
+| Bahari 03→12/12 (Light) | 8 415 → 7 410,84 | AF Light 1 888 (hors soutes) | **9 298,84 €** | +1 298,84 € (le plus proche) |
+| Bahari 03→12/12 (Standard, confirmé par l'agent NL) | 8 415 → 7 410,84 | AF Standard 4 512,98 USD/2 → 3 974,45 (bagage inclus) | **11 385,29 €** | +3 385,29 € |
+
+**Les 4 scénarios dépassent le plafold de 8 000 €**, y compris le plus proche (Bahari en
+tarif Light, sans bagage chiffré). Bahari annonce un transfert aéroport aller-retour
+inclus sur sa fiche — à ne pas compter une deuxième fois, conditions à vérifier ; sable de
+Cupecoy non garanti.
+
+**Manquants dans tous les scénarios** : coût des soutes en tarif Light, repas, assurance
+voyage, location de voiture/carburant, activités, taxes/frais éventuels non affichés,
+nuit de transit (pour l'option 06→15 si elle est retenue malgré tout), dépôt de garantie
+(immobilisé, pas une dépense). Taux de change indicatif seulement — le paiement bancaire
+réel peut différer.
+
 ## Percée Vague 2 (29/09/2026, ~19:00 UTC) — deux premières cotations CONFIRMÉES
 
 **Premières offres au statut `confirme`** (prix total final ET disponibilité réellement
