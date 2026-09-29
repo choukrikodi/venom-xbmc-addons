@@ -50,6 +50,25 @@ réserve de confirmation du gestionnaire », aucune réservation ni contact effe
 plage n'est légalement exclusive (côté FR confirmé ; côté NL toujours non vérifié faute
 d'accès à la source officielle) ; au mieux un accès privatif à une plage publique.
 
+## Premier vol réel aligné (agent Codex FR, 29/09/2026 ~19:10-19:11 UTC) — PAS un coût complet
+
+Pour la fenêtre villa 06/12→15/12 (La Perla Bianca/Classic, 11 385 USD) : Air France,
+Google Flights.
+
+- **Aller** : AF1185 TUN 05/12 17:15 → CDG 19:55 ; **correspondance nocturne 13h50 à
+  CDG** ; AF446 CDG 06/12 09:45 → SXM 14:10.
+- **Retour** : AF445 SXM 15/12 16:20 → CDG 16/12 05:45 ; correspondance 1h35 (bagages/
+  correspondance sur billet unique à vérifier) ; AF1084 CDG 07:20 → TUN 09:50.
+- **Prix affiché** : 1 891 EUR/2 adultes chez Air France en direct, TTC **hors 2 soutes** ;
+  1 864 EUR via KILROY (OTA différente, pas équivalente terme à terme). **Aucun coût
+  complet à annoncer** tant que les soutes ne sont pas chiffrées.
+- **Correspondance nocturne CDG** : aucun hôtel de transit inclus, accès côté piste à
+  confirmer, potentiellement inconfortable. Option identifiée sans prix confirmé :
+  YOTELAIR CDG (séjour aéroport 18h-09h) — https://www.yotel.com/en/hotels/yotelair-paris-charles-de-gaulle
+- L'agent FR compare encore d'autres compagnies et la fenêtre 02/12→11/12 ; l'agent NL
+  contrôle les vols pour Bahari (03/12→12/12). **Toujours aucune réservation.** Budget
+  consolidé toujours à faire seulement après vols alignés + transferts + réserve confirmée.
+
 ## Mise à jour du 29/09/2026 (suite de mission — orchestration Codex)
 
 - **Fenêtre de séjour corrigée deux fois par le voyageur le même jour** : d'abord
