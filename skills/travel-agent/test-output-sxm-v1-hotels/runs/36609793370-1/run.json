@@ -1,0 +1,10 @@
+{
+  "case_file": "skills/travel-agent/evals/files/sxm_v1_hotels.json",
+  "run_id": "36609793370",
+  "attempt": "1",
+  "event_sha": "51fd11a61062ad9df3ce62184c94720db1b427ee",
+  "checkout_sha": "51fd11a61062ad9df3ce62184c94720db1b427ee",
+  "utc": "2026-09-29T18:08:08+00:00",
+  "list_status": "success",
+  "calls_status": "success"
+}
