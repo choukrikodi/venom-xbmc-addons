@@ -26,6 +26,30 @@ skill §6, non appliqué ici). La Perla Classic et « La Vie en Bleu » restent 
 Codex ; Villa Bahari reste en couverture partielle. **Vols et budget toujours bloqués**
 jusqu'au retour complet de la Vague 2.
 
+## Bilan final Vague 2 villas SXM (29/09/2026, heures exactes non journalisées par ligne)
+
+Fenêtre testée : 14 séjours de 9 nuits possibles (arrivées 23/11→06/12, sorties
+02/12→15/12). Tableau de couverture par offre/plateforme — **x/14** = nombre de fenêtres
+testées, **utilisable** = nombre avec prix total ET disponibilité réellement affichés.
+
+| Offre | Plateforme | Couverture | Utilisable | Meilleure preuve | Écart notable |
+| --- | --- | --- | --- | --- | --- |
+| La Perla Bianca (FR) | St Martin Blue | 14/14 | 5/14 | **06/12→15/12 = 11 385 USD** (moins chère) | 9/14 confirmées indisponibles (dont l'ancre Thaïlande) |
+| La Perla Classic (FR) | St Martin Blue | 14/14 | 5/14 | 06/12→15/12 = 11 385 USD | **Identique au dollar/jour près à Bianca — anomalie non expliquée** |
+| Bianca + Classic (FR) | Lux Villa Vacation (gestionnaire local) | 0/14 lisible | 0/14 | — | Grille tarifaire seule, pas de calendrier exploitable |
+| La Vie en Bleu (FR) | St Martin Blue | 0/14 sélectionnable | 0/14 | — | Calendrier fermé sur ce canal ; fiche contradictoire (accès direct vs "short walk") |
+| Carisa (FR) | (canal non précisé) | 0/14 | 0/14 | — | Aucune URL source transmise ; jacuzzi séparé non confirmé |
+| Villa Bahari (NL) | St Martin Blue | 14/14 | 1/14 | **03/12→12/12 = 8 415 USD** | 10/14 confirmées indisponibles, 3/14 non sélectionnables sans raison |
+| Villa Bahari (NL) | VillaVEO | 14/14 | 0/14 (bouton demande, pas de calendrier libre) | ≈7 665 EUR incomplet (taxe sur devis) | **⚠️ CONFLIT MAJEUR** avec St Martin Blue sur 13/14 périodes : SMB indisponible, VillaVEO "demandable" au même prix — non résolu |
+| Villa Vittoria (NL, Simpson Beach) | IsleBlue | 14/14 | 1/14 | 06/12→15/12 = 14 999 USD | Villa 6 chambres (surdimensionnée), "jacuzzi" = baignoire de salle de bain, pas de terrasse privée — hors critère strict malgré le prix affiché |
+| Soualiga Beach House (agence) | Soualiga Homes | — | 0 | 714-1786 €/nuit sans dates | Fourchette non datée, jacuzzi absent |
+
+**Constat global** : sur 16 offres tracées, **deux ont une fenêtre réellement confirmée
+utilisable pour ce projet** (Bianca 06/12→15/12, Bahari 03/12→12/12) — toutes deux « sous
+réserve de confirmation du gestionnaire », aucune réservation ni contact effectué. Aucune
+plage n'est légalement exclusive (côté FR confirmé ; côté NL toujours non vérifié faute
+d'accès à la source officielle) ; au mieux un accès privatif à une plage publique.
+
 ## Mise à jour du 29/09/2026 (suite de mission — orchestration Codex)
 
 - **Fenêtre de séjour corrigée deux fois par le voyageur le même jour** : d'abord

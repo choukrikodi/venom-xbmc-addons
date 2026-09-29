@@ -341,7 +341,7 @@
         "valeur": "confirme",
         "regle": "Prix total final ET disponibilité publiquement affichés et cohérents pour 5 fenêtres réelles (la moins chère : 06/12->15/12, 11 385 USD) — critère 'confirmé' atteint pour ces fenêtres précises. Reste néanmoins 'sous réserve de confirmation du gestionnaire' (mention du site lui-même) : ce n'est pas une réservation ferme. L'ancre 'référence Thaïlande' (30/11->09/12) est confirmée INDISPONIBLE pour cette villa."
       },
-      "ecarts_signales": "PISTE SOLIDE (meilleure preuve obtenue à ce jour sur ce dossier) : 06/12->15/12 = 11 385 USD, disponible, moins chère des 5 fenêtres testées. Ne pas comparer ce montant USD au plafond EUR sans taux de change daté (Frankfurter/BCE, non appliqué ici). L'URL de la fiche ne préserve pas les dates en paramètres : chaque fenêtre doit être reproduite manuellement via le sélecteur de dates du site, pas via un lien direct. Deux corpus d'avis distincts (stmartinblue 6, Airbnb 16) à ne jamais additionner. Aucune réservation ni contact prestataire à aucun moment. Vague 2 se poursuit sur La Perla Classic et La Vie en Bleu (résultats non encore transmis).",
+      "ecarts_signales": "PISTE SOLIDE (meilleure preuve obtenue à ce jour sur ce dossier) : 06/12->15/12 = 11 385 USD, disponible, moins chère des 5 fenêtres testées. Ne pas comparer ce montant USD au plafond EUR sans taux de change daté (Frankfurter/BCE, non appliqué ici). L'URL de la fiche ne préserve pas les dates en paramètres : chaque fenêtre doit être reproduite manuellement via le sélecteur de dates du site, pas via un lien direct. Deux corpus d'avis distincts (stmartinblue 6, Airbnb 16) à ne jamais additionner. Aucune réservation ni contact prestataire à aucun moment. Vague 2 se poursuit sur La Perla Classic et La Vie en Bleu (résultats non encore transmis). Bilan final Vague 2 : le gestionnaire local Lux Villa Vacation (luxvillavacation.com) n'affiche qu'une grille tarifaire, 0/14 fenêtres avec disponibilité+total lisibles publiquement — St Martin Blue reste le seul canal avec un calendrier réellement exploitable pour ces deux villas. Aucune plage n'est légalement exclusive côté français ; au mieux un accès privatif.",
       "cotations": [
         {
           "fenetre_checkin": "2026-12-02",
@@ -518,7 +518,7 @@
         "valeur": "confirme",
         "regle": "Prix total final ET disponibilité affichés pour 5 fenêtres réelles (moins chère : 06/12->15/12, 11 385 USD)."
       },
-      "ecarts_signales": "⚠️ ALERTE QUALITÉ DE DONNÉE : les 5 prix ET les 9 fenêtres bloquées sont RIGOUREUSEMENT IDENTIQUES à ceux de La Perla Bianca (même montants au dollar près, mêmes dates bloquées). Ceci n'a PAS été expliqué par la source — hypothèses possibles : villas jumelles gérées ensemble avec un tarif commun, erreur de duplication de fiche côté St Martin Blue, ou widget de calendrier partagé par erreur entre les deux annonces. À CLARIFIER avant de traiter Bianca et Classic comme deux offres réellement indépendantes — ne pas se fier aveuglément à cette 'confirmation' croisée tant que l'origine de la coïncidence n'est pas comprise. Ne pas comparer les montants USD au plafond EUR sans taux daté. Baignade potentiellement gênée par des rochers en face (signalé dans un lot antérieur, non recoupé dans ce round). Aucune réservation ni contact.",
+      "ecarts_signales": "⚠️ ALERTE QUALITÉ DE DONNÉE : les 5 prix ET les 9 fenêtres bloquées sont RIGOUREUSEMENT IDENTIQUES à ceux de La Perla Bianca (même montants au dollar près, mêmes dates bloquées). Ceci n'a PAS été expliqué par la source — hypothèses possibles : villas jumelles gérées ensemble avec un tarif commun, erreur de duplication de fiche côté St Martin Blue, ou widget de calendrier partagé par erreur entre les deux annonces. À CLARIFIER avant de traiter Bianca et Classic comme deux offres réellement indépendantes — ne pas se fier aveuglément à cette 'confirmation' croisée tant que l'origine de la coïncidence n'est pas comprise. Ne pas comparer les montants USD au plafond EUR sans taux daté. Baignade potentiellement gênée par des rochers en face (signalé dans un lot antérieur, non recoupé dans ce round). Aucune réservation ni contact. Bilan final Vague 2 : le gestionnaire local Lux Villa Vacation (luxvillavacation.com) n'affiche qu'une grille tarifaire, 0/14 fenêtres avec disponibilité+total lisibles publiquement — St Martin Blue reste le seul canal avec un calendrier réellement exploitable pour ces deux villas. Aucune plage n'est légalement exclusive côté français ; au mieux un accès privatif.",
       "cotations": [
         {
           "fenetre_checkin": "2026-12-02",
@@ -687,7 +687,7 @@
         "valeur": "incomplet",
         "regle": "Aucune donnée de prix/disponibilité exploitable sur ce canal — plafond de preuve, pas une exclusion de l'offre."
       },
-      "ecarts_signales": "Calendrier fermé sur St Martin Blue (0/14 sélectionnable) — à retenter via une autre agence ou un autre canal avant de conclure quoi que ce soit sur cette villa. Ne pas assimiler à 'indisponible'.",
+      "ecarts_signales": "Calendrier fermé sur St Martin Blue (0/14 sélectionnable) — à retenter via une autre agence ou un autre canal avant de conclure quoi que ce soit sur cette villa. Ne pas assimiler à 'indisponible'. Bilan final Vague 2 : fiche CONTRADICTOIRE selon les agents — annonce un accès direct à la plage à un endroit, un 'short walk' (marche courte, donc pas direct) à un autre. Ne retenir ni l'un ni l'autre sans clarification. Calendrier toujours 0/14 sur St Martin Blue (bilan final).",
       "cotations": [],
       "fenetre_consultation_approximative": "29/09/2026, ~19:03-19:05 UTC (agents, approximatif)"
     },
@@ -936,7 +936,7 @@
         "valeur": "confirme",
         "regle": "Prix total final ET disponibilité publiquement affichés pour la fenêtre 03/12->12/12 (8 415 USD) — critère 'confirmé' atteint pour CETTE fenêtre précise. Couverture des 13 autres fenêtres possibles encore incomplète (Vague 2 en cours) ; sable Cupecoy variable et jacuzzi signalé défaillant (avis 2026) restent des réserves actives indépendantes du prix."
       },
-      "ecarts_signales": "Première fenêtre confirmée pour cette villa : 03/12->12/12, 8 415 USD, disponible. Ne pas comparer ce montant USD au plafond EUR sans taux daté. Villa 3 chambres réservée en 2 adultes (sous-utilisation de capacité, à reconsidérer dans le budget). Trois corpus d'avis distincts (St Martin Blue 11, Isle Blue 12, WhereToStay 2) — ne jamais les additionner. Jacuzzi signalé inutilisable dans un avis d'avril 2026, sable saisonnier. Aucune réservation ni contact. Couverture Vague 2 encore partielle pour cette offre. Plage de Cupecoy parfois rocheuse/sans sable par endroits (reconfirmé). Deux sources indépendantes (St Martin Blue, VillaVEO) donnent des montants non comparables directement (devise + périmètre différents) — ne jamais les fusionner en un seul chiffre.",
+      "ecarts_signales": "Première fenêtre confirmée pour cette villa : 03/12->12/12, 8 415 USD, disponible. Ne pas comparer ce montant USD au plafond EUR sans taux daté. Villa 3 chambres réservée en 2 adultes (sous-utilisation de capacité, à reconsidérer dans le budget). Trois corpus d'avis distincts (St Martin Blue 11, Isle Blue 12, WhereToStay 2) — ne jamais les additionner. Jacuzzi signalé inutilisable dans un avis d'avril 2026, sable saisonnier. Aucune réservation ni contact. Couverture Vague 2 encore partielle pour cette offre. Plage de Cupecoy parfois rocheuse/sans sable par endroits (reconfirmé). Deux sources indépendantes (St Martin Blue, VillaVEO) donnent des montants non comparables directement (devise + périmètre différents) — ne jamais les fusionner en un seul chiffre. CONFLIT MAJEUR non résolu entre St Martin Blue (1/14 disponible) et VillaVEO (14/14 'demandables' au même prix) pour la même villa — à clarifier avant toute décision. Jacuzzi : ancien avis de panne, état actuel INCONNU (pas de confirmation de réparation).",
       "cotations": [
         {
           "fenetre_checkin": "2026-12-03",
@@ -958,8 +958,8 @@
           "note": "Base 7 650 USD + taxe/service 765 USD = Grand Total 8 415 USD — coïncide exactement avec l'estimation arithmétique antérieure sur la grille flat-rate (bonne cohérence croisée)."
         },
         {
-          "fenetre_checkin": "2026-11-30",
-          "fenetre_checkout": "2026-12-09",
+          "fenetre_checkin": null,
+          "fenetre_checkout": null,
           "montant_total": 7665,
           "devise": "EUR",
           "montant_par_nuit": null,
@@ -967,14 +967,14 @@
           "est_simulation": false,
           "disponibilite": {
             "statut": "inconnue",
-            "note": "Demande de réservation requise pour confirmer — pas un calendrier public en libre consultation comme St Martin Blue"
+            "note": "Bouton 'demande' (request) sur chacune des 14/14 fenêtres testées — jamais une disponibilité confirmée en libre consultation"
           },
           "source": {
             "url": "https://www.villaveo.com/fr/locations/sint-maarten/cupecoy/villa-bahari",
             "date_consultation_utc": null
           },
           "statut_cotation": "incomplet",
-          "note": "Source distincte (agence VillaVEO, pas St Martin Blue) : loyer ≈6 724 EUR + service ≈941 EUR ≈ 7 665 EUR, MAIS taxe de séjour affichée séparément 'sur devis' (non incluse) et demande de réservation requise pour confirmer la disponibilité — ce n'est PAS un total TTC ni une disponibilité confirmée, contrairement au devis St Martin Blue (USD, TTC affiché). NE PAS traiter comme équivalent ou comparable directement (devises différentes sans taux daté, ET base de calcul incomplète ici). Teste néanmoins l'ancre 'référence Thaïlande' (30/11->09/12) que St Martin Blue n'a pas confirmée disponible pour cette villa (4/14 fenêtres testées par VillaVEO à ce stade, agents poursuivent)."
+          "note": "BILAN FINAL : VillaVEO affiche ≈7 665 EUR (6 724 loyer + 941 service, taxe de séjour SUR DEVIS séparé, non incluse) de façon IDENTIQUE sur CHACUNE des 14/14 fenêtres testées, avec un simple bouton de demande — PAS un total TTC, PAS une disponibilité confirmée. ⚠️ CONFLIT MAJEUR avec St Martin Blue sur 13 des 14 fenêtres : SMB montre ces mêmes périodes comme réservées/non sélectionnables, tandis que VillaVEO les présente toutes comme demandables au même tarif — statut NON RÉSOLU. Ne jamais présenter VillaVEO comme réservable, et ne jamais comparer ce montant EUR incomplet au total TTC USD de SMB (devises différentes, périmètres différents, taxe de séjour manquante)."
         }
       ],
       "fenetre_consultation_approximative": "29/09/2026, ~18:50 UTC (agent, approximatif — pas de lecture d'horloge exacte transmise)",
@@ -1288,6 +1288,152 @@
       },
       "ecarts_signales": "Homonyme possible de fr-baienettle-villa-marie-EXCLUE (même nom commercial 'Villa Marie', propriété et plateforme différentes) — ne pas fusionner les deux fiches sans confirmation qu'il s'agit du même bien.",
       "cotations": []
+    },
+    {
+      "offre_id": "fr-baierouge-villa-carisa",
+      "cote": "FR",
+      "zone": "Baie Rouge (Terres Basses, présumée)",
+      "formule": "villa_seule",
+      "nom_offre": "Carisa",
+      "unite_exacte": "Non détaillée",
+      "capacite_max_personnes": null,
+      "capacite_utilisee": 2,
+      "acces_direct_sable": {
+        "statut": "a_verifier",
+        "distance_m": null,
+        "source_de_la_distance": "Aucune URL source transmise dans ce lot — à redemander"
+      },
+      "plage": {
+        "type": "a_verifier",
+        "definition_privee_exclusive": null,
+        "definition_publique_acces_prive": null,
+        "note_verification": "Aucune plage n'est légalement exclusive côté FR (reconfirmé, bilan final Vague 2)"
+      },
+      "piscine": {
+        "statut": "a_verifier",
+        "note": ""
+      },
+      "jacuzzi": {
+        "statut": "a_verifier",
+        "note": "Jacuzzi séparé NON CONFIRMÉ selon le bilan final Vague 2 (29/09/2026)"
+      },
+      "cotations": [],
+      "fenetre_consultation_approximative": "29/09/2026 (bilan final Vague 2, heures exactes non journalisées)",
+      "fenetres_indisponibles_confirmees": {
+        "arrivees": [],
+        "raison": "0/14 sélectionnable (canal non précisé, probablement St Martin Blue comme les autres fiches du même lot)"
+      },
+      "disponibilite": {
+        "statut": "inconnue",
+        "note": "0/14 fenêtres avec disponibilité/total public — plafond de preuve atteint",
+        "verifiee_le_utc": null
+      },
+      "conditions": {
+        "annulation": "",
+        "petit_dejeuner_inclus": "non applicable (villa)",
+        "caution": "",
+        "sejour_minimum_nuits": null,
+        "autres": ""
+      },
+      "avis": [],
+      "photos": {
+        "disponibles": false,
+        "droits": "a_verifier",
+        "note": ""
+      },
+      "source": {
+        "url": "",
+        "date_consultation_utc": null,
+        "origine": "codex_villas_fr"
+      },
+      "statut": {
+        "valeur": "incomplet",
+        "regle": "Aucune URL source ni donnée exploitable transmise au-delà du nom — à recompléter, ne pas exclure faute d'info"
+      },
+      "ecarts_signales": "Aucune URL source transmise pour cette entrée (comme 'La Vie en Bleu' initialement) — à redemander explicitement."
+    },
+    {
+      "offre_id": "nl-simpsonbeach-villa-vittoria",
+      "cote": "NL",
+      "zone": "Simpson Beach",
+      "formule": "villa_seule",
+      "nom_offre": "Villa Vittoria",
+      "unite_exacte": "Villa 6 CHAMBRES — largement surdimensionnée pour 2 personnes, peu adaptée à un couple selon le bilan Vague 2",
+      "capacite_max_personnes": null,
+      "capacite_utilisee": 2,
+      "acces_direct_sable": {
+        "statut": "a_verifier",
+        "distance_m": null,
+        "source_de_la_distance": "isleblue.co, à préciser"
+      },
+      "plage": {
+        "type": "a_verifier",
+        "definition_privee_exclusive": null,
+        "definition_publique_acces_prive": null,
+        "note_verification": "Aucune plage légalement exclusive"
+      },
+      "piscine": {
+        "statut": "a_verifier",
+        "note": ""
+      },
+      "jacuzzi": {
+        "statut": "a_verifier",
+        "note": "'Bain à remous dans la salle de bain' selon la source — CE N'EST PAS le jacuzzi privé de terrasse recherché par le critère strict ; à ne pas confondre. Ne compte pas comme 'jacuzzi privé' au sens de ce projet."
+      },
+      "cotations": [
+        {
+          "fenetre_checkin": "2026-12-06",
+          "fenetre_checkout": "2026-12-15",
+          "montant_total": 14999,
+          "devise": "USD",
+          "montant_par_nuit": null,
+          "tarif_correspond_a_l_unite_exacte": true,
+          "est_simulation": false,
+          "disponibilite": {
+            "statut": "confirmee",
+            "note": "Seule fenêtre affichant un total sur 14/14 testées (IsleBlue)"
+          },
+          "source": {
+            "url": "https://isleblue.co/villas/vacation-rentals/caribbean/st-martin/simpson-beach/villa-vittoria",
+            "date_consultation_utc": null
+          },
+          "statut_cotation": "confirme",
+          "note": "14 999 USD pour 9 nuits, 06/12->15/12 — prix total villa entière (6 chambres), pas un tarif par couple/chambre équivalent aux autres offres."
+        }
+      ],
+      "fenetre_consultation_approximative": "29/09/2026 (bilan final Vague 2, heures exactes non journalisées)",
+      "fenetres_indisponibles_confirmees": {
+        "arrivees": [],
+        "raison": "13/14 fenêtres testées sans total affiché (une seule, 06/12->15/12, exploitable)"
+      },
+      "disponibilite": {
+        "statut": "confirmee",
+        "note": "Une fenêtre confirmée disponible et chiffrée (06/12->15/12) ; 13 autres non exploitables",
+        "verifiee_le_utc": null
+      },
+      "conditions": {
+        "annulation": "",
+        "petit_dejeuner_inclus": "non applicable (villa)",
+        "caution": "",
+        "sejour_minimum_nuits": null,
+        "autres": ""
+      },
+      "avis": [],
+      "photos": {
+        "disponibles": true,
+        "droits": "a_verifier",
+        "note": ""
+      },
+      "source": {
+        "url": "https://isleblue.co/villas/vacation-rentals/caribbean/st-martin/simpson-beach/villa-vittoria",
+        "date_consultation_utc": null,
+        "origine": "codex_villas_nl"
+      },
+      "statut": {
+        "valeur": "incomplet",
+        "regle": "Prix+dispo confirmés pour une fenêtre, MAIS 'jacuzzi' n'est qu'une baignoire de salle de bain (ne remplit pas le critère strict jacuzzi privé de terrasse) et la villa (6 chambres) est disproportionnée pour 2 personnes — statut technique 'confirmé' sur cette fenêtre précise, mais offre à écarter du critère strict tel que défini par le voyageur"
+      },
+      "ecarts_signales": "14 999 USD, la plus chère de toutes les cotations obtenues à ce jour, pour une villa 6 chambres sans jacuzzi privé de terrasse confirmé — rapport qualité-critère très défavorable comparé à Bianca/Bahari. Conservée pour mémoire/comparaison, pas recommandée."
     }
   ]
 }
