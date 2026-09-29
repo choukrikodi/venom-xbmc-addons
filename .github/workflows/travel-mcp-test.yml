@@ -10,7 +10,7 @@ on:
         description: Dossier de résultats (vide = déduit du manifeste)
         default: ""
   push:
-    branches: [claude/travel-agent-skill-setup-vhqmwf]
+    branches: [claude/travel-agent-skill-setup-vhqmwf, claude/sxm-travel-research]
     paths:
       - .github/workflows/travel-mcp-test.yml
       - skills/travel-agent/scripts/**

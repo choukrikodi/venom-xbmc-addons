@@ -1,6 +1,6 @@
 {
   "case_name": "sxm_v1_vols",
-  "notice": "Saint-Martin (SXM), départ Tunis (TUN), préférence exprimée par le voyageur le 26/09/2026. 2 adultes, 1 soute chacun, ≤2 escales par sens, pas de self-transfer, fenêtre de départ 20/11→05/12/2026, 9 à 10 nuits sur place (nights_in_dst, calculées par Kiwi sur les horaires réels, pas une hypothèse manuelle). Toutes compagnies (aucune préférence de transporteur établie pour cette route). Aucune réservation.",
+  "notice": "Exécuté via claude/sxm-travel-research (branches push ajoutée au workflow). Saint-Martin (SXM), départ Tunis (TUN), préférence exprimée par le voyageur le 26/09/2026. 2 adultes, 1 soute chacun, ≤2 escales par sens, pas de self-transfer, fenêtre de départ 20/11→05/12/2026, 9 à 10 nuits sur place (nights_in_dst, calculées par Kiwi sur les horaires réels, pas une hypothèse manuelle). Toutes compagnies (aucune préférence de transporteur établie pour cette route). Aucune réservation.",
   "requests": [
     {
       "name": "kiwi_tun_sxm_all_fenetre_9_10n",
