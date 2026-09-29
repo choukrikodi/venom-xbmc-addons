@@ -58,11 +58,13 @@ Bahari, tous encore `incomplet` faute de preuve publique de prix total + disponi
 
 ### A — Villas côté français (Baie Rouge, Terres Basses, Orient Bay, Grand Case)
 
-1. Pour La Perla Bianca et La Perla Classic (et « La Vie en Bleu », dont l'URL manque
-   encore — la redemander) : retenter un relevé de disponibilité/prix total public sur
-   les 3 ancres ; sinon documenter le plafond de preuve précisément (St Martin Blue
-   affiche « Grand Total $0 » sans sélection de dates — décrire l'obstacle exact
-   rencontré, pas juste « non trouvé »).
+**La Perla Bianca : FAIT.** Couverture complète 14/14, 5 fenêtres confirmées disponibles
+et chiffrées (11 385 à 12 265 USD), 9 confirmées indisponibles (dont l'ancre Thaïlande).
+Voir `comparaison-schema.json`, statut `confirme`. Ne pas retester sauf nouvelle info.
+
+1. La Perla Classic et « La Vie en Bleu » (URL encore manquante pour cette dernière — la
+   redemander) : reproduire la même couverture 14/14 par sélecteur de dates que pour
+   Bianca ; sinon documenter le plafond de preuve précisément.
 2. Chercher au moins 2-3 **nouvelles** propriétés (pas Barefoot/Blue Horizon Beach
    Bungalow, déjà exclues faute de jacuzzi) répondant au critère strict complet
    (mer directe + piscine privée + jacuzzi privé), avec disponibilité publique si possible.
@@ -75,8 +77,12 @@ Bahari, tous encore `incomplet` faute de preuve publique de prix total + disponi
 
 ### B — Villas côté néerlandais (Cupecoy, Simpson Bay, Maho)
 
-1. Villa Bahari (villa 3 chambres, corrigé) : retenter disponibilité/prix total public
-   sur les 3 ancres, sinon documenter le plafond de preuve précisément.
+**Villa Bahari : EN COURS, une fenêtre déjà confirmée.** 03/12→12/12 = 8 415 USD,
+disponible (voir `comparaison-schema.json`, statut `confirme` pour cette fenêtre).
+23/11→02/12 confirmé indisponible pour une arrivée.
+
+1. Villa Bahari : terminer la couverture des 14 fenêtres (04-06/12 en cours), comme pour
+   Bianca côté FR.
 2. Chercher au moins 2-3 **nouvelles** propriétés répondant au critère strict complet
    (Corinne's Villa, Blue Sanctuary, Beachside Villas déjà exclues — ne pas les
    rechercher à nouveau sauf nouvelle information changeant leur statut).

@@ -1,5 +1,31 @@
 # Saint-Martin 2026 — état des lieux et structure de comparaison
 
+## Percée Vague 2 (29/09/2026, ~19:00 UTC) — deux premières cotations CONFIRMÉES
+
+**Premières offres au statut `confirme`** (prix total final ET disponibilité réellement
+affichés sur un calendrier public en direct, pas une simulation) :
+
+- **La Perla Bianca** (FR, Baie Rouge) — couverture complète 14/14 arrivées testées
+  (23/11→06/12). **9 fenêtres confirmées INDISPONIBLES** (nuits 29/11, 30/11, 01/12
+  réservées par un tiers — ceci inclut l'ancre « référence Thaïlande » 30/11→09/12, qui
+  est donc écartée pour cette villa précisément). **5 fenêtres confirmées disponibles et
+  chiffrées**, de 12 265 USD (02/12→11/12) à **11 385 USD (06/12→15/12, la moins
+  chère)**. Détail complet dans `comparaison-schema.json` (`cotations[]` de l'offre
+  `fr-baierouge-villa-laperlabianca`).
+- **Villa Bahari at Shore Pointe** (NL, Cupecoy) — une fenêtre confirmée disponible et
+  chiffrée : **03/12→12/12, 8 415 USD** (correspond exactement à l'estimation
+  arithmétique antérieure — bonne cohérence croisée). Couverture encore **partielle**
+  (l'agent vérifie encore 04-06/12 et la couverture complète des 14 dates) ; calendrier
+  indique 23/11→02/12 indisponible pour une arrivée.
+
+**Reste actif malgré le statut `confirme`** : les deux sites précisent que
+l'affichage du calendrier est « sous réserve de confirmation du gestionnaire », pas un
+contrat ni une garantie. **Aucune réservation ni contact prestataire n'a été fait.** Ne
+pas comparer ces montants USD au plafond de 8 000 € sans taux de change daté (méthode
+skill §6, non appliqué ici). La Perla Classic et « La Vie en Bleu » restent en cours côté
+Codex ; Villa Bahari reste en couverture partielle. **Vols et budget toujours bloqués**
+jusqu'au retour complet de la Vague 2.
+
 ## Mise à jour du 29/09/2026 (suite de mission — orchestration Codex)
 
 - **Fenêtre de séjour corrigée deux fois par le voyageur le même jour** : d'abord
