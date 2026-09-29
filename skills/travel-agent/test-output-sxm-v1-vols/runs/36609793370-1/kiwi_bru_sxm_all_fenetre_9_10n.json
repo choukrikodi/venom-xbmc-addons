@@ -1,0 +1,2065 @@
+=== 2026-09-29T18:08:37+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "BRU", "flyTo": "SXM", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false, "one_for_city": false, "departureDate": "20/11/2026", "departureDateTo": "05/12/2026", "nights_in_dst_from": 9, "nights_in_dst_to": 10}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"BRU → SXM on 20/11/2026–05/12/2026, 2 adults, 9–10 nights [≤2 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"1f2b212651385142297cb698_0|1f2b212651385142297cb698_1|1f2b212651385142297cb698_2|1f2b212651385142297cb698_3|1f2b212651385142297cb698_4|1f2b212651385142297cb698_5\",\n      \"price\": 2141.76351,\n      \"priceFormatted\": \"2142 EUR\",\n      \"totalDurationSeconds\": 205800,\n      \"bookingUrl\": \"https://kiwi.com/u/gb8y8g\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 0,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-12-05T10:00:00\",\n        \"arrivalTime\": \"2026-12-06T15:45:00\",\n        \"durationSeconds\": 125100,\n        \"stops\": 2,\n        \"route\": [\n          \"BRU\",\n          \"YUL\",\n          \"YYZ\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-05T10:00:00\",\n            \"arrivalTime\": \"2026-12-05T11:40:00\",\n            \"durationSeconds\": 27600,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC833\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-05T21:20:00\",\n            \"arrivalTime\": \"2026-12-05T22:56:00\",\n            \"durationSeconds\": 5760,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC429\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-12-06T09:50:00\",\n            \"arrivalTime\": \"2026-12-06T15:45:00\",\n            \"durationSeconds\": 17700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2106\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T16:45:00\",\n        \"arrivalTime\": \"2026-12-16T20:10:00\",\n        \"durationSeconds\": 80700,\n        \"stops\": 2,\n        \"route\": [\n          \"SXM\",\n          \"YYZ\",\n          \"LHR\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-15T16:45:00\",\n            \"arrivalTime\": \"2026-12-15T21:05:00\",\n            \"durationSeconds\": 19200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2107\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"LHR\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Londres\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport de Londres-Heathrow\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Royaume-Uni\",\n            \"departureTime\": \"2026-12-15T23:00:00\",\n            \"arrivalTime\": \"2026-12-16T11:20:00\",\n            \"durationSeconds\": 26400,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC858\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"LHR\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Londres\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Londres-Heathrow\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Royaume-Uni\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T18:00:00\",\n            \"arrivalTime\": \"2026-12-16T20:10:00\",\n            \"durationSeconds\": 4200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC6345\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b21265138514218dc3649_0|1f2b21265138514218dc3649_1|1f2b21265138514218dc3649_2|1f2b21265138514218dc3649_3|1f2b21265138514218dc3649_4|1f2b21265138514218dc3649_5\",\n      \"price\": 2395.727144,\n      \"priceFormatted\": \"2396 EUR\",\n      \"totalDurationSeconds\": 204000,\n      \"bookingUrl\": \"https://kiwi.com/u/pup36c\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 0,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-12-05T10:30:00\",\n        \"arrivalTime\": \"2026-12-06T15:45:00\",\n        \"durationSeconds\": 123300,\n        \"stops\": 2,\n        \"route\": [\n          \"BRU\",\n          \"FRA\",\n          \"YYZ\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"FRA\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Francfort\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport de Francfort-sur-le-Main\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Allemagne\",\n            \"departureTime\": \"2026-12-05T10:30:00\",\n            \"arrivalTime\": \"2026-12-05T11:40:00\",\n            \"durationSeconds\": 4200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC6327\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"FRA\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Francfort\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport de Francfort-sur-le-Main\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Allemagne\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-05T17:10:00\",\n            \"arrivalTime\": \"2026-12-05T19:45:00\",\n            \"durationSeconds\": 30900,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC843\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-12-06T09:50:00\",\n            \"arrivalTime\": \"2026-12-06T15:45:00\",\n            \"durationSeconds\": 17700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2106\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T16:45:00\",\n        \"arrivalTime\": \"2026-12-16T20:10:00\",\n        \"durationSeconds\": 80700,\n        \"stops\": 2,\n        \"route\": [\n          \"SXM\",\n          \"YYZ\",\n          \"LHR\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-15T16:45:00\",\n            \"arrivalTime\": \"2026-12-15T21:05:00\",\n            \"durationSeconds\": 19200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2107\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"LHR\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Londres\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport de Londres-Heathrow\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Royaume-Uni\",\n            \"departureTime\": \"2026-12-15T23:00:00\",\n            \"arrivalTime\": \"2026-12-16T11:20:00\",\n            \"durationSeconds\": 26400,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC858\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"LHR\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Londres\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Londres-Heathrow\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Royaume-Uni\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T18:00:00\",\n            \"arrivalTime\": \"2026-12-16T20:10:00\",\n            \"durationSeconds\": 4200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC6345\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b212651300000353a6218_0|1f2b212651300000353a6218_1|1f2b212651300000353a6218_2|21261f2b513b000047b11f27_0|21261f2b513b000047b11f27_1|21261f2b513b000047b11f27_2\",\n      \"price\": 2901.981716,\n      \"priceFormatted\": \"2902 EUR\",\n      \"totalDurationSeconds\": 334200,\n      \"bookingUrl\": \"https://kiwi.com/u/hw5sfk4\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-11-27T10:00:00\",\n        \"arrivalTime\": \"2026-11-29T15:45:00\",\n        \"durationSeconds\": 211500,\n        \"stops\": 2,\n        \"route\": [\n          \"BRU\",\n          \"YUL\",\n          \"YYZ\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-11-27T10:00:00\",\n            \"arrivalTime\": \"2026-11-27T11:40:00\",\n            \"durationSeconds\": 27600,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC833\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-11-28T11:10:00\",\n            \"arrivalTime\": \"2026-11-28T12:46:00\",\n            \"durationSeconds\": 5760,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC409\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-11-29T09:50:00\",\n            \"arrivalTime\": \"2026-11-29T15:45:00\",\n            \"durationSeconds\": 17700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2106\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-08T16:45:00\",\n        \"arrivalTime\": \"2026-12-10T07:50:00\",\n        \"durationSeconds\": 122700,\n        \"stops\": 2,\n        \"route\": [\n          \"SXM\",\n          \"YYZ\",\n          \"YUL\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-08T16:45:00\",\n            \"arrivalTime\": \"2026-12-08T21:05:00\",\n            \"durationSeconds\": 19200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2107\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-09T12:00:00\",\n            \"arrivalTime\": \"2026-12-09T13:25:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC410\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-09T18:50:00\",\n            \"arrivalTime\": \"2026-12-10T07:50:00\",\n            \"durationSeconds\": 25200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC832\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2126512e00006cfb21d4_0|1f2b2126512e00006cfb21d4_1|21261f2b51390000c59bc524_0|21261f2b51390000c59bc524_1|21261f2b51390000c59bc524_2\",\n      \"price\": 3022.981716,\n      \"priceFormatted\": \"3023 EUR\",\n      \"totalDurationSeconds\": 244200,\n      \"bookingUrl\": \"https://kiwi.com/u/htxj32\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-11-25T10:00:00\",\n        \"arrivalTime\": \"2026-11-26T14:45:00\",\n        \"durationSeconds\": 121500,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"YUL\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-11-25T10:00:00\",\n            \"arrivalTime\": \"2026-11-25T11:40:00\",\n            \"durationSeconds\": 27600,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC833\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-11-26T08:50:00\",\n            \"arrivalTime\": \"2026-11-26T14:45:00\",\n            \"durationSeconds\": 17700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2108\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-06T16:45:00\",\n        \"arrivalTime\": \"2026-12-08T07:50:00\",\n        \"durationSeconds\": 122700,\n        \"stops\": 2,\n        \"route\": [\n          \"SXM\",\n          \"YYZ\",\n          \"YUL\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-06T16:45:00\",\n            \"arrivalTime\": \"2026-12-06T21:05:00\",\n            \"durationSeconds\": 19200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2107\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-07T16:00:00\",\n            \"arrivalTime\": \"2026-12-07T17:25:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC418\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-07T18:50:00\",\n            \"arrivalTime\": \"2026-12-08T07:50:00\",\n            \"durationSeconds\": 25200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC832\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b212651300000353a6218_0|1f2b212651300000353a6218_1|1f2b212651300000353a6218_2|21261f2b513b00007448da2b_0|21261f2b513b00007448da2b_1|21261f2b513b00007448da2b_2\",\n      \"price\": 3068.76351,\n      \"priceFormatted\": \"3069 EUR\",\n      \"totalDurationSeconds\": 292200,\n      \"bookingUrl\": \"https://kiwi.com/u/jhxzj8\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 0,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-11-27T10:00:00\",\n        \"arrivalTime\": \"2026-11-29T15:45:00\",\n        \"durationSeconds\": 211500,\n        \"stops\": 2,\n        \"route\": [\n          \"BRU\",\n          \"YUL\",\n          \"YYZ\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-11-27T10:00:00\",\n            \"arrivalTime\": \"2026-11-27T11:40:00\",\n            \"durationSeconds\": 27600,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC833\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-11-28T11:10:00\",\n            \"arrivalTime\": \"2026-11-28T12:46:00\",\n            \"durationSeconds\": 5760,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC409\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-11-29T09:50:00\",\n            \"arrivalTime\": \"2026-11-29T15:45:00\",\n            \"durationSeconds\": 17700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2106\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-08T16:45:00\",\n        \"arrivalTime\": \"2026-12-09T20:10:00\",\n        \"durationSeconds\": 80700,\n        \"stops\": 2,\n        \"route\": [\n          \"SXM\",\n          \"YYZ\",\n          \"LHR\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-08T16:45:00\",\n            \"arrivalTime\": \"2026-12-08T21:05:00\",\n            \"durationSeconds\": 19200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2107\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"LHR\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Londres\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport de Londres-Heathrow\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Royaume-Uni\",\n            \"departureTime\": \"2026-12-08T23:00:00\",\n            \"arrivalTime\": \"2026-12-09T11:20:00\",\n            \"durationSeconds\": 26400,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC858\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"LHR\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Londres\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Londres-Heathrow\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Royaume-Uni\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-09T18:00:00\",\n            \"arrivalTime\": \"2026-12-09T20:10:00\",\n            \"durationSeconds\": 4200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC6345\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b212651350000b70d37ee_0|1f2b212651350000b70d37ee_1|21261f2b513f000012eca3cc_0|21261f2b513f000012eca3cc_1|21261f2b513f000012eca3cc_2\",\n      \"price\": 3185.76351,\n      \"priceFormatted\": \"3186 EUR\",\n      \"totalDurationSeconds\": 267300,\n      \"bookingUrl\": \"https://kiwi.com/u/vddn2n\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 0,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-12-02T10:00:00\",\n        \"arrivalTime\": \"2026-12-03T14:45:00\",\n        \"durationSeconds\": 121500,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"YUL\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-02T10:00:00\",\n            \"arrivalTime\": \"2026-12-02T11:40:00\",\n            \"durationSeconds\": 27600,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC833\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-12-03T08:50:00\",\n            \"arrivalTime\": \"2026-12-03T14:45:00\",\n            \"durationSeconds\": 17700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2108\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-12T15:45:00\",\n        \"arrivalTime\": \"2026-12-14T13:15:00\",\n        \"durationSeconds\": 145800,\n        \"stops\": 2,\n        \"route\": [\n          \"SXM\",\n          \"YUL\",\n          \"LHR\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-12T15:45:00\",\n            \"arrivalTime\": \"2026-12-12T19:50:00\",\n            \"durationSeconds\": 18300,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2109\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"LHR\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Londres\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport de Londres-Heathrow\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Royaume-Uni\",\n            \"departureTime\": \"2026-12-13T19:10:00\",\n            \"arrivalTime\": \"2026-12-14T07:10:00\",\n            \"durationSeconds\": 25200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC864\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"LHR\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Londres\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Londres-Heathrow\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Royaume-Uni\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-14T11:05:00\",\n            \"arrivalTime\": \"2026-12-14T13:15:00\",\n            \"durationSeconds\": 4200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC6315\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2126513700009eb1c1e0_0|1f2b2126513700009eb1c1e0_1|21261f2b51420000e025f645_0|21261f2b51420000e025f645_1|21261f2b51420000e025f645_2\",\n      \"price\": 3193.76351,\n      \"priceFormatted\": \"3194 EUR\",\n      \"totalDurationSeconds\": 202200,\n      \"bookingUrl\": \"https://kiwi.com/u/t46f24\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 0,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-12-04T10:00:00\",\n        \"arrivalTime\": \"2026-12-05T14:45:00\",\n        \"durationSeconds\": 121500,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"YUL\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-04T10:00:00\",\n            \"arrivalTime\": \"2026-12-04T11:40:00\",\n            \"durationSeconds\": 27600,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC833\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-12-05T08:50:00\",\n            \"arrivalTime\": \"2026-12-05T14:45:00\",\n            \"durationSeconds\": 17700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2108\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T16:45:00\",\n        \"arrivalTime\": \"2026-12-16T20:10:00\",\n        \"durationSeconds\": 80700,\n        \"stops\": 2,\n        \"route\": [\n          \"SXM\",\n          \"YYZ\",\n          \"LHR\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-15T16:45:00\",\n            \"arrivalTime\": \"2026-12-15T21:05:00\",\n            \"durationSeconds\": 19200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2107\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"LHR\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Londres\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport de Londres-Heathrow\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Royaume-Uni\",\n            \"departureTime\": \"2026-12-15T23:00:00\",\n            \"arrivalTime\": \"2026-12-16T11:20:00\",\n            \"durationSeconds\": 26400,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC858\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"LHR\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Londres\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Londres-Heathrow\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Royaume-Uni\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T18:00:00\",\n            \"arrivalTime\": \"2026-12-16T20:10:00\",\n            \"durationSeconds\": 4200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC6345\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b212651380000f02d6cb6_0|1f2b212651380000f02d6cb6_1|1f2b212651380000f02d6cb6_2|21261f2b51420000e025f645_0|21261f2b51420000e025f645_1|21261f2b51420000e025f645_2\",\n      \"price\": 3202.76351,\n      \"priceFormatted\": \"3203 EUR\",\n      \"totalDurationSeconds\": 205800,\n      \"bookingUrl\": \"https://kiwi.com/u/p2sjyb\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 0,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-12-05T10:00:00\",\n        \"arrivalTime\": \"2026-12-06T15:45:00\",\n        \"durationSeconds\": 125100,\n        \"stops\": 2,\n        \"route\": [\n          \"BRU\",\n          \"YUL\",\n          \"YYZ\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-05T10:00:00\",\n            \"arrivalTime\": \"2026-12-05T11:40:00\",\n            \"durationSeconds\": 27600,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC833\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-06T06:00:00\",\n            \"arrivalTime\": \"2026-12-06T07:35:00\",\n            \"durationSeconds\": 5700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC481\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-12-06T09:50:00\",\n            \"arrivalTime\": \"2026-12-06T15:45:00\",\n            \"durationSeconds\": 17700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2106\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T16:45:00\",\n        \"arrivalTime\": \"2026-12-16T20:10:00\",\n        \"durationSeconds\": 80700,\n        \"stops\": 2,\n        \"route\": [\n          \"SXM\",\n          \"YYZ\",\n          \"LHR\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-15T16:45:00\",\n            \"arrivalTime\": \"2026-12-15T21:05:00\",\n            \"durationSeconds\": 19200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2107\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"LHR\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Londres\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport de Londres-Heathrow\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Royaume-Uni\",\n            \"departureTime\": \"2026-12-15T23:00:00\",\n            \"arrivalTime\": \"2026-12-16T11:20:00\",\n            \"durationSeconds\": 26400,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC858\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"LHR\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Londres\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Londres-Heathrow\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Royaume-Uni\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T18:00:00\",\n            \"arrivalTime\": \"2026-12-16T20:10:00\",\n            \"durationSeconds\": 4200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC6345\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2126512e00006cfb21d4_0|1f2b2126512e00006cfb21d4_1|21261f2b51380000b3619b4f_0|21261f2b51380000b3619b4f_1\",\n      \"price\": 3216.981716,\n      \"priceFormatted\": \"3217 EUR\",\n      \"totalDurationSeconds\": 247800,\n      \"bookingUrl\": \"https://kiwi.com/u/y57sur\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-11-25T10:00:00\",\n        \"arrivalTime\": \"2026-11-26T14:45:00\",\n        \"durationSeconds\": 121500,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"YUL\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-11-25T10:00:00\",\n            \"arrivalTime\": \"2026-11-25T11:40:00\",\n            \"durationSeconds\": 27600,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC833\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-11-26T08:50:00\",\n            \"arrivalTime\": \"2026-11-26T14:45:00\",\n            \"durationSeconds\": 17700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2108\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-05T15:45:00\",\n        \"arrivalTime\": \"2026-12-07T07:50:00\",\n        \"durationSeconds\": 126300,\n        \"stops\": 1,\n        \"route\": [\n          \"SXM\",\n          \"YUL\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-05T15:45:00\",\n            \"arrivalTime\": \"2026-12-05T19:50:00\",\n            \"durationSeconds\": 18300,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2109\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-06T18:50:00\",\n            \"arrivalTime\": \"2026-12-07T07:50:00\",\n            \"durationSeconds\": 25200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC832\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b212651350000b70d37ee_0|1f2b212651350000b70d37ee_1|21261f2b514000000868265a_0|21261f2b514000000868265a_1|21261f2b514000000868265a_2\",\n      \"price\": 3247.981716,\n      \"priceFormatted\": \"3248 EUR\",\n      \"totalDurationSeconds\": 244200,\n      \"bookingUrl\": \"https://kiwi.com/u/8yqwnj\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-12-02T10:00:00\",\n        \"arrivalTime\": \"2026-12-03T14:45:00\",\n        \"durationSeconds\": 121500,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"YUL\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-02T10:00:00\",\n            \"arrivalTime\": \"2026-12-02T11:40:00\",\n            \"durationSeconds\": 27600,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC833\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-12-03T08:50:00\",\n            \"arrivalTime\": \"2026-12-03T14:45:00\",\n            \"durationSeconds\": 17700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2108\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-13T16:45:00\",\n        \"arrivalTime\": \"2026-12-15T07:50:00\",\n        \"durationSeconds\": 122700,\n        \"stops\": 2,\n        \"route\": [\n          \"SXM\",\n          \"YYZ\",\n          \"YUL\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-13T16:45:00\",\n            \"arrivalTime\": \"2026-12-13T21:05:00\",\n            \"durationSeconds\": 19200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2107\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-14T06:20:00\",\n            \"arrivalTime\": \"2026-12-14T07:50:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC480\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-14T18:50:00\",\n            \"arrivalTime\": \"2026-12-15T07:50:00\",\n            \"durationSeconds\": 25200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC832\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2126512e00006cfb21d4_0|1f2b2126512e00006cfb21d4_1|21261f2b51380000250ce845_0|21261f2b51380000250ce845_1|21261f2b51380000250ce845_2\",\n      \"price\": 3329.76351,\n      \"priceFormatted\": \"3330 EUR\",\n      \"totalDurationSeconds\": 256200,\n      \"bookingUrl\": \"https://kiwi.com/u/94ws8y\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 0,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-11-25T10:00:00\",\n        \"arrivalTime\": \"2026-11-26T14:45:00\",\n        \"durationSeconds\": 121500,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"YUL\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-11-25T10:00:00\",\n            \"arrivalTime\": \"2026-11-25T11:40:00\",\n            \"durationSeconds\": 27600,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC833\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-11-26T08:50:00\",\n            \"arrivalTime\": \"2026-11-26T14:45:00\",\n            \"durationSeconds\": 17700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2108\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-05T15:45:00\",\n        \"arrivalTime\": \"2026-12-07T10:10:00\",\n        \"durationSeconds\": 134700,\n        \"stops\": 2,\n        \"route\": [\n          \"SXM\",\n          \"YUL\",\n          \"FRA\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-05T15:45:00\",\n            \"arrivalTime\": \"2026-12-05T19:50:00\",\n            \"durationSeconds\": 18300,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2109\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"FRA\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Francfort\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport de Francfort-sur-le-Main\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Allemagne\",\n            \"departureTime\": \"2026-12-06T17:45:00\",\n            \"arrivalTime\": \"2026-12-07T07:25:00\",\n            \"durationSeconds\": 27600,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC844\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"FRA\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Francfort\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Francfort-sur-le-Main\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Allemagne\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-07T09:00:00\",\n            \"arrivalTime\": \"2026-12-07T10:10:00\",\n            \"durationSeconds\": 4200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC6367\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b212651350000b70d37ee_0|1f2b212651350000b70d37ee_1|21261f2b513f0000790436e5_0|21261f2b513f0000790436e5_1\",\n      \"price\": 3346.981716,\n      \"priceFormatted\": \"3347 EUR\",\n      \"totalDurationSeconds\": 247800,\n      \"bookingUrl\": \"https://kiwi.com/u/mk8vf2\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-12-02T10:00:00\",\n        \"arrivalTime\": \"2026-12-03T14:45:00\",\n        \"durationSeconds\": 121500,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"YUL\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-02T10:00:00\",\n            \"arrivalTime\": \"2026-12-02T11:40:00\",\n            \"durationSeconds\": 27600,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC833\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-12-03T08:50:00\",\n            \"arrivalTime\": \"2026-12-03T14:45:00\",\n            \"durationSeconds\": 17700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2108\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-12T15:45:00\",\n        \"arrivalTime\": \"2026-12-14T07:50:00\",\n        \"durationSeconds\": 126300,\n        \"stops\": 1,\n        \"route\": [\n          \"SXM\",\n          \"YUL\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-12T15:45:00\",\n            \"arrivalTime\": \"2026-12-12T19:50:00\",\n            \"durationSeconds\": 18300,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2109\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-13T18:50:00\",\n            \"arrivalTime\": \"2026-12-14T07:50:00\",\n            \"durationSeconds\": 25200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC832\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b212651350000b70d37ee_0|1f2b212651350000b70d37ee_1|21261f2b514000000c836e76_0|21261f2b514000000c836e76_1|21261f2b514000000c836e76_2\",\n      \"price\": 3424.76351,\n      \"priceFormatted\": \"3425 EUR\",\n      \"totalDurationSeconds\": 202200,\n      \"bookingUrl\": \"https://kiwi.com/u/4fpjph\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 0,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-12-02T10:00:00\",\n        \"arrivalTime\": \"2026-12-03T14:45:00\",\n        \"durationSeconds\": 121500,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"YUL\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-02T10:00:00\",\n            \"arrivalTime\": \"2026-12-02T11:40:00\",\n            \"durationSeconds\": 27600,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC833\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-12-03T08:50:00\",\n            \"arrivalTime\": \"2026-12-03T14:45:00\",\n            \"durationSeconds\": 17700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2108\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-13T16:45:00\",\n        \"arrivalTime\": \"2026-12-14T20:10:00\",\n        \"durationSeconds\": 80700,\n        \"stops\": 2,\n        \"route\": [\n          \"SXM\",\n          \"YYZ\",\n          \"LHR\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-13T16:45:00\",\n            \"arrivalTime\": \"2026-12-13T21:05:00\",\n            \"durationSeconds\": 19200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2107\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"LHR\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Londres\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport de Londres-Heathrow\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Royaume-Uni\",\n            \"departureTime\": \"2026-12-13T23:00:00\",\n            \"arrivalTime\": \"2026-12-14T11:20:00\",\n            \"durationSeconds\": 26400,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC858\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"LHR\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Londres\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Londres-Heathrow\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Royaume-Uni\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-14T18:00:00\",\n            \"arrivalTime\": \"2026-12-14T20:10:00\",\n            \"durationSeconds\": 4200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC6345\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b2126513700008f7104ed_0|1f2b2126513700008f7104ed_1|1f2b2126513700008f7104ed_2|21261f2b51420000e025f645_0|21261f2b51420000e025f645_1|21261f2b51420000e025f645_2\",\n      \"price\": 3497.095796,\n      \"priceFormatted\": \"3497 EUR\",\n      \"totalDurationSeconds\": 201900,\n      \"bookingUrl\": \"https://kiwi.com/u/x5fz83k\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 0,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-12-04T10:05:00\",\n        \"arrivalTime\": \"2026-12-05T14:45:00\",\n        \"durationSeconds\": 121200,\n        \"stops\": 2,\n        \"route\": [\n          \"BRU\",\n          \"ZRH\",\n          \"YUL\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"ZRH\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Zurich\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport international de Zurich\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Suisse\",\n            \"departureTime\": \"2026-12-04T10:05:00\",\n            \"arrivalTime\": \"2026-12-04T11:25:00\",\n            \"durationSeconds\": 4800,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC6383\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"ZRH\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Zurich\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport international de Zurich\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Suisse\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-04T12:40:00\",\n            \"arrivalTime\": \"2026-12-04T15:10:00\",\n            \"durationSeconds\": 30600,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC6821\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-12-05T08:50:00\",\n            \"arrivalTime\": \"2026-12-05T14:45:00\",\n            \"durationSeconds\": 17700,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2108\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-15T16:45:00\",\n        \"arrivalTime\": \"2026-12-16T20:10:00\",\n        \"durationSeconds\": 80700,\n        \"stops\": 2,\n        \"route\": [\n          \"SXM\",\n          \"YYZ\",\n          \"LHR\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-15T16:45:00\",\n            \"arrivalTime\": \"2026-12-15T21:05:00\",\n            \"durationSeconds\": 19200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2107\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"LHR\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Londres\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport de Londres-Heathrow\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Royaume-Uni\",\n            \"departureTime\": \"2026-12-15T23:00:00\",\n            \"arrivalTime\": \"2026-12-16T11:20:00\",\n            \"durationSeconds\": 26400,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC858\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"LHR\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Londres\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport de Londres-Heathrow\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Royaume-Uni\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-16T18:00:00\",\n            \"arrivalTime\": \"2026-12-16T20:10:00\",\n            \"durationSeconds\": 4200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC6345\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1f2b212651300000d363689d_0|1f2b212651300000d363689d_1|21261f2b51390000c59bc524_0|21261f2b51390000c59bc524_1|21261f2b51390000c59bc524_2\",\n      \"price\": 3750.490848,\n      \"priceFormatted\": \"3750 EUR\",\n      \"totalDurationSeconds\": 163500,\n      \"bookingUrl\": \"https://kiwi.com/u/cxqrfp\",\n      \"imageId\": \"lower-princes-quarter_sx\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 0,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BRU\",\n        \"to\": \"SXM\",\n        \"departureTime\": \"2026-11-27T08:05:00\",\n        \"arrivalTime\": \"2026-11-27T14:25:00\",\n        \"durationSeconds\": 40800,\n        \"stops\": 1,\n        \"route\": [\n          \"BRU\",\n          \"AMS\",\n          \"SXM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BRU\",\n            \"to\": \"AMS\",\n            \"fromCity\": \"Bruxelles\",\n            \"toCity\": \"Amsterdam\",\n            \"fromName\": \"Aéroport de Bruxelles-National\",\n            \"toName\": \"Aéroport d Amsterdam-Schiphol\",\n            \"fromCountry\": \"Belgique\",\n            \"toCountry\": \"Pays-Bas\",\n            \"departureTime\": \"2026-11-27T08:05:00\",\n            \"arrivalTime\": \"2026-11-27T09:00:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"KL\",\n            \"carrierName\": \"KLM Royal Dutch Airlines\",\n            \"flightNumber\": \"KL1702\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AMS\",\n            \"to\": \"SXM\",\n            \"fromCity\": \"Amsterdam\",\n            \"toCity\": \"Lower Prince's Quarter\",\n            \"fromName\": \"Aéroport d Amsterdam-Schiphol\",\n            \"toName\": \"Aéroport international Princess Juliana\",\n            \"fromCountry\": \"Pays-Bas\",\n            \"toCountry\": \"Sint-Maarten\",\n            \"departureTime\": \"2026-11-27T10:05:00\",\n            \"arrivalTime\": \"2026-11-27T14:25:00\",\n            \"durationSeconds\": 33600,\n            \"carrier\": \"KL\",\n            \"carrierName\": \"KLM Royal Dutch Airlines\",\n            \"flightNumber\": \"KL787\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"SXM\",\n        \"to\": \"BRU\",\n        \"departureTime\": \"2026-12-06T16:45:00\",\n        \"arrivalTime\": \"2026-12-08T07:50:00\",\n        \"durationSeconds\": 122700,\n        \"stops\": 2,\n        \"route\": [\n          \"SXM\",\n          \"YYZ\",\n          \"YUL\",\n          \"BRU\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"SXM\",\n            \"to\": \"YYZ\",\n            \"fromCity\": \"Lower Prince's Quarter\",\n            \"toCity\": \"Toronto\",\n            \"fromName\": \"Aéroport international Princess Juliana\",\n            \"toName\": \"Aéroport international Pearson de Toronto\",\n            \"fromCountry\": \"Sint-Maarten\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-06T16:45:00\",\n            \"arrivalTime\": \"2026-12-06T21:05:00\",\n            \"durationSeconds\": 19200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC2107\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YYZ\",\n            \"to\": \"YUL\",\n            \"fromCity\": \"Toronto\",\n            \"toCity\": \"Montréal\",\n            \"fromName\": \"Aéroport international Pearson de Toronto\",\n            \"toName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Canada\",\n            \"departureTime\": \"2026-12-07T16:00:00\",\n            \"arrivalTime\": \"2026-12-07T17:25:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC418\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"YUL\",\n            \"to\": \"BRU\",\n            \"fromCity\": \"Montréal\",\n            \"toCity\": \"Bruxelles\",\n            \"fromName\": \"Aéroport international Pierre-Elliott-Trudeau de Montréal\",\n            \"toName\": \"Aéroport de Bruxelles-National\",\n            \"fromCountry\": \"Canada\",\n            \"toCountry\": \"Belgique\",\n            \"departureTime\": \"2026-12-07T18:50:00\",\n            \"arrivalTime\": \"2026-12-08T07:50:00\",\n            \"durationSeconds\": 25200,\n            \"carrier\": \"AC\",\n            \"carrierName\": \"Air Canada\",\n            \"flightNumber\": \"AC832\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    }\n  ],\n  \"searchTimeMs\": 564,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "BRU → SXM on 20/11/2026–05/12/2026, 2 adults, 9–10 nights [≤2 stops/sector; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 15,
+   "itineraries": [
+    {
+     "id": "1f2b212651385142297cb698_0|1f2b212651385142297cb698_1|1f2b212651385142297cb698_2|1f2b212651385142297cb698_3|1f2b212651385142297cb698_4|1f2b212651385142297cb698_5",
+     "price": 2141.76351,
+     "priceFormatted": "2142 EUR",
+     "totalDurationSeconds": 205800,
+     "bookingUrl": "https://kiwi.com/u/gb8y8g",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 0,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-12-05T10:00:00",
+      "arrivalTime": "2026-12-06T15:45:00",
+      "durationSeconds": 125100,
+      "stops": 2,
+      "route": [
+       "BRU",
+       "YUL",
+       "YYZ",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "YUL",
+        "fromCity": "Bruxelles",
+        "toCity": "Montréal",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Belgique",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-05T10:00:00",
+        "arrivalTime": "2026-12-05T11:40:00",
+        "durationSeconds": 27600,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC833",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "YYZ",
+        "fromCity": "Montréal",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Canada",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-05T21:20:00",
+        "arrivalTime": "2026-12-05T22:56:00",
+        "durationSeconds": 5760,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC429",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "SXM",
+        "fromCity": "Toronto",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Canada",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-12-06T09:50:00",
+        "arrivalTime": "2026-12-06T15:45:00",
+        "durationSeconds": 17700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2106",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-15T16:45:00",
+      "arrivalTime": "2026-12-16T20:10:00",
+      "durationSeconds": 80700,
+      "stops": 2,
+      "route": [
+       "SXM",
+       "YYZ",
+       "LHR",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YYZ",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-15T16:45:00",
+        "arrivalTime": "2026-12-15T21:05:00",
+        "durationSeconds": 19200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2107",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "LHR",
+        "fromCity": "Toronto",
+        "toCity": "Londres",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport de Londres-Heathrow",
+        "fromCountry": "Canada",
+        "toCountry": "Royaume-Uni",
+        "departureTime": "2026-12-15T23:00:00",
+        "arrivalTime": "2026-12-16T11:20:00",
+        "durationSeconds": 26400,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC858",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "LHR",
+        "to": "BRU",
+        "fromCity": "Londres",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Londres-Heathrow",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Royaume-Uni",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-16T18:00:00",
+        "arrivalTime": "2026-12-16T20:10:00",
+        "durationSeconds": 4200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC6345",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b21265138514218dc3649_0|1f2b21265138514218dc3649_1|1f2b21265138514218dc3649_2|1f2b21265138514218dc3649_3|1f2b21265138514218dc3649_4|1f2b21265138514218dc3649_5",
+     "price": 2395.727144,
+     "priceFormatted": "2396 EUR",
+     "totalDurationSeconds": 204000,
+     "bookingUrl": "https://kiwi.com/u/pup36c",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 0,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-12-05T10:30:00",
+      "arrivalTime": "2026-12-06T15:45:00",
+      "durationSeconds": 123300,
+      "stops": 2,
+      "route": [
+       "BRU",
+       "FRA",
+       "YYZ",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "FRA",
+        "fromCity": "Bruxelles",
+        "toCity": "Francfort",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport de Francfort-sur-le-Main",
+        "fromCountry": "Belgique",
+        "toCountry": "Allemagne",
+        "departureTime": "2026-12-05T10:30:00",
+        "arrivalTime": "2026-12-05T11:40:00",
+        "durationSeconds": 4200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC6327",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "FRA",
+        "to": "YYZ",
+        "fromCity": "Francfort",
+        "toCity": "Toronto",
+        "fromName": "Aéroport de Francfort-sur-le-Main",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Allemagne",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-05T17:10:00",
+        "arrivalTime": "2026-12-05T19:45:00",
+        "durationSeconds": 30900,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC843",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "SXM",
+        "fromCity": "Toronto",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Canada",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-12-06T09:50:00",
+        "arrivalTime": "2026-12-06T15:45:00",
+        "durationSeconds": 17700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2106",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-15T16:45:00",
+      "arrivalTime": "2026-12-16T20:10:00",
+      "durationSeconds": 80700,
+      "stops": 2,
+      "route": [
+       "SXM",
+       "YYZ",
+       "LHR",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YYZ",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-15T16:45:00",
+        "arrivalTime": "2026-12-15T21:05:00",
+        "durationSeconds": 19200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2107",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "LHR",
+        "fromCity": "Toronto",
+        "toCity": "Londres",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport de Londres-Heathrow",
+        "fromCountry": "Canada",
+        "toCountry": "Royaume-Uni",
+        "departureTime": "2026-12-15T23:00:00",
+        "arrivalTime": "2026-12-16T11:20:00",
+        "durationSeconds": 26400,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC858",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "LHR",
+        "to": "BRU",
+        "fromCity": "Londres",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Londres-Heathrow",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Royaume-Uni",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-16T18:00:00",
+        "arrivalTime": "2026-12-16T20:10:00",
+        "durationSeconds": 4200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC6345",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b212651300000353a6218_0|1f2b212651300000353a6218_1|1f2b212651300000353a6218_2|21261f2b513b000047b11f27_0|21261f2b513b000047b11f27_1|21261f2b513b000047b11f27_2",
+     "price": 2901.981716,
+     "priceFormatted": "2902 EUR",
+     "totalDurationSeconds": 334200,
+     "bookingUrl": "https://kiwi.com/u/hw5sfk4",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-11-27T10:00:00",
+      "arrivalTime": "2026-11-29T15:45:00",
+      "durationSeconds": 211500,
+      "stops": 2,
+      "route": [
+       "BRU",
+       "YUL",
+       "YYZ",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "YUL",
+        "fromCity": "Bruxelles",
+        "toCity": "Montréal",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Belgique",
+        "toCountry": "Canada",
+        "departureTime": "2026-11-27T10:00:00",
+        "arrivalTime": "2026-11-27T11:40:00",
+        "durationSeconds": 27600,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC833",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "YYZ",
+        "fromCity": "Montréal",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Canada",
+        "toCountry": "Canada",
+        "departureTime": "2026-11-28T11:10:00",
+        "arrivalTime": "2026-11-28T12:46:00",
+        "durationSeconds": 5760,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC409",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "SXM",
+        "fromCity": "Toronto",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Canada",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-11-29T09:50:00",
+        "arrivalTime": "2026-11-29T15:45:00",
+        "durationSeconds": 17700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2106",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-08T16:45:00",
+      "arrivalTime": "2026-12-10T07:50:00",
+      "durationSeconds": 122700,
+      "stops": 2,
+      "route": [
+       "SXM",
+       "YYZ",
+       "YUL",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YYZ",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-08T16:45:00",
+        "arrivalTime": "2026-12-08T21:05:00",
+        "durationSeconds": 19200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2107",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "YUL",
+        "fromCity": "Toronto",
+        "toCity": "Montréal",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Canada",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-09T12:00:00",
+        "arrivalTime": "2026-12-09T13:25:00",
+        "durationSeconds": 5100,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC410",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "BRU",
+        "fromCity": "Montréal",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Canada",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-09T18:50:00",
+        "arrivalTime": "2026-12-10T07:50:00",
+        "durationSeconds": 25200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC832",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b2126512e00006cfb21d4_0|1f2b2126512e00006cfb21d4_1|21261f2b51390000c59bc524_0|21261f2b51390000c59bc524_1|21261f2b51390000c59bc524_2",
+     "price": 3022.981716,
+     "priceFormatted": "3023 EUR",
+     "totalDurationSeconds": 244200,
+     "bookingUrl": "https://kiwi.com/u/htxj32",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-11-25T10:00:00",
+      "arrivalTime": "2026-11-26T14:45:00",
+      "durationSeconds": 121500,
+      "stops": 1,
+      "route": [
+       "BRU",
+       "YUL",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "YUL",
+        "fromCity": "Bruxelles",
+        "toCity": "Montréal",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Belgique",
+        "toCountry": "Canada",
+        "departureTime": "2026-11-25T10:00:00",
+        "arrivalTime": "2026-11-25T11:40:00",
+        "durationSeconds": 27600,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC833",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "SXM",
+        "fromCity": "Montréal",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Canada",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-11-26T08:50:00",
+        "arrivalTime": "2026-11-26T14:45:00",
+        "durationSeconds": 17700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2108",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-06T16:45:00",
+      "arrivalTime": "2026-12-08T07:50:00",
+      "durationSeconds": 122700,
+      "stops": 2,
+      "route": [
+       "SXM",
+       "YYZ",
+       "YUL",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YYZ",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-06T16:45:00",
+        "arrivalTime": "2026-12-06T21:05:00",
+        "durationSeconds": 19200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2107",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "YUL",
+        "fromCity": "Toronto",
+        "toCity": "Montréal",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Canada",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-07T16:00:00",
+        "arrivalTime": "2026-12-07T17:25:00",
+        "durationSeconds": 5100,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC418",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "BRU",
+        "fromCity": "Montréal",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Canada",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-07T18:50:00",
+        "arrivalTime": "2026-12-08T07:50:00",
+        "durationSeconds": 25200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC832",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b212651300000353a6218_0|1f2b212651300000353a6218_1|1f2b212651300000353a6218_2|21261f2b513b00007448da2b_0|21261f2b513b00007448da2b_1|21261f2b513b00007448da2b_2",
+     "price": 3068.76351,
+     "priceFormatted": "3069 EUR",
+     "totalDurationSeconds": 292200,
+     "bookingUrl": "https://kiwi.com/u/jhxzj8",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 0,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-11-27T10:00:00",
+      "arrivalTime": "2026-11-29T15:45:00",
+      "durationSeconds": 211500,
+      "stops": 2,
+      "route": [
+       "BRU",
+       "YUL",
+       "YYZ",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "YUL",
+        "fromCity": "Bruxelles",
+        "toCity": "Montréal",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Belgique",
+        "toCountry": "Canada",
+        "departureTime": "2026-11-27T10:00:00",
+        "arrivalTime": "2026-11-27T11:40:00",
+        "durationSeconds": 27600,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC833",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "YYZ",
+        "fromCity": "Montréal",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Canada",
+        "toCountry": "Canada",
+        "departureTime": "2026-11-28T11:10:00",
+        "arrivalTime": "2026-11-28T12:46:00",
+        "durationSeconds": 5760,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC409",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "SXM",
+        "fromCity": "Toronto",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Canada",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-11-29T09:50:00",
+        "arrivalTime": "2026-11-29T15:45:00",
+        "durationSeconds": 17700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2106",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-08T16:45:00",
+      "arrivalTime": "2026-12-09T20:10:00",
+      "durationSeconds": 80700,
+      "stops": 2,
+      "route": [
+       "SXM",
+       "YYZ",
+       "LHR",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YYZ",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-08T16:45:00",
+        "arrivalTime": "2026-12-08T21:05:00",
+        "durationSeconds": 19200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2107",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "LHR",
+        "fromCity": "Toronto",
+        "toCity": "Londres",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport de Londres-Heathrow",
+        "fromCountry": "Canada",
+        "toCountry": "Royaume-Uni",
+        "departureTime": "2026-12-08T23:00:00",
+        "arrivalTime": "2026-12-09T11:20:00",
+        "durationSeconds": 26400,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC858",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "LHR",
+        "to": "BRU",
+        "fromCity": "Londres",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Londres-Heathrow",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Royaume-Uni",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-09T18:00:00",
+        "arrivalTime": "2026-12-09T20:10:00",
+        "durationSeconds": 4200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC6345",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b212651350000b70d37ee_0|1f2b212651350000b70d37ee_1|21261f2b513f000012eca3cc_0|21261f2b513f000012eca3cc_1|21261f2b513f000012eca3cc_2",
+     "price": 3185.76351,
+     "priceFormatted": "3186 EUR",
+     "totalDurationSeconds": 267300,
+     "bookingUrl": "https://kiwi.com/u/vddn2n",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 0,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-12-02T10:00:00",
+      "arrivalTime": "2026-12-03T14:45:00",
+      "durationSeconds": 121500,
+      "stops": 1,
+      "route": [
+       "BRU",
+       "YUL",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "YUL",
+        "fromCity": "Bruxelles",
+        "toCity": "Montréal",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Belgique",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-02T10:00:00",
+        "arrivalTime": "2026-12-02T11:40:00",
+        "durationSeconds": 27600,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC833",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "SXM",
+        "fromCity": "Montréal",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Canada",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-12-03T08:50:00",
+        "arrivalTime": "2026-12-03T14:45:00",
+        "durationSeconds": 17700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2108",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-12T15:45:00",
+      "arrivalTime": "2026-12-14T13:15:00",
+      "durationSeconds": 145800,
+      "stops": 2,
+      "route": [
+       "SXM",
+       "YUL",
+       "LHR",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YUL",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Montréal",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-12T15:45:00",
+        "arrivalTime": "2026-12-12T19:50:00",
+        "durationSeconds": 18300,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2109",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "LHR",
+        "fromCity": "Montréal",
+        "toCity": "Londres",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport de Londres-Heathrow",
+        "fromCountry": "Canada",
+        "toCountry": "Royaume-Uni",
+        "departureTime": "2026-12-13T19:10:00",
+        "arrivalTime": "2026-12-14T07:10:00",
+        "durationSeconds": 25200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC864",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "LHR",
+        "to": "BRU",
+        "fromCity": "Londres",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Londres-Heathrow",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Royaume-Uni",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-14T11:05:00",
+        "arrivalTime": "2026-12-14T13:15:00",
+        "durationSeconds": 4200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC6315",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b2126513700009eb1c1e0_0|1f2b2126513700009eb1c1e0_1|21261f2b51420000e025f645_0|21261f2b51420000e025f645_1|21261f2b51420000e025f645_2",
+     "price": 3193.76351,
+     "priceFormatted": "3194 EUR",
+     "totalDurationSeconds": 202200,
+     "bookingUrl": "https://kiwi.com/u/t46f24",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 0,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-12-04T10:00:00",
+      "arrivalTime": "2026-12-05T14:45:00",
+      "durationSeconds": 121500,
+      "stops": 1,
+      "route": [
+       "BRU",
+       "YUL",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "YUL",
+        "fromCity": "Bruxelles",
+        "toCity": "Montréal",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Belgique",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-04T10:00:00",
+        "arrivalTime": "2026-12-04T11:40:00",
+        "durationSeconds": 27600,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC833",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "SXM",
+        "fromCity": "Montréal",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Canada",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-12-05T08:50:00",
+        "arrivalTime": "2026-12-05T14:45:00",
+        "durationSeconds": 17700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2108",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-15T16:45:00",
+      "arrivalTime": "2026-12-16T20:10:00",
+      "durationSeconds": 80700,
+      "stops": 2,
+      "route": [
+       "SXM",
+       "YYZ",
+       "LHR",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YYZ",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-15T16:45:00",
+        "arrivalTime": "2026-12-15T21:05:00",
+        "durationSeconds": 19200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2107",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "LHR",
+        "fromCity": "Toronto",
+        "toCity": "Londres",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport de Londres-Heathrow",
+        "fromCountry": "Canada",
+        "toCountry": "Royaume-Uni",
+        "departureTime": "2026-12-15T23:00:00",
+        "arrivalTime": "2026-12-16T11:20:00",
+        "durationSeconds": 26400,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC858",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "LHR",
+        "to": "BRU",
+        "fromCity": "Londres",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Londres-Heathrow",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Royaume-Uni",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-16T18:00:00",
+        "arrivalTime": "2026-12-16T20:10:00",
+        "durationSeconds": 4200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC6345",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b212651380000f02d6cb6_0|1f2b212651380000f02d6cb6_1|1f2b212651380000f02d6cb6_2|21261f2b51420000e025f645_0|21261f2b51420000e025f645_1|21261f2b51420000e025f645_2",
+     "price": 3202.76351,
+     "priceFormatted": "3203 EUR",
+     "totalDurationSeconds": 205800,
+     "bookingUrl": "https://kiwi.com/u/p2sjyb",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 0,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-12-05T10:00:00",
+      "arrivalTime": "2026-12-06T15:45:00",
+      "durationSeconds": 125100,
+      "stops": 2,
+      "route": [
+       "BRU",
+       "YUL",
+       "YYZ",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "YUL",
+        "fromCity": "Bruxelles",
+        "toCity": "Montréal",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Belgique",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-05T10:00:00",
+        "arrivalTime": "2026-12-05T11:40:00",
+        "durationSeconds": 27600,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC833",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "YYZ",
+        "fromCity": "Montréal",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Canada",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-06T06:00:00",
+        "arrivalTime": "2026-12-06T07:35:00",
+        "durationSeconds": 5700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC481",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "SXM",
+        "fromCity": "Toronto",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Canada",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-12-06T09:50:00",
+        "arrivalTime": "2026-12-06T15:45:00",
+        "durationSeconds": 17700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2106",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-15T16:45:00",
+      "arrivalTime": "2026-12-16T20:10:00",
+      "durationSeconds": 80700,
+      "stops": 2,
+      "route": [
+       "SXM",
+       "YYZ",
+       "LHR",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YYZ",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-15T16:45:00",
+        "arrivalTime": "2026-12-15T21:05:00",
+        "durationSeconds": 19200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2107",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "LHR",
+        "fromCity": "Toronto",
+        "toCity": "Londres",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport de Londres-Heathrow",
+        "fromCountry": "Canada",
+        "toCountry": "Royaume-Uni",
+        "departureTime": "2026-12-15T23:00:00",
+        "arrivalTime": "2026-12-16T11:20:00",
+        "durationSeconds": 26400,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC858",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "LHR",
+        "to": "BRU",
+        "fromCity": "Londres",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Londres-Heathrow",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Royaume-Uni",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-16T18:00:00",
+        "arrivalTime": "2026-12-16T20:10:00",
+        "durationSeconds": 4200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC6345",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b2126512e00006cfb21d4_0|1f2b2126512e00006cfb21d4_1|21261f2b51380000b3619b4f_0|21261f2b51380000b3619b4f_1",
+     "price": 3216.981716,
+     "priceFormatted": "3217 EUR",
+     "totalDurationSeconds": 247800,
+     "bookingUrl": "https://kiwi.com/u/y57sur",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-11-25T10:00:00",
+      "arrivalTime": "2026-11-26T14:45:00",
+      "durationSeconds": 121500,
+      "stops": 1,
+      "route": [
+       "BRU",
+       "YUL",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "YUL",
+        "fromCity": "Bruxelles",
+        "toCity": "Montréal",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Belgique",
+        "toCountry": "Canada",
+        "departureTime": "2026-11-25T10:00:00",
+        "arrivalTime": "2026-11-25T11:40:00",
+        "durationSeconds": 27600,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC833",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "SXM",
+        "fromCity": "Montréal",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Canada",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-11-26T08:50:00",
+        "arrivalTime": "2026-11-26T14:45:00",
+        "durationSeconds": 17700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2108",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-05T15:45:00",
+      "arrivalTime": "2026-12-07T07:50:00",
+      "durationSeconds": 126300,
+      "stops": 1,
+      "route": [
+       "SXM",
+       "YUL",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YUL",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Montréal",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-05T15:45:00",
+        "arrivalTime": "2026-12-05T19:50:00",
+        "durationSeconds": 18300,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2109",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "BRU",
+        "fromCity": "Montréal",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Canada",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-06T18:50:00",
+        "arrivalTime": "2026-12-07T07:50:00",
+        "durationSeconds": 25200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC832",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b212651350000b70d37ee_0|1f2b212651350000b70d37ee_1|21261f2b514000000868265a_0|21261f2b514000000868265a_1|21261f2b514000000868265a_2",
+     "price": 3247.981716,
+     "priceFormatted": "3248 EUR",
+     "totalDurationSeconds": 244200,
+     "bookingUrl": "https://kiwi.com/u/8yqwnj",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-12-02T10:00:00",
+      "arrivalTime": "2026-12-03T14:45:00",
+      "durationSeconds": 121500,
+      "stops": 1,
+      "route": [
+       "BRU",
+       "YUL",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "YUL",
+        "fromCity": "Bruxelles",
+        "toCity": "Montréal",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Belgique",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-02T10:00:00",
+        "arrivalTime": "2026-12-02T11:40:00",
+        "durationSeconds": 27600,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC833",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "SXM",
+        "fromCity": "Montréal",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Canada",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-12-03T08:50:00",
+        "arrivalTime": "2026-12-03T14:45:00",
+        "durationSeconds": 17700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2108",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-13T16:45:00",
+      "arrivalTime": "2026-12-15T07:50:00",
+      "durationSeconds": 122700,
+      "stops": 2,
+      "route": [
+       "SXM",
+       "YYZ",
+       "YUL",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YYZ",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-13T16:45:00",
+        "arrivalTime": "2026-12-13T21:05:00",
+        "durationSeconds": 19200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2107",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "YUL",
+        "fromCity": "Toronto",
+        "toCity": "Montréal",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Canada",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-14T06:20:00",
+        "arrivalTime": "2026-12-14T07:50:00",
+        "durationSeconds": 5400,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC480",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "BRU",
+        "fromCity": "Montréal",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Canada",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-14T18:50:00",
+        "arrivalTime": "2026-12-15T07:50:00",
+        "durationSeconds": 25200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC832",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b2126512e00006cfb21d4_0|1f2b2126512e00006cfb21d4_1|21261f2b51380000250ce845_0|21261f2b51380000250ce845_1|21261f2b51380000250ce845_2",
+     "price": 3329.76351,
+     "priceFormatted": "3330 EUR",
+     "totalDurationSeconds": 256200,
+     "bookingUrl": "https://kiwi.com/u/94ws8y",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 0,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-11-25T10:00:00",
+      "arrivalTime": "2026-11-26T14:45:00",
+      "durationSeconds": 121500,
+      "stops": 1,
+      "route": [
+       "BRU",
+       "YUL",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "YUL",
+        "fromCity": "Bruxelles",
+        "toCity": "Montréal",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Belgique",
+        "toCountry": "Canada",
+        "departureTime": "2026-11-25T10:00:00",
+        "arrivalTime": "2026-11-25T11:40:00",
+        "durationSeconds": 27600,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC833",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "SXM",
+        "fromCity": "Montréal",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Canada",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-11-26T08:50:00",
+        "arrivalTime": "2026-11-26T14:45:00",
+        "durationSeconds": 17700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2108",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-05T15:45:00",
+      "arrivalTime": "2026-12-07T10:10:00",
+      "durationSeconds": 134700,
+      "stops": 2,
+      "route": [
+       "SXM",
+       "YUL",
+       "FRA",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YUL",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Montréal",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-05T15:45:00",
+        "arrivalTime": "2026-12-05T19:50:00",
+        "durationSeconds": 18300,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2109",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "FRA",
+        "fromCity": "Montréal",
+        "toCity": "Francfort",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport de Francfort-sur-le-Main",
+        "fromCountry": "Canada",
+        "toCountry": "Allemagne",
+        "departureTime": "2026-12-06T17:45:00",
+        "arrivalTime": "2026-12-07T07:25:00",
+        "durationSeconds": 27600,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC844",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "FRA",
+        "to": "BRU",
+        "fromCity": "Francfort",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Francfort-sur-le-Main",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Allemagne",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-07T09:00:00",
+        "arrivalTime": "2026-12-07T10:10:00",
+        "durationSeconds": 4200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC6367",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b212651350000b70d37ee_0|1f2b212651350000b70d37ee_1|21261f2b513f0000790436e5_0|21261f2b513f0000790436e5_1",
+     "price": 3346.981716,
+     "priceFormatted": "3347 EUR",
+     "totalDurationSeconds": 247800,
+     "bookingUrl": "https://kiwi.com/u/mk8vf2",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-12-02T10:00:00",
+      "arrivalTime": "2026-12-03T14:45:00",
+      "durationSeconds": 121500,
+      "stops": 1,
+      "route": [
+       "BRU",
+       "YUL",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "YUL",
+        "fromCity": "Bruxelles",
+        "toCity": "Montréal",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Belgique",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-02T10:00:00",
+        "arrivalTime": "2026-12-02T11:40:00",
+        "durationSeconds": 27600,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC833",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "SXM",
+        "fromCity": "Montréal",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Canada",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-12-03T08:50:00",
+        "arrivalTime": "2026-12-03T14:45:00",
+        "durationSeconds": 17700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2108",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-12T15:45:00",
+      "arrivalTime": "2026-12-14T07:50:00",
+      "durationSeconds": 126300,
+      "stops": 1,
+      "route": [
+       "SXM",
+       "YUL",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YUL",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Montréal",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-12T15:45:00",
+        "arrivalTime": "2026-12-12T19:50:00",
+        "durationSeconds": 18300,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2109",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "BRU",
+        "fromCity": "Montréal",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Canada",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-13T18:50:00",
+        "arrivalTime": "2026-12-14T07:50:00",
+        "durationSeconds": 25200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC832",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b212651350000b70d37ee_0|1f2b212651350000b70d37ee_1|21261f2b514000000c836e76_0|21261f2b514000000c836e76_1|21261f2b514000000c836e76_2",
+     "price": 3424.76351,
+     "priceFormatted": "3425 EUR",
+     "totalDurationSeconds": 202200,
+     "bookingUrl": "https://kiwi.com/u/4fpjph",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 0,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-12-02T10:00:00",
+      "arrivalTime": "2026-12-03T14:45:00",
+      "durationSeconds": 121500,
+      "stops": 1,
+      "route": [
+       "BRU",
+       "YUL",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "YUL",
+        "fromCity": "Bruxelles",
+        "toCity": "Montréal",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Belgique",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-02T10:00:00",
+        "arrivalTime": "2026-12-02T11:40:00",
+        "durationSeconds": 27600,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC833",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "SXM",
+        "fromCity": "Montréal",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Canada",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-12-03T08:50:00",
+        "arrivalTime": "2026-12-03T14:45:00",
+        "durationSeconds": 17700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2108",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-13T16:45:00",
+      "arrivalTime": "2026-12-14T20:10:00",
+      "durationSeconds": 80700,
+      "stops": 2,
+      "route": [
+       "SXM",
+       "YYZ",
+       "LHR",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YYZ",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-13T16:45:00",
+        "arrivalTime": "2026-12-13T21:05:00",
+        "durationSeconds": 19200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2107",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "LHR",
+        "fromCity": "Toronto",
+        "toCity": "Londres",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport de Londres-Heathrow",
+        "fromCountry": "Canada",
+        "toCountry": "Royaume-Uni",
+        "departureTime": "2026-12-13T23:00:00",
+        "arrivalTime": "2026-12-14T11:20:00",
+        "durationSeconds": 26400,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC858",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "LHR",
+        "to": "BRU",
+        "fromCity": "Londres",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Londres-Heathrow",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Royaume-Uni",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-14T18:00:00",
+        "arrivalTime": "2026-12-14T20:10:00",
+        "durationSeconds": 4200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC6345",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b2126513700008f7104ed_0|1f2b2126513700008f7104ed_1|1f2b2126513700008f7104ed_2|21261f2b51420000e025f645_0|21261f2b51420000e025f645_1|21261f2b51420000e025f645_2",
+     "price": 3497.095796,
+     "priceFormatted": "3497 EUR",
+     "totalDurationSeconds": 201900,
+     "bookingUrl": "https://kiwi.com/u/x5fz83k",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 0,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-12-04T10:05:00",
+      "arrivalTime": "2026-12-05T14:45:00",
+      "durationSeconds": 121200,
+      "stops": 2,
+      "route": [
+       "BRU",
+       "ZRH",
+       "YUL",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "ZRH",
+        "fromCity": "Bruxelles",
+        "toCity": "Zurich",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport international de Zurich",
+        "fromCountry": "Belgique",
+        "toCountry": "Suisse",
+        "departureTime": "2026-12-04T10:05:00",
+        "arrivalTime": "2026-12-04T11:25:00",
+        "durationSeconds": 4800,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC6383",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "ZRH",
+        "to": "YUL",
+        "fromCity": "Zurich",
+        "toCity": "Montréal",
+        "fromName": "Aéroport international de Zurich",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Suisse",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-04T12:40:00",
+        "arrivalTime": "2026-12-04T15:10:00",
+        "durationSeconds": 30600,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC6821",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "SXM",
+        "fromCity": "Montréal",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Canada",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-12-05T08:50:00",
+        "arrivalTime": "2026-12-05T14:45:00",
+        "durationSeconds": 17700,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2108",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-15T16:45:00",
+      "arrivalTime": "2026-12-16T20:10:00",
+      "durationSeconds": 80700,
+      "stops": 2,
+      "route": [
+       "SXM",
+       "YYZ",
+       "LHR",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YYZ",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-15T16:45:00",
+        "arrivalTime": "2026-12-15T21:05:00",
+        "durationSeconds": 19200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2107",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "LHR",
+        "fromCity": "Toronto",
+        "toCity": "Londres",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport de Londres-Heathrow",
+        "fromCountry": "Canada",
+        "toCountry": "Royaume-Uni",
+        "departureTime": "2026-12-15T23:00:00",
+        "arrivalTime": "2026-12-16T11:20:00",
+        "durationSeconds": 26400,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC858",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "LHR",
+        "to": "BRU",
+        "fromCity": "Londres",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport de Londres-Heathrow",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Royaume-Uni",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-16T18:00:00",
+        "arrivalTime": "2026-12-16T20:10:00",
+        "durationSeconds": 4200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC6345",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "1f2b212651300000d363689d_0|1f2b212651300000d363689d_1|21261f2b51390000c59bc524_0|21261f2b51390000c59bc524_1|21261f2b51390000c59bc524_2",
+     "price": 3750.490848,
+     "priceFormatted": "3750 EUR",
+     "totalDurationSeconds": 163500,
+     "bookingUrl": "https://kiwi.com/u/cxqrfp",
+     "imageId": "lower-princes-quarter_sx",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 0,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BRU",
+      "to": "SXM",
+      "departureTime": "2026-11-27T08:05:00",
+      "arrivalTime": "2026-11-27T14:25:00",
+      "durationSeconds": 40800,
+      "stops": 1,
+      "route": [
+       "BRU",
+       "AMS",
+       "SXM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BRU",
+        "to": "AMS",
+        "fromCity": "Bruxelles",
+        "toCity": "Amsterdam",
+        "fromName": "Aéroport de Bruxelles-National",
+        "toName": "Aéroport d Amsterdam-Schiphol",
+        "fromCountry": "Belgique",
+        "toCountry": "Pays-Bas",
+        "departureTime": "2026-11-27T08:05:00",
+        "arrivalTime": "2026-11-27T09:00:00",
+        "durationSeconds": 3300,
+        "carrier": "KL",
+        "carrierName": "KLM Royal Dutch Airlines",
+        "flightNumber": "KL1702",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AMS",
+        "to": "SXM",
+        "fromCity": "Amsterdam",
+        "toCity": "Lower Prince's Quarter",
+        "fromName": "Aéroport d Amsterdam-Schiphol",
+        "toName": "Aéroport international Princess Juliana",
+        "fromCountry": "Pays-Bas",
+        "toCountry": "Sint-Maarten",
+        "departureTime": "2026-11-27T10:05:00",
+        "arrivalTime": "2026-11-27T14:25:00",
+        "durationSeconds": 33600,
+        "carrier": "KL",
+        "carrierName": "KLM Royal Dutch Airlines",
+        "flightNumber": "KL787",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "SXM",
+      "to": "BRU",
+      "departureTime": "2026-12-06T16:45:00",
+      "arrivalTime": "2026-12-08T07:50:00",
+      "durationSeconds": 122700,
+      "stops": 2,
+      "route": [
+       "SXM",
+       "YYZ",
+       "YUL",
+       "BRU"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "SXM",
+        "to": "YYZ",
+        "fromCity": "Lower Prince's Quarter",
+        "toCity": "Toronto",
+        "fromName": "Aéroport international Princess Juliana",
+        "toName": "Aéroport international Pearson de Toronto",
+        "fromCountry": "Sint-Maarten",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-06T16:45:00",
+        "arrivalTime": "2026-12-06T21:05:00",
+        "durationSeconds": 19200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC2107",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YYZ",
+        "to": "YUL",
+        "fromCity": "Toronto",
+        "toCity": "Montréal",
+        "fromName": "Aéroport international Pearson de Toronto",
+        "toName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "fromCountry": "Canada",
+        "toCountry": "Canada",
+        "departureTime": "2026-12-07T16:00:00",
+        "arrivalTime": "2026-12-07T17:25:00",
+        "durationSeconds": 5100,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC418",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "YUL",
+        "to": "BRU",
+        "fromCity": "Montréal",
+        "toCity": "Bruxelles",
+        "fromName": "Aéroport international Pierre-Elliott-Trudeau de Montréal",
+        "toName": "Aéroport de Bruxelles-National",
+        "fromCountry": "Canada",
+        "toCountry": "Belgique",
+        "departureTime": "2026-12-07T18:50:00",
+        "arrivalTime": "2026-12-08T07:50:00",
+        "durationSeconds": 25200,
+        "carrier": "AC",
+        "carrierName": "Air Canada",
+        "flightNumber": "AC832",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    }
+   ],
+   "searchTimeMs": 564,
+   "error": null
+  }
+ }
+}

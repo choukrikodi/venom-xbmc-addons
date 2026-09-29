@@ -1,0 +1,45 @@
+{
+  "case_name": "sxm_v1_vols",
+  "notice": "Exécuté via claude/sxm-travel-research (branches push ajoutée au workflow). Saint-Martin (SXM), départ Tunis (TUN), préférence exprimée par le voyageur le 26/09/2026. 2 adultes, 1 soute chacun, ≤2 escales par sens, pas de self-transfer, fenêtre de départ 20/11→05/12/2026, 9 à 10 nuits sur place (nights_in_dst, calculées par Kiwi sur les horaires réels, pas une hypothèse manuelle). Toutes compagnies (aucune préférence de transporteur établie pour cette route). Aucune réservation.",
+  "requests": [
+    {
+      "name": "kiwi_tun_sxm_all_fenetre_9_10n",
+      "server": "kiwi",
+      "tool": "search-flight",
+      "arguments": {
+        "flyFrom": "TUN", "flyTo": "SXM", "adults": 2, "children": 0, "infants": 0,
+        "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price",
+        "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false,
+        "one_for_city": false,
+        "departureDate": "20/11/2026", "departureDateTo": "05/12/2026",
+        "nights_in_dst_from": 9, "nights_in_dst_to": 10
+      }
+    },
+    {
+      "name": "kiwi_tun_sxm_all_exact_2811_0912",
+      "server": "kiwi",
+      "tool": "search-flight",
+      "arguments": {
+        "flyFrom": "TUN", "flyTo": "SXM", "adults": 2, "children": 0, "infants": 0,
+        "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price",
+        "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false,
+        "one_for_city": false,
+        "departureDate": "28/11/2026", "departureDateTo": "28/11/2026",
+        "returnDate": "09/12/2026", "returnDateTo": "09/12/2026"
+      }
+    },
+    {
+      "name": "kiwi_bru_sxm_all_fenetre_9_10n",
+      "server": "kiwi",
+      "tool": "search-flight",
+      "arguments": {
+        "flyFrom": "BRU", "flyTo": "SXM", "adults": 2, "children": 0, "infants": 0,
+        "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price",
+        "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false,
+        "one_for_city": false,
+        "departureDate": "20/11/2026", "departureDateTo": "05/12/2026",
+        "nights_in_dst_from": 9, "nights_in_dst_to": 10
+      }
+    }
+  ]
+}
