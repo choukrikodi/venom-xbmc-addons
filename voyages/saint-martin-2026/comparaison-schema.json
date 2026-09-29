@@ -1,0 +1,120 @@
+{
+  "$schema_notice": "Structure de comparaison par offre pour Saint-Martin 2026. Aucune donnée personnelle. Une ligne = une offre (villa, hôtel, ou agence proposant plusieurs unités). Ne pas remplir 'statut': 'confirmé' sans prix + disponibilité + source datée concordants.",
+  "fenetres_dates_reference": {
+    "A_16_nuits": { "checkin": "2026-11-30", "checkout": "2026-12-16", "nuits": 16, "source": "artefact Saint-Martin 2026 (référence principale)" },
+    "B_9_nuits_variante": { "checkin": "2026-11-29", "checkout": "2026-12-08", "nuits": 9, "source": "manifestes sxm_v1_hotels/sxm_v1_vols, branche claude/sxm-travel-research — variante distincte, ne pas fusionner avec A" }
+  },
+  "champs": {
+    "offre_id": "identifiant court unique (ex: fr-orientbay-01)",
+    "cote": "enum: FR | NL",
+    "zone": "ex: Orient Bay, Terres Basses, Grand Case, Simpson Bay, Maho, autre",
+    "formule": "enum: villa_seule | hotel | package_vol_hebergement | voyage_a_composer | agence_locale_multi_unites",
+    "nom_offre": "nom exact de l'établissement ou de la villa tel qu'affiché par la source",
+    "unite_exacte": "désignation précise de l'unité (ex: 'Villa 3 chambres, 220 m²', 'Junior Suite vue Mer 45 m²') — jamais une moyenne ou un tarif de base générique sans préciser l'unité correspondante",
+    "capacite_max_personnes": "entier",
+    "capacite_utilisee": "2 (adultes) — fixe pour cette comparaison",
+    "acces_direct_sable": {
+      "statut": "enum: oui | non | a_verifier",
+      "distance_m": "nombre ou null si oui/non confirmé sans mesure",
+      "source_de_la_distance": "texte ou URL"
+    },
+    "plage": {
+      "type": "enum: privee_exclusive | publique_acces_prive | publique | a_verifier",
+      "definition_privee_exclusive": "réservée aux clients de l'établissement, aucun accès public",
+      "definition_publique_acces_prive": "plage publique, mais un accès ou des équipements (transats, ponton) réservés à l'établissement",
+      "note_verification": "texte libre expliquant comment le type a été déterminé"
+    },
+    "piscine": {
+      "statut": "enum: privee_a_l_unite | commune_partagee | aucune | a_verifier",
+      "note": "préciser si 'commune' = piscine d'hôtel partagée par tous les clients, jamais confondre avec une piscine privée de la villa/unité"
+    },
+    "jacuzzi": {
+      "statut": "enum: prive_a_l_unite | commun_partage | aucun | a_verifier",
+      "note": "même distinction que piscine"
+    },
+    "prix": {
+      "fenetre": "enum: A_16_nuits | B_9_nuits_variante — doit correspondre à fenetres_dates_reference, jamais mélanger",
+      "montant_total": "nombre",
+      "devise": "EUR",
+      "montant_par_nuit": "nombre ou null",
+      "tarif_correspond_a_l_unite_exacte": "booléen — false si c'est un tarif de base (moins chère unité de l'établissement) différent de l'unite_exacte demandée"
+    },
+    "disponibilite": {
+      "statut": "enum: confirmee | indisponible | inconnue",
+      "verifiee_le_utc": "date/heure ISO 8601 UTC"
+    },
+    "conditions": {
+      "annulation": "texte (ex: 'gratuite jusqu'à J-X' ou 'non précisée')",
+      "petit_dejeuner_inclus": "booléen ou 'non précisé'",
+      "caution": "texte ou 'non précisée'",
+      "sejour_minimum_nuits": "nombre ou null",
+      "autres": "texte libre"
+    },
+    "avis": {
+      "nombre": "entier",
+      "note_moyenne": "nombre ou null",
+      "echelle": "ex: /10 ou /5"
+    },
+    "photos": {
+      "disponibles": "booléen",
+      "droits": "enum: lien_externe_uniquement | reutilisables | inconnu",
+      "note": "ex: 'Booking.com interdit la réutilisation directe : lien vers la galerie uniquement'"
+    },
+    "source": {
+      "url": "URL exacte",
+      "date_consultation_utc": "date/heure ISO 8601 UTC",
+      "origine": "enum: codex_villas_fr | codex_villas_nl | codex_agences_locales | ci_travel_agent_trivago | ci_travel_agent_kiwi | booking_connector | autre"
+    },
+    "statut": {
+      "valeur": "enum: confirme | incomplet | indisponible",
+      "regle": "confirme = prix + disponibilite.confirmee + source.url + source.date_consultation_utc tous renseignés et cohérents. incomplet = au moins un champ clé manquant mais l'offre existe. indisponible = offre invalide, hors zone, ou données inexploitables (voir exemples ci-dessous)."
+    },
+    "ecarts_signales": "texte libre — ex: 'équipements listent plage privée mais distance mesurée à 550 m', 'résultat hors zone demandée', 'note 5★ demandée mais 3★ retournée'"
+  },
+  "exemples_deja_traites": [
+    {
+      "offre_id": "fr-orientbay-hotel-laplantation",
+      "cote": "FR",
+      "zone": "Orient Bay",
+      "formule": "hotel",
+      "nom_offre": "Hôtel La Plantation",
+      "unite_exacte": "Junior Suite vue Mer, 45 m², jusqu'à 3 personnes",
+      "capacite_max_personnes": 3,
+      "capacite_utilisee": 2,
+      "acces_direct_sable": { "statut": "non", "distance_m": 550, "source_de_la_distance": "Booking.com Q&A connector, 29/09/2026" },
+      "plage": { "type": "a_verifier", "definition_privee_exclusive": null, "definition_publique_acces_prive": null, "note_verification": "Booking liste 'plage privée' dans les équipements de l'hôtel, mais la plage d'Orient Bay elle-même est publique ; à 550 m il s'agit probablement d'un accès/équipement, pas d'une plage exclusive au pied de l'unité — non tranché" },
+      "piscine": { "statut": "commune_partagee", "note": "piscine à débordement de l'hôtel, pas une piscine privée de la suite" },
+      "jacuzzi": { "statut": "a_verifier", "note": "non documenté" },
+      "prix": { "fenetre": "A_16_nuits", "montant_total": 3729.60, "devise": "EUR", "montant_par_nuit": null, "tarif_correspond_a_l_unite_exacte": false },
+      "disponibilite": { "statut": "inconnue", "verifiee_le_utc": "2026-09-25T00:00:00Z" },
+      "conditions": { "annulation": "gratuite sur le tarif de base, date limite non chiffrée", "petit_dejeuner_inclus": true, "caution": "non précisée", "sejour_minimum_nuits": null, "autres": "" },
+      "avis": { "nombre": 400, "note_moyenne": 8.6, "echelle": "/10" },
+      "photos": { "disponibles": true, "droits": "lien_externe_uniquement", "note": "Booking.com interdit la réutilisation directe" },
+      "source": { "url": "https://www.booking.com/hotel/mf/la-plantation.html", "date_consultation_utc": "2026-09-29T18:00:00Z", "origine": "booking_connector" },
+      "statut": { "valeur": "incomplet", "regle": "prix = tarif de base, pas celui de l'unite_exacte ; disponibilité non confirmée ; type de plage non tranché" },
+      "ecarts_signales": "Équipements Booking listent 'plage privée' alors que la plage la plus proche est à 550 m ; à retirer de toute sélection 'accès direct au sable'."
+    },
+    {
+      "offre_id": "sxm-trivago-grandcase-5s-run36609793370",
+      "cote": "FR",
+      "zone": "Grand Case (requête)",
+      "formule": "hotel",
+      "nom_offre": "10 résultats retournés, aucun à Grand Case",
+      "unite_exacte": "non applicable",
+      "capacite_max_personnes": null,
+      "capacite_utilisee": 2,
+      "acces_direct_sable": { "statut": "a_verifier", "distance_m": null, "source_de_la_distance": null },
+      "plage": { "type": "a_verifier", "definition_privee_exclusive": null, "definition_publique_acces_prive": null, "note_verification": "non exploitable" },
+      "piscine": { "statut": "a_verifier", "note": "" },
+      "jacuzzi": { "statut": "a_verifier", "note": "" },
+      "prix": { "fenetre": "B_9_nuits_variante", "montant_total": null, "devise": "EUR", "montant_par_nuit": null, "tarif_correspond_a_l_unite_exacte": false },
+      "disponibilite": { "statut": "inconnue", "verifiee_le_utc": "2026-09-29T18:07:57Z" },
+      "conditions": { "annulation": "non précisée", "petit_dejeuner_inclus": "non précisé", "caution": "non précisée", "sejour_minimum_nuits": null, "autres": "" },
+      "avis": { "nombre": 0, "note_moyenne": null, "echelle": "/10" },
+      "photos": { "disponibles": false, "droits": "inconnu", "note": "" },
+      "source": { "url": "https://github.com/choukrikodi/venom-xbmc-addons/blob/claude/sxm-travel-research/skills/travel-agent/test-output-sxm-v1-hotels/runs/36609793370-1/trivago_grandcase_5s_9n.json", "date_consultation_utc": "2026-09-29T18:07:57Z", "origine": "ci_travel_agent_trivago" },
+      "statut": { "valeur": "indisponible", "regle": "résultats hors zone demandée (incluant des propriétés à Anguilla), filtre 5★ non respecté par l'outil (un résultat 3★ vu ailleurs), aucun champ plage/piscine/jacuzzi disponible" },
+      "ecarts_signales": "Requête géographique trop large : à relancer par nom d'établissement ou coordonnées précises avant réutilisation."
+    }
+  ]
+}
