@@ -65,9 +65,35 @@ Google Flights.
 - **Correspondance nocturne CDG** : aucun hôtel de transit inclus, accès côté piste à
   confirmer, potentiellement inconfortable. Option identifiée sans prix confirmé :
   YOTELAIR CDG (séjour aéroport 18h-09h) — https://www.yotel.com/en/hotels/yotelair-paris-charles-de-gaulle
-- L'agent FR compare encore d'autres compagnies et la fenêtre 02/12→11/12 ; l'agent NL
-  contrôle les vols pour Bahari (03/12→12/12). **Toujours aucune réservation.** Budget
-  consolidé toujours à faire seulement après vols alignés + transferts + réserve confirmée.
+- **Confirmé le 29/09 ~19:20 UTC, testé directement sur Google Flights** (02→11/12 et
+  05→15/12) : le dialogue « Bagages » ne propose QUE des bagages cabine, aucune option
+  soute sur ces recherches précises — ne pas généraliser la doc Google sur le filtre
+  bagages, elle ne s'applique pas ici. 1 888 € et 1 891 € restent **hors 2 soutes, coût
+  total du vol inconnu**. Demande en cours aux agents : tarif Air France direct
+  Standard/avec soute sans créer de compte, sinon marquer manquant.
+- Option « confort » identifiée (02/12→11/12) : villa 12 265 USD (+880 vs 06→15), vol
+  AF1385/AF446 aller **sans escale nocturne** (13h40 contre 25h55 avec nuit à CDG),
+  retour AF445/AF1084 (12h30), 1 888 EUR/2 chez AF (1 862 KILROY), toujours hors soutes.
+  Compromis qualitatif seulement, pas budgété. Option United via les États-Unis (3 570
+  EUR/2, 3 escales, formalités transit ESTA/visa) écartée par l'agent — confort non
+  équivalent.
+- Nouveau canal Expedia : Bianca 06→15/12 hôtel seul = 12 425 USD (Expedia.com, +1 040
+  vs St Martin Blue, catégorie de chambre pas encore confirmée équivalente) ; package
+  vol+villa Expedia.fr = « 12 239 € tout compris » affiché en LISTE seulement
+  (incomplet, ID différent du hôtel-seul, risque de doublon — ne pas comparer avant
+  fiche finale). Bahari 03→12/12 sur Expedia.fr : « aucune disponibilité sur ce site »,
+  qui contredit la disponibilité confirmée sur St Martin Blue pour les mêmes dates —
+  deux canaux, deux réponses, aucune ne prime. Détail complet : `matrice-sources.md`.
+- **Correction majeure (sous-agents WebSearch de cette session)** : St Martin Blue et
+  Isle Blue appartiennent à la même famille corporative (« Destination Blue », Caroline
+  du Nord) — ce ne sont PAS deux sources indépendantes, et St Martin Blue n'est PAS une
+  agence locale malgré le nom. L'identité de prix Bianca/Classic est EXPLIQUÉE (villas
+  jumelles d'un même domaine, « La Perla Estate », un seul calendrier) — ce n'est plus
+  une alerte de qualité de donnée. Détail : `agent-orchestration-journal.md` (3 agents
+  réels, IDs et appels outils journalisés) et `matrice-sources.md`.
+- L'agent FR compare encore d'autres compagnies ; l'agent NL contrôle les vols Bahari
+  (03/12→12/12). **Toujours aucune réservation.** Budget consolidé seulement après vols
+  alignés + soutes chiffrées + transferts + réserve confirmée.
 
 ## Mise à jour du 29/09/2026 (suite de mission — orchestration Codex)
 
