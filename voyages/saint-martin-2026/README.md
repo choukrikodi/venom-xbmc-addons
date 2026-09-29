@@ -91,9 +91,18 @@ Google Flights.
   jumelles d'un même domaine, « La Perla Estate », un seul calendrier) — ce n'est plus
   une alerte de qualité de donnée. Détail : `agent-orchestration-journal.md` (3 agents
   réels, IDs et appels outils journalisés) et `matrice-sources.md`.
-- L'agent FR compare encore d'autres compagnies ; l'agent NL contrôle les vols Bahari
-  (03/12→12/12). **Toujours aucune réservation.** Budget consolidé seulement après vols
-  alignés + soutes chiffrées + transferts + réserve confirmée.
+- **Correction vol Bahari (03/12→12/12)** : pas besoin de nuit à CDG — AF1385 TUN 05:30→
+  CDG 08:10, escale 1h35, AF446 CDG 09:45→SXM 14:10, **même jour** ; retour AF445 SXM
+  16:20→CDG 05:45 (J+1), escale 1h35, AF1084→TUN 09:50. Google Flights : 1 888 EUR/2 chez
+  AF Light hors soutes. Sur le site AF direct : tarif **Light 2 138,98 USD/2 sans soute**
+  vs **Standard aller-retour 4 512,98 USD/2 avec 1×23 kg inclus par adulte par sens** —
+  l'écart énorme est un **changement de classe tarifaire**, pas le prix de 2 bagages ;
+  devises/canaux différents (EUR Google vs USD AF direct), à ne jamais fusionner. Reste à
+  vérifier : prix d'ajouter des soutes à la Light plutôt que de basculer en Standard, et
+  conditions du billet unique.
+- L'agent FR compare encore d'autres compagnies ; l'agent NL a confirmé le vol Bahari.
+  **Toujours aucune réservation ni achat.** Budget consolidé seulement après vols alignés
+  + soutes chiffrées + transferts + réserve confirmée.
 
 ## Mise à jour du 29/09/2026 (suite de mission — orchestration Codex)
 
