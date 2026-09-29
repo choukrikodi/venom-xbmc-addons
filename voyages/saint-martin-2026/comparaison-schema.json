@@ -456,6 +456,25 @@
           },
           "statut_cotation": "incomplet",
           "note": "Canal DISTINCT de St Martin Blue : 12 425 USD total taxes/frais, 1 chambre/2 pers/9 nuits, 4 avis 10/10 — 1 040 USD DE PLUS que SMB (11 385 USD) pour les mêmes dates. Agent encore en train de vérifier la fiche/catégorie exacte avant de confirmer l'équivalence avec l'unité SMB — ne pas fusionner/moyenner les deux montants tant que ce n'est pas fait. Un package Expedia.fr (vol+villa) distinct, ID 105299651, annonce 12 239 EUR TOUT COMPRIS (vol inclus) / 6 119 EUR par voyageur pour les mêmes dates 06->15/12 — INCOMPLET : liste seulement (pré-offre), vol/escales/horaires/bagages non lus, villa/unité non confirmée, RISQUE DE DOUBLON/IDENTITÉ DIFFÉRENTE avec l'ID hôtel-seul 87925871 (ID différent : 105299651). Ne pas comparer ce package au voyage construit ni le déclarer réservable avant une fiche finale lue en détail."
+        },
+        {
+          "fenetre_checkin": "2026-12-06",
+          "fenetre_checkout": "2026-12-15",
+          "montant_total": 14322.63,
+          "devise": "EUR",
+          "montant_par_nuit": null,
+          "tarif_correspond_a_l_unite_exacte": true,
+          "est_simulation": false,
+          "disponibilite": {
+            "statut": "confirmee",
+            "note": "Écran de paiement Expedia atteint SANS saisie de données ni paiement ; 'dernière unité, plus que 1' affiché (observation canal)"
+          },
+          "source": {
+            "url": "https://www.expedia.fr/hotel.h105299651.Hotel-Information",
+            "date_consultation_utc": null
+          },
+          "statut_cotation": "confirme",
+          "note": "PACKAGE COMPLET TUN<->SXM + villa, ID Expedia h105299651 (DISTINCT de h87925871 hôtel seul, 0 avis vs 4 — ne pas fusionner). Villa : 1 chambre/lit double/2 pers, 'piscine' + 'bain à remous privé' confirmés, accès plage direct (source croisée luxvillavacation.com). Vol AF Standard : IMPORTANT, départ TUN 06/12 05:30 (AF1385->CDG->AF446->SXM 14:10, MÊME JOUR, pas de nuit à CDG) — un itinéraire DIFFÉRENT et préférable à l'ancienne cotation AF1185 départ 05/12 avec nuit à CDG ; les deux existent, celle-ci n'est plus la seule comparaison possible pour cette fenêtre. Retour AF445/AF1084 15/12->16/12, 1h35 CDG. Cabine + 1 bagage 23kg/adulte inclus. Prix à l'étape paiement : 14 322,63 EUR/2 (11 492,22 sous-total + 1 611,82 taxes/frais + 1 218,59 frais établissement ; étape précédente 14 322,64, écart 0,01, on retient le paiement). Détail marketing : 14 126,44 villa + 3 962,30 vols - 3 766,11 remise = 14 322,63. ⚠️ CGV : frais de service hébergement et surtaxes possibles SUR PLACE non garantis inclus — total de toutes charges obligatoires PAS garanti complet. Annulation logement possible jusqu'au 07/10/2026 12h locale puis pénalité 100% ; vol non remboursable, changement 150 EUR/billet + différentiel ; âge minimum 25 ans. Observation PARTIELLEMENT QUALIFIÉE, PAS un total tout compris définitif. URL d'écran éphémère (session), fiche stable citée en source."
         }
       ],
       "fenetre_consultation_approximative": "29/09/2026, ~19:00-19:02 UTC (agent, lecture d'horloge 19:02:20 UTC après les 5 consultations ; heure exacte par ligne non fournie, ne pas la préciser plus finement)",

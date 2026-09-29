@@ -14,7 +14,19 @@ transferts/repas/assurance/activités/dépôt. Plafond historique de référence
 | Bahari 03→12/12 (Light) | 8 415 → 7 410,84 | AF Light 1 888 (hors soutes) | **9 298,84 €** | +1 298,84 € (le plus proche) |
 | Bahari 03→12/12 (Standard, confirmé par l'agent NL) | 8 415 → 7 410,84 | AF Standard 4 512,98 USD/2 → 3 974,45 (bagage inclus) | **11 385,29 €** | +3 385,29 € |
 
-**Les 4 scénarios dépassent le plafold de 8 000 €**, y compris le plus proche (Bahari en
+**Percée package complet (Expedia, écran de paiement atteint sans saisie ni achat,
+29/09 ~19:20 UTC)** : TUN+La Perla Bianca 06/12→15/12, 2 adultes, 9 nuits, vol AF Standard
+**même jour** (départ TUN 06/12 05:30, pas de nuit à CDG — corrige/complète l'ancienne
+cotation avec nuit, qui reste une option distincte, pas la seule) — **14 322,63 EUR/2
+tout compris à l'étape paiement**, cabine + 1 bagage 23kg/adulte inclus, villa avec
+piscine ET bain à remous privés confirmés + accès plage direct. **+5 322,63 € au-dessus
+du plafond 8 000 €+1 000 €.** CGV : frais/surtaxes possibles sur place non garantis
+inclus ; annulation logement jusqu'au 07/10/2026 12h puis pénalité 100% ; vol non
+remboursable. Observation partiellement qualifiée, pas un total définitif — détail dans
+`comparaison-schema.json` (offre La Perla Bianca, ID Expedia h105299651, distinct du
+hôtel-seul h87925871).
+
+**Les 4 scénarios ci-dessous dépassent aussi le plafond de 8 000 €**, y compris le plus proche (Bahari en
 tarif Light, sans bagage chiffré). Bahari annonce un transfert aéroport aller-retour
 inclus sur sa fiche — à ne pas compter une deuxième fois, conditions à vérifier ; sable de
 Cupecoy non garanti.
