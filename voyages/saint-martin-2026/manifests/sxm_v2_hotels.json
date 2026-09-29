@@ -1,0 +1,19 @@
+{
+  "case_name": "sxm_v2_hotels",
+  "format_source": "Format adapté de skills/travel-agent/evals/files/*.json (branche claude/travel-agent-skill-setup-vhqmwf, SKILL.md v1.3.0) — entrées propres à Saint-Martin, SKILL.md générique non modifié, Andaman non touché.",
+  "notice": "Saint-Martin, villas/hôtels avec accès direct au sable depuis l'unité, 9 nuits, fenêtre de balayage 23/11/2026→15/12/2026 (check-in possibles du 23/11 au 06/12), 2 adultes, 1 chambre, BE/EUR. Zones : Baie Rouge/Terres Basses et Orient Bay/Grand Case (FR), Cupecoy/Simpson Bay/Maho (NL). Contrairement au run v1 (36609793370), interroger par NOM D'ÉTABLISSEMENT quand connu (La Perla Bianca, La Perla Classic, Villa Bahari at Shore Pointe) plutôt que par zone large, pour éviter les résultats hors zone/hors île constatés le 29/09/2026. Une liste vide ne prouve pas l'absence d'offre (règle SKILL.md §Kiwi/Trivago) — le signaler comme tel, jamais comme 'aucune offre'. Chambre/unité : exiger l'accès sable réellement au niveau de l'unité, pas seulement un hôtel qualifié 'bord de plage'. Aucune réservation.",
+  "requests": [
+    { "name": "trivago_laperlabianca_9n_ancre_precoce", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "query": "La Perla Bianca, Baie Rouge, Saint Martin", "arrival": "2026-11-23", "departure": "2026-12-02" } },
+    { "name": "trivago_laperlabianca_9n_ancre_thailande", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "query": "La Perla Bianca, Baie Rouge, Saint Martin", "arrival": "2026-11-30", "departure": "2026-12-09" } },
+    { "name": "trivago_laperlabianca_9n_ancre_tardive", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "query": "La Perla Bianca, Baie Rouge, Saint Martin", "arrival": "2026-12-06", "departure": "2026-12-15" } },
+    { "name": "trivago_laperlaclassic_9n_ancre_thailande", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "query": "La Perla Classic, Baie Rouge, Saint Martin", "arrival": "2026-11-30", "departure": "2026-12-09" } },
+    { "name": "trivago_villabahari_9n_ancre_thailande", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "query": "Bahari at Shore Pointe, Cupecoy, Sint Maarten", "arrival": "2026-11-30", "departure": "2026-12-09" } },
+    { "name": "trivago_orientbay_nomme_9n_ancre_thailande", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "query": "Hotel La Plantation, Orient Bay, Saint Martin", "arrival": "2026-11-30", "departure": "2026-12-09" } }
+  ]
+}

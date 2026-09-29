@@ -1,5 +1,32 @@
 # Saint-Martin 2026 — état des lieux et structure de comparaison
 
+## Mise à jour du 29/09/2026 (suite de mission — orchestration Codex)
+
+- **Fenêtre de séjour corrigée deux fois par le voyageur le même jour** : d'abord
+  16 nuits (30/11→16/12) fixées comme scénario principal, puis 9 nuits fixes
+  (30/11→09/12, dates du projet Thaïlande), puis **fenêtre de balayage 23/11→15/12,
+  9 nuits sur place, check-in réel SXM = début du séjour** (version en vigueur — voir
+  `comparaison-schema.json` § `fenetres_dates_reference`). Les 16 nuits sont désormais
+  **historiques uniquement**, jamais mélangées aux prix/disponibilités à 9 nuits.
+- **Méthode reprise explicitement du skill `travel-agent` v1.3.0** (branche
+  `claude/travel-agent-skill-setup-vhqmwf`, non fusionnée, non modifiée par ce dossier) :
+  voir `roles-agents-audit.md` § 4 pour le détail des règles appliquées.
+- **Premier lot Codex (4 villas)** intégré en statut `incomplet`/`indisponible` dans
+  `comparaison-schema.json` et `comparaison.csv` : La Perla Bianca, La Perla Classic
+  (Baie Rouge, FR), Villa Bahari at Shore Pointe (Cupecoy, NL), Villa Marie (Baie Nettlé,
+  exclue — accès lagune, pas mer ouverte).
+- Nouveaux fichiers de ce lot : `roles-agents-audit.md` (audit des agents/rôles avant
+  toute création), `codex-missions.md` (missions ciblées + critères d'acceptation),
+  `manifests/sxm_v2_hotels.json` + `manifests/sxm_v2_vols.json` (entrées adaptées au
+  format du skill, sans toucher à `SKILL.md` ni à Andaman), `odoo-projet-propose.md`
+  (proposition non écrite, aucun connecteur Odoo disponible), `sql-schema-sxm.sql`
+  (schéma proposé, non exécuté), `photos-manifest.json` (séparé de l'`assets.json`
+  partagé Asie/Andaman), `sources-legales-plages.md` (règle « jamais de plage privée
+  sans preuve légale » — sources officielles non accessibles depuis cet environnement,
+  egress bloqué).
+
+---
+
 Ce dossier n'a **aucun rapport avec l'addon Kodi** de ce dépôt. Il sert de
 scratch space partagé pour un projet de voyage personnel (Saint-Martin /
 Sint Maarten, 2 adultes), suivant le même usage déjà établi par la

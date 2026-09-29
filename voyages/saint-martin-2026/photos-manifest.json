@@ -1,0 +1,52 @@
+{
+  "notice": "Manifeste photo Saint-Martin 2026 — DÉLIBÉRÉMENT séparé de skills/travel-agent/evals/files/web/assets.json, qui est partagé avec les projets Asie et Andaman (carte-thailande.png, carte-andaman-wm.png y coexistent déjà). Aucune entrée SXM n'est ajoutée à ce fichier partagé, pour respecter la consigne 'site vitrine SXM distinct d'Andaman'. Téléchargement uniquement si droits == 'reutilisables' ; sinon conserver l'URL et marquer 'a_verifier'. Aucune photo d'agence (La Perla Bianca/Classic, Villa Bahari) n'a de droits confirmés à ce jour : aucun téléchargement effectué.",
+  "regle_droits": {
+    "reutilisables": "Usage confirmé par la source elle-même (ex: licence libre, autorisation explicite) — seul cas où fetch_assets.py peut être utilisé.",
+    "lien_externe_uniquement": "Politique explicite du site interdisant la réutilisation (ex: Booking.com) — jamais téléchargé, seulement lié.",
+    "a_verifier": "Statut par défaut pour toute page d'agence/gestionnaire non explicitement licenciée — ne jamais télécharger tant que ce statut n'a pas changé."
+  },
+  "photos": [
+    {
+      "offre_id": "fr-baierouge-villa-laperlabianca",
+      "page_url": "https://www.luxvillavacation.com/la-perla-bianca",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": "Page gestionnaire/propriétaire ; aucune mention de licence trouvée dans le lot Codex reçu"
+    },
+    {
+      "offre_id": "fr-baierouge-villa-laperlabianca",
+      "page_url": "https://stmartinblue.com/villas/vacation-rentals/st-martin/baie-rouge-beach/la-perla-bianca",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": "Site d'agence tierce — droits non vérifiés"
+    },
+    {
+      "offre_id": "fr-baierouge-villa-laperlaclassic",
+      "page_url": "https://stmartinblue.com/villas/vacation-rentals/st-martin/baie-rouge-beach/la-perla-classic",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": ""
+    },
+    {
+      "offre_id": "nl-cupecoy-villa-bahari",
+      "page_url": "https://coralvillassxm.com/vacation-rental/sint-maarten/villa-bahari",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": ""
+    },
+    {
+      "offre_id": "nl-cupecoy-villa-bahari",
+      "page_url": "https://stmartinblue.com/villas/vacation-rentals/st-martin/cupecoy/bahari-at-shore-pointe",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": ""
+    },
+    {
+      "offre_id": "fr-orientbay-hotel-laplantation",
+      "page_url": "https://www.booking.com/hotel/mf/la-plantation.html",
+      "droits": "lien_externe_uniquement",
+      "telechargee": false,
+      "note": "Booking.com interdit explicitement la réutilisation directe (confirmé dans l'artefact Saint-Martin 2026)"
+    }
+  ]
+}
