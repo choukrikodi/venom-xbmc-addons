@@ -1,0 +1,14 @@
+{
+  "case_name": "sxm_v1_hotels",
+  "notice": "Saint-Martin, villas/hôtels avec plage privée ou bord de plage, 9 nuits 29/11→08/12/2026 (aligné sur la fenêtre vols sxm_v1_vols), 2 adultes, 1 chambre, BE/EUR. Zones : Orient Bay et Terres Basses (côté français, luxe/villas), Grand Case (côté français, gastronomie), Simpson Bay/Maho (côté néerlandais). Requêtes par zone, pas par nom d'hôtel. Le critère plage privée/vue mer directe sera vérifié dans les résultats, pas filtré ici. Aucune réservation.",
+  "requests": [
+    { "name": "trivago_orientbay_5s_9n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "5star": true }, "query": "Orient Bay, Saint Martin", "arrival": "2026-11-29", "departure": "2026-12-08" } },
+    { "name": "trivago_terresbasses_5s_9n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "5star": true }, "query": "Terres Basses, Saint Martin", "arrival": "2026-11-29", "departure": "2026-12-08" } },
+    { "name": "trivago_grandcase_5s_9n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "5star": true }, "query": "Grand Case, Saint Martin", "arrival": "2026-11-29", "departure": "2026-12-08" } },
+    { "name": "trivago_simpsonbay_5s_9n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "5star": true }, "query": "Simpson Bay, Sint Maarten", "arrival": "2026-11-29", "departure": "2026-12-08" } }
+  ]
+}
