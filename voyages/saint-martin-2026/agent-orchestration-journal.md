@@ -13,6 +13,9 @@ contacté de prestataire, ni réservé quoi que ce soit.
 | `a08008efc18d30125` | Indépendance des agences locales SXM (VillaVEO, Lux Villa Vacation, Soualiga Homes, 40Weeks, BookStMartin, annuaire SHTA) | WebSearch | 27 | 86,7 s | Terminé — rapport reçu |
 | `a73655545077bfada` | Identité corporative de St Martin Blue, relation avec Isle Blue/WIMCO, explication de l'identité Bianca/Classic | WebSearch | 13 | 52,7 s | Terminé — rapport reçu |
 | `addab6f529fd866bf` | Frais de bagages Air France, fiabilité du filtre bagages Google Flights, statut des scrapers non officiels | WebSearch | 7 | 34,8 s | Terminé — rapport reçu |
+| `adc870a0664565d1b` | Canal A : So Chic, Côte Soleil, recoupement SHTA, prix Bahari VillaVEO | WebSearch | 12 | 50,8 s | Terminé — rapport reçu |
+| `a521db48db83359b4` | Canal B : texte exact partenaires St Martin Blue, indépendance Eden Rock Villa Rental/Marla Villas, lecture des 2 fils forums | WebSearch | 17 | 55,6 s | Terminé — rapport reçu |
+| `abcb447d1073f1417` | Canal C : plausibilité TUI/AF Holidays/Corsair/Directours sur TUN, audit de cohérence du total Expedia 14 322,63 EUR, écart Light/Standard | WebSearch | 13 | 54,2 s | Terminé — rapport reçu |
 
 **Résultats intégrés** dans `comparaison-schema.json` / `comparaison.csv` / ce dossier
 (voir `matrice-sources.md`) : correction majeure sur l'indépendance St Martin Blue/Isle

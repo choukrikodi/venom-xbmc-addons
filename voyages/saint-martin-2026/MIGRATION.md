@@ -7,6 +7,23 @@ qui décide de ça, c'est un fait de configuration du dépôt hôte GitHub, vér
 (`visibility: public`, cf. audit initial de ce dossier). La préférence exprimée est un
 dépôt **privé** dédié au projet Saint-Martin, partageable entre IA (Claude, Codex).
 
+## Précision importante (29/09/2026) : un fork public ne peut pas devenir privé
+
+`choukrikodi/venom-xbmc-addons` est un **fork public** d'un dépôt Kodi. D'après la
+documentation GitHub elle-même :
+- Un fork public ne peut pas simplement être basculé en privé (le repasser en privé
+  nécessite de le détacher de son dépôt amont, ce que GitHub restreint) —
+  https://docs.github.com/en/pull-requests/reference/forks
+- Changer la visibilité d'un dépôt peut aussi **dépublier GitHub Pages**, ce qui serait
+  problématique ici puisque `docs/andaman-2026/` y est déjà publié (voir audit
+  ci-dessus) — https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility
+
+**Conclusion inchangée par cette précision** : le plan reste un **nouveau dépôt privé
+distinct, non-fork** (pas une bascule de visibilité de ce dépôt existant), migré via
+`git subtree split` comme préparé ci-dessous. Je n'ai ni changé la visibilité de ce
+dépôt, ni fusionné la PR #5, ni présenté la PR #5 elle-même comme un dépôt privé — elle
+reste un brouillon sur un dépôt public, en attendant la création du dépôt cible.
+
 ## Blocage constaté : création de dépôt impossible depuis cette session
 
 Tenté ce jour : `POST /user/repos` (création d'un dépôt privé `saint-martin-2026-voyage`
