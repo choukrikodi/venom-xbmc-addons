@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Andaman 2026 Visite 7 500 €</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout : onglets de circuit, barre de budget collante qui se recalcule, puis carte du trajet, vols, étapes (offres sélectionnables), trajets, jour par jour. */
+:root{
+  --paper:#f2f5f4; --surface:#ffffff; --ink:#15242b; --muted:#5b6c72; --line:#d3dcde;
+  --accent:#0d6d78; --accent-ink:#ffffff; --accent-soft:#dcedef;
+  --warn:#9a6300; --warn-soft:#fbf0d6; --ok:#2f6f3e; --ok-soft:#e0f0e3; --bad:#a23a2b; --bad-soft:#f8e2de;
+  --s-bkk:#6f7f86; --s-aon:#c98a1b; --s-kl:#0d6d78; --s-ny:#3f5563; --s-pp:#7a5aa6;
+  --route:#c2410c;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  color-scheme:dark;--paper:#0f1b20;--surface:#17262d;--ink:#e4ecee;--muted:#9db0b6;--line:#2c3f47;
+  --accent:#4cc2cd;--accent-ink:#0b1a1d;--accent-soft:#163a40;--warn:#e6b45a;--warn-soft:#3a2e12;--ok:#7fc98f;--ok-soft:#1c3523;--bad:#e8836f;--bad-soft:#42211b;
+  --s-bkk:#8fa0a6;--s-aon:#e6b45a;--s-kl:#4cc2cd;--s-ny:#8fa6b3;--s-pp:#b39ddb;--route:#fb923c}}
+:root[data-theme="dark"]{
+  color-scheme:dark;--paper:#0f1b20;--surface:#17262d;--ink:#e4ecee;--muted:#9db0b6;--line:#2c3f47;
+  --accent:#4cc2cd;--accent-ink:#0b1a1d;--accent-soft:#163a40;--warn:#e6b45a;--warn-soft:#3a2e12;--ok:#7fc98f;--ok-soft:#1c3523;--bad:#e8836f;--bad-soft:#42211b;
+  --s-bkk:#8fa0a6;--s-aon:#e6b45a;--s-kl:#4cc2cd;--s-ny:#8fa6b3;--s-pp:#b39ddb;--route:#fb923c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15.5px;line-height:1.55}
+.wrap{max-width:1060px;margin:0 auto;padding-inline:16px;padding-block:24px 72px;display:grid;gap:28px}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(28px,4.2vw,44px);line-height:1.08;margin:6px 0 0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:clamp(22px,2.8vw,30px);line-height:1.15;margin:0;text-wrap:balance}
+h3{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;font-weight:700}
+p{margin:0}
+a{color:var(--accent)}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.lede{color:var(--muted);max-width:66ch;margin-top:10px;font-size:16.5px}
+.note{color:var(--muted);font-size:13px;max-width:74ch}
+.num{font-variant-numeric:tabular-nums}
+.tag{display:inline-block;font-size:11px;letter-spacing:.04em;padding:1px 7px;border-radius:3px;font-weight:700;white-space:nowrap}
+.tag.ok{background:var(--ok-soft);color:var(--ok)} .tag.warn{background:var(--warn-soft);color:var(--warn)} .tag.no{background:var(--accent-soft);color:var(--muted)} .tag.acc{background:var(--accent-soft);color:var(--accent)}
+button{font:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible,label:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+
+/* Onglets de circuit */
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tabs button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:10px 14px;text-align:left;display:grid;gap:2px;min-width:0}
+.tabs button b{font-size:15px}
+.tabs button span{font-size:12.5px;color:var(--muted)}
+.tabs button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.tabs button[aria-selected="true"] span{color:var(--accent-ink);opacity:.85}
+
+/* Barre de budget */
+.budget{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:grid;grid-template-columns:1fr auto;gap:6px 16px;align-items:center;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.budget .t{font-family:var(--display);font-size:clamp(24px,3.4vw,32px);font-weight:600;color:var(--accent);line-height:1.1}
+.budget .t small{font-family:var(--body);font-size:13px;color:var(--muted);font-weight:400}
+.budget .parts{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13px;color:var(--muted)}
+.budget .parts b{color:var(--ink);font-variant-numeric:tabular-nums}
+.budget .miss{grid-column:1/-1;font-size:12.5px;color:var(--warn)}
+.budget .pp{text-align:right;font-size:13px;color:var(--muted)}
+.budget .pp b{display:block;font-size:18px;color:var(--ink);font-variant-numeric:tabular-nums}
+.capbar{grid-column:1/-1;height:10px;border-radius:5px;background:var(--accent-soft);overflow:hidden;position:relative}
+.capbar span{position:absolute;inset:0 auto 0 0;background:var(--accent)}
+.capbar span.over{background:var(--bad)}
+.ctrl{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:13.5px}
+.ctrl button{border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);border-radius:6px;padding:7px 12px;font-weight:700}
+.ctrl label{display:flex;gap:6px;align-items:center;color:var(--muted)}
+.ctrl input{width:90px;font:inherit;padding:4px 6px;border:1px solid var(--line);border-radius:5px;background:var(--paper);color:var(--ink)}
+.margin.ok{color:var(--ok);font-weight:700}.margin.bad{color:var(--bad);font-weight:700}
+.offer .q{font-size:12px;color:var(--muted)}
+@media (max-width:560px){.budget{grid-template-columns:1fr}.budget .pp{text-align:left}}
+
+/* Carte */
+.mapgrid{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:12px;align-items:start}
+@media (max-width:760px){.mapgrid{grid-template-columns:1fr}}
+.map{position:relative;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface)}
+.map .box{position:relative}
+.map img{display:block;width:100%;height:auto}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map .cap{padding:8px 12px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:4px 14px}
+.legend i{display:inline-block;width:22px;height:0;border-top:3px solid var(--route);vertical-align:middle;margin-right:4px}
+.legend i.boat{border-top-style:dashed} .legend i.air{border-top-style:dotted}
+
+/* Vols, trajets */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:9px 11px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.r,th.r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* Étapes et offres */
+.step{display:grid;gap:10px}
+.step-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;border-left:5px solid var(--sc,var(--accent));padding-left:10px}
+.step-h h2{font-size:22px}
+.offers{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:12px}
+.offer{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:grid;grid-template-rows:auto 1fr;cursor:pointer;min-width:0}
+.offer input{position:absolute;opacity:0;pointer-events:none}
+.offer:has(input:checked){border-color:var(--accent);box-shadow:0 0 0 2px var(--accent)}
+.offer .ph{aspect-ratio:16/10;max-width:100%;background:var(--accent-soft);display:grid;place-items:center;color:var(--muted);font-size:12.5px;overflow:hidden}
+.offer .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.offer .b{padding:10px 12px 12px;display:grid;gap:6px;align-content:start;font-size:13.5px}
+.offer h4{margin:0;font-family:var(--display);font-size:17px;font-weight:600;line-height:1.25}
+.offer .price{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}
+.offer .price small{font-size:12px;color:var(--muted);font-weight:400}
+.offer .sel{position:absolute;top:8px;left:8px;background:var(--surface);color:var(--muted);font-size:11.5px;font-weight:700;border-radius:999px;padding:2px 9px;border:1px solid var(--line)}
+.offer:has(input:checked) .sel{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.offer .go{justify-self:start;font-weight:700;text-decoration:none;border:1px solid var(--accent);border-radius:6px;padding:5px 10px;margin-top:2px}
+.offer .meta{color:var(--muted)}
+.days{display:grid;gap:6px}
+.day{display:grid;grid-template-columns:86px 1fr;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 12px;font-size:14px}
+.day b{font-variant-numeric:tabular-nums}
+.foot{border-top:1px solid var(--line);padding-top:14px}
+</style>
+<style>.panel[hidden]{display:none!important} .hero{border-radius:14px;background:linear-gradient(160deg,var(--accent) 0%,#0a4d56 60%,#083a41 100%);color:#fff;padding:34px 28px} .hero .eyebrow{color:#a9dee2} .hero h1{color:#fff} .hero .lede{color:#dcf2f3} .hero a{color:#fff;font-weight:700}</style>
+</head>
+<body>
+<div class="wrap">
+  <p style="margin:0"><a href="../">← Voyage à 7 500 €</a></p>
+  <header class="hero">
+    <div class="eyebrow">Andaman 2026 · 2 adultes · départ Tunis · 14 nuits · budget 7 500 €</div>
+    <h1>Le voyage optimisé à 7 500 €</h1>
+    <p class="lede">Trois façons de vivre le voyage, chacune avec les meilleurs hôtels qui tiennent dans le budget : chambres vue mer, une suite au bord de la plage à Phi Phi, et un départ deux semaines plus tôt pour payer les vols moins cher. Les montants et les autres choix possibles sont sur la page <a href="../construction/" id="toConstruction">Construction</a>.</p>
+  </header>
+  <nav class="tabs" role="tablist" aria-label="Circuits"><button type="button" role="tab" data-v="grand"><b>Grand tour</b><span>Bangkok → Ao Nang → Phi Phi → Khao Lak · Dates de référence · 29/11 → 15/12</span></button><button type="button" role="tab" data-v="plages"><b>Plages et Phi Phi</b><span>Ao Nang → Phi Phi → Khao Lak → Nai Yang · Dates de référence · 29/11 → 15/12</span></button><button type="button" role="tab" data-v="tot"><b>Départ anticipé</b><span>Nai Yang → Khao Lak → Phi Phi → Ao Nang · Autres dates · 18/11 → 04/12</span></button></nav>
+  <main><section class="panel" id="v-grand" style="display:grid;gap:26px">
+      <section class="step"><div class="eyebrow">Dates de référence · 29/11 → 15/12</div><h2>Grand tour · Bangkok → Ao Nang → Phi Phi → Khao Lak</h2><p class="lede">Tout le voyage en 14 nuits : la ville au bord du fleuve, les falaises de Krabi, trois nuits sur l&#x27;île, puis les longues plages de Khao Lak. Arrivée à Bangkok, retour par Phuket.</p></section>
+      <section class="step"><h3>Le trajet</h3><div class="mapgrid">
+        <div class="map"><div class="box"><img src="../assets/carte-andaman-wm.png" alt="Carte de la côte d'Andaman" width="900" height="640"><svg viewBox="0 0 900 640" preserveAspectRatio="none" role="img" aria-label="Trajet"><line x1="605.2" y1="430.7" x2="519.3" y2="446.1" stroke="var(--route)" stroke-width="5" stroke-linecap="round"/><line x1="519.3" y1="446.1" x2="527.4" y2="554.8" stroke="var(--route)" stroke-width="5" stroke-linecap="round" stroke-dasharray="14 9"/><line x1="527.4" y1="554.8" x2="392.1" y2="520.1" stroke="var(--route)" stroke-width="5" stroke-linecap="round" stroke-dasharray="14 9"/><line x1="392.1" y1="520.1" x2="343.1" y2="152.8" stroke="var(--route)" stroke-width="5" stroke-linecap="round"/><line x1="343.1" y1="152.8" x2="361.5" y2="425.5" stroke="var(--route)" stroke-width="5" stroke-linecap="round"/><circle cx="605.2" cy="430.7" r="15" fill="#3f5563" stroke="#fff" stroke-width="3"/><text x="605.2" y="436.7" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">✈</text><text x="627.2" y="436.7" font-size="20" font-weight="700" text-anchor="start" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">KBV</text><circle cx="519.3" cy="446.1" r="15" fill="var(--route)" stroke="#fff" stroke-width="3"/><text x="519.3" y="452.1" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">1</text><text x="541.3" y="452.1" font-size="20" font-weight="700" text-anchor="start" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">Ao Nang</text><circle cx="527.4" cy="554.8" r="15" fill="var(--route)" stroke="#fff" stroke-width="3"/><text x="527.4" y="560.8" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">2</text><text x="549.4" y="560.8" font-size="20" font-weight="700" text-anchor="start" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">Phi Phi</text><circle cx="392.1" cy="520.1" r="6" fill="var(--route)"/><text x="382.1" y="542.1" font-size="18" text-anchor="end" fill="#15242b" stroke="#fff" stroke-width="4" paint-order="stroke" font-family="Source Sans 3, sans-serif">quai de Rassada</text><circle cx="343.1" cy="152.8" r="15" fill="var(--route)" stroke="#fff" stroke-width="3"/><text x="343.1" y="158.8" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">3</text><text x="321.1" y="158.8" font-size="20" font-weight="700" text-anchor="end" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">Khao Lak</text><circle cx="361.5" cy="425.5" r="15" fill="#3f5563" stroke="#fff" stroke-width="3"/><text x="361.5" y="431.5" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">✈</text><text x="339.5" y="431.5" font-size="20" font-weight="700" text-anchor="end" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">HKT</text></svg></div>
+        <div class="cap legend"><span><i></i>route</span><span><i class="boat"></i>bateau</span><span><i class="air"></i>avion</span><span>✈ aéroport · numéros = étapes</span></div></div><div class="map"><div class="box"><img src="../assets/carte-thailande.png" alt="Carte de la Thaïlande" width="700" height="800"><svg viewBox="0 0 700 800" preserveAspectRatio="none" role="img" aria-label="Vol Bangkok vers Krabi">
+<line x1="355.7" y1="372.2" x2="315.6" y2="501.8" stroke="var(--route)" stroke-width="6" stroke-dasharray="4 10" stroke-linecap="round"/>
+<circle cx="355.7" cy="372.2" r="13" fill="#3f5563" stroke="#fff" stroke-width="3"/><text x="375" y="368" font-size="30" font-weight="700" fill="#15242b" stroke="#fff" stroke-width="6" paint-order="stroke" font-family="Source Sans 3, sans-serif">Bangkok</text>
+<circle cx="315.6" cy="501.8" r="11" fill="var(--route)" stroke="#fff" stroke-width="3"/><text x="335" y="530" font-size="26" font-weight="700" fill="#15242b" stroke="#fff" stroke-width="6" paint-order="stroke" font-family="Source Sans 3, sans-serif">Krabi</text></svg></div><div class="cap">Vol intérieur Bangkok → Krabi</div></div></div></section>
+      <section class="step"><h3>Les hôtels retenus</h3><div class="offers"><article class="offer" style="cursor:default"><div class="ph">Photo non disponible</div><div class="b">
+          <div class="eyebrow" style="color:var(--s-bkk)">Étape 1 · Bangkok · 3 nuits · 30/11 → 03/12</div>
+          <h4>Anantara Riverside Bangkok</h4><div class="meta">Chambre de Luxe - Vue sur Rivière</div>
+          <div><span class="tag ok">vue sur le fleuve</span></div>
+          <div class="meta">Petit-déjeuner : en supplément</div>
+          <a class="go" href="https://www.booking.com/hotel/th/bangkok-riverside-resort-and-spa.html?aid=2438770&amp;checkin=2026-11-30&amp;checkout=2026-12-03&amp;no_rooms=1&amp;group_adults=2&amp;selected_currency=EUR" target="_blank" rel="noopener">Voir l'hôtel</a></div></article><article class="offer" style="cursor:default"><div class="ph"><img src="../assets/hotel-varana.jpg" alt="Varana Krabi" loading="lazy"></div><div class="b">
+          <div class="eyebrow" style="color:var(--s-aon)">Étape 2 · Ao Nang · 4 nuits · 03/12 → 07/12</div>
+          <h4>Varana Krabi</h4><div class="meta">Hébergement Lits Jumeaux Luxe - Vue sur Océan</div>
+          <div><span class="tag ok">vue mer annoncée</span></div>
+          <div class="meta">Petit-déjeuner : inclus</div>
+          <a class="go" href="https://www.booking.com/hotel/th/the-varana.html?aid=2438770&amp;checkin=2026-12-03&amp;checkout=2026-12-07&amp;no_rooms=1&amp;group_adults=2&amp;selected_currency=EUR" target="_blank" rel="noopener">Voir l'hôtel</a></div></article><article class="offer" style="cursor:default"><div class="ph"><img src="../assets/hotel-saii.jpg" alt="SAii Phi Phi Island Village" loading="lazy"></div><div class="b">
+          <div class="eyebrow" style="color:var(--s-pp)">Étape 3 · Koh Phi Phi · 3 nuits · 07/12 → 10/12</div>
+          <h4>SAii Phi Phi Island Village</h4><div class="meta">Suite Junior Côté Plage</div>
+          <div><span class="tag ok">vue mer annoncée</span></div>
+          <div class="meta">Petit-déjeuner : inclus</div>
+          <a class="go" href="https://www.booking.com/hotel/th/phiphiislandvillagebeachresortandspa.html?aid=2438770&amp;checkin=2026-12-07&amp;checkout=2026-12-10&amp;no_rooms=1&amp;group_adults=2&amp;selected_currency=EUR" target="_blank" rel="noopener">Voir l'hôtel</a></div></article><article class="offer" style="cursor:default"><div class="ph"><img src="../assets/hotel-kantary.jpg" alt="Kantary Beach Hotel Villas &amp; Suites" loading="lazy"></div><div class="b">
+          <div class="eyebrow" style="color:var(--s-kl)">Étape 4 · Khao Lak · 4 nuits · 10/12 → 14/12</div>
+          <h4>Kantary Beach Hotel Villas &amp; Suites</h4><div class="meta">Villa</div>
+          <div><span class="tag ok">vue mer annoncée</span></div>
+          <div class="meta">Petit-déjeuner : inclus</div>
+          <a class="go" href="https://www.booking.com/hotel/th/kantary-beach-villas-suites.html?aid=2438770&amp;checkin=2026-12-10&amp;checkout=2026-12-14&amp;no_rooms=1&amp;group_adults=2&amp;selected_currency=EUR" target="_blank" rel="noopener">Voir l'hôtel</a></div></article></div></section>
+      <section class="step"><h3>Vols</h3><div class="tablewrap"><table><tr><th>Trajet</th><th>Horaires locaux</th><th>Compagnie</th></tr><tr><td>Tunis → Bangkok (BKK)</td><td>dim. 29/11 10:40 → lun. 30/11 07:15</td><td>Etihad, 1 escale</td></tr><tr><td>Bangkok (BKK) → Krabi</td><td>jeu. 03/12 07:00 → 08:30</td><td>Thai Vietjet, direct</td></tr><tr><td>Phuket (HKT) → Tunis</td><td>lun. 14/12 19:50 → mar. 15/12 10:00</td><td>Turkish Airlines, 2 escales</td></tr></table></div></section>
+      <section class="step"><h3>Trajets sur place</h3><div class="tablewrap"><table><tr><th>Quand</th><th>Trajet</th><th>Durée</th></tr><tr><td>30/11</td><td>Aéroport BKK → hôtel au bord du fleuve</td><td>45 min – 1 h</td></tr><tr><td>03/12</td><td>Hôtel → aéroport BKK (vol à 07:00)</td><td>45 min – 1 h</td></tr><tr><td>03/12</td><td>Aéroport KBV → Ao Nang</td><td>35–50 min</td></tr><tr><td>07/12</td><td>Ao Nang → Koh Phi Phi (Ao Nang Princess, 09:30 → 11:30) + taxe Tonsai</td><td>≈ 2 h</td></tr><tr><td>10/12</td><td>Koh Phi Phi → quai de Rassada, Phuket (Andaman Wave Master)</td><td>≈ 3 h</td></tr><tr><td>10/12</td><td>Quai de Rassada → hôtel à Khao Lak (voiture privée)</td><td>≈ 1 h 30</td></tr><tr><td>14/12</td><td>Khao Lak → aéroport HKT</td><td>45 min – 1 h 40</td></tr></table></div></section>
+      <section class="step"><h3>Jour par jour</h3><div class="days"><div class="day"><b>29/11</b><span>Vol Tunis → Abu Dhabi → Bangkok.</span></div><div class="day"><b>30/11–02/12</b><span>Bangkok : bateau sur le Chao Phraya, Grand Palais, Wat Pho, Wat Arun, quartier chinois.</span></div><div class="day"><b>03/12</b><span>Vol 07:00 vers Krabi, Ao Nang.</span></div><div class="day"><b>04–06/12</b><span>Ao Nang : Railay, îles de Krabi, massage.</span></div><div class="day"><b>07/12</b><span>Ferry 09:30 vers Phi Phi.</span></div><div class="day"><b>08–09/12</b><span>Phi Phi : snorkeling, point de vue, Maya Bay selon ouverture.</span></div><div class="day"><b>10/12</b><span>Ferry vers Phuket, voiture vers Khao Lak.</span></div><div class="day"><b>11–13/12</b><span>Khao Lak : îles Similan, baie de Phang Nga, spa.</span></div><div class="day"><b>14/12</b><span>Départ vers HKT vers 16:00, vol à 19:50.</span></div></div></section>
+    </section><section class="panel" id="v-plages" style="display:grid;gap:26px">
+      <section class="step"><div class="eyebrow">Dates de référence · 29/11 → 15/12</div><h2>Plages et Phi Phi · Ao Nang → Phi Phi → Khao Lak → Nai Yang</h2><p class="lede">Sans Bangkok : plus de temps à la plage et sur l&#x27;île, et une dernière nuit à 5 minutes de l&#x27;aéroport.</p></section>
+      <section class="step"><h3>Le trajet</h3><div class="mapgrid" style="grid-template-columns:1fr">
+        <div class="map"><div class="box"><img src="../assets/carte-andaman-wm.png" alt="Carte de la côte d'Andaman" width="900" height="640"><svg viewBox="0 0 900 640" preserveAspectRatio="none" role="img" aria-label="Trajet"><line x1="605.2" y1="430.7" x2="519.3" y2="446.1" stroke="var(--route)" stroke-width="5" stroke-linecap="round"/><line x1="519.3" y1="446.1" x2="527.4" y2="554.8" stroke="var(--route)" stroke-width="5" stroke-linecap="round" stroke-dasharray="14 9"/><line x1="527.4" y1="554.8" x2="392.1" y2="520.1" stroke="var(--route)" stroke-width="5" stroke-linecap="round" stroke-dasharray="14 9"/><line x1="392.1" y1="520.1" x2="343.1" y2="152.8" stroke="var(--route)" stroke-width="5" stroke-linecap="round"/><line x1="343.1" y1="152.8" x2="351.1" y2="437.4" stroke="var(--route)" stroke-width="5" stroke-linecap="round"/><line x1="351.1" y1="437.4" x2="361.5" y2="425.5" stroke="var(--route)" stroke-width="5" stroke-linecap="round"/><circle cx="605.2" cy="430.7" r="15" fill="#3f5563" stroke="#fff" stroke-width="3"/><text x="605.2" y="436.7" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">✈</text><text x="627.2" y="436.7" font-size="20" font-weight="700" text-anchor="start" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">KBV</text><circle cx="519.3" cy="446.1" r="15" fill="var(--route)" stroke="#fff" stroke-width="3"/><text x="519.3" y="452.1" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">1</text><text x="541.3" y="452.1" font-size="20" font-weight="700" text-anchor="start" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">Ao Nang</text><circle cx="527.4" cy="554.8" r="15" fill="var(--route)" stroke="#fff" stroke-width="3"/><text x="527.4" y="560.8" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">2</text><text x="549.4" y="560.8" font-size="20" font-weight="700" text-anchor="start" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">Phi Phi</text><circle cx="392.1" cy="520.1" r="6" fill="var(--route)"/><text x="382.1" y="542.1" font-size="18" text-anchor="end" fill="#15242b" stroke="#fff" stroke-width="4" paint-order="stroke" font-family="Source Sans 3, sans-serif">quai de Rassada</text><circle cx="343.1" cy="152.8" r="15" fill="var(--route)" stroke="#fff" stroke-width="3"/><text x="343.1" y="158.8" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">3</text><text x="321.1" y="158.8" font-size="20" font-weight="700" text-anchor="end" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">Khao Lak</text><circle cx="351.1" cy="437.4" r="15" fill="var(--route)" stroke="#fff" stroke-width="3"/><text x="351.1" y="443.4" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">4</text><text x="329.1" y="443.4" font-size="20" font-weight="700" text-anchor="end" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">Nai Yang</text><circle cx="361.5" cy="425.5" r="15" fill="#3f5563" stroke="#fff" stroke-width="3"/><text x="361.5" y="431.5" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">✈</text><text x="339.5" y="431.5" font-size="20" font-weight="700" text-anchor="end" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">HKT</text></svg></div>
+        <div class="cap legend"><span><i></i>route</span><span><i class="boat"></i>bateau</span><span><i class="air"></i>avion</span><span>✈ aéroport · numéros = étapes</span></div></div></div></section>
+      <section class="step"><h3>Les hôtels retenus</h3><div class="offers"><article class="offer" style="cursor:default"><div class="ph"><img src="../assets/hotel-varana.jpg" alt="Varana Krabi" loading="lazy"></div><div class="b">
+          <div class="eyebrow" style="color:var(--s-aon)">Étape 1 · Ao Nang · 5 nuits · 30/11 → 05/12</div>
+          <h4>Varana Krabi</h4><div class="meta">Hébergement Lits Jumeaux Luxe - Vue sur Océan</div>
+          <div><span class="tag ok">vue mer annoncée</span></div>
+          <div class="meta">Petit-déjeuner : inclus</div>
+          <a class="go" href="https://www.booking.com/hotel/th/the-varana.html?aid=2438770&amp;checkin=2026-11-30&amp;checkout=2026-12-05&amp;no_rooms=1&amp;group_adults=2&amp;selected_currency=EUR" target="_blank" rel="noopener">Voir l'hôtel</a></div></article><article class="offer" style="cursor:default"><div class="ph"><img src="../assets/hotel-saii.jpg" alt="SAii Phi Phi Island Village" loading="lazy"></div><div class="b">
+          <div class="eyebrow" style="color:var(--s-pp)">Étape 2 · Koh Phi Phi · 3 nuits · 05/12 → 08/12</div>
+          <h4>SAii Phi Phi Island Village</h4><div class="meta">Suite Junior Côté Plage</div>
+          <div><span class="tag ok">vue mer annoncée</span></div>
+          <div class="meta">Petit-déjeuner : inclus</div>
+          <a class="go" href="https://www.booking.com/hotel/th/phiphiislandvillagebeachresortandspa.html?aid=2438770&amp;checkin=2026-12-05&amp;checkout=2026-12-08&amp;no_rooms=1&amp;group_adults=2&amp;selected_currency=EUR" target="_blank" rel="noopener">Voir l'hôtel</a></div></article><article class="offer" style="cursor:default"><div class="ph"><img src="../assets/hotel-kantary.jpg" alt="Kantary Beach Hotel Villas &amp; Suites" loading="lazy"></div><div class="b">
+          <div class="eyebrow" style="color:var(--s-kl)">Étape 3 · Khao Lak · 5 nuits · 08/12 → 13/12</div>
+          <h4>Kantary Beach Hotel Villas &amp; Suites</h4><div class="meta">Villa</div>
+          <div><span class="tag ok">vue mer annoncée</span></div>
+          <div class="meta">Petit-déjeuner : inclus</div>
+          <a class="go" href="https://www.booking.com/hotel/th/kantary-beach-villas-suites.html?aid=2438770&amp;checkin=2026-12-08&amp;checkout=2026-12-13&amp;no_rooms=1&amp;group_adults=2&amp;selected_currency=EUR" target="_blank" rel="noopener">Voir l'hôtel</a></div></article><article class="offer" style="cursor:default"><div class="ph">Photo non disponible</div><div class="b">
+          <div class="eyebrow" style="color:var(--s-ny)">Étape 4 · Nai Yang · 1 nuit · 13/12 → 14/12</div>
+          <h4>Pullman Phuket Arcadia Naithon Beach</h4><div class="meta">Chambre avec Vue sur l&#x27;Océan (Ocean Room)</div>
+          <div><span class="tag ok">vue mer annoncée</span></div>
+          <div class="meta">Petit-déjeuner : non confirmé</div>
+          <a class="go" href="https://www.agoda.com/pullman-phuket-arcadia-naithon-beach-resort/hotel/phuket-th.html?checkin=2026-12-13&amp;los=1&amp;rooms=1&amp;adults=2&amp;children=0&amp;currencyCode=EUR" target="_blank" rel="noopener">Voir l'hôtel</a></div></article></div></section>
+      <section class="step"><h3>Vols</h3><div class="tablewrap"><table><tr><th>Trajet</th><th>Horaires locaux</th><th>Compagnie</th></tr><tr><td>Tunis → Krabi (KBV)</td><td>dim. 29/11 10:40 → lun. 30/11 06:35</td><td>Etihad, 1 escale</td></tr><tr><td>Phuket (HKT) → Tunis</td><td>lun. 14/12 19:50 → mar. 15/12 10:00</td><td>Turkish Airlines, 2 escales</td></tr></table></div></section>
+      <section class="step"><h3>Trajets sur place</h3><div class="tablewrap"><table><tr><th>Quand</th><th>Trajet</th><th>Durée</th></tr><tr><td>30/11</td><td>Aéroport KBV → Ao Nang</td><td>35–50 min</td></tr><tr><td>05/12</td><td>Ao Nang → Koh Phi Phi (Ao Nang Princess, 09:30 → 11:30) + taxe Tonsai</td><td>≈ 2 h</td></tr><tr><td>08/12</td><td>Koh Phi Phi → quai de Rassada, Phuket (Andaman Wave Master)</td><td>≈ 3 h</td></tr><tr><td>08/12</td><td>Quai de Rassada → hôtel à Khao Lak (voiture privée)</td><td>≈ 1 h 30</td></tr><tr><td>13/12</td><td>Khao Lak → Nai Yang</td><td>≈ 1 h 25</td></tr><tr><td>14/12</td><td>Nai Yang ⇄ aéroport HKT</td><td>5–10 min</td></tr></table></div></section>
+      <section class="step"><h3>Jour par jour</h3><div class="days"><div class="day"><b>29/11</b><span>Vol Tunis → Abu Dhabi → Krabi.</span></div><div class="day"><b>30/11–04/12</b><span>Ao Nang : Railay, îles de Krabi ou Koh Hong, massage.</span></div><div class="day"><b>05/12</b><span>Ferry 09:30 vers Phi Phi.</span></div><div class="day"><b>06–07/12</b><span>Phi Phi : snorkeling, point de vue, Maya Bay selon ouverture.</span></div><div class="day"><b>08/12</b><span>Ferry vers Phuket, voiture vers Khao Lak.</span></div><div class="day"><b>09–12/12</b><span>Khao Lak : îles Similan, baie de Phang Nga, spa.</span></div><div class="day"><b>13/12</b><span>Route vers Nai Yang.</span></div><div class="day"><b>14/12</b><span>Vol à 19:50 depuis Phuket.</span></div></div></section>
+    </section><section class="panel" id="v-tot" style="display:grid;gap:26px">
+      <section class="step"><div class="eyebrow">Autres dates · 18/11 → 04/12</div><h2>Départ anticipé · Nai Yang → Khao Lak → Phi Phi → Ao Nang</h2><p class="lede">Le même voyage deux semaines plus tôt, avec un aller-retour Qatar Airways sur Phuket bien moins cher : l&#x27;économie sur les vols permet de monter en gamme à l&#x27;hôtel.</p></section>
+      <section class="step"><h3>Le trajet</h3><div class="mapgrid" style="grid-template-columns:1fr">
+        <div class="map"><div class="box"><img src="../assets/carte-andaman-wm.png" alt="Carte de la côte d'Andaman" width="900" height="640"><svg viewBox="0 0 900 640" preserveAspectRatio="none" role="img" aria-label="Trajet"><line x1="361.5" y1="425.5" x2="351.1" y2="437.4" stroke="var(--route)" stroke-width="5" stroke-linecap="round"/><line x1="351.1" y1="437.4" x2="343.1" y2="152.8" stroke="var(--route)" stroke-width="5" stroke-linecap="round"/><line x1="343.1" y1="152.8" x2="392.1" y2="520.1" stroke="var(--route)" stroke-width="5" stroke-linecap="round"/><line x1="392.1" y1="520.1" x2="527.4" y2="554.8" stroke="var(--route)" stroke-width="5" stroke-linecap="round" stroke-dasharray="14 9"/><line x1="527.4" y1="554.8" x2="519.3" y2="446.1" stroke="var(--route)" stroke-width="5" stroke-linecap="round" stroke-dasharray="14 9"/><line x1="519.3" y1="446.1" x2="361.5" y2="425.5" stroke="var(--route)" stroke-width="5" stroke-linecap="round"/><circle cx="361.5" cy="425.5" r="15" fill="#3f5563" stroke="#fff" stroke-width="3"/><text x="361.5" y="431.5" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">✈</text><text x="339.5" y="431.5" font-size="20" font-weight="700" text-anchor="end" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">HKT</text><circle cx="351.1" cy="437.4" r="15" fill="var(--route)" stroke="#fff" stroke-width="3"/><text x="351.1" y="443.4" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">1</text><text x="329.1" y="443.4" font-size="20" font-weight="700" text-anchor="end" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">Nai Yang</text><circle cx="343.1" cy="152.8" r="15" fill="var(--route)" stroke="#fff" stroke-width="3"/><text x="343.1" y="158.8" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">2</text><text x="321.1" y="158.8" font-size="20" font-weight="700" text-anchor="end" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">Khao Lak</text><circle cx="392.1" cy="520.1" r="6" fill="var(--route)"/><text x="382.1" y="542.1" font-size="18" text-anchor="end" fill="#15242b" stroke="#fff" stroke-width="4" paint-order="stroke" font-family="Source Sans 3, sans-serif">quai de Rassada</text><circle cx="527.4" cy="554.8" r="15" fill="var(--route)" stroke="#fff" stroke-width="3"/><text x="527.4" y="560.8" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">3</text><text x="549.4" y="560.8" font-size="20" font-weight="700" text-anchor="start" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">Phi Phi</text><circle cx="519.3" cy="446.1" r="15" fill="var(--route)" stroke="#fff" stroke-width="3"/><text x="519.3" y="452.1" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">4</text><text x="541.3" y="452.1" font-size="20" font-weight="700" text-anchor="start" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">Ao Nang</text></svg></div>
+        <div class="cap legend"><span><i></i>route</span><span><i class="boat"></i>bateau</span><span><i class="air"></i>avion</span><span>✈ aéroport · numéros = étapes</span></div></div></div></section>
+      <section class="step"><h3>Les hôtels retenus</h3><div class="offers"><article class="offer" style="cursor:default"><div class="ph">Photo non disponible</div><div class="b">
+          <div class="eyebrow" style="color:var(--s-ny)">Étape 1 · Nai Yang · 1 nuit · 19/11 → 20/11</div>
+          <h4>Renaissance Phuket Resort &amp; Spa</h4><div class="meta">Catégorie non précisée (meilleure offre Trivago)</div>
+          <div><span class="tag no">vue à vérifier</span></div>
+          <div class="meta">Petit-déjeuner : non précisé</div>
+          <a class="go" href="https://www.trivago.be/en-US/lm/renaissance-phuket-resort-spa-mai-khao-beach?cip=234716015&amp;currencyCode=EUR&amp;search=100-1390786;105-1322;200-15960;dr-20261119-20261120;drs-40;rc-1-2&amp;dealId=-9119090131986198908" target="_blank" rel="noopener">Voir l'hôtel</a></div></article><article class="offer" style="cursor:default"><div class="ph">Photo non disponible</div><div class="b">
+          <div class="eyebrow" style="color:var(--s-kl)">Étape 2 · Khao Lak · 5 nuits · 20/11 → 25/11</div>
+          <h4>Casa de La Flora</h4><div class="meta">Catégorie non précisée (meilleure offre Trivago)</div>
+          <div><span class="tag no">vue à vérifier</span></div>
+          <div class="meta">Petit-déjeuner : non précisé</div>
+          <a class="go" href="https://www.trivago.be/en-US/lm/resort-casa-de-la-flora-khao-lak?cip=234716015&amp;currencyCode=EUR&amp;search=100-1964039;105-1322;200-15941;dr-20261120-20261125;drs-40;rc-1-2&amp;dealId=-8618337342578888822" target="_blank" rel="noopener">Voir l'hôtel</a></div></article><article class="offer" style="cursor:default"><div class="ph"><img src="../assets/hotel-saii.jpg" alt="SAii Phi Phi Island Village" loading="lazy"></div><div class="b">
+          <div class="eyebrow" style="color:var(--s-pp)">Étape 3 · Koh Phi Phi · 3 nuits · 25/11 → 28/11</div>
+          <h4>SAii Phi Phi Island Village</h4><div class="meta">Catégorie non précisée (meilleure offre Trivago)</div>
+          <div><span class="tag no">vue à vérifier</span></div>
+          <div class="meta">Petit-déjeuner : non précisé</div>
+          <a class="go" href="https://www.trivago.be/en-US/lm/resort-saii-phi-phi-island-village-koh-phi-phi?cip=234716015&amp;currencyCode=EUR&amp;search=100-93383;105-1320;105-1322;200-16015;dr-20261125-20261128;drs-40;rc-1-2&amp;dealId=3561464652499348960" target="_blank" rel="noopener">Voir l'hôtel</a></div></article><article class="offer" style="cursor:default"><div class="ph">Photo non disponible</div><div class="b">
+          <div class="eyebrow" style="color:var(--s-aon)">Étape 4 · Ao Nang · 5 nuits · 28/11 → 03/12</div>
+          <h4>Sofitel Krabi Phokeethra Golf &amp; Spa Resort</h4><div class="meta">Catégorie non précisée (meilleure offre Trivago)</div>
+          <div><span class="tag no">vue à vérifier</span></div>
+          <div class="meta">Petit-déjeuner : non précisé</div>
+          <a class="go" href="https://www.trivago.be/en-US/lm/hotel-sofitel-krabi-phokeethra-golf-spa-resort-klong-muang?cip=234716015&amp;currencyCode=EUR&amp;search=100-152785;105-1322;200-16207;dr-20261128-20261203;drs-40;rc-1-2&amp;dealId=1002224366995093518" target="_blank" rel="noopener">Voir l'hôtel</a></div></article></div></section>
+      <section class="step"><h3>Vols</h3><div class="tablewrap"><table><tr><th>Trajet</th><th>Horaires locaux</th><th>Compagnie</th></tr><tr><td>Tunis ⇄ Phuket (HKT), aller-retour</td><td>aller mer. 18/11 16:00 → jeu. 19/11 18:55 · retour ven. 04/12 00:25 → 13:35</td><td>Qatar Airways, 1 escale (Doha)</td></tr></table></div></section>
+      <section class="step"><h3>Trajets sur place</h3><div class="tablewrap"><table><tr><th>Quand</th><th>Trajet</th><th>Durée</th></tr><tr><td>19/11</td><td>Nai Yang ⇄ aéroport HKT</td><td>5–10 min</td></tr><tr><td>20/11</td><td>Nai Yang → Khao Lak</td><td>≈ 1 h 25</td></tr><tr><td>25/11</td><td>Khao Lak → quai de Rassada (sens inverse de la grille publique)</td><td>≈ 1 h 30</td></tr><tr><td>25/11</td><td>Quai de Rassada → Koh Phi Phi (sens inverse de la grille publique)</td><td>≈ 2 h</td></tr><tr><td>28/11</td><td>Koh Phi Phi → Ao Nang (retour Ao Nang Princess, sens inverse)</td><td>≈ 2 h</td></tr><tr><td>03/12</td><td>Ao Nang → aéroport HKT (vol à 00:25)</td><td>≈ 2 h 30</td></tr></table></div></section>
+      <section class="step"><h3>Jour par jour</h3><div class="days"><div class="day"><b>18/11</b><span>Vol Tunis → Doha → Phuket.</span></div><div class="day"><b>19/11</b><span>Arrivée 18:55, nuit à Nai Yang.</span></div><div class="day"><b>20/11</b><span>Route vers Khao Lak.</span></div><div class="day"><b>21–24/11</b><span>Khao Lak : îles Similan (ouvertes depuis le 15/10), baie de Phang Nga, spa.</span></div><div class="day"><b>25/11</b><span>Route vers Phuket, ferry vers Phi Phi.</span></div><div class="day"><b>26–27/11</b><span>Phi Phi : snorkeling, point de vue, Maya Bay selon ouverture.</span></div><div class="day"><b>28/11</b><span>Ferry vers Ao Nang.</span></div><div class="day"><b>29/11–02/12</b><span>Ao Nang : Railay, îles de Krabi, massage.</span></div><div class="day"><b>03/12</b><span>Journée à Ao Nang, route vers HKT le soir (≈ 2 h 30), vol à 00:25.</span></div></div></section>
+    </section></main>
+  <footer class="foot"><p class="note">Sélection calculée le 04/10/2026 à partir des relevés Booking, Agoda (session Codex de recherche web), Trivago et Kiwi (pipeline GitHub Actions) ; ferries et trajets d'après les grilles publiques des opérateurs, sans disponibilité datée. Photos des hôtels : Booking.com. Cartes : © OpenStreetMap contributors. Rien n'est réservé.</p></footer>
+</div>
+<script>
+const ORDER = ["grand", "plages", "tot"];
+let cur = ORDER[0];
+try { const s = localStorage.getItem("andaman2026.v7500"); if (ORDER.includes(s)) cur = s; } catch (err) {}
+const h0 = location.hash.replace("#", ""); if (ORDER.includes(h0)) cur = h0;
+function show(k) {
+  cur = k;
+  ORDER.forEach(id => { document.getElementById("v-" + id).hidden = id !== k; });
+  document.querySelectorAll("[data-v]").forEach(b => b.setAttribute("aria-selected", b.dataset.v === k ? "true" : "false"));
+  try { localStorage.setItem("andaman2026.v7500", k); } catch (err) {}
+}
+document.addEventListener("click", ev => { const b = ev.target.closest("[data-v]"); if (b) show(b.dataset.v); });
+show(cur);
+</script>
+
+</body>
+</html>
