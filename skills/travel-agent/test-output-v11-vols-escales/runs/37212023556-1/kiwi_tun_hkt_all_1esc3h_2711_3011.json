@@ -1,0 +1,412 @@
+=== 2026-10-04T15:11:16+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "TUN", "flyTo": "HKT", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 1, "allow_self_transfer": false, "allow_diff_airport_connection": false, "one_for_city": false, "departureDate": "27/11/2026", "departureDateTo": "30/11/2026", "stopover_to": 3}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"TUN → HKT on 27/11/2026–30/11/2026, 2 adults [≤1 stops/sector; ≤3h layover; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 6,\n  \"itineraries\": [\n    {\n      \"id\": \"19e02365513200008135e32a_0|19e02365513200008135e32a_1\",\n      \"price\": 822.754596,\n      \"priceFormatted\": \"823 EUR\",\n      \"totalDurationSeconds\": 49800,\n      \"bookingUrl\": \"https://kiwi.com/u/mh788c\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T10:40:00\",\n        \"arrivalTime\": \"2026-11-30T06:30:00\",\n        \"durationSeconds\": 49800,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T10:40:00\",\n            \"arrivalTime\": \"2026-11-29T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-29T21:00:00\",\n            \"arrivalTime\": \"2026-11-30T06:30:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY410\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e0236551320000f9720896_0|19e0236551320000f9720896_1\",\n      \"price\": 998.0,\n      \"priceFormatted\": \"998 EUR\",\n      \"totalDurationSeconds\": 53700,\n      \"bookingUrl\": \"https://kiwi.com/u/s5dtfj\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T16:00:00\",\n        \"arrivalTime\": \"2026-11-30T12:55:00\",\n        \"durationSeconds\": 53700,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-29T16:00:00\",\n            \"arrivalTime\": \"2026-11-29T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T02:15:00\",\n            \"arrivalTime\": \"2026-11-30T12:55:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR840\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e02365513100001607cc9b_0|19e02365513100001607cc9b_1\",\n      \"price\": 1037.0,\n      \"priceFormatted\": \"1037 EUR\",\n      \"totalDurationSeconds\": 53700,\n      \"bookingUrl\": \"https://kiwi.com/u/xg6d5v\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-28T16:00:00\",\n        \"arrivalTime\": \"2026-11-29T12:55:00\",\n        \"durationSeconds\": 53700,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-28T16:00:00\",\n            \"arrivalTime\": \"2026-11-28T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-29T02:15:00\",\n            \"arrivalTime\": \"2026-11-29T12:55:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR840\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e02365513000008571e762_0|19e02365513000008571e762_1\",\n      \"price\": 1086.0,\n      \"priceFormatted\": \"1086 EUR\",\n      \"totalDurationSeconds\": 53700,\n      \"bookingUrl\": \"https://kiwi.com/u/rmtv7pb\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-27T16:00:00\",\n        \"arrivalTime\": \"2026-11-28T12:55:00\",\n        \"durationSeconds\": 53700,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-27T16:00:00\",\n            \"arrivalTime\": \"2026-11-27T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-28T02:15:00\",\n            \"arrivalTime\": \"2026-11-28T12:55:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR840\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e023655132000026ae6def_0|19e023655132000026ae6def_1\",\n      \"price\": 1181.0,\n      \"priceFormatted\": \"1181 EUR\",\n      \"totalDurationSeconds\": 51900,\n      \"bookingUrl\": \"https://kiwi.com/u/h5w7w5\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T11:00:00\",\n        \"arrivalTime\": \"2026-11-30T07:25:00\",\n        \"durationSeconds\": 51900,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"IST\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"IST\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Istanbul\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport d Istanbul\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Turquie\",\n            \"departureTime\": \"2026-11-29T11:00:00\",\n            \"arrivalTime\": \"2026-11-29T15:55:00\",\n            \"durationSeconds\": 10500,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK662\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"IST\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Istanbul\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport d Istanbul\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Turquie\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-29T17:45:00\",\n            \"arrivalTime\": \"2026-11-30T07:25:00\",\n            \"durationSeconds\": 34800,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK166\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e0236551300000eb953ee7_0|19e0236551300000eb953ee7_1\",\n      \"price\": 1218.0,\n      \"priceFormatted\": \"1218 EUR\",\n      \"totalDurationSeconds\": 51900,\n      \"bookingUrl\": \"https://kiwi.com/u/5mrwj2\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-27T11:00:00\",\n        \"arrivalTime\": \"2026-11-28T07:25:00\",\n        \"durationSeconds\": 51900,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"IST\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"IST\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Istanbul\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport d Istanbul\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Turquie\",\n            \"departureTime\": \"2026-11-27T11:00:00\",\n            \"arrivalTime\": \"2026-11-27T15:55:00\",\n            \"durationSeconds\": 10500,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK662\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"IST\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Istanbul\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport d Istanbul\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Turquie\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-27T17:45:00\",\n            \"arrivalTime\": \"2026-11-28T07:25:00\",\n            \"durationSeconds\": 34800,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK166\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 349,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "TUN → HKT on 27/11/2026–30/11/2026, 2 adults [≤1 stops/sector; ≤3h layover; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 6,
+   "itineraries": [
+    {
+     "id": "19e02365513200008135e32a_0|19e02365513200008135e32a_1",
+     "price": 822.754596,
+     "priceFormatted": "823 EUR",
+     "totalDurationSeconds": 49800,
+     "bookingUrl": "https://kiwi.com/u/mh788c",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T10:40:00",
+      "arrivalTime": "2026-11-30T06:30:00",
+      "durationSeconds": 49800,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-29T10:40:00",
+        "arrivalTime": "2026-11-29T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "HKT",
+        "fromCity": "Abou Dabi",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-29T21:00:00",
+        "arrivalTime": "2026-11-30T06:30:00",
+        "durationSeconds": 23400,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY410",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e0236551320000f9720896_0|19e0236551320000f9720896_1",
+     "price": 998.0,
+     "priceFormatted": "998 EUR",
+     "totalDurationSeconds": 53700,
+     "bookingUrl": "https://kiwi.com/u/s5dtfj",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T16:00:00",
+      "arrivalTime": "2026-11-30T12:55:00",
+      "durationSeconds": 53700,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "DOH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-29T16:00:00",
+        "arrivalTime": "2026-11-29T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "HKT",
+        "fromCity": "Doha",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-30T02:15:00",
+        "arrivalTime": "2026-11-30T12:55:00",
+        "durationSeconds": 24000,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR840",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e02365513100001607cc9b_0|19e02365513100001607cc9b_1",
+     "price": 1037.0,
+     "priceFormatted": "1037 EUR",
+     "totalDurationSeconds": 53700,
+     "bookingUrl": "https://kiwi.com/u/xg6d5v",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-28T16:00:00",
+      "arrivalTime": "2026-11-29T12:55:00",
+      "durationSeconds": 53700,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "DOH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-28T16:00:00",
+        "arrivalTime": "2026-11-28T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "HKT",
+        "fromCity": "Doha",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-29T02:15:00",
+        "arrivalTime": "2026-11-29T12:55:00",
+        "durationSeconds": 24000,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR840",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e02365513000008571e762_0|19e02365513000008571e762_1",
+     "price": 1086.0,
+     "priceFormatted": "1086 EUR",
+     "totalDurationSeconds": 53700,
+     "bookingUrl": "https://kiwi.com/u/rmtv7pb",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-27T16:00:00",
+      "arrivalTime": "2026-11-28T12:55:00",
+      "durationSeconds": 53700,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "DOH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-27T16:00:00",
+        "arrivalTime": "2026-11-27T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "HKT",
+        "fromCity": "Doha",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-28T02:15:00",
+        "arrivalTime": "2026-11-28T12:55:00",
+        "durationSeconds": 24000,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR840",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e023655132000026ae6def_0|19e023655132000026ae6def_1",
+     "price": 1181.0,
+     "priceFormatted": "1181 EUR",
+     "totalDurationSeconds": 51900,
+     "bookingUrl": "https://kiwi.com/u/h5w7w5",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T11:00:00",
+      "arrivalTime": "2026-11-30T07:25:00",
+      "durationSeconds": 51900,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "IST",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "IST",
+        "fromCity": "Tunis",
+        "toCity": "Istanbul",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport d Istanbul",
+        "fromCountry": "Tunisie",
+        "toCountry": "Turquie",
+        "departureTime": "2026-11-29T11:00:00",
+        "arrivalTime": "2026-11-29T15:55:00",
+        "durationSeconds": 10500,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK662",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "IST",
+        "to": "HKT",
+        "fromCity": "Istanbul",
+        "toCity": "Phuket",
+        "fromName": "Aéroport d Istanbul",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Turquie",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-29T17:45:00",
+        "arrivalTime": "2026-11-30T07:25:00",
+        "durationSeconds": 34800,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK166",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e0236551300000eb953ee7_0|19e0236551300000eb953ee7_1",
+     "price": 1218.0,
+     "priceFormatted": "1218 EUR",
+     "totalDurationSeconds": 51900,
+     "bookingUrl": "https://kiwi.com/u/5mrwj2",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-27T11:00:00",
+      "arrivalTime": "2026-11-28T07:25:00",
+      "durationSeconds": 51900,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "IST",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "IST",
+        "fromCity": "Tunis",
+        "toCity": "Istanbul",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport d Istanbul",
+        "fromCountry": "Tunisie",
+        "toCountry": "Turquie",
+        "departureTime": "2026-11-27T11:00:00",
+        "arrivalTime": "2026-11-27T15:55:00",
+        "durationSeconds": 10500,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK662",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "IST",
+        "to": "HKT",
+        "fromCity": "Istanbul",
+        "toCity": "Phuket",
+        "fromName": "Aéroport d Istanbul",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Turquie",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-27T17:45:00",
+        "arrivalTime": "2026-11-28T07:25:00",
+        "durationSeconds": 34800,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK166",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 349,
+   "error": null
+  }
+ }
+}
