@@ -207,6 +207,7 @@ section.block{margin-bottom:28px}
 .etapes .e-A{background:var(--gantt-fly)}
 .etapes .e-B{background:var(--gantt-act)}
 .etapes .e-C{background:var(--gantt-hotel)}
+.etapes .e-BKK{background:var(--gantt-home)}
 .combicard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:14px}
 .combicard dt{color:var(--muted)}
 .combicard dd{margin:0}
@@ -951,6 +952,24 @@ const COMBI = [
     minus: "Deux billets séparés : si le premier vol est en retard, le second n'est pas protégé." }
 ];
 
+/* ---------- Variante via Bangkok (relevé v9 du 04/10/2026, run 37203947430, sans aucun montant) ---------- */
+const COMBI_BKK = [
+  { id: "BKK-A", title: "Bangkok → Ao Nang → Khao Lak", reco: true,
+    steps: [["BKK", "Bangkok", 3, "30/11 → 03/12"], ["B", "Ao Nang", 6, "03/12 → 09/12"], ["C", "Khao Lak", 5, "09/12 → 14/12"]],
+    flights: "Arrivée à Bangkok (BKK) : Etihad via Abu Dhabi, 29/11 10:40 → 30/11 07:15. Vol intérieur Bangkok → Krabi (KBV) le 03/12, 07:00 → 08:30 (Thai Vietjet ; autres départs à 19:45 avec Bangkok Airways). Retour depuis Phuket (HKT) : Turkish (2 escales), 14/12 19:50 → 15/12 10:00. Trois billets séparés.",
+    transfers: ["Aéroport BKK → hôtel au bord du fleuve : environ 45 min à 1 h selon la circulation", "Hôtel → aéroport BKK le 03/12 tôt le matin (vol à 07:00)", "KBV → Ao Nang : environ 45 min", "Ao Nang → Khao Lak : environ 2 h 30 à 3 h (à confirmer)", "Khao Lak → HKT, le jour du départ : environ 1 h à 1 h 15"],
+    hotels: "Bangkok, au bord du fleuve : Avani+ Riverside ou Chatrium Riverside (plan B Royal Orchid Sheraton) · Ao Nang : Varana Krabi (plan B Anana) · Khao Lak : Pullman Khao Lak (plan B Kantary Beach)",
+    plus: "Trois ambiances (ville, falaises de Krabi, longues plages de Khao Lak), et chaque aéroport est utilisé là où il est le plus proche : Krabi pour Ao Nang, Phuket pour Khao Lak.",
+    minus: "Trois billets séparés et un vol intérieur très matinal ; un retard à l'arrivée à Bangkok n'est pas couvert par le billet suivant." },
+  { id: "BKK-B", title: "Bangkok → Khao Lak → Ao Nang", reco: false,
+    steps: [["BKK", "Bangkok", 3, "30/11 → 03/12"], ["C", "Khao Lak", 5, "03/12 → 08/12"], ["B", "Ao Nang", 6, "08/12 → 14/12"]],
+    flights: "Arrivée à Bangkok (BKK), vol intérieur Bangkok → Phuket (HKT) le 03/12 au soir. Retour : aucun vol Krabi → Tunis trouvé du 13 au 15/12, il faudrait repasser par Bangkok (Krabi → Bangkok à 09:00, puis Bangkok → Tunis à 12:15, correspondance très courte sur billets séparés).",
+    transfers: ["HKT → Khao Lak : environ 1 h à 1 h 15, arrivée tardive", "Khao Lak → Ao Nang : environ 2 h 30 à 3 h (à confirmer)", "Ao Nang → KBV : environ 45 min"],
+    hotels: "Mêmes hôtels que le circuit précédent, dans l'ordre inverse.",
+    plus: "Finit sur les falaises d'Ao Nang.",
+    minus: "Non retenu : le retour par Krabi oblige à repasser par Bangkok le jour du départ, avec une correspondance risquée, pour un coût plus élevé." }
+];
+
 function combiPanel() {
   const card = c => {
     const total = c.steps.reduce((n, s) => n + s[2], 0);
@@ -979,6 +998,11 @@ function combiPanel() {
   </section>
   <section class="block" id="sec-combi-cartes" data-toc-sub="Les trois combinés">
     <div class="combigrid">${COMBI.map(card).join("")}</div>
+  </section>
+  <section class="block" id="sec-combi-bkk" data-toc-sub="Variante via Bangkok">
+    <h3>Variante via Bangkok</h3>
+    <p class="note">Plus de 10 jours, avec un passage par Bangkok : on arrive par un aéroport et on repart par un autre, choisi selon l'endroit où l'on dort les derniers jours. Relevé du 04/10/2026 (Kiwi et Trivago, pipeline GitHub Actions, run 37203947430).</p>
+    <div class="combigrid">${COMBI_BKK.map(card).join("")}</div>
   </section>
   <section class="block" id="sec-combi-notes" data-toc-sub="À savoir">
     <h3>À savoir</h3>
