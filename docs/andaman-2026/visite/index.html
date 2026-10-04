@@ -197,6 +197,20 @@ section.block{margin-bottom:28px}
 .cdots{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;max-width:220px}
 .cdot{width:9px;height:9px;padding:0;border-radius:50%;border:1px solid var(--line);background:var(--surface);cursor:pointer}
 .cdot.active{background:var(--accent);border-color:var(--accent)}
+.combigrid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));margin-top:12px}
+.combicard{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px;display:grid;gap:10px;align-content:start}
+.combicard.reco{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.combicard h3{margin:0;font-family:var(--display);font-size:18px;font-weight:600;line-height:1.3}
+.combicard .sub{margin:0;color:var(--muted);font-size:13px}
+.etapes{display:flex;height:34px;border-radius:5px;overflow:hidden;border:1px solid var(--line)}
+.etapes span{display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:var(--accent-ink);white-space:nowrap;overflow:hidden;padding:0 4px;min-width:0}
+.etapes .e-A{background:var(--gantt-fly)}
+.etapes .e-B{background:var(--gantt-act)}
+.etapes .e-C{background:var(--gantt-hotel)}
+.combicard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:14px}
+.combicard dt{color:var(--muted)}
+.combicard dd{margin:0}
+.combicard ol{margin:0;padding-left:18px;font-size:14px;display:grid;gap:3px}
 </style>
 <div class="bg" aria-hidden="true">
   <div class="sun"></div>
@@ -242,6 +256,7 @@ section.block{margin-bottom:28px}
   <button type="button" role="tab" data-tab="A">Nai Yang</button>
   <button type="button" role="tab" data-tab="B">Ao Nang</button>
   <button type="button" role="tab" data-tab="C">Khao Lak</button>
+  <button type="button" role="tab" data-tab="COMBI">Combinés 15 jours</button>
   <button type="button" role="tab" data-tab="TH">Thaïlande</button>
   <button type="button" role="tab" data-tab="CHOIX">Comment choisir</button>
   <button type="button" role="tab" data-tab="SRC">Sources</button>
@@ -263,6 +278,7 @@ section.block{margin-bottom:28px}
   <div class="panel" id="panel-A" role="tabpanel"></div>
   <div class="panel" id="panel-B" role="tabpanel"></div>
   <div class="panel" id="panel-C" role="tabpanel"></div>
+  <div class="panel" id="panel-COMBI" role="tabpanel"></div>
   <div class="panel" id="panel-TH" role="tabpanel"></div>
   <div class="panel" id="panel-CHOIX" role="tabpanel"></div>
   <div class="panel" id="panel-SRC" role="tabpanel"></div>
@@ -910,6 +926,71 @@ function choixPanel() {
   </section>`;
 }
 
+/* ---------- Combinés 15 jours (relevé v8 du 04/10/2026, pipeline GitHub Actions run 37202438245, sans aucun montant) ---------- */
+const COMBI = [
+  { id: "1", title: "Phuket → Khao Lak → Ao Nang", reco: false,
+    steps: [["A", "Nai Yang", 2, "30/11 → 02/12"], ["C", "Khao Lak", 6, "02/12 → 08/12"], ["B", "Ao Nang", 6, "08/12 → 14/12"]],
+    flights: "Aller-retour Phuket (HKT) : aller Etihad via Abu Dhabi, 29/11 10:40 → 30/11 06:30 ; retour Turkish (2 escales), 14/12 19:50 → 15/12 10:00.",
+    transfers: ["HKT → Nai Yang : environ 5 min", "Nai Yang → Khao Lak : environ 1 h 15", "Khao Lak → Ao Nang : environ 2 h 30 à 3 h (à confirmer)", "Ao Nang → HKT, le jour du départ : environ 2 h 30"],
+    hotels: "Phuket Marriott Nai Yang (plan B Dewa Phuket) · The Sands Khao Lak (plan B Pullman Khao Lak) · Varana Krabi (plan B Sofitel Phokeethra)",
+    plus: "On récupère du décalage horaire à 5 minutes de l'aéroport.",
+    minus: "Longue route le dernier jour, d'Ao Nang jusqu'à l'aéroport de Phuket." },
+  { id: "2", title: "Khao Lak → Ao Nang", reco: false,
+    steps: [["C", "Khao Lak", 7, "30/11 → 07/12"], ["B", "Ao Nang", 7, "07/12 → 14/12"]],
+    flights: "Aller-retour Phuket (HKT), mêmes vols que le combiné 1.",
+    transfers: ["HKT → Khao Lak : environ 1 h à 1 h 15", "Khao Lak → Ao Nang : environ 2 h 30 à 3 h (à confirmer)", "Ao Nang → HKT, le jour du départ : environ 2 h 30"],
+    hotels: "The Sands Khao Lak (plan B Pullman Khao Lak) · Varana Krabi (plan B Anana Ecological Resort)",
+    plus: "Le plus simple : un seul changement d'hôtel, une semaine pleine à chaque endroit.",
+    minus: "Longue route le dernier jour, comme le combiné 1." },
+  { id: "3", title: "Ao Nang → Khao Lak → Phuket", reco: true,
+    steps: [["B", "Ao Nang", 7, "30/11 → 07/12"], ["C", "Khao Lak", 6, "07/12 → 13/12"], ["A", "Nai Yang", 1, "13/12 → 14/12"]],
+    flights: "Arrivée à Krabi (KBV) : Etihad via Abu Dhabi, 29/11 10:40 → 30/11 06:35. Départ de Phuket (HKT) : Turkish (2 escales), 14/12 19:50 → 15/12 10:00. Deux billets séparés.",
+    transfers: ["KBV → Ao Nang : environ 45 min", "Ao Nang → Khao Lak : environ 2 h 30 à 3 h (à confirmer)", "Khao Lak → Nai Yang : environ 1 h 15", "Nai Yang → HKT, le jour du départ : environ 5 min"],
+    hotels: "Varana Krabi (plan B Nakamanda) · The Sands Khao Lak (plan B Pullman ou Kantary) · Phuket Marriott Nai Yang (plan B Dewa Phuket)",
+    plus: "Le plus logique : aucune longue route le jour du départ, dernière nuit à côté de l'aéroport.",
+    minus: "Deux billets séparés : si le premier vol est en retard, le second n'est pas protégé." }
+];
+
+function combiPanel() {
+  const card = c => {
+    const total = c.steps.reduce((n, s) => n + s[2], 0);
+    const bar = c.steps.map(s => `<span class="e-${s[0]}" style="flex:${s[2]}" title="${esc(s[1])} · ${s[2]} nuit${s[2] > 1 ? "s" : ""}">${esc(s[1])} ${s[2]} n</span>`).join("");
+    const list = c.steps.map(s => `<li><strong>${esc(s[1])}</strong> — ${s[2]} nuit${s[2] > 1 ? "s" : ""}, ${esc(s[3])}</li>`).join("");
+    return `<article class="combicard${c.reco ? " reco" : ""}">
+      <div class="eyebrow">Combiné ${esc(c.id)}${c.reco ? ' <span class="tag acc">Recommandé</span>' : ""}</div>
+      <h3>${esc(c.title)}</h3>
+      <p class="sub">${total} nuits d'hôtel · ${c.steps.length} étapes</p>
+      <div class="etapes" role="img" aria-label="${esc(c.steps.map(s => s[1] + " " + s[2] + " nuits").join(", "))}">${bar}</div>
+      <ol>${list}</ol>
+      <dl>
+        <dt>Vols</dt><dd>${esc(c.flights)}</dd>
+        <dt>Hôtels</dt><dd>${esc(c.hotels)}</dd>
+        <dt>Atout</dt><dd>${esc(c.plus)}</dd>
+        <dt>Limite</dt><dd>${esc(c.minus)}</dd>
+      </dl>
+      <details class="cdetail"><summary>Trajets sur place</summary><ol style="margin-top:6px">${c.transfers.map(t => `<li>${esc(t)}</li>`).join("")}</ol></details>
+    </article>`;
+  };
+  return `
+  <section class="block" id="sec-combi-intro" data-toc="Combinés 15 jours">
+    <div class="eyebrow">Nouvelle variante · 04/10/2026</div>
+    <h2>Combinés 15 jours</h2>
+    <p class="lede">Deux ou trois endroits au lieu d'un seul, sur 14 nuits du 30/11 au 14/12/2026. Phuket n'apparaît que pour une ou deux nuits, et seulement quand on y atterrit ou qu'on en repart.</p>
+  </section>
+  <section class="block" id="sec-combi-cartes" data-toc-sub="Les trois combinés">
+    <div class="combigrid">${COMBI.map(card).join("")}</div>
+  </section>
+  <section class="block" id="sec-combi-notes" data-toc-sub="À savoir">
+    <h3>À savoir</h3>
+    <ul class="srcs">
+      <li>Vols et hôtels relevés le 04/10/2026 entre 12:32 et 12:34 UTC via Kiwi et Trivago (pipeline GitHub Actions, run 37202438245), pour 2 adultes avec un bagage en soute chacun. Aucun montant n'est repris sur cette page.</li>
+      <li>Aucun vol retour depuis Krabi le 14/12 n'est sorti de la recherche : c'est pourquoi les combinés 1 et 2 repartent de Phuket. Ce n'est pas une preuve qu'il n'en existe aucun.</li>
+      <li>Vue mer et accès direct à la plage : à confirmer chambre par chambre avant de réserver. Les durées de route sont des ordres de grandeur, le relevé des transferts est en cours.</li>
+      <li>Piste moins chère : partir plus tôt, par exemple du 18/11 au 04/12 avec Qatar Airways. Les hôtels n'ont pas encore été cherchés à ces dates.</li>
+    </ul>
+  </section>`;
+}
+
 function srcPanel() {
   const lines = (arr, how) => arr.map(s => `<li>${ext(s[1], s[0])} — consulté le 24/09/2026${how ? ", " + how : ""}</li>`).join("");
   return `
@@ -946,8 +1027,8 @@ function srcPanel() {
 }
 
 /* ---------- Interaction ---------- */
-const TABS = ["A", "B", "C", "TH", "CHOIX", "SRC"];
-const TAB_LABEL = { A: "Nai Yang", B: "Ao Nang", C: "Khao Lak", TH: "Thaïlande", CHOIX: "Comment choisir", SRC: "Sources" };
+const TABS = ["A", "B", "C", "COMBI", "TH", "CHOIX", "SRC"];
+const TAB_LABEL = { A: "Nai Yang", B: "Ao Nang", C: "Khao Lak", COMBI: "Combinés 15 jours", TH: "Thaïlande", CHOIX: "Comment choisir", SRC: "Sources" };
 
 function renderCoverMeta() {
   const is9 = duration === "9n";
@@ -969,6 +1050,7 @@ function render() {
   document.getElementById("panel-A").innerHTML = scenarioPanel("A");
   document.getElementById("panel-B").innerHTML = scenarioPanel("B");
   document.getElementById("panel-C").innerHTML = scenarioPanel("C");
+  document.getElementById("panel-COMBI").innerHTML = combiPanel();
   document.getElementById("panel-TH").innerHTML = countryPanel();
   document.getElementById("panel-CHOIX").innerHTML = choixPanel();
   document.getElementById("panel-SRC").innerHTML = srcPanel();
