@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Andaman 2026 Recommandés</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout : onglets de circuit, barre de budget collante qui se recalcule, puis carte du trajet, vols, étapes (offres sélectionnables), trajets, jour par jour. */
+:root{
+  --paper:#f2f5f4; --surface:#ffffff; --ink:#15242b; --muted:#5b6c72; --line:#d3dcde;
+  --accent:#0d6d78; --accent-ink:#ffffff; --accent-soft:#dcedef;
+  --warn:#9a6300; --warn-soft:#fbf0d6; --ok:#2f6f3e; --ok-soft:#e0f0e3; --bad:#a23a2b; --bad-soft:#f8e2de;
+  --s-bkk:#6f7f86; --s-aon:#c98a1b; --s-kl:#0d6d78; --s-ny:#3f5563; --s-pp:#7a5aa6;
+  --route:#c2410c;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  color-scheme:dark;--paper:#0f1b20;--surface:#17262d;--ink:#e4ecee;--muted:#9db0b6;--line:#2c3f47;
+  --accent:#4cc2cd;--accent-ink:#0b1a1d;--accent-soft:#163a40;--warn:#e6b45a;--warn-soft:#3a2e12;--ok:#7fc98f;--ok-soft:#1c3523;--bad:#e8836f;--bad-soft:#42211b;
+  --s-bkk:#8fa0a6;--s-aon:#e6b45a;--s-kl:#4cc2cd;--s-ny:#8fa6b3;--s-pp:#b39ddb;--route:#fb923c}}
+:root[data-theme="dark"]{
+  color-scheme:dark;--paper:#0f1b20;--surface:#17262d;--ink:#e4ecee;--muted:#9db0b6;--line:#2c3f47;
+  --accent:#4cc2cd;--accent-ink:#0b1a1d;--accent-soft:#163a40;--warn:#e6b45a;--warn-soft:#3a2e12;--ok:#7fc98f;--ok-soft:#1c3523;--bad:#e8836f;--bad-soft:#42211b;
+  --s-bkk:#8fa0a6;--s-aon:#e6b45a;--s-kl:#4cc2cd;--s-ny:#8fa6b3;--s-pp:#b39ddb;--route:#fb923c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15.5px;line-height:1.55}
+.wrap{max-width:1060px;margin:0 auto;padding-inline:16px;padding-block:24px 72px;display:grid;gap:28px}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(28px,4.2vw,44px);line-height:1.08;margin:6px 0 0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:clamp(22px,2.8vw,30px);line-height:1.15;margin:0;text-wrap:balance}
+h3{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;font-weight:700}
+p{margin:0}
+a{color:var(--accent)}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.lede{color:var(--muted);max-width:66ch;margin-top:10px;font-size:16.5px}
+.note{color:var(--muted);font-size:13px;max-width:74ch}
+.num{font-variant-numeric:tabular-nums}
+.tag{display:inline-block;font-size:11px;letter-spacing:.04em;padding:1px 7px;border-radius:3px;font-weight:700;white-space:nowrap}
+.tag.ok{background:var(--ok-soft);color:var(--ok)} .tag.warn{background:var(--warn-soft);color:var(--warn)} .tag.no{background:var(--accent-soft);color:var(--muted)} .tag.acc{background:var(--accent-soft);color:var(--accent)}
+button{font:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible,label:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+
+/* Onglets de circuit */
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tabs button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:10px 14px;text-align:left;display:grid;gap:2px;min-width:0}
+.tabs button b{font-size:15px}
+.tabs button span{font-size:12.5px;color:var(--muted)}
+.tabs button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.tabs button[aria-selected="true"] span{color:var(--accent-ink);opacity:.85}
+
+/* Barre de budget */
+.budget{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:grid;grid-template-columns:1fr auto;gap:6px 16px;align-items:center;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.budget .t{font-family:var(--display);font-size:clamp(24px,3.4vw,32px);font-weight:600;color:var(--accent);line-height:1.1}
+.budget .t small{font-family:var(--body);font-size:13px;color:var(--muted);font-weight:400}
+.budget .parts{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13px;color:var(--muted)}
+.budget .parts b{color:var(--ink);font-variant-numeric:tabular-nums}
+.budget .miss{grid-column:1/-1;font-size:12.5px;color:var(--warn)}
+.budget .pp{text-align:right;font-size:13px;color:var(--muted)}
+.budget .pp b{display:block;font-size:18px;color:var(--ink);font-variant-numeric:tabular-nums}
+@media (max-width:560px){.budget{grid-template-columns:1fr}.budget .pp{text-align:left}}
+
+/* Carte */
+.mapgrid{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:12px;align-items:start}
+@media (max-width:760px){.mapgrid{grid-template-columns:1fr}}
+.map{position:relative;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface)}
+.map .box{position:relative}
+.map img{display:block;width:100%;height:auto}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map .cap{padding:8px 12px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:4px 14px}
+.legend i{display:inline-block;width:22px;height:0;border-top:3px solid var(--route);vertical-align:middle;margin-right:4px}
+.legend i.boat{border-top-style:dashed} .legend i.air{border-top-style:dotted}
+
+/* Vols, trajets */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:9px 11px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.r,th.r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* Étapes et offres */
+.step{display:grid;gap:10px}
+.step-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;border-left:5px solid var(--sc,var(--accent));padding-left:10px}
+.step-h h2{font-size:22px}
+.offers{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:12px}
+.offer{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:grid;grid-template-rows:auto 1fr;cursor:pointer;min-width:0}
+.offer input{position:absolute;opacity:0;pointer-events:none}
+.offer:has(input:checked){border-color:var(--accent);box-shadow:0 0 0 2px var(--accent)}
+.offer .ph{aspect-ratio:16/10;max-width:100%;background:var(--accent-soft);display:grid;place-items:center;color:var(--muted);font-size:12.5px;overflow:hidden}
+.offer .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.offer .b{padding:10px 12px 12px;display:grid;gap:6px;align-content:start;font-size:13.5px}
+.offer h4{margin:0;font-family:var(--display);font-size:17px;font-weight:600;line-height:1.25}
+.offer .price{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}
+.offer .price small{font-size:12px;color:var(--muted);font-weight:400}
+.offer .sel{position:absolute;top:8px;left:8px;background:var(--surface);color:var(--muted);font-size:11.5px;font-weight:700;border-radius:999px;padding:2px 9px;border:1px solid var(--line)}
+.offer:has(input:checked) .sel{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.offer .go{justify-self:start;font-weight:700;text-decoration:none;border:1px solid var(--accent);border-radius:6px;padding:5px 10px;margin-top:2px}
+.offer .meta{color:var(--muted)}
+.days{display:grid;gap:6px}
+.day{display:grid;grid-template-columns:86px 1fr;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 12px;font-size:14px}
+.day b{font-variant-numeric:tabular-nums}
+.foot{border-top:1px solid var(--line);padding-top:14px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <p style="margin:0 0 8px"><a href="../">← Andaman 2026</a></p>
+    <div class="eyebrow">Andaman 2026 · 2 adultes · départ Tunis · 14 nuits · 30/11 → 14/12</div>
+    <h1>Les circuits recommandés</h1>
+    <p class="lede">Choisis un circuit, puis une offre par étape : le budget total se recalcule aussitôt. Chaque offre ouvre sa page chez le vendeur, aux bonnes dates, pour deux adultes.</p>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Circuits" id="tabs"></nav>
+
+  <section class="budget" aria-live="polite" id="budget"></section>
+
+  <main id="trip" style="display:grid;gap:28px"></main>
+
+  <footer class="foot">
+    <p class="note">Prix pour deux adultes relevés le 04/10/2026 : vols Kiwi (pipeline GitHub Actions) ; hôtels Booking et Agoda (session Codex de recherche web), Booking (connecteur Booking.com) ou Trivago (pipeline), selon l'offre ; trajets sur grilles publiques d'opérateurs (1 € = 37,71 THB, BCE du 02/10/2026). « Catégorie non précisée » : la chambre exacte et la vue mer se vérifient sur la page de l'offre. Photos des hôtels : Booking.com. Cartes : © OpenStreetMap contributors. Rien n'est réservé.</p>
+  </footer>
+</div>
+
+<script>
+const DATA = {"c3": {"name": "Combiné 3", "title": "Ao Nang → Khao Lak → Nai Yang", "tag": "Recommandé sans Bangkok", "lede": "Arrivée à Krabi, retour par Phuket : aucune longue route le jour du départ, dernière nuit à 5 minutes de l'aéroport.", "flights": [["Tunis → Krabi (KBV)", "dim. 29/11 10:40 → lun. 30/11 06:35", "Etihad, 1 escale", 732, "https://kiwi.com/u/x827st"], ["Phuket (HKT) → Tunis", "lun. 14/12 19:50 → mar. 15/12 10:00", "Turkish Airlines, 2 escales", 1333, "https://kiwi.com/u/vw8uk7"]], "steps": [{"place": "Ao Nang", "c": "aon", "dates": "30/11 → 07/12", "nights": 7, "options": [["varana-ocean", "Varana Krabi", "Lits jumeaux Luxe – Vue sur Océan", 1801, "Booking", "https://www.booking.com/hotel/th/the-varana.html?aid=2438770&checkin=2026-11-30&checkout=2026-12-07&no_rooms=1&group_adults=2&selected_currency=EUR", "assets/hotel-varana.jpg", "ok", "inclus", "Non remboursable"], ["varana-mont", "Varana Krabi", "Twin Luxe Montagne (Luxe Mountain Twin)", 1529, "Agoda", "https://www.agoda.com/varana-hotel/hotel/krabi-th.html?checkin=2026-11-30&los=7&rooms=1&adults=2&children=0&currencyCode=EUR", "assets/hotel-varana.jpg", "no", "inclus", "Non remboursable"], ["naka", "Nakamanda Resort & Spa", "Villa Sala Étage inférieur (Lower Floor Sala Villa)", 1606, "Agoda", "https://www.agoda.com/nakamanda-resort-spa/hotel/krabi-th.html?checkin=2026-11-30&los=7&rooms=1&adults=2&children=0&currencyCode=EUR", null, "no", "inclus", "Non remboursable ; accès direct à la plage de Klong Muang au niveau du resort"]]}, {"place": "Khao Lak", "c": "kl", "dates": "07/12 → 13/12", "nights": 6, "options": [["pull-sea", "Pullman Khao Lak", "Deluxe King – Vue sur Mer", 1277, "Booking", "https://www.booking.com/hotel/th/pullman-khao-lak-resort.html?aid=2438770&checkin=2026-12-07&checkout=2026-12-13&no_rooms=1&group_adults=2&selected_currency=EUR", "assets/hotel-pullman_kl.jpg", "warn", "en supplément", "Non remboursable ; Agoda parle de vue partielle"], ["pull-std", "Pullman Khao Lak", "Chambre Lit King-Size ou Lits Jumeaux Deluxe", 1177, "Booking", "https://www.booking.com/hotel/th/pullman-khao-lak-resort.html?aid=2438770&checkin=2026-12-07&checkout=2026-12-13&no_rooms=1&group_adults=2&selected_currency=EUR", "assets/hotel-pullman_kl.jpg", "no", "en supplément", "Non remboursable"], ["sands", "The Sands Khao Lak", "Suite Junior Bord de Mer", 1430, "Agoda", "https://www.agoda.com/the-sands-khao-lak-by-katathani-resort/hotel/khao-lak-th.html?checkin=2026-12-07&los=6&rooms=1&adults=2&children=0&currencyCode=EUR", "assets/hotel-sands.jpg", "warn", "inclus", "Annulation gratuite avant le 23/11 ; vue mer partielle"]]}, {"place": "Nai Yang", "c": "ny", "dates": "13/12 → 14/12", "nights": 1, "options": [["marr", "Phuket Marriott Nai Yang Beach", "Deluxe 1 lit King avec balcon", 288, "Booking", "https://www.booking.com/hotel/th/phuket-marriott-resort-and-spa-nai-yang-beach.html?aid=2438770&checkin=2026-12-13&checkout=2026-12-14&no_rooms=1&group_adults=2&selected_currency=EUR", "assets/hotel-marriott.jpg", "no", "en supplément", "Annulation gratuite avant le 10/12"], ["marr-villa", "Phuket Marriott Nai Yang Beach", "Villa 1 Lit King-Size avec Petite Piscine - Côté Plage", 706, "Booking", "https://www.booking.com/hotel/th/phuket-marriott-resort-and-spa-nai-yang-beach.html?aid=2438770&checkin=2026-12-13&checkout=2026-12-14&no_rooms=1&group_adults=2&selected_currency=EUR", "assets/hotel-marriott.jpg", "ok", "en supplément", "Annulation gratuite avant le 10/12"]]}], "transfers": [["30/11", "Aéroport KBV → Ao Nang", "35–50 min", 17, 20, "https://www.andamantaxis.com/en/travel/ao-nang-hotel-transfer/krabi-airport"], ["07/12", "Ao Nang → Khao Lak", "2 h – 3 h", 74, 109, "https://www.khaolaklanddiscovery.com/khao-lak-to-ao-nang/"], ["13/12", "Khao Lak → Nai Yang", "≈ 1 h 25", 37, 37, "https://www.khaolakairporttransfer.com/price.html"], ["14/12", "Nai Yang → aéroport HKT", "5–10 min", null, null, null]], "map": {"img": "andaman", "route": [["KBV", 605.2, 430.7, "air"], ["Ao Nang", 519.3, 446.1, "road"], ["Khao Lak", 343.1, 152.8, "road"], ["Nai Yang", 351.1, 437.4, "road"], ["HKT", 361.5, 425.5, "road"]]}, "days": [["29/11", "Vol Tunis → Abu Dhabi → Krabi."], ["30/11", "Arrivée 06:35, repos au Varana."], ["01–06/12", "Ao Nang : plage, Railay en long-tail, îles de Krabi ou Koh Hong, massage, cours de cuisine."], ["07/12", "Route vers Khao Lak (2 à 3 h)."], ["08–12/12", "Khao Lak : îles Similan, baie de Phang Nga, parc Khao Lak-Lam Ru, repos."], ["13/12", "Route vers Nai Yang (≈ 1 h 25)."], ["14/12", "Plage le matin, vol à 19:50 depuis Phuket."]]}, "c4": {"name": "Combiné 4", "title": "Ao Nang → Phi Phi → Khao Lak → Nai Yang", "tag": "Avec Koh Phi Phi", "lede": "Le combiné 3 avec trois nuits sur Koh Phi Phi entre Ao Nang et Khao Lak. Deux traversées en bateau avec les bagages.", "flights": [["Tunis → Krabi (KBV)", "dim. 29/11 10:40 → lun. 30/11 06:35", "Etihad, 1 escale", 732, "https://kiwi.com/u/x827st"], ["Phuket (HKT) → Tunis", "lun. 14/12 19:50 → mar. 15/12 10:00", "Turkish Airlines, 2 escales", 1333, "https://kiwi.com/u/vw8uk7"]], "steps": [{"place": "Ao Nang", "c": "aon", "dates": "30/11 → 05/12", "nights": 5, "options": [["varana-tv", "Varana Krabi", "Catégorie non précisée (meilleure offre Trivago)", 997.0, "Trivago → Booking.com", "https://www.trivago.be/en-US/lm/varana-krabi-hotel-klong-muang?cip=234716015&currencyCode=EUR&search=100-32776746;105-1322;200-16207;dr-20261130-20261205;drs-40;rc-1-2&dealId=3122147099953478722", "assets/hotel-varana.jpg", "no", "non précisé", "À lire sur l'offre"], ["varana-bk", "Varana Krabi", "Catégorie non précisée (Booking)", 1334.37, "Booking", "https://www.booking.com/hotel/th/the-varana.html?aid=8132308&checkin=2026-11-30&checkout=2026-12-05&no_rooms=1&group_adults=2&selected_currency=EUR", "assets/hotel-varana.jpg", "no", "non précisé", "À lire sur l'offre"], ["anana", "Anana Ecological Resort", "Catégorie non précisée (meilleure offre Trivago)", 1148.0, "Trivago → Trip.com", "https://www.trivago.be/en-US/lm/hotel-anana-ecological-resort-krabi?cip=234716015&currencyCode=EUR&search=100-12103646;105-1322;200-16207;dr-20261130-20261205;drs-40;rc-1-2&dealId=7747209311123064668", "assets/hotel-anana.jpg", "no", "non précisé", "À 8 min des plages, navette gratuite"]]}, {"place": "Koh Phi Phi", "c": "pp", "dates": "05/12 → 08/12", "nights": 3, "options": [["saii-bk", "SAii Phi Phi Island Village", "Catégorie non précisée (Booking) · 5★, en bord de plage", 1108.54, "Booking", "https://www.booking.com/hotel/th/phiphiislandvillagebeachresortandspa.html?aid=8132308&checkin=2026-12-05&checkout=2026-12-08&no_rooms=1&group_adults=2&selected_currency=EUR", "assets/hotel-saii.jpg", "no", "non précisé", "Bord de plage, plage privée"], ["saii-tv", "SAii Phi Phi Island Village", "Catégorie non précisée (meilleure offre Trivago)", 1048.0, "Trivago → Trip.com", "https://www.trivago.be/en-US/lm/resort-saii-phi-phi-island-village-koh-phi-phi?cip=234716015&currencyCode=EUR&search=100-93383;105-1320;105-1322;200-16015;dr-20261205-20261208;drs-40;rc-1-2&dealId=8886186549131485691", "assets/hotel-saii.jpg", "no", "non précisé", "À lire sur l'offre"], ["centara-bk", "Centara Villas Phi Phi Island", "Catégorie non précisée (Booking) · 4★, villas en bord de plage", 780.45, "Booking", "https://www.booking.com/hotel/th/centara-villas-phi-phi-island.html?aid=8132308&checkin=2026-12-05&checkout=2026-12-08&no_rooms=1&group_adults=2&selected_currency=EUR", "assets/hotel-centara-pp.jpg", "no", "non précisé", "Bord de plage, plage privée"], ["centara-tv", "Centara Villas Phi Phi Island", "Catégorie non précisée (meilleure offre Trivago)", 630.0, "Trivago → Trip.com", "https://www.trivago.be/en-US/lm/hotel-centara-villas-phi-phi-island-koh-phi-phi?cip=234716015&currencyCode=EUR&search=100-1729047;105-1320;105-1322;200-16015;dr-20261205-20261208;drs-40;rc-1-2&dealId=-5245350017700086776", "assets/hotel-centara-pp.jpg", "no", "non précisé", "À lire sur l'offre"]]}, {"place": "Khao Lak", "c": "kl", "dates": "08/12 → 13/12", "nights": 5, "options": [["pull-tv", "Pullman Khao Lak", "Catégorie non précisée (meilleure offre Trivago)", 775.0, "Trivago → Stayforlong", "https://www.trivago.be/en-US/lm/hotel-pullman-khao-lak-resort?cip=234716015&currencyCode=EUR&search=100-22945772;105-1322;200-15941;dr-20261208-20261213;drs-40;rc-1-2&dealId=-8985611900094786104", "assets/hotel-pullman_kl.jpg", "no", "non précisé", "À lire sur l'offre"], ["pull-bk", "Pullman Khao Lak", "Catégorie non précisée (Booking)", 988.82, "Booking", "https://www.booking.com/hotel/th/pullman-khao-lak-resort.html?aid=8132308&checkin=2026-12-08&checkout=2026-12-13&no_rooms=1&group_adults=2&selected_currency=EUR", "assets/hotel-pullman_kl.jpg", "no", "non précisé", "À lire sur l'offre"], ["sands-bk", "The Sands Khao Lak", "Catégorie non précisée (Booking)", 1238.24, "Booking", "https://www.booking.com/hotel/th/the-sands-khao-lak-by-katathani.html?aid=8132308&checkin=2026-12-08&checkout=2026-12-13&no_rooms=1&group_adults=2&selected_currency=EUR", "assets/hotel-sands.jpg", "no", "non précisé", "À lire sur l'offre"], ["kantary", "Kantary Beach Hotel Villas & Suites", "Catégorie non précisée (meilleure offre Trivago)", 552.0, "Trivago → ZenHotels", "https://www.trivago.be/en-US/lm/resort-kantary-beach-hotel-villas-suites-khao-lak?cip=234716015&currencyCode=EUR&search=100-1711343;105-1322;200-15941;dr-20261208-20261213;drs-40;rc-1-2&dealId=-1157950837180602909", "assets/hotel-kantary.jpg", "no", "non précisé", "Resort sur la plage"]]}, {"place": "Nai Yang", "c": "ny", "dates": "13/12 → 14/12", "nights": 1, "options": [["marr", "Phuket Marriott Nai Yang Beach", "Deluxe 1 lit King avec balcon", 288, "Booking", "https://www.booking.com/hotel/th/phuket-marriott-resort-and-spa-nai-yang-beach.html?aid=2438770&checkin=2026-12-13&checkout=2026-12-14&no_rooms=1&group_adults=2&selected_currency=EUR", "assets/hotel-marriott.jpg", "no", "en supplément", "Annulation gratuite avant le 10/12"], ["marr-villa", "Phuket Marriott Nai Yang Beach", "Villa 1 Lit King-Size avec Petite Piscine - Côté Plage", 706, "Booking", "https://www.booking.com/hotel/th/phuket-marriott-resort-and-spa-nai-yang-beach.html?aid=2438770&checkin=2026-12-13&checkout=2026-12-14&no_rooms=1&group_adults=2&selected_currency=EUR", "assets/hotel-marriott.jpg", "ok", "en supplément", "Annulation gratuite avant le 10/12"]]}], "transfers": [["30/11", "Aéroport KBV → Ao Nang", "35–50 min", 17, 20, "https://www.andamantaxis.com/en/travel/ao-nang-hotel-transfer/krabi-airport"], ["05/12", "Ao Nang → Koh Phi Phi (ferry ou vedette)", "≈ 1 h 30 – 2 h", null, null, null], ["08/12", "Koh Phi Phi → Khao Lak (bateau vers Phuket puis route)", "à relever", null, null, null], ["13/12", "Khao Lak → Nai Yang", "≈ 1 h 25", 37, 37, "https://www.khaolakairporttransfer.com/price.html"], ["14/12", "Nai Yang → aéroport HKT", "5–10 min", null, null, null]], "map": {"img": "andaman", "route": [["KBV", 605.2, 430.7, "air"], ["Ao Nang", 519.3, 446.1, "road"], ["Phi Phi", 527.4, 554.8, "boat"], ["Rassada", 392.1, 520.1, "boat"], ["Khao Lak", 343.1, 152.8, "road"], ["Nai Yang", 351.1, 437.4, "road"], ["HKT", 361.5, 425.5, "road"]]}, "days": [["29/11", "Vol Tunis → Abu Dhabi → Krabi."], ["30/11", "Arrivée 06:35, repos à Ao Nang."], ["01–04/12", "Ao Nang : plage, Railay, îles de Krabi, massage."], ["05/12", "Bateau vers Koh Phi Phi."], ["06–07/12", "Phi Phi : snorkeling, point de vue, Maya Bay selon ouverture."], ["08/12", "Bateau vers Phuket puis route vers Khao Lak."], ["09–12/12", "Khao Lak : îles Similan, baie de Phang Nga, repos."], ["13/12", "Route vers Nai Yang."], ["14/12", "Vol à 19:50 depuis Phuket."]]}, "bkk": {"name": "Bangkok A", "title": "Bangkok → Ao Nang → Khao Lak", "tag": "Recommandé avec Bangkok", "lede": "Trois ambiances : la ville, les falaises de Krabi, puis les longues plages de Khao Lak. Arrivée à Bangkok, retour par Phuket.", "flights": [["Tunis → Bangkok (BKK)", "dim. 29/11 10:40 → lun. 30/11 07:15", "Etihad, 1 escale", 860, "https://kiwi.com/u/xcb4rs"], ["Bangkok (BKK) → Krabi", "jeu. 03/12 07:00 → 08:30", "Thai Vietjet, direct", 121.87, "https://kiwi.com/u/vr8rky"], ["Phuket (HKT) → Tunis", "lun. 14/12 19:50 → mar. 15/12 10:00", "Turkish Airlines, 2 escales", 1333, "https://kiwi.com/u/vw8uk7"]], "steps": [{"place": "Bangkok", "c": "bkk", "dates": "30/11 → 03/12", "nights": 3, "options": [["avani-tv", "Avani+ Riverside Bangkok", "Catégorie non précisée (meilleure offre Trivago)", 354.0, "Trivago → Booking", "https://www.trivago.be/en-US/lm/avani-riverside-bangkok-hotel?cip=234716015&currencyCode=EUR&search=100-5075438;105-1322;200-15893;dr-20261130-20261203;drs-40;rc-1-2&dealId=4085611600009174480", "assets/hotel-avani.jpg", "no", "non précisé", "Au bord du Chao Phraya, 9,3/10"], ["avani-bk", "Avani+ Riverside Bangkok", "Catégorie non précisée (Booking)", 394.66, "Booking", "https://www.booking.com/hotel/th/avani-riverside-bangkok-bangkok.html?aid=8132308&checkin=2026-11-30&checkout=2026-12-03&no_rooms=1&group_adults=2&selected_currency=EUR", "assets/hotel-avani.jpg", "no", "non précisé", "À lire sur l'offre"], ["chatrium", "Chatrium Hotel Riverside", "Catégorie non précisée (meilleure offre Trivago)", 382.0, "Trivago → Booking", "https://www.trivago.be/en-US/lm/chatrium-hotel-riverside-bangkok?cip=234716015&currencyCode=EUR&search=100-1105782;105-1322;200-15893;dr-20261130-20261203;drs-40;rc-1-2&dealId=-2143720097420336345", null, "no", "non précisé", "Au bord du fleuve, 9,3/10"]]}, {"place": "Ao Nang", "c": "aon", "dates": "03/12 → 09/12", "nights": 6, "options": [["varana", "Varana Krabi", "Catégorie non précisée (meilleure offre Trivago)", 1305, "Trivago → Agoda", "https://www.trivago.be/en-US/lm/varana-krabi-hotel-klong-muang?cip=234716015&currencyCode=EUR&search=100-32776746;105-1322;200-16207;dr-20261203-20261209;drs-40;rc-1-2&dealId=-653747385980659342", "assets/hotel-varana.jpg", "no", "non précisé", "Vue Océan : environ +18 % (écart observé sur le combiné 3)"], ["anana", "Anana Ecological Resort", "Catégorie non précisée (meilleure offre Trivago)", 1377.0, "Trivago → Trip.com", "https://www.trivago.be/en-US/lm/hotel-anana-ecological-resort-krabi?cip=234716015&currencyCode=EUR&search=100-12103646;105-1322;200-16207;dr-20261203-20261209;drs-40;rc-1-2&dealId=7601429704067462321", "assets/hotel-anana.jpg", "no", "non précisé", "À 8 min des plages, navette gratuite"]]}, {"place": "Khao Lak", "c": "kl", "dates": "09/12 → 14/12", "nights": 5, "options": [["pull", "Pullman Khao Lak", "Catégorie non précisée (meilleure offre Trivago)", 770, "Trivago → Stayforlong", "https://www.trivago.be/en-US/lm/hotel-pullman-khao-lak-resort?cip=234716015&currencyCode=EUR&search=100-22945772;105-1322;200-15941;dr-20261209-20261214;drs-40;rc-1-2&dealId=1788058632581587045", "assets/hotel-pullman_kl.jpg", "no", "non précisé", "Vue mer : environ +8,5 % (écart observé sur le combiné 3)"], ["kantary", "Kantary Beach Hotel Villas & Suites", "Catégorie non précisée (meilleure offre Trivago)", 552.0, "Trivago → ZenHotels", "https://www.trivago.be/en-US/lm/resort-kantary-beach-hotel-villas-suites-khao-lak?cip=234716015&currencyCode=EUR&search=100-1711343;105-1322;200-15941;dr-20261209-20261214;drs-40;rc-1-2&dealId=8823683129917989991", "assets/hotel-kantary.jpg", "no", "non précisé", "Resort sur la plage"]]}], "transfers": [["30/11", "Aéroport BKK → hôtel au bord du fleuve", "45 min – 1 h", null, null, null], ["03/12", "Hôtel → aéroport BKK (vol à 07:00)", "45 min – 1 h", null, null, null], ["03/12", "Aéroport KBV → Ao Nang", "35–50 min", 17, 20, "https://www.andamantaxis.com/en/travel/ao-nang-hotel-transfer/krabi-airport"], ["09/12", "Ao Nang → Khao Lak", "2 h – 3 h", 74, 109, "https://www.khaolaklanddiscovery.com/khao-lak-to-ao-nang/"], ["14/12", "Khao Lak → aéroport HKT", "45 min – 1 h 40", 45, 48, "https://www.khaolaklanddiscovery.com/khao-lak-transfer/?from=Khao+Lak+(depot)&to=Phuket+Airport"]], "map": {"img": "andaman", "inset": true, "route": [["KBV", 605.2, 430.7, "air"], ["Ao Nang", 519.3, 446.1, "road"], ["Khao Lak", 343.1, 152.8, "road"], ["HKT", 361.5, 425.5, "road"]]}, "days": [["29/11", "Vol Tunis → Abu Dhabi → Bangkok."], ["30/11", "Arrivée 07:15, hôtel au bord du fleuve, bateau sur le Chao Phraya le soir."], ["01/12", "Grand Palais et Wat Pho le matin, Wat Arun en fin de journée."], ["02/12", "Marchés et quartier chinois, coucher tôt."], ["03/12", "Vol 07:00 vers Krabi, installation à Ao Nang."], ["04–08/12", "Ao Nang : Railay, îles de Krabi ou Koh Hong, repos."], ["09/12", "Route vers Khao Lak (2 à 3 h)."], ["10–13/12", "Khao Lak : îles Similan, baie de Phang Nga, spa."], ["14/12", "Départ vers HKT vers 16:00, vol à 19:50."]]}};
+const ORDER = ["c3", "c4", "bkk"];
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const eur = v => Math.round(v).toLocaleString("fr-BE") + " €";
+const SEA = { ok: ["ok", "vue mer annoncée"], warn: ["warn", "vue mer partielle possible"], no: ["no", "vue mer non confirmée"] };
+const STEP_COLOR = { aon: "var(--s-aon)", kl: "var(--s-kl)", ny: "var(--s-ny)", pp: "var(--s-pp)", bkk: "var(--s-bkk)" };
+
+/* État par visiteur : circuit choisi et offre choisie par étape (préférence locale, la page marche sans). */
+let state = { trip: "c3", pick: {} };
+try { const s = JSON.parse(localStorage.getItem("andaman2026.reco") || "null"); if (s && DATA[s.trip]) state = s; } catch (e) {}
+const h0 = location.hash.replace("#", ""); if (DATA[h0]) state.trip = h0;
+const save = () => { try { localStorage.setItem("andaman2026.reco", JSON.stringify(state)); } catch (e) {} };
+const picked = (tid, i) => { const T = DATA[tid]; const id = (state.pick[tid] || {})[i]; return T.steps[i].options.find(o => o[0] === id) || T.steps[i].options[0]; };
+
+function compute(tid) {
+  const T = DATA[tid];
+  const flights = T.flights.reduce((a, f) => a + f[3], 0);
+  const hotels = T.steps.reduce((a, s, i) => a + picked(tid, i)[3], 0);
+  let tmin = 0, tmax = 0; const miss = [];
+  T.transfers.forEach(t => { if (t[3] == null) miss.push(t[1]); else { tmin += t[3]; tmax += t[4]; } });
+  return { flights, hotels, tmin, tmax, lo: flights + hotels + tmin, hi: flights + hotels + tmax, miss };
+}
+
+function renderTabs() {
+  document.getElementById("tabs").innerHTML = ORDER.map(id => {
+    const T = DATA[id], c = compute(id);
+    return `<button type="button" role="tab" data-trip="${id}" aria-selected="${state.trip === id}"><b>${esc(T.name)} · ${esc(T.title)}</b><span>${esc(T.tag)} · dès ${eur(c.lo)}</span></button>`;
+  }).join("");
+}
+
+function renderBudget() {
+  const T = DATA[state.trip], c = compute(state.trip);
+  const total = c.lo === c.hi ? eur(c.lo) : `${eur(c.lo)} – ${eur(c.hi)}`;
+  const pp = c.lo === c.hi ? eur(c.lo / 2) : `${eur(c.lo / 2)} – ${eur(c.hi / 2)}`;
+  document.getElementById("budget").innerHTML = `
+    <div><div class="t num">${total} <small>budget total pour deux · ${esc(T.name)}</small></div>
+      <div class="parts"><span>Vols <b>${eur(c.flights)}</b></span><span>Hôtels <b>${eur(c.hotels)}</b></span><span>Trajets <b>${c.tmin === c.tmax ? eur(c.tmin) : eur(c.tmin) + " – " + eur(c.tmax)}</b></span></div></div>
+    <div class="pp">par personne<b>${pp}</b></div>
+    <div class="miss">Pas encore chiffré : ${c.miss.length ? esc(c.miss.join(" · ")) + " · " : ""}repas, excursions, assurance.</div>`;
+}
+
+function mapSvg(route) {
+  const pts = route.map(p => [p[1], p[2]]);
+  let segs = "";
+  for (let i = 1; i < route.length; i++) {
+    const m = route[i][3], a = route[i - 1], b = route[i];
+    const dash = m === "boat" ? ' stroke-dasharray="14 9"' : m === "air" ? ' stroke-dasharray="3 9"' : "";
+    segs += `<line x1="${a[1]}" y1="${a[2]}" x2="${b[1]}" y2="${b[2]}" stroke="var(--route)" stroke-width="5" stroke-linecap="round"${dash}/>`;
+  }
+  const marks = route.map((p, i) => {
+    const air = /^(KBV|HKT|BKK)$/.test(p[0]);
+    const n = air ? "✈" : route.slice(0, i + 1).filter(q => !/^(KBV|HKT|BKK|Rassada)$/.test(q[0])).length;
+    if (p[0] === "Rassada") return `<circle cx="${p[1]}" cy="${p[2]}" r="6" fill="var(--route)"/><text x="${p[1] - 10}" y="${p[2] + 22}" font-size="18" text-anchor="end" fill="#15242b" stroke="#fff" stroke-width="4" paint-order="stroke" font-family="Source Sans 3, sans-serif">quai de Rassada</text>`;
+    const left = p[1] < 450;
+    return `<circle cx="${p[1]}" cy="${p[2]}" r="15" fill="${air ? "#3f5563" : "var(--route)"}" stroke="#fff" stroke-width="3"/>
+      <text x="${p[1]}" y="${p[2] + 6}" font-size="16" font-weight="700" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif">${n}</text>
+      <text x="${left ? p[1] - 22 : p[1] + 22}" y="${p[2] + 6}" font-size="20" font-weight="700" text-anchor="${left ? "end" : "start"}" fill="#15242b" stroke="#fff" stroke-width="5" paint-order="stroke" font-family="Source Sans 3, sans-serif">${esc(p[0])}</text>`;
+  }).join("");
+  return `<svg viewBox="0 0 900 640" preserveAspectRatio="none" role="img" aria-label="Trajet : ${esc(route.map(p => p[0]).join(" → "))}">${segs}${marks}</svg>`;
+}
+function insetSvg() {
+  return `<svg viewBox="0 0 700 800" preserveAspectRatio="none" role="img" aria-label="Vol Bangkok vers Krabi, retour par Phuket">
+    <line x1="355.7" y1="372.2" x2="315.6" y2="501.8" stroke="var(--route)" stroke-width="6" stroke-dasharray="4 10" stroke-linecap="round"/>
+    <circle cx="355.7" cy="372.2" r="13" fill="#3f5563" stroke="#fff" stroke-width="3"/><text x="375" y="368" font-size="30" font-weight="700" fill="#15242b" stroke="#fff" stroke-width="6" paint-order="stroke" font-family="Source Sans 3, sans-serif">Bangkok</text>
+    <circle cx="315.6" cy="501.8" r="11" fill="var(--route)" stroke="#fff" stroke-width="3"/><text x="335" y="530" font-size="26" font-weight="700" fill="#15242b" stroke="#fff" stroke-width="6" paint-order="stroke" font-family="Source Sans 3, sans-serif">Krabi</text>
+    <circle cx="300.3" cy="501.5" r="9" fill="#3f5563" stroke="#fff" stroke-width="3"/><text x="285" y="480" font-size="26" font-weight="700" text-anchor="end" fill="#15242b" stroke="#fff" stroke-width="6" paint-order="stroke" font-family="Source Sans 3, sans-serif">Phuket</text>
+  </svg>`;
+}
+
+function renderTrip() {
+  const tid = state.trip, T = DATA[tid];
+  const map = `<section class="step"><h3>Le trajet</h3>
+    <div class="mapgrid">
+      <div class="map"><div class="box"><img src="assets/carte-andaman-wm.png" alt="Carte de la côte d'Andaman" width="900" height="640">${mapSvg(T.map.route)}</div>
+        <div class="cap legend"><span><i></i>route</span><span><i class="boat"></i>bateau</span><span><i class="air"></i>avion</span><span>✈ aéroport · numéros = étapes dans l'ordre</span></div></div>
+      ${T.map.inset ? `<div class="map"><div class="box"><img src="assets/carte-thailande.png" alt="Carte de la Thaïlande" width="700" height="800">${insetSvg()}</div><div class="cap">Vol intérieur Bangkok → Krabi le 03/12</div></div>` : `<div class="note">${T.steps.map((s, i) => `<p style="margin-bottom:6px"><b>${i + 1}. ${esc(s.place)}</b> · ${s.nights} nuit${s.nights > 1 ? "s" : ""} · ${esc(s.dates)}</p>`).join("")}</div>`}
+    </div></section>`;
+  const flights = `<section class="step"><h3>Vols</h3><div class="tablewrap"><table>
+      <tr><th>Trajet</th><th>Horaires locaux</th><th>Compagnie</th><th class="r">Prix (2 pers.)</th><th>Offre</th></tr>
+      ${T.flights.map(f => `<tr><td>${esc(f[0])}</td><td>${esc(f[1])}</td><td>${esc(f[2])}</td><td class="r">${eur(f[3])}</td><td><a href="${esc(f[4])}" target="_blank" rel="noopener">Voir sur Kiwi</a></td></tr>`).join("")}
+    </table></div><p class="note">1 bagage en soute chacun inclus. Billets séparés : un retard sur un vol ne protège pas le suivant.</p></section>`;
+  const steps = T.steps.map((s, i) => {
+    const cur = picked(tid, i)[0];
+    return `<section class="step" style="--sc:${STEP_COLOR[s.c]}">
+      <div class="step-h"><h2>${i + 1}. ${esc(s.place)}</h2><span class="note">${s.nights} nuit${s.nights > 1 ? "s" : ""} · ${esc(s.dates)}</span></div>
+      <div class="offers" role="radiogroup" aria-label="Offres ${esc(s.place)}">
+        ${s.options.map(o => {
+          const sv = SEA[o[7]];
+          return `<label class="offer">
+            <input type="radio" name="st-${tid}-${i}" value="${esc(o[0])}" data-step="${i}" ${o[0] === cur ? "checked" : ""}>
+            <span class="sel">${o[0] === cur ? "Choisi" : "Choisir"}</span>
+            <div class="ph">${o[6] ? `<img src="${esc(o[6])}" alt="${esc(o[1])}" loading="lazy">` : "Photo non disponible"}</div>
+            <div class="b">
+              <h4>${esc(o[1])}</h4>
+              <div class="meta">${esc(o[2])}</div>
+              <div class="price">${eur(o[3])} <small>${s.nights} nuit${s.nights > 1 ? "s" : ""}, 2 pers. · ${esc(o[4])}</small></div>
+              <div><span class="tag ${sv[0]}">${sv[1]}</span></div>
+              <div class="meta">Petit-déjeuner : ${esc(o[8])} · ${esc(o[9])}</div>
+              <a class="go" href="${esc(o[5])}" target="_blank" rel="noopener">Voir l'offre</a>
+            </div></label>`;
+        }).join("")}
+      </div></section>`;
+  }).join("");
+  const transfers = `<section class="step"><h3>Trajets sur place</h3><div class="tablewrap"><table>
+      <tr><th>Quand</th><th>Trajet</th><th>Durée</th><th class="r">Prix privé (2 pers.)</th><th>Source</th></tr>
+      ${T.transfers.map(t => `<tr><td>${esc(t[0])}</td><td>${esc(t[1])}</td><td>${esc(t[2])}</td><td class="r">${t[3] == null ? "non relevé" : (t[3] === t[4] ? eur(t[3]) : eur(t[3]) + " – " + eur(t[4]))}</td><td>${t[5] ? `<a href="${esc(t[5])}" target="_blank" rel="noopener">grille publique</a>` : "relevé en cours"}</td></tr>`).join("")}
+    </table></div></section>`;
+  const days = `<section class="step"><h3>Jour par jour</h3><div class="days">${T.days.map(d => `<div class="day"><b>${esc(d[0])}</b><span>${esc(d[1])}</span></div>`).join("")}</div></section>`;
+  document.getElementById("trip").innerHTML = `<section class="step"><div class="eyebrow">${esc(T.tag)}</div><h2>${esc(T.name)} · ${esc(T.title)}</h2><p class="lede">${esc(T.lede)}</p></section>` + map + flights + steps + transfers + days;
+}
+
+function renderAll() { renderTabs(); renderBudget(); renderTrip(); }
+
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-trip]");
+  if (b) { state.trip = b.dataset.trip; save(); try { history.replaceState(null, "", "#" + state.trip); } catch (err) {} renderAll(); }
+});
+document.addEventListener("change", e => {
+  const r = e.target.closest("input[data-step]");
+  if (!r) return;
+  state.pick[state.trip] = state.pick[state.trip] || {};
+  state.pick[state.trip][r.dataset.step] = r.value;
+  save();
+  renderTabs(); renderBudget();
+  document.querySelectorAll(`input[name="${r.name}"]`).forEach(x => { x.closest(".offer").querySelector(".sel").textContent = x.checked ? "Choisi" : "Choisir"; });
+});
+renderAll();
+</script>
+
+</body>
+</html>
