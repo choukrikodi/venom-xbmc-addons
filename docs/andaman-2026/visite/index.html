@@ -7,7 +7,7 @@
   --paper:#f2f5f4; --surface:#ffffff; --ink:#15242b; --muted:#5b6c72; --line:#d3dcde;
   --accent:#0d6d78; --accent-ink:#ffffff; --accent-soft:#dcedef;
   --warn:#9a6300; --warn-soft:#fbf0d6; --bad:#a23a2b; --bad-soft:#f8e2de; --ok:#2f6f3e; --ok-soft:#e0f0e3;
-  --gantt-hotel:#0d6d78; --gantt-fly:#3f5563; --gantt-act:#c98a1b; --gantt-home:#8a9aa0;
+  --gantt-hotel:#0d6d78; --gantt-fly:#3f5563; --gantt-act:#c98a1b; --gantt-home:#8a9aa0; --gantt-island:#7a5aa6;
   --display:"Fraunces",Georgia,"Times New Roman",serif;
   --body:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
 }
@@ -17,7 +17,7 @@
     --paper:#0f1b20; --surface:#17262d; --ink:#e4ecee; --muted:#9db0b6; --line:#2c3f47;
     --accent:#4cc2cd; --accent-ink:#0b1a1d; --accent-soft:#163a40;
     --warn:#e6b45a; --warn-soft:#3a2e12; --bad:#e8836f; --bad-soft:#42211b; --ok:#7fc98f; --ok-soft:#1c3523;
-    --gantt-hotel:#4cc2cd; --gantt-fly:#8fa6b3; --gantt-act:#e6b45a; --gantt-home:#5f727a;
+    --gantt-hotel:#4cc2cd; --gantt-fly:#8fa6b3; --gantt-act:#e6b45a; --gantt-home:#5f727a; --gantt-island:#b39ddb;
   }
 }
 :root[data-theme="dark"]{
@@ -25,7 +25,7 @@
   --paper:#0f1b20; --surface:#17262d; --ink:#e4ecee; --muted:#9db0b6; --line:#2c3f47;
   --accent:#4cc2cd; --accent-ink:#0b1a1d; --accent-soft:#163a40;
   --warn:#e6b45a; --warn-soft:#3a2e12; --bad:#e8836f; --bad-soft:#42211b; --ok:#7fc98f; --ok-soft:#1c3523;
-  --gantt-hotel:#4cc2cd; --gantt-fly:#8fa6b3; --gantt-act:#e6b45a; --gantt-home:#5f727a;
+  --gantt-hotel:#4cc2cd; --gantt-fly:#8fa6b3; --gantt-act:#e6b45a; --gantt-home:#5f727a; --gantt-island:#b39ddb;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
@@ -208,6 +208,12 @@ section.block{margin-bottom:28px}
 .etapes .e-B{background:var(--gantt-act)}
 .etapes .e-C{background:var(--gantt-hotel)}
 .etapes .e-BKK{background:var(--gantt-home)}
+.etapes .e-PP{background:var(--gantt-island)}
+.combilive{display:grid;gap:12px;margin-top:12px}
+.combilive .lv-step{display:grid;gap:6px}
+.combilive .lv-total{font-family:var(--display);font-size:20px;font-weight:600;color:var(--accent)}
+.combicard button[data-combi-live]{justify-self:start}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .combicard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:14px}
 .combicard dt{color:var(--muted)}
 .combicard dd{margin:0}
@@ -949,8 +955,32 @@ const COMBI = [
     transfers: ["KBV → Ao Nang : environ 45 min", "Ao Nang → Khao Lak : environ 2 h 30 à 3 h (à confirmer)", "Khao Lak → Nai Yang : environ 1 h 15", "Nai Yang → HKT, le jour du départ : environ 5 min"],
     hotels: "Varana Krabi (plan B Nakamanda) · The Sands Khao Lak (plan B Pullman ou Kantary) · Phuket Marriott Nai Yang (plan B Dewa Phuket)",
     plus: "Le plus logique : aucune longue route le jour du départ, dernière nuit à côté de l'aéroport.",
-    minus: "Deux billets séparés : si le premier vol est en retard, le second n'est pas protégé." }
+    minus: "Deux billets séparés : si le premier vol est en retard, le second n'est pas protégé." },
+  { id: "4", title: "Ao Nang → Phi Phi → Khao Lak → Phuket", reco: false,
+    steps: [["B", "Ao Nang", 5, "30/11 → 05/12"], ["PP", "Koh Phi Phi", 3, "05/12 → 08/12"], ["C", "Khao Lak", 5, "08/12 → 13/12"], ["A", "Nai Yang", 1, "13/12 → 14/12"]],
+    flights: "Mêmes vols que le combiné 3 : arrivée à Krabi (KBV) le 30/11 à 06:35 avec Etihad, départ de Phuket (HKT) le 14/12 à 19:50 avec Turkish. Deux billets séparés.",
+    transfers: ["KBV → Ao Nang : environ 45 min", "Ao Nang → Koh Phi Phi : ferry ou vedette, environ 1 h 30 à 2 h (horaires de décembre en cours de relevé)", "Koh Phi Phi → Khao Lak : bateau vers Phuket puis route, ou vedette directe si elle circule en décembre (en cours de relevé)", "Khao Lak → Nai Yang : environ 1 h 25", "Nai Yang → HKT, le jour du départ : environ 5 min"],
+    hotels: "Varana Krabi · SAii Phi Phi Island Village (plan B Centara Villas Phi Phi) · Pullman Khao Lak (plan B Kantary Beach) · Phuket Marriott Nai Yang",
+    plus: "Trois nuits sur l'île : Phi Phi le soir, quand les bateaux d'excursion sont repartis.",
+    minus: "Deux traversées en bateau avec les bagages, pas de voiture sur l'île ; quatre changements d'hôtel." }
 ];
+/* Requêtes « en direct » par combiné : étape = [motif de scénario D1, arrivée, départ] ; vol = [origine, destination, date de départ, date de retour ou null]. Dates au format de la base (AAAA-MM-JJ). */
+const COMBI_LIVE = {
+  "1": { steps: [["Nai Yang", "%NAIYANG", "2026-11-30", "2026-12-02"], ["Khao Lak", "%KHAOLAK", "2026-12-02", "2026-12-08"], ["Ao Nang", "%AONANG", "2026-12-08", "2026-12-14"]],
+         legs: [["TUN", "HKT", "2026-11-29", "2026-12-14"]] },
+  "2": { steps: [["Khao Lak", "%KHAOLAK", "2026-11-30", "2026-12-07"], ["Ao Nang", "%AONANG", "2026-12-07", "2026-12-14"]],
+         legs: [["TUN", "HKT", "2026-11-29", "2026-12-14"]] },
+  "3": { steps: [["Ao Nang", "%AONANG", "2026-11-30", "2026-12-07"], ["Khao Lak", "%KHAOLAK", "2026-12-07", "2026-12-13"], ["Nai Yang", "%NAIYANG", "2026-12-13", "2026-12-14"]],
+         legs: [["TUN", "KBV", "2026-11-29", null], ["HKT", "TUN", "2026-12-14", null]] },
+  "4": { steps: [["Ao Nang", "%AONANG", "2026-11-30", "2026-12-05"], ["Koh Phi Phi", "%PHIPHI", "2026-12-05", "2026-12-08"], ["Khao Lak", "%KHAOLAK", "2026-12-08", "2026-12-13"], ["Nai Yang", "%NAIYANG", "2026-12-13", "2026-12-14"]],
+         legs: [["TUN", "KBV", "2026-11-29", null], ["HKT", "TUN", "2026-12-14", null]] },
+  "BKK-A": { steps: [["Bangkok", "%BANGKOK", "2026-11-30", "2026-12-03"], ["Ao Nang", "%AONANG", "2026-12-03", "2026-12-09"], ["Khao Lak", "%KHAOLAK", "2026-12-09", "2026-12-14"]],
+             legs: [["TUN", "BKK", "2026-11-29", null], ["BKK", "KBV", "2026-12-03", null], ["HKT", "TUN", "2026-12-14", null]] },
+  "BKK-B": { steps: [["Bangkok", "%BANGKOK", "2026-11-30", "2026-12-03"], ["Khao Lak", "%KHAOLAK", "2026-12-03", "2026-12-08"], ["Ao Nang", "%AONANG", "2026-12-08", "2026-12-14"]],
+             legs: [["TUN", "BKK", "2026-11-29", null], ["BKK", "HKT", "2026-12-03", null], ["KBV", "BKK", "2026-12-14", null], ["BKK", "TUN", "2026-12-14", null]] },
+  "BKK-C": { steps: [["Bangkok", "%BANGKOK", "2026-11-30", "2026-12-03"], ["Ao Nang", "%AONANG", "2026-12-03", "2026-12-07"], ["Koh Phi Phi", "%PHIPHI", "2026-12-07", "2026-12-10"], ["Khao Lak", "%KHAOLAK", "2026-12-10", "2026-12-14"]],
+             legs: [["TUN", "BKK", "2026-11-29", null], ["BKK", "KBV", "2026-12-03", null], ["HKT", "TUN", "2026-12-14", null]] }
+};
 
 /* ---------- Variante via Bangkok (relevé v9 du 04/10/2026, run 37203947430, sans aucun montant) ---------- */
 const COMBI_BKK = [
@@ -967,7 +997,14 @@ const COMBI_BKK = [
     transfers: ["HKT → Khao Lak : environ 1 h à 1 h 15, arrivée tardive", "Khao Lak → Ao Nang : environ 2 h 30 à 3 h (à confirmer)", "Ao Nang → KBV : environ 45 min"],
     hotels: "Mêmes hôtels que le circuit précédent, dans l'ordre inverse.",
     plus: "Finit sur les falaises d'Ao Nang.",
-    minus: "Non retenu : le retour par Krabi oblige à repasser par Bangkok le jour du départ, avec une correspondance risquée, pour un coût plus élevé." }
+    minus: "Non retenu : le retour par Krabi oblige à repasser par Bangkok le jour du départ, avec une correspondance risquée, pour un coût plus élevé." },
+  { id: "BKK-C", title: "Bangkok → Ao Nang → Phi Phi → Khao Lak", reco: false,
+    steps: [["BKK", "Bangkok", 3, "30/11 → 03/12"], ["B", "Ao Nang", 4, "03/12 → 07/12"], ["PP", "Koh Phi Phi", 3, "07/12 → 10/12"], ["C", "Khao Lak", 4, "10/12 → 14/12"]],
+    flights: "Mêmes vols que Bangkok → Ao Nang → Khao Lak : arrivée à Bangkok le 30/11, vol Bangkok → Krabi le 03/12, retour depuis Phuket le 14/12. Trois billets séparés.",
+    transfers: ["Aéroport BKK → hôtel au bord du fleuve : environ 45 min à 1 h", "KBV → Ao Nang : environ 45 min", "Ao Nang → Koh Phi Phi : ferry ou vedette, environ 1 h 30 à 2 h (en cours de relevé)", "Koh Phi Phi → Khao Lak : bateau vers Phuket puis route (en cours de relevé)", "Khao Lak → HKT, le jour du départ : environ 1 h à 1 h 15"],
+    hotels: "Bangkok au bord du fleuve (Avani+ Riverside) · Varana Krabi · SAii Phi Phi Island Village (plan B Centara Villas) · Pullman Khao Lak",
+    plus: "Le circuit le plus varié : la ville, les falaises, une île et les longues plages.",
+    minus: "Quatre étapes en 14 nuits, deux traversées en bateau avec les bagages et trois billets d'avion séparés." }
 ];
 
 function combiPanel() {
@@ -988,6 +1025,7 @@ function combiPanel() {
         <dt>Limite</dt><dd>${esc(c.minus)}</dd>
       </dl>
       <details class="cdetail"><summary>Trajets sur place</summary><ol style="margin-top:6px">${c.transfers.map(t => `<li>${esc(t)}</li>`).join("")}</ol></details>
+      <button type="button" data-combi-live="${esc(c.id)}" aria-pressed="${combiSel === c.id}">Offres en direct pour ce circuit</button>
     </article>`;
   };
   return `
@@ -1004,13 +1042,21 @@ function combiPanel() {
     <p class="note">Plus de 10 jours, avec un passage par Bangkok : on arrive par un aéroport et on repart par un autre, choisi selon l'endroit où l'on dort les derniers jours. Relevé du 04/10/2026 (Kiwi et Trivago, pipeline GitHub Actions, run 37203947430).</p>
     <div class="combigrid">${COMBI_BKK.map(card).join("")}</div>
   </section>
+  <section class="block" id="sec-combi-live" data-toc-sub="Offres en direct">
+    <h3>Offres en direct</h3>
+    <p class="note">Choisis un circuit avec son bouton « Offres en direct » : la page interroge la base aux dates exactes de chaque étape et de chaque vol, puis recalcule le total le moins cher trouvé.</p>
+    <div id="combiStatus" class="state warn">${combiSel ? "Circuit choisi : " + esc(combiSel) : "Aucun circuit choisi."}</div>
+    <div class="row" style="margin:10px 0"><button type="button" id="combiRefresh"${combiSel ? "" : " disabled"}>Actualiser ce circuit</button></div>
+    <div id="combiLive" class="combilive">${combiHtml}</div>
+  </section>
   <section class="block" id="sec-combi-notes" data-toc-sub="À savoir">
     <h3>À savoir</h3>
     <ul class="srcs">
       <li>Vols et hôtels relevés le 04/10/2026 entre 12:32 et 12:34 UTC via Kiwi et Trivago (pipeline GitHub Actions, run 37202438245), pour 2 adultes avec un bagage en soute chacun. Aucun montant n'est repris sur cette page.</li>
       <li>Aucun vol retour depuis Krabi le 14/12 n'est sorti de la recherche : c'est pourquoi les combinés 1 et 2 repartent de Phuket. Ce n'est pas une preuve qu'il n'en existe aucun.</li>
       <li>Vue mer et accès direct à la plage : à confirmer chambre par chambre avant de réserver. Les durées de route sont des ordres de grandeur, le relevé des transferts est en cours.</li>
-      <li>Piste moins chère : partir plus tôt, par exemple du 18/11 au 04/12 avec Qatar Airways. Les hôtels n'ont pas encore été cherchés à ces dates.</li>
+      <li>Piste moins chère : partir plus tôt, du 18/11 au 04/12 avec Qatar Airways (aller-retour Phuket). Les hôtels ont été relevés à ces dates le 04/10/2026 (Nai Yang, Khao Lak, Phi Phi, Ao Nang).</li>
+      <li>Koh Phi Phi : hôtels relevés le 04/10/2026 via Trivago (run 37208445841) ; ferries, chambres vue mer et accès à Maya Bay en cours de vérification.</li>
     </ul>
   </section>`;
 }
@@ -1133,42 +1179,126 @@ function d1ErrorText(err) {
   return "Échec de lecture D1 (" + (code || "erreur inconnue") + ").";
 }
 
-async function d1Query(mcp, sql, params) {
-  const res = await mcp.callTool(D1_SERVER, "d1_database_query", { database_id: D1_DATABASE_ID, sql, params: params || null }, { cache: { staleTime: 60000 } });
+async function d1Query(mcp, sql, params, opts) {
+  const res = await mcp.callTool(D1_SERVER, "d1_database_query", { database_id: D1_DATABASE_ID, sql, params: params || null }, opts || { cache: { staleTime: 60000 } });
   const payload = res.payload;
   const first = Array.isArray(payload) ? payload[0] : payload;
   if (!first || first.success !== true) throw { code: "tool_error", message: "réponse D1 non réussie" };
   return first.results || [];
 }
 
+/* Clé de lecture = lieu + durée + dates exactes du choix affiché. d1Seq garantit que seule la
+   dernière demande (dernier onglet / dernière durée choisis) écrit dans la page : une réponse
+   plus ancienne qui arrive après est ignorée au lieu d'écraser la bonne. */
+const D1_SCEN = { A: ["A", "V8-NAIYANG", "V10-NAIYANG"], B: ["B", "V8-AONANG", "V9-AONANG", "V10-AONANG"], C: ["C", "V8-KHAOLAK", "V9-KHAOLAK", "V10-KHAOLAK"] };
+let d1Seq = 0;
+const isoDate = fr => { const m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(fr || ""); return m ? `${m[3]}-${m[2]}-${m[1]}` : fr; };
+const frDate = iso => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || ""); return m ? `${m[3]}/${m[2]}/${m[1]}` : (iso || ""); };
+const eur = v => v != null ? Number(v).toLocaleString("fr-BE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €" : "?";
+function d1Request(scenario) {
+  const S = SCEN[scenario];
+  const D = duration === "9n" ? S.dur9 : S;
+  const hin = isoDate(D.hin);
+  let dep = D.dep ? isoDate(D.dep) : null, noFlight = false;
+  if (!dep) { const d = new Date(hin + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() - 1); dep = d.toISOString().slice(0, 10); noFlight = true; }
+  return { scenario, hin, hout: isoDate(D.hout), dep, noFlight, airport: S.airport, label: duration === "9n" ? "10 jours, 9 nuits" : "16-18 nuits" };
+}
 async function loadD1Offers(scenario, force) {
-  const key = scenario;
-  if (d1Busy) return;
+  const R = d1Request(scenario);
+  const key = [R.scenario, duration, R.hin, R.hout, R.dep].join("|");
   if (!force && key === d1LastKey) return;
-  d1Busy = true;
-  d1SetStatus("Recherche des offres actualisées…", "warn");
+  const seq = ++d1Seq;
+  d1LastKey = key;
+  const reqText = `Requête : ${esc(SCEN[scenario].name)}, ${esc(R.label)} — hôtels du ${frDate(R.hin)} au ${frDate(R.hout)}, vols au départ du ${frDate(R.dep)} vers ${esc(R.airport)}${R.noFlight ? " (aucun vol aligné sur ce scénario : date de référence = veille de l'arrivée à l'hôtel)" : ""}.`;
+  d1SetStatus("Recherche des offres actualisées… " + reqText, "warn");
   try {
     const mcp = await d1EnsureMcp();
+    if (seq !== d1Seq) return;
     if (!mcp) { d1SetStatus("Connecteur indisponible pour cette vue (ouvre la page dans claude.ai, ou active tes connecteurs).", "warn"); return; }
+    const scen = D1_SCEN[scenario] || [scenario];
+    const marks = scen.map(() => "?").join(",");
+    const opts = force ? { cache: { refresh: true } } : undefined;
     const [hotels, vols] = await Promise.all([
-      d1Query(mcp, "SELECT nom, date_arrivee, date_depart, nuits, etoiles_declarees, note, nb_avis, prix_total_eur, vue_mer_confirmee, annonceur, url_offre FROM hotels WHERE scenario = ? AND disponible = 1 ORDER BY prix_total_eur ASC LIMIT 5", [scenario]),
-      d1Query(mcp, "SELECT origine, destination, date_depart, date_retour, nuits_reelles, compagnies, prix_eur FROM vols WHERE scenario = ? AND disponible = 1 ORDER BY prix_eur ASC LIMIT 6", [scenario])
+      d1Query(mcp, `SELECT nom, date_arrivee, date_depart, nuits, note, nb_avis, prix_total_eur, vue_mer_confirmee, categorie_chambre, plateforme, annonceur, url_offre, (date_arrivee = ? AND date_depart = ?) AS exact FROM hotels WHERE scenario IN (${marks}) AND disponible = 1 ORDER BY exact DESC, prix_total_eur ASC LIMIT 6`, [R.hin, R.hout, ...scen], opts),
+      d1Query(mcp, "SELECT origine, destination, date_depart, date_retour, nuits_reelles, compagnies, prix_eur, (date_depart = ?) AS exact FROM vols WHERE destination = ? AND origine IN ('TUN','BRU') AND disponible = 1 ORDER BY exact DESC, prix_eur ASC LIMIT 6", [R.dep, R.airport], opts)
     ]);
-    d1LastKey = key;
-    const now = new Date().toLocaleString("fr-BE");
-    const hRows = hotels.map(h => `<tr><td>${esc(h.nom || "")}</td><td>${esc(h.date_arrivee || "")} → ${esc(h.date_depart || "")}</td><td class="n">${h.nuits ?? ""}</td><td class="n">${h.prix_total_eur != null ? h.prix_total_eur.toLocaleString("fr-BE",{minimumFractionDigits:2,maximumFractionDigits:2}) + " €" : "?"}</td><td>${esc(h.vue_mer_confirmee || "non confirmé")}</td><td>${h.url_offre ? `<a href="${esc(h.url_offre)}" target="_blank" rel="noopener">${esc(h.annonceur || "offre")}</a>` : esc(h.annonceur || "")}</td></tr>`).join("") || `<tr><td colspan="6">Aucune offre hôtel disponible pour ce lieu pour le moment.</td></tr>`;
-    const vRows = vols.map(v => `<tr><td>${esc(v.origine || "")} → ${esc(v.destination || "")}</td><td>${esc(v.date_depart || "")} → ${esc(v.date_retour || "")}</td><td class="n">${v.nuits_reelles ?? ""}</td><td>${esc(v.compagnies || "")}</td><td class="n">${v.prix_eur != null ? v.prix_eur.toLocaleString("fr-BE",{minimumFractionDigits:2,maximumFractionDigits:2}) + " €" : "?"}</td></tr>`).join("") || `<tr><td colspan="5">Aucun vol disponible pour ce lieu pour le moment.</td></tr>`;
+    if (seq !== d1Seq) return;
+    const tagDates = x => Number(x.exact) === 1 ? '<span class="tag ok">dates exactes</span>' : '<span class="tag warn">autres dates</span>';
+    const hRows = hotels.map(h => `<tr><td>${esc(h.nom || "")}${h.categorie_chambre ? `<div class="note">${esc(h.categorie_chambre)}</div>` : ""}</td><td>${frDate(h.date_arrivee)} → ${frDate(h.date_depart)} ${tagDates(h)}</td><td class="n">${h.nuits ?? ""}</td><td class="n">${eur(h.prix_total_eur)}</td><td>${esc(h.vue_mer_confirmee || "non confirmé")}</td><td>${h.url_offre ? `<a href="${esc(h.url_offre)}" target="_blank" rel="noopener">${esc(h.annonceur || h.plateforme || "offre")}</a>` : esc(h.annonceur || h.plateforme || "")}</td></tr>`).join("") || `<tr><td colspan="6">Aucune offre hôtel en base pour ce lieu.</td></tr>`;
+    const vRows = vols.map(v => `<tr><td>${esc(v.origine || "")} → ${esc(v.destination || "")}</td><td>${frDate(v.date_depart)}${v.date_retour ? " → " + frDate(v.date_retour) : " (aller simple)"} ${tagDates(v)}</td><td class="n">${v.nuits_reelles ?? ""}</td><td>${esc(v.compagnies || "")}</td><td class="n">${eur(v.prix_eur)}</td></tr>`).join("") || `<tr><td colspan="5">Aucun vol en base vers ${esc(R.airport)}.</td></tr>`;
+    const nExact = hotels.filter(h => Number(h.exact) === 1).length;
     document.getElementById("d1Data").innerHTML =
-      `<h3 style="margin-top:12px">Hôtels disponibles (5 moins chers)</h3>
+      `<p class="note" style="margin-top:8px">${reqText}</p>
+       <h3 style="margin-top:12px">Hôtels (dates exactes d'abord, puis les moins chers)</h3>
        <div class="tablewrap"><table><tr><th>Nom</th><th>Dates</th><th class="n">Nuits</th><th class="n">Prix EUR</th><th>Vue mer</th><th>Source</th></tr>${hRows}</table></div>
-       <h3 style="margin-top:16px">Vols disponibles, Tunis et Bruxelles (6 moins chers)</h3>
+       <h3 style="margin-top:16px">Vols vers ${esc(R.airport)} (départ du ${frDate(R.dep)} d'abord)</h3>
        <div class="tablewrap"><table><tr><th>Trajet</th><th>Dates</th><th class="n">Nuits réelles</th><th>Compagnies</th><th class="n">Prix EUR</th></tr>${vRows}</table></div>`;
-    d1SetStatus(`Offres actualisées le ${now}. Vient en plus des fiches ci-dessus, sans remplacer l'hôtel proposé ; compare toujours nom, dates et vue mer avant tout rapprochement.`, "ok");
+    const now = new Date().toLocaleString("fr-BE");
+    d1SetStatus(`Offres lues le ${now} pour ${esc(SCEN[scenario].name)}, ${esc(R.label)} : ${nExact} hôtel(s) aux dates exactes. Vient en plus des fiches ci-dessus, sans remplacer l'hôtel proposé.`, nExact ? "ok" : "warn");
   } catch (err) {
+    if (seq !== d1Seq) return;
+    d1LastKey = null;
     document.getElementById("d1Data").innerHTML = "";
     d1SetStatus(d1ErrorText(err), "bad");
-  } finally {
-    d1Busy = false;
+  }
+}
+
+/* Offres en direct d'un combiné : une requête par étape (motif de scénario + dates exactes)
+   et une par vol (origine, destination, date). combiSeq : seul le dernier circuit choisi s'affiche. */
+let combiSel = null, combiHtml = "", combiSeq = 0, combiLastKey = null;
+function combiSetStatus(html, cls) {
+  const el = document.getElementById("combiStatus");
+  if (el) { el.className = "state " + cls; el.innerHTML = html; }
+}
+async function loadCombiLive(id, force) {
+  const L = COMBI_LIVE[id];
+  if (!L) return;
+  if (!force && id === combiLastKey && combiHtml) return;
+  combiSel = id;
+  const seq = ++combiSeq;
+  combiLastKey = id;
+  document.querySelectorAll("[data-combi-live]").forEach(b => b.setAttribute("aria-pressed", b.dataset.combiLive === id ? "true" : "false"));
+  const rb = document.getElementById("combiRefresh"); if (rb) rb.disabled = false;
+  const all = COMBI.concat(COMBI_BKK).find(c => c.id === id);
+  const title = all ? all.title : id;
+  combiSetStatus(`Recherche en cours pour « ${esc(title)} »…`, "warn");
+  try {
+    const mcp = await d1EnsureMcp();
+    if (seq !== combiSeq) return;
+    if (!mcp) { combiSetStatus("Connecteur indisponible pour cette vue (ouvre la page dans claude.ai, ou active tes connecteurs).", "warn"); return; }
+    const opts = force ? { cache: { refresh: true } } : undefined;
+    const stepQ = L.steps.map(st => d1Query(mcp, "SELECT nom, prix_total_eur, nuits, note, nb_avis, vue_mer_confirmee, categorie_chambre, plateforme, annonceur, url_offre FROM hotels WHERE disponible = 1 AND scenario LIKE ? AND date_arrivee = ? AND date_depart = ? ORDER BY prix_total_eur ASC LIMIT 4", [st[1], st[2], st[3]], opts));
+    const legQ = L.legs.map(lg => lg[3]
+      ? d1Query(mcp, "SELECT origine, destination, date_depart, date_retour, compagnies, prix_eur FROM vols WHERE disponible = 1 AND origine = ? AND destination = ? AND date_depart = ? AND date_retour = ? ORDER BY prix_eur ASC LIMIT 2", [lg[0], lg[1], lg[2], lg[3]], opts)
+      : d1Query(mcp, "SELECT origine, destination, date_depart, date_retour, compagnies, prix_eur FROM vols WHERE disponible = 1 AND origine = ? AND destination = ? AND date_depart = ? AND date_retour IS NULL ORDER BY prix_eur ASC LIMIT 2", [lg[0], lg[1], lg[2]], opts));
+    const res = await Promise.all(stepQ.concat(legQ));
+    if (seq !== combiSeq) return;
+    const hotelsRes = res.slice(0, L.steps.length), legsRes = res.slice(L.steps.length);
+    let total = 0, missing = [];
+    const stepHtml = L.steps.map((st, i) => {
+      const rows = hotelsRes[i];
+      if (rows.length) total += Number(rows[0].prix_total_eur) || 0; else missing.push(st[0]);
+      const tr = rows.map(h => `<tr><td>${esc(h.nom || "")}${h.categorie_chambre ? `<div class="note">${esc(h.categorie_chambre)}</div>` : ""}</td><td class="n">${eur(h.prix_total_eur)}</td><td>${esc(h.vue_mer_confirmee || "non confirmé")}</td><td>${h.url_offre ? `<a href="${esc(h.url_offre)}" target="_blank" rel="noopener">${esc(h.annonceur || h.plateforme || "offre")}</a>` : esc(h.plateforme || "")}</td></tr>`).join("") || `<tr><td colspan="4">Aucune offre en base à ces dates exactes.</td></tr>`;
+      return `<div class="lv-step"><h3>${esc(st[0])} · ${frDate(st[2])} → ${frDate(st[3])}</h3><div class="tablewrap"><table><tr><th>Hôtel</th><th class="n">Prix séjour</th><th>Vue mer</th><th>Source</th></tr>${tr}</table></div></div>`;
+    }).join("");
+    const legRows = L.legs.map((lg, i) => {
+      const r = legsRes[i];
+      if (r.length) total += Number(r[0].prix_eur) || 0; else missing.push(lg[0] + " → " + lg[1]);
+      return r.length
+        ? `<tr><td>${esc(lg[0])} → ${esc(lg[1])}</td><td>${frDate(r[0].date_depart)}${r[0].date_retour ? " → " + frDate(r[0].date_retour) : ""}</td><td>${esc(r[0].compagnies || "")}</td><td class="n">${eur(r[0].prix_eur)}</td></tr>`
+        : `<tr><td>${esc(lg[0])} → ${esc(lg[1])}</td><td>${frDate(lg[2])}</td><td colspan="2">Aucun vol en base à cette date.</td></tr>`;
+    }).join("");
+    combiHtml = `<div class="lv-total">${esc(title)} : ${eur(total)} pour deux</div>
+      <p class="note">Somme de l'hôtel le moins cher de chaque étape et du vol le moins cher de chaque trajet, aux dates exactes. Hors transferts, repas et excursions.${missing.length ? " Manque en base : " + esc(missing.join(", ")) + " (total incomplet)." : ""}</p>
+      <div class="lv-step"><h3>Vols</h3><div class="tablewrap"><table><tr><th>Trajet</th><th>Dates</th><th>Compagnies</th><th class="n">Prix (2 pers.)</th></tr>${legRows}</table></div></div>
+      ${stepHtml}`;
+    const el = document.getElementById("combiLive"); if (el) el.innerHTML = combiHtml;
+    const now = new Date().toLocaleString("fr-BE");
+    combiSetStatus(`Offres lues le ${now} pour « ${esc(title)} ».`, missing.length ? "warn" : "ok");
+  } catch (err) {
+    if (seq !== combiSeq) return;
+    combiLastKey = null;
+    combiSetStatus(d1ErrorText(err), "bad");
   }
 }
 document.addEventListener("DOMContentLoaded", () => {
@@ -1205,8 +1335,13 @@ document.addEventListener("click", e => {
     duration = dur.dataset.dur;
     try { localStorage.setItem(DUR_KEY, duration); } catch (e2) {}
     render();
+    const cur = TABS.find(t => ["A","B","C"].includes(t) && document.getElementById("panel-"+t).classList.contains("on"));
+    if (cur) loadD1Offers(cur, false);
     return;
   }
+  const cl = e.target.closest("[data-combi-live]");
+  if (cl) { loadCombiLive(cl.dataset.combiLive, false); document.getElementById("sec-combi-live")?.scrollIntoView({ behavior: "smooth", block: "start" }); return; }
+  if (e.target.closest("#combiRefresh")) { if (combiSel) loadCombiLive(combiSel, true); return; }
   const go = e.target.closest("[data-go]");
   if (go) { show(go.dataset.go); return; }
   const tab = e.target.closest("[data-tab]");
