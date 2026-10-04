@@ -1,0 +1,267 @@
+{
+ "case_name": "asie_v10_phiphi",
+ "notice": "Variante v10 (demande du 04/10/2026) : Koh Phi Phi ajoutée comme étape (3 nuits), plus les dates manquantes de la piste « départ anticipé » (QR TUN⇄HKT 18/11→04/12, jamais cherchée côté hôtels). 2 adultes, 1 chambre, BE/EUR. Phi Phi : 4★ et 5★ (offre 5★ réduite sur l'île). Circuits : C4 = KBV 30/11, Ao Nang 5 n (30/11→05/12), Phi Phi 3 n (05→08/12), Khao Lak 5 n (08→13/12), Nai Yang 1 n (13→14/12), retour HKT 14/12. BKK-C = Bangkok 3 n (30/11→03/12), vol BKK→KBV 03/12, Ao Nang 4 n (03→07/12), Phi Phi 3 n (07→10/12), Khao Lak 4 n (10→14/12), retour HKT. ANTICIPÉ = arrivée HKT 19/11, Nai Yang 1 n (19→20/11), Khao Lak 5 n (20→25/11), Phi Phi 3 n (25→28/11), Ao Nang 5 n (28/11→03/12), départ HKT 04/12 00:25. Les ferries ne sont pas couverts par Kiwi : relevé web à part. Aucune réservation.",
+ "requests": [
+  {
+   "name": "trivago_phiphi_45s_0512_0812",
+   "server": "trivago",
+   "tool": "trivago-accommodation-search",
+   "arguments": {
+    "adults": 2,
+    "children": 0,
+    "rooms": 1,
+    "country": "BE",
+    "currency": "EUR",
+    "hotel_rating": {
+     "5star": true,
+     "4star": true
+    },
+    "query": "Koh Phi Phi",
+    "arrival": "2026-12-05",
+    "departure": "2026-12-08"
+   }
+  },
+  {
+   "name": "trivago_phiphi_45s_0712_1012",
+   "server": "trivago",
+   "tool": "trivago-accommodation-search",
+   "arguments": {
+    "adults": 2,
+    "children": 0,
+    "rooms": 1,
+    "country": "BE",
+    "currency": "EUR",
+    "hotel_rating": {
+     "5star": true,
+     "4star": true
+    },
+    "query": "Koh Phi Phi",
+    "arrival": "2026-12-07",
+    "departure": "2026-12-10"
+   }
+  },
+  {
+   "name": "trivago_phiphi_45s_2511_2811",
+   "server": "trivago",
+   "tool": "trivago-accommodation-search",
+   "arguments": {
+    "adults": 2,
+    "children": 0,
+    "rooms": 1,
+    "country": "BE",
+    "currency": "EUR",
+    "hotel_rating": {
+     "5star": true,
+     "4star": true
+    },
+    "query": "Koh Phi Phi",
+    "arrival": "2026-11-25",
+    "departure": "2026-11-28"
+   }
+  },
+  {
+   "name": "trivago_aonang_5s_3011_0512",
+   "server": "trivago",
+   "tool": "trivago-accommodation-search",
+   "arguments": {
+    "adults": 2,
+    "children": 0,
+    "rooms": 1,
+    "country": "BE",
+    "currency": "EUR",
+    "hotel_rating": {
+     "5star": true
+    },
+    "query": "Ao Nang, Krabi",
+    "arrival": "2026-11-30",
+    "departure": "2026-12-05"
+   }
+  },
+  {
+   "name": "trivago_aonang_5s_0312_0712",
+   "server": "trivago",
+   "tool": "trivago-accommodation-search",
+   "arguments": {
+    "adults": 2,
+    "children": 0,
+    "rooms": 1,
+    "country": "BE",
+    "currency": "EUR",
+    "hotel_rating": {
+     "5star": true
+    },
+    "query": "Ao Nang, Krabi",
+    "arrival": "2026-12-03",
+    "departure": "2026-12-07"
+   }
+  },
+  {
+   "name": "trivago_aonang_5s_2811_0312",
+   "server": "trivago",
+   "tool": "trivago-accommodation-search",
+   "arguments": {
+    "adults": 2,
+    "children": 0,
+    "rooms": 1,
+    "country": "BE",
+    "currency": "EUR",
+    "hotel_rating": {
+     "5star": true
+    },
+    "query": "Ao Nang, Krabi",
+    "arrival": "2026-11-28",
+    "departure": "2026-12-03"
+   }
+  },
+  {
+   "name": "trivago_khaolak_5s_0812_1312",
+   "server": "trivago",
+   "tool": "trivago-accommodation-search",
+   "arguments": {
+    "adults": 2,
+    "children": 0,
+    "rooms": 1,
+    "country": "BE",
+    "currency": "EUR",
+    "hotel_rating": {
+     "5star": true
+    },
+    "query": "Khao Lak",
+    "arrival": "2026-12-08",
+    "departure": "2026-12-13"
+   }
+  },
+  {
+   "name": "trivago_khaolak_5s_1012_1412",
+   "server": "trivago",
+   "tool": "trivago-accommodation-search",
+   "arguments": {
+    "adults": 2,
+    "children": 0,
+    "rooms": 1,
+    "country": "BE",
+    "currency": "EUR",
+    "hotel_rating": {
+     "5star": true
+    },
+    "query": "Khao Lak",
+    "arrival": "2026-12-10",
+    "departure": "2026-12-14"
+   }
+  },
+  {
+   "name": "trivago_khaolak_5s_2011_2511",
+   "server": "trivago",
+   "tool": "trivago-accommodation-search",
+   "arguments": {
+    "adults": 2,
+    "children": 0,
+    "rooms": 1,
+    "country": "BE",
+    "currency": "EUR",
+    "hotel_rating": {
+     "5star": true
+    },
+    "query": "Khao Lak",
+    "arrival": "2026-11-20",
+    "departure": "2026-11-25"
+   }
+  },
+  {
+   "name": "trivago_naiyang_5s_1911_2011",
+   "server": "trivago",
+   "tool": "trivago-accommodation-search",
+   "arguments": {
+    "adults": 2,
+    "children": 0,
+    "rooms": 1,
+    "country": "BE",
+    "currency": "EUR",
+    "hotel_rating": {
+     "5star": true
+    },
+    "query": "Nai Yang, Phuket",
+    "arrival": "2026-11-19",
+    "departure": "2026-11-20"
+   }
+  },
+  {
+   "name": "kiwi_tun_hkt_qr_exact_1811_0312",
+   "server": "kiwi",
+   "tool": "search-flight",
+   "arguments": {
+    "flyFrom": "TUN",
+    "flyTo": "HKT",
+    "adults": 2,
+    "children": 0,
+    "infants": 0,
+    "adults_hold_bags": [
+     1,
+     1
+    ],
+    "currency": "EUR",
+    "locale": "fr",
+    "sort": "price",
+    "max_sector_stopovers": 2,
+    "allow_self_transfer": false,
+    "allow_diff_airport_connection": false,
+    "one_for_city": false,
+    "departureDate": "18/11/2026",
+    "departureDateTo": "18/11/2026",
+    "returnDate": "03/12/2026",
+    "returnDateTo": "04/12/2026",
+    "select_airlines": "QR"
+   }
+  },
+  {
+   "name": "kiwi_tun_kbv_ow_1811",
+   "server": "kiwi",
+   "tool": "search-flight",
+   "arguments": {
+    "flyFrom": "TUN",
+    "flyTo": "KBV",
+    "adults": 2,
+    "children": 0,
+    "infants": 0,
+    "adults_hold_bags": [
+     1,
+     1
+    ],
+    "currency": "EUR",
+    "locale": "fr",
+    "sort": "price",
+    "max_sector_stopovers": 2,
+    "allow_self_transfer": false,
+    "allow_diff_airport_connection": false,
+    "one_for_city": false,
+    "departureDate": "18/11/2026",
+    "departureDateTo": "18/11/2026"
+   }
+  },
+  {
+   "name": "kiwi_hkt_tun_ow_0312_0412",
+   "server": "kiwi",
+   "tool": "search-flight",
+   "arguments": {
+    "flyFrom": "HKT",
+    "flyTo": "TUN",
+    "adults": 2,
+    "children": 0,
+    "infants": 0,
+    "adults_hold_bags": [
+     1,
+     1
+    ],
+    "currency": "EUR",
+    "locale": "fr",
+    "sort": "price",
+    "max_sector_stopovers": 2,
+    "allow_self_transfer": false,
+    "allow_diff_airport_connection": false,
+    "one_for_city": false,
+    "departureDate": "03/12/2026",
+    "departureDateTo": "04/12/2026"
+   }
+  }
+ ]
+}
