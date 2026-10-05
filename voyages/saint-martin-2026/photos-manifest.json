@@ -1,0 +1,108 @@
+{
+  "notice": "Manifeste photo Saint-Martin 2026 — DÉLIBÉRÉMENT séparé de skills/travel-agent/evals/files/web/assets.json, qui est partagé avec les projets Asie et Andaman (carte-thailande.png, carte-andaman-wm.png y coexistent déjà). Aucune entrée SXM n'est ajoutée à ce fichier partagé, pour respecter la consigne 'site vitrine SXM distinct d'Andaman'. Téléchargement uniquement si droits == 'reutilisables' ; sinon conserver l'URL et marquer 'a_verifier'. Aucune photo d'agence ou de plateforme villa (FR ou NL) n'a de droits confirmés à ce jour : aucun téléchargement effectué, y compris pour les offres déjà exclues du critère strict (conservées pour mémoire seulement).",
+  "regle_droits": {
+    "reutilisables": "Usage confirmé par la source elle-même (ex: licence libre, autorisation explicite) — seul cas où fetch_assets.py peut être utilisé.",
+    "lien_externe_uniquement": "Politique explicite du site interdisant la réutilisation (ex: Booking.com) — jamais téléchargé, seulement lié.",
+    "a_verifier": "Statut par défaut pour toute page d'agence/gestionnaire non explicitement licenciée — ne jamais télécharger tant que ce statut n'a pas changé."
+  },
+  "photos": [
+    {
+      "offre_id": "fr-baierouge-villa-laperlabianca",
+      "page_url": "https://www.luxvillavacation.com/la-perla-bianca",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": "Page gestionnaire/propriétaire ; aucune mention de licence trouvée dans le lot Codex reçu"
+    },
+    {
+      "offre_id": "fr-baierouge-villa-laperlabianca",
+      "page_url": "https://stmartinblue.com/villas/vacation-rentals/st-martin/baie-rouge-beach/la-perla-bianca",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": "Site d'agence tierce — droits non vérifiés"
+    },
+    {
+      "offre_id": "fr-baierouge-villa-laperlaclassic",
+      "page_url": "https://stmartinblue.com/villas/vacation-rentals/st-martin/baie-rouge-beach/la-perla-classic",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": ""
+    },
+    {
+      "offre_id": "nl-cupecoy-villa-bahari",
+      "page_url": "https://coralvillassxm.com/vacation-rental/sint-maarten/villa-bahari",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": ""
+    },
+    {
+      "offre_id": "nl-cupecoy-villa-bahari",
+      "page_url": "https://stmartinblue.com/villas/vacation-rentals/st-martin/cupecoy/bahari-at-shore-pointe",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": ""
+    },
+    {
+      "offre_id": "fr-orientbay-hotel-laplantation",
+      "page_url": "https://www.booking.com/hotel/mf/la-plantation.html",
+      "droits": "lien_externe_uniquement",
+      "telechargee": false,
+      "note": "Booking.com interdit explicitement la réutilisation directe (confirmé dans l'artefact Saint-Martin 2026)"
+    },
+    {
+      "offre_id": "fr-baierouge-villa-laperlabianca",
+      "page_url": "https://www.villasinluxury.com/saint-martin/villa-la-perla-bianca",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": "Ajouté Mission A (29/09/2026)"
+    },
+    {
+      "offre_id": "fr-baierouge-villa-barefootbeachbungalow",
+      "page_url": "https://www.luxvillavacation.com/barefootbeachbungalow",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": "Offre exclue du critère strict (pas de jacuzzi) — manifeste conservé pour mémoire, pas de publication"
+    },
+    {
+      "offre_id": "fr-baierouge-villa-bluehorizonbeachbungalow",
+      "page_url": "https://www.luxvillavacation.com/bluehorizonbeachbungalow",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": "Offre exclue du critère strict (pas de jacuzzi, plage rocheuse) — manifeste conservé pour mémoire, pas de publication"
+    },
+    {
+      "offre_id": "nl-corinnesvilla",
+      "page_url": "https://www.corinnesvilla.com/ourvilla",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": "Offre exclue du critère strict"
+    },
+    {
+      "offre_id": "nl-bluesanctuary",
+      "page_url": "https://blue-sanctuary.com/en/overview",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": "Offre exclue du critère strict"
+    },
+    {
+      "offre_id": "nl-beachsidevillas",
+      "page_url": "https://www.beachsidevillas.com/vacation-rentals.html",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": "Offre exclue du critère strict"
+    },
+    {
+      "offre_id": "sxm-soualigahomes-beachhouse",
+      "page_url": "https://www.soualigahomes.com/our-houses/beach-house",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": "Agence légalement vérifiée (Mission C, 29/09/2026) ; droits photo non acquis pour autant"
+    },
+    {
+      "offre_id": "nl-simpsonbay-villa-marie-40weeks",
+      "page_url": "https://rentals.40weeks.fr/listings/98712",
+      "droits": "a_verifier",
+      "telechargee": false,
+      "note": "Offre exclue (accès lagune) — manifeste conservé pour mémoire"
+    }
+  ]
+}
