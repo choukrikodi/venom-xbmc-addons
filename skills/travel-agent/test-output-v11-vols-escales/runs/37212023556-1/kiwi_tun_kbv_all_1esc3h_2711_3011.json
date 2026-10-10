@@ -1,0 +1,92 @@
+=== 2026-10-04T15:11:32+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "TUN", "flyTo": "KBV", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 1, "allow_self_transfer": false, "allow_diff_airport_connection": false, "one_for_city": false, "departureDate": "27/11/2026", "departureDateTo": "30/11/2026", "stopover_to": 3}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"TUN → KBV on 27/11/2026–30/11/2026, 2 adults [≤1 stops/sector; ≤3h layover; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 1,\n  \"itineraries\": [\n    {\n      \"id\": \"19e018bc5132000029e46de2_0|19e018bc5132000029e46de2_1\",\n      \"price\": 731.754596,\n      \"priceFormatted\": \"732 EUR\",\n      \"totalDurationSeconds\": 50100,\n      \"bookingUrl\": \"https://kiwi.com/u/uy8tmu\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-29T10:40:00\",\n        \"arrivalTime\": \"2026-11-30T06:35:00\",\n        \"durationSeconds\": 50100,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T10:40:00\",\n            \"arrivalTime\": \"2026-11-29T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-29T20:55:00\",\n            \"arrivalTime\": \"2026-11-30T06:35:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY422\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 400,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "TUN → KBV on 27/11/2026–30/11/2026, 2 adults [≤1 stops/sector; ≤3h layover; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 1,
+   "itineraries": [
+    {
+     "id": "19e018bc5132000029e46de2_0|19e018bc5132000029e46de2_1",
+     "price": 731.754596,
+     "priceFormatted": "732 EUR",
+     "totalDurationSeconds": 50100,
+     "bookingUrl": "https://kiwi.com/u/uy8tmu",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-29T10:40:00",
+      "arrivalTime": "2026-11-30T06:35:00",
+      "durationSeconds": 50100,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-29T10:40:00",
+        "arrivalTime": "2026-11-29T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-29T20:55:00",
+        "arrivalTime": "2026-11-30T06:35:00",
+        "durationSeconds": 24000,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY422",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 400,
+   "error": null
+  }
+ }
+}

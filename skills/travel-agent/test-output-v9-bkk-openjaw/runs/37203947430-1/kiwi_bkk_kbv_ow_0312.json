@@ -1,0 +1,754 @@
+=== 2026-10-04T12:59:00+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "BKK", "flyTo": "KBV", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false, "one_for_city": false, "departureDate": "03/12/2026", "departureDateTo": "03/12/2026"}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"BKK → KBV on 03/12/2026–03/12/2026, 2 adults [≤2 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"075618bc51360000b7d3b345_0\",\n      \"price\": 121.866098,\n      \"priceFormatted\": \"122 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/vr8rky\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T07:00:00\",\n        \"arrivalTime\": \"2026-12-03T08:30:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T07:00:00\",\n            \"arrivalTime\": \"2026-12-03T08:30:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"VZ\",\n            \"carrierName\": \"Thai Vietjet\",\n            \"flightNumber\": \"VZ340\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075618bc513600001a03ac16_0\",\n      \"price\": 123.0,\n      \"priceFormatted\": \"123 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/9hjvz2\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T19:45:00\",\n        \"arrivalTime\": \"2026-12-03T21:15:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T19:45:00\",\n            \"arrivalTime\": \"2026-12-03T21:15:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG263\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"018b18bc51360000b2ed748c_0\",\n      \"price\": 157.292046,\n      \"priceFormatted\": \"157 EUR\",\n      \"totalDurationSeconds\": 4800,\n      \"bookingUrl\": \"https://kiwi.com/u/yj3g37\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"DMK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T06:15:00\",\n        \"arrivalTime\": \"2026-12-03T07:35:00\",\n        \"durationSeconds\": 4800,\n        \"stops\": 0,\n        \"route\": [\n          \"DMK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"DMK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Don Muang\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T06:15:00\",\n            \"arrivalTime\": \"2026-12-03T07:35:00\",\n            \"durationSeconds\": 4800,\n            \"carrier\": \"SL\",\n            \"carrierName\": \"Thai Lion Air\",\n            \"flightNumber\": \"SL800\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"018b18bc51360000d624d977_0\",\n      \"price\": 175.103408,\n      \"priceFormatted\": \"175 EUR\",\n      \"totalDurationSeconds\": 5100,\n      \"bookingUrl\": \"https://kiwi.com/u/2vs748k\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"DMK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T16:45:00\",\n        \"arrivalTime\": \"2026-12-03T18:10:00\",\n        \"durationSeconds\": 5100,\n        \"stops\": 0,\n        \"route\": [\n          \"DMK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"DMK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Don Muang\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T16:45:00\",\n            \"arrivalTime\": \"2026-12-03T18:10:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"DD\",\n            \"carrierName\": \"Nok Air\",\n            \"flightNumber\": \"DD546\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075618bc51360000fde905a9_0\",\n      \"price\": 178.0,\n      \"priceFormatted\": \"178 EUR\",\n      \"totalDurationSeconds\": 5100,\n      \"bookingUrl\": \"https://kiwi.com/u/gtct3y\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T18:15:00\",\n        \"arrivalTime\": \"2026-12-03T19:40:00\",\n        \"durationSeconds\": 5100,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T18:15:00\",\n            \"arrivalTime\": \"2026-12-03T19:40:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG249\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"018b18bc51360000d1491d6e_0\",\n      \"price\": 184.103408,\n      \"priceFormatted\": \"184 EUR\",\n      \"totalDurationSeconds\": 5100,\n      \"bookingUrl\": \"https://kiwi.com/u/2scyk3\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"DMK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T09:40:00\",\n        \"arrivalTime\": \"2026-12-03T11:05:00\",\n        \"durationSeconds\": 5100,\n        \"stops\": 0,\n        \"route\": [\n          \"DMK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"DMK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Don Muang\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T09:40:00\",\n            \"arrivalTime\": \"2026-12-03T11:05:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"DD\",\n            \"carrierName\": \"Nok Air\",\n            \"flightNumber\": \"DD542\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075618bc51360000f45f4982_0\",\n      \"price\": 192.0,\n      \"priceFormatted\": \"192 EUR\",\n      \"totalDurationSeconds\": 4800,\n      \"bookingUrl\": \"https://kiwi.com/u/h4ymmf\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T10:45:00\",\n        \"arrivalTime\": \"2026-12-03T12:05:00\",\n        \"durationSeconds\": 4800,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T10:45:00\",\n            \"arrivalTime\": \"2026-12-03T12:05:00\",\n            \"durationSeconds\": 4800,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG245\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075618bc513600001ef8d56c_0\",\n      \"price\": 204.866098,\n      \"priceFormatted\": \"205 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/g7h8fk\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T07:00:00\",\n        \"arrivalTime\": \"2026-12-03T08:30:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T07:00:00\",\n            \"arrivalTime\": \"2026-12-03T08:30:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"H1\",\n            \"carrierName\": \"Hahn Air\",\n            \"flightNumber\": \"H14702\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075618bc51360000f3328d9b_0\",\n      \"price\": 207.0,\n      \"priceFormatted\": \"207 EUR\",\n      \"totalDurationSeconds\": 4800,\n      \"bookingUrl\": \"https://kiwi.com/u/uw4hjd5\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T07:35:00\",\n        \"arrivalTime\": \"2026-12-03T08:55:00\",\n        \"durationSeconds\": 4800,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T07:35:00\",\n            \"arrivalTime\": \"2026-12-03T08:55:00\",\n            \"durationSeconds\": 4800,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG241\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075618bc51360000f79b7059_0\",\n      \"price\": 257.866098,\n      \"priceFormatted\": \"258 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/mk58bp\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T18:40:00\",\n        \"arrivalTime\": \"2026-12-03T20:10:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T18:40:00\",\n            \"arrivalTime\": \"2026-12-03T20:10:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"H1\",\n            \"carrierName\": \"Hahn Air\",\n            \"flightNumber\": \"H14704\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075618bc51360000cf380eab_0\",\n      \"price\": 257.866098,\n      \"priceFormatted\": \"258 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/qvfx7f\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T09:00:00\",\n        \"arrivalTime\": \"2026-12-03T10:30:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T09:00:00\",\n            \"arrivalTime\": \"2026-12-03T10:30:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"H1\",\n            \"carrierName\": \"Hahn Air\",\n            \"flightNumber\": \"H11208\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075618bc51360000e9ed8501_0\",\n      \"price\": 257.866098,\n      \"priceFormatted\": \"258 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/u5763m\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T14:25:00\",\n        \"arrivalTime\": \"2026-12-03T15:55:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T14:25:00\",\n            \"arrivalTime\": \"2026-12-03T15:55:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"H1\",\n            \"carrierName\": \"Hahn Air\",\n            \"flightNumber\": \"H14710\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075618bc51360000eda31143_0\",\n      \"price\": 257.866098,\n      \"priceFormatted\": \"258 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/kbt9sd\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T16:55:00\",\n        \"arrivalTime\": \"2026-12-03T18:25:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T16:55:00\",\n            \"arrivalTime\": \"2026-12-03T18:25:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"H1\",\n            \"carrierName\": \"Hahn Air\",\n            \"flightNumber\": \"H11234\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075618bc51360000b33c3e01_0|075618bc51360000b33c3e01_1\",\n      \"price\": 364.0,\n      \"priceFormatted\": \"364 EUR\",\n      \"totalDurationSeconds\": 26100,\n      \"bookingUrl\": \"https://kiwi.com/u/nc3gz5\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T06:00:00\",\n        \"arrivalTime\": \"2026-12-03T13:15:00\",\n        \"durationSeconds\": 26100,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"USM\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T06:00:00\",\n            \"arrivalTime\": \"2026-12-03T07:10:00\",\n            \"durationSeconds\": 4200,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG101\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"USM\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Ko Samui\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international de Ko Samui\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T12:25:00\",\n            \"arrivalTime\": \"2026-12-03T13:15:00\",\n            \"durationSeconds\": 3000,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG265\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"018b18bc5136000025af7f98_0|018b18bc5136000025af7f98_1\",\n      \"price\": 439.0,\n      \"priceFormatted\": \"439 EUR\",\n      \"totalDurationSeconds\": 15900,\n      \"bookingUrl\": \"https://kiwi.com/u/ppcj5n\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"DMK\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-12-03T08:50:00\",\n        \"arrivalTime\": \"2026-12-03T13:15:00\",\n        \"durationSeconds\": 15900,\n        \"stops\": 1,\n        \"route\": [\n          \"DMK\",\n          \"USM\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"DMK\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international Don Muang\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T08:50:00\",\n            \"arrivalTime\": \"2026-12-03T10:25:00\",\n            \"durationSeconds\": 5700,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG451\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"USM\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Ko Samui\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international de Ko Samui\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-03T12:25:00\",\n            \"arrivalTime\": \"2026-12-03T13:15:00\",\n            \"durationSeconds\": 3000,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG265\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 4877,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "BKK → KBV on 03/12/2026–03/12/2026, 2 adults [≤2 stops/sector; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 15,
+   "itineraries": [
+    {
+     "id": "075618bc51360000b7d3b345_0",
+     "price": 121.866098,
+     "priceFormatted": "122 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/vr8rky",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T07:00:00",
+      "arrivalTime": "2026-12-03T08:30:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T07:00:00",
+        "arrivalTime": "2026-12-03T08:30:00",
+        "durationSeconds": 5400,
+        "carrier": "VZ",
+        "carrierName": "Thai Vietjet",
+        "flightNumber": "VZ340",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075618bc513600001a03ac16_0",
+     "price": 123.0,
+     "priceFormatted": "123 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/9hjvz2",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T19:45:00",
+      "arrivalTime": "2026-12-03T21:15:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T19:45:00",
+        "arrivalTime": "2026-12-03T21:15:00",
+        "durationSeconds": 5400,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG263",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "018b18bc51360000b2ed748c_0",
+     "price": 157.292046,
+     "priceFormatted": "157 EUR",
+     "totalDurationSeconds": 4800,
+     "bookingUrl": "https://kiwi.com/u/yj3g37",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "DMK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T06:15:00",
+      "arrivalTime": "2026-12-03T07:35:00",
+      "durationSeconds": 4800,
+      "stops": 0,
+      "route": [
+       "DMK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "DMK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Don Muang",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T06:15:00",
+        "arrivalTime": "2026-12-03T07:35:00",
+        "durationSeconds": 4800,
+        "carrier": "SL",
+        "carrierName": "Thai Lion Air",
+        "flightNumber": "SL800",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "018b18bc51360000d624d977_0",
+     "price": 175.103408,
+     "priceFormatted": "175 EUR",
+     "totalDurationSeconds": 5100,
+     "bookingUrl": "https://kiwi.com/u/2vs748k",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "DMK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T16:45:00",
+      "arrivalTime": "2026-12-03T18:10:00",
+      "durationSeconds": 5100,
+      "stops": 0,
+      "route": [
+       "DMK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "DMK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Don Muang",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T16:45:00",
+        "arrivalTime": "2026-12-03T18:10:00",
+        "durationSeconds": 5100,
+        "carrier": "DD",
+        "carrierName": "Nok Air",
+        "flightNumber": "DD546",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075618bc51360000fde905a9_0",
+     "price": 178.0,
+     "priceFormatted": "178 EUR",
+     "totalDurationSeconds": 5100,
+     "bookingUrl": "https://kiwi.com/u/gtct3y",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T18:15:00",
+      "arrivalTime": "2026-12-03T19:40:00",
+      "durationSeconds": 5100,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T18:15:00",
+        "arrivalTime": "2026-12-03T19:40:00",
+        "durationSeconds": 5100,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG249",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "018b18bc51360000d1491d6e_0",
+     "price": 184.103408,
+     "priceFormatted": "184 EUR",
+     "totalDurationSeconds": 5100,
+     "bookingUrl": "https://kiwi.com/u/2scyk3",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "DMK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T09:40:00",
+      "arrivalTime": "2026-12-03T11:05:00",
+      "durationSeconds": 5100,
+      "stops": 0,
+      "route": [
+       "DMK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "DMK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Don Muang",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T09:40:00",
+        "arrivalTime": "2026-12-03T11:05:00",
+        "durationSeconds": 5100,
+        "carrier": "DD",
+        "carrierName": "Nok Air",
+        "flightNumber": "DD542",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075618bc51360000f45f4982_0",
+     "price": 192.0,
+     "priceFormatted": "192 EUR",
+     "totalDurationSeconds": 4800,
+     "bookingUrl": "https://kiwi.com/u/h4ymmf",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T10:45:00",
+      "arrivalTime": "2026-12-03T12:05:00",
+      "durationSeconds": 4800,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T10:45:00",
+        "arrivalTime": "2026-12-03T12:05:00",
+        "durationSeconds": 4800,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG245",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075618bc513600001ef8d56c_0",
+     "price": 204.866098,
+     "priceFormatted": "205 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/g7h8fk",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T07:00:00",
+      "arrivalTime": "2026-12-03T08:30:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T07:00:00",
+        "arrivalTime": "2026-12-03T08:30:00",
+        "durationSeconds": 5400,
+        "carrier": "H1",
+        "carrierName": "Hahn Air",
+        "flightNumber": "H14702",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075618bc51360000f3328d9b_0",
+     "price": 207.0,
+     "priceFormatted": "207 EUR",
+     "totalDurationSeconds": 4800,
+     "bookingUrl": "https://kiwi.com/u/uw4hjd5",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T07:35:00",
+      "arrivalTime": "2026-12-03T08:55:00",
+      "durationSeconds": 4800,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T07:35:00",
+        "arrivalTime": "2026-12-03T08:55:00",
+        "durationSeconds": 4800,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG241",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075618bc51360000f79b7059_0",
+     "price": 257.866098,
+     "priceFormatted": "258 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/mk58bp",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T18:40:00",
+      "arrivalTime": "2026-12-03T20:10:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T18:40:00",
+        "arrivalTime": "2026-12-03T20:10:00",
+        "durationSeconds": 5400,
+        "carrier": "H1",
+        "carrierName": "Hahn Air",
+        "flightNumber": "H14704",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075618bc51360000cf380eab_0",
+     "price": 257.866098,
+     "priceFormatted": "258 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/qvfx7f",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T09:00:00",
+      "arrivalTime": "2026-12-03T10:30:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T09:00:00",
+        "arrivalTime": "2026-12-03T10:30:00",
+        "durationSeconds": 5400,
+        "carrier": "H1",
+        "carrierName": "Hahn Air",
+        "flightNumber": "H11208",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075618bc51360000e9ed8501_0",
+     "price": 257.866098,
+     "priceFormatted": "258 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/u5763m",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T14:25:00",
+      "arrivalTime": "2026-12-03T15:55:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T14:25:00",
+        "arrivalTime": "2026-12-03T15:55:00",
+        "durationSeconds": 5400,
+        "carrier": "H1",
+        "carrierName": "Hahn Air",
+        "flightNumber": "H14710",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075618bc51360000eda31143_0",
+     "price": 257.866098,
+     "priceFormatted": "258 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/kbt9sd",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T16:55:00",
+      "arrivalTime": "2026-12-03T18:25:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T16:55:00",
+        "arrivalTime": "2026-12-03T18:25:00",
+        "durationSeconds": 5400,
+        "carrier": "H1",
+        "carrierName": "Hahn Air",
+        "flightNumber": "H11234",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075618bc51360000b33c3e01_0|075618bc51360000b33c3e01_1",
+     "price": 364.0,
+     "priceFormatted": "364 EUR",
+     "totalDurationSeconds": 26100,
+     "bookingUrl": "https://kiwi.com/u/nc3gz5",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T06:00:00",
+      "arrivalTime": "2026-12-03T13:15:00",
+      "durationSeconds": 26100,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "USM",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "USM",
+        "fromCity": "Bangkok",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T06:00:00",
+        "arrivalTime": "2026-12-03T07:10:00",
+        "durationSeconds": 4200,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG101",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "USM",
+        "to": "KBV",
+        "fromCity": "Ko Samui",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international de Ko Samui",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T12:25:00",
+        "arrivalTime": "2026-12-03T13:15:00",
+        "durationSeconds": 3000,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG265",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "018b18bc5136000025af7f98_0|018b18bc5136000025af7f98_1",
+     "price": 439.0,
+     "priceFormatted": "439 EUR",
+     "totalDurationSeconds": 15900,
+     "bookingUrl": "https://kiwi.com/u/ppcj5n",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "DMK",
+      "to": "KBV",
+      "departureTime": "2026-12-03T08:50:00",
+      "arrivalTime": "2026-12-03T13:15:00",
+      "durationSeconds": 15900,
+      "stops": 1,
+      "route": [
+       "DMK",
+       "USM",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "DMK",
+        "to": "USM",
+        "fromCity": "Bangkok",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international Don Muang",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T08:50:00",
+        "arrivalTime": "2026-12-03T10:25:00",
+        "durationSeconds": 5700,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG451",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "USM",
+        "to": "KBV",
+        "fromCity": "Ko Samui",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international de Ko Samui",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-03T12:25:00",
+        "arrivalTime": "2026-12-03T13:15:00",
+        "durationSeconds": 3000,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG265",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 4877,
+   "error": null
+  }
+ }
+}

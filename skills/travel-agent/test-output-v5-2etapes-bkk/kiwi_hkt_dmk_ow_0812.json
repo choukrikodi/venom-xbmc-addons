@@ -1,0 +1,718 @@
+=== 2026-09-24T23:07:15+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "HKT", "flyTo": "DMK", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 1, "allow_self_transfer": false, "one_for_city": false, "departureDate": "08/12/2026", "departureDateFlexDays": 1}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"HKT → DMK on 08/12/2026 ±1d, 2 adults [≤1 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"2365018b513c0000578006c1_0\",\n      \"price\": 136.949254,\n      \"priceFormatted\": \"137 EUR\",\n      \"totalDurationSeconds\": 4800,\n      \"bookingUrl\": \"https://kiwi.com/u/x5nnxh\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-09T06:30:00\",\n        \"arrivalTime\": \"2026-12-09T07:50:00\",\n        \"durationSeconds\": 4800,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T06:30:00\",\n            \"arrivalTime\": \"2026-12-09T07:50:00\",\n            \"durationSeconds\": 4800,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3036\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"2365018b513c000065b66443_0\",\n      \"price\": 136.949254,\n      \"priceFormatted\": \"137 EUR\",\n      \"totalDurationSeconds\": 5100,\n      \"bookingUrl\": \"https://kiwi.com/u/yuywrw\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-09T23:10:00\",\n        \"arrivalTime\": \"2026-12-10T00:35:00\",\n        \"durationSeconds\": 5100,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T23:10:00\",\n            \"arrivalTime\": \"2026-12-10T00:35:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3016\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"2365018b513c0000b0382bc6_0\",\n      \"price\": 136.949254,\n      \"priceFormatted\": \"137 EUR\",\n      \"totalDurationSeconds\": 5100,\n      \"bookingUrl\": \"https://kiwi.com/u/q7g987\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-09T09:00:00\",\n        \"arrivalTime\": \"2026-12-09T10:25:00\",\n        \"durationSeconds\": 5100,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T09:00:00\",\n            \"arrivalTime\": \"2026-12-09T10:25:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3038\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"2365018b513b00000216bb7b_0\",\n      \"price\": 136.949254,\n      \"priceFormatted\": \"137 EUR\",\n      \"totalDurationSeconds\": 5100,\n      \"bookingUrl\": \"https://kiwi.com/u/uxv2jh\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-08T21:55:00\",\n        \"arrivalTime\": \"2026-12-08T23:20:00\",\n        \"durationSeconds\": 5100,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-08T21:55:00\",\n            \"arrivalTime\": \"2026-12-08T23:20:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3032\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"2365018b513b0000374d1de0_0\",\n      \"price\": 136.949254,\n      \"priceFormatted\": \"137 EUR\",\n      \"totalDurationSeconds\": 5100,\n      \"bookingUrl\": \"https://kiwi.com/u/g23kht\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-08T23:10:00\",\n        \"arrivalTime\": \"2026-12-09T00:35:00\",\n        \"durationSeconds\": 5100,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-08T23:10:00\",\n            \"arrivalTime\": \"2026-12-09T00:35:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3016\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"2365018b513b0000fbd86324_0\",\n      \"price\": 136.949254,\n      \"priceFormatted\": \"137 EUR\",\n      \"totalDurationSeconds\": 5100,\n      \"bookingUrl\": \"https://kiwi.com/u/2vzc4xy\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-08T20:40:00\",\n        \"arrivalTime\": \"2026-12-08T22:05:00\",\n        \"durationSeconds\": 5100,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-08T20:40:00\",\n            \"arrivalTime\": \"2026-12-08T22:05:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3028\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"2365018b513c0000a9231a87_0\",\n      \"price\": 136.949254,\n      \"priceFormatted\": \"137 EUR\",\n      \"totalDurationSeconds\": 5100,\n      \"bookingUrl\": \"https://kiwi.com/u/32zhk6\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-09T20:40:00\",\n        \"arrivalTime\": \"2026-12-09T22:05:00\",\n        \"durationSeconds\": 5100,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T20:40:00\",\n            \"arrivalTime\": \"2026-12-09T22:05:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3028\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"2365018b513c0000a09556ac_0\",\n      \"price\": 136.949254,\n      \"priceFormatted\": \"137 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/wq22mu\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-09T18:40:00\",\n        \"arrivalTime\": \"2026-12-09T20:10:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T18:40:00\",\n            \"arrivalTime\": \"2026-12-09T20:10:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3024\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"2365018b513c00008cd5c176_0\",\n      \"price\": 136.949254,\n      \"priceFormatted\": \"137 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/2njntb\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-09T19:55:00\",\n        \"arrivalTime\": \"2026-12-09T21:25:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T19:55:00\",\n            \"arrivalTime\": \"2026-12-09T21:25:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3010\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"2365018b513b0000de2eb8d5_0\",\n      \"price\": 136.949254,\n      \"priceFormatted\": \"137 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/juznjc\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-08T19:55:00\",\n        \"arrivalTime\": \"2026-12-08T21:25:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-08T19:55:00\",\n            \"arrivalTime\": \"2026-12-08T21:25:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3010\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"2365018b513b0000f26e2f0f_0\",\n      \"price\": 136.949254,\n      \"priceFormatted\": \"137 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/qvhh7xv\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-08T19:00:00\",\n        \"arrivalTime\": \"2026-12-08T20:30:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-08T19:00:00\",\n            \"arrivalTime\": \"2026-12-08T20:30:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3024\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"2365018b513c000049f6f399_0\",\n      \"price\": 136.949254,\n      \"priceFormatted\": \"137 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/6fx6u8\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-09T18:05:00\",\n        \"arrivalTime\": \"2026-12-09T19:35:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T18:05:00\",\n            \"arrivalTime\": \"2026-12-09T19:35:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3022\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"2365018b513b0000057b7f62_0\",\n      \"price\": 137.949254,\n      \"priceFormatted\": \"138 EUR\",\n      \"totalDurationSeconds\": 4800,\n      \"bookingUrl\": \"https://kiwi.com/u/w2cngk\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-08T06:30:00\",\n        \"arrivalTime\": \"2026-12-08T07:50:00\",\n        \"durationSeconds\": 4800,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-08T06:30:00\",\n            \"arrivalTime\": \"2026-12-08T07:50:00\",\n            \"durationSeconds\": 4800,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3036\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"2365018b513a00004e56e2c8_0\",\n      \"price\": 137.949254,\n      \"priceFormatted\": \"138 EUR\",\n      \"totalDurationSeconds\": 5100,\n      \"bookingUrl\": \"https://kiwi.com/u/wbgwm4\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-07T23:10:00\",\n        \"arrivalTime\": \"2026-12-08T00:35:00\",\n        \"durationSeconds\": 5100,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T23:10:00\",\n            \"arrivalTime\": \"2026-12-08T00:35:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3016\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"2365018b513b0000e2c35265_0\",\n      \"price\": 138.949254,\n      \"priceFormatted\": \"139 EUR\",\n      \"totalDurationSeconds\": 5100,\n      \"bookingUrl\": \"https://kiwi.com/u/t4sjzn\",\n      \"imageId\": \"bangkok_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"DMK\",\n        \"departureTime\": \"2026-12-08T09:00:00\",\n        \"arrivalTime\": \"2026-12-08T10:25:00\",\n        \"durationSeconds\": 5100,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"DMK\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DMK\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Don Muang\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-08T09:00:00\",\n            \"arrivalTime\": \"2026-12-08T10:25:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3038\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 715,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "HKT → DMK on 08/12/2026 ±1d, 2 adults [≤1 stops/sector; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 15,
+   "itineraries": [
+    {
+     "id": "2365018b513c0000578006c1_0",
+     "price": 136.949254,
+     "priceFormatted": "137 EUR",
+     "totalDurationSeconds": 4800,
+     "bookingUrl": "https://kiwi.com/u/x5nnxh",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-09T06:30:00",
+      "arrivalTime": "2026-12-09T07:50:00",
+      "durationSeconds": 4800,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T06:30:00",
+        "arrivalTime": "2026-12-09T07:50:00",
+        "durationSeconds": 4800,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3036",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "2365018b513c000065b66443_0",
+     "price": 136.949254,
+     "priceFormatted": "137 EUR",
+     "totalDurationSeconds": 5100,
+     "bookingUrl": "https://kiwi.com/u/yuywrw",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-09T23:10:00",
+      "arrivalTime": "2026-12-10T00:35:00",
+      "durationSeconds": 5100,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T23:10:00",
+        "arrivalTime": "2026-12-10T00:35:00",
+        "durationSeconds": 5100,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3016",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "2365018b513c0000b0382bc6_0",
+     "price": 136.949254,
+     "priceFormatted": "137 EUR",
+     "totalDurationSeconds": 5100,
+     "bookingUrl": "https://kiwi.com/u/q7g987",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-09T09:00:00",
+      "arrivalTime": "2026-12-09T10:25:00",
+      "durationSeconds": 5100,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T09:00:00",
+        "arrivalTime": "2026-12-09T10:25:00",
+        "durationSeconds": 5100,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3038",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "2365018b513b00000216bb7b_0",
+     "price": 136.949254,
+     "priceFormatted": "137 EUR",
+     "totalDurationSeconds": 5100,
+     "bookingUrl": "https://kiwi.com/u/uxv2jh",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-08T21:55:00",
+      "arrivalTime": "2026-12-08T23:20:00",
+      "durationSeconds": 5100,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-08T21:55:00",
+        "arrivalTime": "2026-12-08T23:20:00",
+        "durationSeconds": 5100,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3032",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "2365018b513b0000374d1de0_0",
+     "price": 136.949254,
+     "priceFormatted": "137 EUR",
+     "totalDurationSeconds": 5100,
+     "bookingUrl": "https://kiwi.com/u/g23kht",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-08T23:10:00",
+      "arrivalTime": "2026-12-09T00:35:00",
+      "durationSeconds": 5100,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-08T23:10:00",
+        "arrivalTime": "2026-12-09T00:35:00",
+        "durationSeconds": 5100,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3016",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "2365018b513b0000fbd86324_0",
+     "price": 136.949254,
+     "priceFormatted": "137 EUR",
+     "totalDurationSeconds": 5100,
+     "bookingUrl": "https://kiwi.com/u/2vzc4xy",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-08T20:40:00",
+      "arrivalTime": "2026-12-08T22:05:00",
+      "durationSeconds": 5100,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-08T20:40:00",
+        "arrivalTime": "2026-12-08T22:05:00",
+        "durationSeconds": 5100,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3028",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "2365018b513c0000a9231a87_0",
+     "price": 136.949254,
+     "priceFormatted": "137 EUR",
+     "totalDurationSeconds": 5100,
+     "bookingUrl": "https://kiwi.com/u/32zhk6",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-09T20:40:00",
+      "arrivalTime": "2026-12-09T22:05:00",
+      "durationSeconds": 5100,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T20:40:00",
+        "arrivalTime": "2026-12-09T22:05:00",
+        "durationSeconds": 5100,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3028",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "2365018b513c0000a09556ac_0",
+     "price": 136.949254,
+     "priceFormatted": "137 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/wq22mu",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-09T18:40:00",
+      "arrivalTime": "2026-12-09T20:10:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T18:40:00",
+        "arrivalTime": "2026-12-09T20:10:00",
+        "durationSeconds": 5400,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3024",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "2365018b513c00008cd5c176_0",
+     "price": 136.949254,
+     "priceFormatted": "137 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/2njntb",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-09T19:55:00",
+      "arrivalTime": "2026-12-09T21:25:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T19:55:00",
+        "arrivalTime": "2026-12-09T21:25:00",
+        "durationSeconds": 5400,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3010",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "2365018b513b0000de2eb8d5_0",
+     "price": 136.949254,
+     "priceFormatted": "137 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/juznjc",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-08T19:55:00",
+      "arrivalTime": "2026-12-08T21:25:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-08T19:55:00",
+        "arrivalTime": "2026-12-08T21:25:00",
+        "durationSeconds": 5400,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3010",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "2365018b513b0000f26e2f0f_0",
+     "price": 136.949254,
+     "priceFormatted": "137 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/qvhh7xv",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-08T19:00:00",
+      "arrivalTime": "2026-12-08T20:30:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-08T19:00:00",
+        "arrivalTime": "2026-12-08T20:30:00",
+        "durationSeconds": 5400,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3024",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "2365018b513c000049f6f399_0",
+     "price": 136.949254,
+     "priceFormatted": "137 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/6fx6u8",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-09T18:05:00",
+      "arrivalTime": "2026-12-09T19:35:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T18:05:00",
+        "arrivalTime": "2026-12-09T19:35:00",
+        "durationSeconds": 5400,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3022",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "2365018b513b0000057b7f62_0",
+     "price": 137.949254,
+     "priceFormatted": "138 EUR",
+     "totalDurationSeconds": 4800,
+     "bookingUrl": "https://kiwi.com/u/w2cngk",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-08T06:30:00",
+      "arrivalTime": "2026-12-08T07:50:00",
+      "durationSeconds": 4800,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-08T06:30:00",
+        "arrivalTime": "2026-12-08T07:50:00",
+        "durationSeconds": 4800,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3036",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "2365018b513a00004e56e2c8_0",
+     "price": 137.949254,
+     "priceFormatted": "138 EUR",
+     "totalDurationSeconds": 5100,
+     "bookingUrl": "https://kiwi.com/u/wbgwm4",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-07T23:10:00",
+      "arrivalTime": "2026-12-08T00:35:00",
+      "durationSeconds": 5100,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-07T23:10:00",
+        "arrivalTime": "2026-12-08T00:35:00",
+        "durationSeconds": 5100,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3016",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "2365018b513b0000e2c35265_0",
+     "price": 138.949254,
+     "priceFormatted": "139 EUR",
+     "totalDurationSeconds": 5100,
+     "bookingUrl": "https://kiwi.com/u/t4sjzn",
+     "imageId": "bangkok_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "DMK",
+      "departureTime": "2026-12-08T09:00:00",
+      "arrivalTime": "2026-12-08T10:25:00",
+      "durationSeconds": 5100,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "DMK"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DMK",
+        "fromCity": "Phuket",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Don Muang",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-08T09:00:00",
+        "arrivalTime": "2026-12-08T10:25:00",
+        "durationSeconds": 5100,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3038",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 715,
+   "error": null
+  }
+ }
+}

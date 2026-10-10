@@ -1,0 +1,1258 @@
+=== 2026-10-04T14:15:15+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "TUN", "flyTo": "KBV", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false, "one_for_city": false, "departureDate": "18/11/2026", "departureDateTo": "18/11/2026"}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"TUN → KBV on 18/11/2026–18/11/2026, 2 adults [≤2 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"19e018bc51270000f1cc0c13_0|19e018bc51270000f1cc0c13_1|19e018bc51270000f1cc0c13_2\",\n      \"price\": 1187.0,\n      \"priceFormatted\": \"1187 EUR\",\n      \"totalDurationSeconds\": 78000,\n      \"bookingUrl\": \"https://kiwi.com/u/qp5ks6\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T16:00:00\",\n        \"arrivalTime\": \"2026-11-19T19:40:00\",\n        \"durationSeconds\": 78000,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-18T16:00:00\",\n            \"arrivalTime\": \"2026-11-18T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T01:45:00\",\n            \"arrivalTime\": \"2026-11-19T12:15:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR834\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T18:15:00\",\n            \"arrivalTime\": \"2026-11-19T19:40:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG249\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc51270000890dca03_0|19e018bc51270000890dca03_1|19e018bc51270000890dca03_2\",\n      \"price\": 1187.0,\n      \"priceFormatted\": \"1187 EUR\",\n      \"totalDurationSeconds\": 78000,\n      \"bookingUrl\": \"https://kiwi.com/u/r35g8j\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T16:00:00\",\n        \"arrivalTime\": \"2026-11-19T19:40:00\",\n        \"durationSeconds\": 78000,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-18T16:00:00\",\n            \"arrivalTime\": \"2026-11-18T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T02:35:00\",\n            \"arrivalTime\": \"2026-11-19T13:05:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR836\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T18:15:00\",\n            \"arrivalTime\": \"2026-11-19T19:40:00\",\n            \"durationSeconds\": 5100,\n            \"carrier\": \"TG\",\n            \"carrierName\": \"Thai Airways\",\n            \"flightNumber\": \"TG249\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512700006d65c01a_0|19e018bc512700006d65c01a_1|19e018bc512700006d65c01a_2\",\n      \"price\": 1189.0,\n      \"priceFormatted\": \"1189 EUR\",\n      \"totalDurationSeconds\": 83700,\n      \"bookingUrl\": \"https://kiwi.com/u/69hz7w\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T16:00:00\",\n        \"arrivalTime\": \"2026-11-19T21:15:00\",\n        \"durationSeconds\": 83700,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-18T16:00:00\",\n            \"arrivalTime\": \"2026-11-18T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T01:45:00\",\n            \"arrivalTime\": \"2026-11-19T12:15:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR834\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T19:45:00\",\n            \"arrivalTime\": \"2026-11-19T21:15:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR4385\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc5127000070aa11b8_0|19e018bc5127000070aa11b8_1|19e018bc5127000070aa11b8_2\",\n      \"price\": 1189.0,\n      \"priceFormatted\": \"1189 EUR\",\n      \"totalDurationSeconds\": 83700,\n      \"bookingUrl\": \"https://kiwi.com/u/urw5nf\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T16:00:00\",\n        \"arrivalTime\": \"2026-11-19T21:15:00\",\n        \"durationSeconds\": 83700,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-18T16:00:00\",\n            \"arrivalTime\": \"2026-11-18T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T02:35:00\",\n            \"arrivalTime\": \"2026-11-19T13:05:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR836\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T19:45:00\",\n            \"arrivalTime\": \"2026-11-19T21:15:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR4385\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc51270000fbcadb91_0|19e018bc51270000fbcadb91_1|19e018bc51270000fbcadb91_2\",\n      \"price\": 1196.0,\n      \"priceFormatted\": \"1196 EUR\",\n      \"totalDurationSeconds\": 126300,\n      \"bookingUrl\": \"https://kiwi.com/u/5y7hd2\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T16:00:00\",\n        \"arrivalTime\": \"2026-11-20T09:05:00\",\n        \"durationSeconds\": 126300,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-18T16:00:00\",\n            \"arrivalTime\": \"2026-11-18T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T08:20:00\",\n            \"arrivalTime\": \"2026-11-19T18:50:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR832\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-20T07:35:00\",\n            \"arrivalTime\": \"2026-11-20T09:05:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR4361\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc51270000c05578d5_0|19e018bc51270000c05578d5_1|19e018bc51270000c05578d5_2\",\n      \"price\": 1196.0,\n      \"priceFormatted\": \"1196 EUR\",\n      \"totalDurationSeconds\": 126300,\n      \"bookingUrl\": \"https://kiwi.com/u/y2pq3z\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T16:00:00\",\n        \"arrivalTime\": \"2026-11-20T09:05:00\",\n        \"durationSeconds\": 126300,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-18T16:00:00\",\n            \"arrivalTime\": \"2026-11-18T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T02:35:00\",\n            \"arrivalTime\": \"2026-11-19T13:05:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR836\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-20T07:35:00\",\n            \"arrivalTime\": \"2026-11-20T09:05:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR4361\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc51270000318f7d7f_0|19e018bc51270000318f7d7f_1|19e018bc51270000318f7d7f_2\",\n      \"price\": 1196.0,\n      \"priceFormatted\": \"1196 EUR\",\n      \"totalDurationSeconds\": 126300,\n      \"bookingUrl\": \"https://kiwi.com/u/9jx2h4\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T16:00:00\",\n        \"arrivalTime\": \"2026-11-20T09:05:00\",\n        \"durationSeconds\": 126300,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-18T16:00:00\",\n            \"arrivalTime\": \"2026-11-18T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T08:55:00\",\n            \"arrivalTime\": \"2026-11-19T19:25:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR826\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-20T07:35:00\",\n            \"arrivalTime\": \"2026-11-20T09:05:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR4361\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc51270000dd9aa977_0|19e018bc51270000dd9aa977_1|19e018bc51270000dd9aa977_2\",\n      \"price\": 1196.0,\n      \"priceFormatted\": \"1196 EUR\",\n      \"totalDurationSeconds\": 126300,\n      \"bookingUrl\": \"https://kiwi.com/u/h4hyku\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T16:00:00\",\n        \"arrivalTime\": \"2026-11-20T09:05:00\",\n        \"durationSeconds\": 126300,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-18T16:00:00\",\n            \"arrivalTime\": \"2026-11-18T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T01:45:00\",\n            \"arrivalTime\": \"2026-11-19T12:15:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR834\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-20T07:35:00\",\n            \"arrivalTime\": \"2026-11-20T09:05:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR4361\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512700007febe3a4_0|19e018bc512700007febe3a4_1|19e018bc512700007febe3a4_2\",\n      \"price\": 1201.0,\n      \"priceFormatted\": \"1201 EUR\",\n      \"totalDurationSeconds\": 170100,\n      \"bookingUrl\": \"https://kiwi.com/u/bhtyv98\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T16:00:00\",\n        \"arrivalTime\": \"2026-11-20T21:15:00\",\n        \"durationSeconds\": 170100,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-18T16:00:00\",\n            \"arrivalTime\": \"2026-11-18T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T19:45:00\",\n            \"arrivalTime\": \"2026-11-20T06:15:00\",\n            \"durationSeconds\": 23400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR830\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-20T19:45:00\",\n            \"arrivalTime\": \"2026-11-20T21:15:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR4385\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc5127000008d4a52c_0|19e018bc5127000008d4a52c_1|19e018bc5127000008d4a52c_2\",\n      \"price\": 1201.0,\n      \"priceFormatted\": \"1201 EUR\",\n      \"totalDurationSeconds\": 170100,\n      \"bookingUrl\": \"https://kiwi.com/u/2tux2t\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T16:00:00\",\n        \"arrivalTime\": \"2026-11-20T21:15:00\",\n        \"durationSeconds\": 170100,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-18T16:00:00\",\n            \"arrivalTime\": \"2026-11-18T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T20:20:00\",\n            \"arrivalTime\": \"2026-11-20T06:40:00\",\n            \"durationSeconds\": 22800,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR838\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-20T19:45:00\",\n            \"arrivalTime\": \"2026-11-20T21:15:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR4385\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512700002b4a7fcd_0|19e018bc512700002b4a7fcd_1|19e018bc512700002b4a7fcd_2\",\n      \"price\": 1323.307096,\n      \"priceFormatted\": \"1323 EUR\",\n      \"totalDurationSeconds\": 88500,\n      \"bookingUrl\": \"https://kiwi.com/u/75w4zff\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T11:35:00\",\n        \"arrivalTime\": \"2026-11-19T18:10:00\",\n        \"durationSeconds\": 88500,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"CAI\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"CAI\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Le Caire\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international du Caire\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Égypte\",\n            \"departureTime\": \"2026-11-18T11:35:00\",\n            \"arrivalTime\": \"2026-11-18T15:45:00\",\n            \"durationSeconds\": 11400,\n            \"carrier\": \"MS\",\n            \"carrierName\": \"Egyptair\",\n            \"flightNumber\": \"MS844\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"CAI\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Le Caire\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international du Caire\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Égypte\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-18T19:00:00\",\n            \"arrivalTime\": \"2026-11-19T00:20:00\",\n            \"durationSeconds\": 12000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY716\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T08:35:00\",\n            \"arrivalTime\": \"2026-11-19T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512700001c1aed11_0|19e018bc512700001c1aed11_1|19e018bc512700001c1aed11_2\",\n      \"price\": 1735.09056,\n      \"priceFormatted\": \"1735 EUR\",\n      \"totalDurationSeconds\": 88500,\n      \"bookingUrl\": \"https://kiwi.com/u/wkcgjc\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T11:35:00\",\n        \"arrivalTime\": \"2026-11-19T18:10:00\",\n        \"durationSeconds\": 88500,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"CAI\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"CAI\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Le Caire\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international du Caire\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Égypte\",\n            \"departureTime\": \"2026-11-18T11:35:00\",\n            \"arrivalTime\": \"2026-11-18T15:45:00\",\n            \"durationSeconds\": 11400,\n            \"carrier\": \"MS\",\n            \"carrierName\": \"Egyptair\",\n            \"flightNumber\": \"MS844\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"CAI\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Le Caire\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international du Caire\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Égypte\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-18T22:45:00\",\n            \"arrivalTime\": \"2026-11-19T04:05:00\",\n            \"durationSeconds\": 12000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY4904\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T08:35:00\",\n            \"arrivalTime\": \"2026-11-19T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512700009adc8cb9_0|19e018bc512700009adc8cb9_1|19e018bc512700009adc8cb9_2\",\n      \"price\": 6451.307096,\n      \"priceFormatted\": \"6451 EUR\",\n      \"totalDurationSeconds\": 88500,\n      \"bookingUrl\": \"https://kiwi.com/u/r3962r\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T11:35:00\",\n        \"arrivalTime\": \"2026-11-19T18:10:00\",\n        \"durationSeconds\": 88500,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"CAI\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"CAI\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Le Caire\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international du Caire\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Égypte\",\n            \"departureTime\": \"2026-11-18T11:35:00\",\n            \"arrivalTime\": \"2026-11-18T15:45:00\",\n            \"durationSeconds\": 11400,\n            \"carrier\": \"MS\",\n            \"carrierName\": \"Egyptair\",\n            \"flightNumber\": \"MS844\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"CAI\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Le Caire\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international du Caire\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Égypte\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-18T19:00:00\",\n            \"arrivalTime\": \"2026-11-19T00:20:00\",\n            \"durationSeconds\": 12000,\n            \"carrier\": \"MS\",\n            \"carrierName\": \"Egyptair\",\n            \"flightNumber\": \"MS8070\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T08:35:00\",\n            \"arrivalTime\": \"2026-11-19T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512700009da86bb8_0|19e018bc512700009da86bb8_1|19e018bc512700009da86bb8_2\",\n      \"price\": 6629.09056,\n      \"priceFormatted\": \"6629 EUR\",\n      \"totalDurationSeconds\": 88500,\n      \"bookingUrl\": \"https://kiwi.com/u/mykscs\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T11:35:00\",\n        \"arrivalTime\": \"2026-11-19T18:10:00\",\n        \"durationSeconds\": 88500,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"CAI\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"CAI\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Le Caire\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international du Caire\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Égypte\",\n            \"departureTime\": \"2026-11-18T11:35:00\",\n            \"arrivalTime\": \"2026-11-18T15:45:00\",\n            \"durationSeconds\": 11400,\n            \"carrier\": \"MS\",\n            \"carrierName\": \"Egyptair\",\n            \"flightNumber\": \"MS844\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"CAI\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Le Caire\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international du Caire\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Égypte\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-18T22:45:00\",\n            \"arrivalTime\": \"2026-11-19T04:05:00\",\n            \"durationSeconds\": 12000,\n            \"carrier\": \"MS\",\n            \"carrierName\": \"Egyptair\",\n            \"flightNumber\": \"MS916\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T08:35:00\",\n            \"arrivalTime\": \"2026-11-19T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc5127000043f80ead_0|19e018bc5127000043f80ead_1|19e018bc5127000043f80ead_2\",\n      \"price\": 8090.517074,\n      \"priceFormatted\": \"8091 EUR\",\n      \"totalDurationSeconds\": 88200,\n      \"bookingUrl\": \"https://kiwi.com/u/4wn6hj\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-18T11:40:00\",\n        \"arrivalTime\": \"2026-11-19T18:10:00\",\n        \"durationSeconds\": 88200,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"JED\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"JED\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Djeddah\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Roi-Abdelaziz\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Arabie saoudite\",\n            \"departureTime\": \"2026-11-18T11:40:00\",\n            \"arrivalTime\": \"2026-11-18T17:55:00\",\n            \"durationSeconds\": 15300,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY3404\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"JED\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Djeddah\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international Roi-Abdelaziz\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Arabie saoudite\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-19T03:15:00\",\n            \"arrivalTime\": \"2026-11-19T06:50:00\",\n            \"durationSeconds\": 9300,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY602\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-19T08:35:00\",\n            \"arrivalTime\": \"2026-11-19T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 6246,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "TUN → KBV on 18/11/2026–18/11/2026, 2 adults [≤2 stops/sector; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 15,
+   "itineraries": [
+    {
+     "id": "19e018bc51270000f1cc0c13_0|19e018bc51270000f1cc0c13_1|19e018bc51270000f1cc0c13_2",
+     "price": 1187.0,
+     "priceFormatted": "1187 EUR",
+     "totalDurationSeconds": 78000,
+     "bookingUrl": "https://kiwi.com/u/qp5ks6",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T16:00:00",
+      "arrivalTime": "2026-11-19T19:40:00",
+      "durationSeconds": 78000,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "DOH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-18T16:00:00",
+        "arrivalTime": "2026-11-18T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "BKK",
+        "fromCity": "Doha",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T01:45:00",
+        "arrivalTime": "2026-11-19T12:15:00",
+        "durationSeconds": 23400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR834",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T18:15:00",
+        "arrivalTime": "2026-11-19T19:40:00",
+        "durationSeconds": 5100,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG249",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc51270000890dca03_0|19e018bc51270000890dca03_1|19e018bc51270000890dca03_2",
+     "price": 1187.0,
+     "priceFormatted": "1187 EUR",
+     "totalDurationSeconds": 78000,
+     "bookingUrl": "https://kiwi.com/u/r35g8j",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T16:00:00",
+      "arrivalTime": "2026-11-19T19:40:00",
+      "durationSeconds": 78000,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "DOH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-18T16:00:00",
+        "arrivalTime": "2026-11-18T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "BKK",
+        "fromCity": "Doha",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T02:35:00",
+        "arrivalTime": "2026-11-19T13:05:00",
+        "durationSeconds": 23400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR836",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T18:15:00",
+        "arrivalTime": "2026-11-19T19:40:00",
+        "durationSeconds": 5100,
+        "carrier": "TG",
+        "carrierName": "Thai Airways",
+        "flightNumber": "TG249",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512700006d65c01a_0|19e018bc512700006d65c01a_1|19e018bc512700006d65c01a_2",
+     "price": 1189.0,
+     "priceFormatted": "1189 EUR",
+     "totalDurationSeconds": 83700,
+     "bookingUrl": "https://kiwi.com/u/69hz7w",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T16:00:00",
+      "arrivalTime": "2026-11-19T21:15:00",
+      "durationSeconds": 83700,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "DOH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-18T16:00:00",
+        "arrivalTime": "2026-11-18T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "BKK",
+        "fromCity": "Doha",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T01:45:00",
+        "arrivalTime": "2026-11-19T12:15:00",
+        "durationSeconds": 23400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR834",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T19:45:00",
+        "arrivalTime": "2026-11-19T21:15:00",
+        "durationSeconds": 5400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR4385",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc5127000070aa11b8_0|19e018bc5127000070aa11b8_1|19e018bc5127000070aa11b8_2",
+     "price": 1189.0,
+     "priceFormatted": "1189 EUR",
+     "totalDurationSeconds": 83700,
+     "bookingUrl": "https://kiwi.com/u/urw5nf",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T16:00:00",
+      "arrivalTime": "2026-11-19T21:15:00",
+      "durationSeconds": 83700,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "DOH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-18T16:00:00",
+        "arrivalTime": "2026-11-18T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "BKK",
+        "fromCity": "Doha",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T02:35:00",
+        "arrivalTime": "2026-11-19T13:05:00",
+        "durationSeconds": 23400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR836",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T19:45:00",
+        "arrivalTime": "2026-11-19T21:15:00",
+        "durationSeconds": 5400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR4385",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc51270000fbcadb91_0|19e018bc51270000fbcadb91_1|19e018bc51270000fbcadb91_2",
+     "price": 1196.0,
+     "priceFormatted": "1196 EUR",
+     "totalDurationSeconds": 126300,
+     "bookingUrl": "https://kiwi.com/u/5y7hd2",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T16:00:00",
+      "arrivalTime": "2026-11-20T09:05:00",
+      "durationSeconds": 126300,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "DOH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-18T16:00:00",
+        "arrivalTime": "2026-11-18T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "BKK",
+        "fromCity": "Doha",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T08:20:00",
+        "arrivalTime": "2026-11-19T18:50:00",
+        "durationSeconds": 23400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR832",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-20T07:35:00",
+        "arrivalTime": "2026-11-20T09:05:00",
+        "durationSeconds": 5400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR4361",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc51270000c05578d5_0|19e018bc51270000c05578d5_1|19e018bc51270000c05578d5_2",
+     "price": 1196.0,
+     "priceFormatted": "1196 EUR",
+     "totalDurationSeconds": 126300,
+     "bookingUrl": "https://kiwi.com/u/y2pq3z",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T16:00:00",
+      "arrivalTime": "2026-11-20T09:05:00",
+      "durationSeconds": 126300,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "DOH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-18T16:00:00",
+        "arrivalTime": "2026-11-18T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "BKK",
+        "fromCity": "Doha",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T02:35:00",
+        "arrivalTime": "2026-11-19T13:05:00",
+        "durationSeconds": 23400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR836",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-20T07:35:00",
+        "arrivalTime": "2026-11-20T09:05:00",
+        "durationSeconds": 5400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR4361",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc51270000318f7d7f_0|19e018bc51270000318f7d7f_1|19e018bc51270000318f7d7f_2",
+     "price": 1196.0,
+     "priceFormatted": "1196 EUR",
+     "totalDurationSeconds": 126300,
+     "bookingUrl": "https://kiwi.com/u/9jx2h4",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T16:00:00",
+      "arrivalTime": "2026-11-20T09:05:00",
+      "durationSeconds": 126300,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "DOH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-18T16:00:00",
+        "arrivalTime": "2026-11-18T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "BKK",
+        "fromCity": "Doha",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T08:55:00",
+        "arrivalTime": "2026-11-19T19:25:00",
+        "durationSeconds": 23400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR826",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-20T07:35:00",
+        "arrivalTime": "2026-11-20T09:05:00",
+        "durationSeconds": 5400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR4361",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc51270000dd9aa977_0|19e018bc51270000dd9aa977_1|19e018bc51270000dd9aa977_2",
+     "price": 1196.0,
+     "priceFormatted": "1196 EUR",
+     "totalDurationSeconds": 126300,
+     "bookingUrl": "https://kiwi.com/u/h4hyku",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T16:00:00",
+      "arrivalTime": "2026-11-20T09:05:00",
+      "durationSeconds": 126300,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "DOH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-18T16:00:00",
+        "arrivalTime": "2026-11-18T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "BKK",
+        "fromCity": "Doha",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T01:45:00",
+        "arrivalTime": "2026-11-19T12:15:00",
+        "durationSeconds": 23400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR834",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-20T07:35:00",
+        "arrivalTime": "2026-11-20T09:05:00",
+        "durationSeconds": 5400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR4361",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512700007febe3a4_0|19e018bc512700007febe3a4_1|19e018bc512700007febe3a4_2",
+     "price": 1201.0,
+     "priceFormatted": "1201 EUR",
+     "totalDurationSeconds": 170100,
+     "bookingUrl": "https://kiwi.com/u/bhtyv98",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T16:00:00",
+      "arrivalTime": "2026-11-20T21:15:00",
+      "durationSeconds": 170100,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "DOH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-18T16:00:00",
+        "arrivalTime": "2026-11-18T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "BKK",
+        "fromCity": "Doha",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T19:45:00",
+        "arrivalTime": "2026-11-20T06:15:00",
+        "durationSeconds": 23400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR830",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-20T19:45:00",
+        "arrivalTime": "2026-11-20T21:15:00",
+        "durationSeconds": 5400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR4385",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc5127000008d4a52c_0|19e018bc5127000008d4a52c_1|19e018bc5127000008d4a52c_2",
+     "price": 1201.0,
+     "priceFormatted": "1201 EUR",
+     "totalDurationSeconds": 170100,
+     "bookingUrl": "https://kiwi.com/u/2tux2t",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T16:00:00",
+      "arrivalTime": "2026-11-20T21:15:00",
+      "durationSeconds": 170100,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "DOH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-18T16:00:00",
+        "arrivalTime": "2026-11-18T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "BKK",
+        "fromCity": "Doha",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T20:20:00",
+        "arrivalTime": "2026-11-20T06:40:00",
+        "durationSeconds": 22800,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR838",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-20T19:45:00",
+        "arrivalTime": "2026-11-20T21:15:00",
+        "durationSeconds": 5400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR4385",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512700002b4a7fcd_0|19e018bc512700002b4a7fcd_1|19e018bc512700002b4a7fcd_2",
+     "price": 1323.307096,
+     "priceFormatted": "1323 EUR",
+     "totalDurationSeconds": 88500,
+     "bookingUrl": "https://kiwi.com/u/75w4zff",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T11:35:00",
+      "arrivalTime": "2026-11-19T18:10:00",
+      "durationSeconds": 88500,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "CAI",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "CAI",
+        "fromCity": "Tunis",
+        "toCity": "Le Caire",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international du Caire",
+        "fromCountry": "Tunisie",
+        "toCountry": "Égypte",
+        "departureTime": "2026-11-18T11:35:00",
+        "arrivalTime": "2026-11-18T15:45:00",
+        "durationSeconds": 11400,
+        "carrier": "MS",
+        "carrierName": "Egyptair",
+        "flightNumber": "MS844",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "CAI",
+        "to": "AUH",
+        "fromCity": "Le Caire",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international du Caire",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Égypte",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-18T19:00:00",
+        "arrivalTime": "2026-11-19T00:20:00",
+        "durationSeconds": 12000,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY716",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T08:35:00",
+        "arrivalTime": "2026-11-19T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512700001c1aed11_0|19e018bc512700001c1aed11_1|19e018bc512700001c1aed11_2",
+     "price": 1735.09056,
+     "priceFormatted": "1735 EUR",
+     "totalDurationSeconds": 88500,
+     "bookingUrl": "https://kiwi.com/u/wkcgjc",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T11:35:00",
+      "arrivalTime": "2026-11-19T18:10:00",
+      "durationSeconds": 88500,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "CAI",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "CAI",
+        "fromCity": "Tunis",
+        "toCity": "Le Caire",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international du Caire",
+        "fromCountry": "Tunisie",
+        "toCountry": "Égypte",
+        "departureTime": "2026-11-18T11:35:00",
+        "arrivalTime": "2026-11-18T15:45:00",
+        "durationSeconds": 11400,
+        "carrier": "MS",
+        "carrierName": "Egyptair",
+        "flightNumber": "MS844",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "CAI",
+        "to": "AUH",
+        "fromCity": "Le Caire",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international du Caire",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Égypte",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-18T22:45:00",
+        "arrivalTime": "2026-11-19T04:05:00",
+        "durationSeconds": 12000,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY4904",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T08:35:00",
+        "arrivalTime": "2026-11-19T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512700009adc8cb9_0|19e018bc512700009adc8cb9_1|19e018bc512700009adc8cb9_2",
+     "price": 6451.307096,
+     "priceFormatted": "6451 EUR",
+     "totalDurationSeconds": 88500,
+     "bookingUrl": "https://kiwi.com/u/r3962r",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T11:35:00",
+      "arrivalTime": "2026-11-19T18:10:00",
+      "durationSeconds": 88500,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "CAI",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "CAI",
+        "fromCity": "Tunis",
+        "toCity": "Le Caire",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international du Caire",
+        "fromCountry": "Tunisie",
+        "toCountry": "Égypte",
+        "departureTime": "2026-11-18T11:35:00",
+        "arrivalTime": "2026-11-18T15:45:00",
+        "durationSeconds": 11400,
+        "carrier": "MS",
+        "carrierName": "Egyptair",
+        "flightNumber": "MS844",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "CAI",
+        "to": "AUH",
+        "fromCity": "Le Caire",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international du Caire",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Égypte",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-18T19:00:00",
+        "arrivalTime": "2026-11-19T00:20:00",
+        "durationSeconds": 12000,
+        "carrier": "MS",
+        "carrierName": "Egyptair",
+        "flightNumber": "MS8070",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T08:35:00",
+        "arrivalTime": "2026-11-19T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512700009da86bb8_0|19e018bc512700009da86bb8_1|19e018bc512700009da86bb8_2",
+     "price": 6629.09056,
+     "priceFormatted": "6629 EUR",
+     "totalDurationSeconds": 88500,
+     "bookingUrl": "https://kiwi.com/u/mykscs",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T11:35:00",
+      "arrivalTime": "2026-11-19T18:10:00",
+      "durationSeconds": 88500,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "CAI",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "CAI",
+        "fromCity": "Tunis",
+        "toCity": "Le Caire",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international du Caire",
+        "fromCountry": "Tunisie",
+        "toCountry": "Égypte",
+        "departureTime": "2026-11-18T11:35:00",
+        "arrivalTime": "2026-11-18T15:45:00",
+        "durationSeconds": 11400,
+        "carrier": "MS",
+        "carrierName": "Egyptair",
+        "flightNumber": "MS844",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "CAI",
+        "to": "AUH",
+        "fromCity": "Le Caire",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international du Caire",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Égypte",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-18T22:45:00",
+        "arrivalTime": "2026-11-19T04:05:00",
+        "durationSeconds": 12000,
+        "carrier": "MS",
+        "carrierName": "Egyptair",
+        "flightNumber": "MS916",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T08:35:00",
+        "arrivalTime": "2026-11-19T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc5127000043f80ead_0|19e018bc5127000043f80ead_1|19e018bc5127000043f80ead_2",
+     "price": 8090.517074,
+     "priceFormatted": "8091 EUR",
+     "totalDurationSeconds": 88200,
+     "bookingUrl": "https://kiwi.com/u/4wn6hj",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-18T11:40:00",
+      "arrivalTime": "2026-11-19T18:10:00",
+      "durationSeconds": 88200,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "JED",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "JED",
+        "fromCity": "Tunis",
+        "toCity": "Djeddah",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Roi-Abdelaziz",
+        "fromCountry": "Tunisie",
+        "toCountry": "Arabie saoudite",
+        "departureTime": "2026-11-18T11:40:00",
+        "arrivalTime": "2026-11-18T17:55:00",
+        "durationSeconds": 15300,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY3404",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "JED",
+        "to": "AUH",
+        "fromCity": "Djeddah",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international Roi-Abdelaziz",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Arabie saoudite",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-19T03:15:00",
+        "arrivalTime": "2026-11-19T06:50:00",
+        "durationSeconds": 9300,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY602",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-19T08:35:00",
+        "arrivalTime": "2026-11-19T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 6246,
+   "error": null
+  }
+ }
+}

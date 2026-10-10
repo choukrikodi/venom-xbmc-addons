@@ -1,0 +1,10 @@
+{
+  "case_file": "skills/travel-agent/evals/files/asie_v9_bkk_openjaw.json",
+  "run_id": "37203947430",
+  "attempt": "1",
+  "event_sha": "be266cb675f56b666ec59742f985c9338a1aba67",
+  "checkout_sha": "be266cb675f56b666ec59742f985c9338a1aba67",
+  "utc": "2026-10-04T13:00:37+00:00",
+  "list_status": "success",
+  "calls_status": "success"
+}

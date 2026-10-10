@@ -1,0 +1,53 @@
+{
+  "case_name": "asie_v7b_9n_aligne",
+  "notice": "Réalignement après relecture des traces v7 : un départ TUN le 29/11 arrive le 30/11 ; 9 nuits d'hôtel réelles = 30/11→09/12, retour le 09/12 après 06:00 (un retour à 00:25 impose une sortie d'hôtel la veille au soir). Vols exacts 29/11→09/12 QR seule et toutes compagnies vers HKT (A, C) et KBV (B) ; hôtels 5★ 30/11→09/12 pour Nai Yang, Mai Khao, Ao Nang, Khao Lak. 2 adultes, 1 soute chacun, ≤2 escales, pas de self-transfer, BE/EUR. Aucune réservation.",
+  "requests": [
+    {
+      "name": "kiwi_tun_hkt_qr_exact_2911_0912",
+      "server": "kiwi",
+      "tool": "search-flight",
+      "arguments": {
+        "flyFrom": "TUN", "flyTo": "HKT", "adults": 2, "children": 0, "infants": 0,
+        "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price",
+        "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false,
+        "one_for_city": false, "select_airlines": "QR",
+        "departureDate": "29/11/2026", "departureDateTo": "29/11/2026",
+        "returnDate": "09/12/2026", "returnDateTo": "09/12/2026"
+      }
+    },
+    {
+      "name": "kiwi_tun_hkt_all_exact_2911_0912",
+      "server": "kiwi",
+      "tool": "search-flight",
+      "arguments": {
+        "flyFrom": "TUN", "flyTo": "HKT", "adults": 2, "children": 0, "infants": 0,
+        "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price",
+        "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false,
+        "one_for_city": false,
+        "departureDate": "29/11/2026", "departureDateTo": "29/11/2026",
+        "returnDate": "09/12/2026", "returnDateTo": "09/12/2026"
+      }
+    },
+    {
+      "name": "kiwi_tun_kbv_all_exact_2911_0912",
+      "server": "kiwi",
+      "tool": "search-flight",
+      "arguments": {
+        "flyFrom": "TUN", "flyTo": "KBV", "adults": 2, "children": 0, "infants": 0,
+        "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price",
+        "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false,
+        "one_for_city": false,
+        "departureDate": "29/11/2026", "departureDateTo": "29/11/2026",
+        "returnDate": "09/12/2026", "returnDateTo": "09/12/2026"
+      }
+    },
+    { "name": "trivago_naiyang_5s_3011_0912", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "5star": true }, "query": "Nai Yang, Phuket", "arrival": "2026-11-30", "departure": "2026-12-09" } },
+    { "name": "trivago_maikhao_5s_3011_0912", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "5star": true }, "query": "Mai Khao, Phuket", "arrival": "2026-11-30", "departure": "2026-12-09" } },
+    { "name": "trivago_aonang_5s_3011_0912", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "5star": true }, "query": "Ao Nang, Krabi", "arrival": "2026-11-30", "departure": "2026-12-09" } },
+    { "name": "trivago_khaolak_5s_3011_0912", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "5star": true }, "query": "Khao Lak", "arrival": "2026-11-30", "departure": "2026-12-09" } }
+  ]
+}

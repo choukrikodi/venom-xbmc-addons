@@ -1,0 +1,10 @@
+{
+  "case_file": "skills/travel-agent/evals/files/asie_v10_phiphi.json",
+  "run_id": "37208445841",
+  "attempt": "1",
+  "event_sha": "b83671308143466715542785f60d1ef15090e0db",
+  "checkout_sha": "b83671308143466715542785f60d1ef15090e0db",
+  "utc": "2026-10-04T14:15:28+00:00",
+  "list_status": "success",
+  "calls_status": "success"
+}
