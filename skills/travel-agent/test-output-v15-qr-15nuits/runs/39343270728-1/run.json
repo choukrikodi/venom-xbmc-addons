@@ -1,0 +1,10 @@
+{
+  "case_file": "skills/travel-agent/evals/files/asie_v15_qr_15nuits.json",
+  "run_id": "39343270728",
+  "attempt": "1",
+  "event_sha": "4fab0010ab6f7bafb7bcd8a04155227b120ff4d3",
+  "checkout_sha": "4fab0010ab6f7bafb7bcd8a04155227b120ff4d3",
+  "utc": "2026-10-19T23:43:57+00:00",
+  "list_status": "success",
+  "calls_status": "success"
+}
