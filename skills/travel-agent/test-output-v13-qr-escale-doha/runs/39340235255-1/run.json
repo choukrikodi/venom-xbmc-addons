@@ -1,0 +1,10 @@
+{
+  "case_file": "skills/travel-agent/evals/files/asie_v13_qr_escale_doha.json",
+  "run_id": "39340235255",
+  "attempt": "1",
+  "event_sha": "195db30d31d9807f47c6e4fcc559cda6ad08d341",
+  "checkout_sha": "195db30d31d9807f47c6e4fcc559cda6ad08d341",
+  "utc": "2026-10-19T23:14:26+00:00",
+  "list_status": "success",
+  "calls_status": "success"
+}
