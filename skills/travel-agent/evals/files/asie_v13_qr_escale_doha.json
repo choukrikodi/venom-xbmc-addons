@@ -1,0 +1,32 @@
+{
+  "case_name": "asie_v13_qr_escale_doha",
+  "notice": "Variante v13 (demande du 19/10/2026) : isoler les allers-retours Qatar Airways (QR) via Doha (DOH) avec une vraie escale longue (stopover_from=10h), à l'aller ET au retour séparément, pour comparer au prix/escale déjà trouvés en fenêtre libre (1355 EUR, escale aller 8h50 / retour 21h45, dates 18/11->04/12). Tunis (TUN) <-> Phuket (HKT), 2 adultes, 1 soute chacun, max_sector_stopovers=1, stopover_airports=DOH, allow_self_transfer=false. Dates exactes de référence retenues par l'utilisateur (22/11->07/12) + fenêtre proche 15/11->10/12, 13 à 15 nuits sur place, pour voir si une escale longue à l'ALLER existe à un prix comparable. Aucune réservation.",
+  "requests": [
+    { "name": "kiwi_tun_hkt_qr_escalelongue_exact_2211_0712", "server": "kiwi", "tool": "search-flight",
+      "arguments": { "flyFrom": "TUN", "flyTo": "HKT", "adults": 2, "children": 0, "infants": 0,
+        "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price",
+        "max_sector_stopovers": 1, "allow_self_transfer": false, "allow_diff_airport_connection": false,
+        "one_for_city": false, "select_airlines": "QR", "stopover_airports": "DOH", "stopover_from": 10,
+        "departureDate": "22/11/2026", "departureDateTo": "22/11/2026",
+        "returnDate": "07/12/2026", "returnDateTo": "07/12/2026" } },
+    { "name": "kiwi_tun_hkt_qr_escalelongue_fenetre_13_15n", "server": "kiwi", "tool": "search-flight",
+      "arguments": { "flyFrom": "TUN", "flyTo": "HKT", "adults": 2, "children": 0, "infants": 0,
+        "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price",
+        "max_sector_stopovers": 1, "allow_self_transfer": false, "allow_diff_airport_connection": false,
+        "one_for_city": false, "select_airlines": "QR", "stopover_airports": "DOH", "stopover_from": 10,
+        "departureDate": "15/11/2026", "departureDateTo": "10/12/2026",
+        "nights_in_dst_from": 13, "nights_in_dst_to": 15 } },
+    { "name": "kiwi_tun_hkt_qr_escalelongue_ow_aller_2211", "server": "kiwi", "tool": "search-flight",
+      "arguments": { "flyFrom": "TUN", "flyTo": "HKT", "adults": 2, "children": 0, "infants": 0,
+        "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price",
+        "max_sector_stopovers": 1, "allow_self_transfer": false, "allow_diff_airport_connection": false,
+        "one_for_city": false, "select_airlines": "QR", "stopover_airports": "DOH", "stopover_from": 10,
+        "departureDate": "22/11/2026", "departureDateTo": "22/11/2026" } },
+    { "name": "kiwi_hkt_tun_qr_escalelongue_ow_retour_0712", "server": "kiwi", "tool": "search-flight",
+      "arguments": { "flyFrom": "HKT", "flyTo": "TUN", "adults": 2, "children": 0, "infants": 0,
+        "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price",
+        "max_sector_stopovers": 1, "allow_self_transfer": false, "allow_diff_airport_connection": false,
+        "one_for_city": false, "select_airlines": "QR", "stopover_airports": "DOH", "stopover_from": 10,
+        "departureDate": "07/12/2026", "departureDateTo": "07/12/2026" } }
+  ]
+}
