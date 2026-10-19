@@ -1,0 +1,10 @@
+{
+  "case_file": "skills/travel-agent/evals/files/asie_v14_qr_escale_3h.json",
+  "run_id": "39340855303",
+  "attempt": "1",
+  "event_sha": "70ea31291078871281051042d2dddfa328b62fd8",
+  "checkout_sha": "70ea31291078871281051042d2dddfa328b62fd8",
+  "utc": "2026-10-19T23:20:41+00:00",
+  "list_status": "success",
+  "calls_status": "success"
+}
