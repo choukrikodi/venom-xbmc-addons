@@ -1,0 +1,10 @@
+{
+  "case_file": "skills/travel-agent/evals/files/asie_v18_qr_phuket_boucle.json",
+  "run_id": "39384277152",
+  "attempt": "1",
+  "event_sha": "93cfc8321d0ab66832cb1add3c4bfde456682879",
+  "checkout_sha": "93cfc8321d0ab66832cb1add3c4bfde456682879",
+  "utc": "2026-10-20T07:06:40+00:00",
+  "list_status": "success",
+  "calls_status": "success"
+}
