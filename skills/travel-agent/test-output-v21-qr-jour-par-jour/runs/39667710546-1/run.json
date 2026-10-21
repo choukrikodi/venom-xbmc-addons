@@ -1,0 +1,10 @@
+{
+  "case_file": "skills/travel-agent/evals/files/asie_v21_qr_jour_par_jour.json",
+  "run_id": "39667710546",
+  "attempt": "1",
+  "event_sha": "94dda708f3a8fcce3a19a363183dc6d5d6b93e90",
+  "checkout_sha": "94dda708f3a8fcce3a19a363183dc6d5d6b93e90",
+  "utc": "2026-10-21T20:09:28+00:00",
+  "list_status": "success",
+  "calls_status": "success"
+}
