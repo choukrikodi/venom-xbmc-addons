@@ -1,0 +1,10 @@
+{
+  "case_file": "skills/travel-agent/evals/files/asie_v25_qr_arrivee_1012.json",
+  "run_id": "39669603088",
+  "attempt": "1",
+  "event_sha": "a406a6c8cc416fbe8b28a48d7852147816f956c1",
+  "checkout_sha": "a406a6c8cc416fbe8b28a48d7852147816f956c1",
+  "utc": "2026-10-21T20:22:09+00:00",
+  "list_status": "success",
+  "calls_status": "success"
+}
