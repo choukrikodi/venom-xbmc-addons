@@ -1,0 +1,10 @@
+{
+  "case_file": "skills/travel-agent/evals/files/asie_v22_qr_revalidation.json",
+  "run_id": "39667989332",
+  "attempt": "1",
+  "event_sha": "159cde1454793357faba05dade779b01f1178f03",
+  "checkout_sha": "159cde1454793357faba05dade779b01f1178f03",
+  "utc": "2026-10-21T20:11:05+00:00",
+  "list_status": "success",
+  "calls_status": "success"
+}
