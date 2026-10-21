@@ -1,0 +1,988 @@
+=== 2026-10-04T15:11:54+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "BKK", "flyTo": "TUN", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 1, "allow_self_transfer": false, "allow_diff_airport_connection": false, "one_for_city": false, "departureDate": "13/12/2026", "departureDateTo": "15/12/2026", "stopover_to": 3}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"BKK → TUN on 13/12/2026–15/12/2026, 2 adults [≤1 stops/sector; ≤3h layover; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"075619e05141000005e3d962_0|075619e05141000005e3d962_1\",\n      \"price\": 1033.0,\n      \"priceFormatted\": \"1033 EUR\",\n      \"totalDurationSeconds\": 59400,\n      \"bookingUrl\": \"https://kiwi.com/u/6kw6sf\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-14T05:55:00\",\n        \"arrivalTime\": \"2026-12-14T16:25:00\",\n        \"durationSeconds\": 59400,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"IST\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"IST\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Istanbul\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport d Istanbul\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Turquie\",\n            \"departureTime\": \"2026-12-14T05:55:00\",\n            \"arrivalTime\": \"2026-12-14T12:35:00\",\n            \"durationSeconds\": 38400,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK59\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"IST\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Istanbul\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport d Istanbul\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Turquie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-14T15:20:00\",\n            \"arrivalTime\": \"2026-12-14T16:25:00\",\n            \"durationSeconds\": 11100,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK663\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075619e051410000178c53e8_0|075619e051410000178c53e8_1\",\n      \"price\": 1033.0,\n      \"priceFormatted\": \"1033 EUR\",\n      \"totalDurationSeconds\": 60600,\n      \"bookingUrl\": \"https://kiwi.com/u/27443nk\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-14T23:10:00\",\n        \"arrivalTime\": \"2026-12-15T10:00:00\",\n        \"durationSeconds\": 60600,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"IST\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"IST\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Istanbul\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport d Istanbul\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Turquie\",\n            \"departureTime\": \"2026-12-14T23:10:00\",\n            \"arrivalTime\": \"2026-12-15T05:55:00\",\n            \"durationSeconds\": 38700,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK69\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"IST\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Istanbul\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport d Istanbul\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Turquie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-15T08:55:00\",\n            \"arrivalTime\": \"2026-12-15T10:00:00\",\n            \"durationSeconds\": 11100,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK661\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075619e0514000002421eb35_0|075619e0514000002421eb35_1\",\n      \"price\": 1036.0,\n      \"priceFormatted\": \"1036 EUR\",\n      \"totalDurationSeconds\": 59400,\n      \"bookingUrl\": \"https://kiwi.com/u/5dmr5t\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-13T05:55:00\",\n        \"arrivalTime\": \"2026-12-13T16:25:00\",\n        \"durationSeconds\": 59400,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"IST\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"IST\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Istanbul\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport d Istanbul\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Turquie\",\n            \"departureTime\": \"2026-12-13T05:55:00\",\n            \"arrivalTime\": \"2026-12-13T12:35:00\",\n            \"durationSeconds\": 38400,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK59\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"IST\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Istanbul\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport d Istanbul\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Turquie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-13T15:20:00\",\n            \"arrivalTime\": \"2026-12-13T16:25:00\",\n            \"durationSeconds\": 11100,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK663\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075619e051420000cc731be6_0|075619e051420000cc731be6_1\",\n      \"price\": 1036.0,\n      \"priceFormatted\": \"1036 EUR\",\n      \"totalDurationSeconds\": 59400,\n      \"bookingUrl\": \"https://kiwi.com/u/cq2s8un\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-15T05:55:00\",\n        \"arrivalTime\": \"2026-12-15T16:25:00\",\n        \"durationSeconds\": 59400,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"IST\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"IST\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Istanbul\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport d Istanbul\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Turquie\",\n            \"departureTime\": \"2026-12-15T05:55:00\",\n            \"arrivalTime\": \"2026-12-15T12:35:00\",\n            \"durationSeconds\": 38400,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK59\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"IST\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Istanbul\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport d Istanbul\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Turquie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-15T15:20:00\",\n            \"arrivalTime\": \"2026-12-15T16:25:00\",\n            \"durationSeconds\": 11100,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK663\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075619e05141000095a32fae_0|075619e05141000095a32fae_1\",\n      \"price\": 1270.463574,\n      \"priceFormatted\": \"1270 EUR\",\n      \"totalDurationSeconds\": 58800,\n      \"bookingUrl\": \"https://kiwi.com/u/jyfudfq\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 0,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-14T19:55:00\",\n        \"arrivalTime\": \"2026-12-15T06:15:00\",\n        \"durationSeconds\": 58800,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-14T19:55:00\",\n            \"arrivalTime\": \"2026-12-15T00:05:00\",\n            \"durationSeconds\": 25800,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY1045\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-15T02:20:00\",\n            \"arrivalTime\": \"2026-12-15T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075619e05141000061c9fed9_0|075619e05141000061c9fed9_1\",\n      \"price\": 1379.0,\n      \"priceFormatted\": \"1379 EUR\",\n      \"totalDurationSeconds\": 59700,\n      \"bookingUrl\": \"https://kiwi.com/u/r5mcuc\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-14T03:00:00\",\n        \"arrivalTime\": \"2026-12-14T13:35:00\",\n        \"durationSeconds\": 59700,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"DOH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-12-14T03:00:00\",\n            \"arrivalTime\": \"2026-12-14T06:20:00\",\n            \"durationSeconds\": 26400,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR829\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-14T09:10:00\",\n            \"arrivalTime\": \"2026-12-14T13:35:00\",\n            \"durationSeconds\": 23100,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1399\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075619e051410000cbeccb0d_0|075619e051410000cbeccb0d_1\",\n      \"price\": 1458.0,\n      \"priceFormatted\": \"1458 EUR\",\n      \"totalDurationSeconds\": 59700,\n      \"bookingUrl\": \"https://kiwi.com/u/w7bun3u\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 4\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-14T02:00:00\",\n        \"arrivalTime\": \"2026-12-14T12:35:00\",\n        \"durationSeconds\": 59700,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"DXB\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-14T02:00:00\",\n            \"arrivalTime\": \"2026-12-14T05:55:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK377\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-14T08:40:00\",\n            \"arrivalTime\": \"2026-12-14T12:35:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK747\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075619e0514000002ee60d7b_0|075619e0514000002ee60d7b_1\",\n      \"price\": 1517.0,\n      \"priceFormatted\": \"1517 EUR\",\n      \"totalDurationSeconds\": 60600,\n      \"bookingUrl\": \"https://kiwi.com/u/9d73jy3\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-13T23:10:00\",\n        \"arrivalTime\": \"2026-12-14T10:00:00\",\n        \"durationSeconds\": 60600,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"IST\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"IST\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Istanbul\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport d Istanbul\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Turquie\",\n            \"departureTime\": \"2026-12-13T23:10:00\",\n            \"arrivalTime\": \"2026-12-14T05:55:00\",\n            \"durationSeconds\": 38700,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK69\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"IST\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Istanbul\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport d Istanbul\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Turquie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-14T08:55:00\",\n            \"arrivalTime\": \"2026-12-14T10:00:00\",\n            \"durationSeconds\": 11100,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK661\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075619e051420000ef4fb00d_0|075619e051420000ef4fb00d_1\",\n      \"price\": 1517.0,\n      \"priceFormatted\": \"1517 EUR\",\n      \"totalDurationSeconds\": 60600,\n      \"bookingUrl\": \"https://kiwi.com/u/2sv7qx\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-15T23:10:00\",\n        \"arrivalTime\": \"2026-12-16T10:00:00\",\n        \"durationSeconds\": 60600,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"IST\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"IST\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Istanbul\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport d Istanbul\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Turquie\",\n            \"departureTime\": \"2026-12-15T23:10:00\",\n            \"arrivalTime\": \"2026-12-16T05:55:00\",\n            \"durationSeconds\": 38700,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK69\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"IST\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Istanbul\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport d Istanbul\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Turquie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-16T08:55:00\",\n            \"arrivalTime\": \"2026-12-16T10:00:00\",\n            \"durationSeconds\": 11100,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK661\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075619e05141000011aeeace_0|075619e05141000011aeeace_1\",\n      \"price\": 1658.261722,\n      \"priceFormatted\": \"1658 EUR\",\n      \"totalDurationSeconds\": 55500,\n      \"bookingUrl\": \"https://kiwi.com/u/8mz9pw\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-14T20:50:00\",\n        \"arrivalTime\": \"2026-12-15T06:15:00\",\n        \"durationSeconds\": 55500,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-14T20:50:00\",\n            \"arrivalTime\": \"2026-12-15T00:30:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY407\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-15T02:20:00\",\n            \"arrivalTime\": \"2026-12-15T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075619e05141000042ae813d_0|075619e05141000042ae813d_1\",\n      \"price\": 1694.0,\n      \"priceFormatted\": \"1694 EUR\",\n      \"totalDurationSeconds\": 56400,\n      \"bookingUrl\": \"https://kiwi.com/u/97sd4u\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 4\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-14T02:55:00\",\n        \"arrivalTime\": \"2026-12-14T12:35:00\",\n        \"durationSeconds\": 56400,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"DXB\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"DXB\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Dubaï\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Dubaï\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-14T02:55:00\",\n            \"arrivalTime\": \"2026-12-14T06:40:00\",\n            \"durationSeconds\": 24300,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK371\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DXB\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Dubaï\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international de Dubaï\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-14T08:40:00\",\n            \"arrivalTime\": \"2026-12-14T12:35:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EK\",\n            \"carrierName\": \"Emirates\",\n            \"flightNumber\": \"EK747\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075619e051410000204749df_0|075619e051410000204749df_1\",\n      \"price\": 1843.0,\n      \"priceFormatted\": \"1843 EUR\",\n      \"totalDurationSeconds\": 58500,\n      \"bookingUrl\": \"https://kiwi.com/u/4vzptc\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-14T23:45:00\",\n        \"arrivalTime\": \"2026-12-15T10:00:00\",\n        \"durationSeconds\": 58500,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"IST\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"IST\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Istanbul\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport d Istanbul\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Turquie\",\n            \"departureTime\": \"2026-12-14T23:45:00\",\n            \"arrivalTime\": \"2026-12-15T06:05:00\",\n            \"durationSeconds\": 37200,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK8548\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"IST\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Istanbul\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport d Istanbul\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Turquie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-15T08:55:00\",\n            \"arrivalTime\": \"2026-12-15T10:00:00\",\n            \"durationSeconds\": 11100,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK661\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075619e051420000404ae0c3_0|075619e051420000404ae0c3_1\",\n      \"price\": 1870.0,\n      \"priceFormatted\": \"1870 EUR\",\n      \"totalDurationSeconds\": 58500,\n      \"bookingUrl\": \"https://kiwi.com/u/7hb53k\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-15T23:45:00\",\n        \"arrivalTime\": \"2026-12-16T10:00:00\",\n        \"durationSeconds\": 58500,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"IST\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"IST\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Istanbul\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport d Istanbul\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Turquie\",\n            \"departureTime\": \"2026-12-15T23:45:00\",\n            \"arrivalTime\": \"2026-12-16T06:05:00\",\n            \"durationSeconds\": 37200,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK8548\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"IST\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Istanbul\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport d Istanbul\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Turquie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-16T08:55:00\",\n            \"arrivalTime\": \"2026-12-16T10:00:00\",\n            \"durationSeconds\": 11100,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK661\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075619e0514000008d236aa1_0|075619e0514000008d236aa1_1\",\n      \"price\": 1870.0,\n      \"priceFormatted\": \"1870 EUR\",\n      \"totalDurationSeconds\": 58500,\n      \"bookingUrl\": \"https://kiwi.com/u/yx3xv9\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-13T23:45:00\",\n        \"arrivalTime\": \"2026-12-14T10:00:00\",\n        \"durationSeconds\": 58500,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"IST\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"IST\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Istanbul\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport d Istanbul\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Turquie\",\n            \"departureTime\": \"2026-12-13T23:45:00\",\n            \"arrivalTime\": \"2026-12-14T06:05:00\",\n            \"durationSeconds\": 37200,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK8548\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"IST\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Istanbul\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport d Istanbul\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Turquie\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-14T08:55:00\",\n            \"arrivalTime\": \"2026-12-14T10:00:00\",\n            \"durationSeconds\": 11100,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK661\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"075619e05141000044005799_0|075619e05141000044005799_1\",\n      \"price\": 2277.322968,\n      \"priceFormatted\": \"2277 EUR\",\n      \"totalDurationSeconds\": 64200,\n      \"bookingUrl\": \"https://kiwi.com/u/qp492x\",\n      \"imageId\": \"tunis_tn\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-14T11:30:00\",\n        \"arrivalTime\": \"2026-12-14T23:20:00\",\n        \"durationSeconds\": 64200,\n        \"stops\": 1,\n        \"route\": [\n          \"BKK\",\n          \"CDG\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"CDG\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Paris\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Paris-Charles-de-Gaulle\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"France\",\n            \"departureTime\": \"2026-12-14T11:30:00\",\n            \"arrivalTime\": \"2026-12-14T18:40:00\",\n            \"durationSeconds\": 47400,\n            \"carrier\": \"AF\",\n            \"carrierName\": \"Air France\",\n            \"flightNumber\": \"AF199\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"CDG\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Paris\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport de Paris-Charles-de-Gaulle\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"France\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-14T20:50:00\",\n            \"arrivalTime\": \"2026-12-14T23:20:00\",\n            \"durationSeconds\": 9000,\n            \"carrier\": \"AF\",\n            \"carrierName\": \"Air France\",\n            \"flightNumber\": \"AF1384\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 455,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "BKK → TUN on 13/12/2026–15/12/2026, 2 adults [≤1 stops/sector; ≤3h layover; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 15,
+   "itineraries": [
+    {
+     "id": "075619e05141000005e3d962_0|075619e05141000005e3d962_1",
+     "price": 1033.0,
+     "priceFormatted": "1033 EUR",
+     "totalDurationSeconds": 59400,
+     "bookingUrl": "https://kiwi.com/u/6kw6sf",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-14T05:55:00",
+      "arrivalTime": "2026-12-14T16:25:00",
+      "durationSeconds": 59400,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "IST",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "IST",
+        "fromCity": "Bangkok",
+        "toCity": "Istanbul",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport d Istanbul",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Turquie",
+        "departureTime": "2026-12-14T05:55:00",
+        "arrivalTime": "2026-12-14T12:35:00",
+        "durationSeconds": 38400,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK59",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "IST",
+        "to": "TUN",
+        "fromCity": "Istanbul",
+        "toCity": "Tunis",
+        "fromName": "Aéroport d Istanbul",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Turquie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-14T15:20:00",
+        "arrivalTime": "2026-12-14T16:25:00",
+        "durationSeconds": 11100,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK663",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075619e051410000178c53e8_0|075619e051410000178c53e8_1",
+     "price": 1033.0,
+     "priceFormatted": "1033 EUR",
+     "totalDurationSeconds": 60600,
+     "bookingUrl": "https://kiwi.com/u/27443nk",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-14T23:10:00",
+      "arrivalTime": "2026-12-15T10:00:00",
+      "durationSeconds": 60600,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "IST",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "IST",
+        "fromCity": "Bangkok",
+        "toCity": "Istanbul",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport d Istanbul",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Turquie",
+        "departureTime": "2026-12-14T23:10:00",
+        "arrivalTime": "2026-12-15T05:55:00",
+        "durationSeconds": 38700,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK69",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "IST",
+        "to": "TUN",
+        "fromCity": "Istanbul",
+        "toCity": "Tunis",
+        "fromName": "Aéroport d Istanbul",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Turquie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-15T08:55:00",
+        "arrivalTime": "2026-12-15T10:00:00",
+        "durationSeconds": 11100,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK661",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075619e0514000002421eb35_0|075619e0514000002421eb35_1",
+     "price": 1036.0,
+     "priceFormatted": "1036 EUR",
+     "totalDurationSeconds": 59400,
+     "bookingUrl": "https://kiwi.com/u/5dmr5t",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-13T05:55:00",
+      "arrivalTime": "2026-12-13T16:25:00",
+      "durationSeconds": 59400,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "IST",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "IST",
+        "fromCity": "Bangkok",
+        "toCity": "Istanbul",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport d Istanbul",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Turquie",
+        "departureTime": "2026-12-13T05:55:00",
+        "arrivalTime": "2026-12-13T12:35:00",
+        "durationSeconds": 38400,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK59",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "IST",
+        "to": "TUN",
+        "fromCity": "Istanbul",
+        "toCity": "Tunis",
+        "fromName": "Aéroport d Istanbul",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Turquie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-13T15:20:00",
+        "arrivalTime": "2026-12-13T16:25:00",
+        "durationSeconds": 11100,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK663",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075619e051420000cc731be6_0|075619e051420000cc731be6_1",
+     "price": 1036.0,
+     "priceFormatted": "1036 EUR",
+     "totalDurationSeconds": 59400,
+     "bookingUrl": "https://kiwi.com/u/cq2s8un",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-15T05:55:00",
+      "arrivalTime": "2026-12-15T16:25:00",
+      "durationSeconds": 59400,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "IST",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "IST",
+        "fromCity": "Bangkok",
+        "toCity": "Istanbul",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport d Istanbul",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Turquie",
+        "departureTime": "2026-12-15T05:55:00",
+        "arrivalTime": "2026-12-15T12:35:00",
+        "durationSeconds": 38400,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK59",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "IST",
+        "to": "TUN",
+        "fromCity": "Istanbul",
+        "toCity": "Tunis",
+        "fromName": "Aéroport d Istanbul",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Turquie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-15T15:20:00",
+        "arrivalTime": "2026-12-15T16:25:00",
+        "durationSeconds": 11100,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK663",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075619e05141000095a32fae_0|075619e05141000095a32fae_1",
+     "price": 1270.463574,
+     "priceFormatted": "1270 EUR",
+     "totalDurationSeconds": 58800,
+     "bookingUrl": "https://kiwi.com/u/jyfudfq",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 0,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-14T19:55:00",
+      "arrivalTime": "2026-12-15T06:15:00",
+      "durationSeconds": 58800,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "AUH",
+        "fromCity": "Bangkok",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-14T19:55:00",
+        "arrivalTime": "2026-12-15T00:05:00",
+        "durationSeconds": 25800,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY1045",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-15T02:20:00",
+        "arrivalTime": "2026-12-15T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075619e05141000061c9fed9_0|075619e05141000061c9fed9_1",
+     "price": 1379.0,
+     "priceFormatted": "1379 EUR",
+     "totalDurationSeconds": 59700,
+     "bookingUrl": "https://kiwi.com/u/r5mcuc",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-14T03:00:00",
+      "arrivalTime": "2026-12-14T13:35:00",
+      "durationSeconds": 59700,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "DOH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "DOH",
+        "fromCity": "Bangkok",
+        "toCity": "Doha",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Qatar",
+        "departureTime": "2026-12-14T03:00:00",
+        "arrivalTime": "2026-12-14T06:20:00",
+        "durationSeconds": 26400,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR829",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "TUN",
+        "fromCity": "Doha",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Qatar",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-14T09:10:00",
+        "arrivalTime": "2026-12-14T13:35:00",
+        "durationSeconds": 23100,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1399",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075619e051410000cbeccb0d_0|075619e051410000cbeccb0d_1",
+     "price": 1458.0,
+     "priceFormatted": "1458 EUR",
+     "totalDurationSeconds": 59700,
+     "bookingUrl": "https://kiwi.com/u/w7bun3u",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 4
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-14T02:00:00",
+      "arrivalTime": "2026-12-14T12:35:00",
+      "durationSeconds": 59700,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "DXB",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "DXB",
+        "fromCity": "Bangkok",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-14T02:00:00",
+        "arrivalTime": "2026-12-14T05:55:00",
+        "durationSeconds": 24900,
+        "carrier": "EK",
+        "carrierName": "Emirates",
+        "flightNumber": "EK377",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "TUN",
+        "fromCity": "Dubaï",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-14T08:40:00",
+        "arrivalTime": "2026-12-14T12:35:00",
+        "durationSeconds": 24900,
+        "carrier": "EK",
+        "carrierName": "Emirates",
+        "flightNumber": "EK747",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075619e0514000002ee60d7b_0|075619e0514000002ee60d7b_1",
+     "price": 1517.0,
+     "priceFormatted": "1517 EUR",
+     "totalDurationSeconds": 60600,
+     "bookingUrl": "https://kiwi.com/u/9d73jy3",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-13T23:10:00",
+      "arrivalTime": "2026-12-14T10:00:00",
+      "durationSeconds": 60600,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "IST",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "IST",
+        "fromCity": "Bangkok",
+        "toCity": "Istanbul",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport d Istanbul",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Turquie",
+        "departureTime": "2026-12-13T23:10:00",
+        "arrivalTime": "2026-12-14T05:55:00",
+        "durationSeconds": 38700,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK69",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "IST",
+        "to": "TUN",
+        "fromCity": "Istanbul",
+        "toCity": "Tunis",
+        "fromName": "Aéroport d Istanbul",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Turquie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-14T08:55:00",
+        "arrivalTime": "2026-12-14T10:00:00",
+        "durationSeconds": 11100,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK661",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075619e051420000ef4fb00d_0|075619e051420000ef4fb00d_1",
+     "price": 1517.0,
+     "priceFormatted": "1517 EUR",
+     "totalDurationSeconds": 60600,
+     "bookingUrl": "https://kiwi.com/u/2sv7qx",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-15T23:10:00",
+      "arrivalTime": "2026-12-16T10:00:00",
+      "durationSeconds": 60600,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "IST",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "IST",
+        "fromCity": "Bangkok",
+        "toCity": "Istanbul",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport d Istanbul",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Turquie",
+        "departureTime": "2026-12-15T23:10:00",
+        "arrivalTime": "2026-12-16T05:55:00",
+        "durationSeconds": 38700,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK69",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "IST",
+        "to": "TUN",
+        "fromCity": "Istanbul",
+        "toCity": "Tunis",
+        "fromName": "Aéroport d Istanbul",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Turquie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-16T08:55:00",
+        "arrivalTime": "2026-12-16T10:00:00",
+        "durationSeconds": 11100,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK661",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075619e05141000011aeeace_0|075619e05141000011aeeace_1",
+     "price": 1658.261722,
+     "priceFormatted": "1658 EUR",
+     "totalDurationSeconds": 55500,
+     "bookingUrl": "https://kiwi.com/u/8mz9pw",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-14T20:50:00",
+      "arrivalTime": "2026-12-15T06:15:00",
+      "durationSeconds": 55500,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "AUH",
+        "fromCity": "Bangkok",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-14T20:50:00",
+        "arrivalTime": "2026-12-15T00:30:00",
+        "durationSeconds": 24000,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY407",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-15T02:20:00",
+        "arrivalTime": "2026-12-15T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075619e05141000042ae813d_0|075619e05141000042ae813d_1",
+     "price": 1694.0,
+     "priceFormatted": "1694 EUR",
+     "totalDurationSeconds": 56400,
+     "bookingUrl": "https://kiwi.com/u/97sd4u",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 4
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-14T02:55:00",
+      "arrivalTime": "2026-12-14T12:35:00",
+      "durationSeconds": 56400,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "DXB",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "DXB",
+        "fromCity": "Bangkok",
+        "toCity": "Dubaï",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Dubaï",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-14T02:55:00",
+        "arrivalTime": "2026-12-14T06:40:00",
+        "durationSeconds": 24300,
+        "carrier": "EK",
+        "carrierName": "Emirates",
+        "flightNumber": "EK371",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DXB",
+        "to": "TUN",
+        "fromCity": "Dubaï",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international de Dubaï",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-14T08:40:00",
+        "arrivalTime": "2026-12-14T12:35:00",
+        "durationSeconds": 24900,
+        "carrier": "EK",
+        "carrierName": "Emirates",
+        "flightNumber": "EK747",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075619e051410000204749df_0|075619e051410000204749df_1",
+     "price": 1843.0,
+     "priceFormatted": "1843 EUR",
+     "totalDurationSeconds": 58500,
+     "bookingUrl": "https://kiwi.com/u/4vzptc",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-14T23:45:00",
+      "arrivalTime": "2026-12-15T10:00:00",
+      "durationSeconds": 58500,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "IST",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "IST",
+        "fromCity": "Bangkok",
+        "toCity": "Istanbul",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport d Istanbul",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Turquie",
+        "departureTime": "2026-12-14T23:45:00",
+        "arrivalTime": "2026-12-15T06:05:00",
+        "durationSeconds": 37200,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK8548",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "IST",
+        "to": "TUN",
+        "fromCity": "Istanbul",
+        "toCity": "Tunis",
+        "fromName": "Aéroport d Istanbul",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Turquie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-15T08:55:00",
+        "arrivalTime": "2026-12-15T10:00:00",
+        "durationSeconds": 11100,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK661",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075619e051420000404ae0c3_0|075619e051420000404ae0c3_1",
+     "price": 1870.0,
+     "priceFormatted": "1870 EUR",
+     "totalDurationSeconds": 58500,
+     "bookingUrl": "https://kiwi.com/u/7hb53k",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-15T23:45:00",
+      "arrivalTime": "2026-12-16T10:00:00",
+      "durationSeconds": 58500,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "IST",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "IST",
+        "fromCity": "Bangkok",
+        "toCity": "Istanbul",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport d Istanbul",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Turquie",
+        "departureTime": "2026-12-15T23:45:00",
+        "arrivalTime": "2026-12-16T06:05:00",
+        "durationSeconds": 37200,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK8548",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "IST",
+        "to": "TUN",
+        "fromCity": "Istanbul",
+        "toCity": "Tunis",
+        "fromName": "Aéroport d Istanbul",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Turquie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-16T08:55:00",
+        "arrivalTime": "2026-12-16T10:00:00",
+        "durationSeconds": 11100,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK661",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075619e0514000008d236aa1_0|075619e0514000008d236aa1_1",
+     "price": 1870.0,
+     "priceFormatted": "1870 EUR",
+     "totalDurationSeconds": 58500,
+     "bookingUrl": "https://kiwi.com/u/yx3xv9",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-13T23:45:00",
+      "arrivalTime": "2026-12-14T10:00:00",
+      "durationSeconds": 58500,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "IST",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "IST",
+        "fromCity": "Bangkok",
+        "toCity": "Istanbul",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport d Istanbul",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Turquie",
+        "departureTime": "2026-12-13T23:45:00",
+        "arrivalTime": "2026-12-14T06:05:00",
+        "durationSeconds": 37200,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK8548",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "IST",
+        "to": "TUN",
+        "fromCity": "Istanbul",
+        "toCity": "Tunis",
+        "fromName": "Aéroport d Istanbul",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Turquie",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-14T08:55:00",
+        "arrivalTime": "2026-12-14T10:00:00",
+        "durationSeconds": 11100,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK661",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "075619e05141000044005799_0|075619e05141000044005799_1",
+     "price": 2277.322968,
+     "priceFormatted": "2277 EUR",
+     "totalDurationSeconds": 64200,
+     "bookingUrl": "https://kiwi.com/u/qp492x",
+     "imageId": "tunis_tn",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "TUN",
+      "departureTime": "2026-12-14T11:30:00",
+      "arrivalTime": "2026-12-14T23:20:00",
+      "durationSeconds": 64200,
+      "stops": 1,
+      "route": [
+       "BKK",
+       "CDG",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "CDG",
+        "fromCity": "Bangkok",
+        "toCity": "Paris",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Paris-Charles-de-Gaulle",
+        "fromCountry": "Thaïlande",
+        "toCountry": "France",
+        "departureTime": "2026-12-14T11:30:00",
+        "arrivalTime": "2026-12-14T18:40:00",
+        "durationSeconds": 47400,
+        "carrier": "AF",
+        "carrierName": "Air France",
+        "flightNumber": "AF199",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "CDG",
+        "to": "TUN",
+        "fromCity": "Paris",
+        "toCity": "Tunis",
+        "fromName": "Aéroport de Paris-Charles-de-Gaulle",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "France",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-14T20:50:00",
+        "arrivalTime": "2026-12-14T23:20:00",
+        "durationSeconds": 9000,
+        "carrier": "AF",
+        "carrierName": "Air France",
+        "flightNumber": "AF1384",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 455,
+   "error": null
+  }
+ }
+}

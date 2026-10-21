@@ -1,0 +1,14 @@
+{
+  "case_name": "asie_v5_2etapes_cnx",
+  "notice": "Reprise hôtels Chiang Mai pour la variante deux étapes : la requête « Chiang Mai old city » n'a renvoyé qu'un seul résultat hors 4–5★. Requêtes plus larges (ville entière, quartier Nimmanhaemin, rive du Ping) aux mêmes dates 08/12→15/12, 2 adultes, 1 chambre, 4–5★, BE/EUR. Ajout : L'esprit De Naiyang 16 nuits sur Trivago pour aligner la source avec les 8 nuits (écart de prix par nuit constaté). Aucune réservation.",
+  "requests": [
+    { "name": "trivago_chiangmai_ville_7n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "4star": true, "5star": true }, "query": "Chiang Mai, Thailand", "arrival": "2026-12-08", "departure": "2026-12-15" } },
+    { "name": "trivago_chiangmai_nimman_7n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "4star": true, "5star": true }, "query": "Nimmanhaemin, Chiang Mai", "arrival": "2026-12-08", "departure": "2026-12-15" } },
+    { "name": "trivago_chiangmai_ping_7n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "4star": true, "5star": true }, "query": "Ping River, Chiang Mai", "arrival": "2026-12-08", "departure": "2026-12-15" } },
+    { "name": "trivago_naiyang_16n_align", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "4star": true, "5star": true }, "query": "Nai Yang, Phuket", "arrival": "2026-11-30", "departure": "2026-12-16" } }
+  ]
+}

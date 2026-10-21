@@ -1,0 +1,1723 @@
+=== 2026-09-24T22:20:10+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "TUN", "flyTo": "HKT", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false, "one_for_city": false, "departureDate": "29/11/2026", "departureDateTo": "29/11/2026", "returnDate": "16/12/2026", "returnDateTo": "16/12/2026"}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"TUN → HKT on 29/11/2026–29/11/2026, returning 16/12/2026–16/12/2026, 2 adults [≤2 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"19e02365513251432d4c0783_0|19e02365513251432d4c0783_1|19e02365513251432d4c0783_2|19e02365513251432d4c0783_3\",\n      \"price\": 1230.083472,\n      \"priceFormatted\": \"1230 EUR\",\n      \"totalDurationSeconds\": 123600,\n      \"bookingUrl\": \"https://kiwi.com/u/bw4879\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T10:40:00\",\n        \"arrivalTime\": \"2026-11-30T06:15:00\",\n        \"durationSeconds\": 48900,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T10:40:00\",\n            \"arrivalTime\": \"2026-11-29T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-29T21:00:00\",\n            \"arrivalTime\": \"2026-11-30T06:15:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY410\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T15:30:00\",\n        \"arrivalTime\": \"2026-12-17T06:15:00\",\n        \"durationSeconds\": 74700,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T15:30:00\",\n            \"arrivalTime\": \"2026-12-16T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-17T02:20:00\",\n            \"arrivalTime\": \"2026-12-17T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e0236551325143edf6014c_0|19e0236551325143edf6014c_1|19e0236551325143edf6014c_2|19e0236551325143edf6014c_3\",\n      \"price\": 1230.083472,\n      \"priceFormatted\": \"1230 EUR\",\n      \"totalDurationSeconds\": 144300,\n      \"bookingUrl\": \"https://kiwi.com/u/dw2pdm8\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T10:40:00\",\n        \"arrivalTime\": \"2026-11-30T12:00:00\",\n        \"durationSeconds\": 69600,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T10:40:00\",\n            \"arrivalTime\": \"2026-11-29T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T02:25:00\",\n            \"arrivalTime\": \"2026-11-30T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T15:30:00\",\n        \"arrivalTime\": \"2026-12-17T06:15:00\",\n        \"durationSeconds\": 74700,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T15:30:00\",\n            \"arrivalTime\": \"2026-12-16T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-17T02:20:00\",\n            \"arrivalTime\": \"2026-12-17T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e023655132514393b710c9_0|19e023655132514393b710c9_1|19e023655132514393b710c9_2|19e023655132514393b710c9_3\",\n      \"price\": 1230.083472,\n      \"priceFormatted\": \"1230 EUR\",\n      \"totalDurationSeconds\": 165300,\n      \"bookingUrl\": \"https://kiwi.com/u/n4vtcn\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T10:40:00\",\n        \"arrivalTime\": \"2026-11-30T17:50:00\",\n        \"durationSeconds\": 90600,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T10:40:00\",\n            \"arrivalTime\": \"2026-11-29T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T08:35:00\",\n            \"arrivalTime\": \"2026-11-30T17:50:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY412\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T15:30:00\",\n        \"arrivalTime\": \"2026-12-17T06:15:00\",\n        \"durationSeconds\": 74700,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T15:30:00\",\n            \"arrivalTime\": \"2026-12-16T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-17T02:20:00\",\n            \"arrivalTime\": \"2026-12-17T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e0236551325143558dc193_0|19e0236551325143558dc193_1|19e0236551325143558dc193_2|19e0236551325143558dc193_3\",\n      \"price\": 1230.083472,\n      \"priceFormatted\": \"1230 EUR\",\n      \"totalDurationSeconds\": 169800,\n      \"bookingUrl\": \"https://kiwi.com/u/qtxdsg\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T10:40:00\",\n        \"arrivalTime\": \"2026-11-30T06:15:00\",\n        \"durationSeconds\": 48900,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T10:40:00\",\n            \"arrivalTime\": \"2026-11-29T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-29T21:00:00\",\n            \"arrivalTime\": \"2026-11-30T06:15:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY410\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T02:40:00\",\n        \"arrivalTime\": \"2026-12-17T06:15:00\",\n        \"durationSeconds\": 120900,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T02:40:00\",\n            \"arrivalTime\": \"2026-12-16T06:45:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY415\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-17T02:20:00\",\n            \"arrivalTime\": \"2026-12-17T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e02365513251439537c75c_0|19e02365513251439537c75c_1|19e02365513251439537c75c_2|19e02365513251439537c75c_3\",\n      \"price\": 1230.083472,\n      \"priceFormatted\": \"1230 EUR\",\n      \"totalDurationSeconds\": 190500,\n      \"bookingUrl\": \"https://kiwi.com/u/c6jw3zb\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T10:40:00\",\n        \"arrivalTime\": \"2026-11-30T12:00:00\",\n        \"durationSeconds\": 69600,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T10:40:00\",\n            \"arrivalTime\": \"2026-11-29T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T02:25:00\",\n            \"arrivalTime\": \"2026-11-30T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T02:40:00\",\n        \"arrivalTime\": \"2026-12-17T06:15:00\",\n        \"durationSeconds\": 120900,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T02:40:00\",\n            \"arrivalTime\": \"2026-12-16T06:45:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY415\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-17T02:20:00\",\n            \"arrivalTime\": \"2026-12-17T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e0236551325143eb76d6d9_0|19e0236551325143eb76d6d9_1|19e0236551325143eb76d6d9_2|19e0236551325143eb76d6d9_3\",\n      \"price\": 1230.083472,\n      \"priceFormatted\": \"1230 EUR\",\n      \"totalDurationSeconds\": 211500,\n      \"bookingUrl\": \"https://kiwi.com/u/fjfdhk\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T10:40:00\",\n        \"arrivalTime\": \"2026-11-30T17:50:00\",\n        \"durationSeconds\": 90600,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T10:40:00\",\n            \"arrivalTime\": \"2026-11-29T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T08:35:00\",\n            \"arrivalTime\": \"2026-11-30T17:50:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY412\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T02:40:00\",\n        \"arrivalTime\": \"2026-12-17T06:15:00\",\n        \"durationSeconds\": 120900,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T02:40:00\",\n            \"arrivalTime\": \"2026-12-16T06:45:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY415\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-17T02:20:00\",\n            \"arrivalTime\": \"2026-12-17T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e0236551325143dccf8ba3_0|19e0236551325143dccf8ba3_1|19e0236551325143dccf8ba3_2|19e0236551325143dccf8ba3_3\",\n      \"price\": 1526.083472,\n      \"priceFormatted\": \"1526 EUR\",\n      \"totalDurationSeconds\": 103800,\n      \"bookingUrl\": \"https://kiwi.com/u/q4mmpst\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T10:40:00\",\n        \"arrivalTime\": \"2026-11-30T06:15:00\",\n        \"durationSeconds\": 48900,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T10:40:00\",\n            \"arrivalTime\": \"2026-11-29T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-29T21:00:00\",\n            \"arrivalTime\": \"2026-11-30T06:15:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY410\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T21:00:00\",\n        \"arrivalTime\": \"2026-12-17T06:15:00\",\n        \"durationSeconds\": 54900,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T21:00:00\",\n            \"arrivalTime\": \"2026-12-17T00:35:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY413\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-17T02:20:00\",\n            \"arrivalTime\": \"2026-12-17T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e02365513251439c7853b2_0|19e02365513251439c7853b2_1|19e02365513251439c7853b2_2|19e02365513251439c7853b2_3\",\n      \"price\": 1526.083472,\n      \"priceFormatted\": \"1526 EUR\",\n      \"totalDurationSeconds\": 105300,\n      \"bookingUrl\": \"https://kiwi.com/u/ynxr2xn\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T10:40:00\",\n        \"arrivalTime\": \"2026-11-30T06:15:00\",\n        \"durationSeconds\": 48900,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T10:40:00\",\n            \"arrivalTime\": \"2026-11-29T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-29T21:00:00\",\n            \"arrivalTime\": \"2026-11-30T06:15:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY410\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T20:35:00\",\n        \"arrivalTime\": \"2026-12-17T06:15:00\",\n        \"durationSeconds\": 56400,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T20:35:00\",\n            \"arrivalTime\": \"2026-12-17T00:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY419\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-17T02:20:00\",\n            \"arrivalTime\": \"2026-12-17T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e02365513251431c758d6c_0|19e02365513251431c758d6c_1|19e02365513251431c758d6c_2|19e02365513251431c758d6c_3\",\n      \"price\": 1526.083472,\n      \"priceFormatted\": \"1526 EUR\",\n      \"totalDurationSeconds\": 124500,\n      \"bookingUrl\": \"https://kiwi.com/u/9pzrrc\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T10:40:00\",\n        \"arrivalTime\": \"2026-11-30T12:00:00\",\n        \"durationSeconds\": 69600,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T10:40:00\",\n            \"arrivalTime\": \"2026-11-29T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T02:25:00\",\n            \"arrivalTime\": \"2026-11-30T12:00:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY416\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T21:00:00\",\n        \"arrivalTime\": \"2026-12-17T06:15:00\",\n        \"durationSeconds\": 54900,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T21:00:00\",\n            \"arrivalTime\": \"2026-12-17T00:35:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY413\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-17T02:20:00\",\n            \"arrivalTime\": \"2026-12-17T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e023655132514362349ce9_0|19e023655132514362349ce9_1|19e023655132514362349ce9_2|19e023655132514362349ce9_3\",\n      \"price\": 1526.083472,\n      \"priceFormatted\": \"1526 EUR\",\n      \"totalDurationSeconds\": 145500,\n      \"bookingUrl\": \"https://kiwi.com/u/w4u5cw\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T10:40:00\",\n        \"arrivalTime\": \"2026-11-30T17:50:00\",\n        \"durationSeconds\": 90600,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T10:40:00\",\n            \"arrivalTime\": \"2026-11-29T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T08:35:00\",\n            \"arrivalTime\": \"2026-11-30T17:50:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY412\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T21:00:00\",\n        \"arrivalTime\": \"2026-12-17T06:15:00\",\n        \"durationSeconds\": 54900,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T21:00:00\",\n            \"arrivalTime\": \"2026-12-17T00:35:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY413\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-17T02:20:00\",\n            \"arrivalTime\": \"2026-12-17T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e0236551325143228344f8_0|19e0236551325143228344f8_1|19e0236551325143228344f8_2|19e0236551325143228344f8_3\",\n      \"price\": 1526.083472,\n      \"priceFormatted\": \"1526 EUR\",\n      \"totalDurationSeconds\": 147000,\n      \"bookingUrl\": \"https://kiwi.com/u/qrd24y\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T10:40:00\",\n        \"arrivalTime\": \"2026-11-30T17:50:00\",\n        \"durationSeconds\": 90600,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T10:40:00\",\n            \"arrivalTime\": \"2026-11-29T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T08:35:00\",\n            \"arrivalTime\": \"2026-11-30T17:50:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY412\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T20:35:00\",\n        \"arrivalTime\": \"2026-12-17T06:15:00\",\n        \"durationSeconds\": 56400,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T20:35:00\",\n            \"arrivalTime\": \"2026-12-17T00:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY419\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-17T02:20:00\",\n            \"arrivalTime\": \"2026-12-17T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e02365513251438f506ac1_0|19e02365513251438f506ac1_1|19e02365513251438f506ac1_2|19e02365513251438f506ac1_3\",\n      \"price\": 1526.083472,\n      \"priceFormatted\": \"1526 EUR\",\n      \"totalDurationSeconds\": 147900,\n      \"bookingUrl\": \"https://kiwi.com/u/4xw5kp\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T10:40:00\",\n        \"arrivalTime\": \"2026-11-30T06:15:00\",\n        \"durationSeconds\": 48900,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-29T10:40:00\",\n            \"arrivalTime\": \"2026-11-29T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-29T21:00:00\",\n            \"arrivalTime\": \"2026-11-30T06:15:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY410\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T08:45:00\",\n        \"arrivalTime\": \"2026-12-17T06:15:00\",\n        \"durationSeconds\": 99000,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T08:45:00\",\n            \"arrivalTime\": \"2026-12-16T12:20:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY429\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-17T02:20:00\",\n            \"arrivalTime\": \"2026-12-17T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e0236551325143a0c061e5_0|19e0236551325143a0c061e5_1|19e0236551325143a0c061e5_2|19e0236551325143a0c061e5_3\",\n      \"price\": 1548.0,\n      \"priceFormatted\": \"1548 EUR\",\n      \"totalDurationSeconds\": 144300,\n      \"bookingUrl\": \"https://kiwi.com/u/qvbwk4\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T16:00:00\",\n        \"arrivalTime\": \"2026-11-30T18:55:00\",\n        \"durationSeconds\": 75300,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-29T16:00:00\",\n            \"arrivalTime\": \"2026-11-29T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T08:15:00\",\n            \"arrivalTime\": \"2026-11-30T18:55:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR846\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T00:25:00\",\n        \"arrivalTime\": \"2026-12-16T13:35:00\",\n        \"durationSeconds\": 69000,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"DOH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-12-16T00:25:00\",\n            \"arrivalTime\": \"2026-12-16T03:25:00\",\n            \"durationSeconds\": 25200,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR841\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-16T09:10:00\",\n            \"arrivalTime\": \"2026-12-16T13:35:00\",\n            \"durationSeconds\": 23100,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1399\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e0236551320000f9720896_0|19e0236551320000f9720896_1|236519e051430000e9e4509b_0|236519e051430000e9e4509b_1\",\n      \"price\": 1630.471436,\n      \"priceFormatted\": \"1630 EUR\",\n      \"totalDurationSeconds\": 128400,\n      \"bookingUrl\": \"https://kiwi.com/u/j3vdk5\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T16:00:00\",\n        \"arrivalTime\": \"2026-11-30T12:55:00\",\n        \"durationSeconds\": 53700,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-29T16:00:00\",\n            \"arrivalTime\": \"2026-11-29T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T02:15:00\",\n            \"arrivalTime\": \"2026-11-30T12:55:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR840\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T15:30:00\",\n        \"arrivalTime\": \"2026-12-17T06:15:00\",\n        \"durationSeconds\": 74700,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"AUH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-12-16T15:30:00\",\n            \"arrivalTime\": \"2026-12-16T19:35:00\",\n            \"durationSeconds\": 25500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY417\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-17T02:20:00\",\n            \"arrivalTime\": \"2026-12-17T06:15:00\",\n            \"durationSeconds\": 24900,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY739\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"19e0236551325143c52346ce_0|19e0236551325143c52346ce_1|19e0236551325143c52346ce_2|19e0236551325143c52346ce_3\",\n      \"price\": 1793.0,\n      \"priceFormatted\": \"1793 EUR\",\n      \"totalDurationSeconds\": 122700,\n      \"bookingUrl\": \"https://kiwi.com/u/hxx7tj\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 2,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-11-29T16:00:00\",\n        \"arrivalTime\": \"2026-11-30T12:55:00\",\n        \"durationSeconds\": 53700,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"DOH\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-11-29T16:00:00\",\n            \"arrivalTime\": \"2026-11-29T23:25:00\",\n            \"durationSeconds\": 19500,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1400\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-30T02:15:00\",\n            \"arrivalTime\": \"2026-11-30T12:55:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR840\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"TUN\",\n        \"departureTime\": \"2026-12-16T00:25:00\",\n        \"arrivalTime\": \"2026-12-16T13:35:00\",\n        \"durationSeconds\": 69000,\n        \"stops\": 1,\n        \"route\": [\n          \"HKT\",\n          \"DOH\",\n          \"TUN\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"DOH\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Doha\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international Hamad\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Qatar\",\n            \"departureTime\": \"2026-12-16T00:25:00\",\n            \"arrivalTime\": \"2026-12-16T03:25:00\",\n            \"durationSeconds\": 25200,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR841\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"DOH\",\n            \"to\": \"TUN\",\n            \"fromCity\": \"Doha\",\n            \"toCity\": \"Tunis\",\n            \"fromName\": \"Aéroport international Hamad\",\n            \"toName\": \"Aéroport international de Tunis-Carthage\",\n            \"fromCountry\": \"Qatar\",\n            \"toCountry\": \"Tunisie\",\n            \"departureTime\": \"2026-12-16T09:10:00\",\n            \"arrivalTime\": \"2026-12-16T13:35:00\",\n            \"durationSeconds\": 23100,\n            \"carrier\": \"QR\",\n            \"carrierName\": \"Qatar Airways\",\n            \"flightNumber\": \"QR1399\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      }\n    }\n  ],\n  \"searchTimeMs\": 625,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "TUN → HKT on 29/11/2026–29/11/2026, returning 16/12/2026–16/12/2026, 2 adults [≤2 stops/sector; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 15,
+   "itineraries": [
+    {
+     "id": "19e02365513251432d4c0783_0|19e02365513251432d4c0783_1|19e02365513251432d4c0783_2|19e02365513251432d4c0783_3",
+     "price": 1230.083472,
+     "priceFormatted": "1230 EUR",
+     "totalDurationSeconds": 123600,
+     "bookingUrl": "https://kiwi.com/u/bw4879",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T10:40:00",
+      "arrivalTime": "2026-11-30T06:15:00",
+      "durationSeconds": 48900,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-29T10:40:00",
+        "arrivalTime": "2026-11-29T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "HKT",
+        "fromCity": "Abou Dabi",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-29T21:00:00",
+        "arrivalTime": "2026-11-30T06:15:00",
+        "durationSeconds": 22500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY410",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T15:30:00",
+      "arrivalTime": "2026-12-17T06:15:00",
+      "durationSeconds": 74700,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T15:30:00",
+        "arrivalTime": "2026-12-16T19:35:00",
+        "durationSeconds": 25500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY417",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-17T02:20:00",
+        "arrivalTime": "2026-12-17T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e0236551325143edf6014c_0|19e0236551325143edf6014c_1|19e0236551325143edf6014c_2|19e0236551325143edf6014c_3",
+     "price": 1230.083472,
+     "priceFormatted": "1230 EUR",
+     "totalDurationSeconds": 144300,
+     "bookingUrl": "https://kiwi.com/u/dw2pdm8",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T10:40:00",
+      "arrivalTime": "2026-11-30T12:00:00",
+      "durationSeconds": 69600,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-29T10:40:00",
+        "arrivalTime": "2026-11-29T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "HKT",
+        "fromCity": "Abou Dabi",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-30T02:25:00",
+        "arrivalTime": "2026-11-30T12:00:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY416",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T15:30:00",
+      "arrivalTime": "2026-12-17T06:15:00",
+      "durationSeconds": 74700,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T15:30:00",
+        "arrivalTime": "2026-12-16T19:35:00",
+        "durationSeconds": 25500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY417",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-17T02:20:00",
+        "arrivalTime": "2026-12-17T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e023655132514393b710c9_0|19e023655132514393b710c9_1|19e023655132514393b710c9_2|19e023655132514393b710c9_3",
+     "price": 1230.083472,
+     "priceFormatted": "1230 EUR",
+     "totalDurationSeconds": 165300,
+     "bookingUrl": "https://kiwi.com/u/n4vtcn",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T10:40:00",
+      "arrivalTime": "2026-11-30T17:50:00",
+      "durationSeconds": 90600,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-29T10:40:00",
+        "arrivalTime": "2026-11-29T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "HKT",
+        "fromCity": "Abou Dabi",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-30T08:35:00",
+        "arrivalTime": "2026-11-30T17:50:00",
+        "durationSeconds": 22500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY412",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T15:30:00",
+      "arrivalTime": "2026-12-17T06:15:00",
+      "durationSeconds": 74700,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T15:30:00",
+        "arrivalTime": "2026-12-16T19:35:00",
+        "durationSeconds": 25500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY417",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-17T02:20:00",
+        "arrivalTime": "2026-12-17T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e0236551325143558dc193_0|19e0236551325143558dc193_1|19e0236551325143558dc193_2|19e0236551325143558dc193_3",
+     "price": 1230.083472,
+     "priceFormatted": "1230 EUR",
+     "totalDurationSeconds": 169800,
+     "bookingUrl": "https://kiwi.com/u/qtxdsg",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T10:40:00",
+      "arrivalTime": "2026-11-30T06:15:00",
+      "durationSeconds": 48900,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-29T10:40:00",
+        "arrivalTime": "2026-11-29T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "HKT",
+        "fromCity": "Abou Dabi",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-29T21:00:00",
+        "arrivalTime": "2026-11-30T06:15:00",
+        "durationSeconds": 22500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY410",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T02:40:00",
+      "arrivalTime": "2026-12-17T06:15:00",
+      "durationSeconds": 120900,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T02:40:00",
+        "arrivalTime": "2026-12-16T06:45:00",
+        "durationSeconds": 25500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY415",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-17T02:20:00",
+        "arrivalTime": "2026-12-17T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e02365513251439537c75c_0|19e02365513251439537c75c_1|19e02365513251439537c75c_2|19e02365513251439537c75c_3",
+     "price": 1230.083472,
+     "priceFormatted": "1230 EUR",
+     "totalDurationSeconds": 190500,
+     "bookingUrl": "https://kiwi.com/u/c6jw3zb",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T10:40:00",
+      "arrivalTime": "2026-11-30T12:00:00",
+      "durationSeconds": 69600,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-29T10:40:00",
+        "arrivalTime": "2026-11-29T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "HKT",
+        "fromCity": "Abou Dabi",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-30T02:25:00",
+        "arrivalTime": "2026-11-30T12:00:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY416",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T02:40:00",
+      "arrivalTime": "2026-12-17T06:15:00",
+      "durationSeconds": 120900,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T02:40:00",
+        "arrivalTime": "2026-12-16T06:45:00",
+        "durationSeconds": 25500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY415",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-17T02:20:00",
+        "arrivalTime": "2026-12-17T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e0236551325143eb76d6d9_0|19e0236551325143eb76d6d9_1|19e0236551325143eb76d6d9_2|19e0236551325143eb76d6d9_3",
+     "price": 1230.083472,
+     "priceFormatted": "1230 EUR",
+     "totalDurationSeconds": 211500,
+     "bookingUrl": "https://kiwi.com/u/fjfdhk",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T10:40:00",
+      "arrivalTime": "2026-11-30T17:50:00",
+      "durationSeconds": 90600,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-29T10:40:00",
+        "arrivalTime": "2026-11-29T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "HKT",
+        "fromCity": "Abou Dabi",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-30T08:35:00",
+        "arrivalTime": "2026-11-30T17:50:00",
+        "durationSeconds": 22500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY412",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T02:40:00",
+      "arrivalTime": "2026-12-17T06:15:00",
+      "durationSeconds": 120900,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T02:40:00",
+        "arrivalTime": "2026-12-16T06:45:00",
+        "durationSeconds": 25500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY415",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-17T02:20:00",
+        "arrivalTime": "2026-12-17T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e0236551325143dccf8ba3_0|19e0236551325143dccf8ba3_1|19e0236551325143dccf8ba3_2|19e0236551325143dccf8ba3_3",
+     "price": 1526.083472,
+     "priceFormatted": "1526 EUR",
+     "totalDurationSeconds": 103800,
+     "bookingUrl": "https://kiwi.com/u/q4mmpst",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T10:40:00",
+      "arrivalTime": "2026-11-30T06:15:00",
+      "durationSeconds": 48900,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-29T10:40:00",
+        "arrivalTime": "2026-11-29T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "HKT",
+        "fromCity": "Abou Dabi",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-29T21:00:00",
+        "arrivalTime": "2026-11-30T06:15:00",
+        "durationSeconds": 22500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY410",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T21:00:00",
+      "arrivalTime": "2026-12-17T06:15:00",
+      "durationSeconds": 54900,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T21:00:00",
+        "arrivalTime": "2026-12-17T00:35:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY413",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-17T02:20:00",
+        "arrivalTime": "2026-12-17T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e02365513251439c7853b2_0|19e02365513251439c7853b2_1|19e02365513251439c7853b2_2|19e02365513251439c7853b2_3",
+     "price": 1526.083472,
+     "priceFormatted": "1526 EUR",
+     "totalDurationSeconds": 105300,
+     "bookingUrl": "https://kiwi.com/u/ynxr2xn",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T10:40:00",
+      "arrivalTime": "2026-11-30T06:15:00",
+      "durationSeconds": 48900,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-29T10:40:00",
+        "arrivalTime": "2026-11-29T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "HKT",
+        "fromCity": "Abou Dabi",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-29T21:00:00",
+        "arrivalTime": "2026-11-30T06:15:00",
+        "durationSeconds": 22500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY410",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T20:35:00",
+      "arrivalTime": "2026-12-17T06:15:00",
+      "durationSeconds": 56400,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T20:35:00",
+        "arrivalTime": "2026-12-17T00:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY419",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-17T02:20:00",
+        "arrivalTime": "2026-12-17T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e02365513251431c758d6c_0|19e02365513251431c758d6c_1|19e02365513251431c758d6c_2|19e02365513251431c758d6c_3",
+     "price": 1526.083472,
+     "priceFormatted": "1526 EUR",
+     "totalDurationSeconds": 124500,
+     "bookingUrl": "https://kiwi.com/u/9pzrrc",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T10:40:00",
+      "arrivalTime": "2026-11-30T12:00:00",
+      "durationSeconds": 69600,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-29T10:40:00",
+        "arrivalTime": "2026-11-29T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "HKT",
+        "fromCity": "Abou Dabi",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-30T02:25:00",
+        "arrivalTime": "2026-11-30T12:00:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY416",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T21:00:00",
+      "arrivalTime": "2026-12-17T06:15:00",
+      "durationSeconds": 54900,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T21:00:00",
+        "arrivalTime": "2026-12-17T00:35:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY413",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-17T02:20:00",
+        "arrivalTime": "2026-12-17T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e023655132514362349ce9_0|19e023655132514362349ce9_1|19e023655132514362349ce9_2|19e023655132514362349ce9_3",
+     "price": 1526.083472,
+     "priceFormatted": "1526 EUR",
+     "totalDurationSeconds": 145500,
+     "bookingUrl": "https://kiwi.com/u/w4u5cw",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T10:40:00",
+      "arrivalTime": "2026-11-30T17:50:00",
+      "durationSeconds": 90600,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-29T10:40:00",
+        "arrivalTime": "2026-11-29T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "HKT",
+        "fromCity": "Abou Dabi",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-30T08:35:00",
+        "arrivalTime": "2026-11-30T17:50:00",
+        "durationSeconds": 22500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY412",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T21:00:00",
+      "arrivalTime": "2026-12-17T06:15:00",
+      "durationSeconds": 54900,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T21:00:00",
+        "arrivalTime": "2026-12-17T00:35:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY413",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-17T02:20:00",
+        "arrivalTime": "2026-12-17T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e0236551325143228344f8_0|19e0236551325143228344f8_1|19e0236551325143228344f8_2|19e0236551325143228344f8_3",
+     "price": 1526.083472,
+     "priceFormatted": "1526 EUR",
+     "totalDurationSeconds": 147000,
+     "bookingUrl": "https://kiwi.com/u/qrd24y",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T10:40:00",
+      "arrivalTime": "2026-11-30T17:50:00",
+      "durationSeconds": 90600,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-29T10:40:00",
+        "arrivalTime": "2026-11-29T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "HKT",
+        "fromCity": "Abou Dabi",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-30T08:35:00",
+        "arrivalTime": "2026-11-30T17:50:00",
+        "durationSeconds": 22500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY412",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T20:35:00",
+      "arrivalTime": "2026-12-17T06:15:00",
+      "durationSeconds": 56400,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T20:35:00",
+        "arrivalTime": "2026-12-17T00:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY419",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-17T02:20:00",
+        "arrivalTime": "2026-12-17T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e02365513251438f506ac1_0|19e02365513251438f506ac1_1|19e02365513251438f506ac1_2|19e02365513251438f506ac1_3",
+     "price": 1526.083472,
+     "priceFormatted": "1526 EUR",
+     "totalDurationSeconds": 147900,
+     "bookingUrl": "https://kiwi.com/u/4xw5kp",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T10:40:00",
+      "arrivalTime": "2026-11-30T06:15:00",
+      "durationSeconds": 48900,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-29T10:40:00",
+        "arrivalTime": "2026-11-29T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "HKT",
+        "fromCity": "Abou Dabi",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-29T21:00:00",
+        "arrivalTime": "2026-11-30T06:15:00",
+        "durationSeconds": 22500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY410",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T08:45:00",
+      "arrivalTime": "2026-12-17T06:15:00",
+      "durationSeconds": 99000,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T08:45:00",
+        "arrivalTime": "2026-12-16T12:20:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY429",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-17T02:20:00",
+        "arrivalTime": "2026-12-17T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e0236551325143a0c061e5_0|19e0236551325143a0c061e5_1|19e0236551325143a0c061e5_2|19e0236551325143a0c061e5_3",
+     "price": 1548.0,
+     "priceFormatted": "1548 EUR",
+     "totalDurationSeconds": 144300,
+     "bookingUrl": "https://kiwi.com/u/qvbwk4",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T16:00:00",
+      "arrivalTime": "2026-11-30T18:55:00",
+      "durationSeconds": 75300,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "DOH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-29T16:00:00",
+        "arrivalTime": "2026-11-29T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "HKT",
+        "fromCity": "Doha",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-30T08:15:00",
+        "arrivalTime": "2026-11-30T18:55:00",
+        "durationSeconds": 24000,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR846",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T00:25:00",
+      "arrivalTime": "2026-12-16T13:35:00",
+      "durationSeconds": 69000,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "DOH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DOH",
+        "fromCity": "Phuket",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Qatar",
+        "departureTime": "2026-12-16T00:25:00",
+        "arrivalTime": "2026-12-16T03:25:00",
+        "durationSeconds": 25200,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR841",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "TUN",
+        "fromCity": "Doha",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Qatar",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-16T09:10:00",
+        "arrivalTime": "2026-12-16T13:35:00",
+        "durationSeconds": 23100,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1399",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e0236551320000f9720896_0|19e0236551320000f9720896_1|236519e051430000e9e4509b_0|236519e051430000e9e4509b_1",
+     "price": 1630.471436,
+     "priceFormatted": "1630 EUR",
+     "totalDurationSeconds": 128400,
+     "bookingUrl": "https://kiwi.com/u/j3vdk5",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T16:00:00",
+      "arrivalTime": "2026-11-30T12:55:00",
+      "durationSeconds": 53700,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "DOH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-29T16:00:00",
+        "arrivalTime": "2026-11-29T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "HKT",
+        "fromCity": "Doha",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-30T02:15:00",
+        "arrivalTime": "2026-11-30T12:55:00",
+        "durationSeconds": 24000,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR840",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T15:30:00",
+      "arrivalTime": "2026-12-17T06:15:00",
+      "durationSeconds": 74700,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "AUH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "AUH",
+        "fromCity": "Phuket",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-12-16T15:30:00",
+        "arrivalTime": "2026-12-16T19:35:00",
+        "durationSeconds": 25500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY417",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "TUN",
+        "fromCity": "Abou Dabi",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-17T02:20:00",
+        "arrivalTime": "2026-12-17T06:15:00",
+        "durationSeconds": 24900,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY739",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    },
+    {
+     "id": "19e0236551325143c52346ce_0|19e0236551325143c52346ce_1|19e0236551325143c52346ce_2|19e0236551325143c52346ce_3",
+     "price": 1793.0,
+     "priceFormatted": "1793 EUR",
+     "totalDurationSeconds": 122700,
+     "bookingUrl": "https://kiwi.com/u/hxx7tj",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 2,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "HKT",
+      "departureTime": "2026-11-29T16:00:00",
+      "arrivalTime": "2026-11-30T12:55:00",
+      "durationSeconds": 53700,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "DOH",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "DOH",
+        "fromCity": "Tunis",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Tunisie",
+        "toCountry": "Qatar",
+        "departureTime": "2026-11-29T16:00:00",
+        "arrivalTime": "2026-11-29T23:25:00",
+        "durationSeconds": 19500,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1400",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "HKT",
+        "fromCity": "Doha",
+        "toCity": "Phuket",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Qatar",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-30T02:15:00",
+        "arrivalTime": "2026-11-30T12:55:00",
+        "durationSeconds": 24000,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR840",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": {
+      "from": "HKT",
+      "to": "TUN",
+      "departureTime": "2026-12-16T00:25:00",
+      "arrivalTime": "2026-12-16T13:35:00",
+      "durationSeconds": 69000,
+      "stops": 1,
+      "route": [
+       "HKT",
+       "DOH",
+       "TUN"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "DOH",
+        "fromCity": "Phuket",
+        "toCity": "Doha",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international Hamad",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Qatar",
+        "departureTime": "2026-12-16T00:25:00",
+        "arrivalTime": "2026-12-16T03:25:00",
+        "durationSeconds": 25200,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR841",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "DOH",
+        "to": "TUN",
+        "fromCity": "Doha",
+        "toCity": "Tunis",
+        "fromName": "Aéroport international Hamad",
+        "toName": "Aéroport international de Tunis-Carthage",
+        "fromCountry": "Qatar",
+        "toCountry": "Tunisie",
+        "departureTime": "2026-12-16T09:10:00",
+        "arrivalTime": "2026-12-16T13:35:00",
+        "durationSeconds": 23100,
+        "carrier": "QR",
+        "carrierName": "Qatar Airways",
+        "flightNumber": "QR1399",
+        "cabinClass": "Economy"
+       }
+      ]
+     }
+    }
+   ],
+   "searchTimeMs": 625,
+   "error": null
+  }
+ }
+}

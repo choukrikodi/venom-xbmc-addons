@@ -1,0 +1,718 @@
+=== 2026-09-24T23:00:49+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "HKT", "flyTo": "USM", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 1, "allow_self_transfer": false, "one_for_city": false, "departureDate": "08/12/2026", "departureDateFlexDays": 1}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"HKT → USM on 08/12/2026 ±1d, 2 adults [≤1 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"23651850513a0000c64c338b_0\",\n      \"price\": 254.0,\n      \"priceFormatted\": \"254 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/q6rg8j\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-07T16:35:00\",\n        \"arrivalTime\": \"2026-12-07T17:30:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T16:35:00\",\n            \"arrivalTime\": \"2026-12-07T17:30:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG256\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651850513a0000b8db7f65_0\",\n      \"price\": 254.0,\n      \"priceFormatted\": \"254 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/9jtj63\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-07T14:15:00\",\n        \"arrivalTime\": \"2026-12-07T15:10:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T14:15:00\",\n            \"arrivalTime\": \"2026-12-07T15:10:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG402\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651850513a0000580e967b_0\",\n      \"price\": 254.0,\n      \"priceFormatted\": \"254 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/6s4w8k\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-07T07:30:00\",\n        \"arrivalTime\": \"2026-12-07T08:25:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T07:30:00\",\n            \"arrivalTime\": \"2026-12-07T08:25:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG408\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651850513a0000284252a7_0\",\n      \"price\": 254.0,\n      \"priceFormatted\": \"254 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/v5mj7u\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-07T11:00:00\",\n        \"arrivalTime\": \"2026-12-07T11:55:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T11:00:00\",\n            \"arrivalTime\": \"2026-12-07T11:55:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG254\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651850513a0000c121f792_0\",\n      \"price\": 254.0,\n      \"priceFormatted\": \"254 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/xtrjuh\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-07T09:45:00\",\n        \"arrivalTime\": \"2026-12-07T10:40:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T09:45:00\",\n            \"arrivalTime\": \"2026-12-07T10:40:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG252\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651850513a000051b8da50_0\",\n      \"price\": 254.0,\n      \"priceFormatted\": \"254 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/73ytx7\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-07T17:30:00\",\n        \"arrivalTime\": \"2026-12-07T18:25:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T17:30:00\",\n            \"arrivalTime\": \"2026-12-07T18:25:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG404\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651850513a000021f41e8c_0\",\n      \"price\": 254.0,\n      \"priceFormatted\": \"254 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/u2rswh\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-07T19:55:00\",\n        \"arrivalTime\": \"2026-12-07T20:50:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T19:55:00\",\n            \"arrivalTime\": \"2026-12-07T20:50:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG258\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651850513c000092902a31_0\",\n      \"price\": 255.0,\n      \"priceFormatted\": \"255 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/72v6buf\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-09T16:35:00\",\n        \"arrivalTime\": \"2026-12-09T17:30:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T16:35:00\",\n            \"arrivalTime\": \"2026-12-09T17:30:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG256\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651850513c00000cd28fc1_0\",\n      \"price\": 255.0,\n      \"priceFormatted\": \"255 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/rv8t8h\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-09T07:30:00\",\n        \"arrivalTime\": \"2026-12-09T08:25:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T07:30:00\",\n            \"arrivalTime\": \"2026-12-09T08:25:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG408\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651850513c00007bf38f04_0\",\n      \"price\": 255.0,\n      \"priceFormatted\": \"255 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/vkg44q\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-09T12:55:00\",\n        \"arrivalTime\": \"2026-12-09T13:50:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T12:55:00\",\n            \"arrivalTime\": \"2026-12-09T13:50:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG250\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651850513c00000564c3ea_0\",\n      \"price\": 255.0,\n      \"priceFormatted\": \"255 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/qxzpc4\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-09T17:30:00\",\n        \"arrivalTime\": \"2026-12-09T18:25:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T17:30:00\",\n            \"arrivalTime\": \"2026-12-09T18:25:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG404\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651850513c000095fdee28_0\",\n      \"price\": 255.0,\n      \"priceFormatted\": \"255 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/6v5v73f\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-09T09:45:00\",\n        \"arrivalTime\": \"2026-12-09T10:40:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T09:45:00\",\n            \"arrivalTime\": \"2026-12-09T10:40:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG252\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651850513c000075280736_0\",\n      \"price\": 255.0,\n      \"priceFormatted\": \"255 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/xvyr9m\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-09T19:55:00\",\n        \"arrivalTime\": \"2026-12-09T20:50:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T19:55:00\",\n            \"arrivalTime\": \"2026-12-09T20:50:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG258\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651850513b000006667b9b_0\",\n      \"price\": 256.0,\n      \"priceFormatted\": \"256 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/tbdmg9\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-08T09:45:00\",\n        \"arrivalTime\": \"2026-12-08T10:40:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-08T09:45:00\",\n            \"arrivalTime\": \"2026-12-08T10:40:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG252\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"23651850513b00009f491a72_0\",\n      \"price\": 256.0,\n      \"priceFormatted\": \"256 EUR\",\n      \"totalDurationSeconds\": 3300,\n      \"bookingUrl\": \"https://kiwi.com/u/mspkg5\",\n      \"imageId\": \"ko-samui_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"USM\",\n        \"departureTime\": \"2026-12-08T07:30:00\",\n        \"arrivalTime\": \"2026-12-08T08:25:00\",\n        \"durationSeconds\": 3300,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"USM\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"USM\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Ko Samui\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Ko Samui\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-08T07:30:00\",\n            \"arrivalTime\": \"2026-12-08T08:25:00\",\n            \"durationSeconds\": 3300,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG408\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 548,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "HKT → USM on 08/12/2026 ±1d, 2 adults [≤1 stops/sector; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 15,
+   "itineraries": [
+    {
+     "id": "23651850513a0000c64c338b_0",
+     "price": 254.0,
+     "priceFormatted": "254 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/q6rg8j",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-07T16:35:00",
+      "arrivalTime": "2026-12-07T17:30:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-07T16:35:00",
+        "arrivalTime": "2026-12-07T17:30:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG256",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651850513a0000b8db7f65_0",
+     "price": 254.0,
+     "priceFormatted": "254 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/9jtj63",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-07T14:15:00",
+      "arrivalTime": "2026-12-07T15:10:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-07T14:15:00",
+        "arrivalTime": "2026-12-07T15:10:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG402",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651850513a0000580e967b_0",
+     "price": 254.0,
+     "priceFormatted": "254 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/6s4w8k",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-07T07:30:00",
+      "arrivalTime": "2026-12-07T08:25:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-07T07:30:00",
+        "arrivalTime": "2026-12-07T08:25:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG408",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651850513a0000284252a7_0",
+     "price": 254.0,
+     "priceFormatted": "254 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/v5mj7u",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-07T11:00:00",
+      "arrivalTime": "2026-12-07T11:55:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-07T11:00:00",
+        "arrivalTime": "2026-12-07T11:55:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG254",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651850513a0000c121f792_0",
+     "price": 254.0,
+     "priceFormatted": "254 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/xtrjuh",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-07T09:45:00",
+      "arrivalTime": "2026-12-07T10:40:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-07T09:45:00",
+        "arrivalTime": "2026-12-07T10:40:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG252",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651850513a000051b8da50_0",
+     "price": 254.0,
+     "priceFormatted": "254 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/73ytx7",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-07T17:30:00",
+      "arrivalTime": "2026-12-07T18:25:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-07T17:30:00",
+        "arrivalTime": "2026-12-07T18:25:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG404",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651850513a000021f41e8c_0",
+     "price": 254.0,
+     "priceFormatted": "254 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/u2rswh",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-07T19:55:00",
+      "arrivalTime": "2026-12-07T20:50:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-07T19:55:00",
+        "arrivalTime": "2026-12-07T20:50:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG258",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651850513c000092902a31_0",
+     "price": 255.0,
+     "priceFormatted": "255 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/72v6buf",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-09T16:35:00",
+      "arrivalTime": "2026-12-09T17:30:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T16:35:00",
+        "arrivalTime": "2026-12-09T17:30:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG256",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651850513c00000cd28fc1_0",
+     "price": 255.0,
+     "priceFormatted": "255 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/rv8t8h",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-09T07:30:00",
+      "arrivalTime": "2026-12-09T08:25:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T07:30:00",
+        "arrivalTime": "2026-12-09T08:25:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG408",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651850513c00007bf38f04_0",
+     "price": 255.0,
+     "priceFormatted": "255 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/vkg44q",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-09T12:55:00",
+      "arrivalTime": "2026-12-09T13:50:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T12:55:00",
+        "arrivalTime": "2026-12-09T13:50:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG250",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651850513c00000564c3ea_0",
+     "price": 255.0,
+     "priceFormatted": "255 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/qxzpc4",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-09T17:30:00",
+      "arrivalTime": "2026-12-09T18:25:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T17:30:00",
+        "arrivalTime": "2026-12-09T18:25:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG404",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651850513c000095fdee28_0",
+     "price": 255.0,
+     "priceFormatted": "255 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/6v5v73f",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-09T09:45:00",
+      "arrivalTime": "2026-12-09T10:40:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T09:45:00",
+        "arrivalTime": "2026-12-09T10:40:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG252",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651850513c000075280736_0",
+     "price": 255.0,
+     "priceFormatted": "255 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/xvyr9m",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-09T19:55:00",
+      "arrivalTime": "2026-12-09T20:50:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T19:55:00",
+        "arrivalTime": "2026-12-09T20:50:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG258",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651850513b000006667b9b_0",
+     "price": 256.0,
+     "priceFormatted": "256 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/tbdmg9",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-08T09:45:00",
+      "arrivalTime": "2026-12-08T10:40:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-08T09:45:00",
+        "arrivalTime": "2026-12-08T10:40:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG252",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "23651850513b00009f491a72_0",
+     "price": 256.0,
+     "priceFormatted": "256 EUR",
+     "totalDurationSeconds": 3300,
+     "bookingUrl": "https://kiwi.com/u/mspkg5",
+     "imageId": "ko-samui_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "USM",
+      "departureTime": "2026-12-08T07:30:00",
+      "arrivalTime": "2026-12-08T08:25:00",
+      "durationSeconds": 3300,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "USM"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "USM",
+        "fromCity": "Phuket",
+        "toCity": "Ko Samui",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Ko Samui",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-08T07:30:00",
+        "arrivalTime": "2026-12-08T08:25:00",
+        "durationSeconds": 3300,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG408",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 548,
+   "error": null
+  }
+ }
+}

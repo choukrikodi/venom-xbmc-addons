@@ -1,0 +1,10 @@
+{
+  "case_file": "skills/travel-agent/evals/files/asie_v20_qr_frequence.json",
+  "run_id": "39667466990",
+  "attempt": "1",
+  "event_sha": "71df77d05a0e6f4bba2d4995aa86f1dda87e3a81",
+  "checkout_sha": "71df77d05a0e6f4bba2d4995aa86f1dda87e3a81",
+  "utc": "2026-10-21T20:07:21+00:00",
+  "list_status": "success",
+  "calls_status": "success"
+}

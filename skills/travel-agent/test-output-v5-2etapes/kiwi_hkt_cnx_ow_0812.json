@@ -1,0 +1,718 @@
+=== 2026-09-24T23:00:29+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "HKT", "flyTo": "CNX", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 1, "allow_self_transfer": false, "one_for_city": false, "departureDate": "08/12/2026", "departureDateFlexDays": 1}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"HKT → CNX on 08/12/2026 ±1d, 2 adults [≤1 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 15,\n  \"itineraries\": [\n    {\n      \"id\": \"236521c8513b00006b178ba3_0\",\n      \"price\": 224.647742,\n      \"priceFormatted\": \"225 EUR\",\n      \"totalDurationSeconds\": 7500,\n      \"bookingUrl\": \"https://kiwi.com/u/srfq4m\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-08T08:15:00\",\n        \"arrivalTime\": \"2026-12-08T10:20:00\",\n        \"durationSeconds\": 7500,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-08T08:15:00\",\n            \"arrivalTime\": \"2026-12-08T10:20:00\",\n            \"durationSeconds\": 7500,\n            \"carrier\": \"VZ\",\n            \"carrierName\": \"Thai Vietjet\",\n            \"flightNumber\": \"VZ415\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"236521c8513a0000ac5007aa_0\",\n      \"price\": 228.647742,\n      \"priceFormatted\": \"229 EUR\",\n      \"totalDurationSeconds\": 7500,\n      \"bookingUrl\": \"https://kiwi.com/u/tr8m2p\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-07T08:15:00\",\n        \"arrivalTime\": \"2026-12-07T10:20:00\",\n        \"durationSeconds\": 7500,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T08:15:00\",\n            \"arrivalTime\": \"2026-12-07T10:20:00\",\n            \"durationSeconds\": 7500,\n            \"carrier\": \"VZ\",\n            \"carrierName\": \"Thai Vietjet\",\n            \"flightNumber\": \"VZ415\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"236521c8513a0000bdab5375_0\",\n      \"price\": 236.949254,\n      \"priceFormatted\": \"237 EUR\",\n      \"totalDurationSeconds\": 7200,\n      \"bookingUrl\": \"https://kiwi.com/u/gv6gkw\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-07T18:55:00\",\n        \"arrivalTime\": \"2026-12-07T20:55:00\",\n        \"durationSeconds\": 7200,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T18:55:00\",\n            \"arrivalTime\": \"2026-12-07T20:55:00\",\n            \"durationSeconds\": 7200,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3167\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"236521c8513c0000f88c1e10_0\",\n      \"price\": 245.647742,\n      \"priceFormatted\": \"246 EUR\",\n      \"totalDurationSeconds\": 7500,\n      \"bookingUrl\": \"https://kiwi.com/u/usczjj\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-09T08:15:00\",\n        \"arrivalTime\": \"2026-12-09T10:20:00\",\n        \"durationSeconds\": 7500,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T08:15:00\",\n            \"arrivalTime\": \"2026-12-09T10:20:00\",\n            \"durationSeconds\": 7500,\n            \"carrier\": \"VZ\",\n            \"carrierName\": \"Thai Vietjet\",\n            \"flightNumber\": \"VZ415\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"236521c8513b00008519ea8f_0\",\n      \"price\": 245.647742,\n      \"priceFormatted\": \"246 EUR\",\n      \"totalDurationSeconds\": 8100,\n      \"bookingUrl\": \"https://kiwi.com/u/u4w5m4\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-08T13:25:00\",\n        \"arrivalTime\": \"2026-12-08T15:40:00\",\n        \"durationSeconds\": 8100,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-08T13:25:00\",\n            \"arrivalTime\": \"2026-12-08T15:40:00\",\n            \"durationSeconds\": 8100,\n            \"carrier\": \"VZ\",\n            \"carrierName\": \"Thai Vietjet\",\n            \"flightNumber\": \"VZ417\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"236521c8513a0000425e6686_0\",\n      \"price\": 252.647742,\n      \"priceFormatted\": \"253 EUR\",\n      \"totalDurationSeconds\": 8100,\n      \"bookingUrl\": \"https://kiwi.com/u/c7xs5p\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-07T13:25:00\",\n        \"arrivalTime\": \"2026-12-07T15:40:00\",\n        \"durationSeconds\": 8100,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T13:25:00\",\n            \"arrivalTime\": \"2026-12-07T15:40:00\",\n            \"durationSeconds\": 8100,\n            \"carrier\": \"VZ\",\n            \"carrierName\": \"Thai Vietjet\",\n            \"flightNumber\": \"VZ417\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"236521c8513b0000c4b0ac5d_0\",\n      \"price\": 252.949254,\n      \"priceFormatted\": \"253 EUR\",\n      \"totalDurationSeconds\": 7200,\n      \"bookingUrl\": \"https://kiwi.com/u/x8rhy25\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-08T18:55:00\",\n        \"arrivalTime\": \"2026-12-08T20:55:00\",\n        \"durationSeconds\": 7200,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-08T18:55:00\",\n            \"arrivalTime\": \"2026-12-08T20:55:00\",\n            \"durationSeconds\": 7200,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3167\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"236521c8513c0000964bd5fe_0\",\n      \"price\": 260.949254,\n      \"priceFormatted\": \"261 EUR\",\n      \"totalDurationSeconds\": 7200,\n      \"bookingUrl\": \"https://kiwi.com/u/4qm5vs\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-09T18:55:00\",\n        \"arrivalTime\": \"2026-12-09T20:55:00\",\n        \"durationSeconds\": 7200,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T18:55:00\",\n            \"arrivalTime\": \"2026-12-09T20:55:00\",\n            \"durationSeconds\": 7200,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3167\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"236521c8513c00005adeab3a_0\",\n      \"price\": 260.949254,\n      \"priceFormatted\": \"261 EUR\",\n      \"totalDurationSeconds\": 7200,\n      \"bookingUrl\": \"https://kiwi.com/u/hpqdd5\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-09T09:00:00\",\n        \"arrivalTime\": \"2026-12-09T11:00:00\",\n        \"durationSeconds\": 7200,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T09:00:00\",\n            \"arrivalTime\": \"2026-12-09T11:00:00\",\n            \"durationSeconds\": 7200,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3159\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"236521c8513a0000713e2db1_0\",\n      \"price\": 260.949254,\n      \"priceFormatted\": \"261 EUR\",\n      \"totalDurationSeconds\": 7200,\n      \"bookingUrl\": \"https://kiwi.com/u/89w3j4w\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-07T09:00:00\",\n        \"arrivalTime\": \"2026-12-07T11:00:00\",\n        \"durationSeconds\": 7200,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T09:00:00\",\n            \"arrivalTime\": \"2026-12-07T11:00:00\",\n            \"durationSeconds\": 7200,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3159\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"236521c8513b00002dd30968_0\",\n      \"price\": 263.949254,\n      \"priceFormatted\": \"264 EUR\",\n      \"totalDurationSeconds\": 7200,\n      \"bookingUrl\": \"https://kiwi.com/u/r8vpdz7\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-08T10:35:00\",\n        \"arrivalTime\": \"2026-12-08T12:35:00\",\n        \"durationSeconds\": 7200,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-08T10:35:00\",\n            \"arrivalTime\": \"2026-12-08T12:35:00\",\n            \"durationSeconds\": 7200,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3161\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"236521c8513b00000825d299_0\",\n      \"price\": 263.949254,\n      \"priceFormatted\": \"264 EUR\",\n      \"totalDurationSeconds\": 7200,\n      \"bookingUrl\": \"https://kiwi.com/u/tb7v2w\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-08T09:00:00\",\n        \"arrivalTime\": \"2026-12-08T11:00:00\",\n        \"durationSeconds\": 7200,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-08T09:00:00\",\n            \"arrivalTime\": \"2026-12-08T11:00:00\",\n            \"durationSeconds\": 7200,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3159\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"236521c8513c000016827f3c_0\",\n      \"price\": 280.647742,\n      \"priceFormatted\": \"281 EUR\",\n      \"totalDurationSeconds\": 8100,\n      \"bookingUrl\": \"https://kiwi.com/u/3hkg6g\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-09T13:25:00\",\n        \"arrivalTime\": \"2026-12-09T15:40:00\",\n        \"durationSeconds\": 8100,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T13:25:00\",\n            \"arrivalTime\": \"2026-12-09T15:40:00\",\n            \"durationSeconds\": 8100,\n            \"carrier\": \"VZ\",\n            \"carrierName\": \"Thai Vietjet\",\n            \"flightNumber\": \"VZ417\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"236521c8513a000054c8f640_0\",\n      \"price\": 285.949254,\n      \"priceFormatted\": \"286 EUR\",\n      \"totalDurationSeconds\": 7200,\n      \"bookingUrl\": \"https://kiwi.com/u/7j4662\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-07T10:35:00\",\n        \"arrivalTime\": \"2026-12-07T12:35:00\",\n        \"durationSeconds\": 7200,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-07T10:35:00\",\n            \"arrivalTime\": \"2026-12-07T12:35:00\",\n            \"durationSeconds\": 7200,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3161\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"236521c8513c00007f2870cb_0\",\n      \"price\": 285.949254,\n      \"priceFormatted\": \"286 EUR\",\n      \"totalDurationSeconds\": 7200,\n      \"bookingUrl\": \"https://kiwi.com/u/3r5wc3\",\n      \"imageId\": \"chiang-mai_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"HKT\",\n        \"to\": \"CNX\",\n        \"departureTime\": \"2026-12-09T10:35:00\",\n        \"arrivalTime\": \"2026-12-09T12:35:00\",\n        \"durationSeconds\": 7200,\n        \"stops\": 0,\n        \"route\": [\n          \"HKT\",\n          \"CNX\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"HKT\",\n            \"to\": \"CNX\",\n            \"fromCity\": \"Phuket\",\n            \"toCity\": \"Chiang Mai\",\n            \"fromName\": \"Aéroport international de Phuket\",\n            \"toName\": \"Aéroport international de Chiang Mai\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-09T10:35:00\",\n            \"arrivalTime\": \"2026-12-09T12:35:00\",\n            \"durationSeconds\": 7200,\n            \"carrier\": \"FD\",\n            \"carrierName\": \"Thai AirAsia\",\n            \"flightNumber\": \"FD3161\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 447,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "HKT → CNX on 08/12/2026 ±1d, 2 adults [≤1 stops/sector; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 15,
+   "itineraries": [
+    {
+     "id": "236521c8513b00006b178ba3_0",
+     "price": 224.647742,
+     "priceFormatted": "225 EUR",
+     "totalDurationSeconds": 7500,
+     "bookingUrl": "https://kiwi.com/u/srfq4m",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-08T08:15:00",
+      "arrivalTime": "2026-12-08T10:20:00",
+      "durationSeconds": 7500,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-08T08:15:00",
+        "arrivalTime": "2026-12-08T10:20:00",
+        "durationSeconds": 7500,
+        "carrier": "VZ",
+        "carrierName": "Thai Vietjet",
+        "flightNumber": "VZ415",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "236521c8513a0000ac5007aa_0",
+     "price": 228.647742,
+     "priceFormatted": "229 EUR",
+     "totalDurationSeconds": 7500,
+     "bookingUrl": "https://kiwi.com/u/tr8m2p",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-07T08:15:00",
+      "arrivalTime": "2026-12-07T10:20:00",
+      "durationSeconds": 7500,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-07T08:15:00",
+        "arrivalTime": "2026-12-07T10:20:00",
+        "durationSeconds": 7500,
+        "carrier": "VZ",
+        "carrierName": "Thai Vietjet",
+        "flightNumber": "VZ415",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "236521c8513a0000bdab5375_0",
+     "price": 236.949254,
+     "priceFormatted": "237 EUR",
+     "totalDurationSeconds": 7200,
+     "bookingUrl": "https://kiwi.com/u/gv6gkw",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-07T18:55:00",
+      "arrivalTime": "2026-12-07T20:55:00",
+      "durationSeconds": 7200,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-07T18:55:00",
+        "arrivalTime": "2026-12-07T20:55:00",
+        "durationSeconds": 7200,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3167",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "236521c8513c0000f88c1e10_0",
+     "price": 245.647742,
+     "priceFormatted": "246 EUR",
+     "totalDurationSeconds": 7500,
+     "bookingUrl": "https://kiwi.com/u/usczjj",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-09T08:15:00",
+      "arrivalTime": "2026-12-09T10:20:00",
+      "durationSeconds": 7500,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T08:15:00",
+        "arrivalTime": "2026-12-09T10:20:00",
+        "durationSeconds": 7500,
+        "carrier": "VZ",
+        "carrierName": "Thai Vietjet",
+        "flightNumber": "VZ415",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "236521c8513b00008519ea8f_0",
+     "price": 245.647742,
+     "priceFormatted": "246 EUR",
+     "totalDurationSeconds": 8100,
+     "bookingUrl": "https://kiwi.com/u/u4w5m4",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-08T13:25:00",
+      "arrivalTime": "2026-12-08T15:40:00",
+      "durationSeconds": 8100,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-08T13:25:00",
+        "arrivalTime": "2026-12-08T15:40:00",
+        "durationSeconds": 8100,
+        "carrier": "VZ",
+        "carrierName": "Thai Vietjet",
+        "flightNumber": "VZ417",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "236521c8513a0000425e6686_0",
+     "price": 252.647742,
+     "priceFormatted": "253 EUR",
+     "totalDurationSeconds": 8100,
+     "bookingUrl": "https://kiwi.com/u/c7xs5p",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-07T13:25:00",
+      "arrivalTime": "2026-12-07T15:40:00",
+      "durationSeconds": 8100,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-07T13:25:00",
+        "arrivalTime": "2026-12-07T15:40:00",
+        "durationSeconds": 8100,
+        "carrier": "VZ",
+        "carrierName": "Thai Vietjet",
+        "flightNumber": "VZ417",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "236521c8513b0000c4b0ac5d_0",
+     "price": 252.949254,
+     "priceFormatted": "253 EUR",
+     "totalDurationSeconds": 7200,
+     "bookingUrl": "https://kiwi.com/u/x8rhy25",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-08T18:55:00",
+      "arrivalTime": "2026-12-08T20:55:00",
+      "durationSeconds": 7200,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-08T18:55:00",
+        "arrivalTime": "2026-12-08T20:55:00",
+        "durationSeconds": 7200,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3167",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "236521c8513c0000964bd5fe_0",
+     "price": 260.949254,
+     "priceFormatted": "261 EUR",
+     "totalDurationSeconds": 7200,
+     "bookingUrl": "https://kiwi.com/u/4qm5vs",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-09T18:55:00",
+      "arrivalTime": "2026-12-09T20:55:00",
+      "durationSeconds": 7200,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T18:55:00",
+        "arrivalTime": "2026-12-09T20:55:00",
+        "durationSeconds": 7200,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3167",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "236521c8513c00005adeab3a_0",
+     "price": 260.949254,
+     "priceFormatted": "261 EUR",
+     "totalDurationSeconds": 7200,
+     "bookingUrl": "https://kiwi.com/u/hpqdd5",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-09T09:00:00",
+      "arrivalTime": "2026-12-09T11:00:00",
+      "durationSeconds": 7200,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T09:00:00",
+        "arrivalTime": "2026-12-09T11:00:00",
+        "durationSeconds": 7200,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3159",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "236521c8513a0000713e2db1_0",
+     "price": 260.949254,
+     "priceFormatted": "261 EUR",
+     "totalDurationSeconds": 7200,
+     "bookingUrl": "https://kiwi.com/u/89w3j4w",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-07T09:00:00",
+      "arrivalTime": "2026-12-07T11:00:00",
+      "durationSeconds": 7200,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-07T09:00:00",
+        "arrivalTime": "2026-12-07T11:00:00",
+        "durationSeconds": 7200,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3159",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "236521c8513b00002dd30968_0",
+     "price": 263.949254,
+     "priceFormatted": "264 EUR",
+     "totalDurationSeconds": 7200,
+     "bookingUrl": "https://kiwi.com/u/r8vpdz7",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-08T10:35:00",
+      "arrivalTime": "2026-12-08T12:35:00",
+      "durationSeconds": 7200,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-08T10:35:00",
+        "arrivalTime": "2026-12-08T12:35:00",
+        "durationSeconds": 7200,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3161",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "236521c8513b00000825d299_0",
+     "price": 263.949254,
+     "priceFormatted": "264 EUR",
+     "totalDurationSeconds": 7200,
+     "bookingUrl": "https://kiwi.com/u/tb7v2w",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-08T09:00:00",
+      "arrivalTime": "2026-12-08T11:00:00",
+      "durationSeconds": 7200,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-08T09:00:00",
+        "arrivalTime": "2026-12-08T11:00:00",
+        "durationSeconds": 7200,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3159",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "236521c8513c000016827f3c_0",
+     "price": 280.647742,
+     "priceFormatted": "281 EUR",
+     "totalDurationSeconds": 8100,
+     "bookingUrl": "https://kiwi.com/u/3hkg6g",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-09T13:25:00",
+      "arrivalTime": "2026-12-09T15:40:00",
+      "durationSeconds": 8100,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T13:25:00",
+        "arrivalTime": "2026-12-09T15:40:00",
+        "durationSeconds": 8100,
+        "carrier": "VZ",
+        "carrierName": "Thai Vietjet",
+        "flightNumber": "VZ417",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "236521c8513a000054c8f640_0",
+     "price": 285.949254,
+     "priceFormatted": "286 EUR",
+     "totalDurationSeconds": 7200,
+     "bookingUrl": "https://kiwi.com/u/7j4662",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-07T10:35:00",
+      "arrivalTime": "2026-12-07T12:35:00",
+      "durationSeconds": 7200,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-07T10:35:00",
+        "arrivalTime": "2026-12-07T12:35:00",
+        "durationSeconds": 7200,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3161",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "236521c8513c00007f2870cb_0",
+     "price": 285.949254,
+     "priceFormatted": "286 EUR",
+     "totalDurationSeconds": 7200,
+     "bookingUrl": "https://kiwi.com/u/3r5wc3",
+     "imageId": "chiang-mai_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "HKT",
+      "to": "CNX",
+      "departureTime": "2026-12-09T10:35:00",
+      "arrivalTime": "2026-12-09T12:35:00",
+      "durationSeconds": 7200,
+      "stops": 0,
+      "route": [
+       "HKT",
+       "CNX"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "HKT",
+        "to": "CNX",
+        "fromCity": "Phuket",
+        "toCity": "Chiang Mai",
+        "fromName": "Aéroport international de Phuket",
+        "toName": "Aéroport international de Chiang Mai",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-09T10:35:00",
+        "arrivalTime": "2026-12-09T12:35:00",
+        "durationSeconds": 7200,
+        "carrier": "FD",
+        "carrierName": "Thai AirAsia",
+        "flightNumber": "FD3161",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 447,
+   "error": null
+  }
+ }
+}

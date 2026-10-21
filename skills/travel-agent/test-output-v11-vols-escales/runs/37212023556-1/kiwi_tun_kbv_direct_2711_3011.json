@@ -1,0 +1,27 @@
+=== 2026-10-04T15:11:29+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "TUN", "flyTo": "KBV", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 0, "allow_self_transfer": false, "allow_diff_airport_connection": false, "one_for_city": false, "departureDate": "27/11/2026", "departureDateTo": "30/11/2026"}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"TUN → KBV on 27/11/2026–30/11/2026, 2 adults [≤0 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 0,\n  \"itineraries\": [],\n  \"searchTimeMs\": 295,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "TUN → KBV on 27/11/2026–30/11/2026, 2 adults [≤0 stops/sector; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 0,
+   "itineraries": [],
+   "searchTimeMs": 295,
+   "error": null
+  }
+ }
+}

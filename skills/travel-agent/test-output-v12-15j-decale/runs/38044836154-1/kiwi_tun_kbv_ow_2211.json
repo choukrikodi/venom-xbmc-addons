@@ -1,0 +1,894 @@
+=== 2026-10-10T10:26:19+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "TUN", "flyTo": "KBV", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false, "one_for_city": false, "departureDate": "22/11/2026", "departureDateTo": "22/11/2026"}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"TUN → KBV on 22/11/2026–22/11/2026, 2 adults [≤2 stops/sector; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 11,\n  \"itineraries\": [\n    {\n      \"id\": \"19e018bc512b0000e0b0a5d5_0|19e018bc512b0000e0b0a5d5_1\",\n      \"price\": 754.084802,\n      \"priceFormatted\": \"754 EUR\",\n      \"totalDurationSeconds\": 50100,\n      \"bookingUrl\": \"https://kiwi.com/u/s54d2q\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-22T10:40:00\",\n        \"arrivalTime\": \"2026-11-23T06:35:00\",\n        \"durationSeconds\": 50100,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-22T10:40:00\",\n            \"arrivalTime\": \"2026-11-22T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-22T20:55:00\",\n            \"arrivalTime\": \"2026-11-23T06:35:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY422\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512b0000cc658a98_0|19e018bc512b0000cc658a98_1\",\n      \"price\": 754.084802,\n      \"priceFormatted\": \"754 EUR\",\n      \"totalDurationSeconds\": 91800,\n      \"bookingUrl\": \"https://kiwi.com/u/973q58\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-22T10:40:00\",\n        \"arrivalTime\": \"2026-11-23T18:10:00\",\n        \"durationSeconds\": 91800,\n        \"stops\": 1,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-22T10:40:00\",\n            \"arrivalTime\": \"2026-11-22T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T08:35:00\",\n            \"arrivalTime\": \"2026-11-23T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512b00009b5a4911_0|19e018bc512b00009b5a4911_1|19e018bc512b00009b5a4911_2\",\n      \"price\": 7854.084802,\n      \"priceFormatted\": \"7854 EUR\",\n      \"totalDurationSeconds\": 102900,\n      \"bookingUrl\": \"https://kiwi.com/u/z2jrwh\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-22T10:40:00\",\n        \"arrivalTime\": \"2026-11-23T21:15:00\",\n        \"durationSeconds\": 102900,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-22T10:40:00\",\n            \"arrivalTime\": \"2026-11-22T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T08:30:00\",\n            \"arrivalTime\": \"2026-11-23T17:45:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY406\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T19:45:00\",\n            \"arrivalTime\": \"2026-11-23T21:15:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG263\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512b0000e39b8f01_0|19e018bc512b0000e39b8f01_1|19e018bc512b0000e39b8f01_2\",\n      \"price\": 7854.084802,\n      \"priceFormatted\": \"7854 EUR\",\n      \"totalDurationSeconds\": 102900,\n      \"bookingUrl\": \"https://kiwi.com/u/n4upfqq\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-22T10:40:00\",\n        \"arrivalTime\": \"2026-11-23T21:15:00\",\n        \"durationSeconds\": 102900,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-22T10:40:00\",\n            \"arrivalTime\": \"2026-11-22T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T02:25:00\",\n            \"arrivalTime\": \"2026-11-23T11:35:00\",\n            \"durationSeconds\": 22200,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY404\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T19:45:00\",\n            \"arrivalTime\": \"2026-11-23T21:15:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG263\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512b00001613d527_0|19e018bc512b00001613d527_1|19e018bc512b00001613d527_2\",\n      \"price\": 7855.084802,\n      \"priceFormatted\": \"7855 EUR\",\n      \"totalDurationSeconds\": 102900,\n      \"bookingUrl\": \"https://kiwi.com/u/m28y3w5\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-22T10:40:00\",\n        \"arrivalTime\": \"2026-11-23T21:15:00\",\n        \"durationSeconds\": 102900,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-22T10:40:00\",\n            \"arrivalTime\": \"2026-11-22T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T02:25:00\",\n            \"arrivalTime\": \"2026-11-23T11:35:00\",\n            \"durationSeconds\": 22200,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY404\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T19:45:00\",\n            \"arrivalTime\": \"2026-11-23T21:15:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY7781\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512b00000bdc0485_0|19e018bc512b00000bdc0485_1|19e018bc512b00000bdc0485_2\",\n      \"price\": 7855.084802,\n      \"priceFormatted\": \"7855 EUR\",\n      \"totalDurationSeconds\": 102900,\n      \"bookingUrl\": \"https://kiwi.com/u/9ntgvv\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-22T10:40:00\",\n        \"arrivalTime\": \"2026-11-23T21:15:00\",\n        \"durationSeconds\": 102900,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-22T10:40:00\",\n            \"arrivalTime\": \"2026-11-22T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T08:30:00\",\n            \"arrivalTime\": \"2026-11-23T17:45:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY406\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T19:45:00\",\n            \"arrivalTime\": \"2026-11-23T21:15:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY7781\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512b0000adc25c66_0|19e018bc512b0000adc25c66_1|19e018bc512b0000adc25c66_2\",\n      \"price\": 7861.084802,\n      \"priceFormatted\": \"7861 EUR\",\n      \"totalDurationSeconds\": 102900,\n      \"bookingUrl\": \"https://kiwi.com/u/j76xy7\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-22T10:40:00\",\n        \"arrivalTime\": \"2026-11-23T21:15:00\",\n        \"durationSeconds\": 102900,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-22T10:40:00\",\n            \"arrivalTime\": \"2026-11-22T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-22T21:20:00\",\n            \"arrivalTime\": \"2026-11-23T06:35:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY402\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T19:45:00\",\n            \"arrivalTime\": \"2026-11-23T21:15:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"PG\",\n            \"carrierName\": \"Bangkok Airways\",\n            \"flightNumber\": \"PG263\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512b0000c58b780f_0|19e018bc512b0000c58b780f_1|19e018bc512b0000c58b780f_2\",\n      \"price\": 7862.084802,\n      \"priceFormatted\": \"7862 EUR\",\n      \"totalDurationSeconds\": 102900,\n      \"bookingUrl\": \"https://kiwi.com/u/qypbkx\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-22T10:40:00\",\n        \"arrivalTime\": \"2026-11-23T21:15:00\",\n        \"durationSeconds\": 102900,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-22T10:40:00\",\n            \"arrivalTime\": \"2026-11-22T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-22T21:20:00\",\n            \"arrivalTime\": \"2026-11-23T06:35:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY402\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T19:45:00\",\n            \"arrivalTime\": \"2026-11-23T21:15:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY7781\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512b0000c811d234_0|19e018bc512b0000c811d234_1|19e018bc512b0000c811d234_2\",\n      \"price\": 7862.084802,\n      \"priceFormatted\": \"7862 EUR\",\n      \"totalDurationSeconds\": 145500,\n      \"bookingUrl\": \"https://kiwi.com/u/t2xqkg\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-22T10:40:00\",\n        \"arrivalTime\": \"2026-11-24T09:05:00\",\n        \"durationSeconds\": 145500,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"AUH\",\n          \"BKK\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-22T10:40:00\",\n            \"arrivalTime\": \"2026-11-22T19:25:00\",\n            \"durationSeconds\": 20700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY740\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"BKK\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Bangkok\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T08:30:00\",\n            \"arrivalTime\": \"2026-11-23T17:45:00\",\n            \"durationSeconds\": 22500,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY406\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"BKK\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-24T07:35:00\",\n            \"arrivalTime\": \"2026-11-24T09:05:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY7635\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512b0000c4ea6bfe_0|19e018bc512b0000c4ea6bfe_1|19e018bc512b0000c4ea6bfe_2\",\n      \"price\": 8127.545166,\n      \"priceFormatted\": \"8128 EUR\",\n      \"totalDurationSeconds\": 88200,\n      \"bookingUrl\": \"https://kiwi.com/u/m27z35\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-22T11:40:00\",\n        \"arrivalTime\": \"2026-11-23T18:10:00\",\n        \"durationSeconds\": 88200,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"JED\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"JED\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Djeddah\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport international Roi-Abdelaziz\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Arabie saoudite\",\n            \"departureTime\": \"2026-11-22T11:40:00\",\n            \"arrivalTime\": \"2026-11-22T17:55:00\",\n            \"durationSeconds\": 15300,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY3404\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"JED\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Djeddah\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport international Roi-Abdelaziz\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Arabie saoudite\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-23T03:15:00\",\n            \"arrivalTime\": \"2026-11-23T06:50:00\",\n            \"durationSeconds\": 9300,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY602\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-23T08:35:00\",\n            \"arrivalTime\": \"2026-11-23T18:10:00\",\n            \"durationSeconds\": 23700,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY424\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    },\n    {\n      \"id\": \"19e018bc512b00003a8a1471_0|19e018bc512b00003a8a1471_1|19e018bc512b00003a8a1471_2\",\n      \"price\": 8140.1147,\n      \"priceFormatted\": \"8140 EUR\",\n      \"totalDurationSeconds\": 87300,\n      \"bookingUrl\": \"https://kiwi.com/u/yszdm5\",\n      \"imageId\": \"krabi_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"TUN\",\n        \"to\": \"KBV\",\n        \"departureTime\": \"2026-11-22T00:20:00\",\n        \"arrivalTime\": \"2026-11-23T06:35:00\",\n        \"durationSeconds\": 87300,\n        \"stops\": 2,\n        \"route\": [\n          \"TUN\",\n          \"IST\",\n          \"AUH\",\n          \"KBV\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"TUN\",\n            \"to\": \"IST\",\n            \"fromCity\": \"Tunis\",\n            \"toCity\": \"Istanbul\",\n            \"fromName\": \"Aéroport international de Tunis-Carthage\",\n            \"toName\": \"Aéroport d Istanbul\",\n            \"fromCountry\": \"Tunisie\",\n            \"toCountry\": \"Turquie\",\n            \"departureTime\": \"2026-11-22T00:20:00\",\n            \"arrivalTime\": \"2026-11-22T05:05:00\",\n            \"durationSeconds\": 9900,\n            \"carrier\": \"TK\",\n            \"carrierName\": \"Turkish Airlines\",\n            \"flightNumber\": \"TK658\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"IST\",\n            \"to\": \"AUH\",\n            \"fromCity\": \"Istanbul\",\n            \"toCity\": \"Abou Dabi\",\n            \"fromName\": \"Aéroport d Istanbul\",\n            \"toName\": \"Aéroport international Zayed\",\n            \"fromCountry\": \"Turquie\",\n            \"toCountry\": \"Émirats arabes unis\",\n            \"departureTime\": \"2026-11-22T13:55:00\",\n            \"arrivalTime\": \"2026-11-22T19:25:00\",\n            \"durationSeconds\": 16200,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY542\",\n            \"cabinClass\": \"Economy\"\n          },\n          {\n            \"from\": \"AUH\",\n            \"to\": \"KBV\",\n            \"fromCity\": \"Abou Dabi\",\n            \"toCity\": \"Krabi\",\n            \"fromName\": \"Aéroport international Zayed\",\n            \"toName\": \"Aéroport de Krabi\",\n            \"fromCountry\": \"Émirats arabes unis\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-11-22T20:55:00\",\n            \"arrivalTime\": \"2026-11-23T06:35:00\",\n            \"durationSeconds\": 24000,\n            \"carrier\": \"EY\",\n            \"carrierName\": \"Etihad Airways\",\n            \"flightNumber\": \"EY422\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 1644,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "TUN → KBV on 22/11/2026–22/11/2026, 2 adults [≤2 stops/sector; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 11,
+   "itineraries": [
+    {
+     "id": "19e018bc512b0000e0b0a5d5_0|19e018bc512b0000e0b0a5d5_1",
+     "price": 754.084802,
+     "priceFormatted": "754 EUR",
+     "totalDurationSeconds": 50100,
+     "bookingUrl": "https://kiwi.com/u/s54d2q",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-22T10:40:00",
+      "arrivalTime": "2026-11-23T06:35:00",
+      "durationSeconds": 50100,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-22T10:40:00",
+        "arrivalTime": "2026-11-22T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-22T20:55:00",
+        "arrivalTime": "2026-11-23T06:35:00",
+        "durationSeconds": 24000,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY422",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512b0000cc658a98_0|19e018bc512b0000cc658a98_1",
+     "price": 754.084802,
+     "priceFormatted": "754 EUR",
+     "totalDurationSeconds": 91800,
+     "bookingUrl": "https://kiwi.com/u/973q58",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-22T10:40:00",
+      "arrivalTime": "2026-11-23T18:10:00",
+      "durationSeconds": 91800,
+      "stops": 1,
+      "route": [
+       "TUN",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-22T10:40:00",
+        "arrivalTime": "2026-11-22T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-23T08:35:00",
+        "arrivalTime": "2026-11-23T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512b00009b5a4911_0|19e018bc512b00009b5a4911_1|19e018bc512b00009b5a4911_2",
+     "price": 7854.084802,
+     "priceFormatted": "7854 EUR",
+     "totalDurationSeconds": 102900,
+     "bookingUrl": "https://kiwi.com/u/z2jrwh",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-22T10:40:00",
+      "arrivalTime": "2026-11-23T21:15:00",
+      "durationSeconds": 102900,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "AUH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-22T10:40:00",
+        "arrivalTime": "2026-11-22T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BKK",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-23T08:30:00",
+        "arrivalTime": "2026-11-23T17:45:00",
+        "durationSeconds": 22500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY406",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-23T19:45:00",
+        "arrivalTime": "2026-11-23T21:15:00",
+        "durationSeconds": 5400,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG263",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512b0000e39b8f01_0|19e018bc512b0000e39b8f01_1|19e018bc512b0000e39b8f01_2",
+     "price": 7854.084802,
+     "priceFormatted": "7854 EUR",
+     "totalDurationSeconds": 102900,
+     "bookingUrl": "https://kiwi.com/u/n4upfqq",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-22T10:40:00",
+      "arrivalTime": "2026-11-23T21:15:00",
+      "durationSeconds": 102900,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "AUH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-22T10:40:00",
+        "arrivalTime": "2026-11-22T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BKK",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-23T02:25:00",
+        "arrivalTime": "2026-11-23T11:35:00",
+        "durationSeconds": 22200,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY404",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-23T19:45:00",
+        "arrivalTime": "2026-11-23T21:15:00",
+        "durationSeconds": 5400,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG263",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512b00001613d527_0|19e018bc512b00001613d527_1|19e018bc512b00001613d527_2",
+     "price": 7855.084802,
+     "priceFormatted": "7855 EUR",
+     "totalDurationSeconds": 102900,
+     "bookingUrl": "https://kiwi.com/u/m28y3w5",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-22T10:40:00",
+      "arrivalTime": "2026-11-23T21:15:00",
+      "durationSeconds": 102900,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "AUH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-22T10:40:00",
+        "arrivalTime": "2026-11-22T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BKK",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-23T02:25:00",
+        "arrivalTime": "2026-11-23T11:35:00",
+        "durationSeconds": 22200,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY404",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-23T19:45:00",
+        "arrivalTime": "2026-11-23T21:15:00",
+        "durationSeconds": 5400,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY7781",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512b00000bdc0485_0|19e018bc512b00000bdc0485_1|19e018bc512b00000bdc0485_2",
+     "price": 7855.084802,
+     "priceFormatted": "7855 EUR",
+     "totalDurationSeconds": 102900,
+     "bookingUrl": "https://kiwi.com/u/9ntgvv",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-22T10:40:00",
+      "arrivalTime": "2026-11-23T21:15:00",
+      "durationSeconds": 102900,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "AUH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-22T10:40:00",
+        "arrivalTime": "2026-11-22T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BKK",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-23T08:30:00",
+        "arrivalTime": "2026-11-23T17:45:00",
+        "durationSeconds": 22500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY406",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-23T19:45:00",
+        "arrivalTime": "2026-11-23T21:15:00",
+        "durationSeconds": 5400,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY7781",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512b0000adc25c66_0|19e018bc512b0000adc25c66_1|19e018bc512b0000adc25c66_2",
+     "price": 7861.084802,
+     "priceFormatted": "7861 EUR",
+     "totalDurationSeconds": 102900,
+     "bookingUrl": "https://kiwi.com/u/j76xy7",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-22T10:40:00",
+      "arrivalTime": "2026-11-23T21:15:00",
+      "durationSeconds": 102900,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "AUH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-22T10:40:00",
+        "arrivalTime": "2026-11-22T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BKK",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-22T21:20:00",
+        "arrivalTime": "2026-11-23T06:35:00",
+        "durationSeconds": 22500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY402",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-23T19:45:00",
+        "arrivalTime": "2026-11-23T21:15:00",
+        "durationSeconds": 5400,
+        "carrier": "PG",
+        "carrierName": "Bangkok Airways",
+        "flightNumber": "PG263",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512b0000c58b780f_0|19e018bc512b0000c58b780f_1|19e018bc512b0000c58b780f_2",
+     "price": 7862.084802,
+     "priceFormatted": "7862 EUR",
+     "totalDurationSeconds": 102900,
+     "bookingUrl": "https://kiwi.com/u/qypbkx",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-22T10:40:00",
+      "arrivalTime": "2026-11-23T21:15:00",
+      "durationSeconds": 102900,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "AUH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-22T10:40:00",
+        "arrivalTime": "2026-11-22T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BKK",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-22T21:20:00",
+        "arrivalTime": "2026-11-23T06:35:00",
+        "durationSeconds": 22500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY402",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-23T19:45:00",
+        "arrivalTime": "2026-11-23T21:15:00",
+        "durationSeconds": 5400,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY7781",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512b0000c811d234_0|19e018bc512b0000c811d234_1|19e018bc512b0000c811d234_2",
+     "price": 7862.084802,
+     "priceFormatted": "7862 EUR",
+     "totalDurationSeconds": 145500,
+     "bookingUrl": "https://kiwi.com/u/t2xqkg",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-22T10:40:00",
+      "arrivalTime": "2026-11-24T09:05:00",
+      "durationSeconds": 145500,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "AUH",
+       "BKK",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "AUH",
+        "fromCity": "Tunis",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Tunisie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-22T10:40:00",
+        "arrivalTime": "2026-11-22T19:25:00",
+        "durationSeconds": 20700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY740",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "BKK",
+        "fromCity": "Abou Dabi",
+        "toCity": "Bangkok",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Bangkok-Suvarnabhumi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-23T08:30:00",
+        "arrivalTime": "2026-11-23T17:45:00",
+        "durationSeconds": 22500,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY406",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "BKK",
+        "to": "KBV",
+        "fromCity": "Bangkok",
+        "toCity": "Krabi",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-24T07:35:00",
+        "arrivalTime": "2026-11-24T09:05:00",
+        "durationSeconds": 5400,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY7635",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512b0000c4ea6bfe_0|19e018bc512b0000c4ea6bfe_1|19e018bc512b0000c4ea6bfe_2",
+     "price": 8127.545166,
+     "priceFormatted": "8128 EUR",
+     "totalDurationSeconds": 88200,
+     "bookingUrl": "https://kiwi.com/u/m27z35",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-22T11:40:00",
+      "arrivalTime": "2026-11-23T18:10:00",
+      "durationSeconds": 88200,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "JED",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "JED",
+        "fromCity": "Tunis",
+        "toCity": "Djeddah",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport international Roi-Abdelaziz",
+        "fromCountry": "Tunisie",
+        "toCountry": "Arabie saoudite",
+        "departureTime": "2026-11-22T11:40:00",
+        "arrivalTime": "2026-11-22T17:55:00",
+        "durationSeconds": 15300,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY3404",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "JED",
+        "to": "AUH",
+        "fromCity": "Djeddah",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport international Roi-Abdelaziz",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Arabie saoudite",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-23T03:15:00",
+        "arrivalTime": "2026-11-23T06:50:00",
+        "durationSeconds": 9300,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY602",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-23T08:35:00",
+        "arrivalTime": "2026-11-23T18:10:00",
+        "durationSeconds": 23700,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY424",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    },
+    {
+     "id": "19e018bc512b00003a8a1471_0|19e018bc512b00003a8a1471_1|19e018bc512b00003a8a1471_2",
+     "price": 8140.1147,
+     "priceFormatted": "8140 EUR",
+     "totalDurationSeconds": 87300,
+     "bookingUrl": "https://kiwi.com/u/yszdm5",
+     "imageId": "krabi_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "TUN",
+      "to": "KBV",
+      "departureTime": "2026-11-22T00:20:00",
+      "arrivalTime": "2026-11-23T06:35:00",
+      "durationSeconds": 87300,
+      "stops": 2,
+      "route": [
+       "TUN",
+       "IST",
+       "AUH",
+       "KBV"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "TUN",
+        "to": "IST",
+        "fromCity": "Tunis",
+        "toCity": "Istanbul",
+        "fromName": "Aéroport international de Tunis-Carthage",
+        "toName": "Aéroport d Istanbul",
+        "fromCountry": "Tunisie",
+        "toCountry": "Turquie",
+        "departureTime": "2026-11-22T00:20:00",
+        "arrivalTime": "2026-11-22T05:05:00",
+        "durationSeconds": 9900,
+        "carrier": "TK",
+        "carrierName": "Turkish Airlines",
+        "flightNumber": "TK658",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "IST",
+        "to": "AUH",
+        "fromCity": "Istanbul",
+        "toCity": "Abou Dabi",
+        "fromName": "Aéroport d Istanbul",
+        "toName": "Aéroport international Zayed",
+        "fromCountry": "Turquie",
+        "toCountry": "Émirats arabes unis",
+        "departureTime": "2026-11-22T13:55:00",
+        "arrivalTime": "2026-11-22T19:25:00",
+        "durationSeconds": 16200,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY542",
+        "cabinClass": "Economy"
+       },
+       {
+        "from": "AUH",
+        "to": "KBV",
+        "fromCity": "Abou Dabi",
+        "toCity": "Krabi",
+        "fromName": "Aéroport international Zayed",
+        "toName": "Aéroport de Krabi",
+        "fromCountry": "Émirats arabes unis",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-11-22T20:55:00",
+        "arrivalTime": "2026-11-23T06:35:00",
+        "durationSeconds": 24000,
+        "carrier": "EY",
+        "carrierName": "Etihad Airways",
+        "flightNumber": "EY422",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 1644,
+   "error": null
+  }
+ }
+}

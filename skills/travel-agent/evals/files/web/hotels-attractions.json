@@ -1,0 +1,165 @@
+{
+  "collectedUtc": "2026-09-24T22:34:31Z",
+  "method": "Outils MCP Booking.com uniquement (answer_property_qa_by_ids_v2, attractions_search ; user_country_code=be, user_locale=fr). Aucun WebFetch. Les réponses QA sont des synthèses textuelles produites par Booking, sans URL de page ; les champs non renseignés par l'outil sont à null et listés dans 'unverified'.",
+  "hotels": {
+    "esprit": {
+      "bookingId": 306204,
+      "name": "L'esprit De Naiyang Beach Resort",
+      "stars": "4 officiel",
+      "score": 8.3,
+      "reviews": 1768,
+      "reviewsNoteQa": "La réponse QA du 2026-09-24T22:34:31Z mentionne 1 771 avis (vs 1 768 dans la recherche initiale).",
+      "priceBooking": { "amount": 1899.89, "currency": "EUR", "dates": "2026-11-30→2026-12-16", "source": "recherche Booking initiale (contexte fourni), non recalculée ici" },
+      "coords": [8.08347, 98.292556],
+      "address": "91/8 Moo 3 Thalang, Phuket 83110, Nai Yang Beach, Thaïlande",
+      "description": "Resort tropical de 30 villas privées et 17 chambres deluxe sur un terrain de 5 000 m², présenté par Booking comme adapté aux séjours romantiques/relaxants.",
+      "room": "Deluxe Room with Pool View : 1 lit super-king, 44 m², vue piscine (type 'standard double' selon Booking QA).",
+      "beach": "Plage à environ 10 min à pied (Booking QA).",
+      "airport": "Environ 4,4 km de l'aéroport international de Phuket (HKT) (Booking QA).",
+      "breakfast": "Petit-déjeuner disponible, non inclus par défaut ; 1er appel : « THB 18 par personne » (montant invraisemblable, probablement erroné), 2e appel : prix non précisé. À vérifier sur la page de réservation.",
+      "shuttle": "Navette aéroport gratuite (aller simple) pour certains types d'hébergement, entre 8 h et 20 h ; supplément possible hors de ces heures (Booking QA).",
+      "cancellation": "Non fournie par l'outil (2 appels) : dépend du tarif choisi, à lire sur la page de réservation.",
+      "weakPoints": "Avis : piscine pas toujours propre, restauration de l'hôtel jugée chère, pas d'ascenseur vers le dernier étage.",
+      "facilitiesTop": ["Piscine extérieure (990 m² selon QA)", "Transfert aéroport aller simple offert (selon hébergement)", "Restaurant thaï moderne et européen", "Villas privées", "Serviettes, chaussons et parasols de plage gratuits", "Services de spa"],
+      "bookingUrl": "https://www.booking.com/searchresults.html?dest_type=hotel&dest_id=306204 (URL construite à partir de l'id, non vérifiée ; l'outil ne renvoie pas d'URL d'hôtel)",
+      "sources": [
+        { "tool": "answer_property_qa_by_ids_v2", "utc": "2026-09-24T22:34:31Z", "question": "description, chambre standard, plage, aéroport, petit-déjeuner, navette, annulation, spa/piscine, points faibles" },
+        { "tool": "answer_property_qa_by_ids_v2", "utc": "2026-09-24T22:34:55Z", "question": "annulation, top 5 équipements, prix petit-déjeuner (appel groupé 4 ids)" }
+      ]
+    },
+    "panphuree": {
+      "bookingId": 2298076,
+      "name": "Panphuree Residence",
+      "stars": "4 estimé",
+      "score": 8.2,
+      "reviews": 4093,
+      "priceBooking": { "amount": 1318.32, "currency": "EUR", "dates": "2026-11-30→2026-12-16", "source": "recherche Booking initiale (contexte fourni), non recalculée ici" },
+      "coords": [8.101237, 98.308592],
+      "address": "15/47 Soi Naiyang 13/1, Sakhu, Phuket 83110, Nai Yang Beach, Thaïlande",
+      "description": "Résidence de style simple et soigné avec piscine à débordement extérieure, salle de fitness et restaurant avec vue panoramique sur les montagnes ; Wi-Fi et parking privé gratuits ; à 5 min en voiture de l'aéroport de Phuket.",
+      "room": "Deluxe King Room : 1 lit super-king, 25 m², vue ville (Booking QA).",
+      "beach": "Plage de Nai Yang à environ 15 min à pied (Booking QA).",
+      "airport": "Booking QA : « environ 411 m » de l'aéroport HKT et, dans la même réponse, « 5 min en voiture » — les deux valeurs sont incohérentes entre elles (la distance à vol d'oiseau vers le terminal est plausiblement de l'ordre de 1-2 km d'après les coordonnées ; non vérifié).",
+      "breakfast": "Disponible (américain, asiatique, halal) ; prix non fourni par l'outil ; inclusion selon tarif.",
+      "shuttle": "Navette aéroport gratuite en aller simple ; si la prise en charge gratuite est utilisée, le retour (drop-off) est facturé 150 THB (Booking QA).",
+      "cancellation": "Non fournie par l'outil (2 appels) : dépend du tarif choisi.",
+      "weakPoints": "Avis : bruit lié à la proximité de l'aéroport ; jugé adapté aux courts séjours plutôt qu'aux longues vacances.",
+      "facilitiesTop": ["Piscine à débordement extérieure", "Salle de fitness", "Wi-Fi gratuit", "Parking privé gratuit", "Restaurant avec vue panoramique", "Massages/spa payants"],
+      "bookingUrl": "https://www.booking.com/searchresults.html?dest_type=hotel&dest_id=2298076 (URL construite à partir de l'id, non vérifiée)",
+      "sources": [
+        { "tool": "answer_property_qa_by_ids_v2", "utc": "2026-09-24T22:34:31Z", "question": "description, chambre standard, plage, aéroport, petit-déjeuner, navette, annulation, spa/piscine, points faibles" },
+        { "tool": "answer_property_qa_by_ids_v2", "utc": "2026-09-24T22:34:55Z", "question": "annulation, top 5 équipements (appel groupé 4 ids)" }
+      ]
+    },
+    "palm": {
+      "bookingId": 48484,
+      "name": "Palm Galleria Resort",
+      "stars": "4 officiel",
+      "score": 8.5,
+      "reviews": 879,
+      "priceBooking": { "amount": 1408.45, "currency": "EUR", "dates": "2026-11-30→2026-12-18", "source": "recherche Booking initiale (contexte fourni), non recalculée ici" },
+      "coords": [8.72839, 98.231152],
+      "address": "139 M.2, Kukkak (Khuk Khak), Takuapa, Phang Nga 82190, Khao Lak, Thaïlande",
+      "description": "Resort dans des jardins tropicaux près de la plage de Pakarang (mer d'Andaman), architecture thaïe contemporaine, tissus et œuvres d'art thaïs.",
+      "room": "Superior Double or Twin Room : 2 lits simples (configuration double possible selon disponibilité, non confirmée), environ 36,05 m², vue jardin (Booking QA).",
+      "beach": "Plage de Pakarang à environ 100 m / 2 min à pied (Booking QA, 2e appel).",
+      "airport": "Environ 82,1 km de l'aéroport de Phuket (HKT) (Booking QA).",
+      "breakfast": "Disponible (spécialités locales, plats chauds, jus, pancakes, fruits) ; prix non fourni ; inclusion selon tarif.",
+      "shuttle": "Navette aéroport payante : environ 2 500 THB par trajet (Booking QA).",
+      "cancellation": "Non fournie par l'outil (2 appels) : dépend du tarif choisi.",
+      "weakPoints": "Avis : un peu éloigné du centre (Bang Niang/Nang Thong), frais de transport supplémentaires ; bâtiments anciens mais propres.",
+      "facilitiesTop": ["Grande piscine extérieure", "Restaurant sur place", "Wi-Fi gratuit", "Bureau d'excursions", "Salles de conférence"],
+      "spaNote": "Aucun spa mentionné par Booking.",
+      "bookingUrl": "https://www.booking.com/searchresults.html?dest_type=hotel&dest_id=48484 (URL construite à partir de l'id, non vérifiée)",
+      "sources": [
+        { "tool": "answer_property_qa_by_ids_v2", "utc": "2026-09-24T22:34:31Z", "question": "description, chambre standard, plage, aéroport, petit-déjeuner, navette, annulation, spa/piscine, points faibles" },
+        { "tool": "answer_property_qa_by_ids_v2", "utc": "2026-09-24T22:34:55Z", "question": "annulation, top 5 équipements, distance plage (appel groupé 4 ids)" }
+      ]
+    },
+    "anyavee": {
+      "bookingId": 9886970,
+      "name": "Anyavee Aonang Bay Resort",
+      "stars": "4 officiel",
+      "score": 7.4,
+      "reviews": 1446,
+      "priceBooking": { "amount": 1776.55, "currency": "EUR", "dates": "2026-12-02→2026-12-20", "source": "recherche Booking initiale (contexte fourni), non recalculée ici" },
+      "coords": [8.038326, 98.819294],
+      "address": "31/3 Moo 2, Ao Nang, Mueang, Krabi 80180, Ao Nang Beach, Thaïlande",
+      "description": "Hôtel familial à Ao Nang : chambres climatisées avec salle de bain privée et vue ville, piscine avec vue, jardin, terrasse, restaurant (cuisine américaine et thaïe).",
+      "room": "Chambre standard : 1 lit king, 35 m², vue ville (Booking QA).",
+      "beach": "Plage d'Ao Nang à environ 10 min à pied (Booking QA).",
+      "airport": "Environ 24 km de l'aéroport international de Krabi (KBV) (Booking QA).",
+      "breakfast": "Inclus selon Booking QA (spécialités locales, plats chauds, jus, pancakes, fruits) ; à confirmer sur le tarif retenu.",
+      "shuttle": "Navette aéroport payante : 650 THB par trajet pour 2 personnes max. avec bagages légers (Booking QA).",
+      "cancellation": "Non fournie par l'outil (2 appels) : dépend du tarif choisi.",
+      "weakPoints": "Avis : chambres à rénover (salles de bain, climatisation), Wi-Fi irrégulier, plage un peu éloignée pour un accès quotidien, moustiques et bruit de circulation.",
+      "facilitiesTop": ["Piscine avec vue et bar de piscine", "Restaurant familial", "Wi-Fi gratuit", "Jardin", "Parking privé gratuit"],
+      "spaNote": "Aucun spa mentionné par Booking.",
+      "bookingUrl": "https://www.booking.com/searchresults.html?dest_type=hotel&dest_id=9886970 (URL construite à partir de l'id, non vérifiée)",
+      "sources": [
+        { "tool": "answer_property_qa_by_ids_v2", "utc": "2026-09-24T22:34:31Z", "question": "description, chambre standard, plage, aéroport, petit-déjeuner, navette, annulation, spa/piscine, points faibles" },
+        { "tool": "answer_property_qa_by_ids_v2", "utc": "2026-09-24T22:34:55Z", "question": "annulation, top 5 équipements (appel groupé 4 ids)" }
+      ]
+    },
+    "notFound": ["Naiyang Beach Hotel", "Apsara Beachfront Resort & Villa", "Krabi Resort"],
+    "notFoundNote": "Ces trois établissements n'ont pas été trouvés dans la recherche Booking initiale ; aucune fiche n'a été produite pour eux."
+  },
+  "attractions": {
+    "_mapping": "A = Nai Yang (Phuket), B = Ao Nang (Krabi), C = Khao Lak (Phang Nga), conformément à dest.json.",
+    "_note": "attractions_search (2026-09-24T22:34:31Z, catégories nature_outdoor+tours, dates 2026-12-01→2026-12-15, devise EUR) ne renvoie ni description ni URL de photo : champs desc/photo à null. rating null = score 0 et 0 avis renvoyés (pas de note publiée). Les catégories renvoyées sont des identifiants opaques (ex. PTCMCY1Fkppn) ; 'category' indique le filtre de recherche. Prix affichés « à partir de », par personne présumé (non précisé par l'outil).",
+    "A": [
+      { "name": "Phuket : James Bond Island en bateau rapide Premium avec déjeuner", "desc": null, "rating": null, "price": "60,63 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prnp4kghjyvi-phuket-james-bond-island-by-premium-speedboat-with-lunch.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Royal Phuket Marina, Thep Krasattri Rd" },
+      { "name": "Excursion d'une journée sur la baie de Phang Nga et l'île James Bond au départ de Phuket", "desc": null, "rating": null, "price": "40,48 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prfvprpycbtk-phang-nga-bay-and-james-bond-island-day-tour-from-phuket.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Phuket" },
+      { "name": "Phi Phi & Maya Bay PREMIUM Trip en Speedboat : Full Food & Pickup", "desc": null, "rating": null, "price": "42,82 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/praey9kk4axt-phi-phi-island-by-premium-speedboat-with-lunch-from-phuket.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Phuket (plus code VCM7+75)" },
+      { "name": "Excursion d'une journée d'aventure aux îles Phi Phi avec déjeuner vue mer (V Marine)", "desc": null, "rating": null, "price": "75,57 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prpczfcszkkq-phi-phi-islands-adventure-day-trip-with-seaview-lunch-by-vmarine.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Phuket (plus code X98R+V6F)" },
+      { "name": "Réserve naturelle des éléphants de Phuket, sanctuaire éthique", "desc": null, "rating": null, "price": "32,39 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/pr1fehi8doxk-phuket-elephant-nature-reserve-ethical-sanctuary.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Phuket Elephant Nature Reserve, 100/12 Moo 7, Srisoonthon Rd" },
+      { "name": "Baie de Phang Nga et île James Bond avec canoë en grand bateau", "desc": null, "rating": null, "price": "40,48 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/pr9dhs3hbetn-phang-nga-bay-and-james-bond-island-with-canoeing-by-big-boat.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Aopor Pier, Phuket" },
+      { "name": "Phi Phi, Maya Bay et îles Khai – snorkeling Premium au départ de Phuket", "desc": null, "rating": null, "price": "38,08 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prcowmjyqidl-phi-phi-don-phi-phi-lay-khai-nai-snorkeling-tour-from-phuket.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Roong Siam Pier, Wanich Rd" },
+      { "name": "Circuit Phi Phi, Maya Bay et îles Khai avec déjeuner buffet depuis Phuket", "desc": null, "rating": null, "price": "37,86 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prbtwkipazem-phi-phi-islands-tour-from-phuket.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Royal Phuket Marina" }
+    ],
+    "B": [
+      { "name": "Phi Phi Early Bird & 4 Islands – excursion d'une journée en hors-bord depuis Krabi", "desc": null, "rating": null, "price": "71,65 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prf0nnh91nv9-phi-phi-early-bird-krabi-4-islands-beat-the-crowds-from-krabi.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Nopparat Thara Pier" },
+      { "name": "Krabi : îles Phi Phi et 4 îles – excursion coucher de soleil en petit groupe avec déjeuner", "desc": null, "rating": null, "price": "56,68 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prpesqfndtd6-phi-phi-island-sunset-4-island-small-group-tour-from-krabi.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Nopparat Thara Pier" },
+      { "name": "Krabi Jungle Escape – Emerald Pool et sources chaudes", "desc": null, "rating": null, "price": "29,69 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prfqoytyzg89-krabi-jungle-escape-emerald-pool-and-hot-springs-tour.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Krabi" },
+      { "name": "Excursion snorkeling et plage aux îles Hong au départ de Krabi", "desc": null, "rating": 3.94, "ratingReviews": 17, "price": "27,93 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prhmo4ntjgfs-snorkel-and-beach-tour-to-hong-islands-from-krabi.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Nang An pier, Nopparat 14" },
+      { "name": "Krabi 7 Islands – snorkeling, coucher de soleil et plancton bioluminescent en grand long-tail", "desc": null, "rating": null, "price": "43,25 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prl7e4yujjze-krabi-7-islands-snorkeling-sunset-and-bioluminescence-tour-by-big-l.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Nopparat Thara Pier" },
+      { "name": "Excursion d'une journée aux îles Hong au départ de Krabi", "desc": null, "rating": null, "price": "32,79 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prqqdc50bnmb-hong-islands-one-day-tour-from-krabi.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Nang An pier, Nopparat 14" },
+      { "name": "Coucher de soleil aux îles Hong et plancton bioluminescent en bateau rapide depuis Krabi", "desc": null, "rating": null, "price": "53,98 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prm7pnyoeswo-hong-island-sunset-and-bioluminescent-trip-from-krabi.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Nopparat Thara Pier" },
+      { "name": "Circuit d'une journée aux îles Phi Phi en bateau rapide depuis Krabi", "desc": null, "rating": null, "price": "39,13 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prvq0k1jhavf-phi-phi-islands-one-day-tour-by-speedboat-from-krabi.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Nang An pier, Nopparat 14" }
+    ],
+    "C": [
+      { "name": "Excursion d'une journée aux îles Similan au départ de Khao Lak", "desc": null, "rating": null, "price": "93,42 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prn9vt9qrxig-similan-islands-one-day-tour-from-khao-lak.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Thap Lamu Pier" },
+      { "name": "Excursion snorkeling aux îles Surin au départ de Khao Lak (best-seller)", "desc": null, "rating": null, "price": "88,23 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prfamunbk1ok-best-seller-surin-islands-snorkeling-trip-from-khao-lak.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": "Seastar, embarcadère de Ban Nam Khem" },
+      { "name": "De Khao Lak : lac Cheow Lan et piscine d'émeraude Nam Rad", "desc": null, "rating": null, "price": "105,80 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prpml1cgc8yb-from-khao-lak-cheow-lan-lake-nam-rad-emerald-pool.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": null },
+      { "name": "Incroyable excursion d'une journée au lac Cheow Larn depuis Khao Lak", "desc": null, "rating": null, "price": "114,19 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/pra6avl2crku-amazing-one-day-trip-at-cheow-larn-lake-from-khao-lak.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": null },
+      { "name": "Demi-journée rafting en bambou et centre de conservation des tortues de mer depuis Khao Lak", "desc": null, "rating": null, "price": "36,33 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prewnhycl41y-bamboo-rafting-and-sea-turtle-conservation-center-half-day-tour-fro.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": null },
+      { "name": "Visite guidée en petit groupe du sanctuaire des éléphants de Khao Lak", "desc": null, "rating": null, "price": "48,58 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prgjp2gj46ui-guide-tour-to-khaolak-elephant-sanctuary-in-small-group.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": null },
+      { "name": "Demi-journée : rivière Sok + temple des singes + point de vue", "desc": null, "rating": null, "price": "49,93 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/przlfollulma-half-day-sok-river-monkey-temple-view-point.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": null },
+      { "name": "Visite de Khao Sok avec sanctuaire des éléphants et rafting", "desc": null, "rating": null, "price": "91,00 EUR", "photo": null, "url": "https://www.booking.com/attractions/th/prccim9gdj1p-khao-sok-tour-with-elephant-sanctuary-and-rafting.en-gb.html?start_date=2026-12-01&end_date=2026-12-15&selected_currency=EUR&aid=8132308", "category": "tours/nature_outdoor", "departure": null }
+    ],
+    "excluded": ["Nai Yang : 'Phi Phi… Seastar Andaman de Khao Lak' (départ Khao Lak, hors Phuket) et 'Mini Elephant Nature Bukit Elephant Park' (au-delà des 8)", "Khao Lak : 2 cours de cuisine (catégorie food/workshop, hors nature/tours)", "Ao Nang : cours de cuisine (hors nature/tours) et 'Twilight Bliss 7 Islands' (doublon du tour 7 îles, au-delà des 8)"]
+  },
+  "crossChecks": [
+    "CONVERGENCE Similan : dest.json (C) indique un départ en vedette de Thap Lamu, 1 h 30-2 h ; Booking liste une excursion 'Similan Islands one day tour' au départ de Thap Lamu Pier à 93,42 EUR (dates 01-15/12/2026, donc dans la saison d'ouverture 15/10-15/05 citée par dest.json).",
+    "NON TRANCHÉ Similan droit d'entrée : dest.json mentionne 500 THB pour les étrangers (à confirmer). Booking n'indique pas si le droit d'entrée du parc est inclus dans les 93,42 EUR : à vérifier sur la page de l'activité.",
+    "NON TRANCHÉ Sirinat droit d'entrée : dest.json signale un droit d'entrée non chiffré pour Nai Yang/Sirinat ; aucune donnée Booking (aucune attraction Sirinat listée, et Booking QA situe simplement la plage à 10-15 min à pied des deux hôtels de Nai Yang).",
+    "CONVERGENCE distance aéroport Nai Yang : dest.json 5-7,5 km / 5-15 min ; Booking QA 4,4 km (L'esprit) et 5 min en voiture (Panphuree). CONTRADICTION interne Booking pour Panphuree : '411 m' de l'aéroport dans la même réponse que '5 min en voiture'.",
+    "CONVERGENCE Khao Lak-HKT : dest.json 70-82 km / 1 h-1 h 15 ; Booking QA 82,1 km pour Palm Galleria (Khuk Khak/Pakarang, au nord de Nang Thong, donc dans la fourchette haute). dest.json décrit bien Pakarang comme 'village de pêcheurs avec quelques resorts'.",
+    "CONVERGENCE Ao Nang-KBV : dest.json 26 km / 30-45 min ; Booking QA 24 km pour Anyavee. Les coordonnées Booking d'Anyavee (8,038 N, 98,819 E) confirment l'ordre de grandeur des coordonnées 'non vérifiées' d'Ao Nang dans dest.json (8,03 N, 98,82 E).",
+    "CONVERGENCE Ao Nang activités : Koh Hong, tour des 4 îles, Emerald Pool figurent dans dest.json (B) et dans les offres Booking (Hong Islands 27,93-53,98 EUR, 4 Islands + Phi Phi 56,68-71,65 EUR, Emerald Pool + sources chaudes 29,69 EUR). Booking ajoute des tours nocturnes plancton bioluminescent (43,25 EUR) absents de dest.json.",
+    "CONVERGENCE baie de Phang Nga : dest.json (pays, A, C) ; Booking propose James Bond Island depuis Phuket à 40,48-60,63 EUR (départs Royal Phuket Marina/Aopor Pier, tous deux côté est de Phuket, pas à Nai Yang).",
+    "COMPLÉMENT : Booking met en avant Khao Sok/lac Cheow Lan (91-114 EUR) et les îles Surin (88,23 EUR) depuis Khao Lak, absents de dest.json (Surin seulement mentionnée comme 'porte d'accès'). Les Phi Phi (37,86-75,57 EUR) sont absentes de dest.json.",
+    "ÉCART tarifs à ne pas mélanger : dest.json cite les long-tails Ao Nang-Railay à environ 100 THB/trajet (source Tripadvisor/CK Travels) ; les prix Booking sont des excursions organisées en EUR, non comparables."
+  ],
+  "unverified": [
+    "Politique d'annulation des 4 hôtels : jamais renvoyée par l'outil (dépend du tarif), à lire sur la page de réservation.",
+    "Prix du petit-déjeuner : 'THB 18/pers.' pour L'esprit (invraisemblable, non confirmé au 2e appel) ; non fourni pour Panphuree et Palm Galleria ; 'inclus' pour Anyavee selon Booking QA, à confirmer sur le tarif retenu.",
+    "Distance Panphuree-aéroport : 411 m vs 5 min en voiture (contradiction interne Booking).",
+    "Lit double au Palm Galleria : la chambre standard est décrite avec 2 lits simples ; configuration 'double' non confirmée.",
+    "bookingUrl des hôtels : URL construites à partir de l'id (dest_type=hotel&dest_id=…), l'outil ne renvoie pas d'URL ; non testées (WebFetch bloqué).",
+    "Attractions : aucune description ni photo renvoyée par attractions_search ; notes absentes (0 avis) sauf Hong Islands snorkel (3,94/5, 17 avis) ; prix 'à partir de' en EUR, base par personne présumée.",
+    "Droits d'entrée des parcs Sirinat et Similan (montants et inclusion dans les excursions) : non vérifiés.",
+    "Nombre d'avis L'esprit : 1 768 (recherche initiale) vs 1 771 (QA du 24/09/2026).",
+    "Hôtels non trouvés chez Booking : Naiyang Beach Hotel, Apsara Beachfront Resort & Villa, Krabi Resort (aucune donnée)."
+  ]
+}

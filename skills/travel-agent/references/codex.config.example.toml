@@ -1,0 +1,68 @@
+# Extrait à copier dans ~/.codex/config.toml (Codex CLI/app). Serveurs 100 % gratuits, sans clé.
+# Syntaxe vérifiée sur openai/codex (mcp_types.rs, 24/09/2026). Pas de SSE. Serveurs hébergés « à valider » : tester une fois.
+
+[mcp_servers.kiwi]
+url = "https://mcp.kiwi.com"
+startup_timeout_sec = 30
+
+[mcp_servers.trivago]            # OAuth compte gratuit : codex mcp login trivago
+url = "https://mcp.trivago.com/mcp"
+startup_timeout_sec = 30
+
+[mcp_servers.skiplagged]
+url = "https://mcp.skiplagged.com/mcp"
+
+[mcp_servers.frankfurter]
+url = "https://mcp.frankfurter.dev/"
+
+[mcp_servers.hellosafe]          # à valider
+url = "https://hellosafe.com/api/mcp-travel"
+
+[mcp_servers.easyonward]         # à valider
+url = "https://mcp.easyonward.com/mcp"
+
+[mcp_servers.ferryhopper]
+url = "https://mcp.ferryhopper.com/mcp"
+
+[mcp_servers.octotrip]           # à valider
+url = "https://mcp.octotrip.app/flights/mcp"
+
+[mcp_servers.ticketlens]         # à valider
+url = "https://mcp.ticketlens.com/"
+
+[mcp_servers.open-meteo]
+command = "npx"
+args = ["-y", "open-meteo-mcp"]
+startup_timeout_sec = 60
+
+[mcp_servers.osm]
+command = "npx"
+args = ["-y", "@cyanheads/openstreetmap-mcp-server"]
+startup_timeout_sec = 60
+
+[mcp_servers.wikipedia]
+command = "npx"
+args = ["-y", "@cyanheads/wikipedia-mcp-server"]
+startup_timeout_sec = 60
+
+[mcp_servers.fetch]
+command = "uvx"
+args = ["mcp-server-fetch"]
+startup_timeout_sec = 60
+
+[mcp_servers.playwright]
+command = "npx"
+args = ["-y", "@playwright/mcp@latest", "--headless", "--isolated"]
+startup_timeout_sec = 60
+tool_timeout_sec = 120
+
+[mcp_servers.transitous]         # à valider
+command = "npx"
+args = ["-y", "transitous-mcp"]
+startup_timeout_sec = 60
+
+[mcp_servers.google-flights]
+command = "npx"
+args = ["-y", "google-flights-mcp"]
+startup_timeout_sec = 60
+tool_timeout_sec = 120

@@ -1,0 +1,14 @@
+{
+  "case_name": "asie_v7_10j_hotels",
+  "notice": "Variante 10 jours : hôtels 5★ uniquement (décision du voyageur du 25/09/2026, plafond 8 000 € conservé), 9 nuits 29/11→08/12/2026 (dates de référence alignées sur asie_v7_10j_vols, à réaligner si les vols retenus diffèrent), 2 adultes, 1 chambre, BE/EUR. Zones : Nai Yang et Mai Khao (Phuket nord, scénario A), Ao Nang (B), Khao Lak (C). Requêtes zone, pas nom d'hôtel (piège Trivago constaté en v5). Le critère bord de plage / vue mer sera vérifié dans les résultats, pas filtré ici. Aucune réservation.",
+  "requests": [
+    { "name": "trivago_naiyang_5s_9n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "5star": true }, "query": "Nai Yang, Phuket", "arrival": "2026-11-29", "departure": "2026-12-08" } },
+    { "name": "trivago_maikhao_5s_9n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "5star": true }, "query": "Mai Khao, Phuket", "arrival": "2026-11-29", "departure": "2026-12-08" } },
+    { "name": "trivago_aonang_5s_9n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "5star": true }, "query": "Ao Nang, Krabi", "arrival": "2026-11-29", "departure": "2026-12-08" } },
+    { "name": "trivago_khaolak_5s_9n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "5star": true }, "query": "Khao Lak", "arrival": "2026-11-29", "departure": "2026-12-08" } }
+  ]
+}

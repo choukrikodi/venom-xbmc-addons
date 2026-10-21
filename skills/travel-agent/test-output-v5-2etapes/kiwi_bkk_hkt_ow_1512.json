@@ -1,0 +1,74 @@
+=== 2026-09-24T23:00:45+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "BKK", "flyTo": "HKT", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 0, "allow_self_transfer": false, "one_for_city": true, "departureDate": "15/12/2026", "departureDateTo": "16/12/2026"}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"BKK → HKT on 15/12/2026–16/12/2026, 2 adults [≤0 stops/sector; no self-transfer; one per city]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 1,\n  \"itineraries\": [\n    {\n      \"id\": \"075623655142000020892e1d_0\",\n      \"price\": 134.647742,\n      \"priceFormatted\": \"135 EUR\",\n      \"totalDurationSeconds\": 5400,\n      \"bookingUrl\": \"https://kiwi.com/u/cd8rf7\",\n      \"imageId\": \"phuket-city_th\",\n      \"baggage\": {\n        \"personalItem\": 0,\n        \"cabinBag\": 2,\n        \"checkedBag\": 2\n      },\n      \"outbound\": {\n        \"from\": \"BKK\",\n        \"to\": \"HKT\",\n        \"departureTime\": \"2026-12-15T19:20:00\",\n        \"arrivalTime\": \"2026-12-15T20:50:00\",\n        \"durationSeconds\": 5400,\n        \"stops\": 0,\n        \"route\": [\n          \"BKK\",\n          \"HKT\"\n        ],\n        \"cabinClass\": \"Economy\",\n        \"segments\": [\n          {\n            \"from\": \"BKK\",\n            \"to\": \"HKT\",\n            \"fromCity\": \"Bangkok\",\n            \"toCity\": \"Phuket\",\n            \"fromName\": \"Aéroport de Bangkok-Suvarnabhumi\",\n            \"toName\": \"Aéroport international de Phuket\",\n            \"fromCountry\": \"Thaïlande\",\n            \"toCountry\": \"Thaïlande\",\n            \"departureTime\": \"2026-12-15T19:20:00\",\n            \"arrivalTime\": \"2026-12-15T20:50:00\",\n            \"durationSeconds\": 5400,\n            \"carrier\": \"VZ\",\n            \"carrierName\": \"Thai Vietjet\",\n            \"flightNumber\": \"VZ308\",\n            \"cabinClass\": \"Economy\"\n          }\n        ]\n      },\n      \"inbound\": null\n    }\n  ],\n  \"searchTimeMs\": 254,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "BKK → HKT on 15/12/2026–16/12/2026, 2 adults [≤0 stops/sector; no self-transfer; one per city]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 1,
+   "itineraries": [
+    {
+     "id": "075623655142000020892e1d_0",
+     "price": 134.647742,
+     "priceFormatted": "135 EUR",
+     "totalDurationSeconds": 5400,
+     "bookingUrl": "https://kiwi.com/u/cd8rf7",
+     "imageId": "phuket-city_th",
+     "baggage": {
+      "personalItem": 0,
+      "cabinBag": 2,
+      "checkedBag": 2
+     },
+     "outbound": {
+      "from": "BKK",
+      "to": "HKT",
+      "departureTime": "2026-12-15T19:20:00",
+      "arrivalTime": "2026-12-15T20:50:00",
+      "durationSeconds": 5400,
+      "stops": 0,
+      "route": [
+       "BKK",
+       "HKT"
+      ],
+      "cabinClass": "Economy",
+      "segments": [
+       {
+        "from": "BKK",
+        "to": "HKT",
+        "fromCity": "Bangkok",
+        "toCity": "Phuket",
+        "fromName": "Aéroport de Bangkok-Suvarnabhumi",
+        "toName": "Aéroport international de Phuket",
+        "fromCountry": "Thaïlande",
+        "toCountry": "Thaïlande",
+        "departureTime": "2026-12-15T19:20:00",
+        "arrivalTime": "2026-12-15T20:50:00",
+        "durationSeconds": 5400,
+        "carrier": "VZ",
+        "carrierName": "Thai Vietjet",
+        "flightNumber": "VZ308",
+        "cabinClass": "Economy"
+       }
+      ]
+     },
+     "inbound": null
+    }
+   ],
+   "searchTimeMs": 254,
+   "error": null
+  }
+ }
+}

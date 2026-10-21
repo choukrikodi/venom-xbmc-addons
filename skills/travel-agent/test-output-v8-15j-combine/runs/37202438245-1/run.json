@@ -1,0 +1,10 @@
+{
+  "case_file": "skills/travel-agent/evals/files/asie_v8_15j_combine.json",
+  "run_id": "37202438245",
+  "attempt": "1",
+  "event_sha": "e45d0783ab7a59e2bcf785b9fbbba8b5d3aae89d",
+  "checkout_sha": "e45d0783ab7a59e2bcf785b9fbbba8b5d3aae89d",
+  "utc": "2026-10-04T12:34:43+00:00",
+  "list_status": "success",
+  "calls_status": "success"
+}

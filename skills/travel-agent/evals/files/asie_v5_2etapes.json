@@ -1,0 +1,28 @@
+{
+  "case_name": "asie_v5_2etapes",
+  "notice": "Variante deux étapes reliées par un vol intérieur (demande du voyageur : changer de décor, vols intérieurs peu chers). Base : scénario A Nai Yang 16 nuits (arrivée HKT 30/11, départ HKT 16/12 après-midi). Découpage testé : Nai Yang 30/11→08/12 (8 n) puis seconde étape 08/12→15/12 (7 n) puis retour Nai Yang 15/12→16/12 (1 n près de l'aéroport) ; alternative sans dernière nuit avec vol intérieur retour le 16/12 au matin. Candidats seconde étape : Chiang Mai (CNX, montagne et culture, saison sèche), Bangkok (BKK, ville), Koh Samui (USM, golfe : mousson de nord-est en novembre-décembre, à confirmer). 2 adultes, 1 soute par adulte, EUR, ≤1 escale. Aucune réservation.",
+  "requests": [
+    { "name": "kiwi_hkt_cnx_ow_0812", "server": "kiwi", "tool": "search-flight",
+      "arguments": { "flyFrom": "HKT", "flyTo": "CNX", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 1, "allow_self_transfer": false, "one_for_city": false, "departureDate": "08/12/2026", "departureDateFlexDays": 1 } },
+    { "name": "kiwi_cnx_hkt_ow_1512", "server": "kiwi", "tool": "search-flight",
+      "arguments": { "flyFrom": "CNX", "flyTo": "HKT", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 1, "allow_self_transfer": false, "one_for_city": false, "departureDate": "15/12/2026", "departureDateTo": "16/12/2026" } },
+    { "name": "kiwi_hkt_bkk_ow_0812", "server": "kiwi", "tool": "search-flight",
+      "arguments": { "flyFrom": "HKT", "flyTo": "BKK", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 0, "allow_self_transfer": false, "one_for_city": true, "departureDate": "08/12/2026", "departureDateFlexDays": 1 } },
+    { "name": "kiwi_bkk_hkt_ow_1512", "server": "kiwi", "tool": "search-flight",
+      "arguments": { "flyFrom": "BKK", "flyTo": "HKT", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 0, "allow_self_transfer": false, "one_for_city": true, "departureDate": "15/12/2026", "departureDateTo": "16/12/2026" } },
+    { "name": "kiwi_hkt_usm_ow_0812", "server": "kiwi", "tool": "search-flight",
+      "arguments": { "flyFrom": "HKT", "flyTo": "USM", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 1, "allow_self_transfer": false, "one_for_city": false, "departureDate": "08/12/2026", "departureDateFlexDays": 1 } },
+    { "name": "kiwi_usm_hkt_ow_1512", "server": "kiwi", "tool": "search-flight",
+      "arguments": { "flyFrom": "USM", "flyTo": "HKT", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 1, "allow_self_transfer": false, "one_for_city": false, "departureDate": "15/12/2026", "departureDateTo": "16/12/2026" } },
+    { "name": "trivago_chiangmai_7n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "4star": true, "5star": true }, "query": "Chiang Mai old city, Thailand", "arrival": "2026-12-08", "departure": "2026-12-15" } },
+    { "name": "trivago_bangkok_7n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "4star": true, "5star": true }, "query": "Bangkok riverside, Thailand", "arrival": "2026-12-08", "departure": "2026-12-15" } },
+    { "name": "trivago_samui_chaweng_7n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "4star": true, "5star": true }, "query": "Chaweng Beach, Koh Samui", "arrival": "2026-12-08", "departure": "2026-12-15" } },
+    { "name": "trivago_naiyang_8n", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "4star": true, "5star": true }, "query": "Nai Yang, Phuket", "arrival": "2026-11-30", "departure": "2026-12-08" } },
+    { "name": "trivago_naiyang_1n_1512", "server": "trivago", "tool": "trivago-accommodation-search",
+      "arguments": { "adults": 2, "children": 0, "rooms": 1, "country": "BE", "currency": "EUR", "hotel_rating": { "4star": true, "5star": true }, "query": "Nai Yang, Phuket", "arrival": "2026-12-15", "departure": "2026-12-16" } }
+  ]
+}

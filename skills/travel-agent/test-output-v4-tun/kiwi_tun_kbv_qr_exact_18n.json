@@ -1,0 +1,27 @@
+=== 2026-09-24T22:17:39+00:00 https://mcp.kiwi.com call search-flight {"flyFrom": "TUN", "flyTo": "KBV", "adults": 2, "children": 0, "infants": 0, "adults_hold_bags": [1, 1], "currency": "EUR", "locale": "fr", "sort": "price", "max_sector_stopovers": 2, "allow_self_transfer": false, "allow_diff_airport_connection": false, "one_for_city": false, "select_airlines": "QR", "departureDate": "01/12/2026", "departureDateTo": "01/12/2026", "returnDate": "20/12/2026", "returnDateTo": "20/12/2026"}
+{
+ "jsonrpc": "2.0",
+ "id": 2,
+ "result": {
+  "content": [
+   {
+    "text": "{\n  \"query\": \"TUN → KBV on 01/12/2026–01/12/2026, returning 20/12/2026–20/12/2026, 2 adults [≤2 stops/sector; only QR; no self-transfer]\",\n  \"currency\": \"EUR\",\n  \"passengers\": {\n    \"adults\": 2,\n    \"children\": 0,\n    \"infants\": 0\n  },\n  \"resultsCount\": 0,\n  \"itineraries\": [],\n  \"searchTimeMs\": 2006,\n  \"error\": null\n}",
+    "type": "text"
+   }
+  ],
+  "isError": false,
+  "structuredContent": {
+   "query": "TUN → KBV on 01/12/2026–01/12/2026, returning 20/12/2026–20/12/2026, 2 adults [≤2 stops/sector; only QR; no self-transfer]",
+   "currency": "EUR",
+   "passengers": {
+    "adults": 2,
+    "children": 0,
+    "infants": 0
+   },
+   "resultsCount": 0,
+   "itineraries": [],
+   "searchTimeMs": 2006,
+   "error": null
+  }
+ }
+}
